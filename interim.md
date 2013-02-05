@@ -1372,10 +1372,12 @@ Testing - conformance & interoperability
 
 Clients, servers, and intermediaries all need to be tested.
 
--- adapt wireshark plug-in - Hasan will submit the code to the tree. 
-Hoping from support from those folks.
--- we need a standalone python tool.
--- netcat-like tool -Roberto will do the netcat-like-thing!
+- adapt wireshark plug-in  <-- Hasan
+- standalone python frame decoder / encoder 
+- netcat-like tool <-- roberto
+- catalogue of example sessions and API output (server and client)
+- negative testing (e.g., syntax errors, protocol errors)
+- stupid push server
 
 Roberto: We need a catalog of example sessions
 Jeff: we also need error cases

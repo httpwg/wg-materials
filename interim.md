@@ -1396,9 +1396,10 @@ Schedule
 
 Discussion of the value of another Interim.
 
-When?  September-ish
+When? September-ish; perhaps June if we can move quickly enough to take
+advantage of it.
 
-Where? Melbourne/London/Toronto/Boston/Berlin
+Where? Melbourne/Auckland/London/Toronto/Boston/Berlin/Zurich
 
 
 Other Business

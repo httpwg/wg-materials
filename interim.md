@@ -88,7 +88,7 @@ within HTTP/2). the latter is negotiated feature once decided to use HTTP/2.
 Whereas what Mark is talking about is "HTTP/2 with this set of options".
 
 Roberto: e.g. client could be browser and may want to indicate whether
-want/support Websockets. Don;t want to have wasted a RTT doing something else
+want/support Websockets. Don't want to have wasted a RTT doing something else
 
 Martin: so Q is have this negotiation upfront, or just negotiate HTTP/2 and
 let the client try these other things and have them fail like today.
@@ -99,7 +99,7 @@ Roberto: can't see this applying per stream, capability is per-session.
 
 Will Chan: talked about it within NPN which just sees opaque strings
 
-Roberto: killer app is HTTP so we haven;t seen a need for it up to now.
+Roberto: killer app is HTTP so we haven't seen a need for it up to now.
 
 Mark: overall goal - we want to do this right once.
 
@@ -151,7 +151,7 @@ HTTP messages over that framing layer.
 ???: Need to be careful with websockets as that has it's own 'dance' for
 negotiating capabilities.
 
-Roberto: one of reasons we haven;t done this to date is larger you make the
+Roberto: one of reasons we haven't done this to date is larger you make the
 string the more you slow things down.
 
 Mark: Of all upgrade mechanisms, if already know what protocol you want to
@@ -288,7 +288,7 @@ Mark/Eliot - what's the impact there?
 Mark: Alternate Protocol is that something folks still want to do or has it
 fallen by the wayside?
 
-Will - Don;t think there is a lot of active interest but keep in the back of
+Will - Don't think there is a lot of active interest but keep in the back of
 mind as alternative option. Happy not to pursue right now, but if I get
 unhappy with other options I might bring it back up.
 
@@ -423,7 +423,7 @@ Jeff: server has no way of pulling it back once advertised
 
 Martin: DNS TTLs.
 
-Eliot: let's start from the premise that this isn;t the first thing you do.
+Eliot: let's start from the premise that this isn't the first thing you do.
 
 Mark: hopefully when you advertise this and try a HTTP/2 connection it fails
 fast so client can fallback to HTTP/1
@@ -437,7 +437,7 @@ hands etc. Anyone interested in helping with such a document (would be
 separate document) I would love to hear from you.
 
 Mark: Summary: There are a lot of caveats with DNS and new records etc. Not
-saying we won;t do A-P because this is so great, just we're going to run with
+saying we won't do A-P because this is so great, just we're going to run with
 DNS for the time being.
 
 Eliot: have shown SRVINFO & A as parallel queries. DNS in theory supports
@@ -507,12 +507,12 @@ Comcast where some of their (2wire?) routers will only allow 6 parallel
 lookups at any time. So if for performance optimisation, it might end up being
 a performance cost.
 
-Eliot: one design goal is not to impact app performance and this isn;t
+Eliot: one design goal is not to impact app performance and this isn't
 something you introduce 6 months from now. Problem is common to DNS, not this
 record.
 
 Belshe: interesting stuff but when I think about all the things we still need
-to talk about then this isn;t interesting at all. Can we table and look at it
+to talk about then this isn't interesting at all. Can we table and look at it
 again in 6 months.
 
 Eliot: need implementation experience so need to do that before we actually
@@ -1153,7 +1153,7 @@ Hasan: server push is something we have already presented & clear on
 motivating use cases and there is some agreement on the use cases. Now we need
 to really implement & get some data to figure out how to move forward.
 
-Jeff: we have use cases, reason we haven;t rolled out is it is buggy in chrome.
+Jeff: we have use cases, reason we haven't rolled out is it is buggy in chrome.
 
 Roberto: everything before SPDY4 will be buggy because server push consumes
 its own stream. Let's assume no more than 100 concurrent streams. Let's say I

@@ -1331,14 +1331,29 @@ Data to Gather
 We need to discuss what kind of data we want to collect.  What questions
 do we need to ask?
 
-Header compression: collect state overhead, compression efficiency. 
-Different platforms (desktop v. mobile)
+- Header compression: 
+  - state overhead
+  - compression efficiency 
+  - split out desktop / mobile
+- Use of push
+- Latency improvement of push
+- Stream utilisation
+  - Stream concurrency
+  - Stream max-out
+- Variety of settings
+  - max streams
+- flow control - when is sending limited
+- error rates
+  - protocol errors
+  - unknown control frames
+  - upgrade errors
+  - versions
 
-[long list from Mark]
 Mark would like a draft or a wiki entry about specific metrics.  Will
 is willing to provide information about what is possible.
 
-Hasan-
+Hasan -
+
 - errors specific to http2.0
 - reset stream errors
 - goaway errors
@@ -1347,7 +1362,9 @@ Hasan-
 
 Hasan to send a proposal to the list.
 
-What to do about 100/continue?  Mark will take this to the list
+What to do about 100/continue?  
+
+ACTION: Mark will take this to the list
 
 
 Testing - conformance & interoperability

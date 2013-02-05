@@ -1248,14 +1248,15 @@ Next Steps
 Began with discussion about stablization of the drafts.  Need to set
 expectations that things can still change.
 
-Discussion of SPDYv4 and  migrating features into HTTP 2.0 drafts.
+Discussion of SPDYv4 and migrating features into HTTP 2.0 drafts.
 
-Martin made the comment that the base could be used to experiment.
-
-Unless you're changing formats.
+Martin made the comment that the base could be used to experiment, unless
+you're changing frame formats.
 
 Word alignment and sizes need to be adjusted.
+
 Uniform length between control and data frames.
+
 Roberto pointed out that you don't get word alignment with adding type.
 
 ### Proposed reorganised header
@@ -1271,18 +1272,38 @@ Session flow control
 
 How to turn to off push (in either direction)
 
+### 1st implementation draft goals
+
+- Header Compression
+- Frame changes
+  - uniform length / alignment
+  - remove version
+  - rearrange/resize - length 16 / type|opcode 8 / flags 8 / C 1 / sid 31 
+  - push promise control frame
+  - 32bit priority (1st reserved)
+- Upgrade
+  - dance + magic
+  - npn
+- Flow control - session level
+- Settings persistence - at risk
+- Settings first mandatory
+- RST_STREAM / GOWAWAY opaque data?
+- 100/continue advice?
+
 Prioritization - just create a 32 bit priority field with MSB reserved.
 
 Rajiv: what sort of changes can we expect beyond this draft?
 
 Mark: there will be more changes
 
-On Magic:
+### Magic
 
 Magic will be sent in all cases, and will include a high order bit set,
 as well as versioning information.
-Eliot / Martin to start something on the mailing list.  version name to
+
+ACTION: Eliot / Martin to start something on the mailing list. version name to
 start "http-draft-n/2.0".
+
 Purpose of magic is primarily to fail quickly on middle boxes that
 improperly respond to upgrade
 

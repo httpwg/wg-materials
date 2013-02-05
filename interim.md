@@ -1001,6 +1001,50 @@ ACTION: Roberto to provide a proposal regarding frame size: 16 bit
 length, +1 bit stolen from flags to indicate continuation.
 
 
+Flow Control
+------------
+
+Flow control principals reviewed; no disagreement.
+
+Stream-level flow control is not controversial.
+
+Session-level flow control is interesting to many (and viewed as necessary to
+some), but some believe it's not going to be useful, because the response to
+it being exceeded won't be different (close the connection).
+
+Resolved to spec out a proposal for session-level as well as stream-level flow
+control.
+
+ACTION: Will Chan to make proposal.
+
+Also some discussion of a new control frame to indicate that flow limit has
+been reached; optional on both sides. Not much interest, but no disagreement
+yet. No one offered to make a proposal.
+
+Agreed flow control by a receiver can be disabled by sending a very large /
+reserved value.
+
+Initial values for flow control - we need some testing. 
+
+64k per stream and per-session seems reasonable. Will test and gather feedback.
+
+Patrick: Can we have asymmetric defaults? Big for clients, small for servers.
+Will: but client can send settings frame.
+Patrick: yes, but defaults for performance.
+Martin: Could be part of HTTP/2 magic.
+Settings are also persisted, but only per origin.
+Roberto / Eliot: It may also be interesting to put the default settings frame into DNS.
+
+ACTION: Eliot to scope out a DNS-based "initial options" record (TXT-based?)
+to avoid wasting a protocol.
+- flow control window sizes
+- max stream
+- pointer to browser hints
+
+Discussion of constant bit rate flow control, e.g., to control use of radio on
+mobile; felt that this isn't an appropriate use of flow control.
+
+
 Priorities
 ----------
 

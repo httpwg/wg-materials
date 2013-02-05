@@ -589,7 +589,23 @@ Mike B: the primary goal for SPDY was latency reduction; getting
 perfect or near-perfect compression isn't necessary to achieve that
 end
 
-Eliot: algorithm agility?
+Goals for header compression include:
+
+- privacy 
+  - CRIME ATTACK
+- Latency reduction
+  - head-of-line blocking?
+- Compression efficiency
+- CPU overhead
+- Memory consumption
+  - initial
+  - idle
+  - under DoS
+  - receiver control
+- implementation complexity
+- proxyability
+- error handling
+- ability to define new headers and maintain properties above
 
 Editors note: we will need to capture this: the header compression
 algorithm (and many other aspects of the protocol) can only really be

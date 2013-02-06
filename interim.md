@@ -5,12 +5,13 @@ HTTPbis Interim Minutes (30/01/13 - 01/02/13)
 HTTP/2 initial draft status
 ---------------------------
 
-Martin: one draft - SPDY with name change. new abstract into, addition of some
-conclusions on upgrade/negotiation. No conclusion on TLS side yet
+Martin Thomson: one draft - SPDY with name change. new abstract into, addition
+of some conclusions on upgrade/negotiation. No conclusion on TLS side yet
 
 Still some discussion between authors on framing and how to explain etc.
 
-Mark: need to talk about terminology as not clear in document right now.
+Mark Nottingham: need to talk about terminology as not clear in document right
+now.
 
 Martin: current draft is fouled on minimal info to do an implementation but
 lacking in introduction & "fluff".
@@ -22,8 +23,8 @@ Upgrade
 Mark: asked TLS WG to work on mechanism to upgrade within TLS which may or
 may not look like NPN. Have pinged for status but not heard back.
 
-Eliot: see no reason why to normatively block on that which you are in the
-draft
+Eliot Lear: see no reason why to normatively block on that which you are in
+the draft
 
 Martin: that can be removed if you want to weasel around it.
 
@@ -43,8 +44,8 @@ set of constraints)
 
 So could use token as a sort of "profile"
 
-Alexey: are you suggesting some structure to token or just more extensive
-list.
+Alexey Melnikov: are you suggesting some structure to token or just more
+extensive list.
 
 ???: What is purpose
 
@@ -60,7 +61,7 @@ line.
 
 Mark: that's 1.1 we may or may not do it that way
 
-Gabriel?: some scope overlap with HSTS?
+Gabriel Montenegro: some scope overlap with HSTS?
 
 Mark: this is what are the things I can do next on this connection?
 
@@ -73,7 +74,7 @@ Mark: see as way to drive convergence - if have named 'profiles' browsers can
 converge on what they support & server can do the same. People who define
 'profiles' define how fine grained they are.
 
-Roberto: discussed internal to Google. We've never seen enough demand to
+Roberto Peon: discussed internal to Google. We've never seen enough demand to
 actually do it, so safest thing is describe how one might accomplish it.
 
 Mark: defining those profiles is not something HTTPBIS wants to get into but
@@ -123,7 +124,7 @@ thinking through the use cases.
 
 No-one volunteers to do that.
 
-Belshe?: how about we don't do this at all - opaque string is not
+Mike Belshe: how about we don't do this at all - opaque string is not
 interoperable. Unless implementation understand it it won't get used as they
 don't know what to do with it. So without something concrete specifying it is
 worse than specifying nothing.
@@ -211,26 +212,26 @@ Mark: use case as I understand it - if I have a server farm and I've only
 upgraded half of it I want to fast fail. Is that use case good enough to burn
 17 bytes at beginning of every connection for all time?
 
-Belshe: proposal is get rid of version in frames and instead put something in
+Mike: proposal is get rid of version in frames and instead put something in
 the beginning of the connection?
 
 Martin: two things websockets had that protected ???? - non-ASCII and other is
 look at response to upgrade that shows in the positive that server had not
 only understood but had acted on the upgrade.
 
-Belshe: one option is to always send a SETTINGs frame first
+Mike: one option is to always send a SETTINGs frame first
 
-Jeff?: Basically can we kill version in the frame and then fail fast.
+Jeff Pinner: Basically can we kill version in the frame and then fail fast.
 
 Roberto: like sending SETTINGS frame first, don't want to restrict ourselves
 to whatever framing is guaranteed to make an existing HTTP/1 implementation
 barf, e.g. if first bytes of SETTINGS frame happen to be "GET".
 
-Will Chan - can we step back so I can understand the use case? Is it only in
+Will: can we step back so I can understand the use case? Is it only in
 enterprise setting where you know the out of band negotiation scenario or will
 this be done out in the open? I don't see browsers doing this out in open.
 
-Belshe: declare version upfront without ??? If we're going to have a magic
+Mike: declare version upfront without ??? If we're going to have a magic
 string or whatever upfront it should be constrained to just indicating the
 version.
 
@@ -258,7 +259,7 @@ Mark: would be nice if had easier ways to get answers, like a 1 file python
 script can put on git and have people run it in weird places like airport on
 way home, etc. to gather information.
 
-Will Chan - Happy in Chrome to do this kind of probing, we have done it in the
+Will: Happy in Chrome to do this kind of probing, we have done it in the
 past.
 
 ACTION: Come up on list of shortlist of reasonable client sequences to test.
@@ -276,7 +277,7 @@ in different situations may differ.
 Eliot: registry - HTTP/2 draft explains what's required to get into registry
 etc. I will volunteer to write that text.
 
-Will Chan - two different directions of negotiation - Upgrade is client side,
+Will: two different directions of negotiation - Upgrade is client side,
 NPN it's client indicates extension support and server advertises protocols
 and client selects what it wants to use.
 
@@ -288,7 +289,7 @@ Mark/Eliot - what's the impact there?
 Mark: Alternate Protocol is that something folks still want to do or has it
 fallen by the wayside?
 
-Will - Don't think there is a lot of active interest but keep in the back of
+Will: Don't think there is a lot of active interest but keep in the back of
 mind as alternative option. Happy not to pursue right now, but if I get
 unhappy with other options I might bring it back up.
 
@@ -298,7 +299,7 @@ keep to as few as possible.
 Jeff: only thing I can think that Alternative-Protocol gives you the other
 don't can be solved with a redirect (although A-P is nicer).
 
-Belshe: redirect is not equivalent.
+Mike: redirect is not equivalent.
 
 Implementation status - Chrome has it, Mozilla have it (but a little buggy).
 
@@ -306,10 +307,10 @@ Mark: Punt on A-P right now, see how things go, if browser or server folks
 start to feel it is something we need we can talk about it then, but if we
 don't need it that's nice as one less thing to define.
 
-Will - would like to reserve judgement until we've discussed DNS more as it
+Will: would like to reserve judgement until we've discussed DNS more as it
 seems to have similar properties.
 
-Patrick - Bias towards leaving it in for now.
+Patrick: Bias towards leaving it in for now.
 
 Mark: but we don't have text right now.
 
@@ -511,7 +512,7 @@ Eliot: one design goal is not to impact app performance and this isn't
 something you introduce 6 months from now. Problem is common to DNS, not this
 record.
 
-Belshe: interesting stuff but when I think about all the things we still need
+Mike: interesting stuff but when I think about all the things we still need
 to talk about then this isn't interesting at all. Can we table and look at it
 again in 6 months.
 
@@ -585,7 +586,7 @@ https://docs.google.com/presentation/d/1x8GvY-7FJi57DW9vSvjTF1QnTkzM18mXi_LQUUpr
 
 ### Long brainstorming session about the goals of a compressor
 
-Mike B: the primary goal for SPDY was latency reduction; getting
+Mike: the primary goal for SPDY was latency reduction; getting
 perfect or near-perfect compression isn't necessary to achieve that
 end
 
@@ -619,7 +620,7 @@ On the question of header types and the registration policies for any registry.
 Mark (indiv): we want to limit the number of types to avoid the need for
 bespoke parsers for every new header field.
 
-Barry: suggest standards action for new types
+Barry Leiba: suggest standards action for new types
 
 Mark/others: don't need that, don't want even the hint of that.
 
@@ -645,7 +646,7 @@ Mark: I'm not encouraging this
 
 Jeff: Reusable code for the compressor would be good; zlib is easy to integrate
 
-Ilya: it would be good to have a good test suite
+Ilya Grigorik: it would be good to have a good test suite
 
 Mark: modular code would allow for reuse of portions of working
 implementations in new implementations
@@ -664,7 +665,7 @@ Jeff: key-value compression is going to get us a lot
 
 Martin: Date changes on every request, which makes that a non-gain
 
-James: We can encode dates down to 5-6 bytes. Even if they change
+James Snell: We can encode dates down to 5-6 bytes. Even if they change
 every message, that's a significant savings.
 
 Jeff: but Date is so trivially small in comparison to Cookie
@@ -778,7 +779,7 @@ you stop inlining.
 
 Mark: Amazon data moves from 0.47 to 0.39 compression just compressing dates.
 
-Herve: there are lots of cache check requests that generate lots of
+Herve Ruellan: there are lots of cache check requests that generate lots of
 304 responses, which include lots of dates.
 
 Mark: Maybe we should start with delta and then we can experiment with
@@ -966,14 +967,15 @@ Mark: what is the optimum size?
 
 Jeff: 16k (for TLS record layer) at which it is too slow
 
-Will/Hasan: 16k is already too big for TLS
+Hasan Khalil: 16k is already too big for TLS
 
 James: Can we just allow receiver to specify a maximum frame size they
 will accept and go with that? Why should we try to define some
 arbitrary limit? Allow it to be set as part of the flow control and
 have the value tweaked over time to reflect requirements
 
-Brian: there are some issues raised by an MS engineer regarding frame sizes
+Brian Raymor: there are some issues raised by an MS engineer regarding frame
+sizes
 
 Roberto: some of these are OK, like settings;
 
@@ -1045,11 +1047,16 @@ Initial values for flow control - we need some testing.
 64k per stream and per-session seems reasonable. Will test and gather feedback.
 
 Patrick: Can we have asymmetric defaults? Big for clients, small for servers.
+
 Will: but client can send settings frame.
+
 Patrick: yes, but defaults for performance.
-Martin: Could be part of HTTP/2 magic.
-Settings are also persisted, but only per origin.
-Roberto / Eliot: It may also be interesting to put the default settings frame into DNS.
+
+Martin: Could be part of HTTP/2 magic. Settings are also persisted, but only
+per origin.
+
+Roberto / Eliot: It may also be interesting to put the default settings frame
+into DNS.
 
 ACTION: Eliot to scope out a DNS-based "initial options" record (TXT-based?)
 to avoid wasting a protocol.
@@ -1078,32 +1085,32 @@ priority. No requirement to finish high pri before sending low pri.
 Roberto: rule we execute is send highest pri available thing so don't starve
 low pri thing waiting to get/generate high pri thing.
 
-Belshe: we found same prioritisation approach in browser wasn't optimal for
+Mike: we found same prioritisation approach in browser wasn't optimal for
 all sites. Room for research here.
 
-Belshe: what is use case for strict ordering and why can't be accomplished at
+Mike: what is use case for strict ordering and why can't be accomplished at
 app layer?
 
 Roberto: obvious uses cases for priority e.g. switching between tabs
 
 Mark: 3 things - bits for pri, ??? prioritisation, strict priorities
 
-Belshe: 3 unique features - priorities, chains, groups
+Mike: 3 unique features - priorities, chains, groups
 
 Jeff: if can reorder pri can the dependencies graphs/groups/etc be implemented
 in browser layer by telling the protocol layer "re prioritise this stream"
 
 Roberto: we discussed that and the implementation gets complex
 
-Belshe: tradeoff of complexity, simple approach - 8 priorities. 2 things
+Mike: tradeoff of complexity, simple approach - 8 priorities. 2 things
 thinking of adding - dependencies & groups.
 
-Will - one approach is get rid of priorities and just have groups of
+Will: one approach is get rid of priorities and just have groups of
 dependencies
 
-Hasan - a weighted set of ordered dependencies
+Hasan: a weighted set of ordered dependencies
 
-Belshe: what is use case that needs dependencies
+Mike: what is use case that needs dependencies
 
 Roberto: ???
 
@@ -1163,13 +1170,13 @@ I'm generally doing it in sequence so max concurrency is 1.
 Jeff: for Roberto's use cases want pushes done sequentially and that is broken
 in spec. parallel pushes works fine.
 
-Belshe: that is a pretty small bug, you made it sound like the whole thing is
+Mike: that is a pretty small bug, you made it sound like the whole thing is
 broken.
 
 Mark: I'm concerned because we seem to be slowly adding a whole bunch of new
 control frames (not just for server push)
 
-Belshe: one issue: do we want to reserve streams in advance?
+Mike: one issue: do we want to reserve streams in advance?
 
 Hasan: reserving request resources.
 
@@ -1187,7 +1194,7 @@ Mark: I was unsure about push, as were other folks, e.g. web spider may not
 want to have resources pushed at it, but alternative is often server inlining
 and client can always squelch the push.
 
-Patrick - some people on client side are worried about it because they pay by
+Patrick: some people on client side are worried about it because they pay by
 the byte.
 
 Hasan: two use cases: 1) client in australia & I don't want any push at all -
@@ -1292,7 +1299,7 @@ How to turn to off push (in either direction)
 
 Prioritization - just create a 32 bit priority field with MSB reserved.
 
-Rajiv: what sort of changes can we expect beyond this draft?
+Rajiv Bector: what sort of changes can we expect beyond this draft?
 
 Mark: there will be more changes
 
@@ -1352,7 +1359,7 @@ do we need to ask?
 Mark would like a draft or a wiki entry about specific metrics.  Will
 is willing to provide information about what is possible.
 
-Hasan -
+Hasan:
 
 - errors specific to http2.0
 - reset stream errors

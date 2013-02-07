@@ -14,7 +14,7 @@ Attendees
 * Erik Kline (Google)
 * Tatsuya Hayashi (Lepidum)
 * Kazuki Shimizu (Lepidum)
-* Yusuke Kajiwaku
+* Yusuke Kagiwada
 * Adam Rice (Google)
 * Takashi Toyoshima (Google)
 * Emile Stephan (Orange)

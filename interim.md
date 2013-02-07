@@ -1,6 +1,35 @@
 HTTPbis Interim Minutes (30/01/13 - 01/02/13)
 =============================================
 
+Attendees
+
+* Mark Nottingham (Akamai)
+* Jun Fujisawa (Canon)
+* Herve Ruellan (Canon)
+* Patrick McManus (Mozilla)
+* Eliot Lear (Cisco)
+* Martin Thomson (Microsoft)
+* Alexey Melnikov (Isode)
+* Barry Leiba (Applications AD)
+* Erik Kline (Google)
+* Tatsuya Hayashi (Lepidum)
+* Kazuki Shimizu (Lepidum)
+* Yusuke Kajiwaku
+* Adam Rice (Google)
+* Takashi Toyoshima (Google)
+* Emile Stephan (Orange)
+* Rajeev Bector (Yahoo!)
+* Ben Niven-Jenkins (Velocix)
+* Grant Watson (Velocix)
+* Hasan Khalil (Google)
+* William Chan (Google)
+* Roberto Peon (Google)
+* Mike Belshe (Twist)
+* Jeff Pinner (Twitter)
+* Brian Raymor (Microsoft Open Tech)
+* Gabriel Montenegro (Microsoft)
+* Takeshi Yoshino (Google)
+
 
 HTTP/2 initial draft status
 ---------------------------

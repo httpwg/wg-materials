@@ -24,6 +24,7 @@ Attendees
 * Hasan Khalil (Google)
 * William Chan (Google)
 * Roberto Peon (Google)
+* Ilya Gregorik (Google)
 * Mike Belshe (Twist)
 * Jeff Pinner (Twitter)
 * Brian Raymor (Microsoft Open Tech)

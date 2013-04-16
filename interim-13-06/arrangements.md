@@ -8,7 +8,7 @@ hosted by Twitter in San Francisco.
 
 ### Register
 
-Please e-mail [mailto:mnot@mnot.net Mark Nottingham] by 13 May to register; we need an accurate
+Please e-mail [Mark Nottingham](mailto:mnot@mnot.net) by 13 May to register; we need an accurate
 count for catering and other logistics.
 
 ### Schedule and Agenda

@@ -10,6 +10,17 @@ Face-to-Face meeting, hosted by Adobe in Hamburg.
 Please e-mail [Mark Nottingham](mailto:mnot@mnot.net) by 28 June to register; we
 need an accurate count for catering and other logistics.
 
+Interim meetings are primarily for active participants in the work; therefore,
+preference will be given to those who have taken part in mailing list
+discussion. Limited space will be available for observers. If you have not yet
+been active on the mailing list, but will be doing so going forward, let us
+know that.
+
+Likewise, the purpose of interim meetings is to gain consensus on key points
+from stakeholders. Therefore, if any one company, project or concern is
+over-represented in registrations, they may be asked to withdraw participants
+to assure balanced representation.
+
 ### Schedule and Agenda
 
 We'll be meeting Monday 5 August, Tuesday 6 August and a half-day on Wednesday

@@ -47,6 +47,11 @@ at their office in Hamburg, Germany.
 <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?client=safari&amp;q=Gro%C3%9Fe+Elbstr.+2722767+Hamburg,+Germany&amp;oe=UTF-8&amp;ie=UTF8&amp;hq=&amp;hnear=Gro%C3%9Fe+Elbstra%C3%9Fe,+22767+Hamburg,+Germany&amp;t=m&amp;z=14&amp;ll=53.544592,9.938685&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?client=safari&amp;q=Gro%C3%9Fe+Elbstr.+2722767+Hamburg,+Germany&amp;oe=UTF-8&amp;ie=UTF8&amp;hq=&amp;hnear=Gro%C3%9Fe+Elbstra%C3%9Fe,+22767+Hamburg,+Germany&amp;t=m&amp;z=14&amp;ll=53.544592,9.938685&amp;source=embed" style="color:#0000FF;text-align:left">View Map</a></small>
 
 
+### Transportation
+
+For those attending the [Berlin IETF meeeting](http://www.ietf.org/meeting/87/index.html) beforehand, the ICE provides fast and inexpensive transport to Hamburg; see [bahn.de](http://reiseauskunft.bahn.de/bin/query.exe/en?revia=yes&existOptimizePrice=1&country=USA&dbkanal_007=L01_S01_D001_KIN0001_qf-bahn_LZ003&ignoreTypeCheck=yes&S=Berlin+Hbf&REQ0JourneyStopsSID=A%3D1%40O%3DBerlin+Hbf%40X%3D13369548%40Y%3D52525589%40U%3D80%40L%3D008011160%40B%3D1%40p%3D1368556572%40&REQ0JourneyStopsS0A=7&Z=Hamburg+Hbf&REQ0JourneyStopsZID=A%3D1%40O%3DHamburg+Hbf%40X%3D10006908%40Y%3D53552732%40U%3D80%40L%3D008002549%40B%3D1%40p%3D1368556572%40&REQ0JourneyStopsZ0A=7&trip-type=single&date=Sa%2C+03.08.13&time=10%3A00&timesel=depart&returnTimesel=depart&optimize=0&travelProfile=-1&adult-number=1&children-number=0&infant-number=0&tariffTravellerType.1=E&tariffTravellerReductionClass.1=0&tariffTravellerAge.1=&qf-trav-bday-1=&tariffTravellerReductionClass.2=0&tariffTravellerReductionClass.3=0&tariffTravellerReductionClass.4=0&tariffTravellerReductionClass.5=0&tariffClass=2&start=1&qf.bahn.button.suchen=).
+
+
 ### Accommodation
 
 TBD

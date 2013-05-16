@@ -8,15 +8,19 @@ Face-to-Face meeting, hosted by Adobe in Hamburg.
 ### Register
 
 Interim meetings are primarily for active participants in the work; therefore,
-preference will be given to those who have taken part in mailing list
-discussion. Limited space will be available for observers. If you have not yet
+if there are more registrants than space allows, preference may be given
+to those who have taken part in mailing list discussion. If you have not yet
 been active on the mailing list, but will be doing so going forward, let us
-know that.
+know that, to help make this decision.
+
+If you only wish to observe the meeting, please denote that in your
+registration; we usually have additional seating that isn't "at the table", but
+is suitable for observing, and this helps us manage space constraints.
 
 Likewise, the purpose of interim meetings is for stakeholders to work towards
 consensus on key points. Therefore, if any one company, project or concern is
 over-represented in registrations, they may be asked to withdraw participants
-to assure balanced representation.
+(or denote them as observers) to assure balanced representation.
 
 Remote participation facilities might be available; if you're interested, 
 please indicate this.

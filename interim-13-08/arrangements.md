@@ -7,7 +7,6 @@ Face-to-Face meeting, hosted by Adobe in Hamburg.
 
 ### Register
 
-<<<<<<< HEAD
 The goal of this interim meeting is issue resolution through highly active
 participation. Try as we might, the meeting space we could secure is more
 limited in size than the usual IETF meeting venues. Because of this, we ask you

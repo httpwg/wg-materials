@@ -61,7 +61,7 @@ Hamburg has a variety of hotels; convenient examples include:
 * [Clipper Elb-Lodge](http://www.clipper-boardinghouses.de/en/haeuser/hamburg/holzhafen/) - ~five minute walk to Adobe
 * [Hotel Hafen Hamburg](http://www.hotel-hafen-hamburg.de/default.aspx?lang=en) - ~fifteen minute walk to Adobe
 * [Gastwerk Hotel](http://www.gastwerk.com/hotels-hamburg/) - two stops away on S-Bahn, plus a short walk at each end
-* [Sofitel Hamburg Alter Wall](http://www.sofitel.com/gb/hotel-5395-sofitel-hamburg-alter-wall/index.shtml) - 3 stops away on S-Bahn, plus a short walk at each end
+* [Sofitel Hamburg Alter Wall](http://www.sofitel.com/gb/hotel-5395-sofitel-hamburg-alter-wall/index.shtml) - three stops away on S-Bahn, plus a short walk at each end
 * [twenty five hours hotel hamburg / hafencity](http://www.25hours-hotels.com/hafencity/?lang=en) - one stop on the metro, then four on the S-Bahn, plus a short walk at each end
 
 

@@ -46,3 +46,8 @@ San Francisco has a variety of accommodation available. A few suitable hotels in
 Note that summer usually brings an influx of tourists to San Francisco, so book
 hotels and flights early.
 
+
+### Remote Participation
+
+Remote participation will be available to those who request it, via
+[Skype](http://www.skype.com/) and Jabber.

@@ -57,6 +57,7 @@ the [Hamburg regional rail
 plan](http://www.hvv.de//en/timetables-lines-routes/plans-line-route-networks/us
 ar/) for connections.
 
+Those travelling extensively within Germany may wish to purchase a [German Rail Pass](http://www.germanrailpasses.com/).
 
 ### Accommodation
 

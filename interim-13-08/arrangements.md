@@ -63,7 +63,7 @@ ar/) for connections.
 Hamburg has a variety of hotels; convenient examples include:
 
 * [Clipper
-  Elb-Lodge](http://www.clipper-boardinghouses.de/en/haeuser/hamburg/holzhafen/ - ~five minute walk to Adobe
+  Elb-Lodge](http://www.clipper-boardinghouses.de/en/haeuser/hamburg/holzhafen/) - ~five minute walk to Adobe
 * [Hotel Hafen Hamburg](http://www.hotel-hafen-hamburg.de/default.aspx?lang=en)  - ~fifteen minute walk to Adobe
 * [Empire Riverside Hotel](http://empire-riverside.de/default.aspx?lang=en) -
   ~fifteen minute walk to Adobe

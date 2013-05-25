@@ -72,6 +72,7 @@ Hamburg has a variety of hotels; convenient examples include:
 * [Sofitel Hamburg Alter
   Wall](http://www.sofitel.com/gb/hotel-5395-sofitel-hamburg-alter-wall/index.sh
   tml) - three stops away on S-Bahn, plus a short walk at each end
+* [SIDE](http://www.side-hamburg.de/en/side-home.html) - four stops away on S-Bahn, plus a short-ish walk at each end
 * [twenty five hours hotel hamburg /
   hafencity](http://www.25hours-hotels.com/hafencity/?lang=en) - one stop on
   the metro, then four on the S-Bahn, plus a short walk at each end

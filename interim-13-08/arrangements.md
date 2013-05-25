@@ -54,10 +54,9 @@ For those attending the [Berlin IETF meeeting](http://www.ietf.org/meeting/87/in
 The meeting location is near [Königstraße
 station](http://en.wikipedia.org/wiki/Königstrasse_station), on the S-Bahn. See
 the [Hamburg regional rail
-plan](http://www.hvv.de//en/timetables-lines-routes/plans-line-route-networks/us
-ar/) for connections.
+plan](http://www.hvv.de/en/timetables-lines-routes/plans-line-route-networks/usar/) for connections.
 
-Those travelling extensively within Germany may wish to purchase a [German Rail Pass](http://www.germanrailpasses.com/).
+Those traveling extensively within Germany may wish to purchase a [German Rail Pass](http://www.germanrailpasses.com/).
 
 ### Accommodation
 

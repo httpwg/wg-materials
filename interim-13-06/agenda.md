@@ -5,6 +5,14 @@
 ([Meeting Arrangements](https://github.com/http2/wg_materials/blob/master/interim-13-06/arrangements.md))
 
 
+## Related Documents
+
+* [Hypertext Transfer Protocol version 2.0](http://tools.ietf.org/html/draft-ietf-httpbis-http2)
+* [Header Diff: A compact HTTP header representation for HTTP/2.0](http://tools.ietf.org/html/draft-ruellan-headerdiff)
+* [Header Delta-Compression for HTTP/2.0](http://tools.ietf.org/id/draft-rpeon-httpbis-header-compression)
+* [A DNS Resource Record for Service Descriptions](http://tools.ietf.org/html/draft-lear-httpbis-svcinfo-rr)
+
+
 ## Schedule
 
 ### THURSDAY 13 June 2013

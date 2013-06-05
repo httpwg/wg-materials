@@ -117,6 +117,10 @@ See also the [Issues List](https://github.com/http2/http2-spec/issues?milestone=
 #### Transport Mapping
 
 * [SETTINGS_CURRENT_CWND](https://github.com/http2/http2-spec/issues/65)
+* [SETTINGS_UPLOAD_BANDWIDTH](https://github.com/http2/http2-spec/issues/107)
+* [SETTINGS_DOWNLOAD_BANDWIDTH](https://github.com/http2/http2-spec/issues/108)
+* [SETTINGS_ROUND_TRIP_TIME](https://github.com/http2/http2-spec/issues/109)
+* [SETTINGS_DOWNLOAD_RETRANS_RATE](https://github.com/http2/http2-spec/issues/110)
 * [TCP Exclusivity](https://github.com/http2/http2-spec/issues/26)
 
 

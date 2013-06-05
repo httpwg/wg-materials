@@ -104,6 +104,7 @@ See also the [Issues List](https://github.com/http2/http2-spec/issues?milestone=
 #### Prioritization
 
 * [Prioritisation](https://github.com/http2/http2-spec/issues/7) - general review
+* [Priority](https://github.com/http2/http2-spec/pull/111)
 
 #### HTTP Mapping
 

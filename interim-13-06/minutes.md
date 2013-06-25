@@ -1,9 +1,46 @@
 # Minutes of the June 2013 HTTPbis Interim Meeting
 
-* Chair: Mark Nottingham 
 * Agenda: https://github.com/http2/wg_materials/blob/master/interim-13-06/agenda.md
 * Current draft: http://tools.ietf.org/html/draft-ietf-httpbis-http2-03
 * Issues list: https://github.com/http2/http2-spec/issues?milestone=&page=1&state=open
+
+Chair: Mark Nottingham 
+
+Participants:
+* Jeff Pinner (Twitter)
+* Michael Schore (Twitter)
+* Martin Thomson (Microsoft)
+* William Chan (Google)
+* Roberto Peon (Google)
+* Gabriel Montenegro (Microsoft)
+* Stephen Ludin (Akamai)
+* Shakesh Jain (Akamai)
+* Herve Ruellan (Canon)
+* Leif Hedstrom (Apple)
+* James Snell (IBM)
+* Mike Belshe (Twist)
+* Brian Raymor (Microsoft)
+* Allison Mankin (Verisign)
+* Ben Niven-Jenkins (Velocix)
+* Grant Watson (Velocix)
+* Kalyani Bogineni (Verizon)
+* Barry Leiba (IESG)
+* David Morris (XPASC)
+* Hasan Khalil (Google)
+* Josh Aas (Mozilla)
+* Fred Akalin (Google)
+* Ryan Hamilton (Google)
+* Vikas Panwar (Yahoo!)
+* Emile Stephan (Orange)
+* Rob Trace (Microsoft)
+* Ilya Grigorik (Google)
+* Chandra Yeleswarapu (Verizon)
+* Dan Sun (Verizon)
+* Brian Libonate (Verizon)
+* Ted Hardie (Google)
+* Dan Wing (Cisco)
+* Aruna Balasubramanian (University of Washington)
+* William Chow (Mobolize)
 
 ## Thursday
 

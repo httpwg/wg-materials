@@ -1,6 +1,6 @@
 # Minutes of the June 2013 HTTPbis Interim Meeting
 
-* [Agenda](https://github.com/http2/wg_materials/blob/master/interim-13-06/agenda.md]
+* [Agenda](https://github.com/http2/wg_materials/blob/master/interim-13-06/agenda.md)
 * [Current draft](http://tools.ietf.org/html/draft-ietf-httpbis-http2-03)
 * [Issues list](https://github.com/http2/http2-spec/issues?milestone=&page=1&state=open)
 

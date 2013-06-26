@@ -19,7 +19,7 @@ Participants:
 * Leif Hedstrom (Apple)
 * James Snell (IBM)
 * Mike Belshe (Twist)
-* Brian Raymor (Microsoft)
+* Brian Raymor (Microsoft Open Tech)
 * Allison Mankin (Verisign)
 * Ben Niven-Jenkins (Velocix)
 * Grant Watson (Velocix)
@@ -1294,7 +1294,7 @@ General agreement that is fine.
  * Mozilla: Will have "something". NPN.
  * Chrome: Will have "something" on a local build.  NPN.
  * Google Server:  Will bring up a server somewhere, as close to the draft as possible.  Likely ALPN, NPN and forced on this port.
- * Microsoft: Contributed ALPN to Open SSL yesterday.  MS-OpenTech will have a server.  Not IE.
+ * Microsoft Open Tech: Contributed ALPN to Open SSL yesterday.  Microsoft Open Tech will have a server.  Not IE.
  * Akamai: will try and have a server.
  * Mark: Python client side and server side:
  * James: Java client

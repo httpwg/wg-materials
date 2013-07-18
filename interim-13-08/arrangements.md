@@ -7,25 +7,8 @@ Face-to-Face meeting, hosted by Adobe in Hamburg.
 
 ### Register
 
-The goal of this interim meeting is issue resolution through highly active
-participation. Try as we might, the meeting space we could secure is more
-limited in size than the usual IETF meeting venues. Because of this, we ask you
-to use your judgment and only register up if you have been actively
-participating in work on the mailing list or in other face-to-face meetings, or
-if you intend to do so in this meeting.
-
-If you are planning to mostly observe, consider whether other colleagues who
-will be actively participating can represent your views in the room.
-
-We will make every effort to accommodate those who let us know they plan to be
-active participants. Others are welcome to tell us they will be less active or
-want to observe, and we will do our best to accommodate you in the available
-space.
-
-We will do our best to provide remote participation facilities; please let us
-know if you are interested in using them.
-
-To register, please e-mail [Mark Nottingham](mailto:mnot@mnot.net) by 28 June.
+Registration is now closed. If you have questions or need to cancel, please
+e-mail [Mark Nottingham](mailto:mnot@mnot.net).
 
 ### Schedule and Agenda
 

@@ -13,7 +13,8 @@ e-mail [Mark Nottingham](mailto:mnot@mnot.net).
 ### Schedule and Agenda
 
 We'll be meeting Monday 5 August, Tuesday 6 August and a half-day on Wednesday
-7 August (finishing by 1pm).
+7 August (finishing by 1pm on the last day). Each day's meeting will start at
+9am, so please arrive early (from 8:30am).
 
 A separate agenda will be published, but discussions will focus on the
 [HTTP/2.0 specification](http://http2.github.io/http2-spec/) and [related

@@ -63,6 +63,6 @@ Hamburg has a variety of hotels; convenient examples include:
 * [zleep](http://www.zleephotels.com/de/hotel/zleep-hotel-hamburg-city) - ten minute walk
 
 
-### Local Considerations
+### Social Event
 
 TBD

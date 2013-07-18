@@ -60,6 +60,7 @@ Hamburg has a variety of hotels; convenient examples include:
 * [twenty five hours hotel hamburg /
   hafencity](http://www.25hours-hotels.com/hafencity/?lang=en) - one stop on
   the metro, then four on the S-Bahn, plus a short walk at each end
+* [zleep](http://www.zleephotels.com/de/hotel/zleep-hotel-hamburg-city) - ten minute walk
 
 
 ### Local Considerations

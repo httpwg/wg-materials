@@ -1,4 +1,3 @@
-
 ## HTTPbis Working Group Interim Meeting - August 2013
 
 This is the arrangements page for the [HTTPbis Working
@@ -14,7 +13,7 @@ e-mail [Mark Nottingham](mailto:mnot@mnot.net).
 
 We'll be meeting Monday 5 August, Tuesday 6 August and a half-day on Wednesday
 7 August (finishing by 1pm on the last day). Each day's meeting will start at
-9am, so please arrive early (from 8:30am).
+9am, so please arrive early (from 8:30am). 
 
 A separate agenda will be published, but discussions will focus on the
 [HTTP/2.0 specification](http://http2.github.io/http2-spec/) and [related
@@ -41,6 +40,35 @@ the [Hamburg regional rail
 plan](http://www.hvv.de/en/timetables-lines-routes/plans-line-route-networks/usar/) for connections.
 
 Those traveling extensively within Germany may wish to purchase a [German Rail Pass](http://www.germanrailpasses.com/).
+
+Free parking is limited. It is possible to park close at the "Fish-Auction-Hall" for ~10 euros/day; another option is http://www.opg-parking.de/parken/Hamburg/parkhaus-holzhafen.aspx
+
+
+### Facilities
+
+There will be coffee and light refreshments each day. 
+
+The meeting is in the Adobe Elbe conference room. You will need to be escorted to the Elbe conference room. 
+The concierge should have a list of names, check off as you come in.
+
+Lunch can be purchased at the Adobe canteen next to the conference room, 6 EU, two choices (one vegetarian, one not).
+
+
+Please do not use the emergency exit. Please help keep the room neat.
+
+We will have a list of pre-registered attendees at the reception. Please check off your name when you arrive.
+(Normally guests must sign in.)
+
+Adobe uses CCTV at the facility. Recorded images ae managed by Adobe Corporate Security. Employees and visitors
+have a right to access your recorded images for the time they are retained. Please contact Adobe Corporate Security 
+at +1-408-536-4444 for assistance.
+
+Those who pre-registered should have access details for wireless access. On-site signup for network access will be possible.
+
+You can reach Larry Masinter by email, or text or phone +1-408-332-4290.
+
+
+
 
 ### Accommodation
 

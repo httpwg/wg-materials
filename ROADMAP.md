@@ -19,7 +19,7 @@
 * Interop Dashboard - September 2013
 * 9-11 October 2013 Interim - Seattle(?) US 
 * [November 2013 IETF](http://www.ietf.org/meeting/upcoming.html) - Vancouver CA
-* January 22-24 2013 Interim - Zurich CH
+* January 22-24 2014 Interim - Zurich CH
 * [March 2014 IETF](http://www.ietf.org/meeting/upcoming.html) - London UK
 * [July 2014 IETF](http://www.ietf.org/meeting/upcoming.html) - Toronto CA
 * [November 2014 IETF](http://www.ietf.org/meeting/upcoming.html) - Honolulu US

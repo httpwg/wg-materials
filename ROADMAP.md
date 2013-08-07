@@ -16,7 +16,7 @@
 
 * Second Implementation Drafts - 21 August 2013 (Editors)
 * Header Compression Interop Harness - 10 September 2013 (Herve, Jeff, Roberto, Fred)
-* North America Interim - Early October 2013
+* Interop Dashboard - September 2013
 * 9-11 October 2013 Interim - Seattle(?) US 
 * [November 2013 IETF](http://www.ietf.org/meeting/upcoming.html) - Vancouver CA
 * January 22-24 2013 Interim - Zurich CH

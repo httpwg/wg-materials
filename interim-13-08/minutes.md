@@ -1,23 +1,25 @@
+# HTTPbis Minutes
+
+Hamburg Interim Meeting
+
 ## Monday
 
-Mark showed a pretty picture of Berlin and Note Well
-Not clear if we can usefully do interop testing in Hamburg
+### Berlin Meeting Summary
 
-Several people have QA people testing HTTP2, but they don't seem to participate in HTTPBis discussions.
-
-Several companies rather
-
-Mark is talking about Berlin IETF summary
-
-In the next month or so outstanding issues on HTTP/1.1 should be closed. 4 weeks IETF LC, then 4 weeks till IESG telechat after
+In the next month or so outstanding issues on HTTP/1.1 should be closed. 4
+weeks IETF LC, then 4 weeks till IESG telechat after
 
 A new issue about use of TLS in HTTP/1.1 and HTTP/2.0
 
-Server have control about whether a connection is encrypted or not. Clients don't have much control. This need to change
+Server have control about whether a connection is encrypted or not. Clients
+don't have much control. This need to change
 
-A joint session with Transport Area people. Alison presented HTTP/2.0 issues from Transport prospective.
+A joint session with Transport Area people. Alison presented HTTP/2.0 issues
+from Transport prospective.
 
 It was a lively discussion. Transport people want to help HTTPBis.
+
+### Draft -04 Implementation
 
 Mark is showing wiki with the list of known implementations
 
@@ -132,15 +134,13 @@ Which seems what people want.
 
 Mark: "we love the TLS WG :-)"
 
-<Eliot Lear> is there an agreed time for the wg to break for lunch?
+### Issue # 1 (Upgrade mechanism)
 
-Issue # 1 (Upgrade mechanism)
-
-Issues are in GIT
+(Issues are in github)
 
 "Transport mapping" filter
 
-Issue 172
+### Issue 172
 
 "Set a baseline for TLS implementations".
 
@@ -158,7 +158,7 @@ TLS 1.2 is required, but this might evolve over time
 
 Twitter: we use 1.0 and 1.1/1.2 are current disabled.
 
-Issue # 133
+### Issue # 133
 
 "GOAWAY status code or similar meaning "don't use HTTP/2 when reconnecting" would be good"
 
@@ -194,7 +194,7 @@ Mark. N. going around the room asking who and how is going to use this
 
 Close the issue. Google people can play with this feature in SPDY 4. Then this can be discussed again.
 
-215
+###  Issue #215
 
 Side discussion about mapping to TCP minions
 
@@ -208,7 +208,7 @@ People are asking for a test suite
 
 Action item: Herve to start test corpus. Roberto will help.
 
-Issue 23
+### Issue #23
 
 Roberto: have a different compression context for :<header-field>s and the rest? This will help proxies to inspect/extract specific header fields
 
@@ -216,7 +216,8 @@ Roberto: have a different compression context for :<header-field>s and the rest?
 
 <molnarg> okay, agree that hard to enforce
 
-Issue # 187
+### Issue # 187
+
 "String Literal"
 
 <Barry Leiba> Discussing issue 11 in the compression spec.
@@ -228,8 +229,8 @@ Talking about disabling stream control
 
 ## Tuesday
 
-Most of Tuesday was spent on interoperability testing between implementations. At the end of the
-day, we discussed what was learned during the interop session.
+Most of Tuesday was spent on interoperability testing between implementations.
+At the end of the day, we discussed what was learned during the interop session.
 
 ## Wednesday
 
@@ -267,15 +268,13 @@ Decision is open an issue to change the spec to clearly define option 2 (allowed
  
 ### Mark - Next steps
  
-Do we want an Interim in Sept / Oct - Too much travel.
- 
 #### Document schedule
 
 - Updated implementation draft in 2 weeks.
 
 - Do a virtual interop a couple of weeks later over Jabber.  Set aside a day for this.
-·         Jeff - Compressor is the part that needs to most work.
-·         2nd interop event over Jabber on week of September 7th, focus on header compression.
+ -Jeff - Compressor is the part that needs to most work.
+ - 2nd interop event over Jabber on week of September 7th, focus on header compression.
 
 - Get drafts out by the 21st.  Header Compression and draft.
 Need a HC test suite - Mid September (20th)

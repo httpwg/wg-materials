@@ -285,7 +285,7 @@ Long discussion on dates for next face to face interim meeting
 
 - Lots of issues with Halloween and TPAC.
 
-- North American interim in mid-October instead of attached to IETF.  October 16, 17, 18.
+- North American interim in mid-October instead of attached to IETF.  October 9-11.
 
 - Day of Issues, Day of interop, 1/2 day of review.  Continental US.  Probably not east coast.
  

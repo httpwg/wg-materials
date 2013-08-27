@@ -59,7 +59,7 @@ number of ways to get to the venue:
 
 * Car rental is available at SEA.
 * [Uber](https://www.uber.com/cities/seattle) has a flat rate from SEA to
-  downtown Bellevue for US$65.
+  downtown Bellevue for US$65. It's about a 25 minute ride (without traffic).
 * The [ST Express
   560](http://www.soundtransit.org/Schedules/ST-Express-Bus/560?tab=Map) bus
   takes about an hour. It leaves from [door

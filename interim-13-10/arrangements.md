@@ -17,9 +17,13 @@ Wedneday.
 Those who wish to observe the meeting may also register, but we ask you to use
 your judgement in doing so. In particular, if you are planning to observe,
 consider whether other colleagues who will be actively participating can
-represent your views.
+represent your views. If we become constrained by available space, observers
+may be asked to sit at the edge of the room.
 
 If you wish to participate remotely, please indicate this in your registration.
+
+If you only plan to attend for part of the interim, please indicate that when
+you register.
 
 To register, please e-mail [Mark Nottingham](mailto:mnot@mnot.net) by 20
 September.
@@ -37,6 +41,7 @@ A separate agenda will be published, but tentatively:
   [issue](https://github.com/http2/http2-spec/issues) discussion (including
   those found on Wednesday)
 * Friday will be continuation of discussion and wrapup.
+
 
 ### Meeting Location
 

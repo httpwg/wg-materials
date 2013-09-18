@@ -1,6 +1,44 @@
-# HTTPbis Minutes
+# Minutes of the August 2013 HTTPbis Interim Meeting
 
-Hamburg Interim Meeting
+* [Agenda](https://github.com/http2/wg_materials/blob/master/interim-13-08/agenda.md)
+
+Chair: Mark Nottingham 
+
+Participants:
+* Patrick McManus (Mozilla)
+* Larry Masinter (Adobe)
+* Hasan Khalil (Google)
+* Roberto Peon (Google)
+* William Chan  (Google)
+* Julian Reschke (Greenbytes)
+* Alexey Melnikov (Isode)
+* Carsten Bormann (Universität Bremen)
+* Leif Hedstrom (Apple)
+* Martin Thomson (Microsoft)
+* Fred Akalin (Google)
+* Lars Eggert (Netapp)
+* Jan Algermissen (NORD)
+* Brian Raymor (Microsoft)
+* Reza Jalili (Adobe)
+* Rob Trace (Microsoft)
+* Jun Fujisawa (Canon)
+* Hirotaka Nakajima (W3C)
+* William Chow (Mobolize)
+* Herve Ruellan (Canon)
+* Kalyani Bogineni (Verizon)
+* Tatsuya Hayashi (Lepidum)
+* Mike Belshe (Twist)
+* Gabriel Montenegro (Microsoft)
+* Jeff Pinner (Twitter)
+* Emile Stephan (Orange)
+* Stephen Ludin (Akamai)
+* Shigeki Ohtsu (IIJ)
+* Yosuke Funahashi (Keio)
+
+Remote:
+* Gabor Molnar
+* Eliot Lear (Cisco)
+
 
 ## Monday
 

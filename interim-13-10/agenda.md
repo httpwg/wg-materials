@@ -10,6 +10,7 @@
 * [Hypertext Transfer Protocol version 2.0](http://tools.ietf.org/html/draft-ietf-httpbis-http2)
 * [HTTP/2.0 Header Compression](http://tools.ietf.org/wg/httpbis/draft-ietf-httpbis-header-compression/)
 * [A DNS Resource Record for Service Descriptions](http://tools.ietf.org/html/draft-lear-httpbis-svcinfo-rr)
+* [Profiles for Initial Server Settings](http://tools.ietf.org/html/draft-montenegro-httpbis-http2-server-profiles/)
 
 
 ## Schedule

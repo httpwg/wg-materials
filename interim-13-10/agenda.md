@@ -11,6 +11,7 @@
 * [HTTP/2.0 Header Compression](http://tools.ietf.org/wg/httpbis/draft-ietf-httpbis-header-compression/)
 * [A DNS Resource Record for Service Descriptions](http://tools.ietf.org/html/draft-lear-httpbis-svcinfo-rr)
 * [Profiles for Initial Server Settings](http://tools.ietf.org/html/draft-montenegro-httpbis-http2-server-profiles/)
+* [HTTP/2.0 Protocol Test](http://tools.ietf.org/html/draft-trace-httpbis-http2-test)
 
 
 ## Schedule
@@ -34,6 +35,15 @@
 ### FRIDAY 11 October 2013
 
     0900-1200 Morning Working Session
+
+
+## Agenda - Interop Sessions
+
+* Blue sheets
+* Introductions
+* Agenda Bashing
+* NOTE WELL
+* HTTP/2.0 Protocol Test draft
 
 
 ## Agenda - Working Sessions

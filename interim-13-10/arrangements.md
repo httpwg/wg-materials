@@ -40,12 +40,7 @@ We'll be meeting Wednesday 9 through Friday 11 October, 2013. Meetings will
 begin at 9AM each day, and end at approximately 5pm on Wednesday and Thursday.
 We plan to finish by 1pm on Friday.
 
-A separate agenda will be published, but tentatively:
-* Wednesday will be an interop / testing day
-* Thursday will be reserved for
-  [issue](https://github.com/http2/http2-spec/issues) discussion (including
-  those found on Wednesday)
-* Friday will be continuation of discussion and wrapup.
+See [the agenda](agenda.md) for full details.
 
 
 ### Meeting Location

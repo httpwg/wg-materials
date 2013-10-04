@@ -14,6 +14,9 @@
 * [HTTP/2.0 Protocol Test](http://tools.ietf.org/html/draft-trace-httpbis-http2-test)
 
 
+We'll be taking minutes on [Etherpad](http://etherpad.tools.ietf.org:9000/p/notes-13-10-interim-httpbis)
+
+
 ## Schedule
 
 ### WEDNESDAY 9 October 2013

@@ -2,7 +2,12 @@
 
 This is the arrangements page for the [HTTPbis Working
 Group](http://trac.tools.ietf.org/wg/httpbis/trac/wiki)'s fourth Interim
-Face-to-Face meeting, hosted by Microsoft Open Technologies (with participation from Microsoft product groups) in Bellevue, WA USA.
+Face-to-Face meeting, hosted by Microsoft Open Technologies (with participation
+from Microsoft product groups) in Bellevue, WA USA.
+
+See also:
+
+* [Agenda](agenda.md)
 
 ### Register
 

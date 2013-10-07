@@ -2,7 +2,12 @@
 
 This is the arrangements page for the [HTTPbis Working
 Group](http://trac.tools.ietf.org/wg/httpbis/trac/wiki)'s fourth Interim
-Face-to-Face meeting, hosted by Microsoft Open Technologies (with participation from Microsoft product groups) in Bellevue, WA USA.
+Face-to-Face meeting, hosted by Microsoft Open Technologies (with participation
+from Microsoft product groups) in Bellevue, WA USA.
+
+See also:
+
+* [Agenda](agenda.md)
 
 ### Register
 
@@ -12,7 +17,7 @@ activities to register.
 
 In particular, we especially encourage those who are involved with testing
 HTTP/2 implementations to attend, as we'll have a testing and interop day on
-Wedneday.
+Wednesday.
 
 Those who wish to observe the meeting may also register, but we ask you to use
 your judgement in doing so. In particular, if you are planning to observe,
@@ -35,12 +40,7 @@ We'll be meeting Wednesday 9 through Friday 11 October, 2013. Meetings will
 begin at 9AM each day, and end at approximately 5pm on Wednesday and Thursday.
 We plan to finish by 1pm on Friday.
 
-A separate agenda will be published, but tentatively:
-* Wednesday will be an interop / testing day
-* Thursday will be reserved for
-  [issue](https://github.com/http2/http2-spec/issues) discussion (including
-  those found on Wednesday)
-* Friday will be continuation of discussion and wrapup.
+See [the agenda](agenda.md) for full details.
 
 
 ### Meeting Location
@@ -53,7 +53,22 @@ USA.
 	Bellevue, WA 98004
 	USA
 
-Note that parking validation will be available, if necessary.
+On the 15th floor take the glass door that leads to the reception desk. It
+should not require a badge to open the door between 8AM-5PM. Pick up your
+visitor badges at reception.
+
+
+#### Meeting Rooms
+
+We have two large rooms that are side by side.
+
+10/9 and 10/10
+Lincoln Square/15200 – Overlake (Meeting)
+Lincoln Square/15104 - Enatai (Food and side meetings)
+
+10/11
+Lincoln Square/15100 – Meydenbauer (Meeting)
+Lincoln Square/15104 - Enatai (Food and side meetings)
 
 
 ### Transportation
@@ -73,6 +88,19 @@ number of ways to get to the venue:
   Square (take it to the final stop). One-way fare is US$3.50 (pay exact fare
   as you enter the bus).
 
+#### Visitor Parking
+
+[Details](http://www.bellevuesquare.com/images_cms/Directions_&_Parking.pdf)
+
+Visitors can pull a ticket at either the Lincoln Square or Bellevue Place
+garages and will receive validation from the receptionist on floor 15. Visitors
+parking in the Lincoln Square garage may only park on levels P4 or P5 and may
+not park in the Assisted Valet area. Visitors parking in Bellevue Place may
+only park on levels P4 or P5 and may self-park.
+
+Take the parking garage elevator up to the 1st floor and transfer to the
+Microsoft elevators - Floors 1-15.
+
 
 ### Accommodation
 
@@ -81,4 +109,16 @@ The closest hotels to the venue include:
 * [Westin Bellevue](http://www.westinbellevuehotel.com) - adjacent to the venue
 * [Hyatt Regency](http://www.bellevue.hyatt.com/en/hotel/home.html) - across the street
 * [Silver Cloud](http://www.silvercloud.com/bellevuedowntown/) - two blocks
+
+ 
+### Food
+ 
+8:30 AM: Fruit, Bagels, Donuts, and Coffee are available
+ 
+Lunch will be served on 10/9 and 10/10. Friday (10/11) is not provided since
+it’s a half day, but we can explore options if people are not rushing to the
+airport or other meetings.
+ 
+2:45 PM: Afternoon snacks are available on 10/9 and 10/10.
+
 

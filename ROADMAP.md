@@ -15,6 +15,7 @@
 ## Planned Milestones and Meetings
 
 * Second Implementation Drafts - 21 August 2013 (Editors)
+* QA/Interop/deployment list - August 2013
 * Header Compression Interop Harness - 10 September 2013 (Herve, Jeff, Roberto, Fred)
 * Interop Dashboard - September 2013
 * 9-11 October 2013 Interim - Seattle(?) US 

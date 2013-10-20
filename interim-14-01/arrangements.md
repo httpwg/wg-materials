@@ -73,4 +73,12 @@ Suggested hotels include:
 * [Hotel Europe Zurich](http://www.hoteleurope-zuerich.ch) - train with one change (or long walk + train)
 * [Airbnb](https://www.airbnb.com/s/Zurich--Switzerland) lists a number of properties
  
+ 
+### Local Considerations
+
+Zurich in January is likely to be even colder than you anticipate; please pack
+accordingly. For the unprepared, there is a shopping mall within a short
+(although cold) walk from the venue.
+
+
 

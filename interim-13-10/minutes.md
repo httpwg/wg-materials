@@ -2,6 +2,47 @@
 
 9-11 October 2013 - Seattle, WA USA
 
+Chair: Mark Nottingham
+
+Participants:
+* Martin Thomson (Microsoft)
+* Gabriel Montenegro (Microsoft)
+* Patrick McManus (Mozilla)
+* William Chan (Google)
+* Hasan Khalil (Google)
+* Salvatore Loreto (Ericcson)
+* Roberto Peon (Google)
+* Fred Akalin (Google)
+* Stephen Ludin (Akamai)
+* Nicholas Hurley (Mozilla)
+* Shigeki Ohtsu (IIJ)
+* Brian Raymor (Microsoft Open Tech)
+* Rob Trace (Microsoft)
+* Mike Bishop (Microsoft)
+* Osama Mazahir (Microsoft)
+* Matthew Cox (Microsoft)
+* Michelle Lai (Microsoft)
+* Jeff Mendoza (Microsoft)
+* Bryan Sullivan (AT&T)
+* James Godfrey (Bluecoat)
+* Birendra Keshari (Bluecoat)
+* Aruna Balasubramanian (U Washington)
+* Sophia Wang (U Washington)
+* Saurabh Kulkarni (Akamai)
+* Jason Duell (Mozilla)
+* Jeff Pinner (Twitter)
+* Herve Ruellan (Canon)
+* Martin Nilsson (Opera)
+* William Chow (Mobolize)
+
+Remote Participants:
+* Tony Hansen (AT&T)
+* Gabor Molnar
+* Emile Stephan (Orange)
+* Giri Mandyam (Qualcomm)
+* Leif Hedstrom (Apple)
+* Ilya Grigorik (Google)
+* Kalyani Bogineni (Verizon Wireless)
 
 ## WEDNESDAY 9 October 2013
 

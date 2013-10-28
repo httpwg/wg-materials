@@ -76,9 +76,10 @@ Suggested hotels include:
  
 ### Local Considerations
 
-Zurich in January is likely to be even colder than you anticipate; please pack
-accordingly. For the unprepared, there is a shopping mall within a short
-(although cold) walk from the venue.
+Zurich in January is likely to be [even colder than you
+anticipate](http://weatherspark.com/averages/32414/1/Zurich-Kloten-Zurich-Switze
+rland); please pack accordingly. For the unprepared, there is a shopping mall
+within a short (although cold) walk from the venue.
 
 
 

@@ -61,7 +61,8 @@ number of ways to get to the venue:
 * Zurich Flughafen is well-connected by Switzerland's national rail operator, [SBB](http://www.sbb.ch/en/home.html). See the [Zurich rail map](http://www.zvv.ch/opencms/export/sites/default/common-images/content-image-gallery/linien-zonen-pdfs/Liniennetzplan_ganzer_Verbund_2012.pdf) (pdf) for an overview.
 * [Uber](https://www.uber.com/cities/zurich) doesn't have a flat rate for their airport, but quotes a trip from the airport to the venue as approximately 32-41CHF.
 
-
+Cisco's offices are a short walk from the Wallisellen or Glattzentrum train stations.  There are trains directly
+From Zurich Main Station to Wallisellen that run frequently.
 
 ### Accommodation
 
@@ -71,6 +72,7 @@ Suggested hotels include:
 * [25hours Zurich West](http://www.25hours-hotels.com/zuerich/?lang=en) - a walk and then a short train ride
 * [Townhouse Hotel Zurich](http://townhouse.ch/en/) - short train ride
 * [Hotel Europe Zurich](http://www.hoteleurope-zuerich.ch) - train with one change (or long walk + train)
+* [Hilton Zürich Airport](http://www3.hilton.com/en/hotels/switzerland/hilton-zurich-airport-ZRHHITW/index.html) - short cab ride
 * [Airbnb](https://www.airbnb.com/s/Zurich--Switzerland) lists a number of properties
  
  
@@ -78,7 +80,7 @@ Suggested hotels include:
 
 Zurich in January is likely to be [even colder than you
 anticipate](http://weatherspark.com/averages/32414/1/Zurich-Kloten-Zurich-Switze
-rland); please pack accordingly. For the unprepared, there is a shopping mall
+rland); please pack accordingly. For the unprepared, [there is a shopping mall](http://www.glatt.ch/)
 within a short (although cold) walk from the venue.
 
 

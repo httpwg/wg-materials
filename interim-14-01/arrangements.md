@@ -30,7 +30,7 @@ If you only plan to attend for part of the interim, please indicate that when
 you register.
 
 To register, please e-mail [Mark Nottingham](mailto:mnot@mnot.net) by 03
-January.
+January. Please indicate any dietary restrictions when you register.
 
 
 ### Schedule and Agenda

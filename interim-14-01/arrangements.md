@@ -36,8 +36,7 @@ January. Please indicate any dietary restrictions when you register.
 ### Schedule and Agenda
 
 We'll be meeting Wednesday 22 through Friday 24 January, 2014. Meetings will
-begin at 9AM each day, and end at approximately 5pm on Wednesday and Thursday.
-We plan to finish by 1pm on Friday.
+begin at 9AM and end at 5pm on each day.
 
 See [the agenda](agenda.md) for full details.
 

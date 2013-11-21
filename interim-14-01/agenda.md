@@ -8,7 +8,7 @@
 ## Related Documents
 
 * [Hypertext Transfer Protocol version 2.0](http://tools.ietf.org/html/draft-ietf-httpbis-http2)
-* [HPACK: HTTP/2.0 Header Compression](http://tools.ietf.org/wg/httpbis/draft-ietf-httpbis-header-compression/)
+* [HPACK - Header Compression for HTTP/2.0](http://tools.ietf.org/html/draft-ietf-httpbis-header-compression)
 
 We'll be taking minutes on [Etherpad](http://etherpad.tools.ietf.org:9000/p/notes-14-01-interim-httpbis)
 

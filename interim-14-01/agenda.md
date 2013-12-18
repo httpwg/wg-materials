@@ -19,7 +19,7 @@ We'll be taking minutes on [Etherpad](http://etherpad.tools.ietf.org:9000/p/note
 
 	0830-0900 Reception
     0900-0915 Introduction
-    0900-1200 Morning Interop Session
+    0900-1200 Morning Working Session
     1200-1300 Lunch
     1300-1700 Afternoon Interop Session
 
@@ -28,19 +28,19 @@ We'll be taking minutes on [Etherpad](http://etherpad.tools.ietf.org:9000/p/note
     0830-0900 Reception
     0900-1200 Morning Working Session
     1200-1300 Lunch
-    1300-1500 Afternoon Working Session I
+    1300-1500 Afternoon Session (issue discussion or interop; TBD)
     1500-1530 Break
-    1530-1700 Afternoon Working Session II
+    1530-1700 Afternoon Session II (issue discussion or interop; TBD)
 	1900-2100 WG Dinner
 
 ### FRIDAY 24 January 2014
 
 	0830-0900 Reception
-	0900-1200 Morning Working Session
+	0900-1200 Morning Working Session (Security issues)
 	1200-1300 Lunch
-	1300-1500 Afternoon Working Session I
+	1300-1500 Afternoon Working Session I (Security issues)
 	1500-1530 Break
-	1530-1700 Afternoon Working Session II
+	1530-1700 Afternoon Working Session II (Security issues)
 
 
 ## Agenda - Interop Sessions

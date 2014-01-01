@@ -49,6 +49,7 @@ We'll be taking minutes on [Etherpad](http://etherpad.tools.ietf.org:9000/p/note
 * Introductions
 * Agenda Bashing
 * NOTE WELL
+* Testing effort [Brian Raymor]
 
 
 ## Agenda - Working Sessions

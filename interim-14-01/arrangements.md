@@ -10,27 +10,8 @@ See also:
 
 ### Register
 
-The goal of this interim meeting is interoperability testing and issue
-resolution. Therefore, we encourage those who are participating in these
-activities to register.
-
-In particular, we especially encourage those who are involved with testing
-HTTP/2 implementations to attend, as we'll have a testing and interop day on
-Wednesday.
-
-Those who wish to observe the meeting may also register, but we ask you to use
-your judgement in doing so. In particular, if you are planning to observe,
-consider whether other colleagues who will be actively participating can
-represent your views. If we become constrained by available space, observers
-may be asked to sit at the edge of the room.
-
-If you wish to participate remotely, please indicate this in your registration.
-
-If you only plan to attend for part of the interim, please indicate that when
-you register.
-
-To register, please e-mail [Mark Nottingham](mailto:mnot@mnot.net) by 03
-January. Please indicate any dietary restrictions when you register.
+Registration is now closed. If you have registered but cannot attend, please
+e-mail [Mark Nottingham](mailto:mnot@mnot.net) as soon as possible.
 
 
 ### Schedule and Agenda

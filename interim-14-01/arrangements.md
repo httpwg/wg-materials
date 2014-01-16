@@ -38,7 +38,7 @@ offices](http://goo.gl/maps/C9HJf) in Zurich, CH.
 The closest major airport is [ZRH](http://www.zurich-airport.com/). There are a
 number of ways to get to the venue:
 
-* Zurich Flughafen is well-connected by Switzerland's national rail operator, [SBB](http://www.sbb.ch/en/home.html). See the [Zurich rail map](http://www.zvv.ch/opencms/export/sites/default/common-images/content-image-gallery/linien-zonen-pdfs/Liniennetzplan_ganzer_Verbund_2012.pdf) (pdf) for an overview.
+* Zurich Flughafen is well-connected by Switzerland's national rail operator, [SBB](http://www.sbb.ch/en/home.html). See the [Zurich rail map](http://www.zvv.ch/opencms/export/sites/default/common-images/content-image-gallery/linien-zonen-pdfs/Liniennetzplan_ganzer_Verbund_2013.pdf) (pdf) for an overview.
 * [Uber](https://www.uber.com/cities/zurich) doesn't have a flat rate for their airport, but quotes a trip from the airport to the venue as approximately 32-41CHF.
 
 Cisco's offices are a short walk from the Wallisellen or Glattzentrum train

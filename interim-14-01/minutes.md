@@ -36,7 +36,7 @@ Participants:
 * Stephen Farrell
 * Sean Turner
 * Brian Smith (Mozilla)
-* Daniel Stenberg (Haxx) (remote)
+* Daniel Stenberg (Mozilla) (remote)
 * Julian Reschke (Greenbytes) (remote)
 
 ## Wednesday

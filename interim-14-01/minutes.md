@@ -38,6 +38,7 @@ Participants:
 * Brian Smith (Mozilla)
 * Daniel Stenberg (Mozilla) (remote)
 * Julian Reschke (Greenbytes) (remote)
+* Mike Bishop (Microsoft) (remote)
 
 ## Wednesday
 

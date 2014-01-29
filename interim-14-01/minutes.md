@@ -198,6 +198,13 @@ Hum was 50-50.
 
 Decided against. Unhandled SETTINGS MUST be ignored, though.
 
+### Issue 342 UTF-8 in URIs
+Mark and Pinner: make this a general header as a hint for both http 1.1 and 2.0
+
+Gab to submit a new draft and discuss in London
+
+Closed as it is not exclusively an HTTP/2 issue
+
 ### Issue 356 THE SETTINGS ARE TOO DAMN HIGH!
 
 Thomson says there is lots of wasted space in SETTINGS. Let's fix that.

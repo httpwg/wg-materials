@@ -1,0 +1,115 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>IETF 87 - HTTPbis -23 Changes Overview</title>
+    <style type="text/css">
+body {
+  color: black;
+  font-family: verdana, helvetica, arial, sans-serif;
+  font-size: 18pt;
+}
+h1 {
+  font-size: 36pt;
+}
+li {
+  margin-top: 0.5em;
+}
+q {
+  font-style: italic;  
+}
+.break {
+  page-break-before: always;
+}
+@page {
+  size: a4 landscape;
+}
+@page {
+  @bottom-left {
+       content: "Julian Reschke, greenbytes";
+  }
+  @bottom-right {
+       content: counter(page);
+  }
+  @top-center {
+       content: "IETF 87 - HTTPbis -23 Changes Overview";
+  }
+}
+    </style>
+  </head>
+  <body>
+    <h1>IETF 87 - HTTPbis -23 Changes Overview</h1>
+    <p>
+      <a href="mailto:julian.reschke@greenbytes.de">Julian Reschke</a>, greenbytes
+    </p>
+  
+    <h2 class="break">History</h2>
+    <ul>
+      <li>-19: published March 2012 (before IETF 83)</li>
+      <li>-20: published July 2012 (before IETF 84)</li>
+      <li>-21: published October 2012 (before IETF 85)</li>
+      <li>-22: published February 2013 (before IETF 86)</li>
+      <li>-23: published July 2013 (before IETF 87)</li>
+    </ul>
+    <p>
+    <em>First Working Group Last Call for Parts 4, 5, 6, and 7 ended April 12, 2012</em>
+    </p>
+    <p>
+    <em>First Working Group Last Call for Parts 1 &amp; 2 ended November 25, 2012</em>
+    </p>
+    <p>
+    <em>Second Working Group Last Call for Parts 4, 5, 6, and 7 ended November 25, 2012</em>
+    </p>
+    <p>
+    <em>Another Working Group Last Call for all parts ended April 30, 2013</em>
+    </p>
+    
+    <h2 class="break">Design Changes</h2>
+    <ul>
+       <li>BWS (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/442">Ticket 442</a>) -- trailing WS in field values is "obsolete", not "bad"</li>
+       <li>Ordering in Upgrade (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/445">Ticket 445</a>) -- made significant</li>
+       <li>Returning the freshest response (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/453">Ticket 453</a>) -- Allow selecting headers to be smart about selecting a negotiated representation</li>
+       <li>Registering x-gzip and x-deflate (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/457">Ticket 457</a>)</li>
+       <li>Via and gateways (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/460">Ticket 460</a>) -- they do not need to add "Via"</li>
+       <li>Vary and future requests (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/471">Ticket 471</a>)</li>
+    </ul>
+
+    <h2 class="break">Editorial Changes</h2>
+    <ul>
+       <li>Part1 should have a reference to TCP (RFC 793) (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/435">Ticket 435</a>)</li>
+       <li>explain list expansion in ABNF appendices (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/436">Ticket 436</a>)</li>
+       <li>incorrect example dates (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/437">Ticket 437</a>)</li>
+       <li>media type registration template issues (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/438">Ticket 438</a>)</li>
+       <li>terminology: mechanism vs framework vs scheme (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/439">Ticket 439</a>)</li>
+       <li>P1 editorial nits (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/441">Ticket 441</a>)</li>
+       <li>obs-fold language (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/444">Ticket 444</a>)</li>
+       <li>p1 editorial feedback (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/446">Ticket 446</a>)</li>
+       <li>HTTP and TCP name delegation (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/447">Ticket 447</a>)</li>
+       <li>Fallback for Accept-Language (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/448">Ticket 448</a>)</li>
+       <li>Receiving a higher minor HTTP version number (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/449">Ticket 449</a>)</li>
+       <li>HTTP(S) URIs and fragids (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/451">Ticket 451</a>)</li>
+       <li>Language-tag vs. language-range (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/456">Ticket 456</a>)</li>
+       <li>RFC2774 and method registrations (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/459">Ticket 459</a>)</li>
+       <li>Editorial suggestions (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/462">Ticket 462</a>)</li>
+       <li>Editorial suggestions (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/463">Ticket 463</a>)</li>
+       <li>placement of extension point considerations (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/464">Ticket 464</a>)</li>
+       <li>Mention 203 Non-Authoritative Information in p1 (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/465">Ticket 465</a>)</li>
+       <li>SHOULD and conformance (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/476">Ticket 476</a>)</li>
+       <li>Pipelining language (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/477">Ticket 477</a>)</li>
+       <li>proxy handling of a really bad Content-Length (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/482">Ticket 482</a>)</li>
+       <li>MUSTs and other feedback (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/485">Ticket 485</a>)</li>
+       <li>Selection based upon request target (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/488">Ticket 488</a>)</li>
+    </ul>
+
+    <h2 class="break">Next Steps</h2>
+    <p>
+      Four more tickets closed: <a href="http://trac.tools.ietf.org/wg/httpbis/trac/query?group=status&amp;milestone=24">Milestone 24</a>.
+    </p>
+    <p>
+      <a href="http://trac.tools.ietf.org/wg/httpbis/trac/report/3">21 open tickets</a> left, many of which editorial.
+    </p>
+    <p>
+      Resolve as many as possible soon, then IETF LC?
+    </p>
+  </body>
+</html>

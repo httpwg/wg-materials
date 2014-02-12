@@ -1,0 +1,58 @@
+HTTPbis Working Group Agenda - IETF 84
+
+Meeting chat: xmpp:httpbis@jabber.ietf.org?join
+Minutes: http://tools.ietf.org/wg/httpbis/minutes
+
+=================================================================
+
+TUESDAY, July 31, 2012
+1300-1500  Afternoon Session I  (Regency E)
+Audio: <http://ietf84streaming.dnsalias.net/ietf/ietf847.m3u>
+
+*   1 min - Blue sheets / scribe selection 
+*   4 min - Agenda bashing
+*  10 min - HTTP/1.1 draft -20 changes overview
+*   5 min - HTTP/1.1 status
+*  10 min - HTTP/1.1 p1 - p2 issues discussion
+            <http://trac.tools.ietf.org/wg/httpbis/trac/report/9>
+*  15 min - HTTP/1.1 p4 - p7 WGLC issues discussion
+            <http://trac.tools.ietf.org/wg/httpbis/trac/report/20>
+*  15 min - Summary of HTTP/2.0 Authentication expressions of interest
+*  45 min - Discussion of HTTP/2.0 Authentication proposals
+*  15 min - Related Work
+            draft-tbray-http-legally-restricted-status [Tim Bray]
+
+=================================================================
+
+WEDNESDAY, August 1, 2012
+1300-1500  Afternoon Session I  (Regency F)
+Audio: <http://ietf84streaming.dnsalias.net/ietf/ietf848.m3u>
+
+*   1 min - Blue sheets / scribe selection 
+*   4 min - Agenda bashing
+*  15 min - Summary of HTTP/2.0 Protocol expressions of interest
+*  45 min - Discussion of HTTP/2.0 Protocol proposals
+*  45 min - Charter Discussion
+*  10 min - Wrap-up
+
+=================================================================
+
+Recommended Reading for HTTP/1.x:
+ http://www.ietf.org/internet-drafts/
+    draft-ietf-httpbis-p1-messaging-20
+    draft-ietf-httpbis-p2-semantics-20
+    draft-ietf-httpbis-p4-conditional-20
+    draft-ietf-httpbis-p5-range-20
+    draft-ietf-httpbis-p6-cache-20
+    draft-ietf-httpbis-p7-auth-20
+    draft-ietf-httpbis-method-registrations-08
+    draft-ietf-httpbis-authscheme-registrations-03
+
+Recommended Reading for HTTP/2.x:
+ http://trac.tools.ietf.org/wg/httpbis/trac/wiki/Http2Proposals
+ http://trac.tools.ietf.org/wg/httpbis/trac/wiki/HttpAuthProposals
+ 
+Other background material:
+ http://www.ietf.org/html.charters/httpbis-charter.html
+ http://trac.tools.ietf.org/wg/httpbis/trac/wiki 
+ http://tools.ietf.org/html/draft-tbray-http-legally-restricted-status

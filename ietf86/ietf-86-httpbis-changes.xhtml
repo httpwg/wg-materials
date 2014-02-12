@@ -1,0 +1,154 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>IETF 86 - HTTPbis -22 Changes Overview</title>
+    <style type="text/css">
+body {
+  color: black;
+  font-family: verdana, helvetica, arial, sans-serif;
+  font-size: 18pt;
+}
+h1 {
+  font-size: 36pt;
+}
+li {
+  margin-top: 0.5em;
+}
+q {
+  font-style: italic;  
+}
+.break {
+  page-break-before: always;
+}
+@page {
+  size: a4 landscape;
+}
+@page {
+  @bottom-left {
+       content: "Julian Reschke, greenbytes";
+  }
+  @bottom-right {
+       content: counter(page);
+  }
+  @top-center {
+       content: "IETF 86 - HTTPbis -22 Changes Overview";
+  }
+}
+    </style>
+  </head>
+  <body>
+    <h1>IETF 86 - HTTPbis -22 Changes Overview</h1>
+    <p>
+      <a href="mailto:julian.reschke@greenbytes.de">Julian Reschke</a>, greenbytes
+    </p>
+  
+    <h2 class="break">History</h2>
+    <ul>
+      <li>-18: published January 2012</li>
+      <li>-19: published March 2012 (before IETF 83)</li>
+      <li>-20: published July 2012 (before IETF 84)</li>
+      <li>-21: published October 2012 (before IETF 85)</li>
+      <li>-22: published February 2013 (before IETF 86)</li>
+    </ul>
+    <p>
+    <em>First Working Group Last Call for Parts 4, 5, 6, and 7 ended April 12, 2012</em>
+    </p>
+    <p>
+    <em>First Working Group Last Call for Parts 1 &amp; 2 ended November 25, 2012</em>
+    </p>
+    <p>
+    <em>Second Working Group Last Call for Parts 4, 5, 6, and 7 ended November 25, 2012</em>
+    </p>
+    
+    <h2 class="break">Changes - General</h2>
+    <p>
+      Lots of rewrites/rearrangements in Parts 1 &amp; 2, plus...:
+    </p>
+
+    <h2 class="break">Changes - P1</h2>
+    <ul>
+       <li>Cite HTTPS URI scheme definition (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/128">Ticket 128</a>)</li>
+       <li>mention of "proxies" in section about caches (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/389">Ticket 389</a>)</li>
+       <li>use of ABNF terms from RFC 3986 (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/390">Ticket 390</a>)</li>
+       <li>editorial improvements to message length definition (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/392">Ticket 392</a>)</li>
+       <li>userinfo in absolute form of request target (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/393">Ticket 393</a>)</li>
+       <li>when can authority be empty or undefined? (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/394">Ticket 394</a>)</li>
+       <li>Connection header field MUST vs SHOULD (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/395">Ticket 395</a>)</li>
+       <li>editorial improvements to persistent connections section (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/396">Ticket 396</a>)</li>
+       <li>URI normalization vs empty path (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/397">Ticket 397</a>)</li>
+       <li>p1 feedback (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/408">Ticket 408</a>)</li>
+       <li>is parsing OBS-FOLD mandatory? (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/409">Ticket 409</a>)</li>
+       <li>HTTPS and Shared Caching (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/410">Ticket 410</a>)</li>
+       <li>Requirements for recipients of ws between start-line and first header field (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/411">Ticket 411</a>)</li>
+       <li>SP and HT when being tolerant (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/412">Ticket 412</a>)</li>
+       <li>Message Parsing Strictness (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/414">Ticket 414</a>)</li>
+       <li>"Render" (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/415">Ticket 415</a>)</li>
+       <li>Explicitly Hop-by-Hop (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/416">Ticket 416</a>)</li>
+       <li>Registering Connection Tokens (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/417">Ticket 417</a>)</li>
+       <li>No-Transform (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/418">Ticket 418</a>)</li>
+       <li>p2 editorial feedback (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/419">Ticket 419</a>)</li>
+       <li>Content-Length SHOULD be sent (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/420">Ticket 420</a>)</li>
+       <li>origin-form does not allow path starting with "//" (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/431">Ticket 431</a>)</li>
+       <li>ambiguity in part 1 example (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/433">Ticket 433</a>)</li>
+    </ul>
+
+    <h2 class="break">Changes - P2</h2>
+    <ul> 
+       <li>ETag (and other metadata) in status messages (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/22">Ticket 22</a>)</li>
+       <li>Conditional GET text (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/96">Ticket 96</a>)</li>
+       <li>Clarify description of 405 (Not Allowed) (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/146">Ticket 146</a>)</li>
+       <li>Allowing heuristic caching for new status codes (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/223">Ticket 223</a>)</li>
+       <li>method semantics: retrieval/representation (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/315">Ticket 315</a>)</li>
+       <li>User confirmation for unsafe methods (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/388">Ticket 388</a>)</li>
+       <li>transferring URIs with userinfo in payload (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/391">Ticket 391</a>)</li>
+       <li>Tentative Status Codes (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/404">Ticket 404</a>)</li>
+       <li>No-Transform (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/418">Ticket 418</a>)</li>
+       <li>p2 editorial feedback (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/419">Ticket 419</a>)</li>
+       <li>Absence of Accept-Encoding (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/424">Ticket 424</a>)</li>
+       <li>p2 editorial feedback (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/426">Ticket 426</a>)</li>
+       <li>Accept-Language ordering for identical qvalues (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/428">Ticket 428</a>)</li>
+       <li>Review Cachability of Status Codes WRT "Negative Caching" (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/432">Ticket 432</a>)</li>
+       <li>mention in header field considerations that leading/trailing WS is lossy (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/434">Ticket 434</a>)</li>
+    </ul>
+
+    <h2 class="break">Changes - P3</h2>
+    <p>
+      <em>THERE IS NO PART 3!</em>
+    </p>
+
+    <h2>Changes - P4</h2>
+    <ul>
+       <li>Conditional GET text (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/96">Ticket 96</a>)</li>
+       <li>Optionality of Conditional Request Support (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/350">Ticket 350</a>)</li>
+       <li>Conditional Requests editorial suggestions (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/366">Ticket 366</a>)</li>
+       <li>unclear prose in definition of 304 (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/384">Ticket 384</a>)</li>
+       <li>ETags and Conneg (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/401">Ticket 401</a>)</li>
+       <li>Comparison function for If-Match and If-None-Match (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/402">Ticket 402</a>)</li>
+       <li>304 without validator (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/406">Ticket 406</a>)</li>
+       <li>If-Match and 428 (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/427">Ticket 427</a>)</li>
+    </ul>
+     
+    <h2 class="break">Changes - P5</h2>
+    <ul>
+       <li>Security consideration: range flooding (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/175">Ticket 175</a>)</li>
+       <li>Allowing heuristic caching for new status codes (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/223">Ticket 223</a>)</li>
+       <li>Add limitations to Range to reduce its use as a denial-of-service tool (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/311">Ticket 311</a>)</li>
+       <li>p5 feedback (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/405">Ticket 405</a>)</li>
+       <li>416 and multipart/byteranges (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/407">Ticket 407</a>)</li>
+    </ul>
+     
+    <h2>Changes - P6</h2>
+    <ul>
+       <li>Allowing heuristic caching for new status codes (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/223">Ticket 223</a>)</li>
+       <li>304 without validator (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/406">Ticket 406</a>)</li>
+       <li>No-Transform (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/418">Ticket 418</a>)</li>
+       <li>definition public cache-control directive is incompatible with RFC2616 (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/430">Ticket 430</a>)</li>
+    </ul>
+    
+    <h2>Changes - P7</h2>
+    <ul>
+       <li>Authentication and caching - max-age (<a href="http://tools.ietf.org/wg/httpbis/trac/ticket/403">Ticket 403</a>)</li>
+    </ul>
+  </body>
+</html>

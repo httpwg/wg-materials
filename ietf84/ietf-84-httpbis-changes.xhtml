@@ -1,0 +1,118 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>IETF 84 - HTTPbis -16/-17/-18/-19 Changes Overview</title>
+    <style type="text/css">
+body {
+  color: black;
+  font-family: verdana, helvetica, arial, sans-serif;
+  font-size: 18pt;
+}
+h1 {
+  font-size: 36pt;
+}
+li {
+  margin-top: 0.5em;
+}
+q {
+  font-style: italic;  
+}
+.break {
+  page-break-before: always;
+}
+@page {
+  size: a4 landscape;
+}
+@page {
+  @bottom-left {
+       content: "Julian Reschke, greenbytes";
+  }
+  @bottom-right {
+       content: counter(page);
+  }
+  @top-center {
+       content: "IETF 84 - HTTPbis -20 Changes Overview";
+  }
+}
+    </style>
+  </head>
+  <body>
+    <h1>IETF 84 - HTTPbis -20 Changes Overview</h1>
+    <p>
+      <a href="mailto:julian.reschke@greenbytes.de">Julian Reschke</a>, greenbytes
+    </p>
+  
+    <h2 class="break">History</h2>
+    <ul>
+      <li>-16: published August 2011 (after IETF 81)</li>
+      <li>-17: published November 2011 (before IETF 82, WG did not meet)</li>
+      <li>-18: published January 2012</li>
+      <li>-19: published March 2012 (before IETF 83)</li>
+      <li>-20: published July 2012 (before IETF 84)</li>
+    </ul>
+    <p>
+    <em>Working Group Last Call for Parts 4, 5, 6, and 7 ended April 12, 2012</em>
+    </p>
+    
+    <h2 class="break">Changes - General</h2>
+    <ul>
+       <li>merge P2 and P3 (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/351">Ticket 351</a>)</li>
+       <li>ABNF requirements for recipients (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/361">Ticket 361</a>)</li>
+       <li>make ABNF requirements consistent (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/362">Ticket 362</a>)</li>
+       <li>note introduction of new IANA registries as normative changes (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/368">Ticket 368</a>)</li>
+    </ul>
+
+    <h2 class="break">Part 1</h2>
+    <ul>
+       <li>make IANA policy definitions consistent (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/346">Ticket 346</a>)</li>
+       <li>clarify connection header field values are case-insensitive (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/359">Ticket 359</a>)</li>
+       <li>Reference to ISO-8859-1 is informative (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/374">Ticket 374</a>)</li>
+    </ul>
+
+    <h2>Part 2</h2>
+    <ul>
+       <li>should there be a permanent variant of 307 (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/312">Ticket 312</a>)</li>
+       <li>clarify that 201 can imply *multiple* resources were created (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/347">Ticket 347</a>)</li>
+       <li>Capturing more information in the method registry (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/364">Ticket 364</a>) (<em>...but what about LINK and UNLINK...?</em>)</li>
+    </ul>
+
+    <h2 class="break">Part 4 - WGLC</h2>
+    <ul>
+       <li>Need to clarify eval order/interaction of conditional headers (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/241">Ticket 241</a>)</li>
+       <li>Required headers on 304 and 206 (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/345">Ticket 345</a>)</li>
+       <li>Optionality of Conditional Request Support (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/350">Ticket 350</a>)</li>
+       <li>ETags and Conditional Requests (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/354">Ticket 354</a>)</li>
+       <li>Rare cases (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/363">Ticket 363</a>)</li>
+       <li>Conditional Request Security Considerations (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/365">Ticket 365</a>)</li>
+       <li>If-Modified-Since lacks definition for method != GET (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/371">Ticket 371</a>)</li>
+       <li>refactor conditional header field descriptions (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/372">Ticket 372</a>)</li>
+    </ul>
+
+    <h2>Part 5 - WGLC</h2>
+    <ul>
+       <li>ABNF list expansion code problem (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/358">Ticket 358</a>)</li>
+       <li>reserve "none" as byte range unit (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/367">Ticket 367</a>)</li>
+       <li>range units vs leading zeroes vs size (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/369">Ticket 369</a>)</li>
+    </ul>
+    
+    <h2 class="break">Part 6 - WGLC</h2>
+    <ul>
+       <li>untangle Cache-Control ABNF (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/307">Ticket 307</a>)</li>
+       <li>Multiple values in Cache-Control header fields (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/353">Ticket 353</a>)</li>
+       <li>Case sensitivity of header fields in CC values (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/355">Ticket 355</a>)</li>
+       <li>Spurious "MAYs" (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/356">Ticket 356</a>)</li>
+       <li>enhance considerations for new cache control directives (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/360">Ticket 360</a>)</li>
+       <li>broken prose in description of "Vary" (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/373">Ticket 373</a>)</li>
+       <li>"Most Conservative" (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/375">Ticket 375</a>) (in <em>-21</em>)</li>
+    </ul>
+    
+    <h2>Part 7 - WGLC</h2>
+    <ul>
+       <li>Realms and scope (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/348">Ticket 348</a>)</li>
+       <li>Strength (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/349">Ticket 349</a>)</li>
+       <li>Authentication exchanges (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/357">Ticket 357</a>)</li>
+       <li>rename b64token for clarity (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/376">Ticket 376</a>) (in <em>-21</em>)</li>
+    </ul>
+  </body>
+</html>

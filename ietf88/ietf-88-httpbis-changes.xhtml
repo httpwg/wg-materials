@@ -1,0 +1,147 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>IETF 88 - HTTPbis -24 Changes Overview</title>
+    <style type="text/css">
+body {
+  color: black;
+  font-family: verdana, helvetica, arial, sans-serif;
+  font-size: 18pt;
+}
+h1 {
+  font-size: 36pt;
+}
+li {
+  margin-top: 0.5em;
+}
+q {
+  font-style: italic;  
+}
+.break {
+  page-break-before: always;
+}
+@page {
+  size: a4 landscape;
+}
+@page {
+  @bottom-left {
+       content: "Julian Reschke, greenbytes";
+  }
+  @bottom-right {
+       content: counter(page);
+  }
+  @top-center {
+       content: "IETF 88 - HTTPbis -24 Changes Overview";
+  }
+}
+    </style>
+  </head>
+  <body>
+    <h1>IETF 88 - HTTPbis -24 Changes Overview</h1>
+    <p>
+      <a href="mailto:julian.reschke@greenbytes.de">Julian Reschke</a>, greenbytes
+    </p>
+  
+    <h2 class="break">History</h2>
+    <ul>
+      <li>-20: published July 2012 (before IETF 84)</li>
+      <li>-21: published October 2012 (before IETF 85)</li>
+      <li>-22: published February 2013 (before IETF 86)</li>
+      <li>-23: published July 2013 (before IETF 87)</li>
+      <li>-24: published September 2013 (between IETF 87 and 88)</li>
+    </ul>
+    <p>
+    <em>First Working Group Last Call for Parts 4, 5, 6, and 7 ended April 12, 2012</em>
+    </p>
+    <p>
+    <em>First Working Group Last Call for Parts 1 &amp; 2 ended November 25, 2012</em>
+    </p>
+    <p>
+    <em>Second Working Group Last Call for Parts 4, 5, 6, and 7 ended November 25, 2012</em>
+    </p>
+    <p>
+    <em>Another Working Group Last Call for all parts ended April 30, 2013</em>
+    </p>
+    <p>
+    <em>IETF Last Call ends November 4, 2013</em>
+    </p>
+    
+    <h2 class="break">P1</h2>
+    <ul>
+       <li>chunk-extensions (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/343">Ticket 343</a>)</li>
+       <li>Fine-Tuning when Upgrade takes effect (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/497">Ticket 497</a>)</li>
+       <li>MUST fix Content-Length? (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/483">Ticket 483</a>)</li>
+       <li>MUSTs and other feedback (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/484">Ticket 484</a>)</li>
+       <li>list notation defined in appendix (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/492">Ticket 492</a>)</li>
+    </ul>
+
+    <h2 class="break">P2</h2>
+    <ul>
+       <li>400 response isn't generic (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/303">Ticket 303</a>)</li>
+       <li>Requirements upon proxies for Expect (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/458">Ticket 458</a>)</li>
+       <li>Expect/Continue and "final" status codes (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/467">Ticket 467</a>)</li>
+       <li>Expectation Extensions (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/468">Ticket 468</a>)</li>
+       <li>does 205 allow chunked encoding? (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/491">Ticket 491</a>)</li>
+       <li>p2 Editorial feedback (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/450">Ticket 450</a>)</li>
+       <li>Content-Length in HEAD responses (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/452">Ticket 452</a>)</li>
+       <li>Editorial for Expect/Continue (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/466">Ticket 466</a>)</li>
+       <li>MUSTs and other feedback (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/478">Ticket 478</a>)</li>
+       <li>Resubmission of 403 (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/487">Ticket 487</a>)</li>
+    </ul>
+
+    <h2 class="break">P4</h2>
+    <ul>
+       <li>PUT + If-Match over-constrained? (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/455">Ticket 455</a>)</li>
+       <li>Conditionals and caches (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/498">Ticket 498</a>)</li>
+       <li>MUSTs and other feedback (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/479">Ticket 479</a>)</li>
+       <li>p4 editorial nits (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/495">Ticket 495</a>)</li>
+    </ul>
+
+    <h2>P5</h2>
+    <ul>
+       <li>is P5's definition of strong validator consistent with P4? (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/489">Ticket 489</a>)</li>
+       <li>p5 editorial comments (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/490">Ticket 490</a>)</li>
+    </ul>
+
+    <h2>P6</h2>
+    <ul>
+       <li>Requiring proxies to process warn-date (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/486">Ticket 486</a>)</li>
+       <li>add Warning header field examples (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/496">Ticket 496</a>)</li>
+    </ul>
+
+    <h2 class="break">P7</h2>
+    <ul>
+       <li>Forwarding Proxy-* (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/473">Ticket 473</a>)</li>
+       <li>MUSTs and other feedback (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/481">Ticket 481</a>)</li>
+    </ul>
+
+    <h2>non-specific</h2>
+    <ul>
+       <li>Strengthening SHOULDs (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/475">Ticket 475</a>)</li>
+       <li>Uniform terminology (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/234">Ticket 234</a>)</li>
+       <li>Review SHOULD-level requirements (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/271">Ticket 271</a>)</li>
+       <li>What is "Cacheable"? (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/470">Ticket 470</a>)</li>
+       <li>Misused SHOULDs (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/472">Ticket 472</a>)</li>
+       <li>"changes from rfc 2616" needs to be sorted (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/493">Ticket 493</a>)</li>
+    </ul>
+
+    <h2 class="break">Next Steps</h2>
+    <p>
+      As of November 1, received mainly editorial feedback from APPSDIR and SECDIR review, plus
+      IANA feedback. See <a href="http://trac.tools.ietf.org/wg/httpbis/trac/report/3">Open Issues</a>.
+    </p>
+    <p>
+      Resolve remaining IETF Last Call comments - many already addressed in SVN:
+    </p>
+    <ul>
+      <li><a href="http://greenbytes.de/tech/webdav/draft-ietf-httpbis-p1-messaging-latest-from-previous.diff.html">P1 diffs</a></li>
+      <li><a href="http://greenbytes.de/tech/webdav/draft-ietf-httpbis-p2-semantics-latest-from-previous.diff.html">P2 diffs</a></li>
+      <li><a href="http://greenbytes.de/tech/webdav/draft-ietf-httpbis-p4-conditional-latest-from-previous.diff.html">P4 diffs</a></li>
+      <li><a href="http://greenbytes.de/tech/webdav/draft-ietf-httpbis-p5-range-latest-from-previous.diff.html">P5 diffs</a></li>
+      <li><a href="http://greenbytes.de/tech/webdav/draft-ietf-httpbis-p6-cache-latest-from-previous.diff.html">P6 diffs</a></li>
+      <li><a href="http://greenbytes.de/tech/webdav/draft-ietf-httpbis-p7-auth-latest-from-previous.diff.html">P7 diffs</a></li>
+    </ul>
+    
+  </body>
+</html>

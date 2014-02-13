@@ -17,9 +17,10 @@ facilities.
 
 We'll be meeting on Saturday, 8 March 2014 from 9:30am until 4:30pm.
 
-The agenda will be discussion of outstanding issues against HTTP/2, with the
-possibility of interop. Overall, though, the day will be self-organising, with
-topics covered depending on the interests of those attending.
+The agenda will be discussion of [outstanding issues against
+HTTP/2](https://github.com/http2/http2-spec/issues), with the possibility of
+interop. Overall, though, the day will be self-organising, with topics covered
+depending on the interests of those attending.
 
 
 ### Meeting Location

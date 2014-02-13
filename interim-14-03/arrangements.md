@@ -1,4 +1,4 @@
-## HTTPbis Working Group Interim Meeting - January 2014
+## HTTPbis Working Group Design Team Meeting -March 2014
 
 This is the arrangements page for the [HTTPbis Working
 Group](http://trac.tools.ietf.org/wg/httpbis/trac/wiki)'s Design Team meeting,

@@ -22,11 +22,12 @@ Related Reading:
 
 *   5 min - Zurich meeting summary
 *   5 min - HTTP/2 implementation Status summary
+*   5 min - HTTP/2 Local Activity report [Hirotaka Nakajima]
 *  10 min - HTTP/2 editor's summary and questions [Martin Thomson]
 *   5 min - ALPN update [???]
    <https://datatracker.ietf.org/doc/draft-ietf-tls-applayerprotoneg/>
    <https://github.com/http2/http2-spec/wiki/ALPN-Status>
-*  70 min - HTTP/2 issues
+*  65 min - HTTP/2 issues
    <https://github.com/http2/http2-spec/issues?labels=design&state=open>
    Including (but not limited to):
 		    - #270 Priority Levelling

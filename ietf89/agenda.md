@@ -9,6 +9,7 @@ Related Reading:
 * draft-ietf-httpbis-header-compression
 * draft-nottingham-httpbis-alt-svc
 * draft-chan-http2-stream-dependencies
+* draft-montenegro-httpbis-uri-encoding
 
 
 ## MON 3 March 2014 - 13:00-15:00
@@ -27,13 +28,23 @@ Related Reading:
    <https://github.com/http2/http2-spec/wiki/ALPN-Status>
 *  70 min - HTTP/2 issues
    <https://github.com/http2/http2-spec/issues?labels=design&state=open>
+   Including (but not limited to):
+		    - #270 Priority Levelling
+			- #315 HTTP:// URIs over TLS
+			- #349 Load Asymmetry
+			- #359 Connection Coalescing
+			- #373 HPACK Vulnerabilities
+			- #381 DNS-based Upgrade
+			- #386 WebSockets
 
 
 ## WED 5 March 2014 - 13:00-15:00
 
-*    2 min - Blue sheets / scribe selection / NOTE WELL
-*    3 min - Agenda bashing
+*   2 min - Blue sheets / scribe selection / NOTE WELL
+*   3 min - Agenda bashing
 
-*  100 min - HTTP/2 issues (continued)
-*   15 min - Wrap-up / next steps / future meetings
+*  85 min - HTTP/2 issues (continued)
+*  15 min - URI Encoding hints for HTTP
+   <http://tools.ietf.org/html/draft-montenegro-httpbis-uri-encoding>
+*  15 min - Wrap-up / next steps / future meetings
 

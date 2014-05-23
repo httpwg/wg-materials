@@ -10,23 +10,7 @@ See also:
 
 ### Register
 
-The goal of this interim meeting is interoperability testing and issue
-resolution. Therefore, we encourage those who are participating in these
-activities to register.
-
-Those who wish to observe the meeting may also register, but we ask you to use
-your judgement in doing so. In particular, if you are planning to observe,
-consider whether other colleagues who will be actively participating can
-represent your views. If we become constrained by available space, observers
-may be asked to sit at the edge of the room, on a space available basis.
-
-If you wish to participate remotely, please indicate this in your registration.
-
-If you only plan to attend for part of the interim, please indicate that when
-you register.
-
-To register, please e-mail [Mark Nottingham](mailto:mnot@mnot.net) by 03 May.
-Please indicate any dietary restrictions when you register.
+Registration for this meeting is now closed.
 
 ### Schedule and Agenda
 
@@ -72,7 +56,7 @@ lines, and many others are nearby.
 
 ### Accommodation
 
-New York has a reasonable selection of hotels, including:
+New York has a selection of hotels, including:
 
 * [Hudson](https://www.morganshotelgroup.com/hudson/hudson-new-york) - a ten-minute ride on the A or C train
 * [6 Columbus](http://www.sixtyhotels.com/6columbus) - ten minutes on the A or C

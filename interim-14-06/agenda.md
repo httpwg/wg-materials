@@ -22,7 +22,7 @@ We'll be taking minutes on [Etherpad](http://etherpad.tools.ietf.org:9000/p/note
     0900-1200 Morning Working Session
     1200-1300 Lunch
     1300-1700 Afternoon Interop Session
-	1900-2100 WG Dinner
+    
 
 ### FRIDAY 6 June 2014
 

@@ -77,6 +77,7 @@ See the [Issues List](https://github.com/http2/http2-spec/issues?milestone=&page
 * [Indicating Chosen Service](https://github.com/http2/http2-spec/issues/443)
   - proposal: [474](https://github.com/http2/http2-spec/issues/474)
 * [Flusing Alternative Service Cache](https://github.com/http2/http2-spec/issues/444)
+* [Alt-Svc header host restriction](https://github.com/http2/http2-spec/issues/492)
 * [Intermediaries and Alt-Svc](https://github.com/http2/http2-spec/issues/462)
 * [Refining Prior Knowledge](https://github.com/http2/http2-spec/issues/418)
   - proposal: [420](https://github.com/http2/http2-spec/issues/420)

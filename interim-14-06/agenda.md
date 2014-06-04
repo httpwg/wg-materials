@@ -54,44 +54,50 @@ on any outstanding editors' questions.
 
 See the [Issues List](https://github.com/http2/http2-spec/issues?milestone=&page=1&state=open).
 
-* 95: Frame Type Extensibility
+#### Extensibility
 
-* 413: Account for Proxies
+* [Frame Type Extensibility](https://github.com/http2/http2-spec/issues/95)
+* [Websockets](https://github.com/http2/http2-spec/issues/386)
 
-* 460: Requiring clients to support content-codings
+#### Content Compression and Encoding
+* [Requiring clients to support content-codings](https://github.com/http2/http2-spec/issues/460)
   - proposal: 472
-* 424: Support for GZIP at the server
-* 423: Security Implications of GZIP
-* 466: Compress segments rather than frames
+* [Support for GZIP at the server](https://github.com/http2/http2-spec/issues/424)
+* [Security Implications of GZIP](https://github.com/http2/http2-spec/issues/423)
+* [Compress segments rather than frames](https://github.com/http2/http2-spec/issues/466)
 
-* 443: Indicating Chosen Service
-  - proposal: 474
-* 444: Flusing Alternative Service Cache
-* 462: Intermediaries and Alt-Svc
-
-* 458: Race Condition in Shutdown when proxying
-  - proposal: 475
-* 468: Sending Priority for closed streams
-  - proposal: 489
-* 436: Enable weight of 0
-
-* 480: Headers and Flow Control
+#### Header Compression
+* [Headers and Flow Control](https://github.com/http2/http2-spec/issues/480)
   - see also: 482
   - see also: 456
-* 485: Negotiate "no huffman"
-* 481: Allow intervening DATA frames
+* [Negotiate "no huffman"](https://github.com/http2/http2-spec/issues/485)
+* [Allow intervening DATA frames](https://github.com/http2/http2-spec/issues/481)
 
-* 484: State Diagram
-
-* 490: Forbid coalescing
-* 315: HTTP:// URLs over TLS
-* 363: TLS Renegotiation
-* 491: Restrict cipher suite selection
-
-* 418: Refining Prior Knowledge
+#### Negotiation / Upgrade
+* [Indicating Chosen Service](https://github.com/http2/http2-spec/issues/443)
+  - proposal: 474
+* [Flusing Alternative Service Cache](https://github.com/http2/http2-spec/issues/444)
+* [Intermediaries and Alt-Svc](https://github.com/http2/http2-spec/issues/462)
+* [Refining Prior Knowledge](https://github.com/http2/http2-spec/issues/418)
   - proposal: 420
 
-* 386: Websockets
+#### Stream Handling
+* [Race Condition in Shutdown when proxying](https://github.com/http2/http2-spec/issues/458)
+  - proposal: 475
+* [Sending Priority for closed streams](https://github.com/http2/http2-spec/issues/468)
+  - proposal: 489
+* [Enable weight of 0](https://github.com/http2/http2-spec/issues/436)
+
+#### Editorial(-ish)
+* [Account for Proxies](https://github.com/http2/http2-spec/issues/413)
+* [State Diagram](https://github.com/http2/http2-spec/issues/484)
+
+#### Security
+* [Forbid coalescing](https://github.com/http2/http2-spec/issues/490)
+* [HTTP:// URLs over TLS](https://github.com/http2/http2-spec/issues/315)
+* [TLS Renegotiation](https://github.com/http2/http2-spec/issues/363)
+* [Restrict cipher suite selection](https://github.com/http2/http2-spec/issues/491)
+
 
 
 ### Other Issues and Deliverables

@@ -54,44 +54,44 @@ on any outstanding editors' questions.
 
 See the [Issues List](https://github.com/http2/http2-spec/issues?milestone=&page=1&state=open).
 
-* #95: Frame Type Extensibility
+* 95: Frame Type Extensibility
 
-* #413: Account for Proxies
+* 413: Account for Proxies
 
-* #460: Requiring clients to support content-codings
-  - proposal: #472
-* #424: Support for GZIP at the server
-* #423: Security Implications of GZIP
-* #466: Compress segments rather than frames
+* 460: Requiring clients to support content-codings
+  - proposal: 472
+* 424: Support for GZIP at the server
+* 423: Security Implications of GZIP
+* 466: Compress segments rather than frames
 
-* #443: Indicating Chosen Service
-  - proposal: #474
-* #444: Flusing Alternative Service Cache
-* #462: Intermediaries and Alt-Svc
+* 443: Indicating Chosen Service
+  - proposal: 474
+* 444: Flusing Alternative Service Cache
+* 462: Intermediaries and Alt-Svc
 
-* #458: Race Condition in Shutdown when proxying
-  - proposal: #475
-* #468: Sending Priority for closed streams
-  - proposal: #489
-* #436: Enable weight of 0
+* 458: Race Condition in Shutdown when proxying
+  - proposal: 475
+* 468: Sending Priority for closed streams
+  - proposal: 489
+* 436: Enable weight of 0
 
-* #480: Headers and Flow Control
-  - see also: #482
-  - see also: #456
-* #485: Negotiate "no huffman"
-* #481: Allow intervening DATA frames
+* 480: Headers and Flow Control
+  - see also: 482
+  - see also: 456
+* 485: Negotiate "no huffman"
+* 481: Allow intervening DATA frames
 
-* #484: State Diagram
+* 484: State Diagram
 
-* #490: Forbid coalescing
-* #315: HTTP:// URLs over TLS
-* #363: TLS Renegotiation
-* #491: Restrict cipher suite selection
+* 490: Forbid coalescing
+* 315: HTTP:// URLs over TLS
+* 363: TLS Renegotiation
+* 491: Restrict cipher suite selection
 
-* #418: Refining Prior Knowledge
-  - proposal: #420
+* 418: Refining Prior Knowledge
+  - proposal: 420
 
-* #386: Websockets
+* 386: Websockets
 
 
 ### Other Issues and Deliverables

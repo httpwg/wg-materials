@@ -61,31 +61,31 @@ See the [Issues List](https://github.com/http2/http2-spec/issues?milestone=&page
 
 #### Content Compression and Encoding
 * [Requiring clients to support content-codings](https://github.com/http2/http2-spec/issues/460)
-  - proposal: 472
+  - proposal: [472](https://github.com/http2/http2-spec/issues/472)
 * [Support for GZIP at the server](https://github.com/http2/http2-spec/issues/424)
 * [Security Implications of GZIP](https://github.com/http2/http2-spec/issues/423)
 * [Compress segments rather than frames](https://github.com/http2/http2-spec/issues/466)
 
 #### Header Compression
 * [Headers and Flow Control](https://github.com/http2/http2-spec/issues/480)
-  - see also: 482
-  - see also: 456
+  - see also: [482](https://github.com/http2/http2-spec/issues/482)
+  - see also: [456](https://github.com/http2/http2-spec/issues/456)
 * [Negotiate "no huffman"](https://github.com/http2/http2-spec/issues/485)
 * [Allow intervening DATA frames](https://github.com/http2/http2-spec/issues/481)
 
 #### Negotiation / Upgrade
 * [Indicating Chosen Service](https://github.com/http2/http2-spec/issues/443)
-  - proposal: 474
+  - proposal: [474](https://github.com/http2/http2-spec/issues/474)
 * [Flusing Alternative Service Cache](https://github.com/http2/http2-spec/issues/444)
 * [Intermediaries and Alt-Svc](https://github.com/http2/http2-spec/issues/462)
 * [Refining Prior Knowledge](https://github.com/http2/http2-spec/issues/418)
-  - proposal: 420
+  - proposal: [420](https://github.com/http2/http2-spec/issues/420)
 
 #### Stream Handling
 * [Race Condition in Shutdown when proxying](https://github.com/http2/http2-spec/issues/458)
-  - proposal: 475
+  - proposal: [475](https://github.com/http2/http2-spec/issues/475)
 * [Sending Priority for closed streams](https://github.com/http2/http2-spec/issues/468)
-  - proposal: 489
+  - proposal: [489](https://github.com/http2/http2-spec/issues/489)
 * [Enable weight of 0](https://github.com/http2/http2-spec/issues/436)
 
 #### Editorial(-ish)

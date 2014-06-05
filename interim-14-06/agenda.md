@@ -1,4 +1,4 @@
-# HTTPbis Interim Meeting Agenda (DRAFT)
+# HTTPbis Interim Meeting Agenda
 
 ## New York, New York US 5-6 June 2014
 

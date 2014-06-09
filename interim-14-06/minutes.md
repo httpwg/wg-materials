@@ -1,5 +1,48 @@
-
 # HTTPbis New York Interim Minutes
+
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+  - [Thursday, 5 June 2014](#thursday-5-june-2014)
+    - [Administrivia](#administrivia)
+    - [[Frame type extensibility](https://github.com/http2/http2-spec/issues/95)](#frame-type-extensibilityhttpsgithubcomhttp2http2-specissues95)
+    - [[Requiring Client Content-Coding Support](https://github.com/http2/http2-spec/issues/460)](#requiring-client-content-coding-supporthttpsgithubcomhttp2http2-specissues460)
+    - [[Compress segments rather than frames](https://github.com/http2/http2-spec/issues/466)](#compress-segments-rather-than-frameshttpsgithubcomhttp2http2-specissues466)
+    - [[Only restrict HTTP application data and header block fragment lengths](https://github.com/http2/http2-spec/issues/456) (proposal)](#only-restrict-http-application-data-and-header-block-fragment-lengthshttpsgithubcomhttp2http2-specissues456-proposal)
+    - [[Need way to negotiate "no Huffman" in settings](https://github.com/http2/http2-spec/issues/485)](#need-way-to-negotiate-no-huffman-in-settingshttpsgithubcomhttp2http2-specissues485)
+    - [[allow intervening DATA frames](https://github.com/http2/http2-spec/issues/481)](#allow-intervening-data-frameshttpsgithubcomhttp2http2-specissues481)
+    - [[Changing the way that altsvc use is indicated](https://github.com/http2/http2-spec/issues/474)](#changing-the-way-that-altsvc-use-is-indicatedhttpsgithubcomhttp2http2-specissues474)
+    - [[Flushing Alt-Svc Cache](https://github.com/http2/http2-spec/issues/444)](#flushing-alt-svc-cachehttpsgithubcomhttp2http2-specissues444)
+    - [[Enabling redirects to other hosts](https://github.com/http2/http2-spec/issues/492)](#enabling-redirects-to-other-hostshttpsgithubcomhttp2http2-specissues492)
+    - [[Intermediaries and Alt-Svc](https://github.com/http2/http2-spec/issues/462)](#intermediaries-and-alt-svchttpsgithubcomhttp2http2-specissues462)
+    - [[Refine Prior Knowledge](https://github.com/http2/http2-spec/issues/418)](#refine-prior-knowledgehttpsgithubcomhttp2http2-specissues418)
+    - [[Race condition in shutdown for proxies](https://github.com/http2/http2-spec/issues/458)](#race-condition-in-shutdown-for-proxieshttpsgithubcomhttp2http2-specissues458)
+    - [[Priority for closed streams](https://github.com/http2/http2-spec/issues/468)](#priority-for-closed-streamshttpsgithubcomhttp2http2-specissues468)
+    - [[Enable weight of 0](https://github.com/http2/http2-spec/issues/436)](#enable-weight-of-0httpsgithubcomhttp2http2-specissues436)
+    - [[Accounting for Proxies](https://github.com/http2/http2-spec/issues/413)](#accounting-for-proxieshttpsgithubcomhttp2http2-specissues413)
+    - [[State Diagram](https://github.com/http2/http2-spec/issues/484)](#state-diagramhttpsgithubcomhttp2http2-specissues484)
+    - [[Privacy considerations for Alt-Svc](https://github.com/http2/http2-spec/pull/501) (proposal)](#privacy-considerations-for-alt-svchttpsgithubcomhttp2http2-specpull501-proposal)
+    - [[BLOCKED should be an extension](https://github.com/http2/http2-spec/issues/500)](#blocked-should-be-an-extensionhttpsgithubcomhttp2http2-specissues500)
+    - [[ALTSVC as an extension](https://github.com/http2/http2-spec/issues/499)](#altsvc-as-an-extensionhttpsgithubcomhttp2http2-specissues499)
+  - [Friday, June 6](#friday-june-6)
+    - [[Make alt-svc an extension to the spec](https://github.com/http2/http2-spec/issues/499)](#make-alt-svc-an-extension-to-the-spechttpsgithubcomhttp2http2-specissues499)
+    - [Deployment, Adoption and Roadmap](#deployment-adoption-and-roadmap)
+    - [[Prioritisation as an extension](https://github.com/http2/http2-spec/issues/506)](#prioritisation-as-an-extensionhttpsgithubcomhttp2http2-specissues506)
+    - [[Forbit/Permit Coalescing](https://github.com/http2/http2-spec/issues/490)](#forbitpermit-coalescinghttpsgithubcomhttp2http2-specissues490)
+    - [[HTTP URIs over TLS](https://github.com/http2/http2-spec/issues/315)](#http-uris-over-tlshttpsgithubcomhttp2http2-specissues315)
+    - [[TLS Renegotiation](https://github.com/http2/http2-spec/issues/363)](#tls-renegotiationhttpsgithubcomhttp2http2-specissues363)
+    - [[restrict cipher suite selection](https://github.com/http2/http2-spec/issues/491)](#restrict-cipher-suite-selectionhttpsgithubcomhttp2http2-specissues491)
+    - [[Service header field to SHOULD](https://github.com/http2/http2-spec/issues/502)](#service-header-field-to-shouldhttpsgithubcomhttp2http2-specissues502)
+    - [[simplify padding](https://github.com/http2/http2-spec/issues/505)](#simplify-paddinghttpsgithubcomhttp2http2-specissues505)
+    - [[mandatory to implement cypher suite](https://github.com/http2/http2-spec/issues/498)](#mandatory-to-implement-cypher-suitehttpsgithubcomhttp2http2-specissues498)
+    - [[Remove frame-based compression](https://github.com/http2/http2-spec/issues/497)](#remove-frame-based-compressionhttpsgithubcomhttp2http2-specissues497)
+    - [[Never indexed representation constraints](https://github.com/http2/http2-spec/issues/508)](#never-indexed-representation-constraintshttpsgithubcomhttp2http2-specissues508)
+  - [Next Steps and Wrapup](#next-steps-and-wrapup)
+  - [Operational Advice](#operational-advice)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 
 ## Thursday, 5 June 2014
  

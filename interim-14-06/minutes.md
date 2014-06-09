@@ -1,19 +1,22 @@
- Minutes for httpbis working group meeting, 5 June 2014
+
+# HTTPbis New York Interim Minutes
+
+## Thursday, 5 June 2014
  
- Scribe: Dan Appelquist (DKA)
- g
- [intros]
- [blue-sheet]
- Will move interop to Friday afternoon, as time permits
+Scribe: Dan Appelquist (DKA)
+
+### Administrivia
+
+Blue sheets, scribe selection
+
 Please review the http 2 FAQ (http://http2.github.io/faq/), and suggest updates
  
- Topic: Issues
  
-## Frame type extensibility:  https://github.com/http2/http2-spec/issues/95
+### [Frame type extensibility](https://github.com/http2/http2-spec/issues/95)
  
-Mnot: First issue, frame type extensibility.  As an overview, a number of people have said "maybe we should rethink extensibility" because it keeps coming up.
+mnot: First issue, frame type extensibility.  As an overview, a number of people have said "maybe we should rethink extensibility" because it keeps coming up.
 
-MNOT: we shouldn't open up extensibility willy-nilly.
+mnot: we shouldn't open up extensibility willy-nilly.
 
 ?: there is extensibility using [...]
 
@@ -461,9 +464,7 @@ mnot: we have an editorial issue - we need more explanation...
 mnot [ closes issue]
 
 
-Afternoon Session 
-
-https://github.com/http2/http2-spec/issues/460
+### [Requiring Client Content-Coding Support](https://github.com/http2/http2-spec/issues/460)
 
 mnot: implicit gzip content-encoding makes it difficult to be a semantically interoperable HTTP/1.X<=>HTTP/2 gateway...
 
@@ -521,7 +522,7 @@ will keeps arguing about making sure we don't resolve the issue too soon without
 
 end resolution was to remove implicit gzip and google folks are supposed to put up a proposal for coming up with a ratchet / hard fail solution to move first to lock in support for compression, so any intermediary that tries to break it afterward will cause a hard fail.
 
-topic: issue 466 compress segments rather than frames
+### [Compress segments rather than frames](https://github.com/http2/http2-spec/issues/466)
 
 mnot/martin restated Roberto's comments that we don't want to compress by segments because it has higher state requirements
 
@@ -655,7 +656,7 @@ mnot: sure
 
 jeff: we should keep track of the things we want to revisit for in http/3, and this is the only one that i see that could drive a big architectural change.
 
-Topic: Pull request 456 "Only restrict HTTP application data and header block fragment lengths"
+### [Only restrict HTTP application data and header block fragment lengths](https://github.com/http2/http2-spec/issues/456) (proposal)
 
 mnot: jeff, can we short circuit this? can we close?
 
@@ -669,7 +670,7 @@ jeff: i don't see any clients sending this
 
 will: that's because a user agent doesn't have knowledge to send it. it's primarily application specific, therefore server=>client. at least until the web platform exposes a way for web apps to control request padding.
 
-issue 485: need way to negotiate "no Huffman" in settings
+### [Need way to negotiate "no Huffman" in settings](https://github.com/http2/http2-spec/issues/485)
 
 mnot: this was filed by michael sweet
 
@@ -683,7 +684,7 @@ mike.bishop: we've had some discussions around whether or not we'd like to be ab
 
 martin: at that point, huffman isn't your biggest concern.
 
-issue 481: allow intervening DATA frames
+###[allow intervening DATA frames](https://github.com/http2/http2-spec/issues/481)
 
 <mnot reading the issue aloud>
 
@@ -697,7 +698,7 @@ johnny: why is this a perf issue?
 
 martin: HoL blocking
 
-Topic: PR 474 - Changing the way that altsvc use is indicated
+###[Changing the way that altsvc use is indicated](https://github.com/http2/http2-spec/issues/474)
 
 mnot explains to willchan what/why: it's an analog to sni and other routing info
 
@@ -736,7 +737,7 @@ Martin:  Does the Service header need to be a MUST?  Possible privacy concerns h
 
 Mark:  No objection to clients who might do this for privacy reasons, but theres a performance trade-off.  SHOULD, but with explanation why this is useful.
 
-Issue 444: Flushing Alt-Svc Cache
+### [Flushing Alt-Svc Cache](https://github.com/http2/http2-spec/issues/444)
 
 Mark:  Goes beyond suspicious entries, make this a recommendation for full cache flush.
 
@@ -744,7 +745,7 @@ Mike Bishop:  Make sure this stays as SHOULD; issue text sounds like moving to M
 
 Mark:  SHOULD
 
-Issue 492:  Enabling redirects to other hosts
+### [Enabling redirects to other hosts](https://github.com/http2/http2-spec/issues/492)
 
 Patrick:  Frame on stream zero can already do this
 
@@ -766,7 +767,7 @@ Will reraised Service header stuff. These are more bits to fingerprint. Should t
 
 mnot/stephen: maybe a bit is good enough for loop detection
 
-Issue 462:  Intermediaries and Alt-Svc
+###[Intermediaries and Alt-Svc](https://github.com/http2/http2-spec/issues/462)
 
 Martin:  Proxies will anyway.
 
@@ -780,7 +781,7 @@ Will:  Proxy could append Alt-Svc to EVERY RESPONSE to get coalesced connections
 
 Mark:  Not willing to spend time on this -- if it raises discussion, will just rip the whole statement out instead.
 
-Issue 418:  Refine Prior Knowledge
+### [Refine Prior Knowledge](https://github.com/http2/http2-spec/issues/418)
 
 Emile:  Tied to discovery; browser could find prior knowledge via DNS.
 
@@ -794,7 +795,7 @@ Mark:  No, not the intention.
 
 Martin:  Spec doesn't actually read that way; will fix.
 
-Issue 458:  Race condition in shutdown for proxies
+### [Race condition in shutdown for proxies](https://github.com/http2/http2-spec/issues/458)
 
 Daniel:  If upstream connection closes while a request is in flight, the connection will fail.  Need a way to enable this to drain; DRAINING frame, double GOAWAY, etc.  No strong feelings which approach is best.
 
@@ -808,7 +809,7 @@ Gabriel:  Is there mandatory language here?
 
 Martin:  No, one SHOULD.  Just a requirement to handle the case.
 
-Issue 468:  Priority for closed streams
+### [Priority for closed streams](https://github.com/http2/http2-spec/issues/468)
 
 Martin:  Implicit feature that reprioritizing high-in-tree node changes the priority of everything underneath it.  One way to do this is use the original request as a placeholder for everything on a given tab/set.  This is only possible if a PRIORITY frame can be sent on a closed stream.  Currently, only on open or when possibly racing with a RST_STREAM.  Text changes this to allow PRIORITY frames at any time once the stream has been opened.  Lots of changed lines from reflow, but the change is simple.
 
@@ -822,7 +823,7 @@ Roberto:  Should be a max of two RTTs anyway.
 
 Martin:  Not wanting to offer too much advice here; implementers will discover what works and what doesn't.
 
-Issue 436:  Enable weight of 0
+### [Enable weight of 0](https://github.com/http2/http2-spec/issues/436)
 
 Herve:  Weight of zero enables pausing; useful in several scenarios such as background downloads
 
@@ -855,15 +856,14 @@ Roberto:  This is requiring a special case; not feeling comfortable.
 
 Mark:  Not hearing much support; talked about this a number of times, probably not going to make it.
 
-Issue 413:  Accounting for Proxies
+### [Accounting for Proxies](https://github.com/http2/http2-spec/issues/413)
 
 Mark:  Have we accounted for this in all our various updates?
 
 Martin:  Yes, we've added the text.
 
-### Martin presentation
 
-Issue :  State Diagram
+### [State Diagram](https://github.com/http2/http2-spec/issues/484)
 
 Richard:  Like a tube diagram, better to have something that can be followed than something that's geographically accurate.
 
@@ -873,7 +873,7 @@ Martin:  In RFCs, figures are always illustrative, never normative.
 
 Mark:  Only Greg seems to be bothered?  Does anyone share his concern, modulo some corrections to the current diagram?
 
-*\*silence*\*
+**silence**
 
 Jeff:  Consider HEADERS+CONTINUATIONS a single frame for state-transition purposes.
 
@@ -883,11 +883,8 @@ Tony: add note about substates?
 
 Jeff:  Nothing to do with frames, just stream lifecycles.  The substates have to do with partially-received frames.  PING doesn't show up either, because it doesn't change the state of streams.
 
-### Security issues
 
-Mark:  Considering leaving security for tomorrow morning.  Looking at remaining issues...
-
-Pull request 501:  Privacy considerations for Alt-Svc
+### [Privacy considerations for Alt-Svc](https://github.com/http2/http2-spec/pull/501) (proposal)
 
 Mark:  Creating dynamic hostnames gives an unbounded amount of entropy for tracking.  Unless the client doesn't send the Service header.
 
@@ -895,7 +892,7 @@ Martin N.:  Until IPv6, with a unique IP address as well as unique hostnames.
 
 Mark:  Need something about Alt-Svc -- adding this for now.
 
-Issue 500:  BLOCKED should be an extension
+### [BLOCKED should be an extension](https://github.com/http2/http2-spec/issues/500)
 
 Jeff:  BLOCKED would have been an extension had extensions been available, now they are, so it should be.
 
@@ -921,7 +918,7 @@ Martin N.:  Also helps reduce the size of the spec.
 
 BLOCKED is an extension.  Mike to share source of current I-D with Hasan who will submit BLOCKED as a new draft.
 
-Issue 499:  ALTSVC as an extension
+### [ALTSVC as an extension](https://github.com/http2/http2-spec/issues/499)
 
 
 Roberto:  If BLOCKED is an extension, ALTSVC should be too.
@@ -955,14 +952,15 @@ Decision:  Leave to Martin.  Martin wants more feedback before making a decision
 
 
 
+## Friday, June 6
 
-
-
-## HTTPbis Interim NYC Day 2 (Friday)
 
 Mnot: Have left: security issues, other issue during meeting, next steps
 
-Make alt-svc an extension to the spec (#499)
+### [Make alt-svc an extension to the spec](https://github.com/http2/http2-spec/issues/499)
+
+(continued from Thursday)
+
 mnot's position is that whether it's an extension or not doesn't affect adoption. Other folks had stronger objections
 
 Patrick: This extension is a real mistake on many levels I chased a SPDY bug where I got two replies for the same stream. This is an example of wishy-washy error handling. It would need to be defined in the most broad term.
@@ -970,6 +968,7 @@ Patrick: This extension is a real mistake on many levels I chased a SPDY bug whe
 Patrick's objection is to extensions in general
 
 Mnot: The decision yesterday was to allow extensibility
+
 Jeff: 
 
 Roberto: I would feel more comfortable if we said what the frames we're going to send it so we can start rejecting them as soon as possible.
@@ -1018,6 +1017,10 @@ jeff: I have a number of implementors saying we're going to take the DAG priorit
 mnot: Shipping twelve has happend but I'm not seeing much interop - complex uses of hpack, etc.
 
 Brian R: and push
+
+### Deployment, Adoption and Roadmap
+
+[ we diverted to a meta-discussion ]
 
 mnot: We have a protocol and it's still being used experimentally. SPDY is still out there and gaining traction. I'm worried it's getting entrenched. People are unwilling to deploy this in production but are willing to deploy SPDY/3.1. We'll be deploying something we don't have significant performance experience. I'm happy with this only if we ship it real soon.
 
@@ -1133,6 +1136,8 @@ mnot: I've heard statements from big implementers making commitments about turni
 
 brian: moving stuff out to extensions sounds good
 
+### [Prioritisation as an extension](https://github.com/http2/http2-spec/issues/506)
+
 mnot: no discussion w.r.t. blocked, some discomfort with alt-svc, unclear with priority
 
 jeff: some people say they won't implement prioritization
@@ -1199,9 +1204,10 @@ mnot: are people happy with this resolution: mark it at risk
 
 ten minute break
 
-...
 
-mnot: we have an ekr! can we make a huge ekr on the wall. first issue: 490, forbid coalescing. ekr, the interpretation of 6066 and whether this forbids coalescing? this potentially gives us performance gains but other problems[referen
+### [Forbit/Permit Coalescing](https://github.com/http2/http2-spec/issues/490)
+
+mnot: ekr, the interpretation of 6066 and whether this forbids coalescing? this potentially gives us performance gains but other problems
 
 ekr: I agree, rfc 6066 discourages this. the notion makes people queasy, sni or not
 
@@ -1279,6 +1285,8 @@ mnot: are we ok with this resolution? needs some colaboration with tls wg
 
 yes
 
+### [HTTP URIs over TLS](https://github.com/http2/http2-spec/issues/315)
+
 mnot: next issue, http uris over tls. we talked about it a while ago and punted. now we have some implementation experience. we need to specify how http2 adresses pervasive monitoring. if we show http over tls this would demonstrate something. we should adopt a document or spin up another to specify how to do this separate from and non-blocking for http2. I'm sure people will want it to be implemented for everything but we won't get consensus.
 
 ??? could this work for http/1? if so how?
@@ -1337,9 +1345,10 @@ mnot: doc will be adopted. people should have a look, raise issues, ...
 
 martin: the feedback from the security area group was "hmm"
 
-mnot: next, tls renogotiation
+### [TLS Renegotiation](https://github.com/http2/http2-spec/issues/363)
 
 martin: tls had an interim meeting 2/3 weeks ago. there was pretty strong feeling that renegotiation would not be part of tls 1.3 http appears to be the only protocol to use client auth mid-session. there is talk about how to do re-keying. there's good reasons not to do renegotiation : there are assumptions made which are invalidated but may not be updated in the application. it's led to a long series of vulnerabilities, applications making bad choices. they are interested in pursuing things on a longer timescale. complicating a security protocol is something we need to be cautious off. despite the layering concerns (http needs to make assertions about tls) they're inclined for us to solve it.
+
 client auth is a less-used part of the protocol and people may be willing to make compromises on, for example, performance. what we're looking for is a transitional story that will get to something good without tls improvements. I've written a draft which mozilla may implement. this is a new auth challenge. you send a 401 response with a challenge that says you need a client cert and the client is expected to go away and re-auth on a new connection.tls 1.3 includes features in which large parts of the handshake are encrypted so we should be ok when we hand over the cert.
 
 mnot: if i have a server i need to cope with the idea that most browsers won't support it?
@@ -1386,7 +1395,7 @@ ekr: we want people doing the best thing and all doing the same thing
 
 mnot: resolution. marking editor ready. 496 isn't and this is blocking
 
-mnot: last issue, restrict cipher suite selection (491)
+### [restrict cipher suite selection](https://github.com/http2/http2-spec/issues/491)
 
 martin: we got some wishy-washy advice on rc4. the trend is that tls 1.3 will remove all modes other than the aead ones. those are in good shape which cannot be said for the rest. rc4 is on its way out and we have the opportunity to update the advice to aead only
 
@@ -1424,13 +1433,8 @@ mnot: that was the last security issue.
 
 lunch!
 
-Issue 505: simplify padding
 
-jeff pinner JP: 
-
-will asked for this to be discussed after roberto is on line
-
-#502 service header field to SHOULD
+### [Service header field to SHOULD](https://github.com/http2/http2-spec/issues/502)
 
 Stephen Ludin: just a binary flag that this came from a redirect would be fine, no need for entire Service header. this is good from privacy point of view
 
@@ -1452,7 +1456,7 @@ stephen: hope is browsers will have an incentive for perf gains
 
 mnot: editor ready
 
-#505: simplify padding
+### [simplify padding](https://github.com/http2/http2-spec/issues/505)
 
 Jeff summarizing the issue. remove padding from header-frames and reduce padding length to 1 byte. Padding at purely framing layer does not play well with proxies at which point it may cause blocking and multiplexing/pri trouble. and HPACK has security mechanism itself already. the draft recently added.CONTINUATION.   and remove PAD_HIGH only using PAD_LOW thus removing a conditional case even if it is framing change. still allow padding on data but flow controlled, tied to a stream so easier to proxy
 
@@ -1526,7 +1530,7 @@ mnot: so they may pass through for header-bearing frames but should maintain pad
 
 hasan: google sec guys are happy with the decision including no padding in continuation
 
-#498 - mandatory to implement cypher suite
+### [mandatory to implement cypher suite](https://github.com/http2/http2-spec/issues/498)
 
 martin: tls 1.3 will have an MTI cypher suite in Toronto or so
 
@@ -1536,7 +1540,7 @@ martin: Andrei tells me that schannel might have trouble with a couple of items 
 
 mnot: wait till toronto
 
-#497 - remove frame-based compression
+### [Remove frame-based compression](https://github.com/http2/http2-spec/issues/497)
 
 Jeff: not compatible as this puts a sync flush context 
 
@@ -1550,17 +1554,15 @@ Christian: issue is that there is no way to partially compress a response
 
 mnot: nobody is going to implement this, so why do it? and now with extensibility one could negotiate an extension to satisfy your use case. actually, your point is an http general issue, not specific to http/2
 
-
 mnot: no implementor interest, sec issues with proxying, potentially addressed via extension, and long term with semantic changes in HTTP. for now remove this.
 
-#508 never indexed representation constraints. 
+### [Never indexed representation constraints](https://github.com/http2/http2-spec/issues/508)
 
 roberto: not "sensitive" vs "not sensitive" but about the provenance. but this is not useful, too hard.
 
 mnot: strong pushback, closed
 
-############################
-
+## Next Steps and Wrapup
 
 Mnot: how long to another rev?
 
@@ -1571,8 +1573,6 @@ mnot: hpack guys also please look over your doc to polish
 mnot: and mark this as implementation draft, maybe more...
 
 break...
-
-######### Next Steps
 
 mnot: mark an impl draft as something really serious. e.g., -13 marked as "h2-rc" and go to WG LC, mint it after some interop during 6 months and be done. LC could be parallel to this.
 
@@ -1611,9 +1611,9 @@ mnot: see estimate of mid to late Q3 for both client and server. so real data on
 
 lots of discussion of how data will be collected, how soon, how shareable, what parts of the spec 
 
-# mnot on draft on operational advice
+## Operational Advice
 
-mnot: we need to capture this
+mnot: See draft-nottingham-http2-ops; we need to capture this, RFC is only one possibility
 
 will: wrote the spdy best practices wiki, seems like the good type of document, 
 

@@ -43,6 +43,38 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+## Attendees
+
+* Mark Nottingham - Chair
+* Barry Leiba (Huawei)
+* Hasan Khalil (Google)
+* Will Chan (Google)
+* Brian Raymor (Microsoft)
+* Martin Thomson (Mozilla)
+* Sanjay Mishra (Verizon)
+* Daniel Stenberg (Mozilla)
+* Patrick Mcmanus (Mozilla)
+* Stephen Ludin (Akamai)
+* Saurabh Kulkarni (Akamai)
+* Mike Bishop (Microsoft)
+* Tony Hansen (AT&T)
+* Ilya Grigorik (Google)
+* Peter Lepesky (Viasat)
+* Julian Reschke (greenbytes)
+* Salvatore Loreto (Ericsson)
+* Jeff Pinner (Twitter)
+* Gabriel Montenegro (Microsoft)
+* Liliana Dinale (Ericsson)
+* Emile Stephan (Orange)
+* Richard Wheeldon (Cisco)
+* Christoph Brunhuber (IAEA)
+* Martin Nilsson (Opera)
+* Herve Ruellan (Canon)
+* William Chow (Mobolize)
+* Daniel Sommermann (Facebook)
+* Shigeki Ohtsu (IIJ)
+* Dan Druta (AT&T)
+
 
 ## Thursday, 5 June 2014
  

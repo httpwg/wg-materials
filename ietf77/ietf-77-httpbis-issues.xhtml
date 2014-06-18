@@ -1,0 +1,126 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>IETF 77 - HTTPbis Open Issues Overview</title>
+    <style type="text/css">
+body {
+  color: black;
+  font-family: verdana, helvetica, arial, sans-serif;
+  font-size: 18pt;
+}
+h1 {
+  font-size: 36pt;
+}
+li {
+  margin-top: 0.5em;
+}
+q {
+  font-style: italic;  
+}
+.break {
+  page-break-before: always;
+}
+@page {
+  size: a4 landscape;
+}
+@page {
+  @bottom-left {
+       content: "Julian Reschke, greenbytes";
+  }
+  @bottom-right {
+       content: counter(page);
+  }
+  @top-center {
+       content: "IETF 77 - HTTPbis Open Issues Overview";
+  }
+}
+    </style>
+  </head>
+  <body>
+    <h1>IETF 77 - HTTPbis Open Issues Overview</h1>
+    <p>
+      <a href="mailto:julian.reschke@greenbytes.de">Julian Reschke</a>, greenbytes
+    </p>
+    <p>
+      <a href="http://trac.tools.ietf.org/wg/httpbis/trac/report/9">http://trac.tools.ietf.org/wg/httpbis/trac/report/9</a>
+    </p>
+    
+
+    <h2 class="break">Current Work (not in -09) (1/2)</h2>
+    <ul>
+      <li>
+        Age Calculation: made the age calculation algorithm a bit less
+        conservative; this needs more eyes
+        (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/29">http://trac.tools.ietf.org/wg/httpbis/trac/ticket/29</a>)
+      </li>
+      <li>
+        Fragment combination during redirects: ongoing discussion whether 
+        this is up to HTTP to specify, or whether it depends on the media type
+        (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/43">http://trac.tools.ietf.org/wg/httpbis/trac/ticket/43</a>)
+      </li>
+      <li>
+        Status codes and caching: clarify heuristic caching of responses 
+        (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/110">http://trac.tools.ietf.org/wg/httpbis/trac/ticket/110</a>)
+      </li>
+    </ul>
+      
+    <h2 class="break">Current Work (not in -09) (2/2)</h2>
+    <ul>
+      <li>
+        The return of the Sniffing discussion: TAG asks for Security Considerations of ignoring Content-Type
+        (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/155">http://trac.tools.ietf.org/wg/httpbis/trac/ticket/155</a>)
+      </li>
+      <li>
+        Case-sensitivity of dates: ABNF makes them case-sensitive, reality is
+        they aren't, and prose asks implementers to do this already
+        (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/165">http://trac.tools.ietf.org/wg/httpbis/trac/ticket/165</a>)
+      </li>
+      <li>
+        Define the term "effective request URI" and use it throughout
+        (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/196">http://trac.tools.ietf.org/wg/httpbis/trac/ticket/196</a>)
+      </li>
+    </ul>
+    
+    <h2 class="break">Pending Issues (1/3)</h2>
+    <ul>
+      <li>
+        Clarification of "deflate"
+        (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/73">http://trac.tools.ietf.org/wg/httpbis/trac/ticket/73</a>)
+      </li>
+      <li>
+        Multiple Content-Length headers (security!)
+        (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/95">http://trac.tools.ietf.org/wg/httpbis/trac/ticket/95</a>)
+      </li>
+      <li>
+        Methods and Caching
+        (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/139">http://trac.tools.ietf.org/wg/httpbis/trac/ticket/139</a>)
+      </li>
+    </ul>
+    
+    <h2 class="break">Pending Issues (2/3)</h2>
+    <ul>
+      <li>
+        Keep-alive and Proxy-Connection Headers
+        (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/158">http://trac.tools.ietf.org/wg/httpbis/trac/ticket/158</a>)
+      </li>
+      <li>
+        Trailer Requirements
+        (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/193">http://trac.tools.ietf.org/wg/httpbis/trac/ticket/193</a>)
+      </li>
+      <li>
+        Max-Forwards vs Extension Methods
+        (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/203">http://trac.tools.ietf.org/wg/httpbis/trac/ticket/203</a>)
+      </li>
+    </ul> 
+     
+    <h2 class="break">Pending Issues (3/3)</h2>
+    <ul>
+      <li>
+        Controversial: error handling for non-URIs where URIs are expected,
+        such as Location header
+        (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/185">http://trac.tools.ietf.org/wg/httpbis/trac/ticket/185</a>)
+      </li>
+    </ul>
+  </body>
+</html>

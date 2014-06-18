@@ -1,0 +1,472 @@
+HTTPbis Working Group Minutes
+THURSDAY, July 30, 2009
+1300-1500 Afternoon Session I (Room 300)
+
+* agenda and note well
+
+no agenda bashes
+
+lmasinter: 6lowpan (binary http), hybi (bidirectional), iri (revision bof
+announcement) all announced
+
+
+* jreschke: httpbis*-07 summary
+
+drafts published on deadline, changes made since last meeting
+
+content sniffing (155):
+
+lmasinter: uncomfortable in changing the standard about being liberal in
+what they accept, change to normative advice on how this proceeds.
+
+mnot: this is just a clarification, nothing has really changed
+
+lmasinter: is this advice just for HTTP?  or IMAP?
+
+rfielding: the change is just to allow no content type
+
+jreschke: clients used to be forced to use octet-stream when c-type is absent
+
+rfielding: this allows for one or other
+
+lmasinter: content format is defined, but not the behaviour from that; this
+might be ambiguous enough to include abherrant.  The more you open the
+door, the more you might encourage bad behaviour.
+
+mnot: there was a feeling that we didn't want to specify a specific means
+of sniffing.  Noone wanted to mandate sniffing.
+
+rfielding: maybe the last paragraph could be removed
+
+lmasinter: what is the least that you could say?  ...maybe the last
+sentence isn't necessary.
+
+mnot: how does http specify the data type?
+
+rfielding: media type specify how to process the message.  they give an
+interpretation of the data type.  Delete the paragraph.
+
+conclusion: Agreement to remove this.
+
+no comments/discussion on other issues
+
+
+* security
+
+slides from alexey
+http://www.ietf.org/proceedings/08jul/slides/httpbis-0.pdf
+
+noone has said anything on the old issue of splitting sections
+
+question if anyone else has anything to add to this list that can be added
+to the document before next meeting
+
+mnot: who has read this?
+
+response: noone except the author
+
+mnot: we're chartered to cover this subject.  since 2616 doesn't have much
+on this.  jeff is new caretaker on the doc, but there is nothing more known
+to do
+
+jeffh: will rev the doc
+
+cdab: concerned with interaction with other stuff, oauth; this is
+historical
+
+mnot: agree, but it might be too broad if we try to include too much
+detail.  add oauth to the list
+
+rfielding: there were a lot of statements that completely ignored the
+non-browser use of http.  This needs to cover these.
+
+jeffh: that's the first case
+
+mnot: that might be what is addressed by splitting, but we'll have to look
+at that
+
+
+* issues
+
+not going to cover the editorial issues, the editors can deal with those,
+take it to the list
+
+after -07, there have been big changes in p1 and p6.
+
+we're marking important ones as "urgent"
+
+editors have worked out some ideas on how to address these issues and have
+some proposals
+
+#109 entity/representation/variant
+
+entity === representation, so we'll define them as synonyms.
+
+proposal on variant is to remove it: replace it with representation or use
+context to make meaning clear.
+
+eventually use new terms for the outcome of content neg.
+
+conclusion: no comments, disagreement
+
+#69 requested variant
+
+need to get a proposal on this issue
+
+conclusion: nothing to be done as a group
+
+#110 need to work out how to determine how the representation relates to
+the state of the resource
+
+need broader decisions, which might help with such as #22 (etag on a post)
+
+proposal email from mnot on this (see archives)
+http://lists.w3.org/Archives/Public/ietf-http-wg/2009AprJun/0282.html
+
+jhodges: q.. request-URI is resource?
+
+mnot: no, the URI for the resource you've requested
+
+jhodges: correction on 3)...
+
+mnot: on 3) agree that this is the representation of the resource at the
+request-URI.
+
+lmasinter: comment (missed this)
+
+mnot: response ...we want to construct a URI from the host header and any
+path components...
+
+mnot: requested variant is a problem with etag, we need a new term for the
+relationship with etag, then say that the etag applies to the resource
+associated with this representation
+
+jreschke: might be OK with this, obviously needs to think on it; we're
+going to break at least one rfc
+
+rfield: this might not break things, this is just a change that says that
+the server gives direction to clients
+
+cdab: right direction
+
+conclusion: right direction
+
+#188 registries for *-coding headers
+
+mnot: proposed expert review for most, some might need higher
+
+nodding from the room, general agreement
+
+p1#90 delimiting with multipart/byteranges
+
+mnot: not implemented, complex, propose to drop it
+
+conclusion: accepted
+
+p1#131 increase connection limit
+
+2 connection limit isn't followed, in part because pipelining isn't widely
+deployed
+
+mnot: some people don't want to remove limit entirely, so what should it
+be?  research suggests 6 to 8 and we might have some advice for other
+things.
+
+mnot: personally, might be good to have
+
+jreschke: we can't accomodate clients who want to do this
+
+cdab: keepalive interaction with lots of open connections
+
+mnot: resource constrained servers can close connections
+
+mthom: the advice might be useful, knows of applications where very large
+numbers of connections is needed
+
+lmasinter: has something in mind for text, referring to previous limit of 2
+connections
+
+mnot: what are you proposing
+
+lmasinter: no specific number, just advice to limit the number of
+connections as much as possible
+
+mnot: 2 is probably no longer appropriate, but we could do that elsewhere
+
+dstenberg: might be good to downplay the number of connections, we don't
+need that advice in the spec
+
+hum: are you comfortable with having no specific limit?
+
+conclusion: most are comfortable, no hums for discomfort
+
+henrik: still need advice on limiting the number of connections, just
+nothing specific
+
+mnot: agreed
+
+
+p1#145  Host: header is mandatory
+
+ypettersen: if there is an empty authority component we put in localhost for
+iri?
+
+
+p1#159 URI
+
+jeffh: userinfo is in 2616?
+
+henrik: empty host http:/// is not allowed (3 slashes)
+
+lmasinter: general concern, a lot of docs talk about URIs, but they really
+mean http: URIs (and vice versa).  trying to ensure this issue is
+recognised
+
+ipettersen: empty authority generates an error in their implementation,
+(there might be a display error, but that's the intent.)
+
+conclusion: no empty authority, don't allow userinfo
+
+p1#165 date
+
+NOP
+
+p1#173 CR/LF
+
+BNF for chunked encoding and extensions is key/value, but the bnf for the
+chunk extensions allows CR/LF and implementations are likely to just read
+to the end of the line.  propose to remove CR/LF from the BNF, but do this
+for ALL quoted-string instances
+
+conclusion: no objection to this, agreed
+
+p1#184 0.9 support
+
+do we need to still support 0.9?  these wont be sending a Host: header
+
+lmasinter: propose to add gopher
+
+lmasinter: need to think about time-span used to erase legacy stuff
+
+anne: browsers still deal with 0.9 and there might be content out there, he
+hasn't studied this
+
+henrik: the only time we see 0.9 is in broken browsers, or when some other
+protocol is being used, not so much on the Internet, but in constrained
+environments
+
+mnot: we can still take it out, but allow for it in server responses
+
+henrik: they upgrade to 1.+ when they receive (as an intermediary) a 0.9
+
+mnot: we need to discuss this a little more
+
+cdab: is it worth trying to use this to give clients a shove
+
+henrik: 0.9 is used when it's actually something other than http, like
+shoutcast
+
+lmasinter: uses 0.9 to stream
+
+henrik: they use headers
+
+dstenberg: they use ICY instead of HTTP"
+
+mnot: we need to discuss a little more
+
+rfielding: I think that there is universal agreement to remove this
+altogether, make it a history lesson only
+
+hum: can we remove 0.9 support from the spec?
+
+conclusion: yes
+
+
+p2#160 redirect on non-GET
+
+noone follows the advice in 307, 303, 301.
+
+ypetterson: we tried to use 301.302 to select method, users didn't
+understand and servers either didn't respond properly and didn't work.
+301/302 need to just be get.
+
+mnot: 301/302/303 would all be GET if that's the case
+
+ypetterson: redirects have never been tested well
+
+jreschke: we would still have to decide whether this is for POST only for
+all methods, there would be no permanent redirect that is method preserving
+
+mnot: for all, 307 is still method preserving
+
+mnot: is the absence of a permanent method preserving a problem
+
+henrik: 307 can be made permament
+
+mnot: that's ok, but would it be implemented?
+
+jreschke: safari/webkit is the only browser who doesn't do the right thing;
+let's make all redirects use GET and specify exceptions in the opposite way
+
+mnot: let's be explicit on all redirects
+
+henrik: flip the current ones over
+
+rfielding: updated issue ticket with what came from the meeting
+
+jreschke: there might be protocols that rely on the proper semantics of
+301/302, so we probably can't change these too much
+
+mnot: "SHOULD"?
+
+jreshcke: nothing?
+
+mnot: we need some interop
+
+henrik: need some indication and guidance
+
+mnot: maybe need a method preserving flag then
+
+hum: make this a should level requirement?
+
+result: no discomfort, will make this a "SHOULD rewrite to GET"
+
+anne: HEAD should remain as HEAD
+
+mnot: HEAD is an exception
+
+henrik: HEAD is always an exception
+
+mnot: might need to do a complete sweep through the spec for this
+
+anne: OPTIONS also
+
+jreschke: might need to take this back to the list
+
+jeffh: need to think about the security considerations in this as well
+
+mnot: might need to talk about rewriting specific methods rather than a
+blanket
+
+conclusion: need to take this back to the list and talk about specific
+methods
+
+
+
+* milestone -08 issues
+
+p2#43 fragment precedence when redirection includes a fragment
+
+jreschke: related issue #xxx? on whether we should allow for relative URIs
+in Location: header.
+
+mnot: relative headers are widespread
+
+jreschke: We probably should support relative.  Clients generate fragment
+differently depending on whether it's absolute or relative.  Fragment is
+only used in a fragment.  We wouldn't want to specify that.
+
+mnot: not ideally, but this is not just browsers
+
+lmasinter: the fragment identifier is quite browser-specific, it's not used
+in non-browser contexts
+
+mnot: RDF ?
+
+mnot: we need to discuss this, can jrschke send the information to the list
+
+mnot: we might need to document that behaviour
+
+jreschke: there isn't alot of content that relies on this feature, so we
+might be able to change this
+
+conclusion: finish on the list
+
+
+p3#81 (lmasinter)
+
+lmasinter: would like to withdraw this, the scope of applicability is
+fairly narrow; need to soften text
+
+mnot: some apps have a very long list of apps; some people do use this
+
+lmasinter: might need to document when it is useful and when it is not;
+doesn't want the issue any more
+
+lmasinter: shouldn't deprecate, that's overboard
+
+mnot: propose to close the issue
+
+lmasinter: OK
+
+
+
+ypetterson: in Opera, empty authority goes from "" to 0.0.0.0, which ends
+up as a load error
+
+
+* 2231 and HTTPbis
+
+lots of interoperability problems, i18n of filenames is tricky, two
+browsers support it.  agreed to profile 2231 and move to a separate
+document.  Remove from httpbis docs.  document available, and other vendors
+would possibly implement when available.
+
+lmasinter: general issue of file: URIs and that sort of thing
+
+jreschke: has a document on this in WebDAV context
+
+dstenberg: similar encoding issue when doing file upload and
+multipart/form...
+
+cdab: we should look at getting review from email folks
+
+
+* SCTP on HTTP
+
+overview of sctp
+
+problem of pipelining when you don't have enough streams
+
+problem of choosing TCP or SCTP
+
+new issue: avoid chunking using SCTP - SCTP has the mechanisms, maybe it
+can do it
+
+henrik: also asked to help on the draft, in http we need to separate
+message layer from byte stream layer better.
+
+henrik: would need new association per request?
+
+lisa: seems like a flaw?  sounds surprising
+
+lmasinter: (back on selection of method issue) comment on selecting the
+right method, related to old work on HTTP over UDP - learn from our
+failures
+
+fbaker: challenges lmasinter: what are the issues?
+
+lmasinter: need to look at deployment challenge
+
+fbaker: explain URI option
+
+mnot: for me, this is all about proxies/caches to do long haul without end
+user interactions; should also work on mobile networks with configuration
+
+mnot: but we need to split messaging stuff from the TCP stuff
+
+henrik: it's a more general problem than just HTTP, wants to take this to a
+higher layer; SRV records don't really help either
+
+presenting simulation results
+
+mnot: observes that SCTP is good for POST
+
+rfielding: why could this not be done using TCP?
+
+fbaker: TCP connections don't have any knowledge of each other
+
+henrik: sctp doesn't have drawbacks in terms of network fairness
+
+mnot: need to discuss more on the list
+

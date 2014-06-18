@@ -1,0 +1,171 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>IETF 83 - HTTPbis -16/-17/-18/-19 Changes Overview</title>
+    <style type="text/css">
+body {
+  color: black;
+  font-family: verdana, helvetica, arial, sans-serif;
+  font-size: 18pt;
+}
+h1 {
+  font-size: 36pt;
+}
+li {
+  margin-top: 0.5em;
+}
+q {
+  font-style: italic;  
+}
+.break {
+  page-break-before: always;
+}
+@page {
+  size: a4 landscape;
+}
+@page {
+  @bottom-left {
+       content: "Julian Reschke, greenbytes";
+  }
+  @bottom-right {
+       content: counter(page);
+  }
+  @top-center {
+       content: "IETF 83 - HTTPbis -16/-17/-18/-19 Changes Overview";
+  }
+}
+    </style>
+  </head>
+  <body>
+    <h1>IETF 83 - HTTPbis -16/-17/-18/-19 Changes Overview</h1>
+    <p>
+      <a href="mailto:julian.reschke@greenbytes.de">Julian Reschke</a>, greenbytes
+    </p>
+  
+    <h2 class="break">History</h2>
+    <ul>
+      <li>-16: published August 2011 (after IETF 81)</li>
+      <li>-17: published November 2011 (before IETF 82, WG did not meet)</li>
+      <li>-18: published January 2012</li>
+      <li>-19: published March 2012 (before IETF 83)</li>
+    </ul>
+    <p>
+    <em>Working Group Last Call for Parts 4, 5, 6, and 7 started March 15, ends April 12</em>
+    </p>
+    
+    <h2 class="break">Changes - General</h2>
+    <ul>
+       <li>Document HTTP's error-handling philosophy (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/186">Ticket 186</a>)</li>
+       <li>effective request URI: handling of request-target * (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/222">Ticket 222</a>)</li>
+    </ul>
+
+    <h2>Changes - Messaging</h2>
+    <ul>
+       <li>Keep-Alive and Proxy-Connection headers (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/158">Ticket 158</a>)</li>
+       <li>Retrying Requests (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/297">Ticket 297</a>)</li>
+       <li>Define non-final responses (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/300">Ticket 300</a>)</li>
+       <li>closing the connection on server error (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/318">Ticket 318</a>)</li>
+       <li>Intermediary rewriting of queries (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/324">Ticket 324</a>)</li>
+       <li>chunk-extensions (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/343">Ticket 343</a>)</li>
+    </ul>
+    <p>...plus many editorial improvements</p>
+ 
+    <h2 class="break">Changes - Syntax</h2>
+    <ul>
+       <li>Explain header registration (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/215">Ticket 215</a>)</li>
+       <li>Considerations for new headers (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/231">Ticket 231</a>)</li>
+       <li>\-escaping in quoted strings (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/270">Ticket 270</a>)</li>
+       <li>does etag value really use quoted-string (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/306">Ticket 306</a>)</li>
+       <li>header field considerations: quoted-string vs use of double quotes (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/329">Ticket 329</a>)</li>
+       <li>wording of line folding rule (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/335">Ticket 335</a>)</li>
+    </ul>
+       
+    <h2 class="break">Changes - Status Codes</h2>
+    <ul>
+       <li>Clarify status code for rate limiting (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/255">Ticket 255</a>)</li>
+       <li>Strength of requirements on Accept re: 406 (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/285">Ticket 285</a>)</li>
+       <li>expand definition of 413 for header field size limits? (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/299">Ticket 299</a>)</li>
+       <li>400 response isn't generic (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/303">Ticket 303</a>)</li>
+       <li>clarify that 201 doesn't require Location header fields (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/331">Ticket 331</a>)</li>
+       <li>relax requirements on hypertext in 3/4/5xx error responses (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/332">Ticket 332</a>)</li>
+       <li>example for 426 response should have a payload (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/333">Ticket 333</a>)</li>
+    </ul>
+    <p>...also say "Hello" to 428 (Precondition Required), 429 (Too Many Requests),
+    431 (Request Header Fields Too Large) and 511 (Network Authentication Required)
+    -- defined in <a href="http://greenbytes.de/tech/webdav/draft-nottingham-http-new-status-04.html">draft-nottingham-http-new-status-04</a>, now in RFC Editor Queue</p>
+
+    <h2 class="break">Changes - Redirects</h2>
+    <ul>
+       <li>Redirects and non-GET methods (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/160">Ticket 160</a>)</li>
+       <li>Requirements for user intervention during redirects (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/238">Ticket 238</a>)</li>
+       <li>Applying original fragment to "plain" redirected URI (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/295">Ticket 295</a>)</li>
+       <li>clarify 303 redirect on HEAD (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/310">Ticket 310</a>)</li>
+       <li>When are Location's semantics triggered? (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/325">Ticket 325</a>)</li>
+    </ul>
+    <p>...also say "Hello" to 308 (Permanent Redirect),
+    -- defined in <a href="http://greenbytes.de/tech/webdav/draft-reschke-http-status-308-06.html">draft-reschke-http-status-308-06</a>, past IETF LC</p>
+    
+    <h2 class="break">Changes - Method Semantics</h2>
+    <ul>
+       <li>message-body in CONNECT response (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/250">Ticket 250</a>)</li>
+       <li>Content-Range on responses other than 206 (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/301">Ticket 301</a>)</li>
+    </ul>
+
+    <h2>Changes - Payload</h2>
+    <ul>
+       <li>Location header payload handling (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/185">Ticket 185</a>)</li>
+       <li>is ETag a representation header field? (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/330">Ticket 330</a>)</li>
+       <li>Content-Location doesn't constrain the cardinality of representations (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/338">Ticket 338</a>)</li>
+    </ul>
+
+    <h2 class="break">Changes - Conditionals/Range</h2>
+    <ul>
+       <li>Security consideration: range flooding (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/175">Ticket 175</a>)</li>
+       <li>If-Range should be listed when dicussing contexts where L-M can be considered strong (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/304">Ticket 304</a>)</li>
+       <li>Add limitations to Range to reduce its use as a denial-of-service tool (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/311">Ticket 311</a>)</li>
+       <li>case sensitivity of ranges in p5 (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/319">Ticket 319</a>)</li>
+    </ul>
+
+    <h2 class="break">Changes - Caching</h2>
+    <ul>
+       <li>Refining age for 1.1 proxy chains (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/212">Ticket 212</a>)</li>
+       <li>Combining HEAD responses (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/227">Ticket 227</a>)</li>
+       <li>Motivate one-year limit for Expires (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/290">Ticket 290</a>)</li>
+       <li>Interaction of request and response Cache-Control (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/293">Ticket 293</a>)</li>
+       <li>SHOULD and MAY review in p6 (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/313">Ticket 313</a>)</li>
+       <li>Cache-Control directive case sensitivity (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/317">Ticket 317</a>)</li>
+       <li>Field names in cache-control header arguments (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/337">Ticket 337</a>)</li>
+    </ul>
+    
+    <h2 class="break">Changes - Authentication</h2>
+    <ul>
+       <li>Relationship between 401, Authorization and WWW-Authenticate (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/78">Ticket 78</a>)</li>
+       <li>Realm required on challenges (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/177">Ticket 177</a>)</li>
+       <li>auth-param syntax (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/195">Ticket 195</a>)</li>
+       <li>Considerations for new authentications schemes (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/257">Ticket 257</a>)</li>
+       <li>LWS in auth-param ABNF (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/287">Ticket 287</a>)</li>
+       <li>credentials ABNF missing SP (still using implied LWS?) (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/309">Ticket 309</a>)</li>
+       <li>allow unquoted realm parameters (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/314">Ticket 314</a>)</li>
+       <li>add advice on defining auth scheme parameters (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/320">Ticket 320</a>)</li>
+       <li>Repeating auth-params (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/321">Ticket 321</a>)</li>
+       <li>recipient behavior for new auth parameters (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/334">Ticket 334</a>)</li>
+       <li>WWW-Authenticate ABNF slightly ambiguous (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/342">Ticket 342</a>)</li>
+    </ul>
+    
+    <h2 class="break">Changes - IANA/Registries</h2>
+    <ul>
+       <li>warn-code registry (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/274">Ticket 274</a>)</li>
+       <li>"Close" should be reserved in the HTTP header field registry (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/305">Ticket 305</a>)</li>
+       <li>need to reserve "negotiate" as auth scheme name (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/308">Ticket 308</a>)</li>
+       <li>make IANA policy definitions consistent (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/346">Ticket 346</a>)</li>
+    </ul>
+    
+    <h2>Changes - Process-Related</h2>
+    <ul>
+        <li>move RFCs 2145, 2616, 2817 to Historic status (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/254">Ticket 254</a>)</li>
+       <li>Revise Acknowledgements Sections (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/219">Ticket 219</a>)</li>
+       <li>intended maturity level vs normative references (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/323">Ticket 323</a>)</li>
+    </ul>
+  </body>
+</html>

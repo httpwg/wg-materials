@@ -1,0 +1,126 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>IETF 81 - Thoughts on HTTP Header Field Parsing</title>
+    <style type="text/css">
+body {
+  color: black;
+  font-family: verdana, helvetica, arial, sans-serif;
+  font-size: 18pt;
+}
+h1 {
+  font-size: 36pt;
+}
+li {
+  margin-top: 0.5em;
+}
+q {
+  font-style: italic;  
+}
+.break {
+  page-break-before: always;
+}
+@page {
+  size: a4 landscape;
+}
+@page {
+  @bottom-left {
+       content: "Julian Reschke, greenbytes";
+  }
+  @bottom-right {
+       content: counter(page);
+  }
+  @top-center {
+       content: "IETF 81 - Thoughts on HTTP Header Field Parsing";
+  }
+}
+    </style>
+  </head>
+  <body>
+    <h1>IETF 81 - Thoughts on HTTP Header Field Parsing</h1>
+    <p>
+      <a href="mailto:julian.reschke@greenbytes.de">Julian Reschke</a>, greenbytes
+    </p>
+  
+    <h2 class="break">Background</h2>
+    <ul>
+      <li>HTTPbis WG Work on Content-Disposition (now <a href="http://greenbytes.de/tech/webdav/rfc6266.html">RFC 6266</a>)</li>
+      <li>Various HTTPbis WG issues, such as
+        <a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/231">231: Considerations for new headers</a>
+      </li>
+    </ul>
+    
+    <h2>Problem Statement</h2>
+    <ul>
+      <li>The parsing of many HTTP header fields is <em>hard</em>!</li>
+      <li>Implementations <em>do</em> get it wrong.</li>
+      <li>Extension points not well understood.</li>
+      <li>I18N not well understood and frequently considered too late.</li>
+      <li>We can't fix the past, but we can try to do better.</li>
+    </ul>
+  
+    <h2 class="break">Example: the List Production and repeating Header Field instances</h2>
+    <pre>  Foo: a
+  Foo: b    </pre>
+    <p>
+      is equivalent to
+    </p>
+    <pre>  Foo: a, b    </pre>
+    <ul>
+      <li>This is fine for simple stuff like method names.</li>
+      <li>It falls apart when people who define new header fields do not get it (Example: Set-Cookie).</li>
+      <li>It helps for folding multiple instances into one, but <em>not</em> for parsing.</li>
+    </ul>
+    <pre>  If-Match: "strong", W/"weak", "oops, a \"comma\""    </pre>
+  
+    <h2 class="break">Example: the List Production and repeating Header Field instances</h2>
+    <p>
+      Combining list production with structured field syntax:
+    </p>
+    <pre>  WWW-Authenticate = 1#challenge
+  challenge        = auth-scheme 1*SP 1#auth-param
+  auth-param       = token "=" ( token / quoted-string )</pre>
+    <p>
+      Example:
+    </p>
+    <pre>  WWW-Authenticate: Newauth realm="newauth",
+    test="oh, a \"comma\"", foo=a'b'c, Basic realm="basic"
+    </pre>
+
+    <h2 class="break">Example: Parameters - Whitespace, Quoting</h2>
+    <pre>  param = token "=" ( token / quoted-string )    </pre>
+    <pre>  foo=bar; foo='bar'; foo="bar"; foo = "bar"    </pre>
+    <ul>
+      <li>Whitespace sometimes allowed, sometimes not.</li>
+      <li>Lots of confused parsers.</li>
+      <li>Single quote <em>is</em> used in <tt>token</tt> values, thus is <em>not</em> available for quoting.</li>
+      <li>Definitions special-case the right hand side for individual parameter names, generic
+      parsers can't do that (example: <a href="http://greenbytes.de/tech/webdav/rfc5988.html#rfc.section.5">RFC 5988</a> disallows token form for <tt>title</tt>, uses
+      double quotes for <tt>quoted-mt</tt> without making it a <tt>quoted-string</tt>)</li>
+    </ul>
+
+    <h2 class="break">Proposals</h2>
+    <ul>
+      <li>Test Cases. Examples. Lots.</li>
+      <li>Make existing syntax more consistent where we can (fix mistakes where possible, discourage generating useless whitespace, require
+      recipients to deal with it nevertheless)</li>
+      <li>Encourage authors of new header fields to re-use existing syntax and to think about extensibility.</li>
+    </ul>
+
+    <h2 class="break">Links</h2>
+    <p>
+      My tests:
+    </p>
+    <ul>
+      <li>Content-Disposition - <a href="http://greenbytes.de/tech/tc2231/">http://greenbytes.de/tech/tc2231/</a></li>
+      <li>Content-Type - <a href="http://greenbytes.de/tech/tc/httpcontenttype/">http://greenbytes.de/tech/tc/httpcontenttype/</a></li>
+      <li>Link - <a href="http://greenbytes.de/tech/tc/httplink/">http://greenbytes.de/tech/tc/httplink/</a></li>
+      <li>WWW-Authenticate - <a href="http://greenbytes.de/tech/tc/httpauth/">http://greenbytes.de/tech/tc/httpauth/</a></li>
+    </ul>
+    <p>
+      ...and then there's also <a href="http://redbot.org/">http://redbot.org/</a>.
+    </p>
+
+  </body>
+</html>

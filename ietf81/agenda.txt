@@ -1,0 +1,46 @@
+HTTPbis Working Group Agenda
+TUESDAY, July 26, 2011
+0900-1130 Morning Session I (204 B)
+
+xmpp:httpbis@jabber.ietf.org?join
+http://ietf81streaming.dnsalias.net/ietf/ietf802.m3u
+
+=================================================================
+
+*   1 min - Scribe selection
+*   4 min - Agenda bashing
+*   5 min - WG status [Mark Nottingham]
+*  20 min - HTTP -14, 15 changes overview [Yves Lafon]
+* 110 min - Active issues discussion [Mark Nottingham]
+            #186: Document HTTP's error-handling philosophy
+            #270: \-escaping in quoted strings
+            #100: DNS Spoofing / DNS Binding advice
+            #297: Retrying Requests
+            #160: Redirects and non-GET methods
+            #295: Applying original fragment to "plain" redirected URI
+            #306: does etag value really use quoted-string
+            #290: Motivate one-year limit for Expires
+             #78: Relationship between 401, Authorization and WWW-Authenticate
+            #177: Realm required on challenges
+            #195: auth-param syntax
+*  10 min - Parsing HTTP Headers [Julian Reschke]
+
+=================================================================
+
+Recommended Reading:
+http://trac.tools.ietf.org/wg/httpbis/trac/report/9 <-- active issues
+http://www.ietf.org/internet-drafts/
+      draft-ietf-httpbis-p1-messaging-15
+      draft-ietf-httpbis-p2-semantics-15
+      draft-ietf-httpbis-p3-payload-15
+      draft-ietf-httpbis-p4-conditional-15
+      draft-ietf-httpbis-p5-range-15
+      draft-ietf-httpbis-p6-cache-15
+      draft-ietf-httpbis-p7-auth-15
+      draft-ietf-httpbis-method-registrations-06
+      draft-ietf-httpbis-security-properties-05
+      draft-ietf-httpbis-authscheme-registrations-01
+
+Other background material:
+      http://www.ietf.org/html.charters/httpbis-charter.html
+      http://trac.tools.ietf.org/wg/httpbis/trac/wiki

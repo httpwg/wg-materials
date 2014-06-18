@@ -1,0 +1,84 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>IETF 80 - Content-Disposition</title>
+    <style type="text/css">
+body {
+  color: black;
+  font-family: verdana, helvetica, arial, sans-serif;
+  font-size: 18pt;
+}
+h1 {
+  font-size: 36pt;
+}
+li {
+  margin-top: 0.5em;
+}
+q {
+  font-style: italic;  
+}
+del {
+  color: red;
+  text-decoration: line-through;
+}
+ins {
+  color: green;
+  text-decoration: underline;
+}
+.break {
+  page-break-before: always;
+}
+@page {
+  size: a4 landscape;
+}
+@page {
+  @bottom-left {
+       content: "Julian Reschke, greenbytes";
+  }
+  @bottom-right {
+       content: counter(page);
+  }
+  @top-center {
+       content: "IETF 80 - Content-Disposition";
+  }
+}
+    </style>
+  </head>
+  <body>
+    <h1>IETF 80 - Content-Disposition</h1>
+    <p>
+      <a href="mailto:julian.reschke@greenbytes.de">Julian Reschke</a>, greenbytes
+    </p>
+  
+    <h2 class="break">Problem Statement</h2>
+    <ul>
+      <li>As of recent, there was no interop for non-ASCII filenames in
+      Content-Disposition header fields. See <a href="http://greenbytes.de/tech/tc2231/">http://greenbytes.de/tech/tc2231/</a> for the ugly details.</li>
+      <li>There was confusion about who is defining what (RFC 2616 vs RFC 2183).</li>
+      <li>RFC 2183 contains complicated options that do not make sense in HTTP.</li>
+    </ul>
+    
+    <h2 class="break">Thus...</h2>
+    <ul>
+      <li>Define in separate spec from the two above, clarifying I18N, removing options, fixing bugs.</li>
+      <li>Approved <tt>&lt;blink></tt>2011-03-28<tt>&lt;/blink></tt>.</li>
+      <li>Firefox, Opera, and Konqueror did implement this for a long time.</li>
+      <li>Chrome 9 and IE 9 followed since IETF LC.</li>
+      <li>Only one major UA left (just saying).</li>
+    </ul>
+    
+    <h2 class="break">Why six months between IETF LC and now?</h2>
+    <ul>
+      <li>Some UA vendors wanted to discuss error handling.</li>
+      <li>Turns out that in this case, error handling was inconsistent.</li>
+    </ul>
+    
+    <h2>Next steps</h2>
+    <ul>
+      <li>Reference from HTTPbis specs?</li>
+      <li>Advance to Draft Standard soon?</li>
+    </ul>
+
+  </body>
+</html>

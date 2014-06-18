@@ -1,0 +1,217 @@
+Agenda: http://tools.ietf.org/wg/httpbis/agenda?item=agenda78.html
+
+1. agenda bashing
+Alexey, do we need to talk about rechartering? (thinking of HTTP Timeout)
+mnot: not now
+ 
+2. httpbis status (see slides)
+mnot: want to have LC in ~3 months
+new workflow allows editors to incorporate uncontroversial changes directly in the spec
+and keep state in trac
+
+Julian: previous drafts done before IETF meetings, -11 will be published soon as we made enough progress
+<list of changes, see slides>
+
+Question? -> none
+ 
+3. RFC2817
+mnot: how much of 2817 can be moved to httpbis (CONNECT? Upgrade?)
+<Julian> can we obsolete 2817 if we move these parts into httpbis?
+Alexey: thumbs up
+<roy.fielding> works for me
+Adam Barth: obsoleting it would be fine
+Alexey: changes are in the spirit of the WG charter
+Cyrus: one active draft reference 2817, See 4825 and wrap
+Julian: might be only the status code registry
+Martin: 4825 suggest that people use Upgrade to TLS
+Alexey: in practise we do that all the time, if there is an upgrade to xcap, it will fix the link
+ 
+ 4. RFC2617
+mnot: part7 is the http auth framework, the meat of auth (basic and digest) is in 2617
+issues like i18n auth scheme registry might be addressed
+a path could be to have basic and digest in one or two drafts, framework in p7
+Alexey: seems to be the right thing to do, having the framework in p7 is fine, other two documents will need a recharter
+mnot: no changes needed as a first step to produce new documents, only i18n will require changes
+Alexey: reopening digest could be controversial
+<Barry Leiba> Cyrus: I don't see that draft-ietf-vwrap-type-system <http://tools.ietf.org/wg/vwrap/draft-ietf-vwrap-type-system/> has any ref to RFC 2617.  Checking whether I got the right doc when you said that.
+<Barry Leiba> Never mind... 2817, not 2617.
+mnot: if the recharter says that only editorial changes are made, it could help.
+Cyrus: not sure IESG will accept Digest as-is
+Alexey: moving to historic might help. If somebody want to reopen Basic and Digest, it would be better if it was in a WG
+Cyrus: Mutual Auth is there as an example of new auth
+mnot: we are not a security-related WG
+<roy.fielding> How about defining a registry for auth schemes?
+Alexey: that is a good idea (in response to Roy's comment)
+ 
+5. Registration Policies
+Alexey: does it mean that every RFC can define new method?
+Julian looking at the relevant text
+<Julian> IETF Review: "New values are assigned only through
+ RFCs that have been shepherded through the IESG as AD-
+ Sponsored or IETF WG Documents [RFC3932] [RFC3978]"
+<roy.fielding> HTTP has historically been a gateway protocol -- arbitrary methods are supported but we have no registry for sharing.
+mnot: most important are methods and status code
+<martin.thomson> suggestion:   Standards Action - Values are assigned only for Standards Track RFCs approved by the IESG. 
+Alexey: Informational is allowed by the definition
+Martin Thomson: Standards Action seems in order
+Alexey: we just need a gatekeeper
+Martin: IETF review also has a gatekeeper
+Julian: Specification required + expert review. Do we want to allow other bodies like W3C to register new methods?
+Martin: we are looking at a higher bar than just IETF review
+Alexey: How about IETF review + expert review ?
+Martin: I think that IETF review imply expert review
+=> IETF Review indeed seems to cover the case
+<Anne> requiring an RFC for a new HTTP method?
+mnot: yes (response to Anne)
+<Anne> sounds like overkill to me
+<Julian> Anne, just for the record: the RFC requirement for methods isn't new
+<Anne> kk
+mnot: probably a higher bar for auth scheme
+Alexey: you want to allow experimentaiton as well
+Martin: point of order, spec required implies expert review, no need to specify it
+Cyrus: why Transfer-Coding and Content-Coding don't require IETF review while Range would get it ?
+mnot: because we already have entries in the registry
+adam: is there spam protection for upgrade tokens?
+mnot: yes
+sam johnston: any plan to have a user-editable registry for link ?
+mnot: not in scope of this wg, will talk offline
+mnot: when you get question about what status code to use and you point to let's say a Webdav-defined status code, it is common to have a "it's webdav, not an HTTP status code", what can we do to clear up that perception ?
+can be fixed in the registration text, also in the registration procedure we can require specific document to register the status code.
+what would people think to require specific document to register status code ?
+Julian: depends on how litteral you take that, if you have 3, do you need 3 docs ? 
+mnot: no
+Julian: also the shouldn't be a need to split status code and methods
+martin: maybe you want to include guidance in the registry to define what you want to put in those
+mnot: just opened new methods about guidance to define extensions like methods etc...
+ 
+6. Content-Disposition
+<see slides>
+Julian: people interested in security consideration for Content-Disposition are welcomed to contact me
+ 
+7. Active Issues
+http://trac.tools.ietf.org/wg/httpbis/trac/report/17
+
+http://trac.tools.ietf.org/wg/httpbis/trac/ticket/224
+Header Classification
+do we want to rethink header classification ?
+Martin: good suggestion from Roy to keep only connection and end-to-end headers.
+mnot: general vs entity is a confusing concept
+
+http://trac.tools.ietf.org/wg/httpbis/trac/ticket/225
+contradiction between p2 and p6 text
+<martin.thomson> conclusion was to invalidate
+people slightly in favor of invalidating
+need text for #100 about DNS spoofing, contributions welcomed
+
+http://trac.tools.ietf.org/wg/httpbis/trac/ticket/213
+<roy.fielding> The only thing left for #109 is "entity-header" classification, which we just agreed to remove.
+the spec define 1xx to 5xx while grammar allow 3 digits, is 016 or 913 allowed?
+Julian: 016 or 913 require IETF review anyway, so IANA should never see those
+mnot: also do we want to reserve a range for local use?
+adam: clarify 0xx and 6+xx in which direction ?
+mnot: clarify that they are reserved, and cannot for now be registered.
+Alexey: has tightening the ABNF discussed?
+mnot: not yet, perhaps in the future a new class will be added
+Julian: if we change the ABNF if will change a semantical error in a parsing error. Do we want to do that?
+Alexey: I will check what SMTP did
+<roy.fielding> and do the opposite ;-)
+'effective request URI', editors are talking about using 'target URI'.
+<alexey.melnikov> In SMTP: Reply-code     = %x32-35 %x30-35 %x30-39
+<alexey.melnikov> So this is more restrictive than 3DIGIT
+Jeff: Effective Request URI implies that it is not serialized on the wire. It might be good to keep the explanation in the spec
+perhaps using ERU as an acronym
+<roy.fielding> no no no 
+
+http://trac.tools.ietf.org/wg/httpbis/trac/ticket/221
+Should Effective Request URI consider HTTP/1.0 ?
+Jeff: that should be noted in the spec
+mnot: but no need to define an algorithm for HTTP/1.0
+
+http://trac.tools.ietf.org/wg/httpbis/trac/ticket/222
+<roy.fielding> yeah, but the whole purpose of * is not to be a URI
+Julian: we need to come up with an URI, we need to state what that textual representation is
+Julian: if we don't define target URI for OPTIONS, there are other places in the spec where we have that issue
+<roy.fielding> those places already are special-cased for * (they must be)
+Adam: you need to have an URI for everything at the security layer.
+Martin: is * in the http scheme at all? Would a specific scheme be ok ? like "*" ?
+Alexey: nice hack, but might be difficult to register
+<roy.fielding> nope
+Adam: in CORS, "*" represent "any URI"
+=> continue on the mailing list 
+<martin.thomson> suggestion wasn't serious :)
+
+http://trac.tools.ietf.org/wg/httpbis/trac/ticket/233
+is * only usable for OPTIONS ?
+some nodding heads
+Julian: OPTIONS is used a lot OPTIONS * almost never (in WebDAV)
+Martin: should we kill the star ?
+<roy.fielding> It works fine for me.
+<roy.fielding> I see no reason to stop implementing OPTION *
+<martin.thomson> use case?
+<roy.fielding> for OPTIONS
+<martin.thomson> yes
+<cyrus> for OPTIONS *
+<martin.thomson> OPTIONS * specifically
+mnot => continue on the list
+<roy.fielding> for server OPTIONS
+
+http://trac.tools.ietf.org/wg/httpbis/trac/ticket/158
+maybe define Keep-Alive in an appendix
+Yngwe: we use Proxy-Connection to indicate Keep-Alive to the proxy. don't remember why
+
+ http://trac.tools.ietf.org/wg/httpbis/trac/ticket/79
+<martin.thomson> On OPTIONS *:
+Request-URI is an asterisk ("*"), the OPTIONS request is    intended to apply to the server in general rather than to a specific    resource. Since a server's communication options typically depend on    the resource, the "*" request is only useful as a "ping" or "no-op"    type of method; it does nothing beyond allowing the client to test    the capabilities of the server. For example, this can be used to test    a proxy for HTTP/1.1 compliance (or lack thereof).
+
+<roy.fielding> The advantage of OPTIONS * is that it makes a request without identifying a specific URI, thus allowing some security issues to be discovered before revealing the traget of the next request. It also does not impact hit rates.
+
+http://trac.tools.ietf.org/wg/httpbis/trac/ticket/203
+Max-Forwards usable only for OPTIONS and TRACE ?
+...some nodding
+
+http://trac.tools.ietf.org/wg/httpbis/trac/ticket/232
+issue is about adding prose to avoid transforming UA in an Accept, with too much details
+<roy.fielding> whereas it used to be a MUST NOT?
+
+http://trac.tools.ietf.org/wg/httpbis/trac/ticket/160
+Yngwe: there are some sites that were broken while redirecting on 301/302 on POST
+
+Adam: is this linked to 307 and user prompting ?
+mnot: it is a different one, we should open an issue on user prompting
+
+http://trac.tools.ietf.org/wg/httpbis/trac/ticket/178
+ still needs discussion, a partial proposal in upcoming -11
+ http://trac.tools.ietf.org/wg/httpbis/trac/ticket/235
+<roy.fielding> I did not addess 178 yet ... just changed terms to make existing text clearer for content-md5
+<roy.fielding> we should consider deprecating content-md5 in general
+
+Active Design ticket list
+the "interesting" ones are marked 'later'
+hardest issues are #20 and #22
+<roy.fielding> http://trac.tools.ietf.org/wg/httpbis/trac/report/9
+
+http://trac.tools.ietf.org/wg/httpbis/trac/ticket/22
+
+http://trac.tools.ietf.org/wg/httpbis/trac/ticket/20
+long history, difficult to reach consensus
+Adam: do you need data for what browsers do wrt #20 ?
+mnot: more data welcomed, as browser changed
+ 
+8. Memento presentation
+<see slides>
+Slide: Memento Framework
+<Julian> should look for overlap with http://greenbytes.de/tech/webdav/rfc5829.html
+stpeter: is the whole flow depending on having the original URI being active ? (including DNS)
+Herbert: it can happen from the archive
+Julian: it may be possible to re-use some recently registered link relatiions (RFC 5829)
+Carrasco: we have the same issue in the language dimension
+Martin: how do I do "monitoring state between date d1 and d2" ?
+Herbert: there are multiple relationships, one pointing to the first or the last and there is a discovery API to get a list of mementos with associated dates
+Martin: wanting for the drafts
+<stpeter> http://www.mementoweb.org/
+<stpeter> and http://www.mementoweb.org/guide/http/ has some details
+<Julian> running code!
+Herbert: there are plugins for mediawiki, a mozilla plugin, and more to come
+mnot: the earlier the discussion starts the better, in case the protocol ahs to change
+ 
+ADJOURNED

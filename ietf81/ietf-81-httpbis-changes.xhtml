@@ -1,0 +1,105 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>IETF 81 - HTTPbis -14/-15 Changes Overview</title>
+    <style type="text/css">
+body {
+  color: black;
+  font-family: verdana, helvetica, arial, sans-serif;
+  font-size: 18pt;
+}
+h1 {
+  font-size: 36pt;
+}
+li {
+  margin-top: 0.5em;
+}
+q {
+  font-style: italic;  
+}
+.break {
+  page-break-before: always;
+}
+@page {
+  size: a4 landscape;
+}
+@page {
+  @bottom-left {
+       content: "Julian Reschke, greenbytes";
+  }
+  @bottom-right {
+       content: counter(page);
+  }
+  @top-center {
+       content: "IETF 81 - HTTPbis -14/-15 Changes Overview";
+  }
+}
+    </style>
+  </head>
+  <body>
+    <h1>IETF 81 - HTTPbis -14/-15 Changes Overview</h1>
+    <p>
+      <a href="mailto:julian.reschke@greenbytes.de">Julian Reschke</a>, greenbytes
+    </p>
+  
+    <h2 class="break">History</h2>
+    <ul>
+      <li>-11: published August 2010 (after IETF 78)</li>
+      <li>-12: published October 2010 (before IETF 79, WG did not meet)</li>
+      <li>-13: published March 2011 (before IETF 80)</li>
+      <li>-14: published April 2011 (after IETF 80)</li>
+      <li>-15: published July 2011 (before IETF 81)</li>
+    </ul>
+    
+    <h2 class="break">Changes</h2>
+    <ul>
+      <li>Default charsets for text media types (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/20">Ticket 20</a>)</li>
+      <li>Handling multiple Content-Length headers (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/95">Ticket 95</a>)</li>
+      <li>Content-MD5 and partial responses (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/178">Ticket 178</a>)</li>
+      <li>message-body in CONNECT request (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/251">Ticket 251</a>)</li>
+      <li>HTTP-Version should be redefined as fixed length pair of DIGIT . DIGIT (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/273">Ticket 273</a>)</li>
+    </ul>
+
+    <h2>Changes (Best Practices)</h2>
+    <ul>
+      <li>Recommend minimum sizes for protocol elements (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/282">Ticket 282</a>)</li>
+      <li>Set expectations around buffering (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/283">Ticket 283</a>)</li>
+      <li>Considering messages in isolation (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/288">Ticket 288</a>)</li>
+    </ul>
+
+    <h2 class="break">Changes (Rewrites)</h2>
+    <ul>
+      <li>If-* and entities (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/89">Ticket 89</a>)</li>
+      <li>Definition of validator weakness (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/101">Ticket 101</a>)</li>
+      <li>ETags and Quotes (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/269">Ticket 269</a>)</li>
+    </ul>
+
+    <h2>Changes (Status Codes)</h2>
+    <ul>
+      <li>Clarify 203 Non-Authoritative Information (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/203">Ticket 203</a>)</li>
+      <li>Clarify status code for rate limiting (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/255">Ticket 255</a>)</li>
+      <li>Clarify 403 forbidden (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/294">Ticket 294</a>)</li>
+      <li>Clarify 203 Non-Authoritative Information (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/296">Ticket 296</a>)</li>
+    </ul>
+
+    <h2 class="break">Changes (Caching)</h2>
+    <ul>
+      <li>Mismatch Vary (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/38">Ticket 38</a>)</li>
+      <li>Cache Invalidation only happens upon successful responses (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/235">Ticket 235</a>)</li>
+      <li>Proxies don't 'understand' methods (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/289">Ticket 289</a>)</li>
+      <li>Cache Extensions can override no-store, etc. (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/291">Ticket 291</a>)</li>
+      <li>Pragma (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/292">Ticket 292</a>)</li>
+    </ul>
+
+    <h2>Changes (Editorial)</h2>
+    <ul>
+      <li>Allow is not in 13.5.2 (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/53">Ticket 53</a>) (editorial)</li>
+      <li>Untangle ABNFs for header fields (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/276">Ticket 276</a>) (editorial)</li>
+      <li>Confusing undefined parameter in media range example (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/281">Ticket 281</a>) (editorial)</li>
+      <li>Content-Length ABNF broken (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/286">Ticket 286</a>) (editorial)</li>
+      <li>Update default reason phrase for 413 (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/298">Ticket 298</a>) (editorial)</li>
+    </ul>
+
+  </body>
+</html>

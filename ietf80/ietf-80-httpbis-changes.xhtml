@@ -1,0 +1,176 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>IETF 80 - HTTPbis -13 Changes Overview</title>
+    <style type="text/css">
+body {
+  color: black;
+  font-family: verdana, helvetica, arial, sans-serif;
+  font-size: 18pt;
+}
+h1 {
+  font-size: 36pt;
+}
+li {
+  margin-top: 0.5em;
+}
+q {
+  font-style: italic;  
+}
+.break {
+  page-break-before: always;
+}
+@page {
+  size: a4 landscape;
+}
+@page {
+  @bottom-left {
+       content: "Julian Reschke, greenbytes";
+  }
+  @bottom-right {
+       content: counter(page);
+  }
+  @top-center {
+       content: "IETF 80 - HTTPbis -13 Changes Overview";
+  }
+}
+    </style>
+  </head>
+  <body>
+    <h1>IETF 80 - HTTPbis -13 Changes Overview</h1>
+    <p>
+      <a href="mailto:julian.reschke@greenbytes.de">Julian Reschke</a>, greenbytes
+    </p>
+  
+    <h2 class="break">History</h2>
+    <ul>
+      <li>-09: published March 2010 (before IETF 77)</li>
+      <li>-10: published July 2010 (before IETF 78)</li>
+      <li>-11: published August 2010 (after IETF 78)</li>
+      <li>-12: published October 2010 (before IETF 79, WG did not meet)</li>
+      <li>-13: published March 2011 (before IETF 80)</li>
+    </ul>
+
+    <h2 class="break">Changes: relations to other specifications (1/2)</h2>
+
+    <p><a href="http://greenbytes.de/tech/webdav/rfc2145.html">RFC 2145</a> (Use and Interpretation of HTTP Version Numbers)</p>
+    <ul>
+    <li>RFC2145 Normative (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/75">Ticket 75</a>)</li>
+    </ul>
+    <p>-> Part 1 now obsoletes RFC 2145</p>
+    
+    <p><a href="http://greenbytes.de/tech/webdav/rfc2617.html">RFC 2617</a> (HTTP Authentication: Basic and Digest Access Authentication)</p>
+    <ul>
+    <li>should we have an auth scheme registry (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/141">Ticket 141</a>)</li>
+    <li>absorbing the auth framework from 2617 (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/237">Ticket 237</a>)</li>
+    </ul>
+    <p>-> Part 7 now updates RFC 2617 with respect to the authentication framework,
+    and introduces an authentication scheme registry</p>
+
+    <h2 class="break">Changes: relations to other specifications (2/2)</h2>
+
+    <p><a href="http://greenbytes.de/tech/webdav/rfc2817.html">RFC 2817</a> (Upgrading to TLS Within HTTP/1.1)</p>
+    <ul>
+    <li>Migrate Upgrade details from RFC2817 (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/240">Ticket 240</a>)</li>
+    <li>Migrate CONNECT from RFC2817 to p2 (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/239">Ticket 239</a>)</li>
+    </ul>
+    <p>-> Part 1 and 2 now update RFC 2817 (defining CONNECT, and updating the Upgrade header field)</p>
+
+    <h2 class="break">Changes: terminology and ABNF</h2>
+    <ul>
+    <li>Clarify "Requested Variant" (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/69">Ticket 69</a>)</li>
+    <li>Clarify entity / representation / variant terminology (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/109">Ticket 109</a>)</li>
+    <li>duplicate ABNF for Reason-Phrase (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/137">Ticket 137</a>) (editorial)</li>
+    <li>define "transparent" proxy (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/210">Ticket 210</a>) (editorial)</li>
+    <li>duplicate ABNF for "Method" (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/275">Ticket 275</a>) (editorial)</li>
+    <li>untangle ABNFs for header fields (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/276">Ticket 276</a>) (editorial)</li>
+    </ul>
+    <p>-> We now create an aggregated ABNF from the source code of the specs</p>
+       
+    <h2 class="break">Changes: extension points</h2>
+    <ul>
+    <li>Custom Ranges (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/85">Ticket 85</a>)</li>
+    <li>Max-Forwards vs extension methods (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/203">Ticket 203</a>)</li>
+    <li>Allowing heuristic caching for new status codes (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/223">Ticket 223</a>)</li>
+    <li>proxies not supporting certain methods (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/226">Ticket 226</a>) (editorial)</li>
+    <li>Considerations for new status codes (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/229">Ticket 229</a>)</li>
+    <li>Considerations for new methods (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/230">Ticket 230</a>)</li>
+    <li>Is * usable as a request-uri for new methods? (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/233">Ticket 233</a>)</li>
+    </ul>
+    
+    <h2 class="break">Other Changes (1/5)</h2>
+
+    <p>non-specific</p>
+    <ul>
+    <li>205 Bodies (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/88">Ticket 88</a>)</li>
+    <li>HTTP(s) URI scheme definitions (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/159">Ticket 159</a>)</li>
+    <li>Note special status of Content-* prefix in header registration procedures (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/180">Ticket 180</a>) (editorial)</li>
+    <li>Status codes and caching (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/199">Ticket 199</a>)</li>
+    <li>Header Classification (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/224">Ticket 224</a>)</li>
+    </ul>
+
+    <h2 class="break">Other Changes (2/5)</h2>
+
+    <p>Part 1 (Messaging)</p>
+    <ul>
+    <li>Delimiting messages with multipart/byteranges (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/90">Ticket 90</a>)</li>
+    <li>Trailer requirements (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/193">Ticket 193</a>)</li>
+    <li>What is the value space of HTTP status codes? (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/213">Ticket 213</a>)</li>
+    <li>confusing Date requirements for clients (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/248">Ticket 248</a>)</li>
+    </ul>
+
+    <h2 class="break">Other Changes (3/5)</h2>
+
+    <p>Part 2 (Semantics)</p>
+    <ul>
+    <li>Connection closing (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/28">Ticket 28</a>) (editorial)</li>
+    <li>Fragment combination / precedence during redirects (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/43">Ticket 43</a>)</li>
+    <li>Content-* vs. PUT (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/79">Ticket 79</a>)</li>
+    <li>Understanding Content-* on non-PUT requests (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/102">Ticket 102</a>)</li>
+    <li>Monitoring connections (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/108">Ticket 108</a>) (editorial)</li>
+    <li>Methods and Caching (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/139">Ticket 139</a>)</li>
+    <li>Are OPTIONS and TRACE safe? (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/171">Ticket 171</a>)</li>
+    <li>User-Agent guidelines (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/232">Ticket 232</a>)</li>
+    <li>clarify PUT semantics (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/267">Ticket 267</a>)</li>
+    </ul>
+
+    <h2 class="break">Other Changes (4/5)</h2>
+
+    <p>Part 3 (Payload)</p>
+    <ul>
+    <li>confusing req. language for Content-Location (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/136">Ticket 136</a>) (editorial)</li>
+    <li>"requested resource" in content-encoding definition (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/183">Ticket 183</a>)</li>
+    </ul>
+
+    <p>Part 5 (Range)</p>
+    <ul>
+    <li>Caches can't be required to serve ranges (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/217">Ticket 217</a>)</li>
+    </ul>
+
+    <h2 class="break">Other Changes (5/5)</h2>
+
+    <p>Part 6 (Cache)</p>
+    <ul>
+    <li>No-cache definition (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/216">Ticket 216</a>)</li>
+    <li>Does no-store in request imply no-cache? (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/249">Ticket 249</a>)</li>
+    <li>Clarify "public" (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/268">Ticket 268</a>)</li>
+    </ul>
+  
+    <p>Part 7 (Auth)</p>
+    <ul>
+    <li>auth-param syntax (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/195">Ticket 195</a>)</li>
+    </ul>
+    
+    <h2 class="break">Changes: housekeeping</h2>
+    <ul>
+    <li>MIME-Version not listed in P1, general header fields (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/122">Ticket 122</a>) (editorial)</li>
+    <li>Factor out Content-Disposition (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/123">Ticket 123</a>)</li>
+    <li>introduction to part 7 is work-in-progress (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/130">Ticket 130</a>) (editorial)</li>
+    <li>consider removing the "changes from 2068" sections (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/220">Ticket 220</a>) (editorial)</li>
+    <li>update RFC 2109 reference (<a href="http://trac.tools.ietf.org/wg/httpbis/trac/ticket/279">Ticket 279</a>) (editorial)</li>
+    </ul>
+    
+
+  </body>
+</html>

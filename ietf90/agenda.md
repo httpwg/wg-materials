@@ -27,7 +27,7 @@ Related Reading:
 
 *  10 min - draft-loreto-httpbis-explicitly-auth-proxy [Salvatore Loreto]
 
-*  60 min - dicussion
+*  60 min - discussion
 
 ## TUESDAY, July 22, 2014 - 1420-1620 EDT
 

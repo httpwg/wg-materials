@@ -23,13 +23,13 @@ Related Reading:
 
 *  30 min - Proxies from a Browser Perspective [Adam Langley]
 
-*  15 min - draft-nottingham-http-proxy-problem
+*  10 min - Impact of Encryption upon Satellite [Peter Lepeska]
 
 *  10 min - draft-loreto-httpbis-explicitly-auth-proxy [Salvatore Loreto]
 
-*  10 min - Impact of Encryption upon Satellite [Peter Lepeska]
-
 *  50 min - discussion
+
+*  15 min - draft-nottingham-http-proxy-problem
 
 ## TUESDAY, July 22, 2014 - 1420-1620 EDT
 

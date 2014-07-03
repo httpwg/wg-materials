@@ -9,9 +9,11 @@ Related Reading:
 * draft-nottingham-http-proxy-problem
 * https://github.com/http2/http2-spec/wiki/Proxy-User-Stories
 * draft-loreto-httpbis-explicitly-auth-proxy
+* draft-reschke-rfc5987bis-07
 * draft-ietf-httpbis-alt-svc
 * draft-ietf-httpbis-http2-encryption
 * draft-hutton-httpbis-connect-protocol
+* draft-reschke-http-jfv-00
 * draft-reschke-http-cice
 * draft-nottingham-http-patch-status 
 
@@ -41,6 +43,7 @@ Related Reading:
 *  20 min - HTTP/1.1 revision status, next steps
   * Errata handling
   * Taking bis documents and related drafts to "full" standards
+    * draft-reschke-rfc5987bis-07
   * Accommodating HTTP/2
 
 *  15 min - NYC interim meeting summary, HTTP/2 status, operational advice
@@ -51,8 +54,8 @@ Related Reading:
 
 *  10 min - draft-hutton-httpbis-connect-protocol [Andrew Hutton]
 
+*  10 min - draft-reschke-http-jfv-00 [Julian Reschke]
+
 *  10 min - draft-reschke-http-cice [Julian Reschke]
 
 *   5 min - draft-nottingham-http-patch-status [Mark Nottingham]
-
-*  10 min - Wrap-up / next steps / future meetings

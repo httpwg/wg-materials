@@ -4,6 +4,7 @@
 * Minutes: http://etherpad.tools.ietf.org:9000/p/ietf90-httpbis
 
 Related Reading:
+
 * draft-ietf-httpbis-http2
 * draft-ietf-httpbis-header-compression
 * draft-nottingham-http-proxy-problem
@@ -42,10 +43,10 @@ Related Reading:
 *   5 min - WG Home Page, HTTP FAQ
 
 *  15 min - HTTP/1.1 revision status, next steps
-  * Errata handling
-  * Taking bis documents and related drafts to "full" standards
-    * draft-reschke-rfc5987bis-07
-  * Accommodating HTTP/2
+   * Errata handling
+   * Taking bis documents and related drafts to "full" standards
+     * draft-reschke-rfc5987bis-07
+   * Accommodating HTTP/2
 
 *  15 min - NYC interim meeting summary, HTTP/2 status, operational advice
 

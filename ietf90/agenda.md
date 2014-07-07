@@ -10,6 +10,7 @@ Related Reading:
 * https://github.com/http2/http2-spec/wiki/Proxy-User-Stories
 * draft-loreto-httpbis-explicitly-auth-proxy
 * draft-reschke-rfc5987bis-07
+* draft-nakajima-httpbis-http2-interop-survey
 * draft-ietf-httpbis-alt-svc
 * draft-ietf-httpbis-http2-encryption
 * draft-hutton-httpbis-connect-protocol
@@ -40,7 +41,7 @@ Related Reading:
 
 *   5 min - WG Home Page, HTTP FAQ
 
-*  20 min - HTTP/1.1 revision status, next steps
+*  15 min - HTTP/1.1 revision status, next steps
   * Errata handling
   * Taking bis documents and related drafts to "full" standards
     * draft-reschke-rfc5987bis-07
@@ -48,15 +49,17 @@ Related Reading:
 
 *  15 min - NYC interim meeting summary, HTTP/2 status, operational advice
 
+*   5 min - draft-nakajima-httpbis-http2-interop-survey [Hiro Nakajima]
+
 *  20 min - draft-ietf-httpbis-alt-svc
 
 *  15 min - draft-ietf-http2-encryption
 
 *  10 min - draft-hutton-httpbis-connect-protocol [Andrew Hutton]
 
-*  10 min - draft-reschke-http-jfv-00 [Julian Reschke]
+*   5 min - Header Field parsing recommendations
 
-*  10 min - Header Field parsing recommendations
+*  10 min - draft-reschke-http-jfv-00 [Julian Reschke]
 
 *  10 min - draft-reschke-http-cice [Julian Reschke]
 

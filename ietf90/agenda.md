@@ -50,11 +50,13 @@ Related Reading:
 
 *  20 min - draft-ietf-httpbis-alt-svc
 
-*  20 min - draft-ietf-http2-encryption
+*  15 min - draft-ietf-http2-encryption
 
 *  10 min - draft-hutton-httpbis-connect-protocol [Andrew Hutton]
 
 *  10 min - draft-reschke-http-jfv-00 [Julian Reschke]
+
+*  10 min - Header Field parsing recommendations
 
 *  10 min - draft-reschke-http-cice [Julian Reschke]
 

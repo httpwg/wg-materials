@@ -25,13 +25,13 @@ Related Reading:
 *   2 min - Blue sheets / scribe selection / NOTE WELL
 *   3 min - Agenda bashing
 
-*  30 min - Proxies from a Browser Perspective [Adam Langley]
+*  15 min - Proxies from a Browser Perspective [Adam Langley]
 
 *  10 min - Impact of Encryption upon Satellite [Peter Lepeska]
 
 *  10 min - draft-loreto-httpbis-explicitly-auth-proxy [Salvatore Loreto]
 
-*  50 min - discussion
+*  65 min - discussion
 
 *  15 min - draft-nottingham-http-proxy-problem
 

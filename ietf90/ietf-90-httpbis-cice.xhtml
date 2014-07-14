@@ -1,0 +1,89 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>IETF 90 - Client-Initiated Content-Encoding</title>
+    <style type="text/css">
+body {
+  color: black;
+  font-family: cambria, helvetica, arial, sans-serif;
+  font-size: 18pt;
+}
+h1 {
+  font-size: 36pt;
+}
+li {
+  margin-top: 0.5em;
+}
+q {
+  font-style: italic;  
+}
+.break {
+  page-break-before: always;
+}
+@page {
+  size: a4 landscape;
+}
+@page {
+  @bottom-left {
+       content: "Julian Reschke, greenbytes";
+  }
+  @bottom-right {
+       content: counter(page);
+  }
+  @top-center {
+       content: "IETF 90 - Client-Initiated Content-Encoding";
+  }
+}
+    </style>
+  </head>
+  <body>
+    <h1>IETF 90 - Client-Initiated Content-Encoding</h1>
+    <p>
+      <a href="mailto:julian.reschke@greenbytes.de">Julian Reschke</a>, greenbytes
+    </p>
+
+    <h2 class="break">What problem does it solve?</h2>
+    <p>
+      HTTP/1.1 clients already can use content codings such as "gzip" in requests, but
+      if a server doesn't play along, it's hard to understand what went wrong.
+    </p>
+    <p>
+      Status code 415 (Unsupported Media Type) can already be used, but
+      the recipient wouldn't know whether the problem was caused by the
+      media type or the content coding, and also would need information
+      about what content codings <em>are</em> supported.
+    </p>
+
+    <h2>Proposed Solution</h2>
+    <p>
+      Extend "Accept-Encoding" header field to be usable in responses as well.
+      When sent in a 415 response, it would indicate which content codings
+      are supported.
+    </p>
+    <p>
+      See <a href="http://greenbytes.de/tech/webdav/draft-reschke-http-cice-01.html">draft-reschke-http-cice-01</a>.
+    </p>
+    <p>
+      This is a really a tiny, backwards compatible extension to RFC 7231;
+      it might have been part of it if we had thought of it in time.
+    </p>
+
+    <h2 class="break">To Be Discussed</h2>
+    <p>
+      Also define use in OPTIONS response? Trouble is it might vary
+      be request method.
+    </p>
+    <p>
+      Content codings can be seen as ugly workaround for transfer codings
+      not implemented in practice. Should we try harder to fix <em>that</em>
+      problem?
+    </p>
+    <p>
+      Working Group draft?
+    </p>
+    <p>
+      Once it's a Proposed Standard, it'll be a candidate for inclusion into RFC7231bis.
+    </p>
+  </body>
+</html>

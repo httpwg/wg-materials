@@ -22,46 +22,58 @@ Related Reading:
 
 ## MONDAY, July 21, 2014 - 1300-1500 EDT
 
-*   2 min - Blue sheets / scribe selection / NOTE WELL
-*   3 min - Agenda bashing
+### Administrivia
+* 2 min - Blue sheets / scribe selection / NOTE WELL
+* 3 min - Agenda bashing
 
-*  15 min - Proxies from a Browser Perspective [Adam Langley]
+### Proxies from a Browser Perspective
+* 15 minutes - [Presentation by Adam Langley](http://httpwg.github.io/wg-materials/ietf90/agl-proxies.pdf)
 
-*  10 min - Impact of Encryption upon Satellite [Peter Lepeska]
+### Impact of Encryption upon Satellite
+* 10 minutes - [Presentation by Peter Lepeska]()
 
-*  10 min - draft-loreto-httpbis-explicitly-auth-proxy [Salvatore Loreto]
+### draft-loreto-httpbis-explicitly-auth-proxy
+* 10 minutes - [Presentation from Salvatore Loreto]()
 
-*  65 min - discussion
+### Discussion
+* 65 minutes - general discussion
+* 15 minutes - adopting draft-nottingham-http-proxy-problem
 
-*  15 min - draft-nottingham-http-proxy-problem
+
 
 ## TUESDAY, July 22, 2014 - 1420-1620 EDT
 
-*   2 min - Blue sheets / scribe selection / NOTE WELL
-*   3 min - Agenda bashing
+### Administrivia
+* 2 min - Blue sheets / scribe selection / NOTE WELL
+* 3 min - Agenda bashing
+* 5 min - WG Home Page, HTTP FAQ
 
-*   5 min - WG Home Page, HTTP FAQ
+### Existing HTTP RFCs
+* 15 minutes - [Presentation from Julian Reschke](http://httpwg.github.io/wg-materials/ietf90/ietf-90-httpbis-progressing.pdf)
 
-*  15 min - HTTP/1.1 revision status, next steps
-   * Errata handling
-   * Taking bis documents and related drafts to "full" standards
-     * draft-reschke-rfc5987bis-07
-   * Accommodating HTTP/2
+### HTTP/2
+* 15 minutes - NYC interim meeting summary, HTTP/2 status, operational advice
 
-*  15 min - NYC interim meeting summary, HTTP/2 status, operational advice
+### draft-nakajima-httpbis-http2-interop-survey
+* 5 minutes - [Presentation from Hiro Nakajima]()
 
-*   5 min - draft-nakajima-httpbis-http2-interop-survey [Hiro Nakajima]
+### draft-ietf-httpbis-alt-svc
+* 20 minutes - discussion of [outstanding issues](https://github.com/httpwg/http-extensions/issues?labels=alt-svc&state=open)
 
-*  20 min - draft-ietf-httpbis-alt-svc
+### draft-ietf-http2-encryption
+* 20 minutes - discussion of [outstanding issues](https://github.com/httpwg/http-extensions/issues?labels=opp-sec&state=open)
 
-*  15 min - draft-ietf-http2-encryption
+### draft-hutton-httpbis-connect-protocol
+* 10 minutes - [Presentation from Andrew Hutton]()
 
-*  10 min - draft-hutton-httpbis-connect-protocol [Andrew Hutton]
+### Header Field Parsing
+* 10 minutes - [Presentation from Julian Reschke](http://httpwg.github.io/wg-materials/ietf90/ietf-90-httpbis-header-field-parsing.pdf)
 
-*   5 min - Header Field parsing recommendations
+* 5 minutes - discussion
 
-*  10 min - draft-reschke-http-jfv-00 [Julian Reschke]
+### draft-reschke-http-cice
+* 10 minutes - [Presentation from Julian Reschke](http://httpwg.github.io/wg-materials/ietf90/ietf-90-httpbis-cice.pdf)
 
-*  10 min - draft-reschke-http-cice [Julian Reschke]
+### draft-nottingham-http-patch-status
+* 5 minutes - [Presentation from Mark Nottingham]()
 
-*   5 min - draft-nottingham-http-patch-status [Mark Nottingham]

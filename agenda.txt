@@ -1,0 +1,122 @@
+Agenda - HTTPbis Interim Meeting
+================================
+
+Tokyo, Japan  January 30-February 1, 2013
+
+[Arrangements](http://trac.tools.ietf.org/wg/httpbis/trac/wiki/F2F/Jan13)
+[Issues List](http://trac.tools.ietf.org/wg/httpbis/trac/report/21)
+[Current Draft](http://tools.ietf.org/html/draft-ietf-httpbis-http2)
+
+### WEDNESDAY, January 30, 2013
+
+    0830-0900 Reception
+    0900-1200 Morning Session
+    1200-1300 Lunch - En Cafe
+    1300-1500 Afternoon Session I
+    1500-1530 Break
+    1530-1700 Afternoon Session II
+    1700 Announcement (e.g. How to get out of building)
+
+### THURSDAY, January 31, 2013
+
+    0830-0900 Reception
+    0900-1200 Morning Session
+    1200-1300 Lunch - En Cafe
+    1300-1500 Afternoon Session I
+    1500-1530 Break
+    1530-1700 Afternoon Session II
+
+### FRIDAY, February 1, 2013
+
+    0830-0900 Reception
+    0900-1300 Session
+    1300-1400 Lunch - En Cafe
+
+
+
+Introduction
+------------
+
+- Blue sheets
+- Scribe selection
+- NOTE WELL
+- Meeting format, goals
+- Agenda bashing
+
+
+HTTP/2 Draft Status
+-------------------
+
+The editors (Alexey and Martin) will summarise their current status and
+plans for editorial work. 
+
+
+HTTP/2 Issues
+-------------
+
+### Upgrade
+
+We've delegated TLS upgrade to the TLSWG, and have a plan of action for 
+HTTP to use the Upgrade mechanism defined by HTTP/1.1, possibly augmented
+by hints in DNS and response headers. 
+
+We currently have a proposal for the details of the upgrade, as well as a
+DNS hint proposal. Discussion will focus around these.
+
+- http://tools.ietf.org/html/draft-montenegro-httpbis-http2-negotiation
+- http://tools.ietf.org/html/draft-lear-httpbis-svcinfo-rr
+
+
+### Header Compression
+
+SPDY3's header compression has an identified security issue, so we've 
+been evaluating potential alternatives. Discussion will centre around the
+specifics of these proposals, the criteria we'll use for selecting one, and
+the general approach that HTTP/2 takes to header compression.
+
+- http://tools.ietf.org/html/draft-rpeon-httpbis-header-compression
+- http://tools.ietf.org/html/draft-snell-httpbis-bohe
+- http://http2.github.com/http_samples/mnot/
+- [Presentation from James Snell](https://docs.google.com/presentation/d/1x8GvY-7FJi57DW9vSvjTF1QnTkzM18mXi_LQUUprZeo/view)
+
+### Flow Control
+
+We'll discuss Gabriel's draft of general principles for flow control, and
+how best to reflect it in the draft.
+
+- http://tools.ietf.org/html/draft-montenegro-httpbis-http2-fc-principles
+- https://docs.google.com/document/d/15LMnvVWSY-kF-ME4RZIFHN0FukViapjiefQMmQCnr14/pub
+
+### Frame Sizes
+
+SDPY3 has a data frame with a maximum size of 16MB. Some implementers have 
+mentioned that this limits the use of sendfile() with large files; we'll
+discuss whether to include a "jumbo" frame size (as well as other sizes, 
+depending on their use cases).
+
+
+### Prioritisation
+
+We'll start discussion of the prioritisation mechanism, with the aim of 
+identifying specific issues and/or changes to make.
+
+[Presentation by Will Chan](https://docs.google.com/presentation/d/1OfgPJsW6P7pky5PiyEzBNZnf5dWXq-y19ReSSg6BIeM/edit#slide=id.p)
+
+### Other Issues and Deliverables
+
+Discussion of other potential issues (editorial or design), additional
+deliverables, etc.
+
+
+Implementation and Testing
+--------------------------
+
+Based upon the progress we make (or fail to), we'll attempt to sketch out
+a plan for proofs-of-concept, implementation and interoperability testing.
+
+
+Wrap-up
+-------
+
+- Review of Action Items
+- Next Steps

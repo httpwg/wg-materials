@@ -1,0 +1,24 @@
+Minutes of the HTTPbis Working Group meeting in San Francisco, March 2009
+
+* 45 min - HTTP draft overview and discussion [Mark Nottingham]
+
+Mark presented the changes in the -06 round of drafts, including the ABNF changes, caching changes, and messaging rewrite.
+
+* 10 min - Security properties discussion [Paul Hoffman / Alexey Melnikov]
+
+We briefly reviewed the status of the document, which has not changed since Dublin. The current editors have expressed that they may not be able to devote much time to it going forward, so new editors were solicited; Jeff Hodges and Barry Leiba both put their hands up.
+
+Subsequent discussion covered what an appropriate outcome for this document would be; potentially, some parts could be moved into the HTTP documents' security considerations sections.
+
+* 30 min - HTTP-related draft discussion
+           - HTTP over SCTP [Preethi Natarajan]
+
+Preethi's presentation was received with quite a bit of interest and several questions; for the time being, HTTP over SCTP can be discussed on the HTTPbis mailing list.
+
+           - Bidirectional HTTP [Mark Lentczner]
+
+Substantial discussion of bidirectional HTTP followed that both in the APPS area meeting on Monday, as well as during an informal breakfast BoF on Wednesday. The outcome was to start a new mailing list (hybi@) and propose a BoF for an upcoming IETF.
+
+           - Mutual Authentication [Yutaka OIWA]
+
+Mutual Authentication was covered with some questions from the audience. It was pointed out that it may be most appropriate to take this work to the to-be-formed OAuth WG, since it now appears that they're designing a "two-legged" (i.e., normal client/server) HTTP authentication mechanism as well.

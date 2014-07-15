@@ -1,0 +1,145 @@
+HTTPBIS WG
+IETF 77
+
+Issues: http://svn.tools.ietf.org/svn/wg/httpbis/wg_materials/ietf77/ietf-77-httpbis-issues.xhtml
+Changes (07->09): http://svn.tools.ietf.org/svn/wg/httpbis/wg_materials/ietf77/ietf-77-httpbis.xhtml
+
+Agenda and other info: http://tools.ietf.org/wg/httpbis/agenda
+
+XMPP log: http://www.ietf.org/jabber/logs/httpbis/2010-03-22.txt
+Archived audio stream: http://limestone.uoregon.edu/ftp/pub/videolab/media/ietf77/ietf77-ch6-mon-afnoon2.mp3
+
+==Agenda bash
+
+JeffH might take a few minutes to present security properties
+
+==Changes overview (link above)
+
+Two drafts since Stockholm; changes summarized
+
+Yves: w3c is considering using time ranges as a custom range unit (re http://trac.tools.ietf.org/wg/httpbis/trac/ticket/150)
+
+==Open issues (link above)
+
+Things that are currently being discussed - age calculation (new algorithm, please check it, see http://trac.tools.ietf.org/wg/httpbis/trac/ticket/29), URI fragments in redirection (media type specific?, please provide input, see http://trac.tools.ietf.org/wg/httpbis/trac/ticket/43), response code caching (which codes can be cached?, see http://trac.tools.ietf.org/wg/httpbis/trac/ticket/110), sniffing (see http://trac.tools.ietf.org/wg/httpbis/trac/ticket/155), effective request URI (see http://trac.tools.ietf.org/wg/httpbis/trac/ticket/196)
+
+Yves: fragment processing depends on media type, so do we need to address this in the registration of URI types that allow for fragments?
+
+Yves: (security for sniffing) add text that says that ignoring the content-type is done at the risk of those who do it, as advisory/warning
+
+Julian: and the "sniffing" draft
+
+Yves: we'll have to talk to Adam about that
+
+Alexey: "sniffing" is not well-understood outside this context
+
+jeffh: on effective URI - is this work justified? (see definition in http://lists.w3.org/Archives/Public/www-archive/2009Sep/att-0051/draft-hodges-strict-transport-sec-05.plain.html)
+
+Julian: we needed a name and your name fit (on xmpp: Mark agrees)
+
+Pending issues
+
+Jamshid Mahdavi: has implemented deflate and can explain the problem, not sure about a solution (see http://trac.tools.ietf.org/wg/httpbis/trac/ticket/73)
+
+Mark: proposal is to note that implementations do send deflate without zlib wrappers
+
+Yves: methods and caching, but this (139) is about the story the spec has to say when we decided to use method+URI as the key for caches (which is a clarification over rfc2616 caching text) 
+
+(See XMPP logs for more discussion on this point)
+
+Location header and its handling; Julian proposes to consider non-URI values in Location (such as whitespace) to continue to be errors, and to be subject to (undefined) error handling.
+
+
+==Security properties http://tools.ietf.org/html/draft-ietf-httpbis-security-properties-05
+
+Referencing the "Overall Issue" in the draft
+
+JeffH: the issue is whether this doc is either a collection of peer-entity authentication mechanisms and picking a mandatory to implement set thereof; or if it is intended to be a collection of the nastier security problems (or cross-specification ones)
+
+Robert Sayre: Can't add MTI (mandatory-to-implement) mechanisms by charter
+
+JeffH: if this is a description of the mechanisms that are actually used, this spec is poorly named
+
+Robert: this is authn, because it's not revising 2617
+
+Lisa: expanding might be good to avoid problems with IESG review; describing the problems is useful; wants all included, if possible
+
+JeffH: the name change is only necessary if the scope is constrained to authn
+
+Lisa: authent is a potential hotspot for argument, might need to trade-off time investment against potential benefit
+
+Barry: this might be a good place for the cross-document security considerations or the stuff common to each, those things that don't fit the individual drafts
+
+Joe H: we don't write security considerations just to placate the IESG
+
+==RFC2231 in HTTP (see http://svn.tools.ietf.org/svn/wg/httpbis/wg_materials/ietf77/ietf-77-http2231.xhtml)
+
+Problem with Content-Disposition and I18n
+
+In IETF LC
+
+NedF: making this separate from 2231 is a good idea, it's not time to revise 2231
+
+Ned: apologizing for 2231 shortcomings
+
+jck: profiling things out is right, agrees with Ned
+
+Julian: utf-8 would be nice for HTTP, but it's not possible
+
+ChrisN: don't allow for multiple language variants, profile that out
+
+Julian: send this to LC
+
+Ned and jck: agrees with Chris
+
+jck: the security consideration relating to comparison of utf-8 strings needs to be addressed, but it's not clear what this spec needs to include
+
+Alexey: spec revision needed
+
+Julian: profiling lang variants out is used in an RFC (link header), so profiling that out might be hard
+
+Ned: in practice, that's probably not a problem; no implementations, though there might be in the HTTP world
+
+jck: this looked like a good idea at the time, but it didn't work out; reiterates Ned
+
+Mark: implementers might have felt that it was too complex
+
+Ned: 2231 doesn't say anything about having multiple language flags, might be difficult to include based on syntax definition
+
+Julian shows example from link header draft -08: wrong draft, it's in the draft being discussed, Section 4.3
+
+Ned: might be a problem, but it's a legitimate use case that's being demonstrated, can't object based on this
+
+jck: nervous, but potential problems with the bindings between the parameters and various over header values
+
+Yngve: this might cause problems (mentions accept-language)
+
+Ned: need good guidance on how this is used and how it interacts with similar features of the language
+
+Mark: http already has multiple ways of doing such things and there is no guidance given there
+
+Julian: this will affect the link header draft which is long past LC
+
+Alexey: we can do another LC if we need to
+
+
+==Closing Discussion
+
+Alexey: when is httpbis going to close
+
+Julian: we have been slow, but plan to finish this summer, we will plan to meet in Maastrict
+
+Lisa: HTTP PATCH is now an RFC
+
+
+==WebDAV ideas
+
+http://trac.tools.ietf.org/area/app/trac/wiki/DavFuture
+
+Julian: might charter a WG for this
+
+Cyrus: caldav carddav deployments are demanding more performance and some features
+
+Alexey: try to organize a bof
+
+

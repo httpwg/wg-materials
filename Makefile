@@ -19,7 +19,7 @@ test:
 ghpages:
 ifneq (,$(or $(IS_LOCAL),$(IS_MASTER)))
 	mkdir $(GHPAGES_TMP)
-	find . \( -name *.pdf -or -name *.md -or -name *.txt \) -exec cp -fR {} $(GHPAGES_TMP) \;
+	find . \( -name *.pdf -or -name *.md -or -name *.txt \) -exec rsync -R {} $(GHPAGES_TMP) \;
 	git clean -qfdX
 ifeq (true,$(TRAVIS))
 	git config user.email "ci-bot@example.com"

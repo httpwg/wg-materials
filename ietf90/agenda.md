@@ -49,7 +49,7 @@ Related Reading:
 *   5 min - WG Home Page, HTTP FAQ
 
 ### Existing HTTP RFCs
-15 minutes - [Presentation from Julian Reschke]()
+15 minutes - [Presentation from Julian Reschke](http://httpwg.github.io/wg-materials/ietf90/ietf-90-httpbis-progressing.pdf)
 
 ### HTTP/2
 15 minutes - NYC interim meeting summary, HTTP/2 status, operational advice
@@ -66,14 +66,13 @@ Related Reading:
 ### draft-hutton-httpbis-connect-protocol
 10 minutes - [Presentation from Andrew Hutton]()
 
-### Header Field Parsing Recommendations
+### Header Field Parsing
+10 minutes - [Presentation from Julian Reschke](http://httpwg.github.io/wg-materials/ietf90/ietf-90-httpbis-header-field-parsing.pdf)
+
 5 minutes - discussion
 
-### draft-reschke-http-jfv-00
-10 minutes - [Presentation from Julian Reschke]()
-
 ### draft-reschke-http-cice
-10 minutes - [Presentation from Julian Reschke]()
+10 minutes - [Presentation from Julian Reschke](http://httpwg.github.io/wg-materials/ietf90/ietf-90-httpbis-cice.pdf)
 
 ### draft-nottingham-http-patch-status
 5 minutes - [Presentation from Mark Nottingham]()

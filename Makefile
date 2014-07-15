@@ -13,8 +13,6 @@ else
 IS_MASTER := 
 endif
 
-test:
-	$(foreach var, $(TARGETS), @echo "$(var)" "\n")
 
 ghpages:
 ifneq (,$(or $(IS_LOCAL),$(IS_MASTER)))

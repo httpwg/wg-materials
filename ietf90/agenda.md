@@ -27,7 +27,7 @@ Related Reading:
 * 3 min - Agenda bashing
 
 ### Proxies from a Browser Perspective
-* 15 minutes - [Presentation by Adam Langley]()
+* 15 minutes - [Presentation by Adam Langley](http://httpwg.github.io/wg-materials/ietf90/agl-proxies.pdf)
 
 ### Impact of Encryption upon Satellite
 * 10 minutes - [Presentation by Peter Lepeska]()

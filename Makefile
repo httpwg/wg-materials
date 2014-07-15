@@ -32,7 +32,7 @@ else
 	git checkout gh-pages
 	git pull
 endif
-	mv -f $(GHPAGES_TMP)/* $(CURDIR)
+	rsync -a $(GHPAGES_TMP)/* $(CURDIR)
 	git add .
 	if test `git status -s | wc -l` -gt 0; then git commit -m "Script updating gh-pages."; fi
 ifneq (,$(GH_TOKEN))

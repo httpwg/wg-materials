@@ -1,0 +1,278 @@
+HTTPBIS WG, IETF 83
+
+SESSION 1 (TUESDAY)
+
+__Julian on -19 revision of httpbis
+
+presented changes made in p1-p5, p7-auth
+mention of new status code draft, soon to be RFC
+mention of 308 code draft, soon to be RFC
+
+Mark observed that the problem of on-the-wire bits being turned into uris is
+  now a problem for someone else
+Larry masinter challenges the assertion that iri are working on this
+Mark/stpeter note that this is simply not a problem for _this_ working group
+
+Mark covers p6-caching changes
+
+Barry asks about changes to registry policies. If the changes are for
+  consistency, if made for that reason alone, that is insufficient 
+  justification
+Mark provides some clarification - some cases have their own justification,
+  others move away from the idea that a designated expert is required (and the
+  difficulties associated with providing guidance are difficult to resolve)
+Eliot lear observes that "ietf review" is dangerous
+Mark suggests that a revisit later is probably wise, particularly since things
+  might change on the 5226 front
+
+__Mark on WGLC status
+Larry masinter asks about interop reports
+Stpeter notes that RFC 6410 doesn't require these now
+Sean turner points out that interop reports are as easy as you want them to be
+Barry leiba: interop reports do uncover issues
+Mark: is comfortable with the status of interop, though issues continue to be
+  found, would be happy to look at work if someone did an interop report
+
+On the question of the number of parts
+Carsten bormann[spelling?] advocates for one part
+speaker? advocates for part zero if the document is multiple parts
+Yngve suggests the split should be different to what currently exists, or a
+  single document
+Larry asks for hums
+Mark says hums bad for this
+
+__open design issues
+
+#247
+Andrew sullivan asks about maintenance plan for this sort of "status" field
+Mark describes a role that might be created for "curating" this sort of field
+Andrew asks for this issue to be deferred
+Eliot does like the idea
+
+#322
+Plan is to close this one - no objections or discussion
+
+#266
+Move outside and deal with it separately
+
+#340
+Roy fielding this is already horribly broken if it appears
+Mark suggests that the spec text is adequate
+
+#312
+done with 308
+
+#347
+already incorporated
+question from Carsten: does many include zero? answer: no
+
+#22
+Roy describes that some types of responses contain things other than the
+  resource, or the thing that you would get if you made a GET request to the
+  request target; things like etag apply to the "selected representation"
+Mark asks if some sort of categorization is useful for these headers
+Roy says that these headers are marked as "selected representation metadata"
+  and the changes touch p2, p3, p4
+
+__WGLC tickets
+
+#241
+Roy has added notes on how Apache implements this. order is most specific to
+  least specific
+
+#350
+Julian knows of some frameworks that make it difficult to do the right thing
+
+#307
+Julian is concerned about special cases in Cache-Control; we can't change that
+
+#348
+Addition to security considerations
+
+#349
+Barry is OK with avoiding caps, as long as the right guidance is present
+
+__impromptu discussion on one part vs. 8
+Murray K.: making a single, separate security considerations document could be
+  used as a referenceable spec
+Barry: the IESG would have to review everything together anyway
+Roy: people should reference the considerations that apply to them, not like
+  draft-snell-http-prefer-12, to pick on someone
+Roberto peon: not concerned about division
+Martin: http insiders aren't your audience, p0 is good for something else
+Willy: index is really important, wants security to be everywhere
+
+__new status
+Patrick mcmanus: have you talked to captive portal implementers?
+Mark: some people are implementing this
+
+
+__not HTTP/2.0
+Peter: describe how thursday is going to work
+Mark: explains process for process for discussion of process
+
+
+SESSION 2 (THURSDAY)
+
+MN = Mark Nottingham (WG Chair)
+LE = Lars Eggert
+SF = Stephen Farrell
+PH = Paul Hoffman
+
+1. Charter Review
+
+MN: What is 2.0? Basically, not wire-compatible with HTTP/1.x. But not
+    "everything you might have ever wanted to do with HTTP.
+MN: In addition to 2.0 proposals, we want to solicit proposals for new
+    authentication schemes.
+LE: There is the possibility of doing work at the IRTF, if appropriate.
+SF: If we do things in the Security Area, more likely to be Experimental RFCs
+PH: Clarifying question: do you want ones that work in the current framework,
+    or you open to ones which would change the framework.
+Chair: There are a couple of questions to unpack there. My intuition is that
+    if it does not work in 1.1, it is probably a show stopper. Existing
+    practice is some of the reason we have problems, though, so it might
+    happen.
+MN: We're chartered to develop output, not rubber stamp any input.
+MN: (1) Define a new serialization of HTTP on the wire
+MN: Make sure it could replace HTTP 1.1
+MN: Define one or more new authentication schemes, or explain why not
+MN: Success Criteria...
+MN: Implementers have reasons to switch.
+
+Ways we can FAIL
+JH: Would you like a bigger list of risks? One thing to avoid is
+    internationalization issues in URIs.
+MN: I'd like to not try to do too much.
+
+Step 1.  Call for Proposals
+Asking for new serializations of HTTP semantcs & new authentication schemes.,
+ taking into account our charter reqs++
+
+PH: I've heard "if WG chooses one proposal, I'll implement it, if more then
+    one then not". Not sure that fits into this structure.
+MN: I think that applies to auth but not 2.0, different situation.
+Eliot Lear (EL): How does deployment fit in?
+Larry Masinter (LM): Perhaps might make sense to give deployment even higher
+    priority over implementation.
+Salvatore Loreto (SL): Please also consider deployment in wireless
+    environments.
+Tony Hansen (TH): I think implementation is a good way of vetting what's
+    workable. Another good criteria is what is deploy*able*.
+Harald Alvestrand (HA): Also: "I have deployed it (and nothing bad happened)",
+    and "I would not deploy it because X".
+Eric Rescorla (ekr): There is some possibility that stuff HTTPBIS wants to do
+    will have ripple effects throughout the IETF. This might be the right
+    place to gauge that.
+MN: Fair enough.  This is when we would do liaison-type activity.
+MN: Exit criteria is one of the elements of re-chartering.]
+MN: This aggressive, but we don't want to spend our time spinning our wheels
+    on this.
+MN: Would like to be able to talk about this around IETF 84 in Vancouver.
+Gabriel Montenegro (GM): Does the current charter talk about this timeframe?
+Peter St. Andre (PSA): The understanding between the IESG and the chair at
+    this point was that we would not start with one of the proposals right
+    now, but first establish the scope and requirements. Then re-charter to do
+    the work.
+SL: Just to clarify, the consensus about the proposals will happen on the
+    mailing list.
+MN: Yes, this will all be done on the mailing list.
+MN: Does this make sense?
+EKR: You had a timeline: the upcoming charter will not say "we will work on
+    this protocol"?
+MN:  It will establish a starting point, and the set of requirements.
+Roy Fielding (RF): Not a real believer in committee based protocol design; I
+    would prefer a bake-off, rather than a committee based design.
+MN: We can have some elements of that.
+MN: This is not the bakeoff engineering task force.
+RF: I think we don't need to agree on one before rechartering. We could have
+    multiple documents and then remove them one by one.
+MN: HUM: Instead of one starting point, multiple starting points?
+HUM: Some support.
+MN: HUM: And one starting point before rechartering?
+HUM: More support.
+Ted Hardie (TH): Might be good to publish some of the non-starting points as
+    experimental specs.
+EL: (1) Might we have more than one endpoint? For example, purpose-built
+    protocols for particular use cases? (2) Is it possible that one outcome
+    could be zero proposals?
+MN: That is true, but I tend to think that other outputs would be done
+    elsewhere. Concerned about working on multiple approaches, from a
+    management perspective.
+Yoav Nir (YN): I think it would be much better if we had just one proposal to
+    go with the next charter. If we have multiple at the time we go to
+    recharter, we may have to decide to either delay or decide to start with
+    multiples.
+LM: I can't imagine a less than 10 year period for 1.1 to go away. So software
+    will gateway 1.1. Thus we're talking about an addition to 1.1, not a
+    replacement. Thus there might be different profiles / protocols for
+    different use cases.
+MN:  We should steal some language from the security ADs.
+MN: It is a goal to start from a single one, but if we end up with multiple,
+    we can work that out at the time.
+Ian Fette (IF): As the editor of web sockets, I certainly understand the
+    problems with design by committee. But I think it may be a moot point. At
+    some point we have to get to a point where there is a single document.
+IF: We already have four starting points (four documents). At some point we
+    need to get to one document. I think it is fine to have a goal to get to
+    that one document; if we can't, we can't, but it is a good goal.
+PSA:  It will focus the mind.
+SL: My preference is a single starting point. It will be a mess otherwise,
+    especially for people working on intermediaries and middleboxes.
+EKR: I am not sure why we are acting like this is something we have never done
+    before; this is what we do all the time. Sometimes we put an artificial
+    deadline, sometimes we do not. Of course, this is what we are going to do.
+    This charter time is just accounting, and I don't care about that at all.
+    We won't know until we see all the proposals.
+HA: Might want to let proposals go forward cleanly, not do lots of grafting
+    and crafting. But this did not work too well with IPv6 and IKEv2. Better
+    to kill off the candidates earlier rather than later.
+MN:  This is the plan going forward, I think.
+
+Presentations...
+[see slides for most of the content]
+
+P1. SPDY (Mike Belshe)
+MB points out that Google, firefox/mozilla, other spdy contributors are
+   committed to doing what's necessary to making the protocol meet needs of
+   "broader community"
+EKR:  How does this compare to TLS compression?
+MB: Does not compress the bodies. Only the headers, and it tries to avoid
+    double compression of things like JPEG.
+EL: What does "domain" mean here?
+MB: It's a complicated answer. Basically what I meant by it, is where you
+    would have had a connection pool. There is an exception to this, where
+    people are doing domain sharding--splitting resources across multiple
+    hostnames, in order to open up a bunch of connections, which is really one
+    host. We've also added IP connection pooling, which allows us to bundle
+    those under one connection.
+Roberto Peon (RP): Having one connection for mobile keeps the connection open
+    longer for productive work.
+Richard Barnes: Also a problem with secure protocols that have broken
+    authentication etc. Disambiguate types of security.
+
+P2. Speed + Mobility (Gabriel Montenegro)
+
+[No questions.]
+
+P3. Intermediary Requirements (Willy Tarreau)
+
+[No questions, time running short.]
+
+P4. Waka (Roy Fielding)
+
+Hannes Tschofenig: Even if we optimize the headers, that doesn't do anything
+    for the payloads.Are you going to cover that?
+RF: Not in the next five minutes. :)
+
+SUMMARY
+
+MN: We have a lot to do in a reasonable amount of time. Focused, structured
+    discussion on the list. Be constructive. Need people to work on proposals
+    and metrics. I'm expecting TLS everywhere, interception proxies, header
+    compression, how we upgrade from 1.x and roundtripping. New folks, please
+    look at the Tao of the IETF list. We don't do voting. See the WG page on
+    ietf.org. The editors are focused on 1.1, that is our top priority. Please
+    prefix your subject lines to the list. I'm sure we'll meet in Vancouver.
+TH: Any chance for an interim meeting?
+MN: Yes.

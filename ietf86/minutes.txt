@@ -1,0 +1,144 @@
+Minutes for HTTPbis - IETF 86 Orlando
+
+No bashes to agenda
+
+- HTTP 1.1
+Review of documents and tickets/changes. No responses on tickets post WGLC; to be closed.
+Action Mark: Will have a cross-document WGLC. Ending late April / early May.
+Action Mark/Philippe: Go talk to W3C re: specific items for them.
+
+- HTTP 2.0
+Agreement in Tokyo to get a first implementation draft - review of those minutes.
+Pointer to github - Reminder that IETF rules (aka "Note Well") apply to discussion and contributions
+in github
+Expect draft to be marked "ready for implementation" in the next 4-6 weeks
+
+Cyrus Daboo: Interop events upcoming? 
+Mark: Yes. Should meet before Berlin (mid-June, SF Bay Area, around Velocity), in Berlin, and then
+interim right after also in Berlin. Could use some of that for test suite dev/interop.
+
+-- Martin Thomson's presentation:
+Stream identifier proposal: Make the frame header always contain a stream identifier
+   Hasan Farooq: We shouldn't add 4 bytes to every frame header.
+   Roberto Peon: Just send GOAWAY only once; otherwise neutral.
+   Martin: This makes the document simpler.
+   Roberto: We did this in SPDY4 as well.
+   Hasan: I suggest no change in the wire format, just change the doc to say frame header is smaller
+   and the ID is part of the frame header.
+   - Action: Martin and Hassan will come to agreement and suggest to the list
+
+Error code proposal: combine the two error spaces
+   Eliot Lear: This is basic IANA cleanup
+   - Agreement in the room.
+
+IANA Policies proposal
+   Agreement in room
+
+Framing layer common flags:  Define common flags for all frames
+   Will Chan: Same flag field, just reserving bits? Yes. Just convention, not formal in the registry.
+   Agreement in the room.
+
+Connection-based authentication: Propose remove the text and leave it as an open issue.
+   Agreement in the room
+
+Propose remove :version
+   Agreement in the room
+
+100-continue proposal: just send a HEADERS frame
+   Mark: I already have the action item, will start that discussion
+
+Multiple RST_STREAM proposal: just send one
+   Roberto: What do you do when you have stupid servers or clients that keep sending you stuff? This
+   will cost too much.
+   Mark: Can advise not to send.
+   Will: Also simpler to allow it.
+   Eliot: Won't you just end up sending 3, 4, 5...? Answer: Implementation choice for what to do then.
+   - Action: Martin to provide explanatory text (implementation advice)
+
+SETTINGS_CURRENT_CWND proposal: remove it
+   Roberto: Still a bit early to kill it; we haven't experimented yet
+   Mark: We have agreed to mark settings persistence "at risk". Note this too.
+   Gorry Fairhurst: We should talk to transport people.
+   Hasan: Defer discussion until we have data.
+   Jana Iyengar: This could change over time.
+   - Action: Mark this "at risk" as well.
+
+Data Compression proposal: remove the bit
+   Hasan: Removed in SPDY3.
+   Will: SPDY removed this because it didn't work.
+   Robert: This is vestigal, even in 2
+   Eliot: Partners are concerned about mandatory compression.
+   Mark: No, this is only *data* compression, not header.
+   Agreement in the room.
+
+- TLS
+   Mark: Discussing with EKR
+   Adam: Google has said that if ALPN is adopted in TLS WG then Google will deprecate NPN
+
+- Further research (Eliot)
+   Cisco is interested in funding some research in this area.
+
+Issue  discussion
+
+- Header Compression
+   Mark: In Tokyo, interest was in delta compression and headerdiff; comparing to gzip
+   Adam Langley: Was that normal gzip? Answer: Yes
+   Mark: Showed graph comparison
+   Roberto: (Describes delta2)
+   Mark: How do you map keys/values to header keys/values?
+   Roberto: Encode either as is, or preceded with a colon.
+   Adam: What was the window size for gzip in the graph? Roberto: Used max.
+   Phil Hallam-Baker: Using bearer tokens with Javascript is not a good security model. The problem
+   is cookies, not compression.
+   Roberto: But we do have to replace this part of the protocol, and we're not chartered to address
+   that issue.
+   Robby Simpson: Gzip (even with small window size) uses too much memory. How does memory usage
+   compare?
+   Roberto: We're trying to be relatively space efficient, but can send back error if size is too
+   large, though that adds a RT.
+   Jana: Is the dictionary entire connection or per stream?
+   Roberto: Entire connection. Can maintain even per host.
+   Jeff Hodges: More discussion of cookies.
+   Adam: Is it in scope to think about gzip for the content?
+
+   Hervé Ruellan: (Describes headerdiff)
+   Roberto: Prefix matching was done in delta, but not safe
+   Hervé: As we're doing it, the current CRIME attack doesn't work.
+   Adam: Are you saying it only applies client to server? It can work in the other direction too.
+   Martin: Cookies are controllable by clients in certain scenarios. Use of compression contexts for
+   same header doesn't protect you. Delta and deflate are bad for the same reasons.
+   Roberto: You never know where in the header field sensitive info might occur, so still risk.
+   Hasan: A graph for all 3 algorithms with equivalent buffer sizes would be helpful.
+   Mark: (Showing graphs)
+   Mark: How many folks have looked at these specs? (3-4 hands)
+   Mark: Because of CRIME concerns, delta is looking better in the room, but we need more discussion
+   Jana: I'd like to see numbers if we did compression per stream.
+   Roberto: Please try making mods to code and let us know.
+   Hervé: I will try to update propose to avoid CRIME attack.
+   - Action item: Please read specs; we'll discuss on list. (Reminder: We're just choosing a
+     starting point.)
+
+- Upgrade/Negotiation
+   Mark: 1. NPN / ALPN, 2. HTTP URIs, 3. DNS hints, 4. "magic"
+   Martin: (Describes what he added to draft)
+   Eliot: Added profile to DNS draft, updated examples. IAB also working on a draft.
+   Adam: 4-5% of our users can't do TXT lookups.
+   Mark: Is it safe to assume NPN & TLS? (Nodding heads yes)
+   Geoffrey Cooper: DNS puts a burden on the security proxy
+   Roberto: Worst is it adds a RT.
+   PHB: This is not a penalty on every HTTP connection. I don't think this is a big overhead.
+   Gabriel Montenegro: On the TLS negotiation: I don't know if TLS will decide in the next session.
+   Shouldn't we postpone until then?
+   Mark: We'll take whatever they do into account. This is just for implementation testing.
+   Andrei Popov: There is an open source implementation good for testing.
+
+- Startup state (Gabriel)
+   Gabriel: (Presents issues on unknown startup state)
+   Gabriel: Still could be in the response from server in the Upgrade case, so still a problem.
+   Gabriel: (Presents proposal to set startup state in negotiation)
+   Hasan: The asymmetry of paths is something we've thought about before. We should make it go away.
+   The client should be able to send a settings frame.
+   Mark: Not sure about doing it in TLS.
+   Gabriel: Probably best design in TLS.
+   Adam: This is *already* possible via opaque identifiers in NPN (and also in ALPN).
+   Mark: Let's keep this discussion going.

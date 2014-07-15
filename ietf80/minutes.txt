@@ -1,0 +1,43 @@
+HTTPbis WG
+----------
+
+- Content disposition done!
+- HTTP bis: just editorial work
+- Security properties
+    TBD: explain the properties ...
+
+Intent for WGLC before the end of the year (2011)
+
+Content disposition: advance the draft standard soon? ... not before the "official wg-items"
+
+HTTPbis-13 overview and quick walk through the issues: no questions on the issues listed
+
+Issues Discussion
+-----------------
+
+- Ticket 20 : Default charset for text media types
+
+"A default does not belong to HTTP..."
+
+Agreement in room: we should remove the specification of default charset of 8859-1.
+(And should specify no default in httpbis documents.)
+
+- Ticket 22 : ETag (and other metadata) in status messages
+- Ticket 186: Document HTTP's error-handling philosophy
+- Ticket 282: Recommended minimum sizes for protocol elements
+- Ticket 250: message-body in CONNECT response
+- Ticket 251: message-body in CONNECT request
+- Ticket 255: Clarify status code for rate limiting
+
+- Ticket 178: Content-MD5 and partial responses
+...deprecating CMD5 is a good way forward
+
+Related Work
+------------
+
+- DKIM Signatures in HTTP
+- Pipeline presentation 
+- SPDY overview
+- draft-thomson-hybi-http-timeout-00 overview
+- HyBi wg overview
+- WebSec wg overview

@@ -1,0 +1,29 @@
+Agenda bashing, etc.                                   ( 5 mins)
+Problem summary                                        ( 5 mins)
+
+Technical presentations:
+
+Review of draft-lafon-rfc2616bis-03.txt:
+  status and open issues [1]                           (20 mins)
+Review of existing HTTP authentication
+  mechanisms [2]                                       (15 mins)
+Review of issues with HTTP caching and cookies         (10 mins)
+Review of ETags on write issues                        ( 5 mins)
+
+Discussions about the proposed WG Charter [3]:
+
+General discussion about formation of the WG           (10 mins)
+  - if no interest in the WG, then spend more time
+    on discussing 2616bis issues
+
+Is revision of RFC 2617 in scope for the WG?           (20 mins)
+Should rewrite of RFC 2616 be allowed?                 (20 mins)
+When, if and how interop work should take place        (10 mins)
+Other issues with the proposed Charter                 (10 mins)
+Closing discussion about formation of the WG           (20 mins)
+================================================================
+Total:                                                 150 mins
+
+1. http://w3.org/Protocols/HTTP/1.1/rfc2616bis/issues/
+2. http://ietf.org/mail-archive/web/discuss/current/msg00657.html
+3. http://w3.org/mid/392C98BA-E7B8-44ED-964B-82FC48162924@mnot.net

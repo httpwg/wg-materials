@@ -1,0 +1,47 @@
+HTTPbis Working Group Agenda
+THURSDAY, March 31, 2011
+1520-1720 Afternoon Session II (Karlin II & III)
+
+=================================================================
+
+*  1 min - Scribe selection
+*  4 min - Agenda bashing
+*  5 min - WG status [Mark Nottingham]
+* 10 min - Content-Disposition status [Julian Reschke]
+* 10 min - HTTP -11/-12/-13 changes overview [Julian Reschke]
+* 40 min - Active issues discussion [Mark Nottingham]
+           #20:  Default charsets for text media types
+           #22:  ETag (and other metadata) in status messages
+           #186: Document HTTP's error-handling philosophy
+           #282: Recommend minimum sizes for protocol elements
+           #250: message-body in CONNECT response
+           #251: message-body in CONNECT request
+           #255: Clarify status code for rate limiting
+           #178: Content-MD5 and partial responses
+* 50 min - Discussion of Related Work (tentative)
+           ~10m: DKIM Signatures in HTTP [Dave Crocker]
+           ~10m: Pipelining experience in Mozilla [Patrick McManus]
+           ~10m: SPDY [Mike Belshe]
+           ~10m: draft-thompson-hybi-http-timeout [Salvatore Loreto]
+           ~ 5m: HYBI WG [Gabriel Montenegro]
+           ~ 5m: WebSec WG [Tobias Gondrom]
+
+=================================================================
+
+Recommended Reading:
+http://trac.tools.ietf.org/wg/httpbis/trac/report/9 <-- active issues
+http://www.ietf.org/internet-drafts/
+      draft-ietf-httpbis-p1-messaging-13
+      draft-ietf-httpbis-p2-semantics-13
+      draft-ietf-httpbis-p3-payload-13
+      draft-ietf-httpbis-p4-conditional-13
+      draft-ietf-httpbis-p5-range-13
+      draft-ietf-httpbis-p6-cache-13
+      draft-ietf-httpbis-p7-auth-13
+      draft-ietf-httpbis-method-registrations-05
+      draft-ietf-httpbis-security-properties-05
+      draft-ietf-httpbis-content-disp-08 (@IESG)
+      draft-ietf-httpbis-authscheme-registrations-00
+
+Other background material:
+      http://www.ietf.org/html.charters/httpbis-charter.html

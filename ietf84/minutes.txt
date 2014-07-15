@@ -1,0 +1,440 @@
+httpbis minutes - ietf84
+========================
+
+Session One - Tuesday
+---------------------
+
+### agenda bashing
+
+None
+
+### httpbis -20  changes
+
+no comments.. ok to close tickets
+
+### http/1.1 status
+
+mnot: target wglc p 1+2 by end of august
+masinter: why not now
+mnot: go read parts 1 and 2 everyone.. 4 week lc window
+lear: are you publicizing we are going to lc? (mnot w3c is aware, and this is WGlc)
+
+### p1+p2 issues
+
+link idempotent - mark suggests unknown type.. roy says they are idempotent.. then a bunch of off mic conversation
+
+ticket 22 - 
+roy: will resolve soon. 
+mnot: unsure if it generic or etag specific.. 
+rajeev becker: ws exists where etag reflects the state of the object not the state of the response 
+roy: etag will never reference content
+
+ticket 364 - allow blank idempotent registry value - no discussion
+
+#### wglc issues in p4 through p7
+
+effectively done except for editorial review
+no discussion
+
+#### http 2.0 authentication EOI summary
+
+review of 6 proposals
+mnot: not a lot of interest in any of them.. particularly with security AD and browser implementaitons.. lack of consensus. that means tieing this work to http/2 is risky. still impt to do this work. passwords cited as a specific problem. ad proposal take this set of drafts and use as input into new wg in security area perhaps for experimental rfcs. chair says the group owns http at its core and needs to stay vital, interoperational and secure and crossing the streams is a risk for core.
+jeff hodges: if we are doing http/2 what about allowing a hook for a blob to be defined later as an auth mechanism
+mnot: extensions to http/* don't need to be in the core. apps area wg?
+yoav: not sure apps wg drives browser adoption in the same way httpbis does
+mnot: not sure that if httpbis does something it means it gets implemented
+paul leach: if it is cleanly definable as an extension it should not be core.. but auth is not obviously clean. suggest this group makes sure it is possible to cleanly define extensions for authentication. p7 for http/2.0
+paul hoffman: idea of not doing these here is fine. security people aren't that interested in transport portions of http/2. p7 bis? proposals applicable to http/1 and 2
+oiwa: supports a framework in http/2 to tie authentication into protocol.. mark says semantically hard to make that http/1 compat
+wes hardaker: concerned that protocol won't support necessary mechanisms for security needs - mid stream reaut is an example
+jeff hodges: shares wes's concern
+ekr: one difficulty is that the alleged problem is unclear - shown by diversity of proposals. a number of the proposals don't meet any real needs
+roy: we tried to do this in 1994. security ad was supposed to take responsibility for that at that time. Maybe this belongs in appsarea instead of security, even if not httpbis
+roberto: world has realized that http is impt - motivations for doing this work have changed
+roy: in apps area - yes.. security maybe not
+ekr: web form is better ui.. fancy crypto does not add value.. http protocols don't elp with ui modalities
+leif jpnasson: everyone doesn't want the same thing.. webservice may want something different
+ekr: client certs keep failing to get market uptake
+oiwa: agrees there is a user interface issue.. comments or improvements on http auth extension draft (which trying to solve this) welcome
+lear: ui is crucial issue.. sad list has article on survey of all mechanisms in the field that is a good input
+mnot: we've discussed this a long time in the ietf and I haven't yet seen anything that convinces me we'll succeed. deserves experimental. w3c (and others) may also play a role here
+
+### Tim Bray - 451
+
+mnot: initally dismissive as a feel good activity using a constrained resource (status code). however, tomas roesseler mentioned a use case of web hosts making dmca takedowns could enable spidering/automatic/tracking of that kind of action
+barry hatless: what do you expect clients to do differently with 451 than 4xx?
+bray: browsers would have different default text
+stpeter] localization is hard [mnot: http has content negotiation
+hoffman: says there is a strong machine readable reason for doing this beyond end user ui
+alissa cooper: argument that ietf validates censorship isn't valid,more reflection of reality
+eric ??: how to differentiate between unavail to everyone vs unavail to _you_
+mnot: that messes with cache behavior
+???: geographic restrictions might be a use case
+lear: govts would take the view that the ietf is taking a position opposite to their own policies. also - is there a way this can be gamed?
+masinter: not fine grained enough.. probably shouldn't be done. governance can include regulatory activity.. defining when it applies is not something the IETF should be involved in
+bray: legal demand is clear
+mnot: what does 451 with same content as 200 mean?
+alyssa: legal demand is good line
+roberto peon: like the idea - concerned about secondary effects of misuse
+barry: extensible response body definition for a code so we don't need to burn a code for each use case
+wes hardaker: does this help the end user? yes! forget the misues
+ian fette: status code exhaustion not a serious problem
+
+mnot: 410 gone lack of adoption is concerning. link relations might be applicable.
+
+hum - is this worth pursuing (i.e. further discussion) and should we stop (options 1 and 2) - received very similar support
+
+
+Session Two - Wednesday
+-----------------------
+
+Where we are: last time we agreed to solicit for proposals, SPDY, S+M, Network-Friendly Upgrade came in.
+
+Today, we are here to discuss and work out how to move forward.
+But before that, a sanity check: ws-* seemed like a good idea at the time; pipelining is getting deployment
+We have a huge investment in things as they are; there are also opportunity costs.
+Mark is comfortable now, though he has gone back and forth on this. 
+He believes that with these ideas and the current state, he is comfortable with the 2.0 work going forward now.
+
+Larry Masinter: I think looking at the future of HTTP 2.0 is a great idea (the charter may not, but we're not discussing that now)
+
+Discussion of expressions of interest, then charter drafting is today's agenda. Reminder: all decisions are ratified on the list. Charter draft must be ratified by the IESG.
+Mark believes that there is clear consensus that the basis of our approach should substantially be draft-mbelshe-httpbis-spdy
+Question to be how to structure it as the basis.
+just SPDY; pick-and-choose, start with HTTPbis p1; SPDY with instructions/caveats/inputs
+
+From Mark's standpoint: he does not believe we should start from a clean slate. We don't need to have an incredibly restrictive charter—but the consensus should happen in the working group, not in the charter bashes
+His favorite: SPDY with instructions/caveats/inputs
+Any other thoughts?
+(Larry's opinion is solicited by the chair)
+Larry: starting with a starting point without knowing what you are optimizing and for whom is procedurally a mistake.
+Larry: I'm happy with the process you've outlined, but the starting point is not clear: performance, reliability, privacy? For some of these there is not enough to make a choice.
+Mark: if we had more data, would we make a different choice?
+Larry: possibly, but not clear that the guidelines are well formed.
+Larry: example: sniffing; can we turn it off for 2.0
+Sean Turner: Maybe on of the things we can do is publish SPDY as an Informational, to get it out as a stable spec.
+Mark: I think SPDY is still evolving.
+Ian: No objection, but don't get what publishing SPDY would get you. People have access to SPDY if they want to implement. How does it help get us toward HTTP 2.0. Better to focus on what needs work, areas that we need to pay attention to.
+Pete Resnick, covering his dot: Agrees with Ian; publishing as informational is just delaying.
+Pete: Chair has two options: start with a new doc and take suggestion; start with a doc and take objections/diffs.
+Pete: Not seeing why the second is a concern.
+Pete: don't see why we shouldn't start with a base spec.
+Mark: I'm happy to start with a base document, adding incrementally and pulling from other documents. SPDY seems like it is hitting a lot of the right issues. The end document may look a lot different, but that's expected.
+Eliot Lear: he has a mixed opinion.
+Eliot: He would like to start with a description of the problems/goals.
+Eliot: aim spdy at those goals.
+(discussion of encryption deferred)
+Next phase of this is the charter, concerns may be addressed there.
+Roy Fielding: it would be good to work on SPDY as SPDY, as a mechanism for tunneling HTTP through to account based services; it is very good at that. 
+Roy: I think it is a mistake to design things to be generic from the start; HTTP did that and it has warts. If we want to make SPDY that ugly, we can, but not sure why we would want that.
+Roy: would be better to have it focused on its use case; if other people want to start different efforts, those could be valuable to. SPDY could be a standard on its own, not as HTTP 2.0.
+Roberto: The idea behind what SPDY was: changes wire representation, but leaves everything else as it was for HTTP. That has had some benefit.
+Roberto: I believe what we are doing here is HTTP 2.0—same semantics
+Patrick McManus: I have implemented off many of these, and my opinion is that it doesn't really matter what we start with. There are advantages for starting as HTTPbis ; starting there as the scope may have the least confusion.
+Mark: I think we should focus on what is p1, not revising in p2 or p3
+(is in p1).
+Mark: Roy reminded me of a discussion with Barry the other day in which it is good to have clarity on what the expectation.
+Mark: is our thinking that http 1.1 and http 2.0 will coexist indefinitely, that 2.0 will cover the full suite of use cases covered in http 1.1?
+Mark: there may be many things that we do not cover (interception proxies, backend systems).
+Mark: major orphaned use cases should be avoided. We should eventually (20 years) cover them all.
+Larry: I don't love interception proxies; people buy them and use them
+Mark: we will have a 5m conversation about interception proxies
+Ted: interception proxies are used because we don't offer an explicit way of solving the use case
+Larry: it should be a part of the charter then
+Ted: SPDY is nice as a starting point; it's nice to have that to frame the discussion.
+Ted: Not starting from a clean slate is important
+Ted: we'll make faster progress if we don't clean slate
+Mark: Ted reminded that we may need to take up other elements, like proxy.pac to get some elements of the work done.
+Salvatore: interception proxies are used in telephone networks a lot.
+Salvatore: having said that, we see some benefit from SPDY
+Sean Turner: starting at a blank slate will add a year to the process
+Salvatore: I sent out an expression of interest; he suggests pick and choose—picking mostly from SPDY
+Salvatore: even better, take the SPDY proposal and remove the controversial parts
+Mark: I see the difference between that and the SPDY with instructions as determining things before, versus determining as we go along. I think I'd rather we do it as we go.
+Larry: I'd rather start with the caveats and instructions than the starting point
+Mark: we agreed in Paris to start with a starting parting.
+Larry: okay
+Eliot: The encryption issue is an elephant in the room; this starting point may have an impact on this
+Sean Turner: okay so I'm convinced don't both publishing spdy on inf
+Mike Belshe: proxies don't have a strong issue with SPDY, they have one with TLS, but SPDY doesn't mandate TLS
+Mark: Agreed, the document does not mandate SPDY
+Rob Trace: encryption issue is a distraction; focus on multiplexing and let's get going
+Rajeev Bector: can we talk about the goal
+Mark: get consensus
+Mark: maintain deployability
+mark: modernized security, ensure it's no more difficult to deploy
+Mark: improve security
+Mark: maintain all of the existing actors
+Mike Belshe: we have the same question: does this replace all of HTTP 1.1?
+Mike Belshe: everything that runs over 1.1 should be able to run 2.0. But that doesn't mean everyone will change. 
+Mike Belshe: There may be cases where you can't make improvement for every uses.
+Mark: yes, but I don't want to drop use cases because "they can use 1.1"
+Mike Belshe: there are cases that are hard (youtube) where it may not fit the use case.
+Ted Hardie> Mark: remind folks of your affiliation
+Mike: I have not worked at Google for a year.
+Gabriel Montegro: would still prefer from starting from a clean slate. If someone is asleep at the helm, you may not end up cutting things that actually are controversial. Add only as you need, rather than starting from really big and cutting down. He doesn't believe that works as well as starting only from what is justified and agreed upon.
+Ian Fette: I think we may be talking past each other. There likely are things in the SPDY spec. that we do not have consensus on.
+Ian Fette: If we start with "pick and choose", we could do a patchwork (which might not read well) from multiple drafts to create an input draft. Or we can start from one and mark different sections as needing discussion. That seems to get us to a working draft much faster.
+Rajeev: people who control their destiny are one user community; then there are user communities that depend on intermediaries. We need a balanced approach that covers all stakeholders.
+Sean Turner: it's in a WG draft by definition we don't have consensus on it
+Joe: I came up to agree with Ian, with the caveat that we must maintain backward compatibility with SPDY. As long as nobody is going to argue that. 
+Joe: then, I am fine.
+Mark; that should be a given
+Joe: actually not; can be chartered other way
+Patrick: we will be actively pushing old versions of SPDY off the web; that's been clear during this phase.
+Mark: Just to clarify, backwards compatibility is a non-goal; will clarify in the charter.
+Leif: do we want to call consensus on that last point?
+Mark: will do so as part of charter discussion.
+Mark: now reviewing charter sent to the mailing list
+
+Adds a new work item for http 2.0, 
+The Working Group's specification deliverables are:
+* A document (or set of documents) that is suitable to supersede RFC 2616 as
+  the definition of HTTP/1.1 and move RFC 2817 to Historic status
+* A document cataloguing the security properties of HTTP/1.1
+* A document (or set of documents) that specifies HTTP/2.0, an improved
+  binding of HTTP's semantics to an underlying transport.
+It is expected that HTTP/2.0 will:
+* Substantially and measurably improve end-user perceived latency in most
+  cases, over HTTP/1.1 using TCP.
+* Not require multiple connections to a server to enable parallelism.
+* Require no more configuration or tuning than current HTTP deployments;
+   preferably, less.
+* Retain the semantics of HTTP/1.1, leveraging existing documentation (see
+  above), including (but not limited to) HTTP methods, status codes, URIs, and
+  where appropriate, header fields.
+* Clearly define how HTTP/2.0 interacts with HTTP/1.x, especially in
+  intermediaries (both 2->1 and 1->2).
+* Clearly identify any new extensibility points and policy for their
+  appropriate use.
+
+Joe Hildebrand: Do we want to add something about congestion control, as a motivator?
+Mark: sure.
+
+Mark: "improving the use of TCP, especially regarding congestion control" to be wordsmithed
+The resulting specification(s) are expected to be meet these goals for common
+existing deployments of HTTP; in particular, Web browsing (desktop and
+mobile), Web serving (at a variety of scales), and intermediation (by proxies,
+corporate firewalls, "reverse" proxies and Content Delivery Networks).
+Note that this does not include uses of HTTP where non-specified behaviours
+are relied upon (e.g., connection state such as timeouts or client affinity,
+and "interception" proxies); these uses may or may not be enabled by the final
+product.
+
+Explicitly out-of-scope items include:
+* Specifying the use of alternate transport protocols. Note that it
+  is expected that the Working Group will define how the protocol is used
+  with the TLS protocol.
+* Specifying new semantics for HTTP (whether specific to HTTP/2 or not).
+  However, the Working Group may request a re-charter to start work on such
+  items (during or after work on HTTP/2.0), provided there is consensus to
+  do so, and it does not interfere with work on the "core" (both HTTP/1.x and
+  HTTP/2.0).
+
+Mark: Possibly adding a specific "out of scope" for p2-p7
+
+List of specific issues:
+Mandatory TLS
+Header Compression
+Upgrade/Handshake
+Server "push"
+Flow control
+Security properties
+
+Let's get out of the way the mandatory TLS issue
+Mark: we don't have consensus on this
+Mark: the current uses of spdy require the use of TLS
+Mark: discussing this with the authors and implementors, I think we may have a way around this
+Mark: if we take the approach that HTTPS URLs should work the same in the two versions, we're actually pretty close (modulo NPN)
+The issue is "http" not "https" URLs.
+Mark: a real negotiation may be needed, with "optimistic TLS" as a possibility 
+This would block passive eavesdropping , but does not provide certificate-checking
+Mark: charter impact is to include negotiation mechanism, potential coordination with others, All* other discussion of topic out of scope
+Mark: how many people have read the "tussle" paper?
+Mark: it's a good explication of how these issues arise and might be resolved
+Larry: it was my impression was that the primary issue was a deployment issue
+Mark: some people have put that forth.
+Larry: I have heard it as significant issue. As stated, this would make deployment considerations out of scope. That's what this says to me.
+Mark: that's not the intent
+Larry: nowhere in the charter is there a mandate to document deployment considerations
+Mark: do you want to hear from Mike?
+Mike: of course deployment considerations are important. Even subtle things can be issues, so we understand this. Going over TLS is a deployment factor.
+Mike: there haven't be any ways to put new protocols over port 80. Even changes over TLS are hard. 
+Mike: But it kind of doesn't matter from the protocol specification
+Jim Gettys: I think the primary motivation is fine.
+Jim: in some parts of the world, caching is a necessary thing; to the extent this hurts caching, this is an issue.
+Mark: One of my primary concerns is caching, but this still allows both configured and gateway proxies to cache. Interception proxies are not as useful, but that's not here.
+Yoav: NPN was not accepted by TLS
+Mark: don't want to discuss the politics of other groups.
+Yoav: don't see how that will work over port 80
+Mark: doesn't say port 80 there.
+Rajeeve: The site owner can't control when clients negotiation. 
+Mark: This gives both sides power
+Rajeev: there are three parties here: clients, servers, content owner
+Rajeev: this will be an impediment to deployment
+Mark: impediment to "optimistic" TLS
+Rajeev: yes
+Mark: optimistic TLS will not show as secure in browser chrome etc.
+ekr: as chair, note TLS still has not accepted this work, so building on it a bit worrying
+ekr: as individiual, this might be used to break existing connections that are TLS protected; negotiation is a good idea, but this might not be it.
+PHB: I don't like it when application layer protocols do a half-assed job of security. 
+PHB: Why pick only one attack (passive attacker) and address only that?
+PHB: There is no web browser I'm aware of that doesn't have TLS today.
+PHB: those that don't have it have a different security model
+Mark: there is not a mandate here.
+PHB: if it is not mandatory, why is it called that?
+Mark: just slide title, that'a red herring
+PHB: Mandatory to implement?
+Mark: no
+PHB: head explodes
+Roberto: if we put a question mark in the title of the slide, it becomes accurate
+roberto: on the caching thing, yes we do need to consider caching. Even under the SPDY work, we have been thinking of this; have an id out.
+Patrick: I want to re-iterate that making explicit proxies a bigger part of this; there are value-added services possible there.
+Patrick: that's both for wpad and pac; we need to serve better, we're not trying to eliminate them
+Patrick: it would be my preference for TLS everyhwere; if there is an actual person there, there needs are paramount 
+Patrick: but this is a workable way to move forward.
+Tim: more or less plus 1; this is a reasonable compromise
+Elliot Lear: let's be clear on what we're getting: only sniffing problem
+Elliot: I don't think that solves Mike's big problem—new feature. These things in the middle are the first things that need to negotiate
+Paul Leech: I applaud the attempt to get out of the conundrum
+Paul: but I dont' think this is enough; the standard attack is an active attack, and this handles only passive attacks.
+Mark: there has to be knowledge that this is trivial to overcome with active attacks.
+Mark: but this is a building block
+Hannes: For a long time, I've gotten the impression that it is really difficult to change HTTP
+Hannes: now, for some reason, this is not a problem anymore. How did that happen?
+Hannes: I don't see how that can work unless tunneled on top of TLS.
+Hannes: Now folks are saying that we are not mandating TLS, but that makes it hard to see a road to deployment.
+Mark: folks have made that assertion, but I think that is worth re-examining. There may be multiple ways to upgrade HTTP
+Stephen: echoing a bit of PHB's comments. If people are arguing for privacy, you're undermining your own argument; it's not providing that.
+Ian: Some of these arguments are following the fallacy of perfect security. 
+Sean Turner: +1 to raising the bar
+Ian: often we are just raising the bar; the perfect can be the enemy of the good.
+Ian: as to TLS, does TLS solve the upgrade problem?
+Ian: in a perfect world, we could use ports, but that's not the world we live in. At the moment "virtual ports" over 443 is where we are
+Ian: that could ossify too, but that's what we have now.
+Hannes: even if you use existing ports, you run into trouble
+Hannes: are you planning to fold that concept into the design? how do you see the bigger picture?
+Ian: wrt origin-bound certs, etc, we don't know if it's deployable yet
+Ian: so let's not put that in the starting point.
+Ian: if it's useful and deployable, we'd bring it here.
+Mark: cut the line
+Mark: we'll find a way to upgrade to 2.0
+Will/Google: clarification: one way to negotiate between client/server, "alternate-protocol" header
+will: hint to move to 443 w/ SPDY + NPN
+Will: if you want real security, use HTTPS
+Will: but doing http over SSL is reasonable (note: i didn't quite understand his point, obviously)
+Yutaka: we need to describe how protected/unprotected each of these mechanisms are
+Yutaka: ?
+Mark: self-signed certs would no longer set off all of the warning lights.
+Mark: that's more of a w3c issue. our job is to define a new mode of use for http
+roberto: s/optimistic/unauthenticated/
+roberto: NPN-like, not NPN, but whatever TLS wg comes up with
+Ted: charter item for explicit negotiation. if we add something else later, we can add it to the negotiation along w/ these 3
+Mark: we are really talking about negotiation, not mandating a specific TLS implementation
+Mark: now hum
+Two questions: who believes we should have language in our charter describing a negotiation mechanism (potentially encompassing choices beyond 1.1 and 2). 
+Second: who believes we should not have such language in our charter.
+Larry: I'd like to have a deliverable on deployment and TLS
+Mark: I'm not against that, but many decisions would need to be made first.
+Elliot: I'd like a third choice "Even if the working group can agree on unauthenticated TLS, then we move forward".
+Mark: This is basically a "should we have a discussion on this"—everything is subject to the stuff working.
+Cullen: I didn't understand the humms; make them less fluffy, please?
+Mark shows the charter and suggests that the negotiation mechanism be discussed/addressed
+The definition of unauthenticate TLS with HTTP, along with a negotiation mechanism for it for HTTP URIs.
+Gabriel: I think the charter should have the negotiation mechanism, but the TLS method doesn't make sense to discuss here.
+Gabriel: this allows us to make use of those options.
+Mark: At the moment, there is a static binding between HTTP and HTTPS and their TLS state; we'd like to have more negotiation room.
+ekr: I don't mean to sound like boundary maintenance guy, but I will
+ekr: There's a number of things being discussed here: indicators to try TLS, new bindings, etc.
+ekr: I'm in favor of this work, but talking about it as a charter item is confusing, because it doesn't belong here.
+ekr: this should go into 2818bis. There's also impact in (inaudible)
+ekr: that said, the message to TLS that you want this done is received.
+Mike Belshe: are we still talking about mandatory TLS?
+Mike: we'd like to see that, but from the reality perspective, it may not happen here.
+Mike: but the proposal here is half-breed and it is going to have a lot of wholes.
+Sean Turner: and I think ekr agreed to work on 2818bis: https://www.ietf.org/mail-archive/web/tls/current/msg08844.html
+belshe: if we're not going to do mandatory tls, we don't have to talk about it
+mark: do you want this knob to tune?
+Mike: it's fine.
+ted: I was going to rise to say "keep the negotiation mechanism", even if we don't have a current thing to negotiate to. A better thing to negotiate to may arise….
+Larry: When we talk about issues, we talk about problems to be solved.
+Larry: maybe we should do that, instead of talking about the proposal just given
+Larry: are we starting with SPDY as deployed or as documented?
+Roberto: as documented
+Mark: asks question about including this language in the charter.
+Hum in favor
+Hum against
+Mark calls strong hum for including in the charter.
+Mark: header compression—there has been discussion on the list. 
+GZIP may not be a slam-dunk, but we can address on list; he adds a bullet for header compression as a bullet on the charter.
+Upgrade handshake has already been covered.
+Now, server push.
+Mark: we don't seem to have consensus that it should be part of the base protocol. He proposes we continue to discuss and get further data before putting it into the charter. It may be a feature at risk.
+Joe Hildebrand: as long as there is a feature negotiation, this is fine.
+Mark: there are ways to do this: we can take it out later, put it in later, mark it as feature at risk.
+Roberto: we're not talking about a negotiation mechanism at this point, we're talking about getting data about the mechanisms that might be needed to meet that need.
+Roy: header compression/re-encoding/tokenization as alternate ways of handling that should be in the charter
+Gabriel: Server push could be client pull then
+Mark: isn't that get?
+Gabriel: but this can change?
+Mark: yes, but listing the SPDY feature here means we will talk about the need that feature meets.
+Mark: flow control will be discussed
+Jim: part of how the internet has gotten into this terrible mess is that HTTP was of the few things allowed to get through firewalls. People behind broken things shoved it over HTTP to get it through.
+Jim: it is vital, in my view, that this WG work with transport folks as much as possible
+Mark: can we address that by adding transport to the Coordination list?
+Jim: yes
+Jim: this needs to be a data driven approach
+Jim: things have to be validated in a serious way
+Jim: last comment: It's been really fascinating to watch content-centric networking. There could be interesting cross-fertilization (not a charter comment, just a pointer)
+Roberto: I talk to Matt about these issues and certain level of transport interaction will be an important part of coordination. On data-driven, it is difficult to say what the datum of interest is. There still may be interpretation.
+Gabriel: +1 for coordination with transport
+Gabriel: multiplexing should not be taken lightly. It should be done once, not twice.
+Gabriel; e.g. websockets should be a customer of this work, not re-invent.
+Gabriel: come to hybi to discuss
+Ben: there is one issue nagging away at me: debuggability.
+Ben: there are nice aspects to HTTP 1.1 for debugging; losing a lot of that as we go forward. We should think of it conciously.
+Ido Safruti: push certificates or dns-related data? That could be addressed
+Mark: don't see a need to add that to the charter as an issue; it will get discussed
+Roy: it seems odd that we don't have Head of Line blocking on there
+Mark: okay, sure;
+Roy: this is part of flow control
+Jim: SCTP can really solve that in the long run. That maps well to transport. This is part of why talking to transport important.
+Mark: The charter will go to the list.
+Larry: note that coordination items will not be in expressed in terms of changes to that document.
+Mark: will massage this text, removing "all"
+
+Now, "Security Properties" document. This must be finished before going to IETF LC on HTTPbis.
+Mark: I need editors
+Volunteers needed—it needs to move forward, and it is dead now.
+
+Related efforts: protocol lab? Test suite?
+Might include a content corpus
+I'd note that if HTTP over TLS is defined by the security area, perhaps they should be responsible for the security analysis also. but if it's already in the charter, it's too late, i suppose.
+Will get discussed as part of the process; will not get into the charter, but happy to help with setting it up.
+Mark: might end with this on github.
+
+Finally, Looking Ahead
+Review of schedule
+September for first draft of HTTP 2.0, presuming charter approved.
+Lucy reminds that we never did the "pick among" bit
+Mark asks for objections to putting SPDY into the XXX slot on the charter?
+Elliot: no objections, but concern that we remain conservative in our approach.
+Elliot: want to flag that.
+Elliot: need strong chair and area director control
+Mark: there will be change in control.
+Cullen: that wasn't the issue
+Cullen: the issue is whether assuming it currently has consensus and changes need consensus or whether it is the set of words for consensus decision
+Mark: Explains the way it will work
+Cullen: thumbs up
+No further objections
+
+Mark: this group will remain the locus of HTTP work in the IETF, so it may take on other work if required.
+Mark: These may be HTTP1.1
+Mark: This is because some HTTP work is going on in APPSAREA WG, but the locus of expertise is here.
+Barry: Assuming it makes it in the charter, if it becomes a flood, it will get pulled back out.
+Ben: I'm okay with this, but it might be useful to add a sentence
+Ben: Clarifying the process
+where the first port of call will be
+Barry: I don't need to put it in the charter; if it goes to APPSAREAWG, they will send it here
+Mark: the schedule is aspiration, but it will go to the list.

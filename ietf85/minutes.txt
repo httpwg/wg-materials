@@ -1,0 +1,719 @@
+
+HTTPbis IETF85 Minutes
+======================
+
+Session I
+=========
+
+WG status
+--------
+
+no bashing
+
+Change overview
+---------------
+
+-21 drafts are out and in LC
+
+overview of changes made in the latest draft (substantial only)
+
+no feedback on the changes that were made in the -21 drafts
+
+ACTION: mnot to create a ticket for https caching exception
+
+Security Properties
+-------------------
+
+mnot raised the issue of security properties of http and the current
+status of the draft (draft-ietf-httpbis-security-properties-05)
+
+barry leiba: not sure that this has any correspondence to reality; if
+we adopted something better than basic then we would not need this
+(according to S Farrell); not sure what this really has to say
+
+mnot: it needs to more specific if it is to be useful, which limits its
+lifetime. This is a product of a bygone era, and we might not have the
+expertise to finish this sort of work, regardless of the merits of improving
+security as a goal
+
+bleiba: suggested that this be moved to the new authentication bof and
+resulting wg
+
+=JeffH: did this as a measure of charity; there might be people who can do
+this within this group; i may not have time to continue this myself
+
+bleiba: murray will do it
+
+roy fielding: we haven't added all the security considerations
+
+mnot: are there missing considerations for the broader web
+
+rf: there are http considerations, but those should be in http
+documents; if there is anything left, then we can look at that
+
+jh: there is a lot of good stuff that should be written down; but I
+haven't done the gap analysis
+
+eliot lear: I agree with the chair that you need implementor interest,
+no matter where the work is done.  Is there that interest?
+
+mnot: there might be some stuff from here that belongs in drafts, but
+some is clearly out of scope
+
+el: please put it to bed
+
+bl: this predates our existing security considerations, which may be
+adequate now
+
+sean turner: this would be good to have and it is part of the charter
+
+bl: can you (st) read this and make a recommendation to the group?
+
+mnot: obviously web security has problems, but whatever we produce has
+to have some relevance
+
+st: you can force the issue by going to last call; or set a time limit
+for "put up or shut up"
+
+mnot: it's still pretty draft-y
+
+
+Other LC Documents
+------------------
+
+rf: last call comments thus far received should take only a short time to
+resolve
+
+rf: concerned about the lack of review in p5
+
+mnot: jreschke is expecting to go to proposed standard and to move to full
+standard once we've gone through the http/2 process and discovered all the
+bugs
+
+mnot: can we go full standard?
+
+alexey melnikov: no
+
+
+active issues
+-------------
+
+jr: (most of these arefrom Dan Winship's review of p1; I haven't
+entered those for p2 yet)
+===395
+rf: do we allow some leniency
+mnot: this could just be statements of fact
+rf: ok
+mnot: do we have other requirements around connection: close ?
+mnot: it could be prose
+ACTION: make SHOULD statements on Connection header handling prose
+instead of 2119 language
+
+### 397
+
+ACTION: put the exception for OPTIONS request to a proxy and the resulting URI
+
+### 22
+
+just tbd, no real issue
+
+### 350
+mnot: we can close this one
+
+### mnot's WGLC p1 review
+
+rf: asks for fresh eyes over the drafts
+
+mnot: asks about what is specific to HTTP as opposed to HTTP/1.1; what
+can we do to improve the way that this could be made reusable for
+HTTP/2
+
+no conclusion
+
+#### What are the parsing requirements for obs-fold with respect to the MUST?
+
+rf: if you can find no interoperable folding implementations, then we
+can remove it from the grammar [[scribe: may not have got this right,
+action more important to capture]]
+
+ACTION: mnot to run some tests on folding to understand its interoperability
+
+#### shared caching on https
+
+rf: the statement in question only applies to agent-side
+intermediaries and user agents, not to content accelerators, which are
+part of the origin server
+
+rf: some user agents use a common interface to make the request, then
+have separate logic to decide how that information is made available
+to other users
+
+rf: to know whether it is safe to send to other servers, you have to
+know the content
+
+mnot: you can use Cache-Control
+
+...some disagreement here
+
+roberto peon: there are transformative intermediaries; we don't need to
+specify this
+
+mnot: need to know who this applies to
+
+rf: this applies to libraries in clients
+
+mnot: segregation... a shared cache can even apply to the same box
+
+martin t: 'never "public"' contradicts what has been said about caching rules
+
+paul leach: override
+
+Patrick McManus: on a phone, different apps can share the same network context
+
+ACTION: follow up on this issue
+
+
+### on US-ASCII or a superset of it
+
+mnot: moving on
+
+
+### on whitespace between start-line and headers
+
+rf: I thought there was some guidance on this
+
+mnot: we should find that text
+
+rf: S19 should not have had any normative requirements in it
+
+mnot: we can remove this then
+
+mnot: think about consolidating the list construction rules that are
+specifically called out for Transfer-Coding
+
+rf: this defines the framing and more explicit rules were asked for
+
+mnot: ok
+
+### for render as complete or consider as complete
+
+kevin falk: are you prohibited from using particular code blocks to users?
+
+rf: the important consideration is that the user is able to learn that the
+information is incomplete
+
+julian r: that is getting ignored in practice
+
+brian smith: we (Mozilla) ignore this requirement, pages are already displayed
+
+mnot: would it be OK to show status in the web console?
+
+rf: not really
+
+bs: there are UX considerations that make this more difficult than it
+would appear
+
+bs: there's not much difference between XHR and the render as HTTP clients
+
+jr: we could add an indicator
+
+ted hardie: visual indicators are not necessarily universally applicable
+
+rpeon: there is a lot of confusion stemming from this statement,
+prefer the parenthetical
+
+bsmith: no idea about how XHR works, though it does have streaming
+modes; script developers are important
+
+will chan: chrome ux people didn't like the idea of having something in chrome
+
+rf: this is a safety/security feature
+
+kfalk: incomplete !== error
+
+julian: there is a related issue about truncated *downloads* (as in
+"save as"); Eric Lawrence once blogged about it
+(<http://blogs.msdn.com/b/ieinternals/archive/2011/03/09/browsers-accommodate-incorrect-http-content-length-and-sites-depressingly-depend-on-it.aspx>)
+
+pmcm: rathole, we (Moz) do very little prescribed error handling and
+it's strange spending time on this when there are many others; tried
+to rollback rendering when MD5 sum failed, got immense push back
+
+mnot: maybe this should be prose
+
+ACTION: Roy to make this prose text in the security considerations
+
+#### whitespace tolerance in headers and the requirement
+to product a 400 when the message doesn't match the grammar
+
+#### no enumeration for the hop-by-hop headers that are not required to be
+added to Connection header.
+
+rf: this will be forwarded if they aren't in the connection header;
+having a list would cause problems with intermediaries that pass these
+
+mnot: this could surprise some people and should be called out
+
+rf: this should be noted as a change from 2616
+
+jr: we already have this
+
+mnot: we probably need a callout for this one
+
+rf: I'm trying to reduce the number of occurences of this; they don't
+help the people reading the document for the first time
+
+
+Server Ranges
+-------------
+
+<http://tools.ietf.org/html/draft-kfall-httpbis-server-ranges-00>
+
+mnot: this doesn't really mess with semantics, it only messes with
+intermediaries to the extent that range requests are hard to do anyhow
+
+mnot: streaming and ranges require the complete size to be known,
+changing the length would not be possible
+
+kfall: that is not part of the proposal
+
+pleach: does this work with unmodified implementations?
+
+kfall: not known
+
+pleach: profile...
+
+mtho: prefer might help to signal (all/some)
+
+mnot/kfall: makes sense
+
+bsmith: if the server provided less, would we be able to render it?
+the spec seems arranged around the idea of a "complete message", this
+might need to be re-addressed
+
+mnot: disagree, this should be addressed and if you can find something
+that isn't, please bring it up
+
+rf: yes
+
+kfall: what now?
+
+rf: how much testing have you done with clients that expected the bits
+that they requested?
+
+kfall: that's in part why we asked
+
+rf: testing first might determine how to proceed with this, if this
+kills an existing client, then this is a no-go
+
+mnot: 206 is close enough
+
+mnot: mumble, mumble, vary...
+
+rf: vary isn't so relevant in this case, it's for selecting representations
+
+mnot: fine
+
+ACTION: kfall to review -p5
+
+draft-fielding-http-key-01
+--------------------------
+
+A not-dumb Vary header
+
+roy outlines the idea that you can make a request without headers to
+avoid the fingerprinting thing, detect the variances that might occur,
+then make more requests
+
+cyrus daboo: key == too generic
+
+roy: I don't care if its confusing, and number of bytes on the wire
+
+jr: application/*+json, globbing conneg
+
+roy: no, breaks stuff
+
+
+
+Session II
+==========
+
+ticket #385: upgrade mechanism 
+------------------------------
+
+<http://trac.tools.ietf.org/wg/httpbis/trac/ticket/385>
+
+### TLS Upgrade for HTTPS URIs
+
+See thread rooted here: http://lists.w3.org/Archives/Public/ietf-http-wg/2012OctDec/0143.html
+
+mnot will send the message suggested in that above message to the tls chairs
+and show up in the TLS session this afternoon
+
+### Upgrade for HTTP URIs
+
+Gabriel M. is going to present on upgrade-based negotiation for http/2.0 --
+which is one approach to addressing the issues in the "http uris" section of
+the issues outlined in the
+<http://lists.w3.org/Archives/Public/ietf-http-wg/2012OctDec/0143.html> mail
+msg
+
+roy at mike: don't need to prefix the header fields; they're just header fields
+
+mnot: it's side channel info, for optimizing
+
+roy: as soon as sent in http1.1 they're just a header field, register them,
+don't need prefix
+
+jhil: would those http2 things get stripped out?
+
+gabriel m (gm): yes
+
+<mbelshe> mic: have any tests been run to confirm viability in the wild? as
+presented before, data shows port 80 has trouble with non-http1.1 protocols.
+or do we just want to ignore that?
+
+mnot to mike belshe (mb) -- we're getting there
+
+gm @mic: <discussing fine points of upgrade>
+
+phb@mic: 1st thing is successful upgrade, 2nd thing is what to do if it fails
+
+jhil: is there a timing issue with expect 100 continue ?
+
+mnot: do an upgrade and combine with expectation?
+
+roy: wouldn't normally do that. the 1st request you make shouldn't be a large
+state changing operation
+
+roy: so you send options or GET first (so it's not a packet loss issue)
+
+jhil: so perhaps need note about that in spec
+
+mnot: discussion we need to have is whether a upgrade like this is workable
+for us -- in hybi they figured that about 70% conns using this would be
+successful, rest would fail
+
+fielding: you don't upgrade a request while sending a large body and Expect
+100-continue -- it is simply not a use case that is relevant. It might work
+quite well, but it simply isn't worth being concerned about.
+
+mnot: so perhaps deploying using this it'd encourage the internet to upgrade,
+but only if we have fast failure fallback
+
+patrick mcmanus (pm) @mic : in FF, doing 6455 (?) the TLS success rates are
+substantially better than the plain success rates. Roughly 80% with TLS, maybe
+almost 70% with plain HTTP
+
+<Eliot Lear> mic: what did success mean in this case?
+
+salvatore@mic: its true we had not so good success rate with plain upgrade,
+but lots of boxes will be upgraded, and they (?) just relaeased boxes with
+spdy support and [we'll see what happens (?)]
+
+mnot: there'll be several versions of the protocol out there because we're
+going to try various approaches
+
+mnot: the upgrade mech needs certain capabilities, eg supporting opportunistic
+use of TLS
+
+mnot: calling for data on how upgrades are working -- with data we have now,
+it seems if we design this thing well it';ll either succeed or fail fast ----
+wondering about what folks thing whegther we should go down "this path"
+
+<Eliot Lear> mic: should pursue this path, but need more data.
+
+pm: let's talk about the other approaches
+
+mnot: ok, another approach is "Using a SRV (or other DNS) record" (from
+<http://lists.w3.org/Archives/Public/ietf-http-wg/2012OctDec/0143.html>
+
+mnot: have heard that there is general interest in using DNS as a mech, and do
+folks think we shouldn't use SRV?
+
+<Eliot Lear> Mic: NOT in favor of SRV.
+
+ekr: this is 1st time mention srv, realise that the TLS server id check you do
+is with name you started with, not with the one srv gives you
+
+mnot: yes
+
+jeffh: <thinks rfc6125 discusses this>
+
+<Eliot Lear> Mic: What are the goals? Please be specific!!
+
+<mbelshe> mic: is there a serious proposal around srv? or is this at the
+brainstorm stage?
+
+mnot: we're at the brainstorm stage
+
+cyrus d (cd) @mic: i get http://example.com and running http/2 on that, but on
+example.com:88 running http/1 ....
+
+pm: if uri contains port, then we're not going to do the srv lookup (?)
+
+phb@mic: the dns is where u make assns re names; should bind names & prots "in
+dns"; there's practical issues with doing this; in how clients use dns; don't
+nec use srv; want to use dnssec; so going to use "new dns" world anyway; and
+so may want srv+ <eg need to invent new dns stuff>
+
+pm: this is more work everywhere, u can set this up; and so in one round trip
+get all info u need, can mux with this btwn http 1 & 2 and whatever, <missed
+stuff> so this approach gives some nice benefits
+
+? @mic: if u get a diff port from srv, do you use that?
+
+mnot: there's a lot sec related concerns here need to be careful
+
+eric nygren (en): having srv records would be an advantage; addtnl benefit is
+having sep servers handling http/1 and http/2 -- help deployment
+
+mnot: inclined to say this (srv/dns stuff) will be a work item for us
+
+mnot: upgrade mech should start in main draft ...3d mech " 2) Using a response
+header to hint that HTTP/2 is available on another port" from
+<http://lists.w3.org/Archives/Public/ietf-http-wg/2012OctDec/0143.html>
+
+<Eliot Lear> ted: there are still often many different http servers running on
+different ports of the same host
+
+roberto: <comment about upgrade detail>
+
+Martin Thomson: Enumeration is: TLS nextproto, HTTP upgrade, srv or other DNS
+record, alternate-protocol header
+
+mnot: start developing DNS based, and a response header based mechanism as
+well. Selected editors for core HTTP work, Martin Thompson, Aleksy Melnikov,
+and Julian Resshke will be helping out
+
+Eliot Lear: I volunteer to develop at least one DNS-based proposal
+
+mnot: don't want to put all work on them
+
+
+header compression
+------------------
+
+<http://trac.tools.ietf.org/wg/httpbis/trac/wiki/HTTP2Compression>
+
+Herve Ruellan slides on HTTP Header Encoding Results
+http://www.ietf.org/proceedings/85/slides/slides-85-httpbis-1.pdf
+
+jhil: think about impact on mobile devices such as power required ?
+
+agl @mic: so now spdy compression has issues with trying to avoid crime attack
+
+rp: but its still useful as baseline
+
+mnot: see github.com/http2/http_samples - this is a corpus of header samples;
+har files from pcap captures.
+
+cd: what about webdav et al?
+
+mnot: if you want to submit traces for that, please do
+
+jhil: prob need some enterprise traces because of strange cross-domain cookies
+we see, but need to anon them
+
+mnot: ... but not concerned about pathological cases
+
+jhil: but might help show which compress scheme is better
+
+mnot: next thing come up with script that analyses this stuff, and eg can emit
+a pathological case, and then run compression algs on it and see how it works
+
+rp: can do this in python & work with mnot
+
+roy: http2 is not a minor hack -- need to do it carefully -- perhaps we should
+have better encoding for header fields, eg cookies are huge, this could be
+binary, if we define an encoding, then can encode cookies when sending over
+http and get diff comp results
+
+mnot: we can define new headers that have diff encodings eg binary, and then
+downgrade them to eg txt when sending over http/1
+
+roy: a cook header field, obviously can't change that due to existing
+browsers, but browsers just store it and replay it; new thing doesn't have to
+be compat with existing cookies, so if svr has choice to send short cook
+rather than long one....
+
+mnot: two diff things here, one is http1 <-- > http/2 <--> http/1 w/o loss;
+the other is doing stuff in http/2 that are new ( and then needing to
+downgrade new stuff into http/1 as nec )
+
+mnot: if u can compress a bunch of requests down to fit in one underlying pkt,
+then that's very powerful, esp in mobile world; inclined to keep that in mind
+when selecting compression approach; .need to keep memory & cpu & power
+overheads in mind
+
+rp @mic: web app developers shouldn't have to opt their site to "make it fast"
+-- rather should make protocol fast
+
+mnot: yes
+
+phb: what about patent issues in compression?
+
+mnot: they'll have to disclose
+
+phb: if u make disclosure call now it has implications down the road
+
+mnot: we'll deal with that later
+
+mnot: we prob won't choose perfect comp mech for all time, thus negotiate comp
+mech?
+
+mnot: if upgrade mech is adequate, then can include comp mech in that, but if
+too much optionality there, that's interop probs
+
+mnot: would be nice if can put it into debug mode to see stuff on wire -- so
+question to be able to turn comp on/off ?; .thoughts on this?
+
+rp: perhaps can put stuff in there to make debugging "easy" rather than "turn
+it off"
+
+mnot: roberto wants to talk about http/w compression
+http://tools.ietf.org/html/draft-rpeon-httpbis-header-compression-00
+
+roy: yes, the compression ratio gets better if you send garbage on the wire
+
+roy: notes that a fixed id space is essentially a registry in machine readable
+form
+
+rp: yes; but its not a reg that needs to be maintained after its created
+
+martin thompson (mt): dont understand where huffman encoding comes into play?
+
+rp: draft needs work; what is huffman coded is the text in the headers. ran
+analysis over sample of headers, and then used that to gen id space
+
+<PHB> seems to me that we are maybe doing this the wrong way
+
+rp: hopefully impl code for this is better to understand than the I-D at this
+point :)
+
+mnot: so we know sorta where we going on compression stuff, want to get impls
+plugged into the http2 namespace on github -- the more visible we can make
+this the better
+
+<Martin Thomson> the question was: do you have a note well on the repo
+
+#387: server push
+-----------------
+
+We need more data / experience.
+
+
+Other Issues
+------------
+
+### Flow Control
+
+gabriel montenegro (gm) -- flow control principles for http 2
+
+hildjj: we need TSV help for this part.
+
+roy: init exchange over tcp, client begins; with this do you expect server to
+send anything first wrt state?
+
+gm: in spdy there's default 64k per stream
+
+rp: basically need default for safety reasons, but a better FC mech than spdy3
+exists, hopefully will be proposed, can make larger than 64k by defualt
+
+ted hardie(th): what impact if doing multipath tcp under this? 
+
+gm: yes need to figure out interaction with newish tcp stuff under it
+
+mnot: is FC tightly bound to what xport's properties are?
+
+gm: yes
+
+rp: <nods yes>
+
+jhil: we need early involvement by transport folks, don't wanna make buffer
+bloat worse
+
+rp: don't think that's possible
+
+will chan (wc): would hope that FC in http/2 doesn't subvert xport FC; want to
+make sure we saturate link; this should be one of the principles
+
+gm: thinks link saturation depends on how the <sliding window / credits >
+work; don't have to solve now
+
+alison mankin (am): if receiver has FC turned off by intermediary, that messes
+stuff up.
+
+gm: but receiver controls it for his hop. is concerned about middleboxes at
+http layer; at that layer the proxy has to heed what endpoint (receiver)
+wishes. still concerned on traps that may be there
+
+rp: there's finite buffering available for entire path length; if receiver
+says stop, it'll stop eventually; but as soon as an intermediate is in the
+path, they have influence on FC
+
+gm: we need to codify the rules in the base spec
+
+mnot: gm will have draft coming out, please review. FC will get a new issue #
+
+
+### Priorities
+
+pm: priorities need discussion
+
+mnot: will create issue for that (framing, diff frame sizes)
+
+rp: want to agree and disagree wrt priortzn stuff -- need more experimentation
+
+mnot: sure, may defer disc of these issues, but want to get em written down
+
+
+### Mapping to TCP
+
+eric nygren (en): mapping to tcp -- need to disc
+
+mnot: yes, need optional draft on "how i use tcp"
+
+rp: agree with en that'll be issue, might wanna address earlier, need to get
+sec folk thinking about that
+
+en: also has implications for prototcol upgrade mech, signalling may make this
+easier or harder
+
+
+### Framing
+
+gm: did u raise issue on framing itself? 
+
+mnot: it will get raised; specific concern; useful for e.g., sendfile()
+
+Wrapup
+------
+
+mnot: am gratified to see folks working on drafts; continue doing that; will
+use wiki to record current state of proposals; interlink to issue #s; will
+also use github; will hand out access to (sub) repositories; the actual drafts
+will be in ietf subversion service;
+
+mnot: f2f meetings are effective for work like this, involves lots of folks,
+need to confirm decisions on list, tho possiblities of interim meetings, may
+be good idea here in earlier phase like this, current plan is interim mtg in
+Jan 2013, 2..3 days, offer from Ian Fette to host in Tokyo, need to get dates,
+maybe mid Jan to early Feb, pls send dates ideas to mnot
+
+mnot: any more biz ?
+
+phb: discussing compression -- was of msgs, not conversations -- in mobile --
+sending "pages" with lists of links --- but maybe do html-conscious
+compression ?
+
+jhil: don't we get some of that with svr push?
+
+en: if start with http1, include an encoded blob of handshake framing?
+
+mnot: that's in category of cool tricks we could play. 
+
+mnot: keep drafts coming, will send minutes out soon, if hold this interim
+mtg, want to make it useful 
+
+adjourned

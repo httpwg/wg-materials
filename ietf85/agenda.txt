@@ -1,0 +1,62 @@
+HTTPbis Working Group Agenda - IETF 85
+======================================
+
+ - Meeting chat: <xmpp:httpbis@jabber.ietf.org?join>
+ - Minutes: <http://tools.ietf.org/wg/httpbis/minutes>
+
+
+MONDAY, November 5, 2012 - 1300-1500  Afternoon Session I
+---------------------------------------------------------
+
+### Salon D: HTTP/1.x Session
+
+ *   1 min - Blue sheets / scribe selection 
+ *   4 min - Agenda bashing
+ *  15 min - HTTP/1.1 draft -21 changes overview
+ *   5 min - HTTP/1.1 status
+ *  80 min - HTTP/1.1 WGLC issues discussion
+            <http://trac.tools.ietf.org/wg/httpbis/trac/report/9>
+ *  15 min - Related Work
+            <http://tools.ietf.org/html/draft-kfall-httpbis-server-ranges-00>
+
+### Recommended Reading for HTTP/1.x
+
+  - <http://tools.ietf.org/html/draft-ietf-httpbis-p1-messaging-21>
+  - <http://tools.ietf.org/html/draft-ietf-httpbis-p2-semantics-21>
+  - <http://tools.ietf.org/html/draft-ietf-httpbis-p4-conditional-21>
+  - <http://tools.ietf.org/html/draft-ietf-httpbis-p5-range-21>
+  - <http://tools.ietf.org/html/draft-ietf-httpbis-p6-cache-21>
+  - <http://tools.ietf.org/html/draft-ietf-httpbis-p7-auth-21>
+  - <http://tools.ietf.org/html/draft-ietf-httpbis-method-registrations-10>
+  - <http://tools.ietf.org/html/draft-ietf-httpbis-authscheme-registrations-05>
+  - <http://tools.ietf.org/html/draft-ietf-httpbis-security-properties-05>
+
+
+TUESDAY, November 6, 2012 - 0900-1130  Morning Session I
+--------------------------------------------------------
+
+### Salon E: HTTP/2.x Session
+
+ *   1 min - Blue sheets / scribe selection 
+ *   4 min - Agenda bashing
+ *  45 min - Issue #385: Upgrade Mechanism
+ *  45 min - Issue #386: Header Compression
+           - 10 min: Herve Ruellan 
+ *  20 min - Issue #387: Server Push
+ *  30 min - Solicitation/discussion of other issues
+ *   5 min - HTTP/2.0 status
+
+### Recommended Reading for HTTP/2.x
+
+ - <http://tools.ietf.org/html/draft-mbelshe-httpbis-spdy-00>
+ - <http://tools.ietf.org/html/draft-montenegro-httpbis-http2-negotiation>
+ - <http://tools.ietf.org/html/draft-snell-httpbis-bohe>
+ - <http://tools.ietf.org/html/draft-nir-httpbis-che>
+ - <http://tools.ietf.org/html/draft-rpeon-httpbis-header-compression>
+
+ 
+Background Material
+-------------------
+
+ - <http://www.ietf.org/html.charters/httpbis-charter.html>
+ - <http://trac.tools.ietf.org/wg/httpbis/trac/wiki>

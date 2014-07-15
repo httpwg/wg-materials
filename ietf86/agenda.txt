@@ -1,0 +1,27 @@
+HTTPbis Working Group Agenda - IETF 86
+======================================
+
+ - Meeting chat: <xmpp:httpbis@jabber.ietf.org?join>
+ - Minutes: <http://tools.ietf.org/wg/httpbis/minutes>
+
+FRIDAY, March 15, 2013 - 0900-1100 Friday Morning Session I
+------------------------------------------------------------
+
+### Caribbean 5
+
+ *   1 min - Blue sheets / scribe selection 
+ *   4 min - Agenda bashing
+ *  25 min - HTTP/1.x Status
+             - draft -22 changes [slides from Julian Reschke]
+             - WGLC summary
+             - Issue discussion
+ *  45 min - HTTP/2.x Status
+             - Interim meeting summary
+             - Work plan overview
+             - draft changes and open questions [Martin Thomson]
+             - update from TLS WG
+             - further research [Eliot Lear]
+ *  45 min - Issue discussion
+             - Header Compression
+             - Upgrade / Negotiation
+             - Flow Control [slides from Gabriel Montenegro]

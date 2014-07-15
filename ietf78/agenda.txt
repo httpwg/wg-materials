@@ -1,0 +1,36 @@
+HTTPbis Working Group Agenda
+MONDAY, July 26, 2010
+1520-1720 Afternoon Session II (0.1 London)
+
+=================================================================
+
+*  1 min - Scribe selection
+*  4 min - Agenda bashing
+* 10 min - WG status [Mark Nottingham]
+* 15 min - HTTP -10 changes overview [Julian Reschke]
+* 10 min - Relationship to RFC2817 [Mark Nottingham]
+* 10 min - Relationship to RFC2617 [Mark Nottingham]
+* 10 min - Registration policies overview [Mark Nottingham]
+* 10 min - Content-Disposition header [Julian Reschke]
+* 50 min - Active issues discussion
+         [ list forthcoming; suggestions / requests welcome ]
+* 10 min - Memento [Herbert van de Sompel]
+
+=================================================================
+
+Recommended Reading:
+http://www.ietf.org/internet-drafts/
+      draft-ietf-httpbis-p1-messaging-10
+      draft-ietf-httpbis-p2-semantics-10
+      draft-ietf-httpbis-p3-payload-10
+      draft-ietf-httpbis-p4-conditional-10
+      draft-ietf-httpbis-p5-range-10
+      draft-ietf-httpbis-p6-cache-10
+      draft-ietf-httpbis-p7-auth-10
+      draft-ietf-httpbis-method-registrations-04
+      draft-ietf-httpbis-security-properties-05
+      draft-reschke-rfc2231-in-http-12 (approved, in RFC Editor queue)
+
+Other background material:
+      http://www.ietf.org/html.charters/httpbis-charter.html
+      http://mementoweb.org/

@@ -1,0 +1,66 @@
+HTTPbis Working Group Agenda - IETF 83
+
+Meeting chat: xmpp:httpbis@jabber.ietf.org?join
+Minutes: http://tools.ietf.org/wg/httpbis/minutes
+
+=================================================================
+
+TUESDAY, March 27, 2012
+1300-1500  Afternoon Session I  (room 252A)
+Audio: <http://ietf83streaming.dnsalias.net/ietf/ietf835.m3u>
+
+*   1 min - Blue sheets / scribe selection 
+*   4 min - Agenda bashing
+*  20 min - HTTP/1.1 draft 16-19 changes overview [Julian Reschke]
+*  25 min - WG status [Mark Nottingham]
+*  30 min - HTTP/1.1 p1 - p3 issues discussion [Mark Nottingham]
+            <http://trac.tools.ietf.org/wg/httpbis/trac/report/9>
+            #247 consider adding an "intended usage" field to our registries
+             #22 ETag (and other metadata) in status messages
+            #266 Header microsyntax
+*  30 min - HTTP/1.1 p4 - p7 WGLC issues discussion [Mark Nottingham]
+            <http://trac.tools.ietf.org/wg/httpbis/trac/report/20>
+*  10 min - Related Work [Mark Nottingham]
+            draft-nottingham-http-new-status
+            draft-reschke-http-status-308
+
+=================================================================
+
+THURSDAY, March 29, 2012
+1520-1720  Afternoon Session II  (room 241)
+Audio: <http://ietf83streaming.dnsalias.net/ietf/ietf832.m3u>
+
+*   1 min - Blue sheets / scribe selection 
+*   4 min - Agenda bashing
+*  45 min - Finding HTTP/2.0 [Mark Nottingham]
+*  60 min - Discussion
+            SPDY Proposal [Mike Belshe]
+            HTTP 2.0: Speed and Mobility [Gabriel Montenegro]
+            Intermediary Requirements [Willy Tarreau]
+*  10 min - Wrap-up
+
+=================================================================
+
+Recommended Reading for HTTP/1.x:
+ http://www.ietf.org/internet-drafts/
+    draft-ietf-httpbis-p1-messaging-19
+    draft-ietf-httpbis-p2-semantics-19
+    draft-ietf-httpbis-p3-payload-19
+    draft-ietf-httpbis-p4-conditional-19
+    draft-ietf-httpbis-p5-range-19
+    draft-ietf-httpbis-p6-cache-19
+    draft-ietf-httpbis-p7-auth-19
+    draft-ietf-httpbis-method-registrations-07
+    draft-ietf-httpbis-security-properties-05
+    draft-ietf-httpbis-authscheme-registrations-03
+
+Recommended Reading for HTTP/2.x:
+ http://www.w3.org/TR/1998/WD-HTTP-NG-goals
+ http://www.w3.org/Protocols/HTTP-NG/1998/11/draft-frystyk-httpng-overview-00
+ http://www.parc.com/content/attachments/janssen-www9-http-next-generation.pdf
+ http://dev.chromium.org/spdy/spdy-whitepaper
+ http://tools.ietf.org/id/draft-mbelshe-httpbis-spdy-00.txt 
+ 
+Other background material:
+ http://www.ietf.org/html.charters/httpbis-charter.html
+ http://trac.tools.ietf.org/wg/httpbis/trac/wiki

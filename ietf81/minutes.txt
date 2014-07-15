@@ -1,0 +1,35 @@
+HTTPbis WG
+----------
+
+Mark discussed the status of the Working Group; there is still an intent to 
+get to LC by the end of the year.
+
+Yves covered the changes in the -14 and -15 drafts; see the presentation for 
+details.
+
+We worked through the issues identified in the agenda; there was general
+agreement with the approaches outlined in list discussion.
+
+Larry asked about IRIs and whether we needed to account for the charset of
+the context in query parameters; Roy pointed out that this is indeed 
+context-specific, and so can't be defined by HTTP generically.
+
+Julian gave an overview of the more difficult aspects of HTTP header parsing
+(see presentation), primarily as input to the issue regarding header
+microsyntax, but also as a prelude to potential alignment in existing headers.
+
+We then had a look at tools, such as Julian's test cases 
+<http://greenbytes.de/tech/tc/> and REDbot <http://redbot.org/>. We also 
+highlighted the effort to socialise RFC6266 with server-side frameworks
+<http://trac.tools.ietf.org/wg/httpbis/trac/wiki/ContentDispositionProducerAdvice>.
+
+Larry posited that we should be thinking about / starting / finding people
+to to interoperability testing.
+
+Jim Gettys highlighted bufferbloat problems, and asked people to start
+thinking about the implications in future work (see 
+<http://gettys.wordpress.com/bufferbloat-faq/>).
+
+We don't intend to meet in Taipei. 
+
+Jabber logs at: <http://www.ietf.org/jabber/logs/httpbis/2011-07-26.html>

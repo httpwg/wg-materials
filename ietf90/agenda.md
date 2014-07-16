@@ -64,7 +64,7 @@ Related Reading:
 * 20 minutes - discussion of [outstanding issues](https://github.com/httpwg/http-extensions/issues?labels=opp-sec&state=open)
 
 ### draft-hutton-httpbis-connect-protocol
-* 10 minutes - [Presentation from Andrew Hutton]()
+* 10 minutes - [Presentation from Andrew Hutton](http://httpwg.github.io/wg-materials/ietf90/IETF90_draft-hutton-httpbis-connect-protocol.pdf)
 
 ### Header Field Parsing
 * 10 minutes - [Presentation from Julian Reschke](http://httpwg.github.io/wg-materials/ietf90/ietf-90-httpbis-header-field-parsing.pdf)

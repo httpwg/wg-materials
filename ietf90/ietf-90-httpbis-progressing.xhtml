@@ -9,6 +9,9 @@ body {
   font-family: cambria, helvetica, arial, sans-serif;
   font-size: 18pt;
 }
+tt {
+  font-family: consolas;
+}
 h1 {
   font-size: 36pt;
 }
@@ -80,7 +83,7 @@ q {
         Approved early 2012, but published last month due to httpbis dependencies.
       </li>
       <li>
-        Implemented in many tools, plus Firefox, Safari, Chrome 36 (currently beta).
+        Implemented in many tools, plus Firefox, Safari, Chrome 36.
       </li>
     </ul>
     <p>
@@ -100,11 +103,17 @@ q {
 
     <h2 class="break">RFC 5987: Character Set and Language Encoding for Hypertext Transfer Protocol (HTTP) Header Field Parameters</h2>
     <p>
+      aka <tt>*param=UTF-8''....</tt>
+    </p>
+    <p>
       Status:
     </p>
     <ul>
       <li>
-        Supported for Content-Disposition in all browsers (where IE only supports UTF-8 where the spec also requires ISO-8859-1).
+        Supported for "Content-Disposition" header field in all browsers (where IE only supports UTF-8 where the spec also requires ISO-8859-1).
+      </li>
+      <li>
+        Supported for "Link" in Firefox.
       </li>
     </ul>
     <p>
@@ -121,9 +130,7 @@ q {
         Rewrite to be consistent with RFC 723*.
       </li>
       <li>
-        <a href="http://greenbytes.de/tech/webdav/draft-reschke-rfc5987bis-07.html">draft-reschke-rfc5987bis-07</a>
-      </li>
-      <li>
+        <a href="http://greenbytes.de/tech/webdav/draft-reschke-rfc5987bis-07.html">draft-reschke-rfc5987bis-07</a>,
         Tests: <a href="http://greenbytes.de/tech/tc2231/">http://greenbytes.de/tech/tc2231/</a>
       </li>
       <li>

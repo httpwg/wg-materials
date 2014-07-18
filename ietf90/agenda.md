@@ -30,7 +30,7 @@ Related Reading:
 * 15 minutes - [Presentation by Adam Langley](http://httpwg.github.io/wg-materials/ietf90/agl-proxies.pdf)
 
 ### Impact of Encryption upon Satellite
-* 10 minutes - [Presentation by Peter Lepeska]()
+* 10 minutes - [Presentation by Peter Lepeska](http://httpwg.github.io/wg-materials/ietf90/trusted_proxy_cost_of_bits.pdf)
 
 ### draft-loreto-httpbis-explicitly-auth-proxy
 * 10 minutes - [Presentation from Salvatore Loreto]()

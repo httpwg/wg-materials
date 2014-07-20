@@ -33,7 +33,7 @@ Related Reading:
 * 10 minutes - [Presentation by Peter Lepeska](http://httpwg.github.io/wg-materials/ietf90/trusted_proxy_cost_of_bits.pdf)
 
 ### draft-loreto-httpbis-explicitly-auth-proxy
-* 10 minutes - [Presentation from Salvatore Loreto]()
+* 10 minutes - [Presentation from Salvatore Loreto](http://httpwg.github.io/wg-materials/ietf90/ExplicitAutProxy.pdf)
 
 ### Discussion
 * 65 minutes - general discussion

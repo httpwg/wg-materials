@@ -60,7 +60,7 @@ Related Reading:
 ### draft-ietf-httpbis-alt-svc
 * 20 minutes - discussion of [outstanding issues](https://github.com/httpwg/http-extensions/issues?labels=alt-svc&state=open)
 
-### draft-ietf-http2-encryption
+### draft-ietf-httpbis-http2-encryption
 * 20 minutes - discussion of [outstanding issues](https://github.com/httpwg/http-extensions/issues?labels=opp-sec&state=open)
 
 ### draft-hutton-httpbis-connect-protocol

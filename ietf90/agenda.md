@@ -74,6 +74,7 @@ Related Reading:
 ### draft-reschke-http-cice
 * 10 minutes - [Presentation from Julian Reschke](http://httpwg.github.io/wg-materials/ietf90/ietf-90-httpbis-cice.pdf)
 
-### draft-nottingham-http-patch-status
-* 5 minutes - [Presentation from Mark Nottingham]()
+### wrap-up
+
+* 5 minutes
 

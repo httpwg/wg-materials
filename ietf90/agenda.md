@@ -55,7 +55,7 @@ Related Reading:
 * 15 minutes - NYC interim meeting summary, HTTP/2 status, operational advice
 
 ### draft-nakajima-httpbis-http2-interop-survey
-* 5 minutes - [Presentation from Hiro Nakajima]()
+* 5 minutes - [Presentation from Hiro Nakajima](http://httpwg.github.io/wg-materials/ietf90/ietf90-httpbis-nakajima.pdf)
 
 ### draft-ietf-httpbis-alt-svc
 * 20 minutes - discussion of [outstanding issues](https://github.com/httpwg/http-extensions/issues?labels=alt-svc&state=open)

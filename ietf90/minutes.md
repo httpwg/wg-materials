@@ -1,5 +1,33 @@
 # HTTPBis WG meeting
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Monday](#monday)
+  - [Adam Langley: [HTTP/2 and Proxies](http://httpwg.github.io/wg-materials/ietf90/agl-proxies.pdf)](#adam-langley-http2-and-proxieshttphttpwggithubiowg-materialsietf90agl-proxiespdf)
+  - [Peter Lepeska: [Trusted Proxy and the Cost of Bits](http://httpwg.github.io/wg-materials/ietf90/trusted_proxy_cost_of_bits.pdf)](#peter-lepeska-trusted-proxy-and-the-cost-of-bitshttphttpwggithubiowg-materialsietf90trusted_proxy_cost_of_bitspdf)
+  - [Salvatore Loredo: [Explicity Authenticated Proxy](http://httpwg.github.io/wg-materials/ietf90/ExplicitAutProxy.pdf)](#salvatore-loredo-explicity-authenticated-proxyhttphttpwggithubiowg-materialsietf90explicitautproxypdf)
+  - [Mark: [Proxies in HTTP](http://tools.ietf.org/agenda/90/slides/slides-90-httpbis-8.pdf)](#mark-proxies-in-httphttptoolsietforgagenda90slidesslides-90-httpbis-8pdf)
+  - [Discussion](#discussion)
+- [Tuesday](#tuesday)
+- [Administrivia](#administrivia)
+- [Existing HTTP RFCs - Julian Reschke](#existing-http-rfcs---julian-reschke)
+  - [RFC 7328](#rfc-7328)
+  - [RFC 5987](#rfc-5987)
+  - [RFC 6266](#rfc-6266)
+- [HTTP/2](#http2)
+  - [[Issue 526](https://github.com/http2/http2-spec/pull/526](#issue-526httpsgithubcomhttp2http2-specpull526)
+- [draft-nakajima-httpbis-http2-interop-survey](#draft-nakajima-httpbis-http2-interop-survey)
+- [draft-ietf-httpbis-alt-svc](#draft-ietf-httpbis-alt-svc)
+- [draft-ietf-httpbis-http2-encryption](#draft-ietf-httpbis-http2-encryption)
+- [draft-hutton-httpbis-connect-protocol](#draft-hutton-httpbis-connect-protocol)
+- [Proxy discussion and history](#proxy-discussion-and-history)
+- [Header Field Parsing](#header-field-parsing)
+- [draft-reschke-http-cice](#draft-reschke-http-cice)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+
 ## Monday
 
 *Minutes by Eliot Lear*

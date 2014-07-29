@@ -10,20 +10,20 @@
   - [Mark: [Proxies in HTTP](http://tools.ietf.org/agenda/90/slides/slides-90-httpbis-8.pdf)](#mark-proxies-in-httphttptoolsietforgagenda90slidesslides-90-httpbis-8pdf)
   - [Discussion](#discussion)
 - [Tuesday](#tuesday)
-- [Administrivia](#administrivia)
-- [Existing HTTP RFCs - Julian Reschke](#existing-http-rfcs---julian-reschke)
-  - [RFC 7328](#rfc-7328)
-  - [RFC 5987](#rfc-5987)
-  - [RFC 6266](#rfc-6266)
-- [HTTP/2](#http2)
-  - [[Issue 526](https://github.com/http2/http2-spec/pull/526)](#issue-526httpsgithubcomhttp2http2-specpull526)
-- [draft-nakajima-httpbis-http2-interop-survey](#draft-nakajima-httpbis-http2-interop-survey)
-- [draft-ietf-httpbis-alt-svc](#draft-ietf-httpbis-alt-svc)
-- [draft-ietf-httpbis-http2-encryption](#draft-ietf-httpbis-http2-encryption)
-- [draft-hutton-httpbis-connect-protocol](#draft-hutton-httpbis-connect-protocol)
-- [Proxy discussion and history](#proxy-discussion-and-history)
-- [Header Field Parsing](#header-field-parsing)
-- [draft-reschke-http-cice](#draft-reschke-http-cice)
+  - [Administrivia](#administrivia)
+  - [Existing HTTP RFCs - Julian Reschke](#existing-http-rfcs---julian-reschke)
+    - [RFC 7328](#rfc-7328)
+    - [RFC 5987](#rfc-5987)
+    - [RFC 6266](#rfc-6266)
+  - [HTTP/2](#http2)
+    - [[Issue 526](https://github.com/http2/http2-spec/pull/526)](#issue-526httpsgithubcomhttp2http2-specpull526)
+  - [draft-nakajima-httpbis-http2-interop-survey](#draft-nakajima-httpbis-http2-interop-survey)
+  - [draft-ietf-httpbis-alt-svc](#draft-ietf-httpbis-alt-svc)
+  - [draft-ietf-httpbis-http2-encryption](#draft-ietf-httpbis-http2-encryption)
+  - [draft-hutton-httpbis-connect-protocol](#draft-hutton-httpbis-connect-protocol)
+  - [Proxy discussion and history](#proxy-discussion-and-history)
+  - [Header Field Parsing](#header-field-parsing)
+  - [draft-reschke-http-cice](#draft-reschke-http-cice)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -326,7 +326,7 @@ what is the balance between OE and network engineering.
 
 *Minutes by Paul Hoffman*
 
-## Administrivia
+### Administrivia
 
 Mark did agenda
 
@@ -338,7 +338,7 @@ Ted Hardie points out that pull requests need to see a Note Well
 
 Maybe will do an HTTP FAQ
 
-## Existing HTTP RFCs - Julian Reschke
+### Existing HTTP RFCs - Julian Reschke
 
 Want to go Internet Standard in ~2016
 
@@ -346,7 +346,7 @@ Need to agree which errata should be accepted into the document
 
 Mark wants to set up a repo for errata and things that need clarification
 
-### RFC 7328
+#### RFC 7328
 
 Can either publish a new RFC or ask or the status to be changed to Standards
 track
@@ -357,7 +357,7 @@ Rob Trace says that IE will look at implementing it
 
 Mark: a decent amount of take-up
 
-### RFC 5987
+#### RFC 5987
 
 Non-ASCII for headers
 
@@ -373,7 +373,7 @@ Julian wondered why not
 
 Timing: should this be done before bis-bis? Probably will wait.
 
-### RFC 6266
+#### RFC 6266
 
 Implemented in all browsers
 
@@ -383,7 +383,7 @@ Intended status of Internet Standard
 
 Timing: should this be done before bis-bis? Probably will wait.
 
-## HTTP/2
+### HTTP/2
 
 Discussion at interim in NYC
 
@@ -422,7 +422,7 @@ Barry: You should align with the UTA TLS BCP document
 Mark: We need to future-proof
 
 
-### [Issue 526](https://github.com/http2/http2-spec/pull/526)
+#### [Issue 526](https://github.com/http2/http2-spec/pull/526)
 
 Hervé Ruellan: Open issue. When the server sends a response, it might might
 push several resources to the client that depend on the original request. This
@@ -442,14 +442,14 @@ Mark: Getting more operational advice
 Mark: HTTP/3 is an interesting discussion, but not WG work within the next year
 Let's work HTTP/2 out fully
 
-## draft-nakajima-httpbis-http2-interop-survey
+### draft-nakajima-httpbis-http2-interop-survey
 
 Hiro Nakajima: Figure out which features are and are not implemented. Will do
 more complex testing, make a dashboard. Wants more feedback from the WG
 
 Mark encourages client and server implementers to work with Hiro
 
-## draft-ietf-httpbis-alt-svc
+### draft-ietf-httpbis-alt-svc
 
 Went through open issues
 
@@ -467,7 +467,7 @@ Paul Hoffman asked if folks wanted to test all aspects, not just OE
 
 Mark said yes
 
-## draft-ietf-httpbis-http2-encryption
+### draft-ietf-httpbis-http2-encryption
 
 Has some naming issues
 
@@ -493,7 +493,7 @@ opportunistic encryption? Maybe not worthwhile
 
 Mark: Should publish this at same time as HTTP/2
 
-## draft-hutton-httpbis-connect-protocol
+### draft-hutton-httpbis-connect-protocol
 
 Andrew Hutton: Use in the WebRTC environment
 
@@ -545,7 +545,7 @@ Mark: We are seeing ALPN tokens used a lot, without much analysis of the
 effects. Doesn't hear much pushback. Will take it to the list. Most concerning
 is protocol evolution impact.
 
-## Proxy discussion and history
+### Proxy discussion and history
 
 Little desire for adoption
 
@@ -570,7 +570,7 @@ document
 
 Mark: Do a bit of cleanup, call for adoption
 
-## Header Field Parsing
+### Header Field Parsing
 
 Julian: Gave this three years ago. Most header field parsers are broken. Header
 fields can be repeated. Had a chance to make the header fields more consistent,
@@ -580,7 +580,7 @@ Mark: likes the idea
 
 Other folks like it for other uses as well
 
-## draft-reschke-http-cice
+### draft-reschke-http-cice
 
 Julian: Content encodings are often gotten wrong
 

@@ -16,7 +16,7 @@
   - [RFC 5987](#rfc-5987)
   - [RFC 6266](#rfc-6266)
 - [HTTP/2](#http2)
-  - [[Issue 526](https://github.com/http2/http2-spec/pull/526](#issue-526httpsgithubcomhttp2http2-specpull526)
+  - [[Issue 526](https://github.com/http2/http2-spec/pull/526)](#issue-526httpsgithubcomhttp2http2-specpull526)
 - [draft-nakajima-httpbis-http2-interop-survey](#draft-nakajima-httpbis-http2-interop-survey)
 - [draft-ietf-httpbis-alt-svc](#draft-ietf-httpbis-alt-svc)
 - [draft-ietf-httpbis-http2-encryption](#draft-ietf-httpbis-http2-encryption)
@@ -422,8 +422,7 @@ Barry: You should align with the UTA TLS BCP document
 Mark: We need to future-proof
 
 
-### [Issue 526](https://github.com/http2/http2-spec/pull/526
-)
+### [Issue 526](https://github.com/http2/http2-spec/pull/526)
 
 Hervé Ruellan: Open issue. When the server sends a response, it might might
 push several resources to the client that depend on the original request. This

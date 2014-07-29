@@ -12,7 +12,7 @@
 - [Tuesday](#tuesday)
   - [Administrivia](#administrivia)
   - [Existing HTTP RFCs - Julian Reschke](#existing-http-rfcs---julian-reschke)
-    - [RFC 7328](#rfc-7328)
+    - [RFC 7238](#rfc-7238)
     - [RFC 5987](#rfc-5987)
     - [RFC 6266](#rfc-6266)
   - [HTTP/2](#http2)
@@ -346,7 +346,7 @@ Need to agree which errata should be accepted into the document
 
 Mark wants to set up a repo for errata and things that need clarification
 
-#### RFC 7328
+#### RFC 7238
 
 Can either publish a new RFC or ask or the status to be changed to Standards
 track

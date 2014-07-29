@@ -1,5 +1,222 @@
 # HTTPBis WG meeting
 
+## Monday
+
+Adam Langley presenting on HTTP/2 and Proxies (<http://httpwg.github.io/wg-materials/ietf90/agl-proxies.pdf>)
+
+In the beginning, we started SPDY with the question, "How do we get this going over the network?"
+The answer was TLS.  67% of people could get through using an Upgrade: Header.  86% could use a different port.
+"We came dangerously close of not being able to have an HTTP2"
+These numbers were for Chrome on Desktop.
+
+Crypto is defending the end to end principle.
+
+"We can't build a sane INternet without end-to-end cryptography."
+
+User-consent is a failure.  You can't ask the user about questions they don't understand.
+Filtering is done on the client.
+
+Installing a root certificate proves that you own the machine.  We do not see MITM proxies doing updates.
+So long as they are they are detectable, we let it go.
+
+Hasan: the numbers to get QUIC through were pitiful.
+
+Parental control filtering is supported in Chrome at the end point.
+
+General thrust of Adam's point: filtering doesn't break SSL/TLS.
+
+(Mark smacked down someone with a kitkat.)
+
+Peter Lepeska
+
+Trusted Proxy and the Cost of Bits (<http://httpwg.github.io/wg-materials/ietf90/trusted_proxy_cost_of_bits.pdf>)
+
+Internet.org says that the Internet must be 100x cheaper.
+For sattelite you need some form of "acceleration" to get a reasonable user experience.
+
+We're looking at a mobile browser marketshare map.  Opera Mini dominates in places where access is very expensive.  So you need compression to gain access at all.
+
+But it's effectively a man in the middle.
+And so there's a tradeoff.
+"Not everyone has the option of being a data hound." - Gigaom.  Access is the first thing you need.  Then fast enough experience.  And maybe then there's privacy.
+
+Encryption almost doubled last year.  Within a few years at this rate the majority of the web will be encrypted.
+The #s would be higher if we included SPDY proxies.
+Making TLS mandatory in HTTP2 should accelerate the curve.
+In January, when Yahoo switched to HTTPS, their plaintext response quadrupled from 4 to 16 seconds.
+CNN with Google compression proxy is 50% slower than without.
+
+Peter shows an example of a notification to turn on or off.  They're working on UI treatments.
+Or we ship our users a CA and we are a man in the middle.
+CDNs don't go far enough, because the caches aren't near enough to the users.
+And they only cover those who use CDNs.
+
+Randy:
+This isn't what people say they want.
+
+Nathanial Borenstein:
+    Users will say they will pay any price for security as long as it's free.
+
+Ted Hardy:
+    Opera Mini has similar architecture to Chrome SPDY proxy.
+    
+Peter: except that opera mini decrypts TLS.
+
+Salvatore Loredo
+
+Explicity Authenticated Proxy (<http://httpwg.github.io/wg-materials/ietf90/ExplicitAutProxy.pdf>)yes
+We are not proposing HTTPS traffic.  Only HTTP.
+
+Aim is to provide better user experience.
+Detection of malware
+Network operators can take into account network characteristics when they have access to the content.
+
+TLS is one way to have end-to-end cryptography, but there are others, including object level encryption.
+
+Traffic is increasing faster than we can upgrade capacity.
+
+Regulated industry, and must respect privacy of data.
+
+And so we need some buidling building blocks
+
+1st building block is a proxy certificate.
+
+We need a proxy discovery mechanism.
+
+We need a mechanism to opt in or opt out of a proxy,
+
+Ericsson is working with Opera to implement
+
+Yoav:
+    If i take my mobile phone mobile, how does it do discovery, and what can the user do to make an informed intelligent decision?
+
+Sal: it would be in the access network.
+
+Adam Langley: why would people implement this for only HTTP?
+Peter: another way to do a SPDY proxy.
+
+Peter Lepeska: HTTP URIs over TLS.
+
+EKR: would this be to cover opportunistic security/encryption?
+
+Sal: we're still thinking about that.
+EKR: do you use a separate ALPN identifier?
+
+Mark: Proxies in HTTP
+summarized "proxies are useful"
+summarized "proxies  are dangerous"
+The issue for me is going from a 2 body problem to a 3 body problem.
+
+And now there are split browsers.
+
+In HTTP we explicitly allow intermediaries to do things.
+
+Changing proxy expectations and requirements and the nature of HTTPs would overturn the current consensus.
+
+We don't have to standardize that which we object to.
+
+We usually mess up in policy.  Justifiy decisions on technical decisions.  Let's enable the tussle.
+But we can't change the nature of the protocol.
+
+We do create law when we create these standards.
+
+So what can we do?
+some of the outcomes may not be standardization outcomes.
+
+
+Discussion:
+    
+Eliot: thanks presenters
+Proxy.pac needs substantial work, not scalable
+
+Peter Lepeska:
+    If you're going to be an MITM proxy, you're not able to hand the original cert back to the user.  That's bad.  Can we do something better?
+    
+PHB: saying that you're not going to think about an issue doesn't make it go away.  nervous about "we only do end to end"
+
+Sean Turner: imagine the headline: HTTP enable sman int he middle.
+
+Joe HIldebrand: it might be possible to separate out these things from this wg if we have appropriate extensibility in the protocol.
+
+Ted Hardie: it's important to recognize the needs of the origin server to treat information as confidential.
+
+Cullen: there's a lot that can be done in this space.  re compression, there's nothing you can do to speed up a system where they don't care about it at the origin. 
+But caching is different and we should look at approaches.
+
+Mark: W3C has sub-resource integrity, but there is pushback because it leaks information.
+
+Daniel Kahn Gillmore: Network operators should not get in the way of the users having secure connections. The capabilities of proxies for legitimate purposes are indistnguishable from those that are illegitimate.
+
+Yoav: doesn't think that he could make an informed decision, regardless of the UI. 
+
+Sumandra: is there a way to split that which requires proteciton versus that which does not?  Example: a movie.  Possibly could do optimization on the exposed data.
+
+MNOT: we've talked about doing frame-by-frame selection of encryption.  The feedback is that the complexity is unmanageable.  More recently we've talked about adorning TLS with some meta-information.
+
+Joe Holland:  We do policy.  Maybe annotations might be interesting?
+
+Roland Zink: concerned about devices without a UI
+
+???: As a network operator in 60 countries we're under a legal obligation to block certain URLs.  How do we do that?
+
+Adam Langley: That's censorship.  You get the domain name in the clear, but you may have a problem blocking individual URLs.  What about SPDY proxies?  That's different.  We've not gotten a lot of interest from proxy vendors in terms of reducing the information they have.
+Peter Lepeska: when the two ends say they don't want information decrypted, then we don't want to decrypted.
+
+Chris: anyone with a squid box can be a point of censorship, and can be gotten around.
+
+William Chow: tradeoffs and choices may be different for different parties.
+
+Dan Druta: no one solution is going to fix all the problems and scenarios.  three body is already there, and perhaps it's 3, 4,5 body scenario.  and sometimes some of those bodies (or their intention) collide.  TLS does not allow for fine-grain control over flows, and there is a need for that.
+
+Martin Nielson: this really comes down to who you trust?
+
+PHB: clarification: it's incumbant on the advocate to prove they're not going to make things worse.  anything that happens should happen with the consent of the Internet user.
+
+Wendy Seltzer: want to introduce the notion of "affordances".  don't give users an option that will simply be turned against them.
+
+Craig T: responding to PHB, + the content provider
+
+Alissa Cooper: it's a mistake to think that users chose that browser for its performance characteristics.  Same thing for SPDY proxies.  we're here because encryption is increasing.
+
+Chris Bentzel google:  Have you seen that there are market forces at play where users would go to different sites [based on performance]?
+
+Hassan: do we know why opera mini is so popular?  opera mini is pre-installed on a lot of equipment by carriers.  this is not a choice that people are making.
+2nd: i've not heard any proposals for origin servers can have a say.  google would be disinclined to implement anything that doesn't take into account origin requirements.
+
+EKR: there was a proposal some time ago to take into account proxies, and it was received in a very negative way.  we have a difficult time sorting what the user is consetning to and what is being done to his data.
+
+Joel Jaeggli: on the market share #.  looks like opera comes with the phone.
+
+martin nielson: 10% of browsers installed with opera.  main reason is not for compression, but for caching.
+
+Stephen Farrell: thanks for not breaking TLS.  how could you use TLS and solve caching problems?  can we avoid the term "trusted proxy"?
+
+Julian: intercepting proxies are much easier to deploy.  maybe that is something to work on.
+
+Erik Nygren, Akamai: we need to be careful to separate http/https.  We need some reasonable compromise for HTTP.
+
+Dave Nielson: Google's proxy is like any other proxy.  It can see [HTTP].
+
+Hassan: Google's only being a little hypocrytical.  We're only doing HTTP URIs.  If you're running chrome, we can see what you do.
+
+Julian: it might be useful to have a proxy users can choose in places like Chrome.
+
+Mark (summarizing): 
+    HTTPS is inviolate
+    Maybe some interest in opt in to soften that
+    Some interest in adorning TLS
+    Interest in normalizing what an intercepting proxy is
+    Interest in encrypted caching.
+    Open issue on how opportunistic security interacts with a proxy
+
+Dan Druta: why isn't the proxy certificate a good building block?  Maybe we need a taxonomy for proxies.
+
+Tony Hansen: We had OPES.  RFC 3238 discusses OPES services in general.  OPES is all about proxying.
+
+William Chow: servers today that want to support SPDY.  TLS is used as a reliability mechanism for SPDY as a primary consideration.
+
+Sanjay from Verizon: operators need to be able to engineer their traffic, and what is the balance between OE and network engineering.
+
 
 ## Tuesday
 

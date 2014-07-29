@@ -2,6 +2,8 @@
 
 ## Monday
 
+*Minutes by Eliot Lear*
+
 ### Adam Langley: [HTTP/2 and Proxies](http://httpwg.github.io/wg-materials/ietf90/agl-proxies.pdf)
 
 In the beginning, we started SPDY with the question, "How do we get this going over the network?"

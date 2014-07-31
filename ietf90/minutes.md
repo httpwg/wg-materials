@@ -482,8 +482,8 @@ This might be something that proxies might want to use as well
 
 Mark: Need to think about discovery
 
-(?1): User agent may be associated with more than one proxy. Need to get
-implementation experience from Google about SPDY proxies
+Emile Stephan: User agent may be associated with more than one proxy. Need to
+get implementation experience from Google about SPDY proxies
 
 (?2): May want do make a distinction of which proxy to use on a per-URI basis.
 May want to take on Proxy.pac in the future. Can the proxy advertise

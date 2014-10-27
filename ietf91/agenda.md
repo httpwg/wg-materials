@@ -62,11 +62,11 @@ Discussion of any [remaining issues](https://github.com/http2/http2-spec/issues)
 Discuss this new draft and consider whether we should adopt it.
 
 
-### [Origin Cookies](http://tools.ietf.org/html/draft-west-origin-cookies)
+### [Origin Cookies](http://tools.ietf.org/html/draft-west-origin-cookies) / [First-Party Cookies](http://tools.ietf.org/html/draft-west-first-party-cookies)
 
 *10 minutes*
 
-Discuss this new draft and consider whether we should adopt it.
+Discuss these new drafts and consider whether we should adopt one or both.
 
 
 ### Proxies

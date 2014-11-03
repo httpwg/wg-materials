@@ -74,7 +74,13 @@ Discuss these new drafts and consider whether we should adopt one or both.
 *40 minutes*
 
 Continued discussion of what useful work we can do around proxy configuration
-and behaviour. Exact topics TBD.
+and behaviour. Drafts in-scope include:
+
+#### [Using WPD to Configure Network Proxies](http://tools.ietf.org/html/draft-loreto-wpd-usage)
+
+#### [WPD Proxy Discovery](http://tools.ietf.org/html/draft-chow-httpbis-proxy-discovery)
+
+#### [Fine-Grained Intermediary End-to-End Protocols](http://tools.ietf.org/html/draft-reschke-objsec)
 
 ### wrap-up
 

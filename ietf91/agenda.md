@@ -80,6 +80,8 @@ and behaviour. Drafts in-scope include:
 
 #### [WPD Proxy Discovery](http://tools.ietf.org/html/draft-chow-httpbis-proxy-discovery)
 
+[Presentation by Will Chow ](https://httpwg.github.io/wg_materials/ietf91/OWA_ProxyDiscovery.pdf)
+
 #### [Fine-Grained Intermediary End-to-End Protocols](http://tools.ietf.org/html/draft-reschke-objsec)
 
 ### wrap-up

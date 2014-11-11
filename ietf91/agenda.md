@@ -73,7 +73,7 @@ Discuss these new drafts and consider whether we should adopt one or both.
 
 ### Proxies
 
-*40 minutes*
+*60 minutes*
 
 Continued discussion of what useful work we can do around proxy configuration
 and behaviour. Drafts in-scope include:

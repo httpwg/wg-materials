@@ -42,6 +42,8 @@ Discuss the [issues list](https://github.com/httpwg/http-extensions/issues?q=is%
 
 *60 minutes*
 
+Presentation of [local activity in Japan](https://httpwg.github.io/wg-materials/ietf91/LocalActivitiesInJapan.pdf) (5 minutes)
+
 Discussion of any [remaining issues](https://github.com/http2/http2-spec/issues) before submission to the IESG.
 
 *NOTE: If time remains, Wednesday agenda items may be brought forward.*

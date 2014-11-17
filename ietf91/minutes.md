@@ -739,7 +739,7 @@ used for this purpose.
 Dan: Ignoring this is bad. People will do some things and they will complain.
 With standards we can get something working.
 
-?? (Verizon): very interested in traffic optimization because of volume caps
+Sanjay Mishra: very interested in traffic optimization because of volume caps
 for mobile phones. Standardizing this would be good.
 
 KM: channeling Stephen: we should trust all the service providers 

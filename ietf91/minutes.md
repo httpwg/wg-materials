@@ -1,36 +1,36 @@
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
-- [HTTPbis Minutes: IETF91](#httpbis-minutes-ietf91)
-  - [Tuesday](#tuesday)
-    - [rfc7238bis](#rfc7238bis)
-    - [Alt-Svc](#alt-svc)
-      - [Issue 36; Tracking using Alt-Svc Host Name](#issue-36-tracking-using-alt-svc-host-name)
-      - [Associating alt-svc with an origin.](#associating-alt-svc-with-an-origin)
-      - [Unexpected Alt-Svc Frames](#unexpected-alt-svc-frames)
-      - [Cache invalidation](#cache-invalidation)
-      - [Positive Indicator of ...](#positive-indicator-of-)
-    - [Opp-Sec](#opp-sec)
-      - [Issue 30: strongly authenticated (as origin).](#issue-30-strongly-authenticated-as-origin)
-      - [Issue 26: Per-Suite Requirements](#issue-26-per-suite-requirements)
-      - [Align alt-svc and opp-sec.](#align-alt-svc-and-opp-sec)
-    - [HTTP/2](#http2)
-      - [Issue 642: allow PRIORITY on stream in any state.](#issue-642-allow-priority-on-stream-in-any-state)
-      - [Issue 612: 9.2.2. required ALPN capabilities beyond RFC7301](#issue-612-922-required-alpn-capabilities-beyond-rfc7301)
-  - [Wednesday](#wednesday)
-    - [HTTP/2 Local Activities in Japan](#http2-local-activities-in-japan)
-    - [draft-thomson-httpbis-cant](#draft-thomson-httpbis-cant)
-    - [Origin Cookies](#origin-cookies)
-    - [Proxies](#proxies)
-      - [Using wpd to configure network proxies: draft-loreto-wpd-usage](#using-wpd-to-configure-network-proxies-draft-loreto-wpd-usage)
-      - [Presentation by Will Chow: WPD proxy discovery](#presentation-by-will-chow-wpd-proxy-discovery)
-
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 
 # HTTPbis Minutes: IETF91
 
 Thanks to Bence Béky (Tuesday) and Yoav Nir (Wednesday) for scribing.
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Tuesday](#tuesday)
+  - [rfc7238bis](#rfc7238bis)
+  - [Alt-Svc](#alt-svc)
+    - [Issue 36; Tracking using Alt-Svc Host Name](#issue-36-tracking-using-alt-svc-host-name)
+    - [Associating alt-svc with an origin.](#associating-alt-svc-with-an-origin)
+    - [Unexpected Alt-Svc Frames](#unexpected-alt-svc-frames)
+    - [Cache invalidation](#cache-invalidation)
+    - [Positive Indicator of ...](#positive-indicator-of-)
+  - [Opp-Sec](#opp-sec)
+    - [Issue 30: strongly authenticated (as origin).](#issue-30-strongly-authenticated-as-origin)
+    - [Issue 26: Per-Suite Requirements](#issue-26-per-suite-requirements)
+    - [Align alt-svc and opp-sec.](#align-alt-svc-and-opp-sec)
+  - [HTTP/2](#http2)
+    - [Issue 642: allow PRIORITY on stream in any state.](#issue-642-allow-priority-on-stream-in-any-state)
+    - [Issue 612: 9.2.2. required ALPN capabilities beyond RFC7301](#issue-612-922-required-alpn-capabilities-beyond-rfc7301)
+- [Wednesday](#wednesday)
+  - [HTTP/2 Local Activities in Japan](#http2-local-activities-in-japan)
+  - [draft-thomson-httpbis-cant](#draft-thomson-httpbis-cant)
+  - [Origin Cookies](#origin-cookies)
+  - [Proxies](#proxies)
+    - [Using wpd to configure network proxies: draft-loreto-wpd-usage](#using-wpd-to-configure-network-proxies-draft-loreto-wpd-usage)
+    - [Presentation by Will Chow: WPD proxy discovery](#presentation-by-will-chow-wpd-proxy-discovery)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Tuesday
 

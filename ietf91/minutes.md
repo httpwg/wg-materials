@@ -475,7 +475,7 @@ in this WG if we want, it has been done before.
 unnamed speaker: .....
 
 Mark: Sam, to clarify, you suggest that if the cipher is on the blacklist, then
-peer MAY omit INADEQUATE_SECURITY, otherwise it MUST NOT.
+peer MAY emit INADEQUATE_SECURITY, otherwise it MUST NOT.
 
 Sam: Right.
 

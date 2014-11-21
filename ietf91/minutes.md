@@ -420,19 +420,7 @@ Sam: blacklist would never grow, it would be current IANA registry minus
 whitelist. We have a set of properties that we would like to implement for
 ciphers today, except that we decide it's too complicated. To avoid the cipher
 sync problem, we want to help people to understand which cipher are good and
-which are bad.
-
-Erik: Propose that a cipher not on that list and ALPN token h2, that you have
-to support that for h2.
-
-Kathleen: blacklist scares me, how big can it get? Typically we start with
-black and later get to a whitelist.
-
-Sam: blacklist would never grow, it would be current IANA registry minus
-whitelist.  We have a set of properties that we would like to implement for
-ciphers today, except that we decide it's too complicated.  To avoid the
-ciphersync problem, we want to help people to understand which cipher are good
-and which are bad.  We need to enumerate... We would have the fixed blacklist.
+which are bad. We need to enumerate... We would have the fixed blacklist.
 
 Mark: to make sure, a peer would use the blacklist as a basis to generate
 INADEQUATE_SEC if they want to.

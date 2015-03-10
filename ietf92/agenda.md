@@ -3,6 +3,8 @@
 * [Meeting chat](xmpp:httpbis@jabber.ietf.org?join)
 * [Minutes](http://etherpad.tools.ietf.org:9000/p/ietf92-httpbis)
 
+*Taking minutes? See [our guide](https://github.com/httpwg/wiki/wiki/TakingMinutes)*
+
 
 ## TUESDAY, 24 March 2015 - 1300-1500 EDT
 

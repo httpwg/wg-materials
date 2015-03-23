@@ -41,11 +41,14 @@ Discuss the [issues list](https://github.com/httpwg/http-extensions/issues?q=is%
 Discuss the [issues list](https://github.com/httpwg/http-extensions/issues?q=is%3Aopen+is%3Aissue+label%3Atunnel-proto) and draft status.
 
 
-### [Potential Work](https://github.com/httpwg/wiki/wiki/WatchList)
+### Potential Work
 
 *balance of time*
 
-Discuss possible future work items.
+Discuss possible future work items, including:
+  * [Watchlist](https://github.com/httpwg/wiki/wiki/WatchList)
+  * H2 Deployment Advice
+  * Helping Dash (Herve Ruellan)
 
 ### wrap-up
 

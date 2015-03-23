@@ -17,7 +17,8 @@
 
 *5 minutes*
 
-Discuss current status of HTTP/2, RFC7238bis.
+Discuss current status of HTTP/2, RFC7238bis, draft-ietf-httpbis-auth-info.
+
 
 ### [Alternative Services](https://tools.ietf.org/html/draft-ietf-httpbis-alt-svc)
 

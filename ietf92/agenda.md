@@ -48,7 +48,7 @@ Discuss the [issues list](https://github.com/httpwg/http-extensions/issues?q=is%
 Discuss possible future work items, including:
   * [Watchlist](https://github.com/httpwg/wiki/wiki/WatchList)
   * H2 Deployment Advice
-  * Helping Dash (Herve Ruellan)
+  * Dash and HTTP/2 (Herve Ruellan)
 
 ### wrap-up
 

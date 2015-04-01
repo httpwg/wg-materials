@@ -1,5 +1,32 @@
-
 # httpbis WG minutes IETF-92 Dallas  -- Tue afternoon 1300h
+
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [post-wg specs](#post-wg-specs)
+- [Current extension spec issues](#current-extension-spec-issues)
+  - [alt-svc issue 44 - think we have agreement on it](#alt-svc-issue-44---think-we-have-agreement-on-it)
+  - [alt-svc issue 43 - ALPN Identifiers](#alt-svc-issue-43---alpn-identifiers)
+  - [OppSec issue 33](#oppsec-issue-33)
+  - [tunnel protocol for CONNECT](#tunnel-protocol-for-connect)
+- [Potential Work](#potential-work)
+  - [http signature](#http-signature)
+  - [HTTP client hints](#http-client-hints)
+  - [key http response header field](#key-http-response-header-field)
+  - [json encoding the http header fields](#json-encoding-the-http-header-fields)
+  - [www-authenticate I-D that uses the JSON HF definition technique](#www-authenticate-i-d-that-uses-the-json-hf-definition-technique)
+  - [451 status code to report legal obstacles](#451-status-code-to-report-legal-obstacles)
+  - [indicating char encoding and lang for http header field parameters](#indicating-char-encoding-and-lang-for-http-header-field-parameters)
+  - [client init'd content encoding](#client-initd-content-encoding)
+  - [2NN Patch Status Code](#2nn-patch-status-code)
+  - [origin cookies and 1st party cookies](#origin-cookies-and-1st-party-cookies)
+  - [encrypted content-encoding for http](#encrypted-content-encoding-for-http)
+- [Issues against the httpbis docset](#issues-against-the-httpbis-docset)
+- [H2 (aka HTTP2) deployment advice](#h2-aka-http2-deployment-advice)
+- [mpeg dash](#mpeg-dash)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## post-wg specs
 
@@ -271,7 +298,7 @@ mnot: eventually take it to full std. once http/2 is done, align with http2, the
 jr: no further thoughts
  
  
-# H2 (aka HTTP2)  deployment advice
+## H2 (aka HTTP2) deployment advice
 
 We have a faq on wiki, but info is thin.
 

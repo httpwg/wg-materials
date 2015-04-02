@@ -100,7 +100,7 @@ pm: not every client is a browser; its not like you require a ietf wg to mint a 
 
 chris bentzel goog: interested in this; if you have tcp proxy this might be useful
   
-peter ? FB: interested in this too, eg for mobile website
+peter griess FB (pg): interested in this too, eg for mobile website
  
 ?: might be useful for DASH
 
@@ -150,7 +150,7 @@ mnot: <pushes back>
 
 mt: would need something more concrete than "just use json". Suggests like two practices for how to use
   
-peter ? FB: having such doc would be helpful
+pg: having doc on header definition best practices would be helpful
   
 mnot: putting aside the specific proposal -- have a HUM on a doc defining a convention for defining header definition conventions
   

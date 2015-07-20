@@ -48,7 +48,7 @@ Discuss the [issues list](https://github.com/httpwg/http-extensions/issues?q=is%
 
 Discuss possible future work items, including:
 
- * [SEARCH Method](https://tools.ietf.org/html/draft-snell-search-method) - Julian Reschke
+ * [SEARCH Method](https://tools.ietf.org/html/draft-snell-search-method) - [Presentation](https://httpwg.github.io/wg-materials/ietf93/ietf-93-httpbis-search.pdf) by Julian Reschke
  * New content-codings - Martin Thomson
  * Remaining items on the [watchlist](https://github.com/httpwg/wiki/wiki/WatchList)
  

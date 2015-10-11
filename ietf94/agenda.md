@@ -46,9 +46,7 @@ Discuss the [issues list](https://github.com/httpwg/http-extensions/issues?q=is%
 
 *balance of time*
 
-Discuss possible future work items, including:
-
- * Remaining items on the [watchlist](https://github.com/httpwg/wiki/wiki/WatchList)
+Discuss possible [future work items](https://github.com/httpwg/wiki/wiki/WatchList)
  
 
 ### wrap-up

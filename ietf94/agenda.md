@@ -6,7 +6,7 @@
 *Taking minutes? See [our guide](https://github.com/httpwg/wiki/wiki/TakingMinutes)*
 
 
-## ???, nn November 2015 xx:xx-yy:yy
+## Monday, 2 November 2015 13:00-15:00
 
 ### Administrivia
 

@@ -35,13 +35,6 @@ Discuss the [issues list](https://github.com/httpwg/http-extensions/issues?q=is%
 Discuss the [issues list](https://github.com/httpwg/http-extensions/issues?q=is%3Aopen+is%3Aissue+label%3Aopp-sec) and draft status.
 
 
-### [451](https://tools.ietf.org/html/draft-ietf-httpbis-legally-restricted-status)
-
-*20 minutes*
-
-Discuss the [issues list](https://github.com/httpwg/http-extensions/issues?q=is%3Aopen+is%3Aissue+label%3A451) and draft status.
-
-
 ### Client Certificates and HTTP/2
 
 *30 minutes*

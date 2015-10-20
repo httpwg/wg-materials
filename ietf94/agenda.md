@@ -21,18 +21,22 @@
 Discuss current status of approved and recently published specifications.
 
 
-### [Alternative Services](https://tools.ietf.org/html/draft-ietf-httpbis-alt-svc)
+### Active Drafts
 
-*20 minutes*
+*50 minutes*
+
+#### [Alternative Services](https://tools.ietf.org/html/draft-ietf-httpbis-alt-svc)
 
 Discuss the [issues list](https://github.com/httpwg/http-extensions/issues?q=is%3Aopen+is%3Aissue+label%3Aalt-svc) and draft status.
 
 
-### [Opportunistic Security](https://tools.ietf.org/html/draft-ietf-httpbis-http2-encryption)
-
-*10 minutes*
+#### [Opportunistic Security](https://tools.ietf.org/html/draft-ietf-httpbis-http2-encryption)
 
 Discuss the [issues list](https://github.com/httpwg/http-extensions/issues?q=is%3Aopen+is%3Aissue+label%3Aopp-sec) and draft status.
+
+#### [Key](https://tools.ietf.org/html/draft-ietf-httpbis-key)
+
+Discuss the [issues list](https://github.com/httpwg/http-extensions/issues?q=is%3Aopen+is%3Aissue+label%3Akey) and draft status.
 
 
 ### Client Certificates and HTTP/2

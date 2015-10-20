@@ -54,8 +54,14 @@ Discuss [proposals for Client Certificate support in HTTP/2](https://github.com/
 
 *balance of time*
 
-Discuss possible [future work items](https://github.com/httpwg/wiki/wiki/WatchList)
- 
+Discuss possible [future work items](https://github.com/httpwg/wiki/wiki/WatchList), including:
+
+* [Encrypted Content Encoding for HTTP](http://tools.ietf.org/html/draft-thomson-http-encryption)
+* [ORIGIN Frame](https://tools.ietf.org/html/draft-nottingham-httpbis-origin-frame)
+* [First-Party Cookies](http://tools.ietf.org/html/draft-west-first-party-cookies)
+* [Cookie Prefixes](http://tools.ietf.org/html/draft-west-cookie-prefixes)
+* [Leave Secure Cookies Alone](https://tools.ietf.org/html/draft-west-leave-secure-cookies-alone)
+
 
 ### wrap-up
 

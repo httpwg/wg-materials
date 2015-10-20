@@ -18,7 +18,11 @@
 
 *5 minutes*
 
-Discuss current status of approved and recently published specifications.
+Discuss current status of approved and recently published specifications:
+
+- [The ALPN Header Field](http://datatracker.ietf.org/doc/rfc7639/) *RFC Published*
+- [Client Initiated Content Encoding](https://datatracker.ietf.org/doc/draft-ietf-httpbis-cice/) *In RFC Editor Queue*
+- [An HTTP Status Code to Report Legal Obstacles](https://datatracker.ietf.org/doc/draft-ietf-httpbis-legally-restricted-status/) *Exiting WGLC*
 
 
 ### Active Drafts

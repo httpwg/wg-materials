@@ -49,6 +49,7 @@ Discuss the [issues list](https://github.com/httpwg/http-extensions/issues?q=is%
 
 Discuss [proposals for Client Certificate support in HTTP/2](https://github.com/httpwg/wiki/wiki/H2ClientCerts).
 
+Presentation: [client authentication](https://docs.google.com/presentation/d/1-2bBYDvWqrTM-RUz2bKzkTFyIO4kJzMT6jRhFcuiR84/edit#slide=id.p) - Martin Thomson
 
 ### Potential Work
 

@@ -57,6 +57,7 @@ Presentation: [client authentication](https://docs.google.com/presentation/d/1-2
 
 Discuss possible [future work items](https://github.com/httpwg/wiki/wiki/WatchList), including:
 
+* [A JSON Encoding for HTTP Header Field Values](http://tools.ietf.org/html/draft-reschke-http-jfv)
 * [Encrypted Content Encoding for HTTP](http://tools.ietf.org/html/draft-thomson-http-encryption)
 * [ORIGIN Frame](https://tools.ietf.org/html/draft-nottingham-httpbis-origin-frame)
 * [First-Party Cookies](http://tools.ietf.org/html/draft-west-first-party-cookies)

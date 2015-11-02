@@ -65,6 +65,9 @@ Discuss possible [future work items](https://github.com/httpwg/wiki/wiki/WatchLi
 * [Leave Secure Cookies Alone](https://tools.ietf.org/html/draft-west-leave-secure-cookies-alone)
 * [Accept Push Policy](https://tools.ietf.org/html/draft-ruellan-http-accept-push-policy-00)
 
+Presentations:
+
+* [Cookies!](https://docs.google.com/presentation/d/1fw97QlPENqAB1bMUySIIm4dBbnno75tHVpbs302txPM/edit?ts=5636b0a6#slide=id.gd1d4c5107_0_70)
 
 ### wrap-up
 

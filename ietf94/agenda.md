@@ -68,6 +68,7 @@ Discuss possible [future work items](https://github.com/httpwg/wiki/wiki/WatchLi
 Presentations:
 
 * [Cookies!](https://docs.google.com/presentation/d/1fw97QlPENqAB1bMUySIIm4dBbnno75tHVpbs302txPM/edit?ts=5636b0a6#slide=id.gd1d4c5107_0_70)
+* Accept-Push-Policy
 
 ### wrap-up
 

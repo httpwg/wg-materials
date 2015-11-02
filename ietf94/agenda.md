@@ -63,6 +63,7 @@ Discuss possible [future work items](https://github.com/httpwg/wiki/wiki/WatchLi
 * [First-Party Cookies](http://tools.ietf.org/html/draft-west-first-party-cookies)
 * [Cookie Prefixes](http://tools.ietf.org/html/draft-west-cookie-prefixes)
 * [Leave Secure Cookies Alone](https://tools.ietf.org/html/draft-west-leave-secure-cookies-alone)
+* [Accept Push Policy](https://tools.ietf.org/html/draft-ruellan-http-accept-push-policy-00)
 
 
 ### wrap-up

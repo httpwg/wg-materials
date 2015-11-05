@@ -1,3 +1,7 @@
+# HTTP Working Group Minutes - IETF 94
+
+## Monday, 2 November 2015 13:00-15:00
+
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
@@ -14,11 +18,8 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-# HTTP Working Group Minutes - IETF 94
 
-## Monday, 2 November 2015 13:00-15:00
-
-### agenda bashing
+### Agenda Bashing
 
 No comments
 

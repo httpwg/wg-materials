@@ -293,7 +293,7 @@ mnot: in proposed spec, origin sends frame to client -- these are origins I am w
 
 ekr: ultimately thinks it's fine
 
-mnot: may send call for adoption on this, will see if ekr is willing to edit
+mnot: may send call for adoption on this, will see if Erik N is willing to edit
 
 ekr: is this a doc that doesn't req https?  it wud be attracitve to go to goog and they send you frame with all this info -- is fine over https -- but if plain http isn't ok
 

@@ -1,3 +1,19 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [agenda bashing](#agenda-bashing)
+- [Specification Status](#specification-status)
+- [Active Drafts](#active-drafts)
+  - [[Alternative Services](https://tools.ietf.org/html/draft-ietf-httpbis-alt-svc)](#alternative-serviceshttpstoolsietforghtmldraft-ietf-httpbis-alt-svc)
+  - [[Opportunistic Security](https://tools.ietf.org/html/draft-ietf-httpbis-http2-encryption)](#opportunistic-securityhttpstoolsietforghtmldraft-ietf-httpbis-http2-encryption)
+  - [[Key](https://tools.ietf.org/html/draft-ietf-httpbis-key)](#keyhttpstoolsietforghtmldraft-ietf-httpbis-key)
+- [Client Certificates and HTTP/2](#client-certificates-and-http2)
+- [Potential Work](#potential-work)
+  - [COOKIES](#cookies)
+- [AOB](#aob)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # HTTP Working Group Minutes - IETF 94
 
 ## Monday, 2 November 2015 13:00-15:00
@@ -282,7 +298,7 @@ ekr: is this a doc that doesn't req https?  it wud be attracitve to go to goog a
 
 mnot: intent is to not do over http
 
-# COOKIES
+#### COOKIES
 
 martin: preso on this:  
 

@@ -30,7 +30,7 @@ No comments
 - [Client Initiated Content Encoding](https://datatracker.ietf.org/doc/draft-ietf-httpbis-cice/) *In RFC Editor Queue*
 - [An HTTP Status Code to Report Legal Obstacles](https://datatracker.ietf.org/doc/draft-ietf-httpbis-legally-restricted-status/) *Exiting WGLC*
 
-mnot: doesn't think we'll need much in way of mods based on review, will kick off with IESG in near term
+mnot: doesn't think we'll need much in way of modifications based on review, will kick off with IESG in near term.
    
 
 ### Active Drafts
@@ -42,31 +42,31 @@ Discuss the [issues list](https://github.com/httpwg/http-extensions/issues?q=is%
 
 mike bishop:  see comments in the issue #76 & PR #98
 
-martin T,: spec typical cert checks for normal case, and if the alt svc has addtn'l reqs, need to spec them also. dont think we have real issues with alt svcs, but we have a soft fail, which ends up just degrading the ecosystem.  need to get the addtnl checks on certs right -- what is in spec now is too vague
+martin T: spec typical cert checks for normal case, and if the alt svc has additional reqs, need to spec them also. dont think we have real issues with alt svcs, but we have a soft fail, which ends up just degrading the ecosystem.  need to get the additional checks on certs right -- what is in spec now is too vague.
 
-mikeb: when we tried to be more specific at last ietf mtg, folks didnt' like the specifics <chuckle>
+mikeb: when we tried to be more specific at last ietf mtg, folks didn't like the specifics <chuckle>
   
-mnot: eg have the typical defaults, spec addtnl stuff in context of the alt svc spec
+mnot: eg have the typical defaults, spec additional stuff in context of the alt svc spec
 
 ekr:  <missed>
   
-mike b: tried to say "impls have their own reqs anyway" 
+mike b: tried to say "implementations have their own reqs anyway" 
 
-mnot: perhaps say "other" rather than "impl specific"
+mnot: perhaps say "other" rather than "implementation specific"
 
 martin t: essence that we reserve right to impose further restrictions is fine
 
-[issue #89](https://github.com/httpwg/http-extensions/issues/89) - using alt svc on local host
+[issue #89](https://github.com/httpwg/http-extensions/issues/89) - using alt svc on localhost
 
-mnot: patrick have anything to add?  had difficulty to generate the text, if there's no issue we can close it, if not we need addnl txt
+mnot: patrick have anything to add?  had difficulty to generate the text, if there's no issue we can close it, if not we need additional txt
 
-martin t: thinks Patrick's last comment is fine,
+martin t: thinks Patrick's last comment is fine
 
 mnot: closed 
 
 [issue #92](https://github.com/httpwg/http-extensions/issues/92) alt-svc vs the ability to convey the scheme inside the protocol 
 
-martin t: the point is to avoid app being confused, eg by looking at the "stack" and if see TLS underneath, they often assume https.  need app containers to shield the app from seeing that there's TLS there when doing opp security and the connection isn't authn'd -- having text along those lines a good thing -- highlight things one needs to look for.  eg in sec considerations
+martin t: the point is to avoid app being confused, eg by looking at the "stack" and if see TLS underneath, they often assume https.  need app containers to shield the app from seeing that there's TLS there when doing opp security and the connection isn't authenticated -- having text along those lines a good thing -- highlight things one needs to look for.  eg in sec considerations
 
 patrick m: this is similar to virt hosting environments, emphasize that origin is not changing.  
 
@@ -82,17 +82,17 @@ mnot: ok, take it to the list then
 
 mnot: what review level is needed for this?  "ietf review", "spec req'd", "expert review" ?
 
-yoav n:  thinks expert review is approp.
+yoav n:  thinks expert review is appropriate.
 
 mnot: finding expert can be painful
 
 martin t: spec req'd involves expert
 
-barryL: appoint someone who participates in WG and have them query WG wrt answer, thus is sort of a shepherded WG review
+barryL: appoint someone who participates in WG and have them query WG WRT answer, thus is sort of a shepherded WG review
 
 yoav: anoint Julian as expert :)
 
-mnot: thinks can get this to WGLC in a few weeks -- lets get discussions happening on list. There are impls of this, is there any discussions of test suites?
+mnot: thinks can get this to WGLC in a few weeks -- lets get discussions happening on list. There are implementations of this, is there any discussions of test suites?
 
 pr #101: 
 
@@ -102,7 +102,7 @@ mnot: 1st is a normative change...
 
 mike:  so that one was a MAY and elsewhere a SHOULD
 
-martint: this one is ok -- should encourage clients to use this so SHOULD is approp
+martin t: this one is ok -- should encourage clients to use this so SHOULD is appropriate
 
 pr #98 was discussed way up above
 
@@ -115,11 +115,12 @@ pr #98 was discussed way up above
 
 #### [Opportunistic Security](https://tools.ietf.org/html/draft-ietf-httpbis-http2-encryption)
 
-mnot: waiting for alt-svc to be done -- so in holding pattern -- hasnt been chance to deploy this on server side until recently.
+mnot: waiting for alt-svc to be done -- so in holding pattern -- hasn't been a chance to deploy this on server side until recently.
 
 martin: there was disc on this during TPAC last week, there's been work on it since then, in a few weeks may see email about how this works. 
 
 mnot: can see this going in any direction:  publish as-is, don't pub, modify it
+
 martin: yes
 
 
@@ -128,8 +129,8 @@ martin: yes
 
 mnot: way to calculate a cached key -- VARY header is tough to use
  martin will be shepherd on spec, mnot is co-author
- had a decent amount of implr interest from "cache" folk
- have a fair # of issues- some minor, some speculative
+ had a decent amount of implementer interest from "cache" folk
+ have a fair number of issues- some minor, some speculative
 
 issue #?
 
@@ -139,11 +140,11 @@ martin: rather than the proposed syntax perhaps we can simplify it in some manne
 
 mnot: take to list
 
-issue #?  case insensitve matches
+issue #?  case insensitive matches
 
-mnot: summarizing: we'll interate on this draft one or two times and then we'll have something ready for experimentation -- really want impl experience before shipping it
+mnot: summarizing: we'll iterate on this draft one or two times and then we'll have something ready for experimentation -- really want implementation experience before shipping it
 
-[ leif intending to impl ]
+[ leif intending to implement ]
 
 
 
@@ -157,7 +158,7 @@ slide: history
 
 mic yoav: does this really matter?  one can do <foo>
   
-martin: trying to avoid situations where that is possible -- can lock the entire browser due to concurrency issuse (eg firefox) -- u receive req for cert, whch client to I ask to provide the cert?
+martin: trying to avoid situations where that is possible -- can lock the entire browser due to concurrency issue (eg firefox) -- u receive req for cert, which client to I ask to provide the cert?
 
 slide: ignoring prob doesn't make it go away
 
@@ -169,7 +170,7 @@ yoav: there will be disc about this in TLS session
 
 ekr: TLS 1.3 will support a diff sec mech, in gen it is hard to reason about semantics of reneg, thus decisions taken in TLS WG
 
-slide: soln overview
+slide: solution overview
 
 there is a WAITING_FOR_AUTH frame added to h2, and an identifier that maps this to the TLS context
 
@@ -195,29 +196,29 @@ martin: my opinion: don't use this feature
    
 mnot: don't use "now" or "ever" ??
 
-martin: you use this for bkwds compat, but this is not the future
+martin: you use this for backwards compatibility, but this is not the future
 
-mike b: why dont we just define a ALPN (?) for this (for the futuure) and this prop is just back compat
+mike b: why dont we just define a ALPN (?) for this (for the future) and this prop is just back compat
 
 martin: agree
 
 yoav: am not sure why this is more deployable than other way
 
-martin: this doesnt touch the app at all -- in the other approach, the server needs to send a 401, and that's a change to the app api yhou're presenting
+martin: this doesn't touch the app at all -- in the other approach, the server needs to send a 401, and that's a change to the app api you're presenting
 
 yoav: disagree
 
-martin: the 401 goes to client, and then ought to send an alert at tls layer but can't in tls1.3. the point of this is to fix bkwd compat req w/o changing apps
+martin: the 401 goes to client, and then ought to send an alert at tls layer but can't in tls1.3. the point of this is to fix backward compatibility requirements w/o changing apps
 
 yoav: this still looks to me the same api 
 
 ekr: this is a much easier drop-in than the alternatives
 
-?: observes that not having this solved is slowing h2 deployemnt -- but saying dont use this isn't helpful -- is there a doc we want to write that says "please use this but it is dangerous"
+?: observes that not having this solved is slowing h2 deployment -- but saying dont use this isn't helpful -- is there a doc we want to write that says "please use this but it is dangerous"
 
-martin: we do have a handle on the sorts of probs this might cause, so we will quantify thos probs and leave it as that
+martin: we do have a handle on the sorts of problems this might cause, so we will quantify those problems and leave it as that
 
-mke b: we're crossing layers, so understand why it makes folks nervous, as to why we don't have an api using 401 is that we're killing the old stream, that reqs client stack to do things that aren't easy or presently supported, and also the svr has to think it is on same xaction when it isn't, so this draft is easier to do
+mike b: we're crossing layers, so understand why it makes folks nervous, as to why we don't have an api using 401 is that we're killing the old stream, that reqs client stack to do things that aren't easy or presently supported, and also the server has to think it is on same transaction when it isn't, so this draft is easier to do
 
 martin: the disc on list seemed to arrive at that
 
@@ -225,11 +226,11 @@ slide: adopt me
 
 martin: do we want to work on this prob?  there is a draft, sub'd just before the deadline -- mike & I. as mike said, this'd be easier to adopt
   
-mike b: had earlier draft, didn't adopt it, msft pub'd as proprietary, made TLS folk sad, this draft is an improvement, so am fine with deprecating the prior approach
+mike b: had earlier draft, didn't adopt it, Microsoft pub'd as proprietary, made TLS folk sad, this draft is an improvement, so am fine with deprecating the prior approach
 
 martin: goog may take diff view on this, 
 
-mikeb: they removed reneg while app data is flowing -- ... -- do still have open question on tls implr's 
+mikeb: they removed reneg while app data is flowing -- ... -- do still have open question on tls implementers 
 
 martin: we may need to tweak the tls v1.2 aspect of this from this
 
@@ -247,7 +248,7 @@ mnot: that makes me relatively comfortable wrt making call for adopt in next wee
 
 * [A JSON Encoding for HTTP Header Field Values](http://tools.ietf.org/html/draft-reschke-http-jfv)
 
-mnot: this is for NEW HEADERS. If your data is interms of JS objects, can map to this since uses json. In h2 had disc wrt header-aware compression - thus some interest in this. Every time some one comes up with new http header field Julian needs to review, and he is thus the bottleneck. Would much reather have documentation and techniques for this such that less review is needed
+mnot: this is for NEW HEADERS. If your data is interms of JS objects, can map to this since uses json. In h2 had disc wrt header-aware compression - thus some interest in this. Every time some one comes up with new http header field Julian needs to review, and he is thus the bottleneck. Would much rather have documentation and techniques for this such that less review is needed
 thus this spec -- an attempt to do that. The audience for this is other spec writers. Feedback is that looks interesting but isn't a std -- chick & egg prob
 maybe we httpbis should adopt and make some progress.
 
@@ -266,28 +267,28 @@ julian: yep
 
 mnot: this is martin's spec -- web push depends on this?
 
-martin: yes, this is basis of msg encryp in webpush. need to work out where this lives
+martin: yes, this is basis of msg encryption in webpush. need to work out where this lives
   
-mnot: were waiting for usecases & implrs to emerge -- has occured -- so issue call for adopt -- is sec-oriented, want to be careful
+mnot: were waiting for use cases & implrs to emerge -- has occurred -- so issue call for adopt -- is sec-oriented, want to be careful
 
 
 
 * [ORIGIN Frame](https://tools.ietf.org/html/draft-nottingham-httpbis-origin-frame)
 
-mnot: h2 allows you to coalesce origins on a given connection -- of interest to CDNs -- clients interested & willing to impl?
+mnot: h2 allows you to coalesce origins on a given connection -- of interest to CDNs -- clients interested & willing to implement?
 
-patrickm: yes, we are interested in this
+patrick m: yes, we are interested in this
 
-martin: the std way we decide something can be coalesced, we get same ip addr & port, this introduces potential for one to learn what other names are available on an origin w/o going thru dns disco -- is that the intent?
+martin: the std way we decide something can be coalesced, we get same ip address & port, this introduces potential for one to learn what other names are available on an origin w/o going thru dns disco -- is that the intent?
 
-mnot: in h2, both dns and the cert have to match, we're not changing that, there are cases where both dns and cert match and it is a mistake -- a ques is whether we want to add semantics to this 
+mnot: in h2, both dns and the cert have to match, we're not changing that, there are cases where both dns and cert match and it is a mistake -- a question is whether we want to add semantics to this 
 
 mikeb: if a client wanted to do the opt, can query the dns, to a certain extent the client decides that and it doesn't need to be spec'd
 
-martin: we ahve to 'consider it' in any case -- don't think this is a bad idea
+martin: we have to 'consider it' in any case -- don't think this is a bad idea
 patrickm: let's adopt
 
-ekr: what about the privacy issue?   it provides a more agressive way to exfiltrate what extensions are suppoted -- hmmm... concerned about DNS naming -- ie dns name blocking -- 
+ekr: what about the privacy issue?   it provides a more agressive way to exfiltrate what extensions are supported -- hmmm... concerned about DNS naming -- ie dns name blocking -- 
 
 mnot: in proposed spec, origin sends frame to client -- these are origins I am willing to serve -- can be a long list
 
@@ -295,7 +296,7 @@ ekr: ultimately thinks it's fine
 
 mnot: may send call for adoption on this, will see if Erik N is willing to edit
 
-ekr: is this a doc that doesn't req https?  it wud be attracitve to go to goog and they send you frame with all this info -- is fine over https -- but if plain http isn't ok
+ekr: is this a doc that doesn't req https?  it would be attractive to go to goog and they send you frame with all this info -- is fine over https -- but if plain http isn't ok
 
 mnot: intent is to not do over http
 
@@ -306,31 +307,31 @@ martin: preso on this:
 * [Cookies!](https://docs.google.com/presentation/d/1fw97QlPENqAB1bMUySIIm4dBbnno75tHVpbs302txPM/edit?ts=5636b0a6#slide=id.gd1d4c5107_0_70)
 
 slide 2: cookies are stale.
-  enumerate probs with cookies
+  enumerate problems with cookies
   
 slide 3: lets get fresh.
  [ summarizes the four draft-west-* IDs -- three of which are listed below]
    
 slide 4: the choice is yours.
-  do we do a subset of thsse four IDs or all of 'em ?
+  do we do a subset of these four IDs or all of 'em ?
   
 
 mnot: prob a bad idea is to make blanket statement "we going to improve cookies"  given history
 
-proposing: hve initial phase of gtting some impl experience with these proposals, and only open up cookie spec and apply the ones that we've decided that "works" 
+proposing: have initial phase of getting some implementation experience with these proposals, and only open up cookie spec and apply the ones that we've decided that "works" 
   
-martin: do want to impl some of thise on short timescale -- eg cookie slinging is of concern now as opposed to origin cookie which is a "nice to have"
+martin: do want to implement some of thise on short timescale -- eg cookie slinging is of concern now as opposed to origin cookie which is a "nice to have"
 
 mnot: we have text already, maybe also regard cookie spec as a carefully managed "living standard" that gets constantly updated
 
-ekr: nice to disting btwn "nice to haves" and "necessary" ones.
- eg secure cookies thing is being impl'd -- fait accompli ?
-  others prob need some coordination -- what is the relnship of them to exisitng mechs.
-  eg first party only is jiust a declaration, and then how does that relate to origin cookie.
-    thus need to have client and svr work together to get value out of them, and if there impl diffs btwn clients and svrs then may not get value.
+ekr: nice to disting between "nice to haves" and "necessary" ones.
+ eg secure cookies thing is being implemented -- fait accompli ?
+  others prob need some coordination -- what is the relationship of them to existing mechs.
+  eg first party only is just a declaration, and then how does that relate to origin cookie.
+    thus need to have client and server work together to get value out of them, and if there are implementation differences between clients and servers then may not get value.
     
-mnot: thinks mike finds origin cookie as 'defense in depth' that svr can't depend upon.
-  jiust wanted to kick off discussion.
+mnot: thinks mike finds origin cookie as 'defence in depth' that server can't depend upon.
+  just wanted to kick off discussion.
   need to discuss approach steps too
   
 
@@ -373,9 +374,9 @@ mnot: this is from DASH as primary use-case, for common web use case wonders if 
   
 martin: this is similar to signaling about the client cache -- could be useful -- wonders whether we see clients actually implementing policies around this and what sorts of policies
 
-mnot: tend to agree, if we have mech for svr to learn client state it is interesting, but if we stdz something, need to do it right, and not be vague
+mnot: tend to agree, if we have mech for server to learn client state it is interesting, but if we standardise something, need to do it right, and not be vague
 
-martin: the other preso from this last weekend was good -- can experiment with cookies and svc workers -- this is interesting, can experiment with this using those techniques, eg is a simple system of tags sufficient or something more complex necessary for desired use cases?
+martin: the other preso from this last weekend was good -- can experiment with cookies and service workers -- this is interesting, can experiment with this using those techniques, eg is a simple system of tags sufficient or something more complex necessary for desired use cases?
 
 
 ### AOB

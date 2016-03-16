@@ -6,13 +6,12 @@
 *Taking minutes? See [our guide](https://github.com/httpwg/wiki/wiki/TakingMinutes)*
 
 
-## Thursday, 7 April 2016 16:20-18:20
+## Monday, 4 April 2016 15:50-17:20
 
 ### Administrivia
 
 * 2 min - Blue sheets / scribe selection / NOTE WELL
 * 3 min - Agenda bashing
-
 
 ### Specification Status
 
@@ -26,48 +25,76 @@ Discuss current status of approved and recently published specifications:
 
 
 
-### Active Draft Updates
+### Active Drafts
 
-*30 minutes*
-
-#### [Client Hints](https://tools.ietf.org/html/draft-ietf-httpbis-client-hints)
-
-Discuss the [issues list](https://github.com/httpwg/http-extensions/issues?q=is%3Aopen+is%3Aissue+label%3Aclient-hints) and draft status.
-
-#### [HTTP Encryption Content Encoding](https://tools.ietf.org/html/draft-ietf-httpbis-encryption-encoding)
-
-Discuss the [issues list](https://github.com/httpwg/http-extensions/issues?q=is%3Aopen+is%3Aissue+label%3Aencryption) and draft status.
-
-#### [Key](https://tools.ietf.org/html/draft-ietf-httpbis-key)
-
-Discuss the [issues list](https://github.com/httpwg/http-extensions/issues?q=is%3Aopen+is%3Aissue+label%3Akey) and draft status.
-
-#### [Character Encoding and Language for Parameters](https://tools.ietf.org/html/draft-ietf-httpbis-rfc5987bis)
-
-Discuss the [issues list](https://github.com/httpwg/http-extensions/issues?q=is%3Aopen+is%3Aissue+label%3rfc5987bis) and draft status.
+*60 minutes*
 
 #### [Opportunistic Security](https://tools.ietf.org/html/draft-ietf-httpbis-http2-encryption)
 
 Discuss the [issues list](https://github.com/httpwg/http-extensions/issues?q=is%3Aopen+is%3Aissue+label%3Aopp-sec) and draft status.
 
 
-#### RFC6265bis
+#### [Character Encoding and Language for Parameters](https://tools.ietf.org/html/draft-ietf-httpbis-rfc5987bis)
+
+Discuss the [issues list](https://github.com/httpwg/http-extensions/issues?q=is%3Aopen+is%3Aissue+label%3rfc5987bis) and draft status.
+
+
+#### [Client Hints](https://tools.ietf.org/html/draft-ietf-httpbis-client-hints)
+
+Discuss the [issues list](https://github.com/httpwg/http-extensions/issues?q=is%3Aopen+is%3Aissue+label%3Aclient-hints) and draft status.
+
+
+#### [HTTP Encryption Content Encoding](https://tools.ietf.org/html/draft-ietf-httpbis-encryption-encoding)
+
+Discuss the [issues list](https://github.com/httpwg/http-extensions/issues?q=is%3Aopen+is%3Aissue+label%3Aencryption) and draft status.
+
+
+#### [Key](https://tools.ietf.org/html/draft-ietf-httpbis-key)
+
+Discuss the [issues list](https://github.com/httpwg/http-extensions/issues?q=is%3Aopen+is%3Aissue+label%3Akey) and draft status.
+
+
+### Potential Work I
+
+*balance of time*
+
+Discuss possible [future work items](https://github.com/httpwg/wiki/wiki/WatchList), including:
+
+* [A JSON Encoding for HTTP Header Field Values](http://tools.ietf.org/html/draft-reschke-http-jfv)
+* [ORIGIN Frame](https://tools.ietf.org/html/draft-nottingham-httpbis-origin-frame)
+
+
+### wrap-up
+
+* 5 minutes
+
+
+
+
+## Thursday, 7 April 2016 16:20-18:20
+
+### Administrivia
+
+* 2 min - Blue sheets / scribe selection / NOTE WELL
+* 3 min - Agenda bashing
+
+
+### RFC6265bis
 
 *45 minutes*
 
 
-
-### Potential Work
+### Potential Work II
 
 *balance of time*
 
 Discuss possible [future work items](https://github.com/httpwg/wiki/wiki/WatchList), including:
 
 * [TCP Tuning for HTTP](https://tools.ietf.org/html/draft-stenberg-httpbis-tcp)
-* [A JSON Encoding for HTTP Header Field Values](http://tools.ietf.org/html/draft-reschke-http-jfv)
-* [ORIGIN Frame](https://tools.ietf.org/html/draft-nottingham-httpbis-origin-frame)
 * [Client Certificates](https://tools.ietf.org/html/draft-thomson-http2-client-certs)
+* [Secondary Server-Certificate Authentication in HTTP/2](https://tools.ietf.org/html/draft-bishop-httpbis-http2-additional-certs)
 * [Cache Digests](https://datatracker.ietf.org/doc/draft-kazuho-h2-cache-digest/)
+* [Decomposing the Hypertext Transfer Protocol](https://tools.ietf.org/html/draft-bishop-httpbis-decomposing-http)
 
 ### wrap-up
 

@@ -81,7 +81,7 @@ Discuss possible [future work items](https://github.com/httpwg/wiki/wiki/WatchLi
 
 #### Adopted Drafts
 
-1. [Leave Secure Cookies Alone](http://httpwg.org/http-extensions/draft-ietf-httpbis-cookie-alone.html) (adopted)
+1. [Leave Secure Cookies Alone](http://httpwg.org/http-extensions/draft-ietf-httpbis-cookie-alone.html)
 2. [Cookie Prefixes](https://httpwg.github.io/http-extensions/draft-ietf-httpbis-cookie-prefixes.html)
 
 

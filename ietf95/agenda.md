@@ -64,10 +64,6 @@ Discuss possible [future work items](https://github.com/httpwg/wiki/wiki/WatchLi
 * [ORIGIN Frame](https://tools.ietf.org/html/draft-nottingham-httpbis-origin-frame)
 
 
-### wrap-up
-
-* 5 minutes
-
 
 
 
@@ -83,6 +79,17 @@ Discuss possible [future work items](https://github.com/httpwg/wiki/wiki/WatchLi
 
 *45 minutes*
 
+#### Adopted Drafts
+
+1. [Leave Secure Cookies Alone](http://httpwg.org/http-extensions/draft-ietf-httpbis-cookie-alone.html) (adopted)
+2. [Cookie Prefixes](https://httpwg.github.io/http-extensions/draft-ietf-httpbis-cookie-prefixes.html)
+
+
+#### To Discuss
+
+1. [#159: Allow cookies without key or value](https://github.com/httpwg/http-extensions/issues/159) - _see also [Ivan Nikulin's research](http://inikulin.github.io/cookie-compat/)_
+2. [Cookie Priorities](https://tools.ietf.org/html/draft-west-cookie-priority-00)
+
 
 ### Potential Work II
 
@@ -96,6 +103,3 @@ Discuss possible [future work items](https://github.com/httpwg/wiki/wiki/WatchLi
 * [Cache Digests](https://datatracker.ietf.org/doc/draft-kazuho-h2-cache-digest/)
 * [Decomposing the Hypertext Transfer Protocol](https://tools.ietf.org/html/draft-bishop-httpbis-decomposing-http)
 
-### wrap-up
-
-* 5 minutes

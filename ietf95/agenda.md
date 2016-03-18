@@ -102,4 +102,5 @@ Discuss possible [future work items](https://github.com/httpwg/wiki/wiki/WatchLi
 * [Secondary Server-Certificate Authentication in HTTP/2](https://tools.ietf.org/html/draft-bishop-httpbis-http2-additional-certs)
 * [Cache Digests](https://datatracker.ietf.org/doc/draft-kazuho-h2-cache-digest/)
 * [Decomposing the Hypertext Transfer Protocol](https://tools.ietf.org/html/draft-bishop-httpbis-decomposing-http)
+* [Merkle Integrity Content Encoding](https://datatracker.ietf.org/doc/draft-thomson-http-mice/)
 

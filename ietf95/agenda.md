@@ -1,6 +1,7 @@
 # HTTP Working Group Agenda - IETF 95
 
 * [Meeting chat](xmpp:httpbis@jabber.ietf.org?join)
+* [Meetecho](http://www.meetecho.com/ietf95/httpbis) remote participation
 * [Minutes](http://etherpad.tools.ietf.org:9000/p/ietf95-httpbis)
 
 *Taking minutes? See [our guide](https://github.com/httpwg/wiki/wiki/TakingMinutes)*

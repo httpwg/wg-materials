@@ -103,4 +103,6 @@ Discuss possible [future work items](https://github.com/httpwg/wiki/wiki/WatchLi
 * [Cache Digests](https://datatracker.ietf.org/doc/draft-kazuho-h2-cache-digest/)
 * [Decomposing the Hypertext Transfer Protocol](https://tools.ietf.org/html/draft-bishop-httpbis-decomposing-http)
 * [Merkle Integrity Content Encoding](https://datatracker.ietf.org/doc/draft-thomson-http-mice/)
+* [Secure Content Delegation using HTTP](https://tools.ietf.org/html/draft-thomson-http-scd/)
+* [Caching Secure HTTP Content using Blind Caches](https://datatracker.ietf.org/doc/draft-thomson-http-bc/)
 

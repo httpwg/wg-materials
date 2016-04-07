@@ -102,11 +102,11 @@ Discuss possible [future work items](https://github.com/httpwg/wiki/wiki/WatchLi
 
 Discuss possible [future work items](https://github.com/httpwg/wiki/wiki/WatchList), including:
 
-* [TCP Tuning for HTTP](https://tools.ietf.org/html/draft-stenberg-httpbis-tcp) - [presentation](tcp.pdf) by Tim Wicinski
-* [Client Certificates](https://tools.ietf.org/html/draft-thomson-http2-client-certs) - [presentation](client_certs.pdf) by Martin Thomson
-* [Secondary Server-Certificate Authentication in HTTP/2](https://tools.ietf.org/html/draft-bishop-httpbis-http2-additional-certs) - [presentation](server_certs.pdf) by Mike Bishop
-* [Cache Digests](https://datatracker.ietf.org/doc/draft-kazuho-h2-cache-digest/) - [presentation](digest.pdf) by Kazuho Oku
-* [Decomposing the Hypertext Transfer Protocol](https://tools.ietf.org/html/draft-bishop-httpbis-decomposing-http) - [presentation](disentangle.pdf) by Mike Bishop
-* [Merkle Integrity Content Encoding](https://datatracker.ietf.org/doc/draft-thomson-http-mice/) - [presentation](MICE.pdf) by Martin Thomson
-* [Secure Content Delegation using HTTP](https://tools.ietf.org/html/draft-thomson-http-scd/) and [Caching Secure HTTP Content using Blind Caches](https://datatracker.ietf.org/doc/draft-thomson-http-bc/) - [presentation](BC.pdf) by Martin Thomson
+* [TCP Tuning for HTTP](https://tools.ietf.org/html/draft-stenberg-httpbis-tcp) - *[presentation](tcp.pdf) by Tim Wicinski*
+* [Client Certificates](https://tools.ietf.org/html/draft-thomson-http2-client-certs) - *[presentation](client_certs.pdf) by Martin Thomson*
+* [Secondary Server-Certificate Authentication in HTTP/2](https://tools.ietf.org/html/draft-bishop-httpbis-http2-additional-certs) - *[presentation](server_certs.pdf) by Mike Bishop*
+* [Cache Digests](https://datatracker.ietf.org/doc/draft-kazuho-h2-cache-digest/) - *[presentation](digest.pdf) by Kazuho Oku*
+* [Decomposing the Hypertext Transfer Protocol](https://tools.ietf.org/html/draft-bishop-httpbis-decomposing-http) - *[presentation](disentangle.pdf) by Mike Bishop*
+* [Merkle Integrity Content Encoding](https://datatracker.ietf.org/doc/draft-thomson-http-mice/) - *[presentation](MICE.pdf) by Martin Thomson*
+* [Secure Content Delegation using HTTP](https://tools.ietf.org/html/draft-thomson-http-scd/) and [Caching Secure HTTP Content using Blind Caches](https://datatracker.ietf.org/doc/draft-thomson-http-bc/) - *[presentation](BC.pdf) by Martin Thomson*
 

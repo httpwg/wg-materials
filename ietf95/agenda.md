@@ -80,6 +80,8 @@ Discuss possible [future work items](https://github.com/httpwg/wiki/wiki/WatchLi
 
 *45 minutes*
 
+[Overview presentation](cookies.pdf) by Mike West
+
 #### Adopted Drafts
 
 1. [Leave Secure Cookies Alone](http://httpwg.org/http-extensions/draft-ietf-httpbis-cookie-alone.html)

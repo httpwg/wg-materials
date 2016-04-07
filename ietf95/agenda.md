@@ -89,8 +89,9 @@ Discuss possible [future work items](https://github.com/httpwg/wiki/wiki/WatchLi
 #### To Discuss
 
 1. [#159: Allow cookies without key or value](https://github.com/httpwg/http-extensions/issues/159) - _see also [Ivan Nikulin's research](http://inikulin.github.io/cookie-compat/)_
-2. [Cookie Priorities](https://tools.ietf.org/html/draft-west-cookie-priority-00)
-3. Cookie Lifetimes
+2. [Cookie Priorities](https://tools.ietf.org/html/draft-west-cookie-priority)
+3. [Same-Site Cookies](https://tools.ietf.org/html/draft-west-first-party-cookies)
+4. Cookie Lifetimes
 
 
 ### Potential Work II

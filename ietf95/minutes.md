@@ -1,12 +1,10 @@
-
-# Minutes from HTTPBIS Session 1, IETF 95
-
-
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 - [Minutes from HTTPBIS Session 1, IETF 95](#minutes-from-httpbis-session-1-ietf-95)
   - [Agenda Summary and Administrivia (chair)](#agenda-summary-and-administrivia-chair)
+    - [Thanks to Barry for his service as AD](#thanks-to-barry-for-his-service-as-ad)
+    - [Welcome to Alexey as new AD](#welcome-to-alexey-as-new-ad)
   - [Specification Status (chair)](#specification-status-chair)
   - [Active Drafts](#active-drafts)
     - [Opportunistic Security (chair)](#opportunistic-security-chair)
@@ -37,10 +35,11 @@
     - [Merkle Integrity Content Encoding](#merkle-integrity-content-encoding)
     - [Secure Content Delegation using HTTP](#secure-content-delegation-using-http)
   - [Adjornment](#adjornment)
-  - [](#)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+
+# Minutes from HTTPBIS Session 1, IETF 95
 
 ## Agenda Summary and Administrivia (chair)
 ### Thanks to Barry for his service as AD

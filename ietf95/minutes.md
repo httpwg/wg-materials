@@ -1,4 +1,46 @@
+
 # Minutes from HTTPBIS Session 1, IETF 95
+
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Minutes from HTTPBIS Session 1, IETF 95](#minutes-from-httpbis-session-1-ietf-95)
+  - [Agenda Summary and Administrivia (chair)](#agenda-summary-and-administrivia-chair)
+  - [Specification Status (chair)](#specification-status-chair)
+  - [Active Drafts](#active-drafts)
+    - [Opportunistic Security (chair)](#opportunistic-security-chair)
+      - [Separate Lifetime from Commitment](#separate-lifetime-from-commitment)
+      - [Requirement to Filter Alt-Svc Header Needs To Be Explicit Normative Text](#requirement-to-filter-alt-svc-header-needs-to-be-explicit-normative-text)
+      - [Commit without Same Host Opt In](#commit-without-same-host-opt-in)
+      - [Other Issues](#other-issues)
+    - [Character Encoding and Language for Parameters (chair)](#character-encoding-and-language-for-parameters-chair)
+      - [Client Hints (chair)](#client-hints-chair)
+      - [Define More Precisely Which CH Headers are Sent by Default](#define-more-precisely-which-ch-headers-are-sent-by-default)
+      - [Define "Accept-CH" More Precisely](#define-accept-ch-more-precisely)
+      - [Should CH Headers be Treated as Simple Headers?](#should-ch-headers-be-treated-as-simple-headers)
+    - [HTTP Encryption Content Encoding](#http-encryption-content-encoding)
+      - [Key Spec](#key-spec)
+    - [Potential Work](#potential-work)
+      - [Thoughts on HTTP Header Field Parsing](#thoughts-on-http-header-field-parsing)
+    - [Origin Frame](#origin-frame)
+  - [Adjournment](#adjournment)
+- [Minutes from Session 2, IETF 95](#minutes-from-session-2-ietf-95)
+  - [Administrivia (chair)](#administrivia-chair)
+  - [RFC6265bis](#rfc6265bis)
+  - [Potential Work II](#potential-work-ii)
+    - [TCP Tuning for HTTP](#tcp-tuning-for-http)
+    - [Client Certificates](#client-certificates)
+    - [Secondary Server Certificates (Mike Bishop)](#secondary-server-certificates-mike-bishop)
+    - [Cache Digests](#cache-digests)
+    - [Decomposing/Disentangling HTTP](#decomposingdisentangling-http)
+    - [Merkle Integrity Content Encoding](#merkle-integrity-content-encoding)
+    - [Secure Content Delegation using HTTP](#secure-content-delegation-using-http)
+  - [Adjornment](#adjornment)
+  - [](#)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 
 ## Agenda Summary and Administrivia (chair)
 ### Thanks to Barry for his service as AD

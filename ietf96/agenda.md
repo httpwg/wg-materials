@@ -18,12 +18,10 @@
 
 *5 minutes*
 
-Discuss current status of approved specifications:
+Discuss current status of post-WGLC and approved specifications:
 
 - [HTTP Encryption Content Encoding](https://tools.ietf.org/html/draft-ietf-httpbis-encryption-encoding)
 - [Opportunistic Security](https://tools.ietf.org/html/draft-ietf-httpbis-http2-encryption)
-
-Discuss the [issues list](https://github.com/httpwg/http-extensions/issues?q=is%3Aopen+is%3Aissue+label%3Aopp-sec) and draft status.
 
 
 ### Active Drafts

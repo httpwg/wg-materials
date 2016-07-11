@@ -60,6 +60,12 @@ Discuss the [issues list](https://github.com/httpwg/http-extensions/issues?q=is%
 Discuss the [issues list](https://github.com/httpwg/http-extensions/issues?q=is%3Aopen+is%3Aissue+label%3Ajfv) and draft status.
 
 
+#### [Cache Digest](https://tools.ietf.org/html/draft-ietf-httpbis-cache-digest)
+
+Discuss the [issues list](https://github.com/httpwg/http-extensions/issues?q=is%3Aopen+is%3Aissue+label%3Acache-digest) and draft status.
+
+
+
 ## Friday, 22 July 2016 10:00-12:00
 
 ### Administrivia
@@ -93,6 +99,6 @@ Discuss the [issues list](https://github.com/httpwg/http-extensions/issues?q=is%
 
 Discuss possible [future work items](https://github.com/httpwg/wiki/wiki/WatchList), including:
 
-* [TCP Tuning for HTTP](https://tools.ietf.org/html/draft-stenberg-httpbis-tcp) - *[presentation](tcp.pdf) by Tim Wicinski*
+* [TCP Tuning for HTTP](https://tools.ietf.org/html/draft-stenberg-httpbis-tcp)
 * [Secondary Server-Certificate Authentication in HTTP/2](https://tools.ietf.org/html/draft-bishop-httpbis-http2-additional-certs)
-* [Cache Digests](https://datatracker.ietf.org/doc/draft-kazuho-h2-cache-digest/)
+* SDCH

@@ -93,7 +93,7 @@ Discuss the [issues list](https://github.com/httpwg/http-extensions/issues?q=is%
 *See also [open 6265bis issues](https://github.com/httpwg/http-extensions/issues?q=is%3Aissue+is%3Aopen+label%3A6265bis)*
 
 
-### Potential Work
+### Potential and Related Work
 
 *balance of time*
 
@@ -101,5 +101,6 @@ Discuss possible [future work items](https://github.com/httpwg/wiki/wiki/WatchLi
 
 * [TCP Tuning for HTTP](https://tools.ietf.org/html/draft-stenberg-httpbis-tcp) (Tim Wicinski / Daniel Stenberg)
 * [Secondary Server-Certificate Authentication in HTTP/2](https://tools.ietf.org/html/draft-bishop-httpbis-http2-additional-certs)
+* [HTTP/2 for the Internet of Things](https://tools.ietf.org/html/draft-montenegro-httpbis-h2ot-00) (Gabriel Montenegro)
 * SDCH (Charles McCathie Neville)
 * Cache-Control: immutable (Patrick McManus)

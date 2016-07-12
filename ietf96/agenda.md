@@ -101,6 +101,7 @@ Discuss possible [future work items](https://github.com/httpwg/wiki/wiki/WatchLi
 
 * [TCP Tuning for HTTP](https://tools.ietf.org/html/draft-stenberg-httpbis-tcp) (Tim Wicinski / Daniel Stenberg)
 * [Secondary Server-Certificate Authentication in HTTP/2](https://tools.ietf.org/html/draft-bishop-httpbis-http2-additional-certs)
+* [HTTP/2 Extended Settings](https://tools.ietf.org/html/draft-bishop-httpbis-extended-settings) (Mike Bishop)
 * [HTTP/2 for the Internet of Things](https://tools.ietf.org/html/draft-montenegro-httpbis-h2ot-00) (Gabriel Montenegro)
 * SDCH (Charles McCathie Neville)
 * Cache-Control: immutable (Patrick McManus)

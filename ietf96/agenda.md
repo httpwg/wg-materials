@@ -50,7 +50,7 @@ Discuss the [issues list](https://github.com/httpwg/http-extensions/issues?q=is%
 Discuss the [issues list](https://github.com/httpwg/http-extensions/issues?q=is%3Aopen+is%3Aissue+label%3Aclient-hints) and draft status.
 
 
-#### [Origin Frame](https://tools.ietf.org/html/draft-ietf-httpbis-client-hints)
+#### [Origin Frame](https://tools.ietf.org/html/draft-ietf-httpbis-origin-frame)
 
 Discuss the [issues list](https://github.com/httpwg/http-extensions/issues?q=is%3Aopen+is%3Aissue+label%3Aorigin-frame) and draft status.
 

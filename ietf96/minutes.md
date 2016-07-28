@@ -67,7 +67,7 @@ MT: large number of webpush implementations are using this already.
 
 #### [Character Encoding and Language for Parameters](https://tools.ietf.org/html/draft-ietf-httpbis-rfc5987bis)
 
-Julien R: RFC5987bis (see agenda for presentation)
+Julian R: RFC5987bis (see agenda for presentation)
 
 MarkN: Thinks there may need to be more prose about motivations. Will propose something.
 
@@ -85,11 +85,11 @@ Alexey: OK so far.
 
 Chair: Thinks we're pretty much ready to go to WG last call on our side, but waiting for work happening on fetch spec in whatWG. On hold for now. Reviews or extended WG last call are welcome now.
 
-Julien: Client hints sort of depends on Key being there. So may at least need to change reference to be informative.
+Julian: Client hints sort of depends on Key being there. So may at least need to change reference to be informative.
 
 MarkN: Key is informative reference, using it is more efficient but not actually required.
 
-Julien: Thinks use of key depends on specific text so more changes may be necessary.
+Julian: Thinks use of key depends on specific text so more changes may be necessary.
 
 RoyF (via jabber): client hints may need more work on security considerations.
 
@@ -130,7 +130,7 @@ Decision: Want to wait a bit longer on this before moving to WG last call.
 
 [issues list](https://github.com/httpwg/http-extensions/issues?q=is%3Aopen+is%3Aissue+label%3Ajfv) 
 
-Julien: summarize what's been discussed on mailing list (see slides in agenda).
+Julian: summarize what's been discussed on mailing list (see slides in agenda).
 
 JR: Question - do we try to retrofit this to existing headers and if so how to deploy
 
@@ -207,7 +207,7 @@ Someone from Yahoo: We see similar numbers on this. Why aren't browsers honourin
 
 Patrick: doesn't provide a guarantee; interpret people getting 304 as a reload on that page.
 
-Julien: While we have you up there and talking about reload. Is there a difference between F5 and ctrl/shift F5?
+Julian: While we have you up there and talking about reload. Is there a difference between F5 and ctrl/shift F5?
 
 Patrick: Normal reload sends a bunch of 304s on the page and shift reload reloads the content.
 Channel Roy Fielding: Immutable should override things like max-age. Also, please add more instructions in tools.ietf.org to point to github drafts, etc.
@@ -240,13 +240,13 @@ Dharsak, testing from our side, changing the semantics of byte itself was trick,
 
 Chair: in terms of adopting a new draft we'd consider if it's general facilities for the protocol and there is implementer interest. There is scope for scope creep if we open up that discussion, think that it is general but not sure if there is implementor interest
 
-Julien: If there are many intermediaries that do the wrong thing, would like to know. Do you use HTTP or HTTPs
+Julian: If there are many intermediaries that do the wrong thing, would like to know. Do you use HTTP or HTTPs
 
 Dharsak: Both in our experience
 
 MN: Someone when and did the research on this. Bugs were in client libraries for media. Libraries consuming streaming video which is your core use case.
 
-Julien: Concerned with shaky relationship between byte ranges and other content codings. Like to clarify that you really can't do a byte range request on something that has been dynamically gzip encoded - the outcome is logical from the spec but not intuitive.
+Julian: Concerned with shaky relationship between byte ranges and other content codings. Like to clarify that you really can't do a byte range request on something that has been dynamically gzip encoded - the outcome is logical from the spec but not intuitive.
 
 MN: Come up but not interest to pursue that yet.
 
@@ -467,7 +467,7 @@ have people had a chance to think and look at this? good idea?
 
 mwest: aligns with what Chrome does. Great idea!
 
-julian reshcke (sp?): worthwhile to refresh our memory why we didn't define this.
+Julian Reschke: worthwhile to refresh our memory why we didn't define this.
 Roy had an opinion
 
 mt: looking at the table, easiest thing to do is what has been described.

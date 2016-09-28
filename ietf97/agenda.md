@@ -34,7 +34,7 @@
 * draft-ietf-httpbis-rfc5987bis-02 Indicating Character Encoding and Language for HTTP Header Field
 
 
-## Bullpen
+### Feedback
 
 * Nick Sullivan - Experience with Alternate Services / Encryption
 
@@ -54,7 +54,6 @@
 * Expiring Aggressively Those HTTP Cookies
 * Secondary Certificate Authentication in HTTP/2
 		
-
 ### Potential and Related Work
 
 * Barbara Stark draft-pratt-httpbis-bytes-live-range-unit

@@ -29,6 +29,7 @@ _November 14 - November 18 Seoul_
 * [Encrypted Content-Encoding for HTTP](https://tools.ietf.org/html/draft-ietf-httpbis-encryption-encoding-02)
 * [Opportunistic Security for HTTP](https://tools.ietf.org/html/draft-ietf-httpbis-http2-encryption-06)
 * [A JSON Encoding for HTTP Header Field Values](https://tools.ietf.org/html/draft-ietf-httpbis-jfv-01)
+  * [HTTP header common structure](https://tools.ietf.org/html/draft-kamp-httpbis-structure)
 * [The ORIGIN HTTP/2 Frame](https://tools.ietf.org/html/draft-ietf-httpbis-origin-frame-01)
 * [RFC5987bis: Indicating Character Encoding and Language for HTTP Header Field Parameters](https://tools.ietf.org/html/draft-ietf-httpbis-rfc5987bis-02)
 * [RFC6265bis: Cookies](https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis)

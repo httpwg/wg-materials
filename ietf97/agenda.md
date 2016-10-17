@@ -7,9 +7,9 @@
 *Taking minutes? See [our guide](https://github.com/httpwg/wiki/wiki/TakingMinutes)*
 
 
-_November 14 - November 18 Seoul_
+## Tuesday, 15 November 2016
 
-## Session 1
+_13:30-15:30, Park Ballroom I_
 
 ### Administrivia
 
@@ -39,7 +39,9 @@ _November 14 - November 18 Seoul_
 * Nick Sullivan - Experience with Alternate Services / Encryption
 
 
-## Session 2
+## Thursday, 17 November 2016
+
+_11:10-12:10, Park Ballroom I_
 
 ### Administrivia
 

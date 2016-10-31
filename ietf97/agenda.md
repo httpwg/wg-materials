@@ -56,7 +56,7 @@ _11:10-12:10, Park Ballroom I_
 
 ### Potential and Related Work
 
-* Emily Stark - Expect-CT Certificate Transparency Response Header
+* Emily Stark - Expect-CT Certificate Transparency Response Header [https://tools.ietf.org/html/draft-stark-expect-ct-00]
 * Patrick McManus - Cache-Control: immutable [https://tools.ietf.org/html/draft-mcmanus-immutable-00]
 * Barbara Stark - [HTTP bytes-live Range Unit for Live Content](https://tools.ietf.org/html/draft-pratt-httpbis-bytes-live-range-unit)
 * Vlad Krasnov - [Compression Dictionaries for HTTP/2](https://tools.ietf.org/html/draft-vkrasnov-h2-compression-dictionaries)

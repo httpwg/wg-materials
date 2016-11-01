@@ -61,3 +61,7 @@ _11:10-12:10, Park Ballroom I_
 * Vlad Krasnov - [Compression Dictionaries for HTTP/2](https://tools.ietf.org/html/draft-vkrasnov-h2-compression-dictionaries)
 * Barbara Stark - [HTTP bytes-live Range Unit for Live Content](https://tools.ietf.org/html/draft-pratt-httpbis-bytes-live-range-unit)
 * Wenbo Zhu - [Messaging/Websockets for H2](https://tools.ietf.org/html/draft-yoshino-wish) (see also [related](https://datatracker.ietf.org/doc/draft-svirid-websocket2-over-http2/))
+
+### As Time Allows
+
+* Kazuho Oku - 103 Early Hints (https://tools.ietf.org/html/draft-kazuho-early-hints-status-code)

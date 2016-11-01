@@ -24,14 +24,14 @@ _13:30-15:30, Park Ballroom I_
 
 ### Active Drafts
 
-* [Cache Digests for HTTP/2](https://tools.ietf.org/html/draft-ietf-httpbis-cache-digest-00)
-* [HTTP Client Hints](https://tools.ietf.org/html/draft-ietf-httpbis-client-hints-01)
-* [Encrypted Content-Encoding for HTTP](https://tools.ietf.org/html/draft-ietf-httpbis-encryption-encoding-02)
-* [Opportunistic Security for HTTP](https://tools.ietf.org/html/draft-ietf-httpbis-http2-encryption-06)
-* [A JSON Encoding for HTTP Header Field Values](https://tools.ietf.org/html/draft-ietf-httpbis-jfv-01) 
+* [Cache Digests for HTTP/2](https://tools.ietf.org/html/draft-ietf-httpbis-cache-digest)
+* [HTTP Client Hints](https://tools.ietf.org/html/draft-ietf-httpbis-client-hints)
+* [Encrypted Content-Encoding for HTTP](https://tools.ietf.org/html/draft-ietf-httpbis-encryption-encoding)
+* [Opportunistic Security for HTTP](https://tools.ietf.org/html/draft-ietf-httpbis-http2-encryption)
+* [A JSON Encoding for HTTP Header Field Values](https://tools.ietf.org/html/draft-ietf-httpbis-jfv) 
   * [HTTP header common structure](https://tools.ietf.org/html/draft-kamp-httpbis-structure)
-* [The ORIGIN HTTP/2 Frame](https://tools.ietf.org/html/draft-ietf-httpbis-origin-frame-01)
-* [RFC5987bis: Indicating Character Encoding and Language for HTTP Header Field Parameters](https://tools.ietf.org/html/draft-ietf-httpbis-rfc5987bis-02)
+* [The ORIGIN HTTP/2 Frame](https://tools.ietf.org/html/draft-ietf-httpbis-origin-frame)
+* [RFC5987bis: Indicating Character Encoding and Language for HTTP Header Field Parameters](https://tools.ietf.org/html/draft-ietf-httpbis-rfc5987bis)
 * [RFC6265bis: Cookies](https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis)
 
 ### Updates On Calls For Adoption
@@ -55,9 +55,9 @@ _11:10-12:10, Park Ballroom I_
 
 ### Potential and Related Work
 
-* Emily Stark - [Expect-CT Certificate Transparency Response Header](https://tools.ietf.org/html/draft-stark-expect-ct-00)
-* Patrick McManus - [Cache-Control: immutable](https://tools.ietf.org/html/draft-mcmanus-immutable-00)
-* Ted Hardie - [SDCH](https://tools.ietf.org/html/draft-lee-sdch-spec-00)
+* Emily Stark - [Expect-CT Certificate Transparency Response Header](https://tools.ietf.org/html/draft-stark-expect-ct)
+* Patrick McManus - [Cache-Control: immutable](https://tools.ietf.org/html/draft-mcmanus-immutable)
+* Ted Hardie - [SDCH](https://tools.ietf.org/html/draft-lee-sdch-spec)
 * Vlad Krasnov - [Compression Dictionaries for HTTP/2](https://tools.ietf.org/html/draft-vkrasnov-h2-compression-dictionaries)
 * Barbara Stark - [HTTP bytes-live Range Unit for Live Content](https://tools.ietf.org/html/draft-pratt-httpbis-bytes-live-range-unit)
-* Wenbo Zhu - [Messaging/Websockets for H2](https://tools.ietf.org/html/draft-yoshino-wish-00) (see also [related](https://datatracker.ietf.org/doc/draft-svirid-websocket2-over-http2/))
+* Wenbo Zhu - [Messaging/Websockets for H2](https://tools.ietf.org/html/draft-yoshino-wish) (see also [related](https://datatracker.ietf.org/doc/draft-svirid-websocket2-over-http2/))

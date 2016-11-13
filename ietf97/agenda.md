@@ -15,6 +15,7 @@ _13:30-15:30, Park Ballroom I_
 
 * 2 min - Blue sheets / scribe selection / NOTE WELL
 * 3 min - Agenda bashing
+* 2 min - This week's organization
 
 
 ### Related Meetings

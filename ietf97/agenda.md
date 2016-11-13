@@ -20,7 +20,7 @@ _13:30-15:30, Park Ballroom I_
 
 ### Related Meetings
 
-* httpoverdns Bar BoF
+* dnsOverHttp Bar BoF
 * quic update and httpbis relationship
 
 ### Active Drafts

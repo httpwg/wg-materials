@@ -20,7 +20,7 @@ _13:30-15:30, Park Ballroom I_
 
 ### Related Meetings
 
-* dnsOverHttp Bar BoF
+* dnsOverHttp Bar BoF - Studio 7, 6th Floor 6:45PM today
 * quic update and httpbis relationship
 
 ### Active Drafts

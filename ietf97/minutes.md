@@ -79,7 +79,7 @@ Patrick: Is there a larger discussion to happen regarding self-describing?
 
 Martin: Push discussion to Thursday. Do we need a document on this?
 
-Julian Reschke: Next revision of ??? should have some discussion
+Julian Reschke: Next revision of HTTP core specs should have some discussion
 
 Mike Bishop: Offered to work on this
 
@@ -113,7 +113,7 @@ Ready for LC writeup.
 
 Presentation: https://www.ietf.org/proceedings/97/slides/slides-97-httpbis-sessa-julian-5987bis-00.pdf
 
-Mark Nottingham (from floor): Don't think the ??? problem is solved. Don't know that this needs to be published in WG; maybe ISE. Having more than one document published by the WG is not good.
+Mark Nottingham (from floor): Don't think the JSON interop problem is solved. Don't know that this needs to be published in WG; maybe ISE. Having more than one document published by the WG is not good.
 
 Patrick: We should publish what's good, not publish for the sake of publishing
 
@@ -143,7 +143,7 @@ Ted Hardie: I was in the "need more info" group. No great objection, but probabl
 
 Julian: We need to define scope. Data types might not be ready to go yet.
 
-???: I have difficulty with abstract and unproven syntax being used as a future protocol guideline. But I see no reason not to explore various alternatives as experimental work.
+Roy Fielding: I have difficulty with abstract and unproven syntax being used as a future protocol guideline. But I see no reason not to explore various alternatives as experimental work.
 
 Joe Hildebrand: Is this far enough along to focus discussion?
 
@@ -205,7 +205,7 @@ Mike Bishop: Our stack handles this, but our dev tools don't.
 
 Patrick: Other implementations have been fixed, just because of the discussion on this list.
 
-Julian: ???
+Julian: Apache HTTP client 5 just got an API for observing 1xx messages
 
 * Sense of the room: Who is interested in implementing this? 5 or 6 hands.
 

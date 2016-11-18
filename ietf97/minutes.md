@@ -289,6 +289,6 @@ Takeshi Yoshino presenting.
 
 Chairs: How many have read it? 3 or 4 persons
 
-Martin Thomson: Is this services and event? Web sockets have replaced, this. Your proposal have some poor latency performance in some cases. 
+Martin Thomson: Is this server-sent event? Web sockets have replaced, this. Your proposal have some poor latency performance in some cases. 
 
 Chairs: What is the future of WebSockets? HTTPBis is not the right place for this. This should be discussed in BarBof or go on to Dispatch WG. 

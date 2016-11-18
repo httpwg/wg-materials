@@ -189,3 +189,77 @@ Mark: Could give feedback to QUIC about its architecture
 Ted Hardie: Does work on DNS in HTTP, if the BOF goes well, come in here
 
 Mark: Historically we don't bring in "X over HTTP"
+
+
+## Session II
+
+*Scribes: Magnus Westerlund, Stuart Cheshire*
+
+### Emily Stark - [Expect-CT Certificate Transparency Response Header](https://tools.ietf.org/html/draft-stark-expect-ct)
+
+Intersted in feedback, especially from site owners. 
+
+Martin Thomson: Need to work on deterministic behavior. Need to have some bounds what a policy results in.
+
+The sites that put this in their header field will have to expect some degree of service.
+
+Some browsers ignore this header entirely.
+
+Ryan Sleevi: Extended validation, was a problem when they tried this. Thus a report only function is good. 
+
+Charis: Hum if this is a reasonable are for the WG to work in? 
+Strong hum for, some against.   
+
+Subodh Iyengar: In TLS layer we violate things all this time, thus it makes sense to do this in HTTP. However, would like to have this in the TLS layer going in the end. 
+
+Emily Stark: There are time constraints on this work.
+
+### Patrick McManus - [Cache-Control: immutable](https://tools.ietf.org/html/draft-mcmanus-immutable)
+
+Chair (Mark): Who thinks we should adopt this? 
+
+Strong hum for adoption, none against. 
+
+
+### Ted Hardie - [SDCH](https://tools.ietf.org/html/draft-lee-sdch-spec)
+
+Eric Rescorla: What about side channel attacks, what prevents this from the same issue that has existed before? Ryan Sleevi, nothing. The draft is a starting point, and the security considerations that needs to be resolved. Eric, should ensure that there are some reasonable solution before we take on any work in the WG.  
+
+Martin Thomson: We now have two drafts in this area. We need to decide if we can deploy this securely. Then figure out how the solution(s) should look.  
+
+### Vlad Krasnov - [Compression Dictionaries for HTTP/2](https://tools.ietf.org/html/draft-vkrasnov-h2-compression-dictionaries)
+
+Eric Rescorla: Making this be opt-in is interesting. Can be worked. All I have heard about defence mechanism is to hand-cuff the compression algorithm to make it safe. This approach appears better. 
+
+?: This approach can be used to compress many small resources, where it can be difficult to build a good dictionary ahead of time. Then the dynamic approach. 
+
+Subodh Iyengar: Sounds like that you consider applying this cross domain. The website would like to opt in. Different sites my be hosted on the same CDN, and some sites may not want to share compression state with other sites on that CDN.
+
+Martin Thomson: This simplest way forward is constrain this to one origin. 
+
+
+### Barbara Stark - [HTTP bytes-live Range Unit for Live Content](https://tools.ietf.org/html/draft-pratt-httpbis-bytes-live-range-unit)
+
+Craig Pratt presenting. 
+
+Julian Rescheke: The example of the last slide. Wouldn't the server return "Range not satisfiable"? As long as the start point of the range are inside the 
+
+Martin Thomson: This is workable, but look horrible. It is a problem people have. Given the constraints we have to work with, this is the best solution I've seen.
+
+Chair (Mark): Is this documenting a patter of use? 
+
+Mike Bishop: Is the large number a magic one, or just a client config. Currently it a client choices. 
+
+Martin: There are no need for magic numbers here. There might be some interaction here. If a client creates a request of this form, un-intentional. Then the client can be confused by the server response.  
+
+Chair: Looks like the WG are interested in this happening in the WG. 
+
+### Wenbo Zhu - [Messaging/Websockets for H2](https://tools.ietf.org/html/draft-yoshino-wish) (see also [related](https://datatracker.ietf.org/doc/draft-svirid-websocket2-over-http2/))
+
+Takeshi Yoshino presenting. 
+
+Chairs: How many have read it? 3 or 4 persons
+
+Martin Thomson: Is this services and event? Web sockets have replaced, this. Your proposal have some poor latency performance in some cases. 
+
+Chairs: What is the future of WebSockets? HTTPBis is not the right place for this. This should be discussed in BarBof or go on to Dispatch WG. 

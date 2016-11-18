@@ -1,5 +1,34 @@
 # IETF97 HTTP WG Minutes
 
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+  - [Session I](#session-i)
+    - [Start of Meeting](#start-of-meeting)
+    - [draft-ietf-httpbis-cache-digest](#draft-ietf-httpbis-cache-digest)
+    - [draft-ietf-httpbis-client-hints](#draft-ietf-httpbis-client-hints)
+    - [draft-ietf-httpbis-encryption-encoding](#draft-ietf-httpbis-encryption-encoding)
+    - [draft-ietf-httpbis-http2-encryption](#draft-ietf-httpbis-http2-encryption)
+    - [draft-ietf-httpbis-rfc5987bis](#draft-ietf-httpbis-rfc5987bis)
+    - [draft-ietf-httpbis-jfv and draft-kamp-httpbis-structure](#draft-ietf-httpbis-jfv-and-draft-kamp-httpbis-structure)
+    - [draft-ietf-httpbis-origin-frame](#draft-ietf-httpbis-origin-frame)
+    - [draft-ietf-httpbis-rfc6265bis](#draft-ietf-httpbis-rfc6265bis)
+    - [Updates on calls for adoption](#updates-on-calls-for-adoption)
+      - [draft-stenberg-httpbis-tcp](#draft-stenberg-httpbis-tcp)
+      - [Opportunistic Security](#opportunistic-security)
+    - [Potential new work: Early Hints](#potential-new-work-early-hints)
+  - [Session II](#session-ii)
+    - [Emily Stark - [Expect-CT Certificate Transparency Response Header](https://tools.ietf.org/html/draft-stark-expect-ct)](#emily-stark---expect-ct-certificate-transparency-response-headerhttpstoolsietforghtmldraft-stark-expect-ct)
+    - [Patrick McManus - [Cache-Control: immutable](https://tools.ietf.org/html/draft-mcmanus-immutable)](#patrick-mcmanus---cache-control-immutablehttpstoolsietforghtmldraft-mcmanus-immutable)
+    - [Ted Hardie - [SDCH](https://tools.ietf.org/html/draft-lee-sdch-spec)](#ted-hardie---sdchhttpstoolsietforghtmldraft-lee-sdch-spec)
+    - [Vlad Krasnov - [Compression Dictionaries for HTTP/2](https://tools.ietf.org/html/draft-vkrasnov-h2-compression-dictionaries)](#vlad-krasnov---compression-dictionaries-for-http2httpstoolsietforghtmldraft-vkrasnov-h2-compression-dictionaries)
+    - [Barbara Stark - [HTTP bytes-live Range Unit for Live Content](https://tools.ietf.org/html/draft-pratt-httpbis-bytes-live-range-unit)](#barbara-stark---http-bytes-live-range-unit-for-live-contenthttpstoolsietforghtmldraft-pratt-httpbis-bytes-live-range-unit)
+    - [Wenbo Zhu - [Messaging/Websockets for H2](https://tools.ietf.org/html/draft-yoshino-wish) (see also [related](https://datatracker.ietf.org/doc/draft-svirid-websocket2-over-http2/))](#wenbo-zhu---messagingwebsockets-for-h2httpstoolsietforghtmldraft-yoshino-wish-see-also-relatedhttpsdatatrackerietforgdocdraft-svirid-websocket2-over-http2)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+
 ## Session I
 
 *Minute taker: Pete Resnick*

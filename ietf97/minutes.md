@@ -260,7 +260,7 @@ Martin Thomson: We now have two drafts in this area. We need to decide if we can
 
 Eric Rescorla: Making this be opt-in is interesting. Can be worked. All I have heard about defence mechanism is to hand-cuff the compression algorithm to make it safe. This approach appears better. 
 
-?: This approach can be used to compress many small resources, where it can be difficult to build a good dictionary ahead of time. Then the dynamic approach. 
+Kazuho Oku: This approach can be used to compress many small resources, where it can be difficult to build a good dictionary ahead of time. Then the dynamic approach. 
 
 Subodh Iyengar: Sounds like that you consider applying this cross domain. The website would like to opt in. Different sites my be hosted on the same CDN, and some sites may not want to share compression state with other sites on that CDN.
 

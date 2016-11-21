@@ -209,7 +209,7 @@ Julian: Apache HTTP client 5 just got an API for observing 1xx messages
 
 * Sense of the room: Who is interested in implementing this? 5 or 6 hands.
 
-Chairs' discussion: What's the appropriate level of work for the group?
+### Chairs' discussion: What's the appropriate level of work for the group?
 
 Julian Reschke: Mapping HTTP to QUIC, where is that work taking place? Going to effect people in this WG, where ever it happens.
 

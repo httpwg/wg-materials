@@ -19,10 +19,10 @@ _9:00-11:30, Vevey 1/2_
 
 ### Active Drafts
 
-* Early Hints
-* Expect-CT
-* Header Common Structure
-* Immutable Responses
+* [Early Hints](https://tools.ietf.org/html/draft-ietf-httpbis-early-hints)
+* [Expect-CT](https://tools.ietf.org/html/draft-ietf-httpbis-expect-ct)
+* [Header Common Structure](https://tools.ietf.org/html/draft-ietf-httpbis-header-structure)
+* [Immutable Responses](https://tools.ietf.org/html/draft-ietf-httpbis-immutable)
 * [Cache Digests for HTTP/2](https://tools.ietf.org/html/draft-ietf-httpbis-cache-digest)
 * [The ORIGIN HTTP/2 Frame](https://tools.ietf.org/html/draft-ietf-httpbis-origin-frame)
 * [RFC6265bis: Cookies](https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis)

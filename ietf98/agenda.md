@@ -9,7 +9,7 @@
 
 ## Friday, 31 March 2017
 
-_9:00-11:30, Vevey 1/2
+_9:00-11:30, Vevey 1/2_
 
 ### Administrivia
 
@@ -31,7 +31,7 @@ _9:00-11:30, Vevey 1/2
 
 ### QUIC
 
-* Mike Bishop - QUIC update
+* TBD - QUIC and HTTP update
 
 ### Time Permitting
 

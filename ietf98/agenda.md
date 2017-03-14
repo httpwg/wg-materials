@@ -17,7 +17,7 @@ _9:00-11:30, Vevey 1/2_
 * 3 min - Agenda bashing
 
 
-### Active Drafts
+### Active Drafts (12 minutes each)
 
 * [Early Hints](https://tools.ietf.org/html/draft-ietf-httpbis-early-hints)
 * [Expect-CT](https://tools.ietf.org/html/draft-ietf-httpbis-expect-ct)
@@ -26,13 +26,16 @@ _9:00-11:30, Vevey 1/2_
 * [Cache Digests for HTTP/2](https://tools.ietf.org/html/draft-ietf-httpbis-cache-digest)
 * [The ORIGIN HTTP/2 Frame](https://tools.ietf.org/html/draft-ietf-httpbis-origin-frame)
 * [RFC6265bis: Cookies](https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis)
-* Random Access and Live Content
+* [Random Access and Live Content](https://tools.ietf.org/html/draft-ietf-httpbis-rand-access-live)
 
+### QUIC Working Group Collaboration
 
-### QUIC
+* 25 min - Mike Bishop -- Update on the mapping of HTTP/2 and QUIC
 
-* TBD - QUIC and HTTP update
+### Feedback
 
-### Time Permitting
+* 10 min - Feng Qian -- Cross Layer Interaction of H2 Connection Management
 
-* Mark Nottingham -- Retry / Replay and HTTP
+### Possible Future Work
+
+* 10 min - Mark Nottingham -- Retry / Replay and HTTP

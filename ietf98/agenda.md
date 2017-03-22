@@ -21,7 +21,7 @@ _9:00-11:30, Vevey 1/2_
 
 * [RFC6265bis: Cookies](https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis)
 * [Early Hints](https://tools.ietf.org/html/draft-ietf-httpbis-early-hints)
-* [Expect-CT](https://tools.ietf.org/html/draft-ietf-httpbis-expect-ct)
+* [Expect-CT](https://tools.ietf.org/html/draft-ietf-httpbis-expect-ct) ([presentation](https://docs.google.com/presentation/d/1JXtSTPbb_ydyVeBnoD2xVooJzAiKGURzInCxqhKZXAY/edit#slide=id.p))
 * [Header Common Structure](https://tools.ietf.org/html/draft-ietf-httpbis-header-structure)
 * [Immutable Responses](https://tools.ietf.org/html/draft-ietf-httpbis-immutable)
 * [Cache Digests for HTTP/2](https://tools.ietf.org/html/draft-ietf-httpbis-cache-digest)
@@ -34,7 +34,7 @@ _9:00-11:30, Vevey 1/2_
 
 ### Feedback
 
-* 10 min - Feng Qian -- Cross Layer Interaction of H2 Connection Management
+* 10 min - Feng Qian -- [Cross Layer Interaction of H2 Connection Management](smig.pdf)
 
 ### Possible Future Work
 

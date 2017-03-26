@@ -23,14 +23,14 @@ _9:00-11:30, Vevey 1/2_
 * [Early Hints](https://tools.ietf.org/html/draft-ietf-httpbis-early-hints)
 * [Expect-CT](https://tools.ietf.org/html/draft-ietf-httpbis-expect-ct) ([presentation](https://docs.google.com/presentation/d/1JXtSTPbb_ydyVeBnoD2xVooJzAiKGURzInCxqhKZXAY/edit#slide=id.p))
 * [Header Common Structure](https://tools.ietf.org/html/draft-ietf-httpbis-header-structure)
-* [Immutable Responses](https://tools.ietf.org/html/draft-ietf-httpbis-immutable)
+* [Immutable Responses](https://tools.ietf.org/html/draft-ietf-httpbis-immutable) ([presentation](immutable.pdf))
 * [Cache Digests for HTTP/2](https://tools.ietf.org/html/draft-ietf-httpbis-cache-digest)
 * [The ORIGIN HTTP/2 Frame](https://tools.ietf.org/html/draft-ietf-httpbis-origin-frame)
 * [Random Access and Live Content](https://tools.ietf.org/html/draft-ietf-httpbis-rand-access-live)
 
 ### QUIC Working Group Collaboration
 
-* 25 min - Mike Bishop -- Update on the mapping of HTTP/2 and QUIC
+* 25 min - Mike Bishop -- [Update on the mapping of HTTP/2 and QUIC](QUIC.PDF)
 
 ### Feedback
 

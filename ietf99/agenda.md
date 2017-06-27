@@ -31,9 +31,9 @@ _Grand Hilton Ballroom_
 
 ### Proposed Work
 
-* 10 min - HTTP Retries (Martin Thomson)
-* 10 min - HTTPter (Mark Nottingham)
-* 10 min - BCP56is (Mark Nottingham)
+* 10 min - [HTTP Replays](https://tools.ietf.org/html/draft-thomson-http-replay) (Martin Thomson)
+* 10 min - [HTTPter?](https://github.com/httpwg/http11bis/issues) (Mark Nottingham)
+* 10 min - [BCP56is](https://tools.ietf.org/html/draft-nottingham-bcp56bis) (Mark Nottingham)
 
 
 ## Wednesday, 19 July 2017 Afternoon Session II (15:20-16:50)

@@ -32,7 +32,7 @@ _Grand Hilton Ballroom_
 ### Proposed Work
 
 * 10 min - [HTTP Replays](https://tools.ietf.org/html/draft-thomson-http-replay) (Martin Thomson)
-* 10 min - [HTTPter?](https://github.com/httpwg/http11bis/issues) (Mark Nottingham)
+* 10 min - [HTTPter?](https://github.com/httpwg/http11bis/issues) (Julian Reschke)
 * 10 min - [BCP56is](https://tools.ietf.org/html/draft-nottingham-bcp56bis) (Mark Nottingham)
 
 

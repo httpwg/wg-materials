@@ -35,6 +35,9 @@ _Grand Hilton Ballroom_
 * 10 min - [HTTPter?](https://github.com/httpwg/http11bis/issues) (Julian Reschke)
 * 10 min - [BCP56is](https://tools.ietf.org/html/draft-nottingham-bcp56bis) (Mark Nottingham)
 
+### As Time Allows
+
+* [Secondary Certificates](https://tools.ietf.org/html/draft-bishop-httpbis-http2-additional-certs)
 
 ## Wednesday, 19 July 2017 Afternoon Session II (15:20-16:50)
 

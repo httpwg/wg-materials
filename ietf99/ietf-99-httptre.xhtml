@@ -1,0 +1,132 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>IETF 99 - HTTPtre</title>
+    <style type="text/css">
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:r,b,i,bi');
+
+body {
+  color: black;
+  font-family: 'Noto Sans', cambria, helvetica, arial, sans-serif;
+  font-size: 18pt;
+}
+h1 {
+  font-size: 36pt;
+}
+pre {
+  font-family: consolas;
+}
+tt {
+  font-family: consolas;
+}
+li {
+  margin-top: 0.5em;
+}
+q {
+  font-style: italic;  
+}
+.break {
+  page-break-before: always;
+}
+@page {
+  font-family: 'Noto Sans', cambria, helvetica, arial, sans-serif;
+  size: a4 landscape;
+}
+@page {
+  @bottom-left {
+       content: "Julian Reschke, greenbytes";
+  }
+  @bottom-right {
+       content: counter(page);
+  }
+  @top-center {
+       content: "IETF 99 - HTTPtre";
+  }
+}
+    </style>
+  </head>
+  <body>
+    <h1>IETF 99 - HTTPtre</h1>
+    <p>
+      <a href="mailto:julian.reschke@greenbytes.de">Julian Reschke</a>, greenbytes
+    </p>
+    <h2 class="break">History of HTTP in the IETF</h2>
+    <img src="http-spec-timeline.png" width="100%"/>
+    <p>Observations:</p>
+    <ul>
+      <li>It took long to restart work on HTTP/1.1 (~8 years)</li>
+      <li>It took long to finish the last revision of HTTP/1.1 (~ 6 years)</li>
+      <li>There are <b>two</b> current HTTP specifications (HTTP/1.1 and HTTP/2)
+        <ul>
+          <li>...not to mention <a href="https://www.greenbytes.de/tech/webdav/draft-ietf-quic-http-04.html">HTTP over QUIC</a></li>
+        </ul>
+      </li>
+    </ul>
+    <h2 class="break">Why and when to update</h2>
+    <ul>
+      <li>RFCs are immutable documents</li>
+      <li>We collect errata and occasionally revise
+        <ul>
+          <li>...but the errata are incomplete and hard to discover (RFC-Editor???)</li>
+        </ul>
+      </li>
+      <li>If we start now, we won't be ready before 2018, which would be 4 years after publication of RFC 723x</li>
+      <li>Eventually, the new RFC format will allow us to make the officially published versions more readable</li> 
+    </ul>
+    <h2 class="break">Scope - the obvious</h2>
+    <ul>
+      <li>Apply errata (see <a href="https://www.rfc-editor.org/errata_search.php?rfc=7230">RFC 7230 errata</a> etc)</li>
+      <li>Update references (not too many, it seems)</li>
+      <li>Resolve issues reported at <a href="https://github.com/httpwg/http11bis/issues">https://github.com/httpwg/http11bis/issues</a>, currently ~30</li>
+      <li>Minimal changes to guide readers to HTTP/2 spec</li>
+    </ul>
+    <h2 class="break">Scope - the less obvious</h2>
+    <p>Re-organize once more?</p>
+    <ul>
+      <li>Split information specific exclusively to HTTP/1.1 into a separate document and relabel everything else just "HTTP"
+        <ul>
+          <li>...see <a href="https://tools.ietf.org/html/draft-bishop-decomposing-http-01">draft-bishop-decomposing-http</a></li>
+        </ul>
+      </li>
+      <li>Recombine some or all of RFC7231..RFC7235 into a single document</li>
+    </ul>
+    <p>Include stuff that should have been part of HTTP in the first place?</p>
+    <ul>
+      <li>Status 308 (<a href="https://www.greenbytes.de/tech/webdav/rfc7538.html">RFC 7538</a>)</li>
+      <li>Authentication-Info and Proxy-Authentication-Info (<a href="https://www.greenbytes.de/tech/webdav/rfc7615.html">RFC 7615</a>)</li>
+      <li>Client-Initiated Content-Encoding (<a href="https://www.greenbytes.de/tech/webdav/rfc7694.html">RFC 7694</a>)</li>
+      <li>...? Maybe <a href="https://www.greenbytes.de/tech/webdav/draft-ietf-httpbis-rand-access-live-latest.html">draft-ietf-httpbis-rand-access-live</a>?
+      </li>
+    </ul>
+    <p>
+      ...advance to full standard? (<del>may</del><ins>might</ins> conflict with other goals)
+    </p>
+    <h2 class="break">Next steps</h2>
+    <ul>
+      <li>Motivate people to report their issues</li> 
+      <li>Discuss scope &amp; timing
+        <ul>
+          <li>Relation to QUIC work (people overlap, potential effects for HTTP over QUIC)</li>
+          <li>Scope will affect how we do things, as potential re-organizations would need to be done very carefully</li>
+        </ul>
+      </li>
+    </ul>
+    <h2 class="break">Shameless plug: annotating HTML versions of RFCs</h2>
+    <p>
+      We <b>can</b> inline some errata information <a href="https://www.greenbytes.de/tech/webdav/rfc2629xslt/rfc2629xslt.html#rfc-editor.errata">already</a> (in inofficial variants, that is):
+    </p>
+    <a href="https://www.greenbytes.de/tech/webdav/rfc7230.html#transfer.codings"><img style="border: 1px solid;" src="errata-include.png" width="75%"/></a>
+    <p>
+      ...and we could extend that to information in Github issues.
+    </p>
+    <h2 class="break">Shameless plug: annotating HTML versions of RFCs</h2>
+    <p>
+      We <b>can</b> inline some errata information <a href="https://www.greenbytes.de/tech/webdav/rfc2629xslt/rfc2629xslt.html#rfc-editor.errata">already</a> (in inofficial variants, that is):
+    </p>
+    <a href="https://www.greenbytes.de/tech/webdav/rfc7230.html#transfer.codings"><img style="border: 1px solid;" src="errata-include.png" width="75%"/></a>
+    <p>
+      ...and we could extend that to information in Github issues.
+    </p>
+  </body>
+</html>

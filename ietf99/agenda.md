@@ -13,9 +13,9 @@ _Grand Hilton Ballroom_
 
 ### Administrivia
 
-* 2 min - Blue sheets / scribe selection / NOTE WELL
-* 3 min - Agenda bashing
-
+* 1 min - Blue sheets / scribe selection / NOTE WELL
+* 1 min - Agenda bashing
+* 3 min - [Contribution policy](https://github.com/httpwg/http-extensions/pull/362)
 
 ### Active Drafts
 

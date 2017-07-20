@@ -230,11 +230,11 @@ mnot: focus on single stream vs multiple stream issue
 
 need to decide between one or two streams 
 
-MT: we should use one stream - race conditions (my term -ed.) with two streams
-need to understand the hpack cancellation prob will be there until we solve it explicitly
+MT: we should use one stream - race conditions (my term -ed.) with two streams.
+Need to understand the hpack cancellation prob will be there until we solve it explicitly.
 
-Jana: the push_promise use case speaks for one stream
-in quic WG, know we can make things work with single stream
+Jana: the push_promise use case speaks for one stream.
+In quic WG, know we can make things work with single stream.
 
 subodh: supports one steam
 
@@ -248,19 +248,17 @@ QPACK is more wire-format focused
 
 see the drafts on slide 11
 
-MT: would much prefer QPACK
+MT: would much prefer QPACK. qcram has various issues he has observed.
 
-qcram has various issues he has observed
+charles'buck'krasic(cbk) (qcram draft author): open to removing one of the things MT objects to - table eviction (?). Does not have data yet on whether it helps at all.
 
-charles'buck'krasic(cbk) (qcram draft author): open to removing one of the things MT objects to - table eviction (?). Does not have data yet on whether it helps at all
+Alan Frindell: my experiments didn't show it moving the needle that much, but I'd like to run more experiments.
 
-Alan Frindell: my experiments didn't show it moving the needle that much, but I'd like to run more experiments
+cbk: have data on # streams over the lifetime of connection, in practice almost not one raised table sise beyond 4k. Need more data.
 
-cbk: have data on # streams over the lifetime of connection, in practice almost not one raised table sise beyond 4k. need more data
-
-ian swett: have detailed comments to address in person
-would rather stick with hpack for now
-but premature to pick direction wrt this now
+ian swett: have detailed comments to address in person.
+Would rather stick with hpack for now.
+But premature to pick direction wrt this now.
 
 mnot: wait until Seattle to make decision?
 
@@ -272,16 +270,15 @@ ian swett(is): we can put the settings in the 0-rtt msg
 
 mb: yeah, tho [settings frame essentially as good (?)]
 
-thardie(th): (1) <missed it>
+thardie(th):
+1. <missed it>
+2. If client settings in clear, need to describe the implications. So maybe more appropriate to keep quic settings sep from http settings.
 
-(2): if client settings in clear, need to describe the implications
-so maybe more appropriate to keep quic settings sep from http settings
+ekr: Settings in clear + only sent once is unfortunate.
+Am not persuaded this would be a good change
 
-ekr: settings in clear + only sent once is unfortunate
-am not persuaded this would be a good change
-
-jana: agree w/ekr
-http & quick settings have different privacy properties
+jana: agree w/ekr.
+Http & quick settings have different privacy properties.
 
 dkg: this privacy tradeoff is poor one
 
@@ -289,19 +286,19 @@ mb: ok, will update issue in github
 
 ### slide 14: integrated errors
 
-mt: the proposal here is to forbid quic to close specific streams
+mt: the proposal here is to forbid quic to close specific streams.
 app needs to be able to kill connection due to its own errors
 
 cbk: for hpack case  could have errors that should result in closing connection
 
-jana: there is no quic error that will cause quic to close stream
-it seems odd here for app to close connection
-quic has signalling stream, app should do that to signal needs and quic can then close stream
+jana: There is no quic error that will cause quic to close stream.
+It seems odd here for app to close connection.
+Quic has signalling stream, app should do that to signal needs and quic can then close stream.
 
 mb: perhaps could convey such on signalling stream
 
-mt: hazard is the connection continues during time the close-conn processing is occurring
-having quic being aware means quic machinery will be doing lots of stuff instead of just going away
+mt: hazard is the connection continues during time the close-conn processing is occurring.
+Having quic being aware means quic machinery will be doing lots of stuff instead of just going away.
 
 Charles 'Buck' Krasic 4:04 it seems very likely to me that some HPACK/QPACK/QCRAM errors will necessitate closing the connection.
 
@@ -315,44 +312,44 @@ mb: FF implements priorities using idle streams which are never used
 patric mcmanus(pm): individ:
 have a table of grouping orders to do this?
 
-mt: the ? stream id does not allow us to do this
-would have possibility of DoS because the stream is just a placeholder, and other party can just open streams up and consume resources on ur end
-dont think u avoid the unbounded state problem by doing this
+mt: the ? stream id does not allow us to do this.
+Would have possibility of DoS because the stream is just a placeholder, and other party can just. Open streams up and consume resources on ur end.
+Dont think you avoid the unbounded state problem by doing this.
 
-cbk: i head it said a few times some unhappiness w/h2 priority scheme, so http/quic ought to address the h2 priority scheme?
+cbk: I heard it said a few times some unhappiness w/h2 priority scheme, so http/quic ought to address the h2 priority scheme?
 
-mnot: head expressed most is we want to keep this as close to h2 as possible, but we will assess this as we go along...
+mnot: We heard it expressed most that we want to keep this as close to h2 as possible, but we will assess this as we go along...
 
-mt: sticking to that philosophy means we should be open to possibility of re-engineering the priority scheme, but we have lots of balls in air, thinks other issues are more important....
+mt: Sticking to that philosophy means we should be open to possibility of re-engineering the priority scheme, but we have lots of balls in air, thinks other issues are more important....
 
-mnot: folks have expressed to not do opportunistic changes here
+mnot: Folks have expressed to not do opportunistic changes here.
 
-mb: even this is quic wg doc, we want to be responsive to h2 folks
-sound like wrt priorities, h2 folk are ok not changing this now....  (?)
+mb: Even this is quic wg doc, we want to be responsive to h2 folks.
+Sound like wrt priorities, h2 folk are ok not changing this now....  (?)
 
 ### slide 16: HTTP/2 Divergence
 
 mnot: finds the current registry lang to be confusing so would prefer to have them separated
 
-mt: at the point that we made the decisions to make q/http subtly different than h2 we did make a new protocol
-some h2 things can be ported to q/http, but having an explicit signal that things like extensions will not just wqork in both prots q/http and h2
+mt: at the point that we made the decisions to make q/http subtly different than h2 we did make a new protocol.
+Some h2 things can be ported to q/http, but having an explicit signal that things like extensions. Will not just wqork in both prots q/http and h2.
 
 ekr: pushed back on this last time, how do we make sure "that" happens?
 
 mnot: trying to enforce that via registries does not seem to work
 
-mt: one of the things trying to preserve here are some reasonably similar semantics between h2 and q/http (aka "hq" ?)
-ought to have strong guidance to implementations that they should consider both h2 and q/http
+mt: one of the things trying to preserve here are some reasonably similar semantics between h2 and q/http (aka "hq" ?).
+Ought to have strong guidance to implementations that they should consider both h2 and q/http.
 
 mnot [ essentially agrees w/MT )
 
 cbk: [ essentially agrees ]
 
-ekr: do you think it would be possible to see a PR that does these things in slide 16?
+ekr: Do you think it would be possible to see a PR that does these things in slide 16?
 
-mb: have one, need to update it, even update IANA guidance that one does not update one registry w/o updating the other appropriately
+mb: Have one, need to update it, even update IANA guidance that one does not update one registry w/o updating the other appropriately.
 
-mnot: also have the experts be same on both registries
+mnot: also have the experts be same on both registries.
 
 mb & mnot & ekr: [ agreed on some approach to registries that I missed the details of :( ]
 
@@ -376,7 +373,7 @@ mnot: current register of port 443 replied, iesg is considering a more wholistic
 
 ekr: iesg should just have control of ports
 
-thard: iesg does not nec. have that power, iana is suggesting a "release and catch" approach, but if want another mech, there is a doc that needs updating
+thard: iesg does not nec. have that power, iana is suggesting a "release and catch" approach, but if want another mech, there is a doc that needs updating.
 
 mnot: has discussed with joe touch
 
@@ -393,12 +390,12 @@ jr: yes. tho wonder who might be interested in contributing to such an effort...
 
 jr: maintenance is never as exciting as new work...
 
-mt: we have issues open in wg repo, some will require discussion, how deal with that? cant just be in background without interaction
+mt: we have issues open in wg repo, some will require discussion, how deal with that? cant just be in background without interaction.
 
 mnot: some will req discussion, manageable set
 
-mt: the 723* effort was hard unglamorous but quite useful important work, concerned that such a maintenance effort would sap cycles from the new work
+mt: the 723* effort was hard unglamorous but quite useful important work, concerned that such a maintenance effort would sap cycles from the new work.
 
-mnot: there is work in browsers, eg fetch(), where they have questions/input and we can't ignore that
+mnot: there is work in browsers, eg fetch(), where they have questions/input and we can't ignore that.
 
 pm: [ agrees ]

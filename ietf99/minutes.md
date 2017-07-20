@@ -25,7 +25,7 @@ Expect-CT reports ought to trigger Cross-Origin Resource Sharing (CORS) prefligh
 
 Send them (that is what Chrome does now)
 
-Stuff report into whiltelisted text?
+Stuff report into whitelisted text?
 
 Knowingly violate CORS?
 
@@ -116,7 +116,7 @@ Will get data
 
 ### Replays in HTTP (MT)
 
-Victor: we don't ahve a standardized method to comm between gateway and server. Early data feels weird in teh ctx. 
+Victor: we don't have a standardized method to comm between gateway and server. Early data feels weird in this context. 
 
 MT: The origin server is aware of LB or CDN. Not sure about this concern
 
@@ -136,7 +136,7 @@ MT: Nothing I can do about this
 
 DKG: Semantics for 4xx. You as a server need to know the complete architecture. Need to identify the request that cannot be sent.
 
-DKG: Permission to retry means it is safe to retry. It's not that we're not processing becasue it *could* be replayed.
+DKG: Permission to retry means it is safe to retry. It's not that we're not processing because it *could* be replayed.
 
 MT: That's the critical guidance that I don't feel confident about
 
@@ -159,7 +159,7 @@ No WG consensus yet.
 
 Patrick: Consensus on that existing DNS provision of 7540 is a weak second factor. Difference of opinion about how valuable.
 
-Mark (editor): we haven't specified the exact stack for verifying a certifcate.
+Mark (editor): we haven't specified the exact stack for verifying a certificate.
 
 MT: Right advice is to acknowledge that DNS is important, recognize that the privacy benefits are significant, and leave it to the UA to determine whether a particular request can be made to this server. Normalization comes with time. Value in the MUST NOT DNS statement. Servers should not have to make DNS servers
 
@@ -182,11 +182,11 @@ Victor: cannot promise that they will handle in a certain way. From UA perspecti
 
 ??: would like to see what is the second factor.
 
-Ben Schwartz: Having even an open-ended extention field in ORIGIN would be useful
+Ben Schwartz: Having even an open-ended extension field in ORIGIN would be useful
 
 Erik: Using something not specific for privacy seems bad.
 
-MT: push back on holding this one becasue we might want to do something to the origin frame. It's orthogonal. The DNS requirement is a policy decision we made by accident. Should not rely on this so thoroughly. Sad.
+MT: push back on holding this one because we might want to do something to the origin frame. It's orthogonal. The DNS requirement is a policy decision we made by accident. Should not rely on this so thoroughly. Sad.
 
 
 ### BCP56bis (Mark)
@@ -224,7 +224,7 @@ martin thomson(mt): the question is on the agenda there
 
 mb: not aware of any new reqs
 
-mnot: focus on singe strieam vs mult stream issue
+mnot: focus on single stream vs multiple stream issue
 
 #### slides 8 & 9
 
@@ -252,7 +252,7 @@ MT: would much prefer QPACK
 
 qcram has various issues he has observed
 
-charles'buck'krasic(cbk) (qcram draft author): open to removing one of the things MT objects to - table eviction (?). Does not have data yet on wherther it helps at all
+charles'buck'krasic(cbk) (qcram draft author): open to removing one of the things MT objects to - table eviction (?). Does not have data yet on whether it helps at all
 
 Alan Frindell: my experiments didn't show it moving the needle that much, but I'd like to run more experiments
 
@@ -274,16 +274,16 @@ mb: yeah, tho [settings frame essentially as good (?)]
 
 thardie(th): (1) <missed it>
 
-(2): if client settings in clear, need to describe the implcations
-so maybe more approp to keep quic settings sep from http settings
+(2): if client settings in clear, need to describe the implications
+so maybe more appropriate to keep quic settings sep from http settings
 
 ekr: settings in clear + only sent once is unfortunate
 am not persuaded this would be a good change
 
 jana: agree w/ekr
-http & quick settings have diff priv properties
+http & quick settings have different privacy properties
 
-dkg: this priv tradeoff is poor one
+dkg: this privacy tradeoff is poor one
 
 mb: ok, will update issue in github
 
@@ -295,35 +295,35 @@ app needs to be able to kill connection due to its own errors
 cbk: for hpack case  could have errors that should result in closing connection
 
 jana: there is no quic error that will cause quic to close stream
-it seems odd here for app to close conneciton
+it seems odd here for app to close connection
 quic has signalling stream, app should do that to signal needs and quic can then close stream
 
 mb: perhaps could convey such on signalling stream
 
-mt: hazard is the conneciton continues during time the close-conn processing is occuring
+mt: hazard is the connection continues during time the close-conn processing is occurring
 having quic being aware means quic machinery will be doing lots of stuff instead of just going away
 
 Charles 'Buck' Krasic 4:04 it seems very likely to me that some HPACK/QPACK/QCRAM errors will necessitate closing the connection.
 
 jana: [seems to agree w/MT]
-we shud have this discussion in the quic WG too
+we should have this discussion in the quic WG too
 
 ### slide 15: priorities and placeholders
 
-mb: FF impls priorities using idle strems which are never used
+mb: FF implements priorities using idle streams which are never used
 
 patric mcmanus(pm): individ:
 have a table of grouping orders to do this?
 
 mt: the ? stream id does not allow us to do this
-wud have possibility of DoS because the stream is just a placeholder, and other party can just open streams up and consume resources on ur end
+would have possibility of DoS because the stream is just a placeholder, and other party can just open streams up and consume resources on ur end
 dont think u avoid the unbounded state problem by doing this
 
 cbk: i head it said a few times some unhappiness w/h2 priority scheme, so http/quic ought to address the h2 priority scheme?
 
 mnot: head expressed most is we want to keep this as close to h2 as possible, but we will assess this as we go along...
 
-mt: sticking to that philosph means we shud be open to possiblity of re-engr the priority scheme, but we have lots of balls in air, thinks other issues are more important....
+mt: sticking to that philosophy means we should be open to possibility of re-engineering the priority scheme, but we have lots of balls in air, thinks other issues are more important....
 
 mnot: folks have expressed to not do opportunistic changes here
 
@@ -332,23 +332,23 @@ sound like wrt priorities, h2 folk are ok not changing this now....  (?)
 
 ### slide 16: HTTP/2 Divergence
 
-mnot: finds the current registry lang to be confusing so would prefer to have them spearated
+mnot: finds the current registry lang to be confusing so would prefer to have them separated
 
-mt: at the point that we made the deicinos to make q/http subtly diff than h2 we did make a new prot 
+mt: at the point that we made the decisions to make q/http subtly different than h2 we did make a new protocol
 some h2 things can be ported to q/http, but having an explicit signal that things like extensions will not just wqork in both prots q/http and h2
 
 ekr: pushed back on this last time, how do we make sure "that" happens?
 
 mnot: trying to enforce that via registries does not seem to work
 
-mt: one of the things trying to preserve here are some reasonalbely similar semantics btween h2 and q/http (aka "hq" ?)
-ought to have strong guidance to impls that they should consider both h2 and q/http
+mt: one of the things trying to preserve here are some reasonably similar semantics between h2 and q/http (aka "hq" ?)
+ought to have strong guidance to implementations that they should consider both h2 and q/http
 
 mnot [ essentially agrees w/MT )
 
 cbk: [ essentially agrees ]
 
-ekr: do you htink it would be possible to see a PR that does these things in slide 16?
+ekr: do you think it would be possible to see a PR that does these things in slide 16?
 
 mb: have one, need to update it, even update IANA guidance that one does not update one registry w/o updating the other appropriately
 
@@ -368,7 +368,7 @@ we might get to updating 7230
 
 jana: we do not need to update https yet, it is interesting but you know other endpoint speaks quic but not tcp (how?)
 
-ekr: iepg meeting on sunday, discussed confusion btwn tcp and udp and ports
+ekr: iepg meeting on sunday, discussed confusion between tcp and udp and ports
 
 thardie: are you working with IANA to clarify status of port 443 ?
 
@@ -397,8 +397,8 @@ mt: we have issues open in wg repo, some will require discussion, how deal with 
 
 mnot: some will req discussion, manageable set
 
-mt: the 723* effort was hard unglamorous but quite useful impt work, concerned that such a maintenace effort would sap cycles from the new work
+mt: the 723* effort was hard unglamorous but quite useful important work, concerned that such a maintenance effort would sap cycles from the new work
 
-mnot: there is work in browsers, eg fetch(), where they have questions/input and we cant ignore that
+mnot: there is work in browsers, eg fetch(), where they have questions/input and we can't ignore that
 
 pm: [ agrees ]

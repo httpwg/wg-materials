@@ -172,9 +172,9 @@ DKG: Agree. Can't make it a MUST NOT.
 Mike Bishop: Echo concern. Don't want a MUST NOT. Clients MAY do other things, have some guidance. That's a smarter path. Also must harmonize with the other draft.
 
 EKR: The weak second factor is the network path associated with DNS. Say you got it over DNSSEC, we don't trust routers entirely. Three postures:
-    - what's in the draft
-    - Encourage to do second factor (but not specify)
-    - Take no position
+- what's in the draft
+- Encourage to do second factor (but not specify)
+- Take no position
 
 EKR: should specify possibilities.
 

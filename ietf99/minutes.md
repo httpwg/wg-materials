@@ -3,26 +3,28 @@
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-  - [Wednesday, 19 July 2017 Afternoon Session I (13:30-15:00)](#wednesday-19-july-2017-afternoon-session-i-1330-1500)
-    - [State Management Bis (Mike West)](#state-management-bis-mike-west)
-    - [Expect-CT (Emily Stark)](#expect-ct-emily-stark)
-    - [Header common structure (Mark for Poul-Henning)](#header-common-structure-mark-for-poul-henning)
-    - [Cache digest (Kazuho Oku)](#cache-digest-kazuho-oku)
-    - [Random access and live content (Darshak)](#random-access-and-live-content-darshak)
-    - [Replays in HTTP (MT)](#replays-in-http-mt)
-    - [Origin (anything more to discuss?)](#origin-anything-more-to-discuss)
-    - [BCP56bis (Mark)](#bcp56bis-mark)
-  - [Wednesday, 19 July 2017 Afternoon Session II (15:20-16:50)](#wednesday-19-july-2017-afternoon-session-ii-1520-1650)
-    - [HTTP/QUIC (Mike Bishop(mb))](#httpquic-mike-bishopmb)
-      - [slide 7: need to get agreement wrt what we need to ask of QUIC](#slide-7-need-to-get-agreement-wrt-what-we-need-to-ask-of-quic)
-      - [slides 8 & 9](#slides-8-&-9)
-      - [slide 11: shoehorning HPACK](#slide-11-shoehorning-hpack)
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Wednesday, 19 July 2017 Afternoon Session I (13:30-15:00)](#wednesday-19-july-2017-afternoon-session-i-1330-1500)
+  - [State Management Bis (Mike West)](#state-management-bis-mike-west)
+  - [Expect-CT (Emily Stark)](#expect-ct-emily-stark)
+  - [Header common structure (Mark for Poul-Henning)](#header-common-structure-mark-for-poul-henning)
+  - [Cache digest (Kazuho Oku)](#cache-digest-kazuho-oku)
+  - [Random access and live content (Darshak)](#random-access-and-live-content-darshak)
+  - [Replays in HTTP (MT)](#replays-in-http-mt)
+  - [Origin (anything more to discuss?)](#origin-anything-more-to-discuss)
+  - [BCP56bis (Mark)](#bcp56bis-mark)
+- [Wednesday, 19 July 2017 Afternoon Session II (15:20-16:50)](#wednesday-19-july-2017-afternoon-session-ii-1520-1650)
+  - [HTTP/QUIC (Mike Bishop(mb))](#httpquic-mike-bishopmb)
+    - [slide 7: need to get agreement wrt what we need to ask of QUIC](#slide-7-need-to-get-agreement-wrt-what-we-need-to-ask-of-quic)
+    - [slides 8 & 9](#slides-8-&-9)
+    - [slide 11: shoehorning HPACK](#slide-11-shoehorning-hpack)
     - [slide 13: settings and handshake](#slide-13-settings-and-handshake)
     - [slide 14: integrated errors](#slide-14-integrated-errors)
     - [slide 15: priorities and placeholders](#slide-15-priorities-and-placeholders)
     - [slide 16: HTTP/2 Divergence](#slide-16-http2-divergence)
     - [slide 17: Authority](#slide-17-authority)
-  - [julian reschke: HTTPtre](#julian-reschke-httptre)
+- [julian reschke: HTTPtre](#julian-reschke-httptre)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -292,7 +294,7 @@ mnot: wait until Seattle to make decision?
 
 [ "seattle" is an upcoming interim meeting ]
 
-### slide 13: settings and handshake
+#### slide 13: settings and handshake
 
 ian swett(is): we can put the settings in the 0-rtt msg
 
@@ -312,7 +314,7 @@ dkg: this privacy tradeoff is poor one
 
 mb: ok, will update issue in github
 
-### slide 14: integrated errors
+#### slide 14: integrated errors
 
 mt: the proposal here is to forbid quic to close specific streams.
 app needs to be able to kill connection due to its own errors
@@ -333,7 +335,7 @@ Charles 'Buck' Krasic 4:04 it seems very likely to me that some HPACK/QPACK/QCRA
 jana: [seems to agree w/MT]
 we should have this discussion in the quic WG too
 
-### slide 15: priorities and placeholders
+#### slide 15: priorities and placeholders
 
 mb: FF implements priorities using idle streams which are never used
 
@@ -355,7 +357,7 @@ mnot: Folks have expressed to not do opportunistic changes here.
 mb: Even this is quic wg doc, we want to be responsive to h2 folks.
 Sound like wrt priorities, h2 folk are ok not changing this now....  (?)
 
-### slide 16: HTTP/2 Divergence
+#### slide 16: HTTP/2 Divergence
 
 mnot: finds the current registry lang to be confusing so would prefer to have them separated
 
@@ -381,7 +383,7 @@ mnot: also have the experts be same on both registries.
 
 mb & mnot & ekr: [ agreed on some approach to registries that I missed the details of :( ]
 
-### slide 17: Authority
+#### slide 17: Authority
 
 aka issues with origin in sense that TCP is assumed under http: and https: schemes
 

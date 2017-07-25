@@ -39,6 +39,8 @@ Blue sheets going around.
 
 ### State Management Bis (Mike West)
 
+MW: Ready to submit a new draft that inlines some of the extensions.
+
 MT: Point of that draft (draft-thomson-http-omnomnom) is principles by which you'd set policy. What Chrome does is a subset and could change over time. Need to allow for changes in the environment. A framework for UAs to set policy. Happy to talk about what these policies might look like
 
 MNOT: Is this good, or do you want more definitive.
@@ -93,9 +95,9 @@ Chair: is there an issue for this on the fetch spec?
 
 ### Header common structure (Mark for Poul-Henning)
 
-Mike West: JSON has tooling everywhere. Easy to use. Good to use that.
+Mike West (on the use of JSON instead): JSON has tooling everywhere. Easy to use. Good to use that.
 
-Julian: main issue - not making progress.
+Julian: main issue with common structure draft - not making progress.
 
 Patrick: a little patience
 
@@ -103,11 +105,13 @@ Michael Bishop (via MeetEcho): Agree that parts are missing but think it's salva
 
 Chairs: need to talk to Poul-Henning and huddle
 
-Mike West: have a good understanding of security properties, no problem with using existing JSON parsers
+Mike West (on the use of JSON instead): have a good understanding of security properties, no problem with using existing JSON parsers
 
 MT: Current draft came from a place where it was aspirational about its goals. Maybe can be salvaged, but would like to see goals articulated first. 
 
 Mark: Started discussion on the list. Need to establish goals and get consensus on them.
+
+Julian: offer to finish and publish draft-reschke-http-jfv as alternative (outside the WG)
 
 ### Cache digest (Kazuho Oku)
 
@@ -410,13 +414,11 @@ mnot: has discussed with joe touch
 alexei m: port reassign is doable, some doc coming on it (?)
  
  
-## julian reschke: HTTPtre
+## Julian Reschke: HTTPtre
 
 https://github.com/httpwg/wg-materials/blob/gh-pages/ietf99/ietf-99-httptre.pdf
 
 mnot: not start this now, right?
-
-jr: yes. tho wonder who might be interested in contributing to such an effort...
 
 jr: maintenance is never as exciting as new work...
 

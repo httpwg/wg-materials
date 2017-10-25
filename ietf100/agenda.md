@@ -9,7 +9,7 @@
 
 ## Monday, 13 November 2017
 
-_11:00-12:00	Morning session I, Collyer_
+_11:00-12:00	Morning session I, Collyer_ - [in other time zones](https://www.timeanddate.com/worldclock/fixedtime.html?msg=HTTPbis+First+Session+-+Singapore&iso=20171113T11&p1=236&ah=1)
 
 ### Administrivia
 
@@ -30,7 +30,7 @@ _11:00-12:00	Morning session I, Collyer_
 
 ## Friday, 17 November 2017
 
-_9:30-11:30	Morning session I, Canning_
+_9:30-11:30	Morning session I, Canning_ - [in other time zones](https://www.timeanddate.com/worldclock/fixedtime.html?msg=HTTPbis+Second+Session+-+Singapore&iso=20171117T0930&p1=236&ah=2)
 
 ### Administrivia
 

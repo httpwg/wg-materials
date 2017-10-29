@@ -47,7 +47,6 @@ _9:30-11:30	Morning session I, Canning_
 * [Expect-CT](https://tools.ietf.org/html/draft-ietf-httpbis-expect-ct)
 * [Header Common Structure](https://tools.ietf.org/html/draft-ietf-httpbis-header-structure)
 * [Cache Digests for HTTP/2](https://tools.ietf.org/html/draft-ietf-httpbis-cache-digest)
-* [The ORIGIN HTTP/2 Frame](https://tools.ietf.org/html/draft-ietf-httpbis-origin-frame)
 * [Client Hints](https://tools.ietf.org/html/draft-ietf-httpbis-client-hints)
 * [RFC6265bis: Cookies](https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis)
 

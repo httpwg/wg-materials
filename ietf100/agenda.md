@@ -22,9 +22,10 @@ _11:00-12:00	Morning session I, Collyer_
 * 20 min - [Secondary Certificates](https://tools.ietf.org/html/draft-bishop-httpbis-http2-additional-certs)
 * 10 min - [HTTPter scope of work](http://www.w3.org/mid/96D2ED57-6F30-42E8-B35A-DED214CB113B@mnot.net) -- *Mark Nottingham*
 
-### Related Work
+### Related Work (time permitting)
 
 * 10 min - [Variants](https://mnot.github.io/I-D/variants/) - Mark Nottingham
+* 10 min - [451 New Protocol Elements](https://tools.ietf.org/html/draft-451-new-protocol-elements) - Shivan Sahib
 
 
 ## Friday, 17 November 2017

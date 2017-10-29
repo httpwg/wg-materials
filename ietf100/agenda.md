@@ -9,7 +9,7 @@
 
 ## Monday, 13 November 2017
 
-_11:00-12:00	Morning session I, Collyer_
+_11:00-12:00	Morning session I, Collyer_ - [in other time zones](https://www.timeanddate.com/worldclock/fixedtime.html?msg=HTTPbis+First+Session+-+Singapore&iso=20171113T11&p1=236&ah=1)
 
 ### Administrivia
 
@@ -19,7 +19,8 @@ _11:00-12:00	Morning session I, Collyer_
 
 ### Proposed Work
 
-* 20 min - [Secondary Certificates](https://tools.ietf.org/html/draft-bishop-httpbis-http2-additional-certs) - *Mike Bishop*
+* 10 min - [Secondary Certificates](https://tools.ietf.org/html/draft-bishop-httpbis-http2-additional-certs) - *Mike Bishop*
+* 10 min - [Bootstrapping WebSockets with HTTP/2](https://tools.ietf.org/html/draft-mcmanus-httpbis-h2-websockets) - *Patrick McManus*
 * 10 min - [HTTPter scope of work](http://www.w3.org/mid/96D2ED57-6F30-42E8-B35A-DED214CB113B@mnot.net) - *Mark Nottingham*
 
 ### Related Work (time permitting)
@@ -30,7 +31,7 @@ _11:00-12:00	Morning session I, Collyer_
 
 ## Friday, 17 November 2017
 
-_9:30-11:30	Morning session I, Canning_
+_9:30-11:30	Morning session I, Canning_ - [in other time zones](https://www.timeanddate.com/worldclock/fixedtime.html?msg=HTTPbis+Second+Session+-+Singapore&iso=20171117T0930&p1=236&ah=2)
 
 ### Administrivia
 

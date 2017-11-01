@@ -26,7 +26,7 @@ _11:00-12:00	Morning session I, Collyer_ - [in other time zones](https://www.tim
 ### Related Work (time permitting)
 
 * 10 min - [Variants](https://mnot.github.io/I-D/variants/) - *Mark Nottingham*
-* 10 min - [451 New Protocol Elements](https://tools.ietf.org/html/draft-451-new-protocol-elements) - *Shivan Sahib*
+* 10 min - [451 New Protocol Elements](https://tools.ietf.org/html/draft-451-new-protocol-elements) - *Shivan Sahib* ([presentation](https://datatracker.ietf.org/doc/slides-100-httpbis-sessb-new-protocol-elements-for-http-status-code-451/))
 
 
 ## Friday, 17 November 2017

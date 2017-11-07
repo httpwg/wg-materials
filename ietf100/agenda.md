@@ -38,7 +38,6 @@ _9:30-11:30	Morning session I, Canning_ - [in other time zones](https://www.time
 * 2 min - Blue sheets / scribe selection / NOTE WELL
 * 3 min - Agenda bashing
 
-
 ### Active Drafts
 
 *balance of time*
@@ -47,8 +46,8 @@ _9:30-11:30	Morning session I, Canning_ - [in other time zones](https://www.time
 * [Random Access and Live Content](https://tools.ietf.org/html/draft-ietf-httpbis-rand-access-live)
 * [Expect-CT](https://tools.ietf.org/html/draft-ietf-httpbis-expect-ct)
 * [Header Common Structure](https://tools.ietf.org/html/draft-ietf-httpbis-header-structure)
+  * Possible replacement: [Structured Headers](https://tools.ietf.org/html/draft-nottingham-structured-headers)
 * [Cache Digests for HTTP/2](https://tools.ietf.org/html/draft-ietf-httpbis-cache-digest)
 * [Client Hints](https://tools.ietf.org/html/draft-ietf-httpbis-client-hints)
 * [RFC6265bis: Cookies](https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis)
-
-
+* [BCP56bis](https://tools.ietf.org/html/draft-nottingham-bcp56bis)

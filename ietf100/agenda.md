@@ -19,15 +19,15 @@ _11:00-12:00	Morning session I, Collyer_ - [in other time zones](https://www.tim
 
 ### Proposed Work
 
-* 10 min - [Secondary Certificates](https://tools.ietf.org/html/draft-bishop-httpbis-http2-additional-certs) - *Mike Bishop* [presentation](https://datatracker.ietf.org/doc/slides-100-httpbis-sessb-secondary-certs/)
-* 10 min - [Bootstrapping WebSockets with HTTP/2](https://tools.ietf.org/html/draft-mcmanus-httpbis-h2-websockets) - *Patrick McManus* [presentation](https://datatracker.ietf.org/doc/slides-100-httpbis-sessb-websockets/)
+* 10 min - [Secondary Certificates](https://tools.ietf.org/html/draft-bishop-httpbis-http2-additional-certs) - *Mike Bishop* ([presentation](https://datatracker.ietf.org/doc/slides-100-httpbis-sessb-secondary-certs/))
+* 10 min - [Bootstrapping WebSockets with HTTP/2](https://tools.ietf.org/html/draft-mcmanus-httpbis-h2-websockets) - *Patrick McManus* ([presentation](https://datatracker.ietf.org/doc/slides-100-httpbis-sessb-websockets/))
 * 10 min - [HTTPter scope of work](http://www.w3.org/mid/96D2ED57-6F30-42E8-B35A-DED214CB113B@mnot.net) - *Mark Nottingham*
 
 ### Related Work (time permitting)
 
 * 10 min - [Variants](https://mnot.github.io/I-D/variants/) - *Mark Nottingham*
 * 10 min - [451 New Protocol Elements](https://tools.ietf.org/html/draft-451-new-protocol-elements) - *Shivan Sahib* ([presentation](https://datatracker.ietf.org/doc/slides-100-httpbis-sessb-new-protocol-elements-for-http-status-code-451/))
-* 10 min - [HTTP payments](https://tools.ietf.org/html/draft-hope-bailie-http-payments/) - *Adrian Hope-Bailie*
+* 10 min - [HTTP payments](https://tools.ietf.org/html/draft-hope-bailie-http-payments/) - *Adrian Hope-Bailie* ([presentation](https://datatracker.ietf.org/doc/slides-100-httpbis-sessb-payments/))
 
 
 ## Friday, 17 November 2017

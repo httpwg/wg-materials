@@ -19,8 +19,8 @@ _11:00-12:00	Morning session I, Collyer_ - [in other time zones](https://www.tim
 
 ### Proposed Work
 
-* 10 min - [Secondary Certificates](https://tools.ietf.org/html/draft-bishop-httpbis-http2-additional-certs) - *Mike Bishop*
-* 10 min - [Bootstrapping WebSockets with HTTP/2](https://tools.ietf.org/html/draft-mcmanus-httpbis-h2-websockets) - *Patrick McManus*
+* 10 min - [Secondary Certificates](https://tools.ietf.org/html/draft-bishop-httpbis-http2-additional-certs) - *Mike Bishop* [presentation](https://datatracker.ietf.org/doc/slides-100-httpbis-sessb-secondary-certs/)
+* 10 min - [Bootstrapping WebSockets with HTTP/2](https://tools.ietf.org/html/draft-mcmanus-httpbis-h2-websockets) - *Patrick McManus* [presentation](https://datatracker.ietf.org/doc/slides-100-httpbis-sessb-websockets/)
 * 10 min - [HTTPter scope of work](http://www.w3.org/mid/96D2ED57-6F30-42E8-B35A-DED214CB113B@mnot.net) - *Mark Nottingham*
 
 ### Related Work (time permitting)

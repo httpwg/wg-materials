@@ -41,8 +41,6 @@ _9:30-11:30	Morning session I, Canning_ - [in other time zones](https://www.time
 
 ### Active Drafts
 
-*balance of time*
-
 * [Using Early Data in HTTP](https://tools.ietf.org/html/draft-ietf-httpbis-replay)
 * [Random Access and Live Content](https://tools.ietf.org/html/draft-ietf-httpbis-rand-access-live)
 * [Expect-CT](https://tools.ietf.org/html/draft-ietf-httpbis-expect-ct)
@@ -52,3 +50,6 @@ _9:30-11:30	Morning session I, Canning_ - [in other time zones](https://www.time
 * [Client Hints](https://tools.ietf.org/html/draft-ietf-httpbis-client-hints)
 * [RFC6265bis: Cookies](https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis)
 * [BCP56bis](https://tools.ietf.org/html/draft-nottingham-bcp56bis)
+
+### Related Work (time permitting)
+* [Compression Dictionaries for HTTP/2](https://github.com/vkrasnov/h2-compression-dictionaries)

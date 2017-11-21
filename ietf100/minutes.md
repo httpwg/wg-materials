@@ -1,5 +1,30 @@
 # HTTP WG Meeting Minutes - IETF100, Singapore
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+  - [Monday, 13 November 2017](#monday-13-november-2017)
+    - [Proposed Work](#proposed-work)
+      - [Secondary Certificates - Mike Bishop](#secondary-certificates---mike-bishop)
+      - [Bootstrapping WebSockets with HTTP/2 - Patrick McManus](#bootstrapping-websockets-with-http2---patrick-mcmanus)
+      - [HTTPter scope of work - Mark Nottingham](#httpter-scope-of-work---mark-nottingham)
+    - [Related Work](#related-work)
+      - [Variants - Mark Nottingham](#variants---mark-nottingham)
+      - [451 New Protocol Elements - Shivan Sahib](#451-new-protocol-elements---shivan-sahib)
+  - [Friday, 17 November 2017](#friday-17-november-2017)
+    - [Active Drafts](#active-drafts)
+      - [Expect-CT](#expect-ct)
+      - [Early Data in HTTP](#early-data-in-http)
+      - [Random Access and Live Resources](#random-access-and-live-resources)
+      - [Structured Headers for HTTP](#structured-headers-for-http)
+      - [Cache Digests for HTTP/2](#cache-digests-for-http2)
+      - [Client Hints](#client-hints)
+      - [RFC6265bis: Cookies](#rfc6265bis-cookies)
+      - [BCP56bis](#bcp56bis)
+    - [Related Work](#related-work-1)
+      - [Compression Dictionaries for HTTP/2](#compression-dictionaries-for-http2)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 
 ## Monday, 13 November 2017
 

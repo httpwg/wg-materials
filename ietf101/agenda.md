@@ -20,7 +20,7 @@ _Time and Location TBD_
 
 * 15 min - [BCP56bis](https://tools.ietf.org/html/draft-nottingham-bcp56bis) - *Mark Nottingham*
 * 15 min - [Bootstrapping WebSockets](https://tools.ietf.org/html/draft-ietf-httpbis-h2-websockets) - *Patrick McManus*
-* 15 min - [Secondary Certificates](https://tools.ietf.org/html/draft-ietf-httpbis-h2-websockets)
+* 15 min - [Secondary Certificates](https://tools.ietf.org/html/draft-ietf-httpbis-http2-secondary-certs)
 *  5 min - [Expect-CT](https://tools.ietf.org/html/draft-ietf-httpbis-expect-ct)
 * 15 min - [Header Common Structure](https://tools.ietf.org/html/draft-ietf-httpbis-header-structure)
 * 10 min - [Cache Digests for HTTP/2](https://tools.ietf.org/html/draft-ietf-httpbis-cache-digest)

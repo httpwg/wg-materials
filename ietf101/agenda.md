@@ -33,7 +33,8 @@ _Time and Location TBD_
 
 ### Proposed Work
 
-* 10 min - [Variants](https://mnot.github.io/I-D/variants/) - *Mark Nottingham*
 * 20 min - [HTTPter]()
+* 10 min - Alt-Svc Proposals
+* 5 min - [Variants](https://mnot.github.io/I-D/variants/) - *Mark Nottingham*
 
 

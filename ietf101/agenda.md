@@ -34,7 +34,8 @@ _Time and Location TBD_
 ### Proposed Work
 
 * 20 min - [HTTPter]()
-* 10 min - Alt-Svc Proposals
+* 10 min - [The "SNI" Alt-Svc Parameter](https://datatracker.ietf.org/doc/draft-bishop-httpbis-sni-altsvc/) / 
+           [HTTP Alternative Services via DNS](https://datatracker.ietf.org/doc/draft-schwartz-httpbis-dns-alt-svc/) - *Mike Bishop, Ben Schwartz*
 * 5 min - [Variants](https://mnot.github.io/I-D/variants/) - *Mark Nottingham*
 
 

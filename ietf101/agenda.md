@@ -7,9 +7,9 @@
 *Taking minutes? See [our guide](https://github.com/httpwg/wiki/wiki/TakingMinutes)*
 
 
-## Date TBD
+## Tuesday, 20 March 2018
 
-_Time and Location TBD_
+_15:50-18:20	Tuesday Afternoon session II, Balmoral - [other time zones](https://www.timeanddate.com/worldclock/fixedtime.html?msg=HTTP+WG+Meeting&iso=20180320T1550&p1=136&ah=2&am=30)_
 
 ### Administrivia
 

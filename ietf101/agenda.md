@@ -20,9 +20,10 @@ _15:50-18:20	Tuesday Afternoon session II, Balmoral - [other time zones](https:/
 
 * 15 min - [BCP56bis](https://tools.ietf.org/html/draft-nottingham-bcp56bis) - *Mark Nottingham*
 * 15 min - [Bootstrapping WebSockets](https://tools.ietf.org/html/draft-ietf-httpbis-h2-websockets) - *Patrick McManus*
+* 10 min - [Random Access and Live Content](https://tools.ietf.org/html/draft-ietf-httpbis-rand-access-live)
 * 15 min - [Secondary Certificates](https://tools.ietf.org/html/draft-ietf-httpbis-http2-secondary-certs)
 *  5 min - [Expect-CT](https://tools.ietf.org/html/draft-ietf-httpbis-expect-ct) - *Emily Stark*
-* 15 min - [Header Common Structure](https://tools.ietf.org/html/draft-ietf-httpbis-header-structure)
+* 10 min - [Header Common Structure](https://tools.ietf.org/html/draft-ietf-httpbis-header-structure)
 * 10 min - [Cache Digests for HTTP/2](https://tools.ietf.org/html/draft-ietf-httpbis-cache-digest) - *Kazuho Oku*
 * 10 min - [Client Hints](https://tools.ietf.org/html/draft-ietf-httpbis-client-hints)
 *  5 min - [RFC6265bis: Cookies](https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis)

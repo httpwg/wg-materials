@@ -23,7 +23,7 @@ _15:50-18:20	Tuesday Afternoon session II, Balmoral - [other time zones](https:/
 * 10 min - [Random Access and Live Content](https://tools.ietf.org/html/draft-ietf-httpbis-rand-access-live)
 * 15 min - [Secondary Certificates](https://tools.ietf.org/html/draft-ietf-httpbis-http2-secondary-certs)
 *  5 min - [Expect-CT](https://tools.ietf.org/html/draft-ietf-httpbis-expect-ct) - *Emily Stark*
-* 10 min - [Header Common Structure](https://tools.ietf.org/html/draft-ietf-httpbis-header-structure)
+* 10 min - [Header Common Structure](https://tools.ietf.org/html/draft-ietf-httpbis-header-structure) - *Mark Nottingham*
 * 10 min - [Cache Digests for HTTP/2](https://tools.ietf.org/html/draft-ietf-httpbis-cache-digest) - *Kazuho Oku*
 * 10 min - [Client Hints](https://tools.ietf.org/html/draft-ietf-httpbis-client-hints)
 *  5 min - [RFC6265bis: Cookies](https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis)
@@ -34,7 +34,7 @@ _15:50-18:20	Tuesday Afternoon session II, Balmoral - [other time zones](https:/
 
 ### Proposed Work
 
-* 20 min - [HTTPter]()
+* 20 min - [HTTPter]() - *Roy Fielding*
 * 10 min - [The "SNI" Alt-Svc Parameter](https://datatracker.ietf.org/doc/draft-bishop-httpbis-sni-altsvc/) / 
            [HTTP Alternative Services via DNS](https://datatracker.ietf.org/doc/draft-schwartz-httpbis-dns-alt-svc/) - *Mike Bishop, Ben Schwartz*
 * 5 min - [Variants](https://mnot.github.io/I-D/variants/) - *Mark Nottingham*

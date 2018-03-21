@@ -79,8 +79,8 @@
   + there is no solution
   - Alan - Facebook
     - also have this issue
-  - ? - Akamai
-    - currently H2 spec says "if you have an unknown header, must treat it as
+  - Mike Bishop - Akamai
+    - currently H2 spec says "if you have an unknown pseudo header, must treat it as
       a stream error, NOT a connection error"
   - Martin
     - yeah, we kinda screwed up there, but it's OK!

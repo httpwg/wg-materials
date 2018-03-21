@@ -399,7 +399,7 @@ to say about sni.  Not sure if update required.
   - alt-svc will be used first, then will know what other names can be used.
 
 - Martin Thompson
-  - Akamai are looking at using SNI for validating ownership of domains
+  - ACME are looking at using SNI for validating ownership of domains
   - this would be a landmine for them.
   - what's the relationship between expiration times and RRSET
   - A: draft says expiration times must match

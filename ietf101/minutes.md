@@ -225,7 +225,7 @@ no comments
 - Patrick
   - ORIGIN - fairly serious deviation from definition
 
-- Alexandro
+- Alessandro Ghedini
   - don't think it should be per-origin - it's a per-server thing
 
 - Mike Bishop
@@ -250,7 +250,7 @@ Question:
 + most URLs the block rendering are long-term cacheable.
 + proposal: remove stale support
 
-- Alexandro
+- Alessandro Ghedini
   - agree that removing would be better
   - complication: if HTTP2 stack is separate from cache.  If you don't know etag
     you would just ignore it anyway

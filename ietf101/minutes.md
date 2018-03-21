@@ -1,23 +1,26 @@
-IETF101: 20 march 2018 httpbis meeting
+# IETF101: 20 March 2018 HTTP WG Meeting Minutes
 
-Agenda Bash: nothing
 
-BCP56bis: revision of use of HTTP as a substrate
+## Active Drafts
+
+### BCP56bis: revision of use of HTTP as a substrate
+
 * Mark: good progress - more examples, more review required
 * Reviews have been positive - useful outside this group
 
-Bootstrapping Websockets:
+### Bootstrapping Websockets
+
 * Issue 471: consider using ALPN (currently using Upgrade)
   - Martin Thompson
     - inherent problem with this proposal,
       don't know that server supports HTTP/2.
     - to use this design, have to choose HTTP/1.1
-  - Nick - akamai
+  - Nick - Akamai
     - is it worth having an H2 w connect ALPN token.
     - response: have resisted bundling options at
       request time.
   - Ben - Google
-    - Chrome has an implmementation, rough but seems to work
+    - Chrome has an implementation, rough but seems to work
     - 2 servers: hghttp2 and libwebsockets.
     - server implementors have tested with Chrome, it works
     - 3rd server in dev, doesn't work yet.
@@ -28,12 +31,13 @@ Bootstrapping Websockets:
   - Martin - Mozilla
     - in TLS/1.3 server can send settings first anyway.  Temporary
       problem, not dire
+
 * Is modifying CONNECT REASONABLE?
   + in every codebase, connect is handled in a different codepath
     already.
   + alternative: new method rather than CONNECT
   - Mark Nottingham
-    - want to make sure that we conciously do this: having a protocol
+    - want to make sure that we consciously do this: having a protocol
       specific setting override standard HTTP method behaviour
   - Julien (??)
     - what's the process for defining new headers?  H2 spec says we
@@ -59,9 +63,7 @@ Bootstrapping Websockets:
 QUESTION to the room: does anyone have any problems with modifying CONNECT?  Nope.
 
 
----
-
-Random access and live content - Craig Pratt (remote)
+### Random access and live content - Craig Pratt (remote)
 
 New standard went out last night - not significantly different to previous,
 mostly editorial.
@@ -80,12 +82,11 @@ Q: what's left before last call?
     - see question on mailing list about 416
     - answer: while server may internally use circular buffer to represent
       shift buffer, shouldn't be a concept of resetting.
-    - can't internally have a concept of resetting if it's going to be cachable
+    - can't internally have a concept of resetting if it's going to be cacheable
     - Martin Thompson: great answer, don't need to write it down
 
----
 
-Secondary Certificates: Mike
+### Secondary Certificates: Mike
 
 Adopted last time.  Have merged it.  Exported identifiers (TLS group)
 
@@ -138,15 +139,13 @@ Mike: don't have advice for detecting key compromise
 More to talk about, not going to WGLC any time soon!
 
 
----
 
-Expect-CT: Emily can't be here.
+### Expect-CT: Emily can't be here.
 
 no comments
 
----
 
-Header Common Structure - Mark Nottingham
+### Header Common Structure - Mark Nottingham
 
 - Martin Thompson
   - limits are good
@@ -178,18 +177,17 @@ Header Common Structure - Mark Nottingham
 
 - Jeffery Yaskin
   - Chrome has a prototype already
-  - Mark: YAY - shreiked!  Patrick insists this is in.
+  - Mark: YAY - shrieked!  Patrick insists this is in.
   - currently specified as http list syntax - HTTP spec specifies
     how to handle multiple headers
 
 - Brent/Brand?
-  - was going to comment in disussion about strings, but:
+  - was going to comment in discussion about strings, but:
   - URIs?  Common data type, should they have separate representation?
   - suggest: maximum length of string take URI into account
 
-----
 
-Cache Digests for HTTP/2 - Kazuho Oku
+### Cache Digests for HTTP/2 - Kazuho Oku
 
 2 open issues (plus 1 editorial issue not covered today)
 
@@ -212,7 +210,7 @@ Cache Digests for HTTP/2 - Kazuho Oku
 
 - Mark Nottingham
   - if not caching, ORIGIN makes sense
-  - Patrick: didn't envisige that ORIGIN would be just a bunch of settings
+  - Patrick: didn't envisage that ORIGIN would be just a bunch of settings
   - maybe new frame type would make sense, but how do you cache it?
 
 Explore on the list
@@ -224,7 +222,7 @@ Explore on the list
 
 Question:
 + remove etag/stale support?
-+ most URLs the block rendering are long-term cachable.
++ most URLs the block rendering are long-term cacheable.
 + proposal: remove stale support
 
 - Alexandro
@@ -232,9 +230,8 @@ Question:
   - complication: if HTTP2 stack is separate from cache.  If you don't know etag
     you would just ignore it anyway
 
-----
 
-Client Hints
+### Client Hints
 
 - ?
   - confused about status and direction
@@ -251,9 +248,7 @@ Client Hints
   - opposed to geolocation because don't understand how to control that info.
 
 - Eric
-  - considition 3 cuts in 2 directions.  If you can store cookies and javascript,
-    can already shove this data in a cookie!  If you can do that, why do we need
-    the header?
+  - consideration 3 cuts in 2 directions.  If you can store cookies and javascript, can already shove this data in a cookie!  If you can do that, why do we need the header?
   - only difference is for first hit
 
 - ?
@@ -262,15 +257,15 @@ Client Hints
 
 Not going to WGLC terribly soon
 
-----
 
-Cookies
+### Cookies
 
-No update.  Hopefuly wind up soonish.
+No update.  Hopefully wind up soonish.
 
-----
 
-Origin-Signed Exchanges: Jeffrey Yasskin, Chromium
+## Related Work
+
+### Origin-Signed Exchanges: Jeffrey Yasskin, Chromium
 
 - 10 minutes on presentation - 10 min for discussion!
 
@@ -304,7 +299,7 @@ Origin-Signed Exchanges: Jeffrey Yasskin, Chromium
   - e.g. Javascript can't run, or can't have origin, until signature verified online
   - answer: haven't figured out exactly when browser should verify
 
-- ? - UC Berkeley
+- Nick Doty - UC Berkeley
   - what should server do after they screw up and sign something stateful.
   - should stop signing new ones
   - can use Clear-Site-Data header to clear everything if known to have
@@ -314,9 +309,10 @@ Origin-Signed Exchanges: Jeffrey Yasskin, Chromium
 
 Mark: Not considering adopting now, but that might change.
 
-----
 
-HTTPtre: Julian Reschke
+## Proposed Work
+
+### HTTPtre: Julian Reschke
 
 Notion: review HTTP/1.1 ONE MORE TIME
 
@@ -350,13 +346,12 @@ Show of hands: 15 people willing to work on this!
 Either 2 documents or 3 documents.
 
 HUM: "if you want working group to take on draft-bishop-decomposing-http
-and produce fewer docuents".
+and produce fewer documents".
 
 Shift over to BIS repo and rename it, preserve issues list.
 
-----
 
-Preserving SNI privacy (yep, again)
+### Preserving SNI privacy (yep, again)
 
 - Erik
   - question about 0-RTT version for *.github.io
@@ -379,7 +374,7 @@ to say about sni.  Not sure if update required.
   - alt-svc will be used first, then will know what other names can be used.
 
 - Martin Thompson
-  - akamai are looking at using SNI for validating ownership of domains
+  - Akamai are looking at using SNI for validating ownership of domains
   - this would be a landmine for them.
   - what's the relationship between expiration times and RRSET
   - A: draft says expiration times must match
@@ -395,9 +390,7 @@ Authors: are you asking us to adopt these drafts?
   - they're not ready (as a speaker for the NO hum)
   - would like to see more discussion on the list
 
-----
-
-Variants
+### Variants
 
 Adopt?
 
@@ -415,4 +408,4 @@ HUM: in favour of adoption, to be confirmed on the list.
 
 Have parked Key - assumption is that this replaces Key.  No objections.
 
-Roy Fielding as co-author, no objection
+Roy Fielding as co-author of key, no objection

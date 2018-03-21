@@ -155,7 +155,7 @@ Mike: don't have advice for detecting key compromise
 * ANOTHER POINT: describes a single connection.
   - doesn't handle multiple connections, when one has an existing connection
     to an origin and another connection claims that same identity. How to
-    select between them.
+    select between them?
   - Mike: would be happy to receive some text about it, but generally
     you might have multiple connections which are valid for another
     server.

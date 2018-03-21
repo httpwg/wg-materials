@@ -125,8 +125,8 @@ already gone.
     be buttoned down.
   - Mark: happy to let it bubble along while TLS iw working on it.
   - Patrick: important to future of HTTP, so get it on your radar.
-- Lance - Google
-  - it's a rethinking of how we think about the TLS crypt
+- Ryan Sleevi - Google
+  - it's a rethinking of how we think about the TLS crypto
   - one thing not addressed in the draft - client risk (might want to look
     at DNS).
   - talking to server operators: potentially allows widespread attack if you

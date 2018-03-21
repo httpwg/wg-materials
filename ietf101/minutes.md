@@ -182,7 +182,7 @@ no comments
   - point is to have a generic implementation.  Don't want to allow override of limits
   - Mark: could define structured-headers-2
 
-- ?
+- Roy Fielding
   - not sure that this would do any good
   - we already have guidance on headers, an nobody follows them already
   - who enforces?
@@ -337,16 +337,29 @@ Mark: Not considering adopting now, but that might change.
 
 ## Proposed Work
 
-### HTTPtre: Julian Reschke
+### HTTPtre: Julian Reschke and Roy Fielding
 
-Notion: review HTTP/1.1 ONE MORE TIME
+Notion: revise HTTP/1.1 ONE MORE TIME
+
+We have been working in a temporary repo on Github, resurrected the old RFCs,
+and published six drafts with minimal editorial updates to reflect status:
+
+- draft-fielding-httpbis-http-messaging-00
+- draft-fielding-httpbis-http-semantics-00
+- draft-fielding-httpbis-http-conditional-00
+- draft-fielding-httpbis-http-range-00
+- draft-fielding-httpbis-http-cache-00
+- draft-fielding-httpbis-http-auth-00
+
+The question is if the WG wants to adopt these documents with intent to
+revise, possibly consolidate, and publish toward full standard status.
 
 - Martin Thompson
   - it's our responsibility to maintain documents, not necessarily strive for
     perfection!
   - might not need to go to full standard
 
-Patrick - Chair comment: would like to see this work
+- Patrick - Chair comment: would like to see this work
 
 - Mike Bishop
   - as author or semantic layer draft, would love to see it in the spec
@@ -360,7 +373,7 @@ Patrick - Chair comment: would like to see this work
   - but: would like to get this done FAST.  Intend to spend a lot of time
     on this, and want to get it done ASAP.  Hopefully this year.
 
-- ?: would be shocked if this isn't done before QUIC.
+- Roy Fielding: would be shocked if this isn't done before QUIC.
 
 Show of hands: 15 people willing to work on this!
 
@@ -370,10 +383,10 @@ Show of hands: 15 people willing to work on this!
 
 Either 2 documents or 3 documents.
 
-HUM: "if you want working group to take on draft-bishop-decomposing-http
-and produce fewer documents".
+HUM: "if you want working group to take on draft-fielding-httpbis-*
+and produce fewer documents".  Strong hums in support, no hums against.
 
-Shift over to BIS repo and rename it, preserve issues list.
+Plan now is to shift over to BIS repo, rename it, and preserve issues list.
 
 
 ### Preserving SNI privacy (yep, again)
@@ -426,11 +439,11 @@ Adopt?
 about 10 people have read draft
 
 - Roy Fielding
-  - asked on list?
+  - wasn't this already asked on list?
   - A: Got a bunch of responses.  Seen
 
 HUM: in favour of adoption, to be confirmed on the list.
 
 Have parked Key - assumption is that this replaces Key.  No objections.
 
-Roy Fielding as co-author of key, no objection
+Roy Fielding, as co-author of key: no objection

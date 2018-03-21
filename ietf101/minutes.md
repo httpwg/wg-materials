@@ -2,6 +2,30 @@
 
 *Scribe: Bron Gondwana*
 
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Active Drafts](#active-drafts)
+  - [BCP56bis: revision of use of HTTP as a substrate](#bcp56bis-revision-of-use-of-http-as-a-substrate)
+  - [Bootstrapping Websockets](#bootstrapping-websockets)
+  - [Random access and live content - Craig Pratt (remote)](#random-access-and-live-content---craig-pratt-remote)
+  - [Secondary Certificates: Mike](#secondary-certificates-mike)
+  - [Expect-CT: Emily can't be here.](#expect-ct-emily-cant-be-here)
+  - [Header Common Structure - Mark Nottingham](#header-common-structure---mark-nottingham)
+  - [Cache Digests for HTTP/2 - Kazuho Oku](#cache-digests-for-http2---kazuho-oku)
+  - [Client Hints](#client-hints)
+  - [Cookies](#cookies)
+- [Related Work](#related-work)
+  - [Origin-Signed Exchanges: Jeffrey Yasskin, Chromium](#origin-signed-exchanges-jeffrey-yasskin-chromium)
+- [Proposed Work](#proposed-work)
+  - [HTTPtre: Julian Reschke](#httptre-julian-reschke)
+  - [Preserving SNI privacy (yep, again)](#preserving-sni-privacy-yep-again)
+  - [Variants](#variants)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+
 ## Active Drafts
 
 ### BCP56bis: revision of use of HTTP as a substrate

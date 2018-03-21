@@ -313,9 +313,12 @@ No update.  Hopefully wind up soonish.
     would be bad.
   - To clarify: this working group not adopting
 
-- ?
+- Paul van Brouwershaven - GlobalSign
   - OCSP status of certificate and 7 day limit
-  - but - CAB forum, that's a maximum, could be shorter.  Also caching.
+  - but - Is this seven day period fixed? The CAB forum states that updates should 
+    happen at least every four days (max validity of 10 days) but CA's might decide
+    to issue a response  with a shorter validity. Remaining duration can also be 
+    shorter as result of caching.
   - answer: have had requests to make it both longer and shorter!
   - think: will stop trusting at the shorter of this and cache-control headers
 

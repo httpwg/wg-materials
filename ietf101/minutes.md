@@ -64,9 +64,9 @@
   - Mark Nottingham
     - want to make sure that we consciously do this: having a protocol
       specific setting override standard HTTP method behaviour
-  - Julien (??)
-    - what's the process for defining new headers?  H2 spec says we
-      can't define new headers?
+  - Julian Reschke
+    - what's the process for defining new pseudo headers?  H2 spec says we
+      can't define new pseudo headers?
     - answer: 7540 is clear that settings mechanism can override behaviour
   - Martin
     - sending this new pseudo-header in a request to a server you haven't

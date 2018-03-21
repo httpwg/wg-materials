@@ -194,7 +194,7 @@ no comments
   - ability for specific sub behaviour
   - Mark: could just do a non-common header, or define new common-2
 
-- Julien
+- Julian Reschke
   - maybe would make sense to think about length limits in a different way than
     currently.
   - maybe just specify whole size of header field?
@@ -360,7 +360,7 @@ Patrick - Chair comment: would like to see this work
   - but: would like to get this done FAST.  Intend to spend a lot of time
     on this, and want to get it done ASAP.  Hopefully this year.
 
-- Julian: would be shocked if this isn't done before QUIC.
+- ?: would be shocked if this isn't done before QUIC.
 
 Show of hands: 15 people willing to work on this!
 

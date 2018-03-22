@@ -44,7 +44,7 @@
     - is it worth having an H2 w connect ALPN token.
     - response: have resisted bundling options at
       request time.
-  - Ben - Google
+  - Bence Béky - Google
     - Chrome has an implementation, rough but seems to work
     - 2 servers: hghttp2 and libwebsockets.
     - server implementors have tested with Chrome, it works

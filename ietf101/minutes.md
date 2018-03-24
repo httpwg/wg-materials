@@ -127,8 +127,9 @@ already gone.
   - Patrick: important to future of HTTP, so get it on your radar.
 - Ryan Sleevi - Google
   - it's a rethinking of how we think about the TLS crypto
-  - one thing not addressed in the draft - client risk (might want to look
-    at DNS).
+  - one thing not addressed in the draft - it addresses client risk (might want to look
+    at DNS), but doesn't address server risk - the risk a server has of
+    being impersonated.
   - talking to server operators: potentially allows widespread attack if you
     can obtain a compromised certificate.
   - right now you can use BGP detection, etc.   Not possible with secondary certs
@@ -141,7 +142,7 @@ already gone.
   - Mark: can you suggest text.
 
 - CT: works for illegitimate certs
-- but: with stolen cert (server key)
+- but: with stolen cert (server key compromise)
   - can't discover compromise easily with this
 
 Mike: don't have advice for detecting key compromise
@@ -152,7 +153,9 @@ Mike: don't have advice for detecting key compromise
   in one of these"
 
 * ANOTHER POINT: describes a single connection.
-  - doesn't handle multiple connections when only one has been upgraded.
+  - doesn't handle multiple connections, when one has an existing connection
+    to an origin and another connection claims that same identity. How to
+    select between them?
   - Mike: would be happy to receive some text about it, but generally
     you might have multiple connections which are valid for another
     server.

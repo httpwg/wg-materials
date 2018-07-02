@@ -32,6 +32,10 @@ _15:50-18:20	Tuesday Afternoon session II, Place du Canada - [other time zones](
 * 20 min - [The "SNI" Alt-Svc Parameter](https://datatracker.ietf.org/doc/draft-bishop-httpbis-sni-altsvc/) / 
            [HTTP Alternative Services via DNS](https://datatracker.ietf.org/doc/draft-schwartz-httpbis-dns-alt-svc/) - *Mike Bishop, Ben Schwartz*
 
+### Related
+
+* 15 min - H2 Server Push Data - *Yoav Weiss, Aman Nanner*
+
 
 ## Wednesday, 18 July 2018
 

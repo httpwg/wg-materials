@@ -28,7 +28,7 @@ _15:50-18:20	Tuesday Afternoon session II, Place du Canada - [other time zones](
 
 ### Proposed Work
 
-* 20 min - [HELIUM](http://tools.ietf.org/html/draft-schwartz-httpbis-helium) - *Lucas Pardue (remote)*
+* 20 min - [HTTP-initiated Network Tunnelling](https://datatracker.ietf.org/doc/draft-pardue-httpbis-http-network-tunnelling/) / [HELIUM](http://tools.ietf.org/html/draft-schwartz-httpbis-helium) - *Lucas Pardue (remote), Ben Schwartz*
 * 20 min - [The "SNI" Alt-Svc Parameter](https://datatracker.ietf.org/doc/draft-bishop-httpbis-sni-altsvc/) / 
            [HTTP Alternative Services via DNS](https://datatracker.ietf.org/doc/draft-schwartz-httpbis-dns-alt-svc/) - *Mike Bishop, Ben Schwartz*
 

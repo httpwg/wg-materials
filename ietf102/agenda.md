@@ -22,7 +22,7 @@ _15:50-18:20	Tuesday Afternoon session II, Place du Canada - [other time zones](
 * 20 min - [BCP56bis](https://tools.ietf.org/html/draft-ietf-httpbis-bcp56bis) - *Mark Nottingham*
 * 10 min - [Secondary Certificates](https://tools.ietf.org/html/draft-ietf-httpbis-http2-secondary-certs) - *Martin Thomson / Mike Bishop / Nick Sullivan*
 * 15 min - [Structured Headers](https://tools.ietf.org/html/draft-ietf-httpbis-header-structure) - *Mark Nottingham*
-* 10 min - [Cache Digests for HTTP/2](https://tools.ietf.org/html/draft-ietf-httpbis-cache-digest) - *Kazuho Oku*
+*  5 min - [Cache Digests for HTTP/2](https://tools.ietf.org/html/draft-ietf-httpbis-cache-digest) - *Kazuho Oku*
 * 10 min - [Client Hints](https://tools.ietf.org/html/draft-ietf-httpbis-client-hints)
 * 10 min - [RFC6265bis: Cookies](https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis)
 
@@ -35,7 +35,7 @@ _15:50-18:20	Tuesday Afternoon session II, Place du Canada - [other time zones](
 ### Related
 
 * 15 min - H2 Server Push Data - *Yoav Weiss, Aman Nanner*
-
+*  5 min - More H2 Server Push Data - *Brad Lassey*
 
 ## Wednesday, 18 July 2018
 
@@ -46,8 +46,12 @@ _13:30-15:00	Wednesday Afternoon session I, Laurier - [other time zones](https:/
 *  3 min - Blue sheets / scribe selection / NOTE WELL
 *  2 min - Agenda bashing
 
-### HTTPter
+### QUIC and HTTP
 
-* 15min - Editors' update
-* 70min - Issue discussion
+* 15 min - [HTTP and QUIC Updates](https://tools.ietf.org/html/draft-ietf-quic-http) - *Mike Bishop*
+
+### HTTP Core
+
+* 15 min - Editors' update
+* 55 min - Issue discussion
 

@@ -24,13 +24,14 @@ _15:50-18:20	Tuesday Afternoon session II, Place du Canada - [other time zones](
 * 15 min - [Structured Headers](https://tools.ietf.org/html/draft-ietf-httpbis-header-structure) - *Mark Nottingham*
 *  5 min - [Cache Digests for HTTP/2](https://tools.ietf.org/html/draft-ietf-httpbis-cache-digest) - *Kazuho Oku*
 * 10 min - [Client Hints](https://tools.ietf.org/html/draft-ietf-httpbis-client-hints)
-* 10 min - [RFC6265bis: Cookies](https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis)
+*  5 min - [RFC6265bis: Cookies](https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis)
 
 ### Proposed Work
 
 * 20 min - [HTTP-initiated Network Tunnelling](https://datatracker.ietf.org/doc/draft-pardue-httpbis-http-network-tunnelling/) / [HELIUM](http://tools.ietf.org/html/draft-schwartz-httpbis-helium) - *Lucas Pardue (remote), Ben Schwartz*
-* 20 min - [The "SNI" Alt-Svc Parameter](https://datatracker.ietf.org/doc/draft-bishop-httpbis-sni-altsvc/) / 
+* 15 min - [The "SNI" Alt-Svc Parameter](https://datatracker.ietf.org/doc/draft-bishop-httpbis-sni-altsvc/) / 
            [HTTP Alternative Services via DNS](https://datatracker.ietf.org/doc/draft-schwartz-httpbis-dns-alt-svc/) - *Mike Bishop, Ben Schwartz*
+* 10 min - [CDN Loop Prevention](https://www.ietf.org/id/draft-cdn-loop-prevention) - *Nick Sullivan*
 
 ### Related
 

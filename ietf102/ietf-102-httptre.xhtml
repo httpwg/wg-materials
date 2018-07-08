@@ -1,0 +1,123 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>IETF 102 - HTTPtre</title>
+    <style type="text/css">
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:r,b,i,bi');
+
+body {
+  color: black;
+  font-family: 'Noto Sans', cambria, helvetica, arial, sans-serif;
+  font-size: 18pt;
+}
+h1 {
+  font-size: 36pt;
+}
+pre {
+  font-family: consolas;
+}
+tt {
+  font-family: consolas;
+}
+li {
+  margin-top: 0.5em;
+}
+q {
+  font-style: italic;  
+}
+del {
+  color: red;
+  text-decoration: line-through;
+}
+ins {
+  color: green;
+  text-decoration: underline;
+}
+.break {
+  page-break-before: always;
+}
+@page {
+  font-family: 'Noto Sans', cambria, helvetica, arial, sans-serif;
+  size: a4 landscape;
+}
+@page {
+  @bottom-left {
+       content: "Julian Reschke, greenbytes";
+  }
+  @bottom-right {
+       content: counter(page);
+  }
+  @top-center {
+       content: "IETF 102 - HTTPtre";
+  }
+}
+    </style>
+  </head>
+  <body>
+    <h1>IETF 102 - HTTPtre</h1>
+    <p>
+      <a href="mailto:julian.reschke@greenbytes.de">Julian Reschke</a>, greenbytes
+    </p>
+    <h2 class="break">Current Status</h2>
+    <p>
+      New set of drafts submitted in July:
+    </p>
+    <ul>
+      <li>
+        <a href="https://greenbytes.de/tech/webdav/draft-ietf-httpbis-semantics-02.html">draft-ietf-httpbis-semantics-02</a>
+        (<a href="https://tools.ietf.org/html/draft-ietf-httpbis-semantics-02">diffs</a>)
+      </li>
+      <li>
+        <a href="https://greenbytes.de/tech/webdav/draft-ietf-httpbis-messaging-02.html">draft-ietf-httpbis-messaging-02</a>
+        (<a href="https://tools.ietf.org/html/draft-ietf-httpbis-messaging-02">diffs</a>)
+      </li>
+      <li>
+        <a href="https://greenbytes.de/tech/webdav/draft-ietf-httpbis-cache-02.html">draft-ietf-httpbis-cache-02</a>
+        (<a href="https://tools.ietf.org/html/draft-ietf-httpbis-cache-02">diffs</a>)
+      </li>
+    </ul>
+    <h2 class="break">HTTPbis Errata</h2>
+    <ul>
+      <li>27 non-rejected errata in total, of which</li>
+      <li>13 "Verified", 9 "Held for Document Update", 5 "Reported"</li>
+      <li>18 addressed in -02 drafts, 9 open</li>
+      <li>all mapped to issues on Github</li>
+    </ul>
+    <p>
+      Summary: <a href="https://httpwg.org/http-core/httpbis-errata-status.html">https://httpwg.org/http-core/httpbis-errata-status.html</a>
+    </p>
+    <h2 class="break">Github issues</h2>
+    <ul>
+      <li>122 in total, of which</li>
+      <li>79 open, 29 closed in -01</li>
+      <li>27 for errata (21 closed)</li>
+      <li>40 editorial (27 closed)</li>
+    </ul>
+    <p>
+      Summary: <a href="https://github.com/httpwg/http-core/issues">https://github.com/httpwg/http-core/issues</a>
+    </p>
+    <p>
+      Scheduled for discussion in Montreal:
+      <a href="https://github.com/httpwg/http-core/labels/discuss">https://github.com/httpwg/http-core/labels/discuss</a>
+    </p>
+    <h2 class="break">ABNF</h2>
+    <p>
+      Test suite? (need ABNF-driven parser)
+    </p>
+    <p>
+      Clearly separate message level from field level ABNF?
+    </p>
+    <h2 class="break">Also worth discussing</h2>
+    <p>
+      Relation to other related specs, such as:
+    </p>
+    <ul>
+      <li><a href="https://datatracker.ietf.org/doc/draft-ietf-quic-qpack/">draft-ietf-quic-qpack</a> and <a href="https://datatracker.ietf.org/doc/draft-ietf-quic-http/">draft-ietf-quic-http</a></li>
+      <li><a href="https://datatracker.ietf.org/doc/draft-ietf-httpbis-bcp56bis/">draft-ietf-httpbis-bcp56bis</a></li>
+    </ul>
+    <p>
+      ...maybe <a href="https://datatracker.ietf.org/doc/draft-ietf-httpbis-rfc6265bis/">draft-ietf-httpbis-rfc6265bis</a>?
+    </p>
+  </body>
+</html>

@@ -56,5 +56,5 @@ _13:30-15:00	Wednesday Afternoon session I, Laurier - [other time zones](https:/
 ### HTTP Core
 
 * 15 min - Editors' update ([slides](https://github.com/httpwg/wg-materials/blob/gh-pages/ietf102/ietf-102-httptre.pdf))
-* 55 min - Issue discussion
+* 55 min - Issue discussion ([list](https://github.com/httpwg/http-core/labels/discuss))
 

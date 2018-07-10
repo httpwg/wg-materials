@@ -37,7 +37,7 @@ _15:50-18:20	Tuesday Afternoon session II, Place du Canada - [other time zones](
 
 ### Related
 
-* 15 min - H2 Server Push Data - *Yoav Weiss, Aman Nanner* ([slides](https://github.com/httpwg/wg-materials/blob/gh-pages/ietf102/akamai-server-push.pdf))
+* 15 min - H2 Server Push Data - *Yoav Weiss (remote), Aman Nanner* ([slides](https://github.com/httpwg/wg-materials/blob/gh-pages/ietf102/akamai-server-push.pdf))
 *  5 min - More H2 Server Push Data - *Brad Lassey*
 
 ## Wednesday, 18 July 2018

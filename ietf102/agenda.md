@@ -13,7 +13,7 @@ _15:50-18:20	Tuesday Afternoon session II, Place du Canada - [other time zones](
 
 ### Administrivia
 
-*  3 min - Blue sheets / scribe selection / NOTE WELL
+*  3 min - Blue sheets / scribe selection / [NOTE WELL](https://www.ietf.org/about/note-well/)
 *  2 min - Agenda bashing
 
 ### Active Extension Drafts
@@ -46,7 +46,7 @@ _13:30-15:00	Wednesday Afternoon session I, Laurier - [other time zones](https:/
 
 ### Administrivia
 
-*  3 min - Blue sheets / scribe selection / NOTE WELL
+*  3 min - Blue sheets / scribe selection / [NOTE WELL](https://www.ietf.org/about/note-well/)
 *  2 min - Agenda bashing
 
 ### QUIC and HTTP

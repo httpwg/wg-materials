@@ -23,7 +23,7 @@ _15:50-18:20	Tuesday Afternoon session II, Place du Canada - [other time zones](
 * 10 min - [Secondary Certificates](https://tools.ietf.org/html/draft-ietf-httpbis-http2-secondary-certs) - *Martin Thomson / Mike Bishop / Nick Sullivan*
            ([slides](https://github.com/httpwg/wg-materials/blob/gh-pages/ietf102/secondary_certs.pdf))
 * 15 min - [Structured Headers](https://tools.ietf.org/html/draft-ietf-httpbis-header-structure) - *Mark Nottingham* ([slides](https://github.com/httpwg/wg-materials/blob/gh-pages/ietf102/sh.pdf))
-*  5 min - [Cache Digests for HTTP/2](https://tools.ietf.org/html/draft-ietf-httpbis-cache-digest) - *Kazuho Oku*
+*  5 min - [Cache Digests for HTTP/2](https://tools.ietf.org/html/draft-ietf-httpbis-cache-digest) - *Kazuho Oku* ([slides](https://github.com/httpwg/wg-materials/blob/gh-pages/ietf102/ietf-102-cache-digests.pdf))
 *  5 min - [Client Hints](https://tools.ietf.org/html/draft-ietf-httpbis-client-hints)
 *  5 min - [RFC6265bis: Cookies](https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis) - *Mike West (remote)*
 

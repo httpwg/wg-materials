@@ -18,11 +18,11 @@ _15:50-18:20	Tuesday Afternoon session II, Place du Canada - [other time zones](
 
 ### Active Extension Drafts
 
-*  5 min - [Variants](https://tools.ietf.org/html/draft-ietf-httpbis-variants) - *Mark Nottingham*
+*  5 min - [Variants](https://tools.ietf.org/html/draft-ietf-httpbis-variants) - *Mark Nottingham* ([slides](https://github.com/httpwg/wg-materials/blob/gh-pages/ietf102/variants.pdf))
 * 20 min - [BCP56bis](https://tools.ietf.org/html/draft-ietf-httpbis-bcp56bis) - *Mark Nottingham*
 * 10 min - [Secondary Certificates](https://tools.ietf.org/html/draft-ietf-httpbis-http2-secondary-certs) - *Martin Thomson / Mike Bishop / Nick Sullivan*
            ([slides](https://github.com/httpwg/wg-materials/blob/gh-pages/ietf102/secondary_certs.pdf))
-* 15 min - [Structured Headers](https://tools.ietf.org/html/draft-ietf-httpbis-header-structure) - *Mark Nottingham*
+* 15 min - [Structured Headers](https://tools.ietf.org/html/draft-ietf-httpbis-header-structure) - *Mark Nottingham* ([slides](https://github.com/httpwg/wg-materials/blob/gh-pages/ietf102/sh.pdf))
 *  5 min - [Cache Digests for HTTP/2](https://tools.ietf.org/html/draft-ietf-httpbis-cache-digest) - *Kazuho Oku*
 *  5 min - [Client Hints](https://tools.ietf.org/html/draft-ietf-httpbis-client-hints)
 *  5 min - [RFC6265bis: Cookies](https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis) - *Mike West (remote)*

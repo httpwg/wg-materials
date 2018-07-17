@@ -33,7 +33,7 @@ _15:50-18:20	Tuesday Afternoon session II, Place du Canada - [other time zones](
 * 20 min - [The "SNI" Alt-Svc Parameter](https://datatracker.ietf.org/doc/draft-bishop-httpbis-sni-altsvc/) / 
            [HTTP Alternative Services via DNS](https://datatracker.ietf.org/doc/draft-schwartz-httpbis-dns-alt-svc/) - *Mike Bishop, Ben Schwartz*
            ([slides](https://github.com/httpwg/wg-materials/blob/gh-pages/ietf102/alt-svc-sni-dns-httpbis-102-00.pdf))
-* 10 min - [CDN Loop Prevention](https://www.ietf.org/id/draft-cdn-loop-prevention) - *Nick Sullivan* ([slides](https://github.com/httpwg/wg-materials/blob/gh-pages/ietf102/CDN+Loop+Prevention.pdf))
+* 10 min - [CDN Loop Prevention](https://www.ietf.org/id/draft-cdn-loop-prevention) - *Nick Sullivan* ([slides](https://github.com/httpwg/wg-materials/blob/gh-pages/ietf102/CDN-Loop-Prevention.pdf))
 
 ### Related
 

@@ -89,7 +89,7 @@ Julian: What characters are allowed in identifiers?
 Would like to ship by IETF 103
 
 Commitments to review: about four
-		
+
 #### Cache Digests for HTTP/2 - Kazuho Oku
 
 Intend to keep this open
@@ -98,7 +98,7 @@ Intend to keep this open
 
 Just started WG Last Call for three weeks
 
-Experimental because only one browser 
+Experimental because only one browser
 
 #### RFC6265bis: Cookies - Mike West
 
@@ -147,7 +147,7 @@ Patrick: Likes some parts of some of these
 
 Lutz Jacob: Is interested in this for "trusted traffic"
 	Origin can redirect traffic around
-	Publishing the records might be a challenge for the 
+	Publishing the records might be a challenge for the
 
 Ted: Doesn't think DNS human readability is important
 
@@ -243,10 +243,9 @@ Mike: Both are collecting data off of Chrome, but you have diverging results
 
 ## Wednesday, 18 July 2018
 
-# QUIC and HTTP  #
+### QUIC and HTTP
 
-
-## Priorities ##
+#### Priorities
 Patrick: Leave it alone in h/2
 
 Mike Bishop: Do you never expect another version of HTTP?
@@ -271,7 +270,7 @@ Mark Nottingham and Patrick McManus and Martin Thomson: The WICG is a playground
 
 The working group consensus is to do nothing for now.
 
-## GREASE ##
+#### GREASE
 
 Martin Thomson: We should do this to maintain similarity with QUIC, and it's hard.
 
@@ -281,13 +280,12 @@ Mike Bishop: Since the issue was found on a client, then we need servers to depl
 
 Mark Nottingham: anyone want to send GREASE values? (handful)
 
-
 The working group will wait for experimentation reports on the list and decide how to incorporate into the documents.
 
 
-# HTTP Core #
+### HTTP Core
 
-## Editors' update ##
+#### Editors' update
 
 mnot: Have an open issue to reference new documents.  We can go through the cookies doc, but not sure about QUIC.
 
@@ -302,9 +300,9 @@ mcmanus:  I appreciate all the work that went into this reoganization.
 mnot: The overall structure is good, and can be tweaked as we go along.
 
 
-## Issue Discussion ##
+#### Issue Discussion
 
-### Include Status Code 422 (123) ### 
+##### Include Status Code 422 (123)
 
 mnot: Good to add it; it's generic and should be in core.  Do we mark the that this document updates webdav?
 
@@ -316,7 +314,7 @@ mt: Include it, but don't worry about Updates WebDAV.
 There is consensus to include it in HTTP core.
 
 
-### Are headers always defined with ABNF? (74) ###
+##### Are headers always defined with ABNF? (74)
 
 Roy Fielding:  Maybe we change it to be the condition we do not want it to fail.
 
@@ -328,7 +326,7 @@ Martin Thomson: My experience is that things that coelesce do it blindly?
 
 
 
-## Deprecate Accept-Charset (61) ##
+##### Deprecate Accept-Charset (61)
 
 mnot: I recommend changing it to obsoleted.
 
@@ -342,7 +340,7 @@ rfielding: I agree we should have it in the spec, and why you shouldn't use it.
 
 The working group consensus is to mark Accept-Charset as obsolete.
 
-### Reuse of Responses (52) ###
+##### Reuse of Responses (52)
 
 mt: Jeffery notes preload and prefetch also have this problem.
 
@@ -362,7 +360,7 @@ Chris Lemmons: If we get the same requests very close, we collapse them, so clar
 
 The working group consensus is to clarify the definition of 'no-store'.
 
-### 415 and Accept (48) ###
+##### 415 and Accept (48)
 
 Julian: Is this a request to extend RFC 7694?
 
@@ -374,7 +372,7 @@ The working group consensus is to roll 7695 into core.
 
 There is some support to incorporate Accept into the server-side; to confirm on the list.
 
-### * in Accept-* (46) ###
+##### * in Accept-* (46)
 
 Julian: I seen people ask for "*/text" or "*/*+json".
 
@@ -398,7 +396,7 @@ Julian: This might be for BCP 56bis.
 
 The working group consensus is to add text to discourage or warn about it, but not deprecate it.
 
-### Extension Capabilities (44) ###
+##### Extension Capabilities (44)
 
 Mbishop: For connect specifically, it does feel a little weird.  I wonder if we can find appropriate wording about how connect converts to this other tunnel.
 
@@ -426,7 +424,7 @@ The working group consensus is to explore it but wait for h/2 text.
 
 There is also consensus to revisit the definition of CONNECT.
 
-### 3xx redirects - request formation (38) ###
+##### 3xx redirects - request formation (38)
 
 mt: I think this is largely orthogonal; we don't have to do it, but it's reasonable to do while the document is open.
 
@@ -436,7 +434,7 @@ mnot: I think fetch has done a lot of the hard work and we should reflect that h
 
 Working group consensus is to work on some text here.
 
-###  Header registry( 42) ###
+#####  Header registry( 42)
 
 mt: I think this is largely orthogonal; we don't have to do it, but it's reasonable to do while the document is open.  I think this is useful if the registry rulesa re sufficiently different.  I'm a little in support, but procedures can drag on a bit.
 
@@ -444,7 +442,7 @@ Alexey: I would like you to take this issue to dispatch.  If you are suggesting 
 
 This issue requires more discussion on list and likely needs to be taken to DISPATCH.
 
-### Field-name Syntax (30) ###
+##### Field-name Syntax (30)
 
 mt: Sure (make it simpler).
 
@@ -454,6 +452,6 @@ roy: Would like the reduced syntax.
 
 Julian: This can be done with new registration procedures (above).
 
-## Wrap Up ##
+#### Wrap Up
 
 Chairs encourage everyone to engage in the issues on the list.

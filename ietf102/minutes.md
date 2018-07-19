@@ -1,4 +1,46 @@
+
 # HTTP Working Group Minutes
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Tuesday, 17 July 2018](#tuesday-17-july-2018)
+  - [Active Extension Drafts](#active-extension-drafts)
+    - [HTTP Representation Variants - Mark Nottingham](#http-representation-variants---mark-nottingham)
+    - [BCP56bis - Mark Nottingham](#bcp56bis---mark-nottingham)
+    - [Secondary Certificates - Mike Bishop](#secondary-certificates---mike-bishop)
+    - [Structured Headers - Mark Nottingham](#structured-headers---mark-nottingham)
+    - [Cache Digests for HTTP/2 - Kazuho Oku](#cache-digests-for-http2---kazuho-oku)
+    - [Client Hints - Mark Nottingham](#client-hints---mark-nottingham)
+    - [RFC6265bis: Cookies - Mike West](#rfc6265bis-cookies---mike-west)
+  - [Proposed Work](#proposed-work)
+    - [The "SNI" Alt-Svc Parameter / HTTP Alternative Services via DNS - Mike Bishop, Ben Schwartz](#the-sni-alt-svc-parameter--http-alternative-services-via-dns---mike-bishop-ben-schwartz)
+    - [CDN Loop Prevention - Nick Sullivan](#cdn-loop-prevention---nick-sullivan)
+    - [HTTP-initiated Network Tunnelling / HELIUM - Lucas Pardue (remote), Ben Schwartz (slides)](#http-initiated-network-tunnelling--helium---lucas-pardue-remote-ben-schwartz-slides)
+  - [Related](#related)
+    - [H2 Server Push Data - Aman Nanner](#h2-server-push-data---aman-nanner)
+    - [More H2 Server Push Data - Brad Lassey](#more-h2-server-push-data---brad-lassey)
+- [Wednesday, 18 July 2018](#wednesday-18-july-2018)
+  - [QUIC and HTTP](#quic-and-http)
+    - [Priorities](#priorities)
+    - [GREASE](#grease)
+  - [HTTP Core](#http-core)
+    - [Editors' update](#editors-update)
+    - [Issue Discussion](#issue-discussion)
+      - [Include Status Code 422 (123)](#include-status-code-422-123)
+      - [Are headers always defined with ABNF? (74)](#are-headers-always-defined-with-abnf-74)
+      - [Deprecate Accept-Charset (61)](#deprecate-accept-charset-61)
+      - [Reuse of Responses (52)](#reuse-of-responses-52)
+      - [415 and Accept (48)](#415-and-accept-48)
+      - [* in Accept-* (46)](#-in-accept--46)
+      - [Extension Capabilities (44)](#extension-capabilities-44)
+      - [3xx redirects - request formation (38)](#3xx-redirects---request-formation-38)
+      - [Header registry (42)](#header-registry-42)
+      - [Field-name Syntax (30)](#field-name-syntax-30)
+    - [Wrap Up](#wrap-up)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 
 ## Tuesday, 17 July 2018
 

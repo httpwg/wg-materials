@@ -1,6 +1,6 @@
-# HTTPbis WG
+# HTTP Working Group Minutes
 
-## Tuesday, 17 July 2018 1550
+## Tuesday, 17 July 2018
 
 * Chairs: Patrick McManus and Mark Nottingham
 * Minutes: Paul Hoffman
@@ -239,3 +239,221 @@ Erik: Can you filter by when the push happens
 Mike: Both are collecting data off of Chrome, but you have diverging results
 	First navigations are different than all navigations
 	Maybe joint experiment from both sides
+
+
+## Wednesday, 18 July 2018
+
+# QUIC and HTTP  #
+
+
+## Priorities ##
+Patrick: Leave it alone in h/2
+
+Mike Bishop: Do you never expect another version of HTTP?
+
+Patrick McManus: In my mind QUIC is h3
+
+Mark Nottingham:  On the client side it's a clean slate, on the server side I expect them to complain.
+
+Gabriel Montenegro: Do you think we can take advantage of this in h/2 without extra signalling?
+
+Patrick McManus: I see it as a bunch of backporting from hQ to h/2
+
+Jana: Agree with Patrick, leave it alone for now
+
+??  (Apple): I would be content with leaving it alone.  With the future and things diverge, then the API layers should be in line.
+
+Roy Fielding: The question is if someone willing to write a doc about h2 priorities, then we should accept it.
+
+Lucas Purdue: How does this relate to priiority work in WICG?
+
+Mark Nottingham and Patrick McManus and Martin Thomson: The WICG is a playground, and has little weight on their process.
+
+The working group consensus is to do nothing for now.
+
+## GREASE ##
+
+Martin Thomson: We should do this to maintain similarity with QUIC, and it's hard.
+
+Patrick McManus: Many things brought it to tls1.3 and QUIC.  My draft id connect tunnels for websockets was deployed.  He had settings deployed from server -> client, and a popular OS client promptly closed the connection.  If there are other willing to experiment, join me.
+
+Mike Bishop: Since the issue was found on a client, then we need servers to deploy this experiement?
+
+Mark Nottingham: anyone want to send GREASE values? (handful)
+
+
+The working group will wait for experimentation reports on the list and decide how to incorporate into the documents.
+
+
+# HTTP Core #
+
+## Editors' update ##
+
+mnot: Have an open issue to reference new documents.  We can go through the cookies doc, but not sure about QUIC.
+
+mbishop: There text we want to reference in QUIC from the new RFCs.
+
+mnot: I think we can get it done in time for QUIC to reference them.
+
+Roy Fielding: The history of the drafts can be seen for the last 15 years in github.  There are a set of diffs of the changes to HTTP core.
+
+mcmanus:  I appreciate all the work that went into this reoganization.
+
+mnot: The overall structure is good, and can be tweaked as we go along.
+
+
+## Issue Discussion ##
+
+### Include Status Code 422 (123) ### 
+
+mnot: Good to add it; it's generic and should be in core.  Do we mark the that this document updates webdav?
+
+Julian: Not necessarily, unless we change the definition.
+
+mt: Include it, but don't worry about Updates WebDAV.
+
+
+There is consensus to include it in HTTP core.
+
+
+### Are headers always defined with ABNF? (74) ###
+
+Roy Fielding:  Maybe we change it to be the condition we do not want it to fail.
+
+Mark Nottingham: What about what to do if there are multiple instances of the same field?
+
+Roy Fielding: Define it in terms of what the field is when combined.
+
+Martin Thomson: My experience is that things that coelesce do it blindly?
+
+
+
+## Deprecate Accept-Charset (61) ##
+
+mnot: I recommend changing it to obsoleted.
+
+mt: No one use this, and fine that if they do they get undesired results.
+
+mcmanus: It's a good bar to set that if something is harmful.
+
+mt: Abbreviate it for historical purposes and deprecate it.  We can't remove something unless it never existed.
+
+rfielding: I agree we should have it in the spec, and why you shouldn't use it.
+
+The working group consensus is to mark Accept-Charset as obsolete.
+
+### Reuse of Responses (52) ###
+
+mt: Jeffery notes preload and prefetch also have this problem.
+
+mcmanus: We could introduce the notion of single use response.
+
+mnot: We have a section for caching and history lists.  I do like the idea of a single use response.
+
+mt: We need to decide on which of these `no-store` is, and go from there.
+
+mnot: I'm talking about whether no-store is opt-out from re-using it.
+
+mt: If I've been waiting for a response and now I have to regenerate.
+
+mcmanus: FF someimes collapses and sometimes doesn't, so it is contextual.
+
+Chris Lemmons: If we get the same requests very close, we collapse them, so clarity would be helpful.
+
+The working group consensus is to clarify the definition of 'no-store'.
+
+### 415 and Accept (48) ###
+
+Julian: Is this a request to extend RFC 7694?
+
+mnot: Would we obsolete 7694 and incorporate into core?
+
+mt: It makes sense to roll these into HTTP core and obsolete the former.
+
+The working group consensus is to roll 7695 into core.
+
+There is some support to incorporate Accept into the server-side; to confirm on the list.
+
+### * in Accept-* (46) ###
+
+Julian: I seen people ask for "*/text" or "*/*+json".
+
+mt: Glob it!
+
+mnot: If I have 5 specific JSON-based media types, I'm not sure what the utility is.
+
+Julian: If you have support for 5 types, then I can ask for the JSON variant of all the types you can produce.
+
+mnot: I believe ti be an interesting usecase for "give me any image type".
+
+roy:  I would hesitate to make any changes here.
+
+mcmanus:  If anyone has implementation experience can tell us about it.
+
+roy: I don't have any good usecases for it.  We've kept this for historical reasons, and people have used it to select a particular version of a media type.
+
+mnot: I suspect the most we can do is warn people about unintended consequences.
+
+Julian: This might be for BCP 56bis.
+
+The working group consensus is to add text to discourage or warn about it, but not deprecate it.
+
+### Extension Capabilities (44) ###
+
+Mbishop: For connect specifically, it does feel a little weird.  I wonder if we can find appropriate wording about how connect converts to this other tunnel.
+
+mnot: I think that's a separable issue, and revisit "CONNECT" as a generic method.  It probably shouldn't modify the semantics of GET.
+
+mbishop: I wonder if an extension for a particular mapping can effect how a method is modified in that mapping.
+
+mnot: How it gets expressed on the wire shouldn't affect that mapping.
+
+mt: I'm not sure about CONNECT as an example, but consider it "special" instead.  This question is difficult because we are talking about the semantic model, and not talking about e.g., h/2 bits.
+
+mnot: We have an open issue to put text around the semantic issues around h/2.  Then we can talk about h/2 extensions.
+
+mcmanus: The way this is describe is in terms of h/2 model and not the generic core model.
+
+mnot: We went to great effort to talk about extension points in -bis, but h/2 was coming.
+
+Julian: In h/2 the extension can modify anything, and that causes confusion and conflict.  What Patrick did for CONNECT and websocket was ok but should not be looked at for more generic.
+
+roy: Extending a name to have meaning where it didn't before is ok, but extending it to change its meaning should not be allowed anywhere in the IETF.
+
+mt: We reserved CONNECT in the registry.
+
+The working group consensus is to explore it but wait for h/2 text.
+
+There is also consensus to revisit the definition of CONNECT.
+
+### 3xx redirects - request formation (38) ###
+
+mt: I think this is largely orthogonal; we don't have to do it, but it's reasonable to do while the document is open.
+
+mcmanus: Some of the implementation deviation is the lack of guidance.
+
+mnot: I think fetch has done a lot of the hard work and we should reflect that here.
+
+Working group consensus is to work on some text here.
+
+###  Header registry( 42) ###
+
+mt: I think this is largely orthogonal; we don't have to do it, but it's reasonable to do while the document is open.  I think this is useful if the registry rulesa re sufficiently different.  I'm a little in support, but procedures can drag on a bit.
+
+Alexey: I would like you to take this issue to dispatch.  If you are suggesting to change the registration procedure it should be dispatched.
+
+This issue requires more discussion on list and likely needs to be taken to DISPATCH.
+
+### Field-name Syntax (30) ###
+
+mt: Sure (make it simpler).
+
+mbishop: My inclination is that if you are updated then you might not be backward compatible.
+
+roy: Would like the reduced syntax.
+
+Julian: This can be done with new registration procedures (above).
+
+## Wrap Up ##
+
+Chairs encourage everyone to engage in the issues on the list.

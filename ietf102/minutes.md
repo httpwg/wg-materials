@@ -11,7 +11,7 @@
 
 One person indicated that they might implement
 
-One cache has implented, another has intent to implement
+One cache has implemented, another has intent to implement
 
 Patrick: Park this doc for an indeterminate period time
 
@@ -114,7 +114,7 @@ Ekr: Why would an alternative server send me a new SNI
 
 Mark: Doesn't require the alternate to be named in the cert?
 
-Mike: Adds a "concieled option"
+Mike: Adds a "concealed option"
 
 Ekr: It must validate for the real cert
 
@@ -264,7 +264,7 @@ Jana: Agree with Patrick, leave it alone for now
 
 Roy Fielding: The question is if someone willing to write a doc about h2 priorities, then we should accept it.
 
-Lucas Purdue: How does this relate to priiority work in WICG?
+Lucas Purdue: How does this relate to priority work in WICG?
 
 Mark Nottingham and Patrick McManus and Martin Thomson: The WICG is a playground, and has little weight on their process.
 
@@ -276,7 +276,7 @@ Martin Thomson: We should do this to maintain similarity with QUIC, and it's har
 
 Patrick McManus: Many things brought it to tls1.3 and QUIC.  My draft id connect tunnels for websockets was deployed.  He had settings deployed from server -> client, and a popular OS client promptly closed the connection.  If there are other willing to experiment, join me.
 
-Mike Bishop: Since the issue was found on a client, then we need servers to deploy this experiement?
+Mike Bishop: Since the issue was found on a client, then we need servers to deploy this experiment?
 
 Mark Nottingham: anyone want to send GREASE values? (handful)
 
@@ -295,7 +295,7 @@ mnot: I think we can get it done in time for QUIC to reference them.
 
 Roy Fielding: The history of the drafts can be seen for the last 15 years in github.  There are a set of diffs of the changes to HTTP core.
 
-mcmanus:  I appreciate all the work that went into this reoganization.
+mcmanus:  I appreciate all the work that went into this reorganization.
 
 mnot: The overall structure is good, and can be tweaked as we go along.
 
@@ -322,7 +322,7 @@ Mark Nottingham: What about what to do if there are multiple instances of the sa
 
 Roy Fielding: Define it in terms of what the field is when combined.
 
-Martin Thomson: My experience is that things that coelesce do it blindly?
+Martin Thomson: My experience is that things that coalesce do it blindly?
 
 
 
@@ -354,7 +354,7 @@ mnot: I'm talking about whether no-store is opt-out from re-using it.
 
 mt: If I've been waiting for a response and now I have to regenerate.
 
-mcmanus: FF someimes collapses and sometimes doesn't, so it is contextual.
+mcmanus: FF sometimes collapses and sometimes doesn't, so it is contextual.
 
 Chris Lemmons: If we get the same requests very close, we collapse them, so clarity would be helpful.
 
@@ -382,13 +382,13 @@ mnot: If I have 5 specific JSON-based media types, I'm not sure what the utility
 
 Julian: If you have support for 5 types, then I can ask for the JSON variant of all the types you can produce.
 
-mnot: I believe ti be an interesting usecase for "give me any image type".
+mnot: I believe ti be an interesting use case for "give me any image type".
 
 roy:  I would hesitate to make any changes here.
 
 mcmanus:  If anyone has implementation experience can tell us about it.
 
-roy: I don't have any good usecases for it.  We've kept this for historical reasons, and people have used it to select a particular version of a media type.
+roy: I don't have any good use cases for it.  We've kept this for historical reasons, and people have used it to select a particular version of a media type.
 
 mnot: I suspect the most we can do is warn people about unintended consequences.
 
@@ -434,7 +434,7 @@ mnot: I think fetch has done a lot of the hard work and we should reflect that h
 
 Working group consensus is to work on some text here.
 
-#####  Header registry( 42)
+#####  Header registry (42)
 
 mt: I think this is largely orthogonal; we don't have to do it, but it's reasonable to do while the document is open.  I think this is useful if the registry rulesa re sufficiently different.  I'm a little in support, but procedures can drag on a bit.
 

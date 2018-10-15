@@ -9,7 +9,7 @@
 
 ## Tuesday, 6 November 2018
 
-_9:00-11:00	Tuesday Morning session II, Thai Chitlada 2 - [other time zones](https://www.timeanddate.com/worldclock/fixedtime.html?msg=HTTP+WG+Meeting&iso=20181106T09&p1=28&ah=2)_
+_9:00-11:00	Tuesday Morning session I, Chitlada I - [other time zones](https://www.timeanddate.com/worldclock/fixedtime.html?msg=HTTP+WG+Meeting&iso=20181106T09&p1=28&ah=2)_
 
 ### Administrivia
 
@@ -37,7 +37,7 @@ _TBD_
 
 ## Thursday, 8 November 2018
 
-_9:00-11:00	Thursday Morning session I, Laurier - [other time zones](https://www.timeanddate.com/worldclock/fixedtime.html?msg=HTTP+WG+Meeting&iso=20181108T09&p1=28&ah=2)_
+_9:00-11:00	Thursday Morning session I, Chitlada I - [other time zones](https://www.timeanddate.com/worldclock/fixedtime.html?msg=HTTP+WG+Meeting&iso=20181108T09&p1=28&ah=2)_
 
 ### Administrivia
 

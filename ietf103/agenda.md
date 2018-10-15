@@ -19,7 +19,7 @@ _9:00-11:00	Tuesday Morning session I, Chitlada I - [other time zones](https://w
 ### Active Extension Drafts
 
 * 10 min - [CDN Loop Prevention](https://tools.ietf.org/html/draft-ietf-httpbis-cdn-loop)
-*  5 min - [Variants](https://tools.ietf.org/html/draft-ietf-httpbis-variants) ([slides](https://github.com/httpwg/wg-materials/blob/gh-pages/ietf102/variants.pdf))
+*  5 min - [Variants](https://tools.ietf.org/html/draft-ietf-httpbis-variants)
 *  5 min - [BCP56bis](https://tools.ietf.org/html/draft-ietf-httpbis-bcp56bis)
 * 20 min - [Secondary Certificates](https://tools.ietf.org/html/draft-ietf-httpbis-http2-secondary-certs)
 * 10 min - [Structured Headers](https://tools.ietf.org/html/draft-ietf-httpbis-header-structure)

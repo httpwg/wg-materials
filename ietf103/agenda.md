@@ -49,6 +49,6 @@ _9:00-11:00	Thursday Morning session I, Chitlada I - [other time zones](https://
 
 ### HTTP Core
 
-* 10 min - Editors' update ([slides](https://github.com/httpwg/wg-materials/blob/gh-pages/ietf102/ietf-102-httptre.pdf))
+* 10 min - Editors' update
 * 105 min - Issue discussion ([list](https://github.com/httpwg/http-core/labels/discuss))
 

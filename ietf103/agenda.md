@@ -16,6 +16,21 @@ _9:00-11:00	Tuesday Morning session I, Chitlada I - [other time zones](https://w
 *  3 min - Blue sheets / scribe selection / [NOTE WELL](https://www.ietf.org/about/note-well/)
 *  2 min - Agenda bashing
 
+### HTTP Core
+
+* 10 min - Editors' update
+* 105 min - Issue discussion ([list](https://github.com/httpwg/http-core/labels/discuss))
+
+
+## Thursday, 8 November 2018
+
+_9:00-11:00	Thursday Morning session I, Chitlada I - [other time zones](https://www.timeanddate.com/worldclock/fixedtime.html?msg=HTTP+WG+Meeting&iso=20181108T09&p1=28&ah=2)_
+
+### Administrivia
+
+*  3 min - Blue sheets / scribe selection / [NOTE WELL](https://www.ietf.org/about/note-well/)
+*  2 min - Agenda bashing
+
 ### Active Extension Drafts
 
 *  5 min - [CDN Loop Prevention](https://tools.ietf.org/html/draft-ietf-httpbis-cdn-loop)
@@ -34,21 +49,6 @@ _9:00-11:00	Tuesday Morning session I, Chitlada I - [other time zones](https://w
 
 ### Proposed / Related Work
 
-_TBD_
-
-
-## Thursday, 8 November 2018
-
-_9:00-11:00	Thursday Morning session I, Chitlada I - [other time zones](https://www.timeanddate.com/worldclock/fixedtime.html?msg=HTTP+WG+Meeting&iso=20181108T09&p1=28&ah=2)_
-
-### Administrivia
-
-*  3 min - Blue sheets / scribe selection / [NOTE WELL](https://www.ietf.org/about/note-well/)
-*  2 min - Agenda bashing
-
-
-### HTTP Core
-
-* 10 min - Editors' update
-* 105 min - Issue discussion ([list](https://github.com/httpwg/http-core/labels/discuss))
+* 15 min - [HTTP/2 as Transport](https://tools.ietf.org/html/draft-kinnear-httpbis-http2-transport-00) - *Eric Kinnear*
+* 10 min - [Cache Header](https://mnot.github.io/I-D/cache-header/) - *Mark Nottingham*
 

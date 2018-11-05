@@ -15,11 +15,12 @@ _9:00-11:00	Tuesday Morning session I, Chitlada I - [other time zones](https://w
 
 *  3 min - Blue sheets / scribe selection / [NOTE WELL](https://www.ietf.org/about/note-well/)
 *  2 min - Agenda bashing
+*  3 min - DNSOP FYI https://tools.ietf.org/html/draft-bellis-dnsop-http-record-00
 
 ### HTTP Core
 
 * 10 min - Editors' update - *Julian Reschke*
-* 105 min - Issue discussion ([list](https://github.com/httpwg/http-core/labels/discuss))
+* 102 min - Issue discussion ([list](https://github.com/httpwg/http-core/labels/discuss))
 
 
 ## Thursday, 8 November 2018

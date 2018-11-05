@@ -18,7 +18,7 @@ _9:00-11:00	Tuesday Morning session I, Chitlada I - [other time zones](https://w
 
 ### HTTP Core
 
-* 10 min - Editors' update
+* 10 min - Editors' update - *Julian Reschke*
 * 105 min - Issue discussion ([list](https://github.com/httpwg/http-core/labels/discuss))
 
 

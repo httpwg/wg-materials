@@ -1,5 +1,42 @@
 # HTTP Working Group Minutes - IETF103 Bangkok
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+  - [Wildcard addition](#wildcard-addition)
+  - [HTTP Core](#http-core)
+    - [Github Issue 138](#github-issue-138)
+    - [Github Issue 129](#github-issue-129)
+    - [Github Issue 128](#github-issue-128)
+    - [Github Issue 120](#github-issue-120)
+    - [GitHub Issue 111](#github-issue-111)
+    - [GitHub Issue 48](#github-issue-48)
+    - [Github Issue 45](#github-issue-45)
+    - [Github Issue 42](#github-issue-42)
+    - [Issue 39](#issue-39)
+    - [Issue 34](#issue-34)
+    - [Issue 30](#issue-30)
+    - [Issue 22](#issue-22)
+    - [Issue 16](#issue-16)
+    - [Issue 10](#issue-10)
+    - [Issue 132](#issue-132)
+    - [304 Cache Updates](#304-cache-updates)
+    - [Security Implications of Shared Compression](#security-implications-of-shared-compression)
+  - [Administrivia](#administrivia)
+  - [Active Extension Drafts](#active-extension-drafts)
+    - [CDN Loop Prevention](#cdn-loop-prevention)
+    - [Variants](#variants)
+    - [BCP56bis](#bcp56bis)
+    - [Secondary Certificates](#secondary-certificates)
+    - [Structured Headers](#structured-headers)
+    - [Cache Digests for HTTP/2](#cache-digests-for-http2)
+    - [Client Hints](#client-hints)
+    - [RFC6265bis: Cookies](#rfc6265bis-cookies)
+  - [QUIC and HTTP](#quic-and-http)
+  - [Proposed / Related Work](#proposed--related-work)
+    - [Cache Header - Mark Nottingham](#cache-header---mark-nottingham)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Wildcard addition
 3 min - HTTP record - Ray Bellis
  - Mike Bishop: We already have alt-service. We have a draft for putting that in DNS.

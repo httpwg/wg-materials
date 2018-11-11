@@ -49,11 +49,11 @@ Action: Simmer for a bit longer.
 
 ### GitHub Issue 111
 
-Alexey: In email space, the latest docs say we don't yse "header", we use "header field", "header block" and other things. I think it might be better to invent new terms.
+Alexey: In email space, the latest docs say we don't use "header", we use "header field", "header block" and other things. I think it might be better to invent new terms.
 
 Pete Resnick (?): The reason for that is because there was a time where "header" referred to the "block" instead of the line.
 
-Patrick: We have "headers" which contain a plurality of "header". I think it's consistant with our naming, but doens't improve readability:
+Patrick: We have "headers" which contain a plurality of "header". I think it's consistant with our naming, but doesn't improve readability:
 
 Mike Bishop: "Header block" is the output of the compression process. The exact meanings aren't obvious from reading the docs.
 
@@ -63,7 +63,7 @@ Alexey: I don' think that's true.
 
 Mark: In the HTTP community, the most common terminology is "Header" and reaching that community means using those terms. Does anyone disagree?
 
-Martin Thompson: We have a lot of docs that already call them header feield.s People call them headers and it's just annoying typing "field".
+Martin Thompson: We have a lot of docs that already call them header fields. People call them headers and it's just annoying typing "field".
 
 Mike: The easiest thing is consistency. We can note that we colloquially call them headers.
 
@@ -81,7 +81,7 @@ No discussion
 
 ### Github Issue 45
 
-Martin Thompson: I think Julian answered the questoin well enough. IU don't think the document answers it well enough, but as long a sthere's just one answer.
+Martin Thompson: I think Julian answered the question well enough. IU don't think the document answers it well enough, but as long as there's just one answer.
 
 Action: As in the issue, create a separate section discussing normalization rules.
 
@@ -91,7 +91,7 @@ Pete Resnick: I talked to Michelle and she asked about it. That developed into: 
 
 Alexey: Michelle will investigate what is easiest for them.
 
-Mark: We don't need to overspecify how its presented.
+Mark: We don't need to over-specify how its presented.
 
 Roy: +1, should we talk about reorganizing IANA registries in general. Each registry has a different style of title and organization. It would be nice if we had one HTTP section in IANA.
 
@@ -117,7 +117,7 @@ Roy Fielding: We don't define the behaviour in the HTTP RFC, it's defined in oth
 
 Patrick: It took a long time to figure out what RFC to cite, so some helpful information in core may produce more consistant implementations.
 
-?: The confsion is about what is the base URI for a manifest referenced from HTML. The issue is about whether something referenced from an embedded reference gets which URI.
+?: The confusion is about what is the base URI for a manifest referenced from HTML. The issue is about whether something referenced from an embedded reference gets which URI.
 
 Action: ?
 
@@ -125,7 +125,7 @@ Action: ?
 
 Roy: There's no way we will replace this with URL Specs. It's neither suitable for the IETF nor is it correct. We can still learn from it, though. This issue came from a bug reported to Mozilla about double-hash signs are being removed from identifiers.
 
-Mark: I will attempt to channel Ana: I think the reasoning is that because locaiton headers are arguiably under control of more authors, you need better defined error handling. URL handls that. It's not my argument, though. Does anyone have warm thoughs about this?
+Mark: I will attempt to channel Ana: I think the reasoning is that because location headers are arguably under control of more authors, you need better defined error handling. URL handle that. It's not my argument, though. Does anyone have warm thoughts about this?
 
 We could reference the URL standard informatively, but that would be strange.
 
@@ -133,9 +133,9 @@ Patrick: That would indeed be strange.
 
 Roy: We could describe how to handle "invalid" messages that go outside the defined grammar.
 
-Mike: The bigges issue is using percent-encoding thigns that aren't allowed? We could maybe improve the text about that.
+Mike: The biggest issue is using percent-encoding things that aren't allowed? We could maybe improve the text about that.
 
-Action: Consider addding some informative text about error handling.
+Action: Consider adding some informative text about error handling.
 
 ### Issue 30
 
@@ -145,7 +145,7 @@ Piotr: Nginx does not allow underscore.
 
 Mark: I put in underscore, but maybe we should disallow it.
 
-Martin: I suspec anyone usign CGI Environment variable will reqrite dash.
+Martin: I suspect anyone using CGI Environment variable will rewrite dash.
 
 Mark: Period and plus seem useful.
 
@@ -177,21 +177,21 @@ Roy: We could write the rules so they only limit the registry.
 
 Roy: We could split received and sent ABNF that are different. But that's not great. Implementations already have to accept what they get and do error handling from there.
 
-Martin: Can we get some information to help make the decision? What do implementations actially do on chars outside the norm? What chars are used in practice? Some folsk can actually measure these things.
+Martin: Can we get some information to help make the decision? What do implementations actually do on chars outside the norm? What chars are used in practice? Some folks can actually measure these things.
 
 Mark: We would get information all over the map, I think. Also public traffic is very different than private traffic happening behind firewalls.
 
 Piotr: Nginx rejects the entire request with bad headers.
 
-Patrick: Filter on respinses?
+Patrick: Filter on responses?
 
 Piotr: No idea.
 
 Patrick: I'm worried about "SHOULD NOT generate" will cause second order effects. I would like Core to clarify and increase interoperability. I worry that this would only produce the former.
 
-Mark: I'm concerned that we can wind up with a scneario where we have headers that are in use cannot be registered.
+Mark: I'm concerned that we can wind up with a scenario where we have headers that are in use cannot be registered.
 
-Mark: Data wouldhelp. What is the set of things that cause interop issues?
+Mark: Data would help. What is the set of things that cause interop issues?
 
 Jonathan Lenox: Registry is expert review. Maybe experts can discourage strange chars unless they are particularly useful.
 
@@ -204,7 +204,7 @@ Action: No consensus.
 
 Roy: The issue with clarifying it for TCP is that HTTP can run across lots of things, so it's difficult to describe it in a sensical and accurate way for HTTP over just TCP.
 
-Martin: We recently recornized the same thing about TLS. It used to be the case that we didn't recognize half-closed, but we've corrected that.
+Martin: We recently recognized the same thing about TLS. It used to be the case that we didn't recognize half-closed, but we've corrected that.
 
 Roy: That's a great improvement. If we have text that makes sense, I'm not opposed to putting it into the spec.
 
@@ -216,7 +216,7 @@ Ted Hardie: It sounds like the issue is exacerbated by NAT and should have a v4 
 
 ?: I'm not sure what the use case for this is. Couldn't we use Connection: close. Why would half-closed be useful?
 
-David S: I don't think there are apps that do this for operational reasons. Still... I think it makse sense to have guidance. You can save resources with this. If you know new requests aren't coming in, you can save resources.
+David S: I don't think there are apps that do this for operational reasons. Still... I think it makes sense to have guidance. You can save resources with this. If you know new requests aren't coming in, you can save resources.
 
 Eric Kinnear: This make ssense for HTTP1. But in the H2 world, we have different expectations. "half-closed means nothing" may be the safer answer.
 
@@ -248,19 +248,19 @@ Pete: Just .onion doesn't seem a good choice.
 
 David Schinazi: These reseved names belong in DNS. Maybe we can make comments to point at the Special Use Name registry.
 
-Ted Dardie: People are encouraged to put these special use names under .arpa. This seems like a reasonable sweet spot.
+Ted Hardie: People are encouraged to put these special use names under .arpa. This seems like a reasonable sweet spot.
 
 Mark: Would a reference to 6761 work?
 
 Ted: DNS doesn't love the current framing, so it would be better not to reference 6761.
 
-David: I'm going to contradict mtself. HTTP isn't a DNS client. If your HTTP engine makes a query for .onion, the DNS resolver is what needs to know.
+David: I'm going to contradict myself. HTTP isn't a DNS client. If your HTTP engine makes a query for .onion, the DNS resolver is what needs to know.
 
 Mark: But 6761 answers this.
 
 David: My bad.
 
-Pattrick: We can poit to some requirements on HTTP in the DNS lookups.
+Pattrick: We can point to some requirements on HTTP in the DNS lookups.
 
 Action: Mark wil work on some text.
 
@@ -268,7 +268,7 @@ Action: Mark wil work on some text.
 
 Roy: I think HTTPD uses a second resolution timestamp for a weak etag and upgrades to a strong tag when the second elapses.
 
-Bron Gonwana: We have an implementation that needed to provide a weak etag that then upgraded to a strong etag when we were cetain the data wouldn't change. The etag we use is a SHA-1 of the content.
+Bron Gonwana: We have an implementation that needed to provide a weak etag that then upgraded to a strong etag when we were certain the data wouldn't change. The etag we use is a SHA-1 of the content.
 
 Roy: Folks mostly ignore this and take the chance that we have a bad answer.
 
@@ -276,7 +276,7 @@ Action: Look into this.
 
 ### 304 Cache Updates
 
-Mark: Looking into how 304 updates cached headers. There are major variations in how these are handled. In broswers, they update cached resposnse with new headers, but they exempt some headers, including those that include Content-, which includes Content-Security-Policy. I'd love a chat with browser vendors. I've got bugs open with browsers and they are all looking at each other's implementations. Proxies don't like updating headers on disk for performance reasons. Maybe we should recommend against 304s? Please talk to me about it.
+Mark: Looking into how 304 updates cached headers. There are major variations in how these are handled. In browsers, they update cached response with new headers, but they exempt some headers, including those that include Content-, which includes Content-Security-Policy. I'd love a chat with browser vendors. I've got bugs open with browsers and they are all looking at each other's implementations. Proxies don't like updating headers on disk for performance reasons. Maybe we should recommend against 304s? Please talk to me about it.
 Patrick: Is there an issue open?
 Mark: Nope. We do need to figure out which headers should be exempted. And if proxies won't update headers... are we stuck?
 
@@ -304,7 +304,7 @@ Nick: Cloudflare has plans to implement very soon.
 
 Chris: Registry with extra data is better than more registries.
 
-MT: What's the argument for doing this at all rather than relying on definisions of header fields?
+MT: What's the argument for doing this at all rather than relying on definitions of header fields?
 
 Mark: Registry collects the knowledge in one place. Could we create extra column in header registry?
 
@@ -319,7 +319,7 @@ Ted: Who would update their tooling based on this cookie change?
 
 Mark: Discussions with web developers shows interest.
 
-Thomas: Will issue #549 address scenarios where applicataions cookies override user preferences of accept language?
+Thomas: Will issue #549 address scenarios where applications cookies override user preferences of accept language?
 
 ### BCP56bis
 
@@ -357,7 +357,7 @@ Mike: Attack is where attacker acquires private key to legitimate certificate. N
 
 EKR: DNS hijacking is the threat.
 
-Mike: Missisued certificates would cover both domains and coalescing would cover it up.
+Mike: Misissued certificates would cover both domains and coalescing would cover it up.
 
 EKR: This was Sleevi's objection to removing the DNS check from coalescing.
 
@@ -381,9 +381,9 @@ Mike: Considering case where compromised cert goes to CDN and uploads under it u
 
 Subodh: Change in security model is that this reduces DNS compromise to the compromise of primary domain. Must compromise DNS in primary domain to attack this proposal.
 
-Mike: If primary domain is comrpomisable then you're no different than in normal TLS.
+Mike: If primary domain is compromisable then you're no different than in normal TLS.
 
-MT: Do we need somethign simpler? Maybe a flag that says the cert is OK being a secondary. requires:* is this flag, but this goes much further.
+MT: Do we need something simpler? Maybe a flag that says the cert is OK being a secondary. requires:* is this flag, but this goes much further.
 
 Mike: No difference between flag in certs and not doing anything which draft currently says.
 
@@ -401,7 +401,7 @@ Mark: Current spec uses identifier. We could change this.
 
 MT: Don't know if we've managed to maintain lexical distinguishable on the wire.
 
-Mark: Can identify lexographically at the top level.
+Mark: Can identify lexicographically at the top level.
 
 MT: If we're there then this is probably workable.
 
@@ -473,7 +473,7 @@ Bret: Be wary of market perception, HTTP/3 might cause confusion.
 
 EKR: HTTP/3 does not carry the fact that it's over QUIC, and it implies that we're tired of HTTP/2.
 
-Jana: Signaling is important. This does create a very clear fork.
+Jana: Signalling is important. This does create a very clear fork.
 
 Eric: HTTP/3 is fine. Long-term, HTTP/2 is explicitly over TCP. HTTP/3 is over QUIC and could be over TCP. Doesn't mean HTTP/2 is not good and not a viable fallback path.
 
@@ -481,7 +481,7 @@ MT: Recognition that we're forking the protocol at every major release.
 
 Mark: When we have a new wire mapping, we have a new version identifier.
 
-Mike: Fork is the fact that we don't obselete the previous version.
+Mike: Fork is the fact that we don't obsolete the previous version.
 
 Mark: Can't tell people to stop using HTTP/1.1.
 
@@ -513,7 +513,7 @@ Piotr: Need headers for proxy case, which brings us to 8441. Might end up with t
 
 Eric: Intent is for either endpoint to open up the bytestream.
 
-David: Allows fallback from things over QUIC transport to H2. Setings are in http not QUIC transport. Might need some work.
+David: Allows fallback from things over QUIC transport to H2. Settings are in http not QUIC transport. Might need some work.
 
 Woo: Have you considered cases where middleboxes need to shut down the bytestream gracefully? We have GOAWAY now. There is no way for other side to signal to stop using the stream.
 

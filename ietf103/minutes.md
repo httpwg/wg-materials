@@ -476,9 +476,7 @@ Mark: A lot.
 
 ### Cache Digests for HTTP/2
 
-Kazuho: Assumed browsers would implement before WGLC?
-
-(missed)
+Kazuho: Previous consensus was to wait WGLC until browsers implement Cache Digests. That has not happened yet.
 
 ### Client Hints
 

@@ -142,7 +142,7 @@ Mark: In principle, I think that if we can harmonize the registries, it would be
 
 Action: Open an issue about registrations.
 
-### Issue 39
+### Issue 38
 
 Julian Reschke: I don't disagree. But I don't think it helps with the confusion.
 

@@ -7,9 +7,9 @@
 *Taking minutes? See [our guide](https://github.com/httpwg/wiki/wiki/TakingMinutes)*
 
 
-## TDB Session 1 (Core)
+## Monday, 25 March 2019, Afternoon Session II  (Core)
 
-_?:00-?:00_
+_1610-1810, Congress Hall 2_
 
 ### Administrivia
 
@@ -22,9 +22,9 @@ _?:00-?:00_
 * Remainder - Issue discussion ([list](https://github.com/httpwg/http-core/labels/discuss))
 
 
-## TBD Session 2 (Extensions)
+## Thursday, 28 March 2019, Afternoon Session I (Extensions)
 
-_?:00-?:00_
+_1350-1550, Congress Hall 3_
 
 ### Administrivia
 

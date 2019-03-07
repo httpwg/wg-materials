@@ -46,5 +46,6 @@ _1350-1550, Congress Hall 3_
 
 ### Proposed / Related Work
 
-?
+* 10 min - [Proxy Status](https://tools.ietf.org/html/draft-nottingham-proxy-status) - *Mark Nottingham / Piotr Sikora*
+* 10 min - Update on [Using HTTP/2 as a Transport](https://tools.ietf.org/html/draft-kinnear-httpbis-http2-transport) - *Eric Kinnear*
 

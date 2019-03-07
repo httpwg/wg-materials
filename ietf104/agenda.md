@@ -35,8 +35,8 @@ _1350-1550, Congress Hall 3_
 
 *  5 min - [Variants](https://tools.ietf.org/html/draft-ietf-httpbis-variants)
 *  5 min - [BCP56bis](https://tools.ietf.org/html/draft-ietf-httpbis-bcp56bis)
-*  5 min - [Client Hints](https://tools.ietf.org/html/draft-ietf-httpbis-client-hints)
 *  5 min - [The Cache HTTP Response Header](https://tools.ietf.org/html/draft-ietf-httpbis-cache-header)
+* 15 min - [Client Hints](https://tools.ietf.org/html/draft-ietf-httpbis-client-hints)
 * 15 min - [Structured Headers](https://tools.ietf.org/html/draft-ietf-httpbis-header-structure)
 * 15 min - [Secondary Certificates](https://tools.ietf.org/html/draft-ietf-httpbis-http2-secondary-certs)
 

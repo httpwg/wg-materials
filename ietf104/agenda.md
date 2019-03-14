@@ -33,11 +33,11 @@ _1350-1550, Congress Hall 3_
 
 ### Active Extension Drafts
 
-*  5 min - [Variants](https://tools.ietf.org/html/draft-ietf-httpbis-variants)
-*  5 min - [BCP56bis](https://tools.ietf.org/html/draft-ietf-httpbis-bcp56bis)
+*  3 min - [Variants](https://tools.ietf.org/html/draft-ietf-httpbis-variants)
+*  2 min - [BCP56bis](https://tools.ietf.org/html/draft-ietf-httpbis-bcp56bis)
 *  5 min - [The Cache HTTP Response Header](https://tools.ietf.org/html/draft-ietf-httpbis-cache-header)
 * 15 min - [Client Hints](https://tools.ietf.org/html/draft-ietf-httpbis-client-hints)
-* 15 min - [Structured Headers](https://tools.ietf.org/html/draft-ietf-httpbis-header-structure)
+* 10 min - [Structured Headers](https://tools.ietf.org/html/draft-ietf-httpbis-header-structure)
 * 15 min - [Secondary Certificates](https://tools.ietf.org/html/draft-ietf-httpbis-http2-secondary-certs)
 
 ### QUIC and HTTP
@@ -49,4 +49,5 @@ _1350-1550, Congress Hall 3_
 * 10 min - [Proxy Status](https://tools.ietf.org/html/draft-nottingham-proxy-status) - *Mark Nottingham / Piotr Sikora*
 * 10 min - Update on [Using HTTP/2 as a Transport](https://tools.ietf.org/html/draft-kinnear-httpbis-http2-transport) - *Eric Kinnear*
 * 5 min - [Stateful Compression](https://tools.ietf.org/html/draft-kucherawy-httpbis-dict-sec) - *W. Felix Handte*
+* 10 min - [Best practices for TLS Downgrade](https://tools.ietf.org/html/draft-richsalz-httpbis-https-downgrade) - *Rich Salz / Mike Bishop / Erik Nygren*
 * 10 min - Update on [Signed Exchanges](https://tools.ietf.org/html/draft-yasskin-http-origin-signed-responses) - *Jeffrey Yasskin*

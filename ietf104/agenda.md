@@ -49,5 +49,5 @@ _1350-1550, Congress Hall 3_
 * 10 min - [Proxy Status](https://tools.ietf.org/html/draft-nottingham-proxy-status) - *Mark Nottingham / Piotr Sikora*
 * 10 min - Update on [Using HTTP/2 as a Transport](https://tools.ietf.org/html/draft-kinnear-httpbis-http2-transport) - *Eric Kinnear*
 * 5 min - [Stateful Compression](https://tools.ietf.org/html/draft-kucherawy-httpbis-dict-sec) - *W. Felix Handte*
-* 10 min - [Best practices for TLS Downgrade](https://tools.ietf.org/html/draft-richsalz-httpbis-https-downgrade) - *Rich Salz / Mike Bishop / Erik Nygren*
+* 10 min - [Best practices for TLS Downgrade](https://tools.ietf.org/html/draft-richsalz-httpbis-https-downgrade) - *Brian Sniffen*
 * 10 min - Update on [Signed Exchanges](https://tools.ietf.org/html/draft-yasskin-http-origin-signed-responses) - [presentation](https://docs.google.com/presentation/d/1yeKwls-rnEB3-pikOtJnbmC_ZngEfwGqrBmwST6-Vmc/preview) - *Jeffrey Yasskin*

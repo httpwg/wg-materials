@@ -1,4 +1,38 @@
+
 # HTTP Working Group Minutes - IETF104 Prague
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [Monday - HTTP Core](#monday---http-core)
+  - [Issue #203: Expect should be a list header](#issue-203-expect-should-be-a-list-header)
+  - [Issue #202: Tighten language around GET and DELETE request bodies](#issue-202-tighten-language-around-get-and-delete-request-bodies)
+  - [Issue #165: Updating stored headers](#issue-165-updating-stored-headers)
+  - [Issue #137: Serializing a header line](#issue-137-serializing-a-header-line)
+  - [Issue #128: Quoted cache-control directives](#issue-128-quoted-cache-control-directives)
+  - [Issue #120: Status codes and caching:](#issue-120-status-codes-and-caching)
+  - [Issue #111: Header terminology](#issue-111-header-terminology)
+  - [Issue #54: Method registry should include cacheability](#issue-54-method-registry-should-include-cacheability)
+  - [Issue #51: MIME sniffing](#issue-51-mime-sniffing)
+  - [Issue #30: Field-name syntax](#issue-30-field-name-syntax)
+  - [Issue #22: Clarify rules around half-closed TCP connections](#issue-22-clarify-rules-around-half-closed-tcp-connections)
+  - [Issue #7: New header field considerations: list vs keyword](#issue-7-new-header-field-considerations-list-vs-keyword)
+- [Thursday - Extensions and Proposals](#thursday---extensions-and-proposals)
+  - [Variants](#variants)
+  - [BCP56bis](#bcp56bis)
+  - [Cache](#cache)
+  - [Client Hints](#client-hints)
+  - [Structured Headers](#structured-headers)
+  - [Secondary Certificates](#secondary-certificates)
+  - [HTTP/3 & QUIC](#http3--quic)
+  - [Proxy Status](#proxy-status)
+  - [HTTP/2 as a Transport](#http2-as-a-transport)
+  - [Stateful Compression](#stateful-compression)
+  - [Protocol to origin](#protocol-to-origin)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 
 ## Monday - HTTP Core
 

@@ -31,7 +31,7 @@ _1550-1750, Laurier_
 
 ### Proposed / Related Work
 
-* 45 min - HTTP 2/3 Prioritisation
+* 30 min - HTTP 2/3 Prioritisation
 
 
 ## Thursday, 25 July 2019, Afternoon Session II (Core)

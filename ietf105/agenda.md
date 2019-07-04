@@ -18,6 +18,7 @@ _1550-1750, Laurier_
 
 ### Active Extension Drafts
 
+*  5 min - [Resource Digests for HTTP](https://tools.ietf.org/html/draft-ietf-httpbis-digest-headers)
 *  5 min - [Using TLS 1.3 with HTTP/2](https://tools.ietf.org/html/draft-ietf-httpbis-http2-tls13)
 *  5 min - [Proxy-Status](https://tools.ietf.org/html/draft-ietf-httpbis-proxy-status)
 *  5 min - [The Cache HTTP Response Header](https://tools.ietf.org/html/draft-ietf-httpbis-cache-header)

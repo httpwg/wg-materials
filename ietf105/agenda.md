@@ -43,6 +43,10 @@ _1550-1720, Laurier_
 *  3 min - Blue sheets / scribe selection / [NOTE WELL](https://www.ietf.org/about/note-well/)
 *  2 min - Agenda bashing
 
+### Proposed / Related Work
+
+* 10 min - [HTTPSSVC record](https://tools.ietf.org/html/draft-nygren-httpbis-httpssvc-01) - Erik Nygren
+
 ### HTTP Core
 
 * 10 min - Editors' update

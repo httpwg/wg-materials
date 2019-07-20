@@ -46,7 +46,7 @@ _1550-1720, Laurier_
 
 ### Proposed / Related Work
 
-* 10 min - [HTTPSSVC record](https://tools.ietf.org/html/draft-nygren-httpbis-httpssvc-01) - Erik Nygren
+* 10 min - [HTTPSSVC record](https://tools.ietf.org/html/draft-nygren-httpbis-httpssvc-01) - Erik Nygren ([slides](httpssvc-ietf105-httpbis.pdf))
 
 ### HTTP Core
 

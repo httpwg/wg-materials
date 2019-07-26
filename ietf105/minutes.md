@@ -145,3 +145,126 @@ Roberto Peon: what matters is what implementations do, not the spec. So h2 prior
 Kazuho: We should remove priorities from h3
 Mike Bishop: multiplexing without priorities is a half-shipped feature
 MT: we need prioritization but not signaling of priorities
+
+
+Thursday, 25 July 2019, Afternoon Session II (Extensions)
+1550-1750, Laurier
+
+Minutes: Craig Taylor
+
+## 10m - HTTPSVC record - Eric Nygren
+https://tools.ietf.org/html/draft-nygren-httpbis-httpssvc-01
+Presentation notes (not included in the text):
+    esni may benefit from becoming a seperate draft, right now it's included
+
+mnot: Commented this is not the first time this has come up, and this is already multiple iterations.
+Eric: esni is the main push for bringing this work forward now
+Ben Shwartz: Points out this draft is intended to be used 'unauthenticated'
+Tommy Pauly (indivdual): Defienitely interested in this work and moving it fwd.
+Martin Thompson: Enthusiastic about something that gives a less clunky esni record that has the support of the DNS commnunity
+RoyF: My understanding of ESNI is limited but I believe it also relies on an additional DNS request to obtain the key for ESNI. Is there a way to piggyback this service information on top of that response instead of making two additional DNS requests? [response in room was that this new request supplants the existing ESNI request]
+Mike Bishop: The interet for this needs to come from this room, even if httpbis does not complete the work
+Eric Nygren: Largely agrees, although other areas to fill out details
+Roberto Peon: <can anyone fill>
+Yoav Weiss: Exciting to see the negotiation moving to the DNS layer, considered for client hints, concern about some bloat in the records.
+Martin T: If you want some bootstrapping you have to pay some price. In terms of DoH it's only a modest impact, ultimately valuable.
+mnot (individual): Sees as generic mechanism that relates to altsvc, so http work
+BenS: MAny in this room want this to bottstrap quick, so more relates to this room
+Roy Fielding (via jabber): This finally makes srv worth implementing for HTTP
+
+## 15m Priorities - ????
+Ben Schartz: Order of submission of requests implies some priority
+Roberto: Priority is difficult, and will always be suboptima, h2 complex -deps+weight+inorder, rich but complex, poor interop, poor implementation, externally implementad semantic schemes exist.
+  Retaining this increases complexity and doesn't offer 'value' for h3. Personal preference h2 priorities deprecated and replaced with http priorities that makes sense for h2 and h3.
+mt: Move to the _null_ state so that we can move to the happy state [we are at the null state already]. 
+mnot: ...are you saying that your browser will stop emitting priorities
+mt: ...not discussed internally, but personal opinion is that's the way forward with experimentation required.
+Mike Bishop: In the side meeting it was discussed that extension may allow multiple schemes, concern about negotiation of multiple schemes howver an extention that allows disable or support may be the best inital state with h3 default state being not_supported.
+Roy Fielding: I think that if we can agree that priority can be communicated in a header field for request and response, rather than framing options or whatever, then we can take this whole discussion off of the critical path for QUIC because the priority scheme can be defined as part of that communication regardless of HTTP version.
+Patrick McManus: h2 scheme is too general, too much inconsistency and no-one wants to implement. Patrick looking for group to work toward consensus on a minimal scheme.
+Yoav: Request ordering isn't always reliable (cited bug in chrome) Client/Server mismatch is a thing, even good implementation s are not perfect. Support of multiple more simple schemes.
+
+mnot: Big question is what to report to quic for h3
+
+Yoav: Extension mechanism that alows extension, but ship without h2-prio
+Alassandro Ghedini: h2-prio are flawed but do provide some value, wary about doing nothing at all. Very open to other schemes.
+Kazuho Oku: Fine for browsers to stop sending frames as servers can use other schemes to compenstate this behaviour.  Clients can send headers of simple table straight away and a translation table can map to h2 or a new h3 scheme.
+Alan frindell: Agree h2-pio is broken and not to copy fwd, but not to 'let them go'. Extension for enablement supported. Removing client sent scheme is a worry, and removing from h3 critical path, concern that it will complete. FB only use client side schemes today.
+Ian Swett: Support removing h2-prio. Also looking at spending dev time on this... Suspects that osmething very similar to Kazuhos will end up being used. Slight pref for binary encoding over headers
+Lucas Pardue: Uploaded example draft of removing priorities.
+Roberto Peon: Header priorites warn, lots of 'issues' (cahing, range etc.) However worth solving, and with compression etc, it's going to end up quite efficient.
+mt: Likes the designs presented, including the end to end bi-directional nature. Thinks that a transtional approach is useful.
+Brad L: <missed>
+
+mnot (chair): A bit late to deprecate priorities
+mt: ...were not asking for adoption 15m after draft was published
+Alan Frindell: As a supporter of h2-prio - Still ok for h3 to have no h2-prio, but strong pref for something such as a translatable method.
+mnot: Concern over time frames
+(chairs): A disgn team?
+Roberto: Plea for low barrier to entry, and welcomes experimentation from Ian...
+mt: Can't commit to experimentation in these time frames.
+
+Design Team Volunteers:
+Ian Swett (lead): Alan Frindell, Kazuho Oku, Craig Taylor, Leif Hedstrom, Roberto Peon, Lucas Pardue, Colin Bendell, Roy Fielding
+
+
+## Issues
+
+https://github.com/httpwg/http-core/issues/218
+mt: What other things might cause 403? 
+seth: 403 often used for resources that should never be exposed so not related to the user
+mnot: Discussed and agreed to change
+
+https://github.com/httpwg/http-core/issues/215
+Action: _Closed with no action_
+
+https://github.com/httpwg/http-core/issues/212
+Roy: Roy has teste since raising and it seems all implementations work
+Jeffrey Yaskin: Suggests editorial change to include alternate example
+
+https://github.com/httpwg/http-core/issues/196
+Action: General notice to the group to review the PR
+
+https://github.com/httpwg/http-core/issues/196
+mt: We're going to need some text
+Mike Bishop: unsure why we haven't already brought some of 2118 into core semantics
+RoyF: +1
+mt: Caution - 2818 is _old_ so there is a hazard and the refresh of the language means this is more work than might be expected.
+mnot: Suggests a group to asses the work
+Ryan Sleevi: 2818 needs to "go away": Core parts of 2818 should be included into core semantic, other parts [obselete]
+Roy: "the https URI scheme semantics are already in 7230"
+Roy: I think I understand what to include for establishing authority and can probably make an attempt at obsoleting the rest of 2818; assign to me?
+Action: Assign to Roy
+
+https://github.com/httpwg/http-core/issues/180
+_No comments_
+Action: Closed as out of scope
+
+https://github.com/httpwg/http-core/issues/169
+RoyF: ...should we say all URIs?
+mnot: Not against that
+Roberto: Do we mean the enoded form?
+(Roy,mnot): Yes
+mt: No difference between either form
+Roberto: [nod]
+Action: Proposal accepted
+
+https://github.com/httpwg/http-core/issues/34
+Roy: Duplicate?
+mnot: Similar but different
+mnot: Suggested close with minor editorial change proposed in issue
+Action: Closed
+
+## Presentation: Braid: Synchornisation for HTTP
+  https://braid.news
+  https://tools.ietf.org/html/draft-toomim-braid-00#section-4
+  
+Braid team will be publishing drafts and looking to speak to CDNs/implementors
+
+Alan Frindell: May be work to help with their messaging issues; provide details after meeting
+Ben Schwartz: <missed this>
+mt: Thinks this is more than exsiting messaging methods, and semantics need to move into the protocol
+Neil Jenkins: Toughts on individual documents and collections of documents
+Roberto Peon: Interesting problem, highlights balance of trust in getting some clients to make the transformation 'correctly'.
+
+17:21 Meeting closed

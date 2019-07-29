@@ -1,7 +1,50 @@
 # HTTP Working Group Minutes - IETF105 Montreal
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-## Monday, 22 July 2019 (Extensions)
+
+- [Monday, 22 July 2019](#monday-22-july-2019)
+  - [Resource Digests for HTTP - Lucas Pardue](#resource-digests-for-http---lucas-pardue)
+  - [Using TLS 1.3 with HTTP/2 - David Benjamin](#using-tls-13-with-http2---david-benjamin)
+  - [Proxy-Status - Piotr Sikora](#proxy-status---piotr-sikora)
+    - [Issue 808](#issue-808)
+    - [Issue 821](#issue-821)
+  - [The Cache HTTP Response Header - Mnot](#the-cache-http-response-header---mnot)
+  - [Variants - mnot](#variants---mnot)
+  - [BCP56bis - mnot](#bcp56bis---mnot)
+  - [Secondary Certificates - Mike Bishop](#secondary-certificates---mike-bishop)
+  - [Structured Headers - mnot](#structured-headers---mnot)
+    - [Issue 848](#issue-848)
+    - [Issue 844](#issue-844)
+    - [Issue 842](#issue-842)
+    - [Issue 801](#issue-801)
+    - [Issue 782](#issue-782)
+  - [Client Hints - Yoav Weiss](#client-hints---yoav-weiss)
+    - [Issue: Sec-CH prefix](#issue-sec-ch-prefix)
+    - [Issue: structured headers](#issue-structured-headers)
+    - [Issue: active vs passive fingerprinting](#issue-active-vs-passive-fingerprinting)
+    - [Issue: client hints could end up in logs](#issue-client-hints-could-end-up-in-logs)
+  - [RFC6265bis](#rfc6265bis)
+  - [HTTP 2/3 Prioritisation](#http-23-prioritisation)
+- [Thursday, 25 July 2019](#thursday-25-july-2019)
+  - [HTTPSVC record - Eric Nygren](#httpsvc-record---eric-nygren)
+  - [Priorities](#priorities)
+  - [Core Issues](#core-issues)
+    - [https://github.com/httpwg/http-core/issues/218](#httpsgithubcomhttpwghttp-coreissues218)
+    - [https://github.com/httpwg/http-core/issues/215](#httpsgithubcomhttpwghttp-coreissues215)
+    - [https://github.com/httpwg/http-core/issues/212](#httpsgithubcomhttpwghttp-coreissues212)
+    - [https://github.com/httpwg/http-core/issues/196](#httpsgithubcomhttpwghttp-coreissues196)
+    - [https://github.com/httpwg/http-core/issues/196](#httpsgithubcomhttpwghttp-coreissues196-1)
+    - [https://github.com/httpwg/http-core/issues/180](#httpsgithubcomhttpwghttp-coreissues180)
+    - [https://github.com/httpwg/http-core/issues/169](#httpsgithubcomhttpwghttp-coreissues169)
+    - [https://github.com/httpwg/http-core/issues/34](#httpsgithubcomhttpwghttp-coreissues34)
+  - [Presentation: Braid: Synchornisation for HTTP](#presentation-braid-synchornisation-for-http)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+
+## Monday, 22 July 2019
 
 *Minutes: David Schinazi*
 
@@ -241,7 +284,7 @@ Mike Bishop: multiplexing without priorities is a half-shipped feature
 MT: we need prioritization but not signaling of priorities
 
 
-## Thursday
+## Thursday, 25 July 2019
 
 *Minutes: Craig Taylor*
 
@@ -282,7 +325,7 @@ BenS: MAny in this room want this to bootstrap quick, so more relates to this ro
 Roy Fielding (via jabber): This finally makes srv worth implementing for HTTP
 
 
-### 15m Priorities
+### Priorities
 
 Ben Schartz: Order of submission of requests implies some priority
 

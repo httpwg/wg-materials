@@ -1,17 +1,12 @@
-Monday, 22 July 2019, Afternoon Session II (Extensions)
-1550-1750, Laurier
+# HTTP Working Group Minutes - IETF105 Montreal
 
-Minutes: David Schinazi
 
-# 15:50 - Administrivia
+## Monday, 22 July 2019 (Extensions)
 
-## 3 min - Blue sheets / scribe selection / NOTE WELL
+*Minutes: David Schinazi*
 
-## 2 min - Agenda bashing
 
-# Active Extension Drafts
-
-## 15:51 - Resource Digests for HTTP - Lucas Pardue
+### Resource Digests for HTTP - Lucas Pardue
 
 Martin Thomson (MT): I like this, few minor comments - will raise as issues
 There's already an IANA registry for hash functions
@@ -22,12 +17,12 @@ Roy Fielding (on jabber) +1 to draft-ietf-httpbis-digest-headers-00 but it might
 MT: What principles do we use to define new digest schemes? How do we encode parameterized digests?
 Roberto Polli: +1 to MT's comment, parameterizing would solve many issues
 
-## 5 min - Using TLS 1.3 with HTTP/2 - David Benjamin
+### Using TLS 1.3 with HTTP/2 - David Benjamin
 
 MT: Can we just last call this?
 Patrick MacManus: Check the list soon after this week
 
-## 5 min - Proxy-Status - Piotr Sikora
+### Proxy-Status - Piotr Sikora
 
 Issue 808
 Alessandro Ghedini: Will new status codes need to define new Proxy-Status
@@ -43,7 +38,7 @@ MT: What's the relationship between this and Via / CDN-Loop / Cache?
 mnot: this is for intermediaries whereas some of the others are request headers. Separating this information out allows robust parsing on clients
 MT: Suggest splitting Proxy-Info and Proxy-Status into separate drafts
 
-## 16:27 - The Cache HTTP Response Header - Mnot
+### The Cache HTTP Response Header - Mnot
 
 Issue 766
 Roy F (jabber):  I'd really really really prefer this be called Cache-Status (mostly because that aligns it with cache-control and potential future fields that help us isolate semantics specific to caches)
@@ -59,12 +54,12 @@ Thomas Peterson: is there not room for allowing for free-form values here for im
 mnot: need a good extensibility story
 mnot: next step: refactor
 
-## 16:38 - Variants - mnot
+### Variants - mnot
 Not much progress here, waiting for implementations
 How do variants work with cookies? That would open up use cases
 Colin Blendell: We have an internal implementation and it works well
 
-## 16:40 - BCP56bis - mnot
+### BCP56bis - mnot
 This used to be blocked on core
 Going over issues list
 Roy Fielding (jabber): Those all sound like core issues to me
@@ -72,12 +67,12 @@ mnot: disagrees for 840 and 774
 Chris Lemons: Users forget that stale exists, having more visibility is goiong to increase the quality of implementations
 Roy F: shrug
 
-## 16:45 - Secondary Certificates - Mike Bishop
+### Secondary Certificates - Mike Bishop
 Kyle Nekritz: We have a partial implementation
 MT: Do not ship this before we have interoperable implementations
 Nick Sullivan: Cloudflare has a server implementation, we would like clients to test it
 
-## 16:48 - Structured Headers - mnot
+### Structured Headers - mnot
 Going over recent changes
 Issue 848
 MT: can we confirm that this is not specific to the C programming language?
@@ -119,7 +114,7 @@ Tommy Pauly: organizing hum, do you want to
 2) we should add a strong definition to the doc (no hums)
 3) we should keep discussing (no hums)
 
-## 10 min - Client Hints - Yoav Weiss
+### Client Hints - Yoav Weiss
 Issue: Sec-CH prefix
 mnot: we shouldn't infer properties based on prefixes
 Chris Lemons: if there's a convention someone is going to write software assuming that
@@ -135,24 +130,24 @@ MT: +1. These are defined for consumption by CDNs so these CDNs might want to lo
 Topic: HTTPSVC + Client Hints
 This will be discussed on Thursday
 
-## 5 min - RFC6265bis
+### RFC6265bis
 This draft was skipped
 
-# Proposed / Related Work
-
-## 30 min - HTTP 2/3 Prioritisation
+### HTTP 2/3 Prioritisation
 Roberto Peon: what matters is what implementations do, not the spec. So h2 priorities failed, let's move on. Need priorities
 Kazuho: We should remove priorities from h3
 Mike Bishop: multiplexing without priorities is a half-shipped feature
 MT: we need prioritization but not signaling of priorities
 
 
+## Thursday
+
 Thursday, 25 July 2019, Afternoon Session II (Extensions)
 1550-1750, Laurier
 
 Minutes: Craig Taylor
 
-## 10m - HTTPSVC record - Eric Nygren
+### HTTPSVC record - Eric Nygren
 https://tools.ietf.org/html/draft-nygren-httpbis-httpssvc-01
 Presentation notes (not included in the text):
     esni may benefit from becoming a seperate draft, right now it's included
@@ -172,7 +167,10 @@ mnot (individual): Sees as generic mechanism that relates to altsvc, so http wor
 BenS: MAny in this room want this to bottstrap quick, so more relates to this room
 Roy Fielding (via jabber): This finally makes srv worth implementing for HTTP
 
-## 15m Priorities - ????
+
+
+
+### 15m Priorities
 Ben Schartz: Order of submission of requests implies some priority
 Roberto: Priority is difficult, and will always be suboptima, h2 complex -deps+weight+inorder, rich but complex, poor interop, poor implementation, externally implementad semantic schemes exist.
   Retaining this increases complexity and doesn't offer 'value' for h3. Personal preference h2 priorities deprecated and replaced with http priorities that makes sense for h2 and h3.
@@ -208,7 +206,7 @@ Design Team Volunteers:
 Ian Swett (lead): Alan Frindell, Kazuho Oku, Craig Taylor, Leif Hedstrom, Roberto Peon, Lucas Pardue, Colin Bendell, Roy Fielding
 
 
-## Issues
+### Core Issues
 
 https://github.com/httpwg/http-core/issues/218
 mt: What other things might cause 403? 
@@ -255,7 +253,7 @@ mnot: Similar but different
 mnot: Suggested close with minor editorial change proposed in issue
 Action: Closed
 
-## Presentation: Braid: Synchornisation for HTTP
+### Presentation: Braid: Synchornisation for HTTP
   https://braid.news
   https://tools.ietf.org/html/draft-toomim-braid-00#section-4
   

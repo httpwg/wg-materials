@@ -14,7 +14,7 @@ There's already an IANA registry for hash functions
 
 Relationship with SRI? How do they interact?
 
-Reoberto Peon: Structured Headers: it would be nice to encode this in binary
+Roberto Peon: Structured Headers: it would be nice to encode this in binary
 
 Jeffrey Yasskin: The SRI question should go to W3C
 
@@ -92,7 +92,7 @@ Not much progress here, waiting for implementations
 
 How do variants work with cookies? That would open up use cases
 
-Colin Blendell: We have an internal implementation and it works well
+Colin Bendell: We have an internal implementation and it works well
 
 ### BCP56bis - mnot
 
@@ -104,7 +104,7 @@ Roy Fielding (jabber): Those all sound like core issues to me
 
 mnot: disagrees for 840 and 774
 
-Chris Lemons: Users forget that stale exists, having more visibility is goiong to increase the quality of implementations
+Chris Lemons: Users forget that stale exists, having more visibility is going to increase the quality of implementations
 
 Roy F: shrug
 
@@ -257,15 +257,15 @@ Eric: esni is the main push for bringing this work forward now
 
 Ben Shwartz: Points out this draft is intended to be used 'unauthenticated'
 
-Tommy Pauly (indivdual): Defienitely interested in this work and moving it fwd.
+Tommy Pauly (individual): Definitely interested in this work and moving it fwd.
 
-Martin Thompson: Enthusiastic about something that gives a less clunky esni record that has the support of the DNS commnunity
+Martin Thompson: Enthusiastic about something that gives a less clunky esni record that has the support of the DNS community
 
 RoyF: My understanding of ESNI is limited but I believe it also relies on an additional DNS request to obtain the key for ESNI. Is there a way to piggyback this service information on top of that response instead of making two additional DNS requests? 
 
 *response in room was that this new request supplants the existing ESNI request*
 
-Mike Bishop: The interet for this needs to come from this room, even if httpbis does not complete the work
+Mike Bishop: The interest for this needs to come from this room, even if httpbis does not complete the work
 
 Eric Nygren: Largely agrees, although other areas to fill out details
 
@@ -277,7 +277,7 @@ Martin T: If you want some bootstrapping you have to pay some price. In terms of
 
 mnot (individual): Sees as generic mechanism that relates to altsvc, so http work
 
-BenS: MAny in this room want this to bottstrap quick, so more relates to this room
+BenS: MAny in this room want this to bootstrap quick, so more relates to this room
 
 Roy Fielding (via jabber): This finally makes srv worth implementing for HTTP
 
@@ -286,7 +286,7 @@ Roy Fielding (via jabber): This finally makes srv worth implementing for HTTP
 
 Ben Schartz: Order of submission of requests implies some priority
 
-Roberto: Priority is difficult, and will always be suboptima, h2 complex -deps+weight+inorder, rich but complex, poor interop, poor implementation, externally implementad semantic schemes exist.
+Roberto: Priority is difficult, and will always be suboptimal, h2 complex -deps+weight+inorder, rich but complex, poor interop, poor implementation, externally implementad semantic schemes exist.
 
 Retaining this increases complexity and doesn't offer 'value' for h3. Personal preference h2 priorities deprecated and replaced with http priorities that makes sense for h2 and h3.
   
@@ -298,7 +298,7 @@ mnot: ...are you saying that your browser will stop emitting priorities?
 
 mt: ...not discussed internally, but personal opinion is that's the way forward with experimentation required.
 
-Mike Bishop: In the side meeting it was discussed that extension may allow multiple schemes, concern about negotiation of multiple schemes howver an extention that allows disable or support may be the best inital state with h3 default state being not_supported.
+Mike Bishop: In the side meeting it was discussed that extension may allow multiple schemes, concern about negotiation of multiple schemes however an extension that allows disable or support may be the best initial state with h3 default state being not_supported.
 
 Roy Fielding: I think that if we can agree that priority can be communicated in a header field for request and response, rather than framing options or whatever, then we can take this whole discussion off of the critical path for QUIC because the priority scheme can be defined as part of that communication regardless of HTTP version.
 
@@ -310,21 +310,21 @@ Yoav: Request ordering isn't always reliable (cited bug in chrome) Client/Server
 
 mnot: Big question is what to report to quic for h3
 
-Yoav: Extension mechanism that alows extension, but ship without h2-prio
+Yoav: Extension mechanism that allows extension, but ship without h2-prio
 
 Alassandro Ghedini: h2-prio are flawed but do provide some value, wary about doing nothing at all. Very open to other schemes.
 
-Kazuho Oku: Fine for browsers to stop sending frames as servers can use other schemes to compenstate this behaviour.  Clients can send headers of simple table straight away and a translation table can map to h2 or a new h3 scheme.
+Kazuho Oku: Fine for browsers to stop sending frames as servers can use other schemes to compensate this behaviour.  Clients can send headers of simple table straight away and a translation table can map to h2 or a new h3 scheme.
 
 Alan frindell: Agree h2-pio is broken and not to copy fwd, but not to 'let them go'. Extension for enablement supported. Removing client sent scheme is a worry, and removing from h3 critical path, concern that it will complete. FB only use client side schemes today.
 
-Ian Swett: Support removing h2-prio. Also looking at spending dev time on this... Suspects that osmething very similar to Kazuhos will end up being used. Slight pref for binary encoding over headers
+Ian Swett: Support removing h2-prio. Also looking at spending dev time on this... Suspects that something very similar to Kazuho's will end up being used. Slight pref for binary encoding over headers
 
 Lucas Pardue: Uploaded example draft of removing priorities.
 
-Roberto Peon: Header priorites warn, lots of 'issues' (cahing, range etc.) However worth solving, and with compression etc, it's going to end up quite efficient.
+Roberto Peon: Header priorities warn, lots of 'issues' (caching, range etc.) However worth solving, and with compression etc, it's going to end up quite efficient.
 
-mt: Likes the designs presented, including the end to end bi-directional nature. Thinks that a transtional approach is useful.
+mt: Likes the designs presented, including the end to end bi-directional nature. Thinks that a transitional approach is useful.
 
 Brad L: *missed*
 
@@ -336,7 +336,7 @@ Alan Frindell: As a supporter of h2-prio - Still ok for h3 to have no h2-prio, b
 
 mnot: Concern over time frames
 
-(chairs): A disgn team?
+(chairs): A design team?
 
 Roberto: Plea for low barrier to entry, and welcomes experimentation from Ian...
 
@@ -381,7 +381,7 @@ mt: Caution - 2818 is _old_ so there is a hazard and the refresh of the language
 
 mnot: Suggests a group to asses the work
 
-Ryan Sleevi: 2818 needs to "go away": Core parts of 2818 should be included into core semantic, other parts [obselete]
+Ryan Sleevi: 2818 needs to "go away": Core parts of 2818 should be included into core semantic, other parts *obsolete*
 
 Roy: "the https URI scheme semantics are already in 7230"
 
@@ -407,7 +407,7 @@ Roberto: Do we mean the enoded form?
 
 mt: No difference between either form
 
-Roberto: [nod]
+Roberto: *nod*
 
 Action: Proposal accepted
 
@@ -432,9 +432,9 @@ Alan Frindell: May be work to help with their messaging issues; provide details 
 
 Ben Schwartz: *missed this*
 
-mt: Thinks this is more than exsiting messaging methods, and semantics need to move into the protocol
+mt: Thinks this is more than existing messaging methods, and semantics need to move into the protocol
 
-Neil Jenkins: Toughts on individual documents and collections of documents
+Neil Jenkins: Thoughts on individual documents and collections of documents
 
 Roberto Peon: Interesting problem, highlights balance of trust in getting some clients to make the transformation 'correctly'.
 

@@ -97,7 +97,7 @@ Roy F (via jabber): I agree when it is new information and not an existing code
 
 MT: What's the relationship between this and Via / CDN-Loop / Cache?
 
-mnot: this is for intermediaries whereas some of the others are request headers. Separating this information out allows robust parsing on clients
+mnot: this is for intermediaries whereas some of the others are request headers. Separating this information out allows robust parsing on clients, and makes it easier to identify proxy-generated responses.
 
 MT: Suggest splitting Proxy-Info and Proxy-Status into separate drafts
 
@@ -243,7 +243,7 @@ Tommy Pauly: organizing hum, do you want to:
 
 #### Issue: Sec-CH prefix
 
-mnot: we shouldn't infer properties based on prefixes
+mnot: inferring properties based on prefixes is problematic
 
 Chris Lemons: if there's a convention someone is going to write software assuming that
 
@@ -294,7 +294,7 @@ https://tools.ietf.org/html/draft-nygren-httpbis-httpssvc-01
 
 Presentation notes (not included in the text): esni may benefit from becoming a seperate draft, right now it's included
 
-mnot: Commented this is not the first time this has come up, and this is already multiple iterations.
+mnot: this is not the first time this has come up, and this is already multiple iterations.
 
 Eric: esni is the main push for bringing this work forward now
 
@@ -371,7 +371,7 @@ mt: Likes the designs presented, including the end to end bi-directional nature.
 
 Brad L: *missed*
 
-mnot (chair): A bit late to deprecate priorities
+mnot (chair): can't deprecate priorities today at this meeting
 
 mt: ...were not asking for adoption 15m after draft was published
 
@@ -422,7 +422,7 @@ RoyF: +1
 
 mt: Caution - 2818 is _old_ so there is a hazard and the refresh of the language means this is more work than might be expected.
 
-mnot: Suggests a group to asses the work
+mnot: Suggests a group effort to asses the work
 
 Ryan Sleevi: 2818 needs to "go away": Core parts of 2818 should be included into core semantic, other parts *obsolete*
 

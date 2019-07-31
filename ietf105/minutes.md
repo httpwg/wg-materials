@@ -39,7 +39,7 @@
     - [https://github.com/httpwg/http-core/issues/180](#httpsgithubcomhttpwghttp-coreissues180)
     - [https://github.com/httpwg/http-core/issues/169](#httpsgithubcomhttpwghttp-coreissues169)
     - [https://github.com/httpwg/http-core/issues/34](#httpsgithubcomhttpwghttp-coreissues34)
-  - [Presentation: Braid: Synchornisation for HTTP](#presentation-braid-synchornisation-for-http)
+  - [Presentation: Braid: Synchronisation for HTTP](#presentation-braid-synchronisation-for-http)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -464,7 +464,7 @@ mnot: Suggested close with minor editorial change proposed in issue
 
 Action: Closed
 
-### Presentation: Braid: Synchornisation for HTTP
+### Presentation: Braid: Synchronisation for HTTP
 
 * https://braid.news
 * https://tools.ietf.org/html/draft-toomim-braid-00#section-4

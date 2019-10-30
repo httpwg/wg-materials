@@ -49,3 +49,7 @@ _1330-1530, Collyer_
 *  15 min - [Client Hints](https://tools.ietf.org/html/draft-ietf-httpbis-client-hints)
 *  15 min - [Digest Headers](https://tools.ietf.org/html/draft-ietf-httpbis-digest-headers)
 *  15 min - [Proxy-Status](https://tools.ietf.org/html/draft-ietf-httpbis-proxy-status)
+
+### Other Topics
+
+* 10 min - [Security Considerations Regarding Compression Dictionaries](https://tools.ietf.org/html/draft-handte-httpbis-dict-sec) - _Felix Handte_

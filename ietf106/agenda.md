@@ -26,7 +26,7 @@ _1550-1750, Canning_
 
 ### Other Topics
 
-* 10 min - [RateLimit Header Fields for HTTP](https://tools.ietf.org/html/draft-polli-ratelimit-headers)
+* 10 min - [RateLimit Header Fields for HTTP](https://tools.ietf.org/html/draft-polli-ratelimit-headers) - _Roberto Polli (Remote)_
 
 
 ## Thursday, 21 November 2019, Afternoon Session I  (Extensions)

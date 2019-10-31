@@ -18,7 +18,7 @@ _1550-1750, Canning_
 
 ### Priorities
 
-* 45 min - HTTP 3 Priorities
+* 45 min - HTTP Priorities
 
 ### HTTP Core
 

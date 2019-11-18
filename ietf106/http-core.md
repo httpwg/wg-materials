@@ -45,15 +45,15 @@ The following 29 issues have been closed since the last meeting in Montreal:
 
 with the bulk of text changes being about
 
- - refactoring the byte ranges grammar to be extensible: httpwg/http-core#196, httpwg/http-core#212
- - moving trailer fields to Semantics: httpwg/http-core#16, httpwg/http-core#117
- - moving payload body requirements to Semantics: httpwg/http-core#159, httpwg/http-core#202
- - moving retries to idempotent methods: httpwg/http-core#27
- - adding a port registration: httpwg/http-core#36
- - adding a min supported URI length: httpwg/http-core#169
- - incorporating the remaining RFC2818 (HTTP over TLS) text: httpwg/http-core#236
- - replacing "cacheable by default" with heuristically cacheable: httpwg/http-core#54, httpwg/http-core#242
- - defining requirements on caching incomplete responses: httpwg/http-core#25, httpwg/http-core#221
+ - refactoring the byte ranges grammar to be extensible: [196](https://github.com/httpwg/http-core/issues/196), [212](https://github.com/httpwg/http-core/issues/212)
+ - moving trailer fields to Semantics: [16](https://github.com/httpwg/http-core/issues/16), [117](https://github.com/httpwg/http-core/issues/117)
+ - moving payload body requirements to Semantics: [159](https://github.com/httpwg/http-core/issues/159), [202](https://github.com/httpwg/http-core/issues/202)
+ - moving retries to idempotent methods: [27](https://github.com/httpwg/http-core/issues/27)
+ - adding a port registration: [36](https://github.com/httpwg/http-core/issues/36)
+ - adding a min supported URI length: [169](https://github.com/httpwg/http-core/issues/169)
+ - incorporating the remaining RFC2818 (HTTP over TLS) text: [236](https://github.com/httpwg/http-core/issues/236)
+ - replacing "cacheable by default" with heuristically cacheable: [54](https://github.com/httpwg/http-core/issues/54), [242](https://github.com/httpwg/http-core/issues/242)
+ - defining requirements on caching incomplete responses: [25](https://github.com/httpwg/http-core/issues/25), [221](https://github.com/httpwg/http-core/issues/221)
 
 See the "Changes since ..." sections at the end of each draft for a brief
 summary of what has been changed.
@@ -67,5 +67,5 @@ We are also monitoring RC 723* errata:
 
 Right now, we have only two reports that haven't been dealt with:
 
- - httpwg/http-core#163
- - httpwg/http-core#53
+ - https://github.com/httpwg/http-core/issues/163
+ - https://github.com/httpwg/http-core/issues/53

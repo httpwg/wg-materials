@@ -20,28 +20,28 @@ Diffs since 05 can be seen at
 and a frankenRFC diff of all changes since the last consensus RFCs, rearranged
 according to the current draft structure to show just the word changes:
 
-  https://httpwg.org/http-core/diffs/diff_semantics_frfc_to_06.html
-  https://httpwg.org/http-core/diffs/diff_messaging_frfc_to_06.html
-  https://httpwg.org/http-core/diffs/diff_cache_frfc_to_06.html
+  - https://httpwg.org/http-core/diffs/diff_semantics_frfc_to_06.html
+  - https://httpwg.org/http-core/diffs/diff_messaging_frfc_to_06.html
+  - https://httpwg.org/http-core/diffs/diff_cache_frfc_to_06.html
 
 As always, the best way to track our work is on github at
 
-  https://github.com/httpwg/http-core
+  - https://github.com/httpwg/http-core
 
 and especially the list of commits and open issues:
 
-  https://github.com/httpwg/http-core/commits/master
-  https://github.com/httpwg/http-core/issues
+  - https://github.com/httpwg/http-core/commits/master
+  - https://github.com/httpwg/http-core/issues
 
 For this meeting, we will probably focus on the issues marked with the label "discuss"
 
-  https://github.com/httpwg/http-core/labels/discuss
+  - https://github.com/httpwg/http-core/labels/discuss
 
 (which are still being added to, so speak up if you want to discuss something).
 
 The following 29 issues have been closed since the last meeting in Montreal:
 
-  https://github.com/httpwg/http-core/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+closed%3A%3E2019-07-19+sort%3Acreated-asc
+  - https://github.com/httpwg/http-core/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aclosed+closed%3A%3E2019-07-19+sort%3Acreated-asc
 
 with the bulk of text changes being about
 

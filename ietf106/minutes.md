@@ -1,5 +1,42 @@
 # HTTP Working Group Minutes - IETF106 Singapore
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Monday, 18 November 2019](#monday-18-november-2019)
+  - [Related work in other fora](#related-work-in-other-fora)
+  - [HTTP Priority Design Team update](#http-priority-design-team-update)
+  - [http-core Status](#http-core-status)
+  - [RateLimit Headers](#ratelimit-headers)
+- [Thursday, 21 November 2019](#thursday-21-november-2019)
+  - [SECDISPATCH - Mark](#secdispatch---mark)
+  - [DNSOP - Tommy](#dnsop---tommy)
+  - [Priorities Redux - Ian](#priorities-redux---ian)
+  - [Digest Headers - Lucas Pardue](#digest-headers---lucas-pardue)
+    - [Change 1:  State-changing methods](#change-1--state-changing-methods)
+    - [Change 2:  IANA](#change-2--iana)
+    - [Issues 936/937:  Discussion of how validators specify a resource](#issues-936937--discussion-of-how-validators-specify-a-resource)
+    - [Issue 851:  Using Digest in signatures](#issue-851--using-digest-in-signatures)
+    - [Issue 852:  Threat model](#issue-852--threat-model)
+    - [Issue 849:  Digest of empty representations](#issue-849--digest-of-empty-representations)
+    - [Issue 850:  BNF of "parameter"](#issue-850--bnf-of-parameter)
+  - [Client Hints - Yoav Weiss (remote)](#client-hints---yoav-weiss-remote)
+  - [Cache-Status - MNot](#cache-status---mnot)
+  - [Proxy-Status - MNot](#proxy-status---mnot)
+    - [Issue 801](#issue-801)
+    - [Issue 808](#issue-808)
+  - [Variants - MNot](#variants---mnot)
+  - [BCP56bis - MNot](#bcp56bis---mnot)
+  - [Secondary Certificates - Mike Bishop](#secondary-certificates---mike-bishop)
+  - [Structured Headers](#structured-headers)
+  - [6265bis](#6265bis)
+  - [Compression Dictionaries - Felix Handte](#compression-dictionaries---felix-handte)
+  - [Transport Information Header - James Gruessing](#transport-information-header---james-gruessing)
+  - [Core Redux - Issue 986](#core-redux---issue-986)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+
 ## Monday, 18 November 2019
 
 _Minutes by Felix Handte: w@felixhandte.com_

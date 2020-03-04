@@ -23,10 +23,9 @@ _15:50-17:20, Regency C_
 *   5 min - [The Cache HTTP Response Header](https://tools.ietf.org/html/draft-ietf-httpbis-cache-header)
 *   5 min - [HTTP Representation Variants](https://tools.ietf.org/html/draft-ietf-httpbis-variants)
 *   5 min - [BCP56bis](https://tools.ietf.org/html/draft-ietf-httpbis-bcp56bis)
-*  10 min - [RFC6265bis](https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis)
 *  10 min - [Secondary Certificates](https://tools.ietf.org/html/draft-ietf-httpbis-http2-secondary-certs)
 *  10 min - [RFC6265bis](https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis)
-*  30 min - [Extensible Prioritization Scheme for HTTP](https://tools.ietf.org/html/draft-ietf-httpbis-priority)
+*  40 min - [Extensible Prioritization Scheme for HTTP](https://tools.ietf.org/html/draft-ietf-httpbis-priority)
 
 
 ## Friday, 27 March Afternoon session I 

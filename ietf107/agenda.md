@@ -1,7 +1,7 @@
 # HTTP Working Group Agenda - IETF 107
 
 * [Meeting chat](xmpp:httpbis@jabber.ietf.org?join)
-* [Meetecho](http://www.meetecho.com/ietf106/httpbis) remote participation
+* [Meetecho](http://www.meetecho.com/ietf107/httpbis) remote participation
 * [Minutes](https://etherpad.ietf.org/p/notes-ietf-107-httpbis?useMonospaceFont=true)
 
 *Taking minutes? See [our guide](https://github.com/httpwg/wiki/wiki/TakingMinutes)*

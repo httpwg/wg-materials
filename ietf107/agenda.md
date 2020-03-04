@@ -7,7 +7,7 @@
 *Taking minutes? See [our guide](https://github.com/httpwg/wiki/wiki/TakingMinutes)*
 
 
-## Thursday, 26 March - Afternoon session II  (Core)
+## Thursday, 26 March - Afternoon session II 
 
 _15:50-17:20, Regency C_
 
@@ -29,7 +29,7 @@ _15:50-17:20, Regency C_
 *  30 min - [Extensible Prioritization Scheme for HTTP](https://tools.ietf.org/html/draft-ietf-httpbis-priority)
 
 
-## Friday, 27 March Afternoon session I  (Extensions)
+## Friday, 27 March Afternoon session I 
 
 _12:20-13:50, Regency D_
 

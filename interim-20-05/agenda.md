@@ -7,7 +7,7 @@
 
 _This is a draft agenda; meeting dates and times will be confirmed._
 
-## Day 2
+## Day 1
 
 _1 Hour, 15 minutes_
 

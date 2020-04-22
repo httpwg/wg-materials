@@ -18,12 +18,12 @@ _1 Hour, 15 minutes_
 
 ### Active Extension Drafts
 
-*  45 min - [Extensible Prioritization Scheme for HTTP](https://tools.ietf.org/html/draft-ietf-httpbis-priority)
+*  45 min - [Extensible Prioritization Scheme for HTTP](https://tools.ietf.org/html/draft-ietf-httpbis-priority) - _Lucas Pardue_
 
 ### Proposals
 
-* 15 min - [User Defined Resource Error HTTP Status Code](https://tools.ietf.org/html/draft-divilly-user-defined-resource-error)
-* 10 min - [Advisory Content-Length for HTTP](https://tools.ietf.org/html/draft-nottingham-bikeshed-length)
+* 15 min - [User Defined Resource Error HTTP Status Code](https://tools.ietf.org/html/draft-divilly-user-defined-resource-error) - _Colm Divilly_
+* 10 min - [Advisory Content-Length for HTTP](https://tools.ietf.org/html/draft-nottingham-bikeshed-length) - _Mark Nottingham_
 
 
 ## Day 2
@@ -43,5 +43,5 @@ _1 Hour, 15 minutes_
 
 ### Proposals
 
-* 10 min - [Client Cert header](https://tools.ietf.org/html/draft-bdc-something-something-certificate)
-* 15 min - [SASL in HTTP](https://tools.ietf.org/html/draft-vanrein-httpauth-sasl)
+* 10 min - [Client Cert header](https://tools.ietf.org/html/draft-bdc-something-something-certificate) - _Brian Campbell_
+* 15 min - [SASL in HTTP](https://tools.ietf.org/html/draft-vanrein-httpauth-sasl) - _Rick van Rein_

@@ -36,8 +36,8 @@ _1 Hour, 15 minutes_
 *  2 min - Agenda bashing
 
 ### Active Extension Drafts
-*  15 min - [Signing HTTP Messages](https://tools.ietf.org/html/draft-ietf-httpbis-message-signatures)
-*  10 min - [Secondary Certificates](https://tools.ietf.org/html/draft-ietf-httpbis-http2-secondary-certs)
+*  15 min - [Signing HTTP Messages](https://tools.ietf.org/html/draft-ietf-httpbis-message-signatures) - _Annabelle Backman_
+*  10 min - [Secondary Certificates](https://tools.ietf.org/html/draft-ietf-httpbis-http2-secondary-certs) - _Mike Bishop_
 *  10 min - [Digest Headers](https://tools.ietf.org/html/draft-ietf-httpbis-digest-headers)
 *  10 min - [RFC6265bis](https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis)
 

@@ -22,8 +22,9 @@ _1 Hour, 15 minutes_
 
 ### Proposals
 
-* 15 min - [User Defined Resource Error HTTP Status Code](https://tools.ietf.org/html/draft-divilly-user-defined-resource-error) - _Colm Divilly_
-* 10 min - [Advisory Content-Length for HTTP](https://tools.ietf.org/html/draft-nottingham-bikeshed-length) - _Mark Nottingham_
+* 10 min - [Client Cert header](https://tools.ietf.org/html/draft-bdc-something-something-certificate) - _Brian Campbell_
+* 15 min - [SASL in HTTP](https://tools.ietf.org/html/draft-vanrein-httpauth-sasl) - _Rick van Rein_
+
 
 
 ## Day 2
@@ -36,6 +37,7 @@ _1 Hour, 15 minutes_
 *  2 min - Agenda bashing
 
 ### Active Extension Drafts
+
 *  15 min - [Signing HTTP Messages](https://tools.ietf.org/html/draft-ietf-httpbis-message-signatures) - _Annabelle Backman_
 *  10 min - [Secondary Certificates](https://tools.ietf.org/html/draft-ietf-httpbis-http2-secondary-certs) - _Mike Bishop_
 *  10 min - [Digest Headers](https://tools.ietf.org/html/draft-ietf-httpbis-digest-headers) - _Lucas Pardue_
@@ -43,5 +45,5 @@ _1 Hour, 15 minutes_
 
 ### Proposals
 
-* 10 min - [Client Cert header](https://tools.ietf.org/html/draft-bdc-something-something-certificate) - _Brian Campbell_
-* 15 min - [SASL in HTTP](https://tools.ietf.org/html/draft-vanrein-httpauth-sasl) - _Rick van Rein_
+* 15 min - [User Defined Resource Error HTTP Status Code](https://tools.ietf.org/html/draft-divilly-user-defined-resource-error) - _Colm Divilly_
+* 10 min - [Advisory Content-Length for HTTP](https://tools.ietf.org/html/draft-nottingham-bikeshed-length) - _Mark Nottingham_

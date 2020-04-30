@@ -7,7 +7,7 @@
 
 _This is a draft agenda; meeting dates and times will be confirmed._
 
-## Day 1
+## 19 May 2020, [13:00-14:15 UTC](https://www.timeanddate.com/worldclock/fixedtime.html?msg=HTTP+Interim+Day+One&iso=20200519T13&p1=1440&ah=1&am=15)
 
 _1 Hour, 15 minutes_
 
@@ -27,7 +27,7 @@ _1 Hour, 15 minutes_
 
 
 
-## Day 2
+## 26 May 2020, [13:00-14:15 UTC](https://www.timeanddate.com/worldclock/fixedtime.html?msg=HTTP+Interim+Day+Two&iso=20200526T13&p1=1440&ah=1&am=15)
 
 _1 Hour, 15 minutes_
 

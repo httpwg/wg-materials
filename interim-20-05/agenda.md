@@ -1,5 +1,8 @@
 # HTTP Working Group Interim Meeting Agenda - May 2020
 
+* [WebEx](https://ietf.webex.com/ietf/j.php?MTID=m74dcbf6fe3ea0e87dbc1f8ce03d0b540)
+  - Password: self-isolate
+  - Meeting number: 615 894 005
 * [Meeting chat](xmpp:httpbis@jabber.ietf.org?join)
 * [Minutes]()
 

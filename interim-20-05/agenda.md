@@ -24,7 +24,6 @@ _1 Hour, 15 minutes_
 ### Proposals
 
 * 10 min - [Client Cert header](https://tools.ietf.org/html/draft-bdc-something-something-certificate) - _Brian Campbell_
-* 15 min - [SASL in HTTP](https://tools.ietf.org/html/draft-vanrein-httpauth-sasl) - _Rick van Rein_
 
 
 

@@ -42,7 +42,7 @@ _1 Hour, 15 minutes_
 *  15 min - [Signing HTTP Messages](https://tools.ietf.org/html/draft-ietf-httpbis-message-signatures) - _Annabelle Backman_
 *  10 min - [Secondary Certificates](https://tools.ietf.org/html/draft-ietf-httpbis-http2-secondary-certs) - _Mike Bishop_
 *  10 min - [Digest Headers](https://tools.ietf.org/html/draft-ietf-httpbis-digest-headers) - _Lucas Pardue_
-*  10 min - [RFC6265bis](https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis)
+*  10 min - [RFC6265bis](https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis) - _Mike West_
 
 ### Proposals
 

@@ -24,6 +24,7 @@ _1 Hour, 15 minutes_
 ### Proposals
 
 * 10 min - [Client Cert header](https://tools.ietf.org/html/draft-bdc-something-something-certificate) - _Brian Campbell_
+* 15 min - [User Defined Resource Error HTTP Status Code](https://tools.ietf.org/html/draft-divilly-user-defined-resource-error) - _Colm Divilly_
 
 
 
@@ -45,5 +46,4 @@ _1 Hour, 15 minutes_
 
 ### Proposals
 
-* 15 min - [User Defined Resource Error HTTP Status Code](https://tools.ietf.org/html/draft-divilly-user-defined-resource-error) - _Colm Divilly_
 * 10 min - [Advisory Content-Length for HTTP](https://tools.ietf.org/html/draft-nottingham-bikeshed-length) - _Mark Nottingham_

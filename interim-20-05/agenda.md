@@ -4,7 +4,8 @@
   - Password: self-isolate
   - Meeting number: 615 894 005
 * [Meeting chat](xmpp:httpbis@jabber.ietf.org?join)
-* [Minutes]()
+* [Minutes](https://docs.google.com/document/d/1G-aolTxcnHS7mtVABVKJ7eN8f3iJHExZdRgkId1lZSc/edit?usp=sharing)
+* [Blue Sheets](https://etherpad.ietf.org:9009/p/notes-ietf-interim-2020-httpbis-01-httpbis?useMonospaceFont=true)
 
 *Taking minutes? See [our guide](https://github.com/httpwg/wiki/wiki/TakingMinutes)*
 
@@ -14,7 +15,7 @@ _1 Hour, 15 minutes_
 
 ### Administrivia
 
-*  3 min - Blue sheets / scribe selection / [NOTE WELL](https://www.ietf.org/about/note-well/)
+*  3 min - [Blue sheets](https://etherpad.ietf.org:9009/p/notes-ietf-interim-2020-httpbis-01-httpbis?useMonospaceFont=true) / scribe selection / [NOTE WELL](https://www.ietf.org/about/note-well/)
 *  2 min - Agenda bashing
 
 ### Active Extension Drafts
@@ -34,7 +35,7 @@ _1 Hour, 15 minutes_
 
 ### Administrivia
 
-*  3 min - Blue sheets / scribe selection / [NOTE WELL](https://www.ietf.org/about/note-well/)
+*  3 min - [Blue sheets](https://etherpad.ietf.org:9009/p/notes-ietf-interim-2020-httpbis-01-httpbis?useMonospaceFont=true) / scribe selection / [NOTE WELL](https://www.ietf.org/about/note-well/)
 *  2 min - Agenda bashing
 
 ### Active Extension Drafts

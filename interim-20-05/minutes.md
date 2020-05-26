@@ -84,10 +84,7 @@ colm: in summary: preference for a header, is there any appetite for a header
 mnot: out of time, but maybe
 
 
-jabber: 9 people
-webex: 33 people
-
-## Attendee name / affiliation
+## Session 1 Blue Sheet
 
 Barry Leiba, FutureWei
 Colm Divilly, Oracle
@@ -121,7 +118,142 @@ Chris Box, BT
  
  
  
- 
+# Session 2 Minutes
+
+Note takers: Peter Wu and Justin Richer
+
+https://github.com/httpwg/wg-materials/blob/gh-pages/interim-20-05/agenda.md#26-may-2020-1300-1415-utc
+
+## Signing HTTP Messages by Annabelle Backman
+https://tools.ietf.org/html/draft-ietf-httpbis-message-signatures
+
+Annabelle Backman:
+ - identify parts to sign
+ - sign them
+ - attach signature to an HTTP message
+ - been adopted as a WG item, converted to MD, -00 draft available
+ - feedback on an incoming change set:
+- structured headers; replace bespoke header w/structured headers (Signature-Input and Signature)
+- "we're drastically changing the format"
+- pull content identifiers into a structured list with parameters
+- help headers be durable as more headers/fields are added during request mutation
+- multiple signatures (one signature can sign a previous signature header)
+- proposal: re-use Signature-Input inner list in the signature calculation
+
+EKR: concern about picking parts of the headers and how that can be secured.
+Annabelle: there are many use cases with different semantics and applications. Intention is to provide a foundation for applications to build a solution for signing.
+EKR: Picking and choosing what you're signing is weak vs just signing over everything
+
+Roberto Polli: removal of expiration property - thinks it is not a secure choice. Signature is bound to the validity. Properties such as expiry should be included in cleartext with the signature.
+Annabelle: expiry is not removed, just not included in the examples in the slides. Expiration is also optional. Will take this conversation to the issue tracker. The reason for breaking it into two separate headers: due to limitations of structured headers, parameters are hard. Multiple signatures are hard to do with structured headers. Please reply to the list for security concerns for separating the two.
+
+Due to running of time, Annabelle will take the rest to the list.
+
+Mark: It's a new draft, everyone be sure to take a look at it
+
+## Secondary Certificates by Mike Bishop
+https://datatracker.ietf.org/meeting/interim-2020-httpbis-02/materials/slides-interim-2020-httpbis-02-sessa-secondary-certificates.pdf
+
+Mike: Concern about lack of client implementations.
+Watson Ladd: Cloudflare is interested in this proposal. Offering secondary certificates for subresources in the page.
+Mark: considers parking this draft until there are client implementations. There seems to be server interest, but we really need client support.
+Mike: Akamai is interested in using it to allow users of client certificates to step up to H2
+Mark: Concern about which certificate to use and when; added complexity
+
+Martin Thomson: thinks it's worth doing, but it is weighing cost/benefits. There are other things competing for time, QUIC, etc. It's a bit complicated, not opposed to it, just time.
+
+EKR: wonders about the intended functionality. Browsers don't want to do client certificates in the first place.
+Mike: draft was originally written for client certs. Then there was a draft for server certs, then merged. Latest draft allows separately supporting one or the other.
+Martin: complexity about getting the UI right is non-trivial. It's relatively easy to fix the TLS and HTTP stack, but the rest is more difficult.
+
+
+## Digest Headers by Lucas Pardue
+https://datatracker.ietf.org/meeting/interim-2020-httpbis-02/materials/slides-interim-2020-httpbis-02-sessa-digest-headers.pdf
+note: uploaded slides are different from the presented one, but the contents have not significantly been altered.
+ - alignment with newer HTTP terminology (help would be appreciated here)
+ - how do we handle different methods, including partial representations of request body (still needs discussion)
+
+Mark: I can help with some of those issues, contact us (+Julian)
+Roberto: We need some historical knowledge to move forward
+
+Watson: Draft indicates protection against buggy compression, doesn't seem to actually do that as specified
+Roberto: content-encoding is property of representation, could be mistaken
+Lucas: will take a task to discuss offline and work through scenarios into an issue
+
+
+## Cookies 🍪 by Mike West
+https://mikewest.github.io/cookie-incrementalism/draft-west-cookie-incrementalism.html
+
+Update1: RFC6265bis plods forward slowly; in the fixing small issues stage
+ - need more platform tests
+ - majority of issues are around samesite attribute
+ - support for UTF-8 in header values. Large issue, non-trivial. "important but not urgent", need to decide to spend time on it now or later
+
+Update2: browsers experiment with default behaviors beyond what's specified in the RFC
+ - SameSite=lax rolled out in Chrome, but reverted in April due to breakage.
+ - Safari started blocking third-party cookies completely.
+
+Annabelle: Some of these features are tripping up legitimate cross-domain use cases. How much outreach is there to the Identity provider community? How can we keep up?
+
+Mike: Challenge is to maintain the stuff about identity transfer but without the wild-west and its side effects
+https://github.com/privacycg/
+
+Martin: This is going to be a moving target; what's the end-point?
+
+Mike: Something like http state tokens proposal for an end state. Suggestions for next steps in https://mikewest.github.io/cookie-incrementalism/draft-west-cookie-incrementalism.html
+Mike: calls out for help to move the draft forward. It's an important issue, but not urgent. If implementations like browsers are consistent, but not documented, that is not ideal.
+
+Mark: Reality is bigger than just browsers
+
+## Advisory Content-Length for HTTP by Mark Nottingham
+https://datatracker.ietf.org/meeting/interim-2020-httpbis-02/materials/slides-interim-2020-httpbis-02-sessa-advisory-content-length.pdf
+
+- leave content-length for message delineation and create a new field for other uses
+
+Mark: is standardizing this header field helpful? Should it be in the HTTP Semantics document, or separate?
+James Gruessing: think it is helpful, it belongs to the Semantics doc.
+Julian Reschke: if it's in semantics, does it affect the standards level we can achieve?
+Mark: it's really just new syntax for an existing feature
+Martin Thomson: thinks it is useful for things like progress bars in browsers and chunked encoding or compression.
+Barry Leiba: how long would it take for the Semantics document to get out of the door? Can this proposal be added to it?
+Mark: pretty soon, but it can become a separate document if needed.
+Mark: thinks there is continued interest?
+
+
+## Session 2 Blue Sheet
+
+* Tommy Pauly, Apple
+* Ted Hardie, Google
+* Julian Reschke, greenbytes GmbH
+* chi-jiun su, hughes network systems
+* Justin Richer, BSPK
+* James Gruessing, BBC
+* Annabelle Backman, AWS
+* Barry Leiba, FutureWei
+* Jack J, Google
+* Patrick McManus, Fastly
+* Alessandro Ghedini, Cloudflare
+* Eric Rescorla, Mozilla
+* Lucas Pardue, Cloudflare
+* Cory Benfield, Apple
+* Watson Ladd, Cloudflare
+* Ken Murchison, Fastmail
+* Martin Thomson, Mozilla
+* Chris Wood, Cloudflare
+* Peter Wu, Cloudflare
+* Alan Frindell, Facebook
+* Jonathan Hoyland, Cloudflare
+* Mike West, Google
+* Hiroyuki Goto, Gree
+* Alissa Cooper, Cisco
+* Mike Bishop, Akamai
+* Gabriel Montenegro, independent
+* Roman Danyliw, Carnegie Mellon University
+* Felix Handte, Facebook
+* Roberto Polli, Italian Digital Transformation Department
+* Ian Swett, Google
+* Magnus Westerlund, Ericsson
+* Daniel Stenberg, wolfSSL
  
  
  

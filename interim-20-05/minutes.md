@@ -1,5 +1,22 @@
-   
 # HTTP WG May 2020 Interim Meeting Blue Sheets
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Session I](#session-i)
+  - [Priorities](#priorities)
+  - [Client Certs](#client-certs)
+  - [Colm Divilly /  User Defined Resource Error HTTP Status Code](#colm-divilly---user-defined-resource-error-http-status-code)
+  - [Session I Blue Sheet](#session-i-blue-sheet)
+- [Session II](#session-ii)
+  - [Signing HTTP Messages](#signing-http-messages)
+  - [Secondary Certificates](#secondary-certificates)
+  - [Digest Headers by Lucas Pardue](#digest-headers-by-lucas-pardue)
+  - [Cookies 🍪](#cookies-)
+  - [Advisory Content-Length for HTTP by Mark Nottingham](#advisory-content-length-for-http-by-mark-nottingham)
+  - [Session II Blue Sheet](#session-ii-blue-sheet)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Session I
 

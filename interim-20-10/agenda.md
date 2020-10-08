@@ -5,11 +5,10 @@
   - Meeting number: 
 * [Meeting chat](xmpp:httpbis@jabber.ietf.org?join)
 * [Minutes]()
-* [Blue Sheets]()
 
 *Taking minutes? See [our guide](https://github.com/httpwg/wiki/wiki/TakingMinutes)*
 
-## ?? October 2020, [??:00-??:30 UTC]()
+## 20 October 2020, [13:00-14:30 UTC](https://www.timeanddate.com/worldclock/fixedtime.html?msg=HTTP+Working+Group+October+2020+Interim+Session+I&iso=20201020T13&p1=%3A&ah=1&am=30)
 
 _1 Hour, 30 minutes_
 
@@ -20,18 +19,18 @@ _1 Hour, 30 minutes_
 
 ### HTTP Core
 
-* 25 min - Editors' overview and issue discussion
+* 20 min - Editors' overview and issue discussion
 
 ### Active Extension Drafts
 
 *  15 min - [Extensible Prioritization Scheme for HTTP](https://tools.ietf.org/html/draft-ietf-httpbis-priority) - _Lucas Pardue_
-*  15 min - [Signing HTTP Messages](https://tools.ietf.org/html/draft-ietf-httpbis-message-signatures) - _Annabelle Backman_
-*  15 min - [Digest Headers](https://tools.ietf.org/html/draft-ietf-httpbis-digest-headers) - _TBD_
-*  15 min - [RFC6265bis](https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis) (including possible adoption of [Incrementally Better Cookies](https://tools.ietf.org/html/draft-west-cookie-incrementalism))- _Mike West_
+*  20 min - [Signing HTTP Messages](https://tools.ietf.org/html/draft-ietf-httpbis-message-signatures) - _Annabelle Backman_
+*  10 min - [Digest Headers](https://tools.ietf.org/html/draft-ietf-httpbis-digest-headers) - _TBD_
+*  20 min - [RFC6265bis](https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis) (including possible adoption of [Incrementally Better Cookies](https://tools.ietf.org/html/draft-west-cookie-incrementalism))- _Mike West_
 
 
 
-## ?? October 2020, [??:00-??:30 UTC]()
+## 22 October 2020, [13:00-14:30 UTC](https://www.timeanddate.com/worldclock/fixedtime.html?msg=HTTP+Working+Group+October+2020+Interim+Session+II&iso=20201022T13&p1=1440&ah=1&am=30)
 
 
 _1 Hour, 30 minutes_
@@ -45,9 +44,8 @@ _1 Hour, 30 minutes_
 
 * 10 min - [HTTP/2bis](https://datatracker.ietf.org/doc/html/draft-thomson-httpbis-http2bis) - _Martin Thomson_
 * 10 min - [GREASE for HTTP/2](https://tools.ietf.org/html/draft-bishop-httpbis-grease) - _Mike Bishop_
+* 10 min - [HTTP Grease](https://tools.ietf.org/html/draft-nottingham-http-grease) - _Mark Nottingham_
 * 10 min - [HTTP/2 extensions for HTTP/3](https://datatracker.ietf.org/doc/html/draft-bishop-httpbis-altsvc-quic) - _Mike Bishop_
 * 20 min - [Client Hint Reliability](https://tools.ietf.org/html/draft-davidben-http-client-hint-reliability) - _David Benjamin_
 * 15 min - [Search Method](https://tools.ietf.org/html/draft-snell-search-method) - _Julian Reschke_
-* 10 min - [Client-Cert](https://tools.ietf.org/html/draft-bdc-something-something-certificate) - _TBD_
-*  5 min - [Compression Dictionary Security](https://tools.ietf.org/html/draft-handte-httpbis-dict-sec) - _TBD_
-*  5 min - [Advisory Content-Length for HTTP](https://tools.ietf.org/html/draft-nottingham-bikeshed-length) - _Mark Nottingham_
+

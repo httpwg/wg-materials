@@ -1,8 +1,8 @@
 # HTTP Working Group Interim Meeting Agenda - October 2020
 
-* [WebEx]()
-  - Password: 
-  - Meeting number: 
+* [WebEx](https://ietf.webex.com/ietf/j.php?MTID=mab38a071a948516f2d4a02a9e6eafe4b)
+  - Password: http234
+  - Meeting number: 171 454 3498
 * [Meeting chat](xmpp:httpbis@jabber.ietf.org?join)
 * [Minutes]()
 

@@ -1267,7 +1267,7 @@ write that down properly.
 Need to Note somewhere (in the spec?): We need some text for security
 considerations around security model etc. for server push.
 
-<discussion on what implementations of server push there are>
+_discussion on what implementations of server push there are_
 
 Conclusion: No one wants to kill server push but some concerns over
 implementation complexity
@@ -1275,7 +1275,7 @@ implementation complexity
 Mark: what is minimum bar to get first HTTP2 draft out that folks can
 implement for experience.
 
-Privacy/settings - <missed discussion>
+Privacy/settings - _missed discussion_
 
 ACTION: Mike to make proposal on list 
 

@@ -42,7 +42,7 @@ _1 Hour, 30 minutes_
 
 ### Proposals
 
-* 10 min - [HTTP/2bis](https://datatracker.ietf.org/doc/html/draft-thomson-httpbis-http2bis) - _Martin Thomson_
+* 10 min - [HTTP/2bis](https://datatracker.ietf.org/doc/html/draft-thomson-httpbis-http2bis) - [slides](https://httpwg.org/wg-materials/interim-20-10/http2v2.pdf) - _Martin Thomson_
 * 10 min - [GREASE for HTTP/2](https://tools.ietf.org/html/draft-bishop-httpbis-grease) - _Mike Bishop_
 * 10 min - [HTTP Grease](https://tools.ietf.org/html/draft-nottingham-http-grease) - _Mark Nottingham_
 * 10 min - [HTTP/2 extensions for HTTP/3](https://datatracker.ietf.org/doc/html/draft-bishop-httpbis-altsvc-quic) - _Mike Bishop_

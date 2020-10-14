@@ -193,7 +193,7 @@ Mark: Call for Adotion is open.
 
 Patrick: I'm in favor of expansion of this document in general, and we certainly should adopt it.
 
-Nick: I think this is an interesting thing we should advance.  We should do <something> separate from the Origin Frame work, however.
+Nick: I think this is an interesting thing we should advance.  We should do _something_ separate from the Origin Frame work, however.
 
 ## Adjournment
 

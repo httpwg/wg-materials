@@ -1211,7 +1211,7 @@ Mike: one issue: do we want to reserve streams in advance?
 
 Hasan: reserving request resources.
 
-Jeff: <some stuff I missed>
+Jeff: _some stuff I missed_
 
 Mark: that's clearer don't bother sending that request
 
@@ -1410,9 +1410,9 @@ Testing - conformance & interoperability
 
 Clients, servers, and intermediaries all need to be tested.
 
-- adapt wireshark plug-in  <-- Hasan
+- adapt wireshark plug-in  -- Hasan
 - standalone python frame decoder / encoder 
-- netcat-like tool <-- roberto
+- netcat-like tool -- roberto
 - catalogue of example sessions and API output (server and client)
 - negative testing (e.g., syntax errors, protocol errors)
 - stupid push server

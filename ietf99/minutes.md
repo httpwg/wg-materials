@@ -305,7 +305,7 @@ ian swett(is): we can put the settings in the 0-rtt msg
 mb: yeah, tho [settings frame essentially as good (?)]
 
 thardie(th):
-1. <missed it>
+1. _missed it_
 2. If client settings in clear, need to describe the implications. So maybe more appropriate to keep quic settings sep from http settings.
 
 ekr: Settings in clear + only sent once is unfortunate.

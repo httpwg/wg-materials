@@ -449,7 +449,7 @@ Nottingham: Will open
 
 Peon: Think this is pretty well specified alerady
 
-Thomson: "You can coalesce if [TBD]" <-- should say something about that
+Thomson: "You can coalesce if [TBD]" -- should say something about that
 
 Peon: Don't think these things will close in the next years
 

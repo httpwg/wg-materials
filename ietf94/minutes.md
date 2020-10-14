@@ -44,11 +44,11 @@ mike bishop:  see comments in the issue #76 & PR #98
 
 martin T: spec typical cert checks for normal case, and if the alt svc has additional reqs, need to spec them also. dont think we have real issues with alt svcs, but we have a soft fail, which ends up just degrading the ecosystem.  need to get the additional checks on certs right -- what is in spec now is too vague.
 
-mikeb: when we tried to be more specific at last ietf mtg, folks didn't like the specifics <chuckle>
+mikeb: when we tried to be more specific at last ietf mtg, folks didn't like the specifics _chuckle_
   
 mnot: eg have the typical defaults, spec additional stuff in context of the alt svc spec
 
-ekr:  <missed>
+ekr:  _missed_
   
 mike b: tried to say "implementations have their own reqs anyway" 
 
@@ -156,7 +156,7 @@ mnot: we disallowed client certs in http/2 because we disallowed reneg -- this i
 
 slide: history
 
-mic yoav: does this really matter?  one can do <foo>
+mic yoav: does this really matter?  one can do _foo_
   
 martin: trying to avoid situations where that is possible -- can lock the entire browser due to concurrency issue (eg firefox) -- u receive req for cert, which client to I ask to provide the cert?
 
@@ -174,7 +174,7 @@ slide: solution overview
 
 there is a WAITING_FOR_AUTH frame added to h2, and an identifier that maps this to the TLS context
 
-yoav: <some detail wrt correlation>
+yoav: _some detail wrt correlation_
   
 martin: this ident makes it more clear what the binding is between the layers and sidesteps concurrency blockage 
 
@@ -253,7 +253,7 @@ thus this spec -- an attempt to do that. The audience for this is other spec wri
 maybe we httpbis should adopt and make some progress.
 
 julian: there is connection to the key spec.
-  there is one field that relies on <foo> -- if can fix that in the key spec, then http-jfv might be able to be used.
+  there is one field that relies on _foo_ -- if can fix that in the key spec, then http-jfv might be able to be used.
   maybe that would make it popular for other header fields?
   
 mnot: agree - - inclined to issue call for adopt -- want to talk with folk in webappsec to see if this is palatable & useful -- comments?
@@ -357,7 +357,7 @@ origin-cookie -- https://github.com/mikewest/internetdrafts/blob/master/origin-c
 
 
 * [Accept Push Policy](https://tools.ietf.org/html/draft-ruellan-http-accept-push-policy-00)
-? from Canon presenting -- <link to slides???>
+? from Canon presenting -- _link to slides???_
 
 slide 4: load balancer
 

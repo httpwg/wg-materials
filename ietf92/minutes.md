@@ -143,7 +143,7 @@ jr: trying to address defining new http header fields easier
  
 phb: need a header field schema...
 
-mnot: <pushes back>
+mnot: _pushes back_
  
  
 ### www-authenticate I-D that uses the JSON HF definition technique
@@ -162,7 +162,7 @@ a little on don't know
   
 mike bishop via jabber: this could encourage data smuggling via headers
  
-oiwa: :  < something about the www-authn example> 
+oiwa: :  _something about the www-authn example_
 
 mnot: agree that was/is confusing
  
@@ -226,14 +226,14 @@ lm: how's the interact with http header scoping?
 
 mnot: have to treat as a hint
  
-<no objections otherwise>
+_no objections otherwise_
  
  
 ### 2NN Patch Status Code
 
 mnot: esoteric use case 
 
-mt <makes face>
+mt _makes face_
 
 mt: I could see how it'd be useful in narrow cases. Could annoy api creators
   
@@ -257,7 +257,7 @@ mnot: yes, strong etag
 mnot: Seems a number of folks are interested, but they are limited given how deployment will happen.
 couldn't rely on them being there and so limited utility?
  
-mt: <...various gnarlyness wrt cookies...>
+mt: _...various gnarlyness wrt cookies..._
  
 ?: discussing with someone and intend to continue to work on this draft (which one?)
  
@@ -332,18 +332,18 @@ herve ruellan (hr):  DASH and HTTP/2 (see preso in meeting materials)
  
 FDH -- full duplex over http
  
-Dan Druta: <detailed issues wrt pushing msgs to the server> dunno if that was considered, but need to.  "how quickly can u adapt?"
+Dan Druta: _detailed issues wrt pushing msgs to the server_ dunno if that was considered, but need to.  "how quickly can u adapt?"
   
 hr: yes can adapt but quickly is always difficult
  
-? <detailed ques wrt push msg characteristics>
+? _detailed ques wrt push msg characteristics_
   sees benebit as ?
   seems lots of complexity w/o lots value
   didn't understand range option at all
   
 jr & roy: request push sounds like GET, how is it diff than pipelined GET ?
  
-hr: <explains>
+hr: _explains_
  
 mnot: http2 designed such that can interleave lots of reqs together. Here client can hint the server about something the client knows.
  
@@ -359,13 +359,13 @@ questions about flow control
   
 mnot: http2 doesn't strictly define how server push works, defined as cache update, not notification to the webapp client. Wonder if we need to notify a listener about cache updates.
    
-pm: how can you prioritize things -- we did some of that w/GETs in http2 -- could use that? <smthg about pushing addtnl metadata to the client> could be useful.
+pm: how can you prioritize things -- we did some of that w/GETs in http2 -- could use that? _something about pushing addtnl metadata to the client_ could be useful.
   
 lm: implicit context is using mpeg-dash for realtime. If you have a series of pipelined GETs, you'll get em all. Timing is implicit. If you want to generalize this you might make the timing explicit.
   
 ?: not sure dash is useful for RT, but maybe progressive download?
   
-mt: <somethingg about canceling an outstanding req> there's some useful cases for this. Avoid an XHR ?
+mt: _something about canceling an outstanding req_ there's some useful cases for this. Avoid an XHR ?
  
 mnot: don't hear interest in making this a generic extension yet. 
 

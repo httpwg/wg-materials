@@ -1,7 +1,7 @@
 # HTTPbis Working Group Agenda - IETF 89
 
 * Meeting room: Blenheim
-* Meeting chat: <xmpp:httpbis@jabber.ietf.org?join>
+* Meeting chat: xmpp:httpbis@jabber.ietf.org?join
 * Minutes: http://etherpad.tools.ietf.org:9000/p/ietf89-httpbis
 
 Related Reading:

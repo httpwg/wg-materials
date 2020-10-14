@@ -1,6 +1,6 @@
 # HTTPbis Working Group Agenda - IETF 90
 
-* Meeting chat: <xmpp:httpbis@jabber.ietf.org?join>
+* Meeting chat: xmpp:httpbis@jabber.ietf.org?join
 * Minutes: http://etherpad.tools.ietf.org:9000/p/ietf90-httpbis
 
 Related Reading:

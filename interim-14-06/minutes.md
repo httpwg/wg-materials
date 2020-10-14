@@ -541,7 +541,7 @@ mnot [ closes issue]
 
 ### [Requiring Client Content-Coding Support](https://github.com/http2/http2-spec/issues/460)
 
-mnot: implicit gzip content-encoding makes it difficult to be a semantically interoperable HTTP/1.X<=>HTTP/2 gateway...
+mnot: implicit gzip content-encoding makes it difficult to be a semantically interoperable HTTP/1.X--HTTP/2 gateway...
 
 mnot: implicit gzip may work well for the common browsing case, but is difficult for other cases like PUT
 
@@ -549,13 +549,13 @@ martin: elephant in room - intermediation. often there aren't intermediaries if 
 
 mnot: virus scanners are the big concern
 
-mike bishop: wininet has issues being a HTTP/1.X<=>HTTP/2 intermediary from an application perspective. e.g. content-length
+mike bishop: wininet has issues being a HTTP/1.X--HTTP/2 intermediary from an application perspective. e.g. content-length
 
 mnot: etags are the bigger concern
 
 mnot: people who want implicit gzip are the same people who want TLS
 
-roberto: http2=>http/1.x say use a accept-encoding: http2-encoding
+roberto: http2--http/1.x say use a accept-encoding: http2-encoding
 
 martin.nilsson: does it get bad if we don't have implicit a-e?
 
@@ -607,7 +607,7 @@ Roberto is reassessing the problem, basically that headers are unbounded (not fl
 
 mnot: is a solution to just add a new error code "you're sending too many headers"?
 
-roberto: yes, this is a solution, but there are many other solutions <rattles off a whole bunch>
+roberto: yes, this is a solution, but there are many other solutions _rattles off a whole bunch_
 
 mnot: what's your pref?
 
@@ -649,7 +649,7 @@ mnot: i'm not sure we're convinced that it's important to fix
 
 will: what other vendors feel like this is important
 
-<silence>
+_silence_
 
 roberto: i know f5 cares about this
 
@@ -705,7 +705,7 @@ jeff: we could have different hpack frames, one for initial headers, one for sub
 
 brian: i have a question about this pull request.
 
-<some confusion about the pull request and a MUST, may be out of date>
+_some confusion about the pull request and a MUST, may be out of date_
 
 roberto: there is a way that we can make hpack streamable.
 
@@ -761,7 +761,7 @@ martin: at that point, huffman isn't your biggest concern.
 
 ###[allow intervening DATA frames](https://github.com/http2/http2-spec/issues/481)
 
-<mnot reading the issue aloud>
+_mnot reading the issue aloud_
 
 mike.bishop: the problem here is you have to hold onto the uncompressed data while getting the interleaving frames
 
@@ -785,7 +785,7 @@ stephen starts explaining how loop detection happens
 
 stephen: this doesn't happen a ton, maybe a 1% case that we load balance you to somewhere else, and then another that we load balance you back.
 
-<lots of discussion, bad scribing because willchan was busy discussing, oh good, looks like someone else scribed>
+_lots of discussion, bad scribing because willchan was busy discussing, oh good, looks like someone else scribed_
 
 
 Talking about Service header field

@@ -129,18 +129,18 @@ Mark is editing implementation wiki
 
 Barry: is there a reference to the implementation wiki in the HTTP/2.0 draft?
 
-<Barry Leiba> "Implementation Status" is, I believe, the title for the section.  See RFC 6982
+Barry: "Implementation Status" is, I believe, the title for the section.  See RFC 6982
 
-<Barry Leiba> I think for this, I suggest putting in a note that −04 was the first draft version for which implementations were encouraged, and that [this URL] contains the list of implementations and details of those implementations.  That's all you need: small and simple.
+Barry: I think for this, I suggest putting in a note that −04 was the first draft version for which implementations were encouraged, and that [this URL] contains the list of implementations and details of those implementations.  That's all you need: small and simple.
 
 Microsoft OpenTech contributed ALPN patch to OpenSSL, but it was not integrated yet. OpenSSL people are quite conservative/slow.
 
-<Barry Leiba> BTW, response to "circular references suck": Circular normative references suck.  But the reference from the http2 draft to the implementation page is not normative.  'snot a problem.
+Barry: BTW, response to "circular references suck": Circular normative references suck.  But the reference from the http2 draft to the implementation page is not normative.  'snot a problem.
 
 Roberto: different NPN/ALPN strings "I really want to use this" versa "this is for testing"
 Discussing finer points about large scale testing and deploying experimental code
 
-<Eliot Lear> can't servers simply query their base at that hour to opt in?
+Eliot: can't servers simply query their base at that hour to opt in?
 
 Hasan: a variety of different applications/uses is better than just increase in the number of test users (without introducing new uses).
 
@@ -248,19 +248,19 @@ Action item: Herve to start test corpus. Roberto will help.
 
 ### Issue #23
 
-Roberto: have a different compression context for :<header-field>s and the rest? This will help proxies to inspect/extract specific header fields
+Roberto: have a different compression context for :`header-field`s and the rest? This will help proxies to inspect/extract specific header fields
 
-<molnarg> An idea: if we would require headers to appear in alphabetical order in header blocks (and nothing else would change compared to current spec), then 1) ':' headers would always come first 2) it would be possible to implement a streaming decoder 2) it is possible to implement a streaming encoder, if its input is in alphabetical order (otherwise first you would have to reorder them).
+molnarg: An idea: if we would require headers to appear in alphabetical order in header blocks (and nothing else would change compared to current spec), then 1) ':' headers would always come first 2) it would be possible to implement a streaming decoder 2) it is possible to implement a streaming encoder, if its input is in alphabetical order (otherwise first you would have to reorder them).
 
-<molnarg> okay, agree that hard to enforce
+molnarg: okay, agree that hard to enforce
 
 ### Issue # 187
 
 "String Literal"
 
-<Barry Leiba> Discussing issue 11 in the compression spec.
+Barry: Discussing issue 11 in the compression spec.
 
-<Barry Leiba> Contemplating closing the issue.
+Barry: Contemplating closing the issue.
 
 Talking about disabling stream control
 

@@ -4,3 +4,5 @@
 
 ---
 
+- [arrangements.md](arrangements.md)
+- [minutes.md](minutes.md)

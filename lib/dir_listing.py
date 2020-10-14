@@ -3,7 +3,7 @@ import os
 from os import path
 import sys
 
-ignore_things = ['lib', 'README.md', 'badge']
+ignore_things = ['lib', 'assets', 'README.md', 'badge']
 ignore_prefixes = ['.', '_']
 sep = "\n\n---\n\n"
 

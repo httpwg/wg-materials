@@ -19,7 +19,7 @@ _1 Hour, 30 minutes_
 
 ### HTTP Core
 
-* 20 min - Editors' overview and issue discussion
+* 20 min - Editors' overview and issue discussion - _Julian Reschke_
 
 ### Active Extension Drafts
 

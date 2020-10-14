@@ -43,19 +43,16 @@ def write_index(directory, index):
         with open(readme_path, 'r') as fh:
             existing = fh.read()
             try:
-                preserve = existing[:existing.index(sep)+len(sep)]
+                text = existing[:existing.index(sep)+len(sep)]
             except ValueError:
-                preserve = f"{existing}{sep}"
-        with open(readme_path, 'w') as fh:
-            fh.write(preserve)
-            fh.write("\n".join(index))
-        sys.stderr.write("  Updated README.\n")
+                text = f"{existing}{sep}"
     else:
-        with open(readme_path, 'w') as fh:
-            fh.write(sep)
+        text = sep
+    with open(readme_path, 'w') as fh:
+        fh.write(text)
+        if directory != ".":
             fh.write(f"## {directory}\n\n")
-            fh.write("\n".join(index))
-        sys.stderr.write("  Created README.\n")
+        fh.write("\n".join(index))
 
 
 

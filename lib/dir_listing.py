@@ -10,12 +10,17 @@ sep = "\n\n---\n\n"
 def spider (directory):
     index = []
     sys.stderr.write(f"* scanning {directory}...\n")
-    things = os.scandir(directory)
-    dirs = nat_sort([i.name for i in things if i.is_dir() and filter_thing(i)])
-    files = nat_sort([i.name for i in things if i.is_file() and filter_thing(i)])
-    for name in dirs:
+    dirs = []
+    files = []
+    for i in os.scandir(directory):
+        if filter_thing(i):
+            if i.is_dir():
+                dirs.append(i.name)
+            elif i.is_file():
+                files.append(i.name)
+    for name in nat_sort(dirs):
         index.append(f"- [{name}/]({name}/README.md)")
-    for name in files:
+    for name in nat_sort(files):
         index.append(f"- [{name}]({name})")
     write_index(directory, index)
     for dir_name in dirs:

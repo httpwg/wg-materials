@@ -19,13 +19,13 @@ _1 Hour, 30 minutes_
 
 ### HTTP Core
 
-* 20 min - Editors' overview and issue discussion
+* 20 min - Editors' overview and issue discussion - _Julian Reschke_
 
 ### Active Extension Drafts
 
 *  15 min - [Extensible Prioritization Scheme for HTTP](https://tools.ietf.org/html/draft-ietf-httpbis-priority) - _Lucas Pardue_
 *  20 min - [Signing HTTP Messages](https://tools.ietf.org/html/draft-ietf-httpbis-message-signatures) - _Annabelle Backman_
-*  10 min - [Digest Headers](https://tools.ietf.org/html/draft-ietf-httpbis-digest-headers) - _TBD_
+*  10 min - [Digest Headers](https://tools.ietf.org/html/draft-ietf-httpbis-digest-headers) - _Roberto Polli_
 *  20 min - [RFC6265bis](https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis) (including possible adoption of [Incrementally Better Cookies](https://tools.ietf.org/html/draft-west-cookie-incrementalism))- _Mike West_
 
 
@@ -42,7 +42,7 @@ _1 Hour, 30 minutes_
 
 ### Proposals
 
-* 10 min - [HTTP/2bis](https://datatracker.ietf.org/doc/html/draft-thomson-httpbis-http2bis) - _Martin Thomson_
+* 10 min - [HTTP/2bis](https://datatracker.ietf.org/doc/html/draft-thomson-httpbis-http2bis) - [slides](https://httpwg.org/wg-materials/interim-20-10/http2v2.pdf) - _Martin Thomson_
 * 10 min - [GREASE for HTTP/2](https://tools.ietf.org/html/draft-bishop-httpbis-grease) - _Mike Bishop_
 * 10 min - [HTTP Grease](https://tools.ietf.org/html/draft-nottingham-http-grease) - _Mark Nottingham_
 * 10 min - [HTTP/2 extensions for HTTP/3](https://datatracker.ietf.org/doc/html/draft-bishop-httpbis-altsvc-quic) - _Mike Bishop_

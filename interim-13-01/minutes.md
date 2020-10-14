@@ -1156,7 +1156,7 @@ Mark: priorities is between roots?
 
 Answer: yes
 
-<whiteboard discussion of proposal for weights with linked equivalency classes>
+_whiteboard discussion of proposal for weights with linked equivalency classes_
 
 Mark: 3 things we have here:
 

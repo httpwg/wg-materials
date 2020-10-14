@@ -2,7 +2,7 @@
 
 ---
 
-## ./ietf103
+## IETF 103
 
 - [agenda.md](agenda.md)
 - [cache.pdf](cache.pdf)

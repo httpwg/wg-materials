@@ -2,7 +2,7 @@
 
 ---
 
-## ./ietf105
+## IETF 105
 
 - [agenda.md](agenda.md)
 - [client-hints.pdf](client-hints.pdf)

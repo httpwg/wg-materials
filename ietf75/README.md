@@ -2,7 +2,7 @@
 
 ---
 
-## ./ietf75
+## IETF 75
 
 - [httpbis-agenda-75.txt](httpbis-agenda-75.txt)
 - [httpbis-minutes-75.txt](httpbis-minutes-75.txt)

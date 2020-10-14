@@ -2,7 +2,7 @@
 
 ---
 
-## ./interim-20-05
+## Interim meeting: 20-05
 
 - [agenda.md](agenda.md)
 - [bikeshed-length.pdf](bikeshed-length.pdf)

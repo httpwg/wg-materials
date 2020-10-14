@@ -2,7 +2,7 @@
 
 ---
 
-## ./ietf87
+## IETF 87
 
 - [agenda.txt](agenda.txt)
 - [grothoff-httpbis.pdf](grothoff-httpbis.pdf)

@@ -1159,6 +1159,7 @@ Answer: yes
 <whiteboard discussion of proposal for weights with linked equivalency classes>
 
 Mark: 3 things we have here:
+
 - Expanding pri bits
 - grouping
 - re-prioritisation

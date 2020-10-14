@@ -2,7 +2,7 @@
 
 ---
 
-## ./ietf97
+## IETF 97
 
 - [agenda.md](agenda.md)
 - [Cache-Control_ immutable.pdf](Cache-Control_ immutable.pdf)

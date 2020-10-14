@@ -2,7 +2,7 @@
 
 ---
 
-## ./ietf70
+## IETF 70
 
 - [071203-HTTPbis.pdf](071203-HTTPbis.pdf)
 - [httpbis-bnf.pdf](httpbis-bnf.pdf)

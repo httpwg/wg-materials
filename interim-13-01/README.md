@@ -2,7 +2,7 @@
 
 ---
 
-## ./interim-13-01
+## Interim meeting: 13-01
 
 - [agenda.txt](agenda.txt)
 - [HeaderDiff.pdf](HeaderDiff.pdf)

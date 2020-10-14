@@ -2,7 +2,7 @@
 
 ---
 
-## ./ietf94
+## IETF 94
 
 - [agenda.md](agenda.md)
 - [client authentication.pdf](client authentication.pdf)

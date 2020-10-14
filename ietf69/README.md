@@ -2,7 +2,7 @@
 
 ---
 
-## ./ietf69
+## IETF 69
 
 - [agenda.txt](agenda.txt)
 - [bof intro.pdf](bof intro.pdf)

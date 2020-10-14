@@ -2,7 +2,7 @@
 
 ---
 
-## ./ietf91
+## IETF 91
 
 - [922.pdf](922.pdf)
 - [agenda.md](agenda.md)

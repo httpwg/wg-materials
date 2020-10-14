@@ -2,7 +2,7 @@
 
 ---
 
-## ./ietf95
+## IETF 95
 
 - [image/](image/README.md)
 - [agenda.md](agenda.md)

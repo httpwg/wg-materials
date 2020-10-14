@@ -2,7 +2,7 @@
 
 ---
 
-## ./ietf106
+## IETF 106
 
 - [agenda.md](agenda.md)
 - [Client Hints - HTTPWG IETF 106.pdf](Client Hints - HTTPWG IETF 106.pdf)

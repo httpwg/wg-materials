@@ -2,7 +2,7 @@
 
 ---
 
-## ./ietf85
+## IETF 85
 
 - [agenda.txt](agenda.txt)
 - [Flow Control Principles for HTTP 2.0.pdf](Flow Control Principles for HTTP 2.0.pdf)

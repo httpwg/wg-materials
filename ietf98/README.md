@@ -2,7 +2,7 @@
 
 ---
 
-## ./ietf98
+## IETF 98
 
 - [agenda.md](agenda.md)
 - [ietf98-cache-digests-latest.pdf](ietf98-cache-digests-latest.pdf)

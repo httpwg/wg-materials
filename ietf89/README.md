@@ -2,7 +2,7 @@
 
 ---
 
-## ./ietf89
+## IETF 89
 
 - [agenda.md](agenda.md)
 - [ALPN.PDF](ALPN.PDF)

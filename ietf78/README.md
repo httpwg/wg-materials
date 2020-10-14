@@ -2,7 +2,7 @@
 
 ---
 
-## ./ietf78
+## IETF 78
 
 - [agenda.txt](agenda.txt)
 - [ietf-78-content-disposition.pdf](ietf-78-content-disposition.pdf)

@@ -2,7 +2,7 @@
 
 ---
 
-## ./ietf93
+## IETF 93
 
 - [agenda.md](agenda.md)
 - [ietf-93-httpbis-search.pdf](ietf-93-httpbis-search.pdf)

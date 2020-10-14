@@ -2,7 +2,7 @@
 
 ---
 
-## ./ietf96
+## IETF 96
 
 - [agenda.md](agenda.md)
 - [ietf-96-certs-extended-settings.pdf](ietf-96-certs-extended-settings.pdf)

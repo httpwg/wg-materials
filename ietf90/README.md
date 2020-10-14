@@ -2,7 +2,7 @@
 
 ---
 
-## ./ietf90
+## IETF 90
 
 - [agenda.md](agenda.md)
 - [agl-proxies.pdf](agl-proxies.pdf)

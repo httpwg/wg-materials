@@ -2,7 +2,7 @@
 
 ---
 
-## ./ietf101
+## IETF 101
 
 - [agenda.md](agenda.md)
 - [AltSvc.pdf](AltSvc.pdf)

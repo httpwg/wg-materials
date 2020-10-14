@@ -2,7 +2,7 @@
 
 ---
 
-## ./ietf102
+## IETF 102
 
 - [agenda.md](agenda.md)
 - [akamai-server-push.pdf](akamai-server-push.pdf)

@@ -2,7 +2,7 @@
 
 ---
 
-## ./ietf84
+## IETF 84
 
 - [451.pdf](451.pdf)
 - [agenda.txt](agenda.txt)

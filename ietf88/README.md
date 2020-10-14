@@ -2,7 +2,7 @@
 
 ---
 
-## ./ietf88
+## IETF 88
 
 - [agenda.txt](agenda.txt)
 - [ALPN.pdf](ALPN.pdf)

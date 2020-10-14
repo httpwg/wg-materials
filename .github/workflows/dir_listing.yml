@@ -1,0 +1,26 @@
+name: Directory Listings
+
+on:
+  push:
+    paths:
+    - '*'
+
+jobs:
+  dir_listings:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+      with:
+        ref: master
+    - name: Set up Python
+      uses: actions/setup-python@v1
+      with:
+        python-version: 3.7
+    - name: Create directory listings
+      run: |
+        lib/dir_listing.py .
+    - name: Push update
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        lib/update.sh

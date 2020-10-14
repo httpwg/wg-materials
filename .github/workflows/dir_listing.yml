@@ -18,9 +18,9 @@ jobs:
         python-version: 3.7
     - name: Create directory listings
       run: |
-        lib/dir_listing.py .
+        python3 lib/dir_listing.py .
     - name: Push update
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        lib/update.sh
+        sh lib/update.sh

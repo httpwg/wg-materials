@@ -19,7 +19,7 @@ def spider (directory):
             elif i.is_file():
                 files.append(i.name)
     for name in nat_sort(dirs):
-        index.append(f"- [{name}/]({name}/README.md)")
+        index.append(f"- [{pretty_dir(name)}/]({name}/README.md)")
     for name in nat_sort(files):
         index.append(f"- [{name}]({name})")
     write_index(directory, index)
@@ -37,6 +37,13 @@ def nat_sort(l):
     alphanum_key = lambda key: [ convert(c) for c in re.split('([0-9]+)', key) ] 
     return sorted(l, key = alphanum_key)
 
+def pretty_dir(name):
+    if name.startswith("./ietf"):
+        return f"IETF {name[6:]}"
+    if name.startswith("./interim"):
+        return f"Interim meeting: {name[10:]}"
+    return name
+
 def write_index(directory, index):
     readme_path = f"{directory}/README.md"
     if path.exists(readme_path):
@@ -51,7 +58,7 @@ def write_index(directory, index):
     with open(readme_path, 'w') as fh:
         fh.write(text)
         if directory != ".":
-            fh.write(f"## {directory}\n\n")
+            fh.write(f"## {pretty_dir(directory)}\n\n")
         fh.write("\n".join(index))
 
 

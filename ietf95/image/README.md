@@ -2,7 +2,7 @@
 
 ---
 
-## IETF 95/image
+## ./ietf95/image
 
 - [alexey.jpg](alexey.jpg)
 - [barry.jpg](barry.jpg)

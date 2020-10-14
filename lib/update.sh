@@ -13,4 +13,4 @@ git checkout -B $BRANCH origin/$BRANCH
 # Push the changes
 git add .
 git commit -m "update indices"
-git push origin BRANCH
+git push origin $BRANCH

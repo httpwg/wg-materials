@@ -38,10 +38,14 @@ def nat_sort(l):
     return sorted(l, key = alphanum_key)
 
 def pretty_dir(name):
-    if name.startswith("./ietf"):
-        return f"IETF {name[6:]}"
-    if name.startswith("./interim"):
-        return f"Interim meeting: {name[10:]}"
+    if "/" in name:
+        cleaned = name.split("/")[-1]
+    else:
+        cleaned = name
+    if cleaned.startswith("ietf"):
+        return f"IETF {cleaned[4:]}"
+    if cleaned.startswith("interim-"):
+        return f"Interim meeting: {cleaned[8:]}"
     return name
 
 def write_index(directory, index):

@@ -1,0 +1,11 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+hr {
+  display: none;
+}
+h2 {
+  border-bottom: none;
+}

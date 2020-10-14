@@ -2,8 +2,6 @@ name: Directory Listings
 
 on:
   push:
-    paths:
-    - '*'
 
 jobs:
   dir_listings:

@@ -2,7 +2,6 @@
 
 ---
 
-- [assets/](assets/README.md)
 - [ietf69/](ietf69/README.md)
 - [ietf70/](ietf70/README.md)
 - [ietf72/](ietf72/README.md)

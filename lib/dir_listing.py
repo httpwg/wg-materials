@@ -52,7 +52,7 @@ def write_index(directory, index):
         sys.stderr.write("  Updated README.\n")
     else:
         with open(readme_path, 'w') as fh:
-            fh.write(f"# {directory}\n\n")
+            fh.write(f"## {directory}\n\n")
             fh.write(sep)
             fh.write("\n".join(index))
         sys.stderr.write("  Created README.\n")

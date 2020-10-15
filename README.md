@@ -1,4 +1,3 @@
-# HTTP Working Group Materials
 
 
 ---

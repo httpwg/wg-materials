@@ -43,9 +43,9 @@ _1 Hour, 30 minutes_
 ### Proposals
 
 * 10 min - [HTTP/2bis](https://datatracker.ietf.org/doc/html/draft-thomson-httpbis-http2bis) - _Martin Thomson_ ([slides](http2v2.pdf))
-* 10 min - [GREASE for HTTP/2](https://tools.ietf.org/html/draft-bishop-httpbis-grease) - _Mike Bishop_
+* 10 min - [HTTP/2 extensions for HTTP/3](https://datatracker.ietf.org/doc/html/draft-bishop-httpbis-altsvc-quic) - _Mike Bishop_ ([slides](H3_pollination.pdf))
+* 10 min - [GREASE for HTTP/2](https://tools.ietf.org/html/draft-bishop-httpbis-grease) - _Mike Bishop_ ([slides](H3_pollination.pdf))
 * 10 min - [HTTP Grease](https://tools.ietf.org/html/draft-nottingham-http-grease) - _Mark Nottingham_
-* 10 min - [HTTP/2 extensions for HTTP/3](https://datatracker.ietf.org/doc/html/draft-bishop-httpbis-altsvc-quic) - _Mike Bishop_
 * 20 min - [Client Hint Reliability](https://tools.ietf.org/html/draft-davidben-http-client-hint-reliability) - _David Benjamin_
 * 15 min - [Search Method](https://tools.ietf.org/html/draft-snell-search-method) - _Julian Reschke_ ([slides](ietf-httpbis-2020-10-search.pdf))
 

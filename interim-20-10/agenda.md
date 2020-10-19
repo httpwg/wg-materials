@@ -4,7 +4,7 @@
   - Password: http234
   - Meeting number: 171 454 3498
 * [Meeting chat](xmpp:httpbis@jabber.ietf.org?join)
-* [Minutes]()
+* [Minutes](https://codimd.ietf.org/notes-httpbis-20-10)
 
 *Taking minutes? See [our guide](https://github.com/httpwg/wiki/wiki/TakingMinutes)*
 
@@ -14,7 +14,7 @@ _1 Hour, 30 minutes_
 
 ### Administrivia
 
-*  3 min - [Blue sheets]() / scribe selection / [NOTE WELL](https://www.ietf.org/about/note-well/)
+*  3 min - [Blue sheets](https://codimd.ietf.org/bluesheet-httpbis-20-10) / scribe selection / [NOTE WELL](https://www.ietf.org/about/note-well/)
 *  2 min - Agenda bashing
 
 ### HTTP Core
@@ -37,12 +37,12 @@ _1 Hour, 30 minutes_
 
 ### Administrivia
 
-*  3 min - [Blue sheets]() / scribe selection / [NOTE WELL](https://www.ietf.org/about/note-well/)
+*  3 min - [Blue sheets](https://codimd.ietf.org/bluesheet-httpbis-20-10) / scribe selection / [NOTE WELL](https://www.ietf.org/about/note-well/)
 *  2 min - Agenda bashing
 
 ### Proposals
 
-* 10 min - [HTTP/2bis](https://datatracker.ietf.org/doc/html/draft-thomson-httpbis-http2bis) - [slides](https://httpwg.org/wg-materials/interim-20-10/http2v2.pdf) - _Martin Thomson_ ([slides](http2v2.pdf))
+* 10 min - [HTTP/2bis](https://datatracker.ietf.org/doc/html/draft-thomson-httpbis-http2bis) - _Martin Thomson_ ([slides](http2v2.pdf))
 * 10 min - [GREASE for HTTP/2](https://tools.ietf.org/html/draft-bishop-httpbis-grease) - _Mike Bishop_
 * 10 min - [HTTP Grease](https://tools.ietf.org/html/draft-nottingham-http-grease) - _Mark Nottingham_
 * 10 min - [HTTP/2 extensions for HTTP/3](https://datatracker.ietf.org/doc/html/draft-bishop-httpbis-altsvc-quic) - _Mike Bishop_

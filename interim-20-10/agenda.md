@@ -26,7 +26,7 @@ _1 Hour, 30 minutes_
 *  15 min - [Extensible Prioritization Scheme for HTTP](https://tools.ietf.org/html/draft-ietf-httpbis-priority) - _Lucas Pardue_ ([slides](priority.pdf))
 *  20 min - [Signing HTTP Messages](https://tools.ietf.org/html/draft-ietf-httpbis-message-signatures) - _Annabelle Backman_ ([slides](SignedHTTPMessages.pdf))
 *  10 min - [Digest Headers](https://tools.ietf.org/html/draft-ietf-httpbis-digest-headers) - _Roberto Polli_ ([slides](ietf-httpbis-2020-10-digest.pdf))
-*  20 min - [RFC6265bis](https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis) (including possible adoption of [Incrementally Better Cookies](https://tools.ietf.org/html/draft-west-cookie-incrementalism))- _Mike West_
+*  20 min - [RFC6265bis](https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis) (including possible adoption of [Incrementally Better Cookies](https://tools.ietf.org/html/draft-west-cookie-incrementalism))- _Mike West_ ([slides](rfc6265bis.pdf))
 
 
 

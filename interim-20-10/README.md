@@ -11,4 +11,5 @@
 - [ietf-httpbis-2020-10-httpcore.pdf](ietf-httpbis-2020-10-httpcore.pdf)
 - [ietf-httpbis-2020-10-search.pdf](ietf-httpbis-2020-10-search.pdf)
 - [priority.pdf](priority.pdf)
+- [rfc6265bis.pdf](rfc6265bis.pdf)
 - [SignedHTTPMessages.pdf](SignedHTTPMessages.pdf)

@@ -1,0 +1,43 @@
+# Blue Sheet for HTTP WG October 2020 Interim
+
+_Please add your name and affiliation below._
+
+
+## Tuesday Session
+
+* Mark Nottingham (Fastly)
+* Craig Taylor (Apple)
+* Cory Benfield (Apple)
+* James Gruessing (No affiliation)
+* Mike West (Google)
+* Julian Reschke (greenbytes)
+* Robin Marx (Hasselt University)
+* Martin Thomson (Mozilla)
+* Tommy Pauly (Apple)
+* Brad Lassey (Google)
+* Mike Taylor (Google)
+* Lily Chen (Google)
+* Roberto Polli (Italian Digital Transformation Department)
+* Sam Weiler (W3C/MIT)
+* Lucas Paardue (Cloudflare)
+* Alan Frindell (Facebook)
+* Lars Eggert (NetApp)
+* Josh Robinson (Manulife)
+* Dmitri Tikhonov (LiteSpeed Technologies)
+* Francesca Palombini (Ericsson)
+* Mike Bishop (Akamai)
+* Luca Niccolini (Facebook)
+* Justin Richer (Bespoke Engineering)
+* Piers O'Hanlon (BBC)
+* Jeffrey Yasskin (Google Chrome)
+* Ken Murchison (Fastmail)
+* Annabelle Backman (AWS)
+* Eric Rescorla (Mozilla)
+* Daniel Stenberg (wolfSSL)
+* Patrick McManus (Fastly)
+* Yifan Luo (Google)
+* Antonio Sartori (Google)
+* Kaustubha Govind (Google)
+* Steven Bingler (Google)
+* Ian Swett (Google)
+* Alessandro Ghedini (Cloudflare)

@@ -50,11 +50,11 @@ Tommy: due to the length of these we'll have a long LC. Please take a look asap
 Lucas: presenting... maybe? moving on, we will come back. And we're back
 
 * there was debate of headers vs frames, why not both?
-* we have concensus to move on with
+* we have consensus to move on with
 * latest draft is -02
 * -01 had a priority update frame, did we need it?
-* concensus to land frames as well, we can land the breaking change to update the frame
-    * we've replaced the initial bit field to encode the type, but that's encorported into the frame type now
+* consensus to land frames as well, we can land the breaking change to update the frame
+    * we've replaced the initial bit field to encode the type, but that's incorporated into the frame type now
     * frame code point(s) changed to avoid interop problems from using the existing frame type concurrently with the new one
 * no way to specify the version of prioritization in this spec
 * added consideration for server scheduling
@@ -62,7 +62,7 @@ Lucas: presenting... maybe? moving on, we will come back. And we're back
 * considerations for when clients use PRIORTY_UPDATE
 * open issues
     * within the stream limit 1261
-        * problem introduced by priorty update frame
+        * problem introduced by priority update frame
         * in H3 this is easier because stream limits are managed directly
         * H2 is more complicated because it is in terms of concurrency, not trying to redefine that
         * rephrased as "within the stream limit"
@@ -72,7 +72,7 @@ Lucas: presenting... maybe? moving on, we will come back. And we're back
         * we have a merging of priority signals
         * in the case of server push, both signals are from the server
         * but if there is no signal, what is the default?
-        * ommiting the priority for normal requests has a default of urgency 3, non-incremental
+        * omitting the priority for normal requests has a default of urgency 3, non-incremental
         * different options possible, unclear which is the best
         * the server can't use PRIORITY_UPDATE frame to signal push priority because it can't be sent from server->client
 
@@ -94,11 +94,11 @@ Kazuho: The problem with option 2 there could be other streams that come before 
 
 mt: Kazuho is right, Robin also correctly points out problem of choosing incremental vs non-incremental. The right thing to do is to point out the issues. From the chat you have no strict ordering of pushes but we have push IDs that can be inserted between non-push streams and schedulers can use stream ID-based ordering. 
 
-Lucas: this is probably best done on github
+Lucas: this is probably best done on GitHub
 
 Tommy: one question on scheduling. Do we want to target a particular time for lc of this doc?
 
-Lucas: H3 is getting towards last call, but there's not strict dependency, this is non-blocking. For real deployment it will be important to get this in though. Implemenations need something practically. Want to finish this asap.  
+Lucas: H3 is getting towards last call, but there's not strict dependency, this is non-blocking. For real deployment it will be important to get this in though. Implementations need something practically. Want to finish this asap.
 
 
 
@@ -120,10 +120,10 @@ Annabelle: presenting
 * new content identifiers
     * can specify a specific member of a dictionary
         * can have multiple dictionary identifiers
-    * list prefixes specifies it is sigin the fist *n* members of a list
+    * list prefixes specifies it is signing the fist *n* members of a list
 
 
-ekr: This is an incredibly general mechanism. Can be self contradictary. I don't understand how this can be secure
+ekr: This is an incredibly general mechanism. Can be self contradictory. I don't understand how this can be secure
 
 Annabelle: Let me understand. 
 
@@ -135,7 +135,7 @@ ekr: (example) unless we have specifications of HTTP headers, we can't have dete
 
 Annabelle: The utility will depend on the context. What needs to be signed depends on the context. If you depend on the whole header being signed, you should be enforcing that the whole header being signed
 
-ekr: This requires extensive annalysis, but in our experience that doesn't happen. So I don't think we should create a document with that property
+ekr: This requires extensive analysis, but in our experience that doesn't happen. So I don't think we should create a document with that property
 
 Annabelle: can we goto the next slide to demonstrate how this can be useful
 
@@ -147,7 +147,7 @@ ekr: we see similar issues in signed email, because no one understands what the 
 
 Julian: can you tell us about the reason for splitting it into two headers?
 
-Annabelle: previously unstructured. Most parameters were additional named strucutres and you had one signature. One of which was the headers param which had a string of identifiers that will be signed. What prompted the split was a few different things. We want to support multiple signatures and have signatures sign over other signatures. We also want to be able to sign the input for a signature. Which creates a compelling reason to split the two out so the signature input cna reference itself. Interested in feedback on if there are other ways to capture those requirements
+Annabelle: previously unstructured. Most parameters were additional named structures and you had one signature. One of which was the headers param which had a string of identifiers that will be signed. What prompted the split was a few different things. We want to support multiple signatures and have signatures sign over other signatures. We also want to be able to sign the input for a signature. Which creates a compelling reason to split the two out so the signature input cna reference itself. Interested in feedback on if there are other ways to capture those requirements
 
 Cory:  Pseudo header elements. Any reason to not use those?
 
@@ -157,7 +157,7 @@ Cory: ___
 
 Annabelle: the canonicalization of the ___ is to ___
 
-Cory: I think binary basic items aren't don't have a single cannonicalization. There may be some ambiguity that might be worth calling out.
+Cory: I think binary basic items aren't don't have a single canonicalization. There may be some ambiguity that might be worth calling out.
 
 Annabelle: thanks
 
@@ -169,9 +169,9 @@ Justin: I don't agree. It can go wrong, but that doesn't mean we should ignore i
 
 mnot: we have headers that it is useful to have headers where entities can add to it and sign it. It can also be misused and dangerous where it is misused. Also, I'd love to give feedback on structured headers.
 
-Jeffrey: I agree with ekrs concern. Signed excchanges require that everything is signed. I like that you got counter signtures with this mechanism. I think this draft needs an explicit call out that derivied protocols should only use the signed portions
+Jeffrey: I agree with ekrs concern. Signed exchanges require that everything is signed. I like that you got counter signtures with this mechanism. I think this draft needs an explicit call out that derived protocols should only use the signed portions
 
-Annebelle: That's a good call out. There isn't guidance for profiling specifications. Security considersations is a section that hasn't gotten attention.
+Annebelle: That's a good call out. There isn't guidance for profiling specifications. Security considerations is a section that hasn't gotten attention.
 
 (timing discussion)
 
@@ -179,7 +179,7 @@ Annabelle: presenting
 
 * discussion on expiring and creation time
 * outcome is two proposed concepts
-    * expiration time is the signer telling hte verifier what they think is the expiration time. bounding the accountibility for the signature. not a strict requirement on the verifier. verifier may have longer or shorter times for many reaosns such as clock skew, async apps, the verifier has tigher constraints for any reason (such as compliance requirements)
+    * expiration time is the signer telling the verifier what they think is the expiration time. bounding the accountability for the signature. not a strict requirement on the verifier. verifier may have longer or shorter times for many reasons such as clock skew, async apps, the verifier has tighter constraints for any reason (such as compliance requirements)
 * next steps
     * alg and keyid confusion, suggestion to use *jose?*, will respond
 
@@ -192,7 +192,7 @@ Annebelle: the selection is out of scope. A profiling spec that builds on this w
 
 Sam W: what happens when someone forges a signature with an algorithm that isn't widely used. How do we deal with downgrade attacks?
 
-Annabelle: We haven't specified how a verifier specifies what they will accept. There are cases where it is useful for a verifier to spefiy ahead of time what they will accept, but that can happend out of band. We need to have those constraints. But not obvious we need that in this draft.
+Annabelle: We haven't specified how a verifier specifies what they will accept. There are cases where it is useful for a verifier to specify ahead of time what they will accept, but that can happend out of band. We need to have those constraints. But not obvious we need that in this draft.
 
 
 
@@ -219,7 +219,7 @@ Roberto: presenting...
 
 Justin: This interlocks with HTTP signatures and this is progressing well. I need to sit down and read the draft. Do you think we can see some alignment between the algorithm spec that digests use and the one that signatures use
 
-Roberto: We removed everything that is below sha256 so I belive there is no issue about legacy. Algorithms are managed externally, but we are glad to work on that to make sure the specifications can integrate.
+Roberto: We removed everything that is below sha256 so I believe there is no issue about legacy. Algorithms are managed externally, but we are glad to work on that to make sure the specifications can integrate.
 
 mnot: getting close to WGLC, so people should have a read
 
@@ -230,28 +230,29 @@ mnot: it is pretty complicated, need to think about it offline
 ### [RFC6265bis](https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis)
 
 mkwst: presenting...
+
 * Draft status
     * 20 open issues
     * 19 are relatively strait forward
     * 1 is larger, we'll talk about it later
-    * a couple bugs worht defering
+    * a couple bugs worth defering
     * nothing we can do them in the doc as it exists (see slides)
     * some others that are stale and we think we can close (see slides)
-    * some need investigation, such as the test suite (wp-test, browsers and spec disagree). Specificly around same-site. Bulk of short term effort will be here.
+    * some need investigation, such as the test suite (wp-test, browsers and spec disagree). Specifically around same-site. Bulk of short term effort will be here.
     * Changes to cookie implementations in the wild that should flow into this doc. Should we do that in this draft? or punt to a future doc?
 * these are wrapped up in a doc called cookie incrementalism
-* some hve shipped in implementations
-* 3 seem ready to folkd in
+* some have shipped in implementations
+* 3 seem ready to fold in
     * SameSite by default
     * requiring secure for SameSite=None
     * Schemeful SameSite (taking the scheme into account in addition to domain)
-    * (engine implemation table)
+    * (engine implementation table)
 * We have tests for each of these (table with results)
 * WPT doesn't turn on these flags, table is wrong
-* we've catagorized the bugs, so we have a path forward
-* is it worth it to bring in some of the changes that are shipping in the wild or we are more interested in closing this document out so it reflects relatity of a couple months ago
+* we've categorized the bugs, so we have a path forward
+* is it worth it to bring in some of the changes that are shipping in the wild or we are more interested in closing this document out so it reflects reality of a couple months ago
 
-mnot: goal is to reflect reality. I think it is entirely reasonable for the WG to add a few things left. If there are any implemntors that say anythnig please say so now.
+mnot: goal is to reflect reality. I think it is entirely reasonable for the WG to add a few things left. If there are any implementers that say anything please say so now.
 
 ekr: we don't want to ship things that are in IDs and not in the actual draft. We would be in favor of folding them into the main draft and also shipping the draft.
 
@@ -259,7 +260,7 @@ Julian: I'm on the opposite side, ship the stable spec and define new things in 
 
 Thommy: we have opinions on both sides. Let's get a written up proposal and have a discussion on list.
 
-mkwst: the cookie incremenatlism is written as a set of PRs, so that will be pretty strait forward
+mkwst: the cookie incrementalism is written as a set of PRs, so that will be pretty strait forward
 
 
 ## 22 October 2020, [13:00-14:30 UTC](https://www.timeanddate.com/worldclock/fixedtime.html?msg=HTTP+Working+Group+October+2020+Interim+Session+II&iso=20201022T13&p1=1440&ah=1&am=30)
@@ -363,7 +364,7 @@ David Benjamin: Let's use frames in general.
 
 Cory Benfield: It seems a bit unfortunate to have ALPS be yet another way to exchange data. Maybe we should fix SETTINGS instead?
 
-David Benjamin: A lot of complexities there, using half-RTT for SETTINGS works in theory but causes many implementations problems in practice. ALso we'd need a new ALPN.
+David Benjamin: A lot of complexities there, using half-RTT for SETTINGS works in theory but causes many implementations problems in practice. Also we'd need a new ALPN.
 
 Mike Bishop: This reminds me of Alt-Svc. Perhaps we could add this to the HTTPS record?
 

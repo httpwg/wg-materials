@@ -1,7 +1,5 @@
 # Blue Sheet for HTTP WG October 2020 Interim
 
-_Please add your name and affiliation below._
-
 
 ## Tuesday Session
 
@@ -41,3 +39,31 @@ _Please add your name and affiliation below._
 * Steven Bingler (Google)
 * Ian Swett (Google)
 * Alessandro Ghedini (Cloudflare)
+* Kazuho Oku (Fastly)
+* Yoav Weiss (Google)
+
+
+## Thursday Session
+
+* Julian Reschke (greenbytes)
+* Cory Benfield (Apple)
+* Roberto Polli (Italian Digital Transformation Department)
+* Ken Murchison (Fastmail)
+* Mike Taylor (Google)
+* Tommy Pauly (Apple)
+* David Schinazi (Google)
+* Hiroyuki Goto (Gree)
+* Martin Thomson (Mozilla)
+* Nick Harper (Google)
+* Bence Béky (Google)
+* Daniel Stenberg (wolfSSL)
+* Brad Lassey (Google)
+* Luca Niccolini (Facebook)
+* Kazuho Oku (Fastly)
+* James Gruessing (No affiliation)
+* Patrick McManus (Fastly)
+* Alessandro Ghedini (Cloudflare)
+* Alan Frindell (Facebook)
+* David Benjamin (Google)
+* Yoav Weiss (Google)
+* Mark Nottingham (Fastly)

@@ -321,7 +321,7 @@ Lucas Pardue: the origin errata is mine? It's not really worth a bis imo
 
 Mark Nottingham: Will a new ALPN token be necessary?
 
-Chair consensus is to take this to H2bis.
+Chair sense of the room is to take this to H2bis.
 
 
 ### [HTTP Grease](https://tools.ietf.org/html/draft-nottingham-http-grease)

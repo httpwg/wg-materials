@@ -1,7 +1,23 @@
 # HTTP WG October 2020 Interim - Draft Minutes
 
-_Scribes, plese see [our guidelines](https://github.com/httpwg/wiki/wiki/TakingMinutes)_
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
+- [20 October 2020, 13:00-14:30 UTC](#20-october-2020-1300-1430-utc)
+  - [HTTP Core](#http-core)
+  - [Extensible Prioritization Scheme for HTTP](#extensible-prioritization-scheme-for-http)
+  - [Signing HTTP Messages](#signing-http-messages)
+  - [Digest Headers](#digest-headers)
+  - [RFC6265bis](#rfc6265bis)
+- [22 October 2020, 13:00-14:30 UTC](#22-october-2020-1300-1430-utc)
+  - [HTTP/2bis](#http2bis)
+  - [HTTP/2 extensions for HTTP/3](#http2-extensions-for-http3)
+  - [GREASE for HTTP/2](#grease-for-http2)
+  - [HTTP Grease](#http-grease)
+  - [Client Hint Reliability](#client-hint-reliability)
+  - [Search Method](#search-method)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## 20 October 2020, [13:00-14:30 UTC](https://www.timeanddate.com/worldclock/fixedtime.html?msg=HTTP+Working+Group+October+2020+Interim+Session+I&iso=20201020T13&p1=%3A&ah=1&am=30)
 

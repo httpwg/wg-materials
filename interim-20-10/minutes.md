@@ -205,3 +205,120 @@ Julian: I'm on the opposite side, ship the stable spec and define new things in 
 Thommy: we have opinions on both sides. Let's get a written up proposal and have a discussion on list.
 mkwst: the cookie incremenatlism is written as a set of PRs, so that will be pretty strait forward
 
+
+## 22 October 2020, [13:00-14:30 UTC](https://www.timeanddate.com/worldclock/fixedtime.html?msg=HTTP+Working+Group+October+2020+Interim+Session+II&iso=20201022T13&p1=1440&ah=1&am=30)
+
+David Schinazi and Cory Benfield will be your minute takers today.
+
+### [HTTP/2bis](https://datatracker.ietf.org/doc/html/draft-thomson-httpbis-http2bis)
+
+([slides](http2v2.pdf))
+
+Note from minute taker: let the record show that the 2 in these slides is glorious.
+
+Cory Benfield: this is a good idea, support - kill midders
+
+David Schinazi: Proposed adding removing server push to the list of changes.
+https://github.com/martinthomson/http2-spec/issues/16
+
+Mike Bishop: Wants to address errata, if the doc is open anyway let's do some more, no new features.
+
+Julian Reschke: Update references to the core doc, even if it's only an exercise. Martin to take under advisement.
+
+Yoav Weiss: Opposed to removing priorities from H2. They are implemented and deployed in some places: opposed to removal before new priorities mechanism in place. Martin is open to exploring a wide range of soft-deprecations instead of hard-removal.
+
+Lucas Pardue: Supports this work, willing to contribute. Proposes including HPACK in this effort, e.g. add a new static table.
+
+Ian Swett: on priorities, a middleground approach is good - we should reference the new priorities draft. Also, should we change the ALPN because of existing broken servers (e.g. WebSocket over h2 breaks some servers they abort on SETTINGS). Also we use midders in production so if we remove them we would like a way to negotiate them as an extension.
+
+Alan Frindell: We use push in non-Web contexts so we'd like to keep it. HPACK is probably fine as is.
+Mike Bishop: also likes push in non-Web. Changing the HPACK static table would be a breaking change.
+Dmitri Tikhonov: +1 to Alan: HTTP/2 is not just for the web, either
+Bence Béky: +1 to Cory's and Alan's preference to not change HPACK
+Cory Benfield: Not worth re-entering queue, but I agree with not removing push. Push is very straight forward to not use: just don't use it. You can delete the code, set the ENABLE_PUSH setting to zero, and just largely forget it exists, so I'm not motivated to delete it from the spec.
+Daniel Stenberg: I'm +1 on keeping push and keeping HPACK as-is
+
+Mark Nottingham: there is clear interest here, let's work on this as a WG. Perhaps move Martin's repo to a WG repo. Not hearing anyone saying we shouldn't do this effort.
+Tommy Pauly: agrees
+
+### [HTTP/2 extensions for HTTP/3](https://datatracker.ietf.org/doc/html/draft-bishop-httpbis-altsvc-quic)
+
+([slides](https://httpwg.org/wg-materials/interim-20-10/H3_pollination.pdf))
+
+Martin Thomson: Proposes reopening RFC 7838 (AltSvc) and 8337 (ORIGIN) as bis documents to revise them and include QUIC. Julian Reschke notes that AltSvc has no errata, ORIGIN has one. Mike doesn't see the need for a bis on ORIGIN but is open to one for AltSvc.
+
+Mark Nottingham: Nervous about opening these documents up for bis due to concerns about strong feeling around some of the areas the drafts tackle.
+
+Lucas Pardue: the origin errata is mine? It's not really worth a bis imo
+
+### [GREASE for HTTP/2](https://tools.ietf.org/html/draft-bishop-httpbis-grease)
+
+([slides](https://httpwg.org/wg-materials/interim-20-10/H3_pollination.pdf))
+
+
+Mark Nottingham: Will a new ALPN token be necessary?
+
+Chair consensus is to take this to H2bis.
+
+
+### [HTTP Grease](https://tools.ietf.org/html/draft-nottingham-http-grease)
+
+No slides.
+
+Question for the group: is this an interesting direction for us to go in?
+
+Jeffrey Yasskin: This document says it's important not to say which field names are reserved for greasing: why?
+
+Mark Nottingham: This prevents receivers from special-casing reserved fields
+
+Tommy Pauly: Would client implementations participate in experimenting here?
+
+David Schinazi: As a client implementer, Chrome would do participate, at least in the beta channels. Would prefer to GREASE in stable but the web may not be healthy enough to tolerate it.
+
+Julian Reschke: In general this is a good idea. This was somewhat triggered by Yoav's difficulty deploying client hints: can he update?
+
+Yoav Weiss: We've seen a lot of problems in beta/canary/dev. Fixed most of these. Still being rolled out to stable. Generally: what David said.
+
+Mike Bishop: This is a great idea, but this is a new kind of GREASE that is very different from previous GREASE work. Should this doc be experimental?
+Mark Nottingham: We want this doc to be authoritative on the topic, experimental weakens that
+
+Martin Thomson: It's more valuable to have a place to discuss this and reach out to WAFs than to publish an RFC
+
+Julian Reschke: Perhaps we should modify the core specs to be more explicit about saying that headers can have many shapes, even if we don't call it GREASE
+
+Mark Nottingham: Happy to hear that clients are going to experiment. Doc isn't the priority, we can pause it for 6 months
+Tommy Pauly: We can coordinate in experimental channels
+
+### [Client Hint Reliability](https://tools.ietf.org/html/draft-davidben-http-client-hint-reliability)
+
+([slides](https://httpwg.org/wg-materials/interim-20-10/client-hint-reliability.pdf))
+
+Lucas Pardue: On the topic of ALPS, SETTINGS aren't the only way to extend HTTP. You could use new frames. I like the idea of improving negotiation of extensions but limiting ourselves to SETTINGS might be too limiting.
+David Benjamin: Let's use frames in general.
+Cory Benfield: It seems a bit unfortunate to have ALPS be yet another way to exchange data. Maybe we should fix SETTINGS instead?
+David Benjamin: A lot of complexities there, using half-RTT for SETTINGS works in theory but causes many implementations problems in practice. ALso we'd need a new ALPN.
+Mike Bishop: This reminds me of Alt-Svc. Perhaps we could add this to the HTTPS record?
+David Benjamin: DNS is not authenticated in practice today.
+Mike Bishop: Instead of extended SETTINGS, just use a new frame each time.
+David Benjamin: Unfortunate that there are less frame codepoints than SETTINGS identifiers.
+Sam Weiler: We could define this as "only with DNSSEC".
+David Benjamin: Chrome doesn't support DNSSEC so that's a no-op for us. Also, DNS has different lifetimes than HTTP/2 connections so they could fall out of sync. It also doesn't save any round-trips over ALPS, so doesn't seem worth it.
+
+Tommy Pauly: Next steps?
+David Benjamin: We'll need to figure out what lives in HTTP vs TLS WGs.
+
+### [Search Method](https://tools.ietf.org/html/draft-snell-search-method)
+
+([slides](ietf-httpbis-2020-10-search.pdf))
+
+Mark Nottingham: Basically a +0.5, we have customers interested in caching POST
+David Schinazi: we have a use-case that wants POST over 0-RTT, so maybe having a way to specify idempotency could be nice
+Mark Nottingham: let's chat more I think you can already do that today
+David Schinazi: sorry, I need more caffeine
+Martin Thomson: this is interesting, but I haven't seen interest from many parties in the 5 years where this has existed
+Mark Nottingham: I think there's sufficient interest from what I've seen
+Roberto Polli: Having a way to make explicit if a request is safe is very important. If we build it they will come.
+Nick Harper: Having a way to say that a request is safe is important, I'm not sure that SEARCH is the right answer to that though. Maybe SAFE_POST might be easier.
+Julian Reschke: The motivation for picking SEARCH was that there is existing code out there that already knows that it's safe and idempotent. If we use a new method we'll have to write more code.
+
+

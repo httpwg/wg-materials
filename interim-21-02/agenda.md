@@ -26,7 +26,7 @@ _2 Hour_
 *  30 min - [HTTP/2 bis]()
 *  20 min - [SEARCH method]()
 
-## 1 February 2021, [21:00-23:00 UTC](https://www.timeanddate.com/worldclock/fixedtime.html?msg=HTTPbis+Interim+Meeting+Session+II%2C+February+2021&iso=20210211T21&p1=1440&ah=2)
+## 11 February 2021, [21:00-23:00 UTC](https://www.timeanddate.com/worldclock/fixedtime.html?msg=HTTPbis+Interim+Meeting+Session+II%2C+February+2021&iso=20210211T21&p1=1440&ah=2)
 
 _2 Hour_
 

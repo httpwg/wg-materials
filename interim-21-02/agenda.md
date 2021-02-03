@@ -19,12 +19,14 @@ _2 Hour_
 
 ### Active Extension Drafts
 
-*  20 min - [Extensible Prioritization Scheme for HTTP](https://tools.ietf.org/html/draft-ietf-httpbis-priority)
+*  10 min - [Extensible Prioritization Scheme for HTTP](https://tools.ietf.org/html/draft-ietf-httpbis-priority)
 *  20 min - [Signing HTTP Messages](https://tools.ietf.org/html/draft-ietf-httpbis-message-signatures)
 *  20 min - [Digest Headers](https://tools.ietf.org/html/draft-ietf-httpbis-digest-headers)
 *  20 min - [RFC6265bis](https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis)
-*  30 min - [HTTP/2 bis]()
-*  20 min - [SEARCH method]()
+*  20 min - [HTTP/2 bis]()
+*  10 min - [SEARCH method]()
+*   5 min - [bcp56bis](https://tools.ietf.org/html/draft-ietf-httpbis-bcp56bis)
+
 
 ## 11 February 2021, [21:00-23:00 UTC](https://www.timeanddate.com/worldclock/fixedtime.html?msg=HTTPbis+Interim+Meeting+Session+II%2C+February+2021&iso=20210211T21&p1=1440&ah=2)
 

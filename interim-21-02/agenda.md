@@ -23,7 +23,7 @@ _2 Hour_
 *  20 min - [Signing HTTP Messages](https://tools.ietf.org/html/draft-ietf-httpbis-message-signatures)
 *  20 min - [Digest Headers](https://tools.ietf.org/html/draft-ietf-httpbis-digest-headers)
 *  20 min - [RFC6265bis](https://tools.ietf.org/html/draft-ietf-httpbis-rfc6265bis)
-*  20 min - [HTTP/2 bis]()
+*  30 min - [HTTP/2 bis](https://tools.ietf.org/html/draft-ietf-httpbis-http2bis)
 *  10 min - [SEARCH method]()
 *   5 min - [bcp56bis](https://tools.ietf.org/html/draft-ietf-httpbis-bcp56bis)
 

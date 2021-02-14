@@ -23,9 +23,9 @@ Lucas:
 Our current H2 dependency.
 Current implementation considers the weight, but I do not expect a change in performance.
 I'm not asking to hold on until we have implementation experience.
-Tommy: If you have any measurements, that would give us the confidence we need
-Alan: We might have something to show by March IETF
-mnot: Chairs will discuss about the next step in process, which may be WGLC
+* Tommy: If you have any measurements, that would give us the confidence we need
+* Alan: We might have something to show by March IETF
+* mnot: Chairs will discuss about the next step in process, which may be WGLC
 
 #### [Signing HTTP Messages](https://tools.ietf.org/html/draft-ietf-httpbis-message-signatures)
 

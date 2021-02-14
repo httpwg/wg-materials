@@ -1,5 +1,33 @@
 # HTTP Working Group Interim Meeting Minutes - February 2021
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [9 February 2021](#9-february-2021)
+  - [Active Extension Drafts](#active-extension-drafts)
+    - [Extensible Prioritization Scheme for HTTP - Lucas](#extensible-prioritization-scheme-for-http---lucas)
+    - [Signing HTTP Messages](#signing-http-messages)
+    - [Digest Headers - Lucas](#digest-headers---lucas)
+    - [RFC6265bis - Lily](#rfc6265bis---lily)
+    - [HTTP/2 bis - Martin](#http2-bis---martin)
+- [11 February 2021](#11-february-2021)
+  - [bcp56bis - Mark](#bcp56bis---mark)
+  - [HTTP Core](#http-core)
+    - [Mark: Issue 751](#mark-issue-751)
+  - [Issue 740, mid stream trailers](#issue-740-mid-stream-trailers)
+    - [Issue 733: Arbitrary limitation on authentication parameters](#issue-733-arbitrary-limitation-on-authentication-parameters)
+    - [Issue 729: Proxy in the cache key](#issue-729-proxy-in-the-cache-key)
+    - [Issue 715: Unknown preconditions aren't safe](#issue-715-unknown-preconditions-arent-safe)
+    - [Issue 697: Whitespace is not removed from field values in H2 or H3](#issue-697-whitespace-is-not-removed-from-field-values-in-h2-or-h3)
+    - [Issue 687: MUST NOT lie](#issue-687-must-not-lie)
+    - [Issue 683: Control characters](#issue-683-control-characters)
+    - [Issue 681: Should -messaging obsolete RFC 1945?](#issue-681-should--messaging-obsolete-rfc-1945)
+    - [Issue 743: Where does upgrade go?](#issue-743-where-does-upgrade-go)
+    - [Issue 690: Is -messaging part of the core spec?](#issue-690-is--messaging-part-of-the-core-spec)
+  - [CDN Cache Control](#cdn-cache-control)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## 9 February 2021
 

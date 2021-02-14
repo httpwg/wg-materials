@@ -14,8 +14,8 @@
 - [11 February 2021](#11-february-2021)
   - [bcp56bis - Mark](#bcp56bis---mark)
   - [HTTP Core](#http-core)
-    - [Mark: Issue 751](#mark-issue-751)
-  - [Issue 740, mid stream trailers](#issue-740-mid-stream-trailers)
+    - [Issue 751](#issue-751)
+    - [Issue 740, mid stream trailers](#issue-740-mid-stream-trailers)
     - [Issue 733: Arbitrary limitation on authentication parameters](#issue-733-arbitrary-limitation-on-authentication-parameters)
     - [Issue 729: Proxy in the cache key](#issue-729-proxy-in-the-cache-key)
     - [Issue 715: Unknown preconditions aren't safe](#issue-715-unknown-preconditions-arent-safe)
@@ -203,7 +203,7 @@ Martin Thomson: Not a lot to report
 
 **Mark**: 26 issues open. Editors believed 9 issues are worth discussing, but floor is open for other issue discussion.
 
-#### Mark: Issue 751
+#### Issue 751
  * **Mark**: Wants Roy's comment here.
  * **Roy**: The main reason this is a MUST is to encourage people to send the version they actually support. Worry that clients will send a "safe" version first and let a server indicate a higher version, and servers may do the same. Applies to intermediaries and origin servers. This worked, took only a small amount of time to go from 1.0 to 1.1. Could change that MUST to a SHOULD or make the change Willy requests but we need to recognise that the version of the protocol has this additional purpose.
  * **Mike Bishop**: Thinks this requirement is fine for clients and servers. For intermediaries, they may not want to invoke everything that e.g. 1.1 supports if the client doesn't support 1.0 and so it can't stream it through. Makes sense to have a different requirement on intermediaries.
@@ -222,7 +222,7 @@ Martin Thomson: Not a lot to report
  * **Roy**: Worth revisiting.
  * **Tommy**: Martin in chat notes that we could keep the text and add SHOULD, then note why you may not. Seems like a nice way out.
 
-### Issue 740, mid stream trailers
+#### Issue 740, mid stream trailers
  * **Mark**: Should mid-stream trailers be accommodated in the spec? Discussion started in the QUIC WG, added things into the core spec to allow this, no current version of HTTP has the capability to do this. This effectively changes the signature of what HTTP is: is that appropriate to do?
  * **Martin**: Document very clearly described a protocol that was deployed except for this bit. This was a very jarring point in the document. Could be done as an extension: adopt an item in the WG that defined these semantics and defined extensions to the various protocols to realise this. Seems like a better approach. Sympathises with the annoyance about not being able to do this.
  * **Cory**: Agrees with Martin, happy to see the WG adopt an extension.

@@ -17,6 +17,13 @@ _2 Hours_
 *  3 min - [Blue sheets](https://codimd.ietf.org/bluesheet-httpbis-21-06) / scribe selection / [NOTE WELL](https://www.ietf.org/about/note-well/)
 *  2 min - Agenda bashing
 
+### Active Extension Drafts
+
+*  15 min - [Client Cert Header]()
+*  15 min - [Safe method with body](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-safe-method-w-body)
+*  20 min - [HTTP/2 bis](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-http2bis)
+*  20 min - [RFC6265bis](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-rfc6265bis)
+*  20 min - [Extensible Prioritization Scheme for HTTP](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-priority)
 
 
 
@@ -29,4 +36,11 @@ _2 Hours_
 *  3 min - [Blue sheets](https://codimd.ietf.org/bluesheet-httpbis-21-06) / scribe selection / [NOTE WELL](https://www.ietf.org/about/note-well/)
 *  2 min - Agenda bashing
 
+### Active Extension Drafts
 
+*  20 min - [Digest Headers](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-digest-headers)
+*  20 min - [Signing HTTP Messages](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-message-signatures)
+
+### Proposals
+
+* 10 min - [Targeted Cache Control](https://datatracker.ietf.org/doc/html/draft-cdn-control-header)

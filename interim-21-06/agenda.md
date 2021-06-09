@@ -20,7 +20,7 @@ _2 Hours_
 ### Active Extension Drafts
 
 *  15 min - [Client Cert Header]()
-*  15 min - [Safe method with body](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-safe-method-w-body)
+*  15 min - [Safe method with body](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-safe-method-w-body) ([slides](search.pdf))
 *  20 min - [HTTP/2 bis](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-http2bis)
 *  20 min - [RFC6265bis](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-rfc6265bis)
 *  20 min - [Extensible Prioritization Scheme for HTTP](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-priority)
@@ -39,9 +39,9 @@ _2 Hours_
 ### Active Extension Drafts
 
 *  20 min - [Digest Headers](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-digest-headers)
-*  20 min - [Signing HTTP Messages](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-message-signatures)
+*  20 min - [Signing HTTP Messages](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-message-signatures) ([slides](signatures.pdf))
 
 ### Proposals
 
 * 10 min - [Targeted Cache Control](https://datatracker.ietf.org/doc/html/draft-cdn-control-header)
-* 10 min - [Cache Trailers](https://datatracker.ietf.org/doc/html/draft-nottingham-cache-trailers)
+* 10 min - [Cache Trailers](https://datatracker.ietf.org/doc/html/draft-nottingham-cache-trailers) ([slides](cache-trailer.pdf))

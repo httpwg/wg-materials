@@ -8,3 +8,4 @@
 - [cache-trailer.pdf](cache-trailer.pdf)
 - [search.pdf](search.pdf)
 - [signatures.pdf](signatures.pdf)
+- [targeted-cc.pdf](targeted-cc.pdf)

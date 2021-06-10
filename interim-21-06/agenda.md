@@ -19,7 +19,7 @@ _2 Hours_
 
 ### Active Extension Drafts
 
-*  15 min - [Client Cert Header]()
+*  15 min - [Client Cert Header](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-client-cert-field)
 *  15 min - [Safe method with body](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-safe-method-w-body) ([slides](search.pdf))
 *  20 min - [HTTP/2 bis](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-http2bis)
 *  20 min - [RFC6265bis](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-rfc6265bis)

@@ -9,3 +9,4 @@
 - [search.pdf](search.pdf)
 - [signatures.pdf](signatures.pdf)
 - [targeted-cc.pdf](targeted-cc.pdf)
+- [client-cert-field.pdf](client-cert-field.pdf`)

@@ -22,7 +22,7 @@ _2 Hours_
 *  15 min - [Client Cert Header](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-client-cert-field) ([slides](client-cert-field.pdf))
 *  15 min - [Safe method with body](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-safe-method-w-body) ([slides](search.pdf))
 *  20 min - [HTTP/2 bis](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-http2bis)
-*  20 min - [RFC6265bis](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-rfc6265bis)
+*  20 min - [RFC6265bis](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-rfc6265bis) ([slides](rfc-6265bis.pdf))
 *  20 min - [Extensible Prioritization Scheme for HTTP](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-priority)
 
 

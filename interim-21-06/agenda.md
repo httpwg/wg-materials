@@ -38,7 +38,7 @@ _2 Hours_
 
 ### Active Extension Drafts
 
-*  20 min - [Digest Headers](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-digest-headers)
+*  20 min - [Digest Headers](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-digest-headers) ([slides](digest.pdf))
 *  20 min - [Signing HTTP Messages](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-message-signatures) ([slides](signatures.pdf))
 
 ### Proposals

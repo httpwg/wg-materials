@@ -46,3 +46,4 @@ _2 Hours_
 * 20 min - Alt-Svc bis ([slides](altsvcbis.pdf))
 * 10 min - [Targeted Cache Control](https://datatracker.ietf.org/doc/html/draft-cdn-control-header) ([slides](targeted-cc.pdf))
 * 10 min - [Cache Trailers](https://datatracker.ietf.org/doc/html/draft-nottingham-cache-trailers) ([slides](cache-trailer.pdf))
+* 10 min - [Binary HTTP Messages](https://unicorn-wg.github.io/oblivious-http/draft-thomson-http-binary-message.html) ([slides](bhttp.pdf))

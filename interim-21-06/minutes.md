@@ -130,7 +130,7 @@ Tommy:  Does the interaction need its own document, or should H3 datagrams just 
 Lucas:  It took a lot of HTTP discussion to reach this; MASQUE might get distracted by having to do the prioritization work.
 
 
-### Digest Headers 
+### Digest Headers
 
 [Slides](https://httpwg.org/wg-materials/interim-21-06/digest.pdf)
 
@@ -138,43 +138,43 @@ MT: How do content-codings interact with content-digest?
 
 Roberto: basically, the algorithms currently result in hashing the bytes of the representation content *after* content coding; there are the "id-" prefixed algorithms (eg. id-sha256) that operate on the representation (or content) *before* the application of content coding. WRT content-codings, [Digest and Content-Digest work in the same way](https://github.com/httpwg/http-extensions/blob/main/draft-ietf-httpbis-digest-headers.md#resource-representation-and-representation-data-resource-representation).
 
-Lucas: Good progress and feedback since last interim. Content-Digest is a path to resolving payload vs representation differences. More work required for the PR: https://github.com/httpwg/http-extensions/pull/1543. Some help (esp. regarding IANA process) is requested. 
+Lucas: Good progress and feedback since last interim. Content-Digest is a path to resolving payload vs representation differences. More work required for the PR: https://github.com/httpwg/http-extensions/pull/1543. Some help (esp. regarding IANA process) is requested.
 
 Mark: Happy to help (as chair)
 
-Justin: Looks like Content-Digest is heading in the right direction. Makes it simple for checksumming bytes when chunking data to send using standard HTTP APIs. Allows addressing common and uncommon use cases. Supportive of the proposal. 
+Justin: Looks like Content-Digest is heading in the right direction. Makes it simple for checksumming bytes when chunking data to send using standard HTTP APIs. Allows addressing common and uncommon use cases. Supportive of the proposal.
 
 Mike: Content-MD5 was inconsistently implemented in response to partial responses. One header for each possibility addresses most use cases, and hopefully avoids ambiguity this time around. Supportive of the proposal.
 
 Manu: We're implementing the proposal for Content-Digest. Some future w3c specs are looking at using it. Regarding #1532, hoping to get new digest algorithm (multibase and multihash) into the registry. What's the best way forward?
 
-Mark: Need specification published and reviewed. These are generic mechanisms, not HTTP specific, so maybe the HTTP WG would not adopt for sake of registration. Since these may have security implications, this might go through SECDISPATCH for further triage. 
+Mark: Need specification published and reviewed. These are generic mechanisms, not HTTP specific, so maybe the HTTP WG would not adopt for sake of registration. Since these may have security implications, this might go through SECDISPATCH for further triage.
 
-Lucas: Digest and Content-Digest are complementary to one another. Should be able to download files by ranges and verify each chunk by Content-Digest, and then the whole data by Digest, for example. 
+Lucas: Digest and Content-Digest are complementary to one another. Should be able to download files by ranges and verify each chunk by Content-Digest, and then the whole data by Digest, for example.
 
 Mark: Two headers is a wonderful thing. Want to review the header names offline. Thanks for the work!
 
-Lucas: Will send email out to the list pointing to the PR. 
+Lucas: Will send email out to the list pointing to the PR.
 
 Mark: When the PR is ready, we'll be ready for WGLC.
 
-### Signing HTTP Messages 
+### Signing HTTP Messages
 
 [Slides](https://httpwg.org/wg-materials/interim-21-06/signatures.pdf)
 
 (Proposal for date-based names)
 
-Manu: Date-based proposal for algorithm identifiers stems from developer confusion induced by long names. Trying to give developer's some sort of idea about the age of the algorithm. 
+Manu: Date-based proposal for algorithm identifiers stems from developer confusion induced by long names. Trying to give developer's some sort of idea about the age of the algorithm.
 
-Roberto: RFC7696 provides insights about naming and identifiers for algorithms. 
+Roberto: RFC7696 provides insights about naming and identifiers for algorithms.
 
 Chris: Not in favor of date-based proposal. What are the requirements? Punting to developers and applications is not the best idea.
 
 Justin: Purpose is to give meaning and a reference to developers (to grep through a document to figure out how to implement an algorithm). Not in favor of date-based proposal.
 
-Annabelle: Date/year is being used as a proxy for "quality" of the algorithm, but that's a poor proxy. We should not be optimizing to make decisions by application developers easier. 
+Annabelle: Date/year is being used as a proxy for "quality" of the algorithm, but that's a poor proxy. We should not be optimizing to make decisions by application developers easier.
 
-Manu: Discussing two extremes. Developers that know they need to use RSA or ECDSA, but not sure about other parameters. 
+Manu: Discussing two extremes. Developers that know they need to use RSA or ECDSA, but not sure about other parameters.
 
 Justin: Algorithms do NOT identify the parameters. (That's done separately.)
 
@@ -206,15 +206,15 @@ MT: Alt-Svc work in the DNSOP working group is good, and the WG here needs to be
 
 Mark (no hat): Alignment is required. Implementers have concerns about this since not many people (really) know how it works. Wary of adding new features such as path scopes. Would be more interested in a simpler, concise design that we can all interoperate on.
 
-Lucas: Was not aware of discussions happening in DNSOP WG. Brought some ideas for consideration, but not all need to be done here. 
+Lucas: Was not aware of discussions happening in DNSOP WG. Brought some ideas for consideration, but not all need to be done here.
 
-Mike: Need to resolve the ECH and Alt-Svc discussion. Would also be good to update Alt-Svc such that it can be supported across browsers. Unclear if path-scoped Alt-Svc is the right solution for content served elsewhere on a per-path basis. Maybe could be done out-of-band? Perhaps just focus on laying groundwork for future work on this path. 
+Mike: Need to resolve the ECH and Alt-Svc discussion. Would also be good to update Alt-Svc such that it can be supported across browsers. Unclear if path-scoped Alt-Svc is the right solution for content served elsewhere on a per-path basis. Maybe could be done out-of-band? Perhaps just focus on laying groundwork for future work on this path.
 
-Tommy (chair): Bringing to the HTTP WG would be good. Should we have a focused call on Alt-Svc issues? 
+Tommy (chair): Bringing to the HTTP WG would be good. Should we have a focused call on Alt-Svc issues?
 
 Erik: +1
 
-Mark: Will work on adoption call within the next week or so. 
+Mark: Will work on adoption call within the next week or so.
 
 ### Targeted Cache Control
 
@@ -234,15 +234,15 @@ Tommy (chair): Hearing no objections, will proceed with adoption call.
 
 MT: (missed)
 
-Mark: Caching is the appropriate granularity for updates in the trailer. Browsers and things consuming trailer fields may not do so for performance or security reasons. 
+Mark: Caching is the appropriate granularity for updates in the trailer. Browsers and things consuming trailer fields may not do so for performance or security reasons.
 
-Roy: May need a way to update the status code. There might be other ways for a server to say content is no longer useful, but that's separate from caching. 
+Roy: May need a way to update the status code. There might be other ways for a server to say content is no longer useful, but that's separate from caching.
 
 Mark: This can be part of the information that's conveyed (similar to warning header?). Need concrete (not general) behaviors for this to be useful.
 
-Roy: One is a generalization of the other. 
+Roy: One is a generalization of the other.
 
-Mark: Comes down to how this is spelled and the scope of the updates. Fine with generalizing as long as it's actionable. 
+Mark: Comes down to how this is spelled and the scope of the updates. Fine with generalizing as long as it's actionable.
 
 Kazhuo: Model is to send response with limited caching scope and the promote to wider scope. If that's a goal, then limiting to caching makes sense.
 
@@ -250,7 +250,7 @@ Mark: Senders may want to be cautious first (and cache less). (There are other e
 
 Roberto: If an intermediary strips off the trailer, what happens?
 
-Mark: Good question! Consequences of that would need to be weighed against people using this trailer. If overcaching is a big issue and the trailer might be stripped, then perhaps this might not be used. May need to give guidance on when the trailer is applicable as it's subtle. 
+Mark: Good question! Consequences of that would need to be weighed against people using this trailer. If overcaching is a big issue and the trailer might be stripped, then perhaps this might not be used. May need to give guidance on when the trailer is applicable as it's subtle.
 
 MT: (side note about discussion regarding mechanism -- can happen elsewhere)
 
@@ -270,21 +270,21 @@ Kazuho: Why do we need fixed and indeterminate lengths?
 
 MT: Open question for me too.
 
-Lucas: We need to do this somewhere if OHTTP is to be a thing. 
+Lucas: We need to do this somewhere if OHTTP is to be a thing.
 
-Mark: If OHTTP goes ahead, HTTP should probably do this work. Else, we need to see if there are other use cases that might work. Having a version-independent representation of the messages would be interesting. 
+Mark: If OHTTP goes ahead, HTTP should probably do this work. Else, we need to see if there are other use cases that might work. Having a version-independent representation of the messages would be interesting.
 
 Lucas: What's the relationship between this and binary structured headers?
 
-Mark: They're separate. 
+Mark: They're separate.
 
 MT: Separate. Lots of space in the first byte for other forms. One could create a different form of message that might take binary structured headers, and would be more efficient. That's for the future now.
 
-Alan: Is there any aim to make these smaller in the future? 
+Alan: Is there any aim to make these smaller in the future?
 
 MT: Thought ASCII was a feature. Appealing since it's simple.
 
 Alan: Could make things smaller, but not everyone wants to write that code. Just a consideration for the future.
 
-Mark (chair): Tommy and I will talk to the ADs and flag that if OHTTP moves forward then the HTTP WG should work on this. 
+Mark (chair): Tommy and I will talk to the ADs and flag that if OHTTP moves forward then the HTTP WG should work on this.
 

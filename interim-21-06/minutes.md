@@ -37,8 +37,7 @@ Nick:   Large headers can get stripped; consider putting the SHA256 in a separat
 
 ### Safe method with body - Julian Reschke
 
-Slow progress due to focus on Core drafts
-Undecided whether this method should be SEARCH or not; draft name doesn't specify, but draft text currently updates SEARCH
+Slow progress due to focus on Core drafts. Undecided whether this method should be SEARCH or not; draft name doesn't specify, but draft text currently updates SEARCH
 
 Mark:   SEARCH is likely slightly more deployable than something new. Older versions of Squid reject unknown method names. However, widespread encryption means this is probably less of an issue. Reuse SEARCH if it doesn't have to be stretched too much, otherwise not.
 

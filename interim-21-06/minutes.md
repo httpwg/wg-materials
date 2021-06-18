@@ -1,5 +1,29 @@
-
 # HTTP Interim June 2021
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [Status of Core Drafts](#status-of-core-drafts)
+- [Active Extension Drafts](#active-extension-drafts)
+  - [Client Cert Header - Brian Campbell](#client-cert-header---brian-campbell)
+  - [Safe method with body - Julian Reschke](#safe-method-with-body---julian-reschke)
+  - [HTTP/2 bis - Martin Thomson](#http2-bis---martin-thomson)
+    - [Issue 826 - h2 and h3 have slightly different registry policies. Reconcile?](#issue-826---h2-and-h3-have-slightly-different-registry-policies-reconcile)
+    - [Issue 849 - Cory proposes not discussing this in the H2 spec, and leaving the question to Semantics.](#issue-849---cory-proposes-not-discussing-this-in-the-h2-spec-and-leaving-the-question-to-semantics)
+    - [Issue 863 - Mitigate small window update attacks?](#issue-863---mitigate-small-window-update-attacks)
+    - [PR 861 - Rules about things that look malicious are incomplete.](#pr-861---rules-about-things-that-look-malicious-are-incomplete)
+  - [RFC6265bis - Lily Chen](#rfc6265bis---lily-chen)
+  - [Extensible Prioritization Scheme for HTTP](#extensible-prioritization-scheme-for-http)
+  - [Digest Headers](#digest-headers)
+  - [Signing HTTP Messages](#signing-http-messages)
+- [Proposals](#proposals)
+  - [Alt-Svc bis](#alt-svc-bis)
+  - [Targeted Cache Control](#targeted-cache-control)
+  - [Cache Trailers](#cache-trailers)
+  - [Binary HTTP Messages](#binary-http-messages)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Status of Core Drafts
 

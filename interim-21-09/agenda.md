@@ -4,7 +4,7 @@
   - Meeting number: 161 816 3363
   - Password: transportfer
 * [Meeting chat](xmpp:httpbis@jabber.ietf.org?join)
-* [Minutes](https://codimd.ietf.org/notes-httpbis-21-09)
+* [Minutes](https://notes.ietf.org/notes-httpbis-21-09) _requires datatracker login_
 
 *Taking minutes? See [our guide](https://github.com/httpwg/wiki/wiki/TakingMinutes)*
 
@@ -14,7 +14,7 @@ _2 Hours_
 
 ### Administrivia
 
-*  3 min - [Blue sheets](https://codimd.ietf.org/bluesheet-httpbis-21-06) / scribe selection / [NOTE WELL](https://www.ietf.org/about/note-well/)
+*  3 min - [Blue sheets](https://notes.ietf.org/bluesheet-httpbis-21-09) / scribe selection / [NOTE WELL](https://www.ietf.org/about/note-well/)
 *  2 min - Agenda bashing
 
 ### Active Extension Drafts
@@ -29,7 +29,7 @@ _2 Hours_
 
 ### Administrivia
 
-*  3 min - [Blue sheets](https://codimd.ietf.org/bluesheet-httpbis-21-06) / scribe selection / [NOTE WELL](https://www.ietf.org/about/note-well/)
+*  3 min - [Blue sheets](https://notes.ietf.org/bluesheet-httpbis-21-09) / scribe selection / [NOTE WELL](https://www.ietf.org/about/note-well/)
 *  2 min - Agenda bashing
 
 ### Active Extension Drafts

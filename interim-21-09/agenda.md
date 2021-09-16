@@ -19,8 +19,10 @@ _2 Hours_
 
 ### Active Extension Drafts
 
-_TBD_
-
+* 20 min - Alternative Services
+* 10 min - Boostrapping WebSockets with HTTP/3
+* 10 min - Client-Cert Header
+* 50+ min - Signatures
 
 
 ## 30 September 2021, [21:00-23:00 UTC](https://www.timeanddate.com/worldclock/fixedtime.html?msg=HTTPbis+Interim+Meeting+Session+II%2C+September+2021&iso=20210930T21&p1=1440&ah=2)
@@ -34,7 +36,11 @@ _2 Hours_
 
 ### Active Extension Drafts
 
-_TBD_
+* 15 min - Safe Method Without Body
+* 10 min - Targeted Cache Control
+* 10 min - Digest Fields
+* 10 min - Priorities
+* 50 min - Cookies
 
 
 ### Proposals

@@ -19,7 +19,7 @@ _2 Hours_
 
 ### Active Extension Drafts
 
-* 20 min - Alternative Services
+* 20 min - [Alternative Services](https://httpwg.org/wg-materials/interim-21-09/alt-svc.html)
 * 10 min - Boostrapping WebSockets with HTTP/3
 * 10 min - Client-Cert Header
 * 50+ min - Signatures ([slides](signatures.pdf))

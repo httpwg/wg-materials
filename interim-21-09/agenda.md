@@ -21,7 +21,7 @@ _2 Hours_
 
 * 20 min - Alternative Services
 * 10 min - Boostrapping WebSockets with HTTP/3
-* 10 min - Client-Cert Header
+* 10 min - Client-Cert Header ([slides](cert-field.pdf))
 * 50+ min - Signatures ([slides](signatures.pdf))
 
 

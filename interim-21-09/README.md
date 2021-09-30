@@ -10,5 +10,6 @@
 - [h3-websockets.pdf](h3-websockets.pdf)
 - [ietf-httpbis-2021-09-digest.pdf](ietf-httpbis-2021-09-digest.pdf)
 - [ietf-httpbis-2021-09-safemethod.pdf](ietf-httpbis-2021-09-safemethod.pdf)
+- [minutes.md](minutes.md)
 - [priorities.pdf](priorities.pdf)
 - [signatures.pdf](signatures.pdf)

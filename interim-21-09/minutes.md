@@ -214,20 +214,249 @@ justin: I have a toy server implementation running that might be useful for prov
 
 ## 30 September 2021, 21:00-23:00 UTC
 
-2 Hours
-### Administrivia
+Issue for a fix with IANA registry in http-core docs; no feedback on list (https://lists.w3.org/Archives/Public/ietf-http-wg/2021JulSep/0435.html).  Does that mean no objections?
 
-- 3 min - Blue sheets / scribe selection / NOTE WELL
-- 2 min - Agenda bashing
+Consensus on call:  No objection, this is fine.
 
 ### Active Extension Drafts
 
-- 15 min - Safe Method With Body
-- 10 min - Targeted Cache Control
-- 10 min - Digest Fields
-- 10 min - Priorities
-- 50 min - Cookies
+#### Safe Method With Body (Julian)
 
-## Proposals
+Slides largely unchanged since last meeting.
 
-TBD
+##### Issue 1614 - Method Name
+
+Initial proposal was to use SEARCH from WebDAV and relax the WebDAV-specific pieces.  Should we do this something else?
+
+Mike B: Assuming nothing we do will break WebDAV, SEARCH seems fine.
+
+Julian: Keeping WebDAV compliant isn't a problem, except that WebDAV doesn't define a proper media type.
+
+Julian: SEARCH is a specific verb; we may not want the implications, but we may not want the delay of arguing over a new one.
+
+Mark:   Fine with SEARCH, or FOO, or any other string. We need to convince developers, and some of them quibble over the verb. Proposed QUERY.
+
+Julian: Alignment with query part of URI is a good point. Note on issue that we like it, possibly incorporate if no one screams.
+
+Mark:   Let's try putting it in the draft, then circulate (esp. to HTTP API WG). Change now without declaring consensus.
+
+Tommy:  Yes, let's try it. Not declaring consensus.
+
+##### Issue 1552 - Caching
+
+Proposal in issue:  Server can indicate Location of a GET-able version of the response.
+
+Mark:   People who use this expect a low barrier to caching. Changing method might be too high a barrier.
+
+Mark:   Want to say someone making a "similar" request gets the cached response; what is "similar"?
+
+Julian: Depends on media type of request; need normalization algorithm.
+Mark:   Right, so we could define normalization for JSON or XML, God help us.
+
+Martin: Be cautious about defining normalization. Strict comparison of bytes is the baseline; note possible optimization if you understand the query format.
+
+Mark:   Similar to Key and Variants (need to revisit in light of Structured Fields); might want something a little more flexible than byte comparisons. Weasel words okay.
+
+Roberto:Very hard to normalize even if you know the language. Don't attempt to define here.
+
+#### Targeted Cache Control (Mark)
+
+Pretty happy with latest version; revised text on Structured Fields.  Currently says "MAY" reuse Cache-Control parser, but debating removal of that permission.
+
+Martin:  What's the actual difference?
+
+Mark:    Cache-Control parsers are largely unspecified. Out of 353M responses, 0.295% are not valid Structured Fields.  Dubious they parse as Cache-Control either, but depends on your parser.
+
+Slight leaning toward removal in chat; authors will discuss.  After resolved, ready for WGLC.
+
+#### Digest Fields (Roberto)
+
+Nearly to WGLC; split to Content-Digest and Digest based on previous interim feedback. Both have a Want-* twin.
+
+Editors want WGLC after this meeting; no strong opinions on remaining issues:
+ - #1671 - Allow deprecated algorithms for weak consistency cases?  Pending PR from Mark. Maybe pick a different label.
+ - id-* algorithms created as exit strategy for implementations with odd behavior. Retain? Move to separate draft?
+
+Julian:  MDN claims all browsers support Digest; turns out they mean "browser doesn't die" (see also https://caniuse.com/mdn-http_headers_digest and https://github.com/mdn/content/issues/9139)
+
+Lucas:   Browser support will be hard.
+
+Mark:    On that note, MDN has asked our people to review their docs. Please do that.  I'll help you get connected to the right people if you need.
+
+Mark:    Is this still compatible with legacy Digest?
+
+Roberto: Did not introduce incompatibilities; that's why there's a second header.
+
+Mark:    Raises questions about Structured Fields if we publish something that doesn't use it.  What is the bar?
+
+Lucas:   Lots of temptation to "fix" things, but trying to avoid unwarranted breakage. We've deprecated parameters (which largely aren't in use anyway).  Consistency with the old one is more important for the new header.  We're living with legacy here.
+
+Mark:    Suggests bar is existing parsers; entirely new things should use SF.
+
+#### Priorities (Lucas)
+
+-05 published; mainly editorial, points to H2bis.
+
+One open issue:  If you disable H2 priorities, is use of this mandatory?  Proposal:
+ - H3, just use this
+ - Use of both in H2 is allowed but confusing
+ - Servers and clients can inform clients it doesn't use H2 priorities as an optimization
+
+Setting renamed to SETTINGS_DEPRECATE_RFC7540_PRIORITIES. (Martin suggests SETTINGS_NO_RFC7540_PRIORITIES instead, to general acclaim.)
+
+Propose to decouple implication that one implies the other.  WGLC now?
+
+Martin: Submitted PR to make change; text looks fine with simple replacement.
+
+Will merge open PRs and publish new draft by EOW.
+
+#### Cookies (Mike West)
+
+##### Issue 1600 - Standardize Maximum Max-Age
+
+Each UA has different bounds for unreasonably large maximum age.
+
+John:   Special handling for Cookies set by JS in Safari, caps at a week.
+
+Steven: Any bounds for server-set Cookies?
+
+John:   Not to my knowledge.
+
+Proposal is to define a reasonable max in the spec, e.g. 2 years.  Clamp to this max if specified further in future.
+
+Martin: Browser can apply policy that's tighter than the spec, and that's fine. Consistent behavior is the real requirement.
+
+##### Issue 1517 - Specify no decoding
+
+Do not URL-decode cookies, e.g. __%53ecure- is not __Secure-
+
+Existing behavior; just not written down.
+
+Dan:    Name only, or any attribute?
+
+Steven: Any attribute.  Will be clear about that.
+
+##### Issue 1399 - Set-Cookie enforcement
+
+Spec should be stricter about malformed Set-Cookie headers.
+
+Mark:   Alignment is good, but need to test existing implementations.
+
+Mike W: We'll write the tests.
+
+##### Issue 1332 - Empty Domain
+
+Convert a SHOULD ignore to a MUST.
+
+Martin: What do browsers do?
+
+Mike T: Chrome ignores the Cookie; others ignore the attribute.  Will consider changing Chrome after evaluating security.
+
+##### Issue 1593 - Update Storage Model
+
+Believe this is a symptom of a larger problem, 6265bis doesn't handle non-HTTP APIs well.  We should fix that, not this.
+
+Mark:   Do we have an issue?  Is that under consideration?
+
+Steven: Open to that discussion, but not filed currently.
+
+Mark:   Who's going to do that work?
+
+Steven: I can.
+
+Mike T: Value in this, but we want to ship.  Let's defer to a follow-up spec.
+
+Daniel: That goes outside HTTP, which is the topic of the spec.
+
+Steven: We're already outside HTTP, we just ignore that in the spec.
+
+WG will move on; Steven will propose updates separately in the future.
+
+##### Issue 1502 - Better specify serialization
+
+Seems very involved; might defer.
+
+Mike W: Reasonable to defer to HTML spec.
+
+Tommy:  Can we align more closely with what browsers are doing?
+
+Mike W: Related to another UTF-8 discussion, but we could just drop the note for this issue.
+
+Proposal is to drop note.  It's true, but probably belongs in a different spec.  Anne might respond in issue.
+
+##### Issue 1210 - Serialization doesn't match original string
+
+Nameless and valueless Cookies were a mistake.  Don't need to fix issues with using them.
+
+Martin: Document should caution against using them, then.
+
+Proposal is to add warning around nameless Cookies with no functional change.
+
+##### Issues 1418 and 1385 - Existing Cookies when Criteria Change
+
+E.g. Public Suffix List changes can mean an existing Cookie would no longer be acceptable.
+
+Mike W: PSL is clear; what other cases are there?  Prefixes added in future specs?
+
+Steven: Not many others.  PSL is the only one without spec changes, I think.
+
+Dan:    Loading from the store doesn't mean the Cookie gets sent.  Spec should describe what happens on the wire, not storage.
+
+Mike T: Do we need to say anything? User Agents already have to deal with invalid Cookies.
+
+Martin: Can we avoid affecting / describe how existing Cookies that are stored get handled in new specs?  This can be limited to PSL.
+
+John:   Have faced this in WebKit due to partitioned Cookies.  "Ghost Cookies" are a real thing.  For example, the max max-age behavior -- if we limit to 2 years, then find a 3-year-old Cookie?
+
+Mark:   Do we have guidelines on what to defer and what to fix?
+
+Mike W: We need to get the doc done. Fine to iterate on the esoteric stuff later.
+
+Mark:   Takes more energy to do another iteration, but we do need to finish.
+
+Proposal is to defer issue to a future revision.
+
+Mike W: Text around Cookie Header production needs to prohibit sending invalid Cookies.  Defer the storage question.
+
+##### Issue 1288 - Service Workers
+
+Service Worker requests can send Cookies which would not otherwise have been sent.
+
+Mike W: Would like to add permission for UAs to partition SW Cookies.  Initial definition of SameSite punted on Service Workers.  (But partitioning will require more spec changes.)
+
+Martin: Make this a problem for the SW spec.
+
+Proposal is note that UAs can handle SWs differently, but leave details to SW spec.  Mike will provide PR.
+
+##### Issue 1073 - UTF-8 Characters
+
+Text says ASCII-only, but many browsers allow UTF-8.
+
+Mike W: Right thing to do, but hard. Spec is no worse if we leave it until someone has the time.
+
+Martin: If we have IDN names in the domain, we should at least specify their encoding. Full Unicode for names and values seems fraught.
+
+Mike W: Think Chrome support Punycode.
+
+Martin: Does anyone take u-labels?  Punycode-only is easy; if anyone already does Unicode, we'll need to handle it.
+
+Martin will open separate issue for IDN; proposal is to defer this issue.
+
+### Proposals
+
+#### ORIGIN for H3 (Mike B.)
+https://www.ietf.org/archive/id/draft-bishop-httpbis-origin-h3-00.html
+
+Spec is sitting around, still needs to be done.  Do anything?
+
+Mark:  Call for Adoption?
+
+General consensus, yes.
+
+#### Make Documents Historic
+
+Have a list of documents to propose we move to Historical.  Will send to list.
+
+Martin: This isn't free, but probably worth doing.
+
+

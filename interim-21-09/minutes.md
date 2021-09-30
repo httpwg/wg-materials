@@ -27,9 +27,9 @@
     - [Issues 1418 and 1385 - Existing Cookies when Criteria Change](#issues-1418-and-1385---existing-cookies-when-criteria-change)
     - [Issue 1288 - Service Workers](#issue-1288---service-workers)
     - [Issue 1073 - UTF-8 Characters](#issue-1073---utf-8-characters)
-- [Proposals](#proposals)
-  - [ORIGIN for H3 (Mike B.)](#origin-for-h3-mike-b)
-  - [Make Documents Historic](#make-documents-historic)
+  - [Proposals](#proposals)
+    - [ORIGIN for H3 (Mike B.)](#origin-for-h3-mike-b)
+    - [Make Documents Historic](#make-documents-historic)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -455,9 +455,9 @@ Martin: Does anyone take u-labels?  Punycode-only is easy; if anyone already doe
 
 Martin will open separate issue for IDN; proposal is to defer this issue.
 
-## Proposals
+### Proposals
 
-### ORIGIN for H3 (Mike B.)
+#### ORIGIN for H3 (Mike B.)
 https://www.ietf.org/archive/id/draft-bishop-httpbis-origin-h3-00.html
 
 Spec is sitting around, still needs to be done.  Do anything?
@@ -466,7 +466,7 @@ Mark:  Call for Adoption?
 
 General consensus, yes.
 
-### Make Documents Historic
+#### Make Documents Historic
 
 Have a list of documents to propose we move to Historical.  Will send to list.
 

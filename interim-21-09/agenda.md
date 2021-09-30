@@ -36,7 +36,7 @@ _2 Hours_
 
 ### Active Extension Drafts
 
-* 15 min - Safe Method Without Body
+* 15 min - Safe Method With Body ([slides](ietf-httpbis-2021-09-safemethod.pdf)) ([github](https://github.com/httpwg/http-extensions/issues?q=is%3Aissue+is%3Aopen+label%3Asafe-method-w-body))
 * 10 min - Targeted Cache Control
 * 10 min - Digest Fields
 * 10 min - Priorities

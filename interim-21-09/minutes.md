@@ -1,29 +1,42 @@
 # HTTP Working Group Interim Meeting Agenda - September 2021
 
-    WebEx
-        Meeting number: 161 816 3363
-        Password: transportfer
-    Meeting chat
-    Minutes requires datatracker login
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-Taking minutes? See our guide
+
+- [28 September 2021, 21:00-23:00 UTC](#28-september-2021-2100-2300-utc)
+  - [Alternative Services (bis)](#alternative-services-bis)
+  - [Boostrapping WebSockets with HTTP/3](#boostrapping-websockets-with-http3)
+  - [Client-Cert Header](#client-cert-header)
+  - [HTTP Message Signatures](#http-message-signatures)
+- [30 September 2021, 21:00-23:00 UTC](#30-september-2021-2100-2300-utc)
+  - [Safe Method With Body (Julian)](#safe-method-with-body-julian)
+    - [Issue 1614 - Method Name](#issue-1614---method-name)
+    - [Issue 1552 - Caching](#issue-1552---caching)
+  - [Targeted Cache Control (Mark)](#targeted-cache-control-mark)
+  - [Digest Fields (Roberto)](#digest-fields-roberto)
+  - [Priorities (Lucas)](#priorities-lucas)
+  - [Cookies (Mike West)](#cookies-mike-west)
+    - [Issue 1600 - Standardize Maximum Max-Age](#issue-1600---standardize-maximum-max-age)
+    - [Issue 1517 - Specify no decoding](#issue-1517---specify-no-decoding)
+    - [Issue 1399 - Set-Cookie enforcement](#issue-1399---set-cookie-enforcement)
+    - [Issue 1332 - Empty Domain](#issue-1332---empty-domain)
+    - [Issue 1593 - Update Storage Model](#issue-1593---update-storage-model)
+    - [Issue 1502 - Better specify serialization](#issue-1502---better-specify-serialization)
+    - [Issue 1210 - Serialization doesn't match original string](#issue-1210---serialization-doesnt-match-original-string)
+    - [Issues 1418 and 1385 - Existing Cookies when Criteria Change](#issues-1418-and-1385---existing-cookies-when-criteria-change)
+    - [Issue 1288 - Service Workers](#issue-1288---service-workers)
+    - [Issue 1073 - UTF-8 Characters](#issue-1073---utf-8-characters)
+- [Proposals](#proposals)
+  - [ORIGIN for H3 (Mike B.)](#origin-for-h3-mike-b)
+  - [Make Documents Historic](#make-documents-historic)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 
 ## 28 September 2021, 21:00-23:00 UTC
 
-2 Hours
-### Administrivia
-
-- 3 min - Blue sheets / scribe selection / NOTE WELL
-- 2 min - Agenda bashing
-
-###  Active Extension Drafts
-
-- 20 min - Alternative Services
-- 10 min - Boostrapping WebSockets with HTTP/3
-- 10 min - Client-Cert Header
-- 50+ min - Signatures (slides)
-
-#### Alternative Services (bis)
+### Alternative Services (bis)
 
 Idea: spruce up based on what we've learned using it. It started as almost experimental with different implementations but we've moved toward undstanding what it does as we use it. 
 
@@ -48,7 +61,7 @@ mnot: concerned we didn't see full implementation of alt-svc from browsers in th
 
 martin: think we can do something there
 
-#### Boostrapping WebSockets with HTTP/3
+### Boostrapping WebSockets with HTTP/3
 
 ryan: websockets over H3 is just like H2; defines settings that match H2 and sets flags for document
 
@@ -68,7 +81,7 @@ mnot: (martin) will do as WGLC issue
 
 lucas: websockets H2 draft uses cancel error code, H3 doc maps the error codes from that; can discuss on the issue
 
-#### Client-Cert Header
+### Client-Cert Header
 
 mike: have done a decent period of issue gathering
 
@@ -121,7 +134,7 @@ intercepting proxies won't be trusted here
 from Martin Thomson to Everyone:    5:34  PM
 chances are, anything downstream will need to know (and authenticate) the proxy
 
-#### HTTP Message Signatures
+### HTTP Message Signatures
 
 (Justin presenting)
 
@@ -154,7 +167,6 @@ Accept-Signature uses the same format as the signature field, to mark which comp
 
 The core spec design hasn't really changed since the original adopted work and it is compatible in many ways (other than syntax) with the original -cavage draft.
 
----
 roy: are you really convinced that an @-prefix is the right way to go in terms of the names.  as you are lower-casing things, why not use uppercase instead?
 
 justin: lowercase is easy to add for all inputs.  too much room for human error if we vary case
@@ -212,19 +224,20 @@ justin: Asking for implementer feedback. Many implementers are likely not as eng
 
 justin: I have a toy server implementation running that might be useful for proving out their client code
 
+
+
 ## 30 September 2021, 21:00-23:00 UTC
 
 Issue for a fix with IANA registry in http-core docs; no feedback on list (https://lists.w3.org/Archives/Public/ietf-http-wg/2021JulSep/0435.html).  Does that mean no objections?
 
 Consensus on call:  No objection, this is fine.
 
-### Active Extension Drafts
 
-#### Safe Method With Body (Julian)
+### Safe Method With Body (Julian)
 
 Slides largely unchanged since last meeting.
 
-##### Issue 1614 - Method Name
+#### Issue 1614 - Method Name
 
 Initial proposal was to use SEARCH from WebDAV and relax the WebDAV-specific pieces.  Should we do this something else?
 
@@ -242,7 +255,7 @@ Mark:   Let's try putting it in the draft, then circulate (esp. to HTTP API WG).
 
 Tommy:  Yes, let's try it. Not declaring consensus.
 
-##### Issue 1552 - Caching
+#### Issue 1552 - Caching
 
 Proposal in issue:  Server can indicate Location of a GET-able version of the response.
 
@@ -259,7 +272,7 @@ Mark:   Similar to Key and Variants (need to revisit in light of Structured Fiel
 
 Roberto:Very hard to normalize even if you know the language. Don't attempt to define here.
 
-#### Targeted Cache Control (Mark)
+### Targeted Cache Control (Mark)
 
 Pretty happy with latest version; revised text on Structured Fields.  Currently says "MAY" reuse Cache-Control parser, but debating removal of that permission.
 
@@ -269,7 +282,7 @@ Mark:    Cache-Control parsers are largely unspecified. Out of 353M responses, 0
 
 Slight leaning toward removal in chat; authors will discuss.  After resolved, ready for WGLC.
 
-#### Digest Fields (Roberto)
+### Digest Fields (Roberto)
 
 Nearly to WGLC; split to Content-Digest and Digest based on previous interim feedback. Both have a Want-* twin.
 
@@ -293,7 +306,7 @@ Lucas:   Lots of temptation to "fix" things, but trying to avoid unwarranted bre
 
 Mark:    Suggests bar is existing parsers; entirely new things should use SF.
 
-#### Priorities (Lucas)
+### Priorities (Lucas)
 
 -05 published; mainly editorial, points to H2bis.
 
@@ -310,9 +323,9 @@ Martin: Submitted PR to make change; text looks fine with simple replacement.
 
 Will merge open PRs and publish new draft by EOW.
 
-#### Cookies (Mike West)
+### Cookies (Mike West)
 
-##### Issue 1600 - Standardize Maximum Max-Age
+#### Issue 1600 - Standardize Maximum Max-Age
 
 Each UA has different bounds for unreasonably large maximum age.
 
@@ -326,7 +339,7 @@ Proposal is to define a reasonable max in the spec, e.g. 2 years.  Clamp to this
 
 Martin: Browser can apply policy that's tighter than the spec, and that's fine. Consistent behavior is the real requirement.
 
-##### Issue 1517 - Specify no decoding
+#### Issue 1517 - Specify no decoding
 
 Do not URL-decode cookies, e.g. __%53ecure- is not __Secure-
 
@@ -336,7 +349,7 @@ Dan:    Name only, or any attribute?
 
 Steven: Any attribute.  Will be clear about that.
 
-##### Issue 1399 - Set-Cookie enforcement
+#### Issue 1399 - Set-Cookie enforcement
 
 Spec should be stricter about malformed Set-Cookie headers.
 
@@ -344,7 +357,7 @@ Mark:   Alignment is good, but need to test existing implementations.
 
 Mike W: We'll write the tests.
 
-##### Issue 1332 - Empty Domain
+#### Issue 1332 - Empty Domain
 
 Convert a SHOULD ignore to a MUST.
 
@@ -352,7 +365,7 @@ Martin: What do browsers do?
 
 Mike T: Chrome ignores the Cookie; others ignore the attribute.  Will consider changing Chrome after evaluating security.
 
-##### Issue 1593 - Update Storage Model
+#### Issue 1593 - Update Storage Model
 
 Believe this is a symptom of a larger problem, 6265bis doesn't handle non-HTTP APIs well.  We should fix that, not this.
 
@@ -372,7 +385,7 @@ Steven: We're already outside HTTP, we just ignore that in the spec.
 
 WG will move on; Steven will propose updates separately in the future.
 
-##### Issue 1502 - Better specify serialization
+#### Issue 1502 - Better specify serialization
 
 Seems very involved; might defer.
 
@@ -384,7 +397,7 @@ Mike W: Related to another UTF-8 discussion, but we could just drop the note for
 
 Proposal is to drop note.  It's true, but probably belongs in a different spec.  Anne might respond in issue.
 
-##### Issue 1210 - Serialization doesn't match original string
+#### Issue 1210 - Serialization doesn't match original string
 
 Nameless and valueless Cookies were a mistake.  Don't need to fix issues with using them.
 
@@ -392,7 +405,7 @@ Martin: Document should caution against using them, then.
 
 Proposal is to add warning around nameless Cookies with no functional change.
 
-##### Issues 1418 and 1385 - Existing Cookies when Criteria Change
+#### Issues 1418 and 1385 - Existing Cookies when Criteria Change
 
 E.g. Public Suffix List changes can mean an existing Cookie would no longer be acceptable.
 
@@ -418,7 +431,7 @@ Proposal is to defer issue to a future revision.
 
 Mike W: Text around Cookie Header production needs to prohibit sending invalid Cookies.  Defer the storage question.
 
-##### Issue 1288 - Service Workers
+#### Issue 1288 - Service Workers
 
 Service Worker requests can send Cookies which would not otherwise have been sent.
 
@@ -428,7 +441,7 @@ Martin: Make this a problem for the SW spec.
 
 Proposal is note that UAs can handle SWs differently, but leave details to SW spec.  Mike will provide PR.
 
-##### Issue 1073 - UTF-8 Characters
+#### Issue 1073 - UTF-8 Characters
 
 Text says ASCII-only, but many browsers allow UTF-8.
 
@@ -442,9 +455,9 @@ Martin: Does anyone take u-labels?  Punycode-only is easy; if anyone already doe
 
 Martin will open separate issue for IDN; proposal is to defer this issue.
 
-### Proposals
+## Proposals
 
-#### ORIGIN for H3 (Mike B.)
+### ORIGIN for H3 (Mike B.)
 https://www.ietf.org/archive/id/draft-bishop-httpbis-origin-h3-00.html
 
 Spec is sitting around, still needs to be done.  Do anything?
@@ -453,7 +466,7 @@ Mark:  Call for Adoption?
 
 General consensus, yes.
 
-#### Make Documents Historic
+### Make Documents Historic
 
 Have a list of documents to propose we move to Historical.  Will send to list.
 

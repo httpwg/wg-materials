@@ -37,10 +37,10 @@ _2 Hours_
 ### Active Extension Drafts
 
 * 15 min - Safe Method With Body ([slides](ietf-httpbis-2021-09-safemethod.pdf)) ([github](https://github.com/httpwg/http-extensions/issues?q=is%3Aissue+is%3Aopen+label%3Asafe-method-w-body))
-* 10 min - Targeted Cache Control
+* 10 min - Targeted Cache Control ([github](https://github.com/httpwg/http-extensions/issues?q=is%3Aissue+is%3Aopen+label%3Atargeted-cc))
 * 10 min - Digest Fields ([slides](ietf-httpbis-2021-09-digest.pdf))
-* 10 min - Priorities
-* 50 min - Cookies
+* 10 min - Priorities ([github](https://github.com/httpwg/http-extensions/issues?q=is%3Aissue+is%3Aopen+label%3Apriorities))
+* 50 min - Cookies ([github](https://github.com/httpwg/http-extensions/issues?q=is%3Aissue+is%3Aopen+label%3A6265bis))
 
 
 ### Proposals

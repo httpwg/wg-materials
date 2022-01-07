@@ -20,7 +20,9 @@ _2 Hours_
 
 ### Active Extension Drafts
 
-_TBD_
+* 45 min - Signatures
+* 45 min - Cookies
+
 
 ## 3 February 2022, [21:00-23:00 UTC](https://www.timeanddate.com/worldclock/fixedtime.html?msg=HTTPbis+Interim+Meeting+Session+II%2C+February+2021&iso=20220203T21&p1=1440&ah=2)
 
@@ -33,9 +35,12 @@ _2 Hours_
 
 ### Active Extension Drafts
 
-_TBD_
-
+* 15 min - Alternative Services
+* 15 min - Client-Cert Header
+* 15 min - QUERY Method
+* 15 min - Binary Representation of HTTP Messages
 
 ### Proposals
 
-_TBD_
+* 10 min - [Geohash Client Hint](https://datatracker.ietf.org/doc/draft-pauly-httpbis-geohash-hint/)
+* 10 min - [Retrofit Structured Fields](https://mnot.github.io/I-D/draft-nottingham-http-structure-retrofit.html)

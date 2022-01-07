@@ -20,8 +20,9 @@ _2 Hours_
 
 ### Active Extension Drafts
 
-* 45 min - Signatures
-* 45 min - Cookies
+* 35 min - Signatures
+* 35 min - Digest
+* 35 min - Cookies
 
 
 ## 3 February 2022, [21:00-23:00 UTC](https://www.timeanddate.com/worldclock/fixedtime.html?msg=HTTPbis+Interim+Meeting+Session+II%2C+February+2021&iso=20220203T21&p1=1440&ah=2)

@@ -39,7 +39,7 @@ _2 Hours_
 * 15 min - Alternative Services
 * 15 min - Client-Cert Header
 * 15 min - QUERY Method
-* 15 min - Binary Representation of HTTP Messages
+* 15 min - [Binary Representation of HTTP Messages](https://httpwg.org/http-extensions/draft-ietf-httpbis-binary-message.html) ([Slides](https://httpwg.org/wg-materials/interim-22-02/binary-messages.pdf))
 
 ### Proposals
 

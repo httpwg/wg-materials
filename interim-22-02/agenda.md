@@ -20,9 +20,9 @@ _2 Hours_
 
 ### Active Extension Drafts
 
-* 35 min - Signatures
+* 35 min - Signatures - _Justin Richer_
 * 35 min - Digest
-* 35 min - Cookies
+* 35 min - Cookies - _John Wilander_
 
 
 ## 3 February 2022, [21:00-23:00 UTC](https://www.timeanddate.com/worldclock/fixedtime.html?msg=HTTPbis+Interim+Meeting+Session+II%2C+February+2021&iso=20220203T21&p1=1440&ah=2)
@@ -36,12 +36,12 @@ _2 Hours_
 
 ### Active Extension Drafts
 
-* 15 min - Alternative Services
-* 15 min - Client-Cert Header
-* 15 min - QUERY Method
-* 15 min - [Binary Representation of HTTP Messages](https://httpwg.org/http-extensions/draft-ietf-httpbis-binary-message.html) ([Slides](https://httpwg.org/wg-materials/interim-22-02/binary-messages.pdf))
+* 15 min - Alternative Services - _Martin Thomson_
+* 15 min - Client-Cert Header - _Brian Campbell_
+* 15 min - QUERY Method - _Julian Reschke_
+* 15 min - [Binary Representation of HTTP Messages](https://httpwg.org/http-extensions/draft-ietf-httpbis-binary-message.html) ([Slides](https://httpwg.org/wg-materials/interim-22-02/binary-messages.pdf)) - _Martin Thomson_
 
 ### Proposals
 
-* 10 min - [Geohash Client Hint](https://datatracker.ietf.org/doc/draft-pauly-httpbis-geohash-hint/)
-* 10 min - [Retrofit Structured Fields](https://mnot.github.io/I-D/draft-nottingham-http-structure-retrofit.html)
+* 10 min - [Geohash Client Hint](https://datatracker.ietf.org/doc/draft-pauly-httpbis-geohash-hint/) - _Tommy Pauly_
+* 10 min - [Retrofit Structured Fields](https://mnot.github.io/I-D/draft-nottingham-http-structure-retrofit.html) - _Mark Nottingham_

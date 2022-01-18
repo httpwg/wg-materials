@@ -21,7 +21,7 @@ _2 Hours_
 ### Active Extension Drafts
 
 * 35 min - Signatures - _Justin Richer_
-* 35 min - Digest
+* 35 min - Digest - _Lucas Pardue_
 * 35 min - Cookies - _John Wilander_
 
 

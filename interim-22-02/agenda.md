@@ -37,7 +37,7 @@ _2 Hours_
 ### Active Extension Drafts
 
 * 15 min - Alternative Services - _Martin Thomson_
-* 15 min - Client-Cert Header - _Brian Campbell_
+* 15 min - [Client Cert Header Field](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-client-cert-field) ([slides](client-cert-field.pdf)) - _Brian Campbell_
 * 15 min - QUERY Method - _Julian Reschke_
 * 15 min - [Binary Representation of HTTP Messages](https://httpwg.org/http-extensions/draft-ietf-httpbis-binary-message.html) ([Slides](https://httpwg.org/wg-materials/interim-22-02/binary-messages.pdf)) - _Martin Thomson_
 

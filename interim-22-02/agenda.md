@@ -22,8 +22,8 @@ _2 Hours_
 
 * 35 min - Signatures - _Justin Richer_
 * 35 min - Digest - _Lucas Pardue_
-* 35 min - Cookies - _Steven Bingler_
-
+* 35 min - Cookies ([Slides](https://httpwg.org/wg-materials/interim-22-02/draft-ietf-httpbis-rfc6265bis.pdf)) - _Steven Bingler_
+* 
 
 ## 3 February 2022, [21:00-23:00 UTC](https://www.timeanddate.com/worldclock/fixedtime.html?msg=HTTPbis+Interim+Meeting+Session+II%2C+February+2021&iso=20220203T21&p1=1440&ah=2)
 

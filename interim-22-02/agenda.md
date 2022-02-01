@@ -43,5 +43,5 @@ _2 Hours_
 
 ### Proposals
 
-* 10 min - [Geohash Client Hint](https://datatracker.ietf.org/doc/draft-pauly-httpbis-geohash-hint/) - _Tommy Pauly_
+* 10 min - [Geohash Client Hint](https://datatracker.ietf.org/doc/draft-pauly-httpbis-geohash-hint/) ([Slides](geohash.pdf)) - _Tommy Pauly_
 * 10 min - [Retrofit Structured Fields](https://mnot.github.io/I-D/draft-nottingham-http-structure-retrofit.html) - _Mark Nottingham_

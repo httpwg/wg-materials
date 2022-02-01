@@ -11,5 +11,6 @@
 - [digests.pdf](digests.pdf)
 - [draft-ietf-httpbis-rfc6265bis.pdf](draft-ietf-httpbis-rfc6265bis.pdf)
 - [geohash.pdf](geohash.pdf)
+- [minutes.md](minutes.md)
 - [query.pdf](query.pdf)
 - [signatures.pdf](signatures.pdf)

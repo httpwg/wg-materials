@@ -20,9 +20,9 @@ _2 Hours_
 
 ### Active Extension Drafts
 
-* 35 min - [Signatures](https://www.ietf.org/archive/id/draft-ietf-httpbis-message-signatures-08.html) ([Slides](https://httpwg.org/wg-materials/interim-22-02/signatures.pdf)) - _Justin Richer_
-* 35 min - Digest - _Lucas Pardue_
-* 35 min - Cookies ([Slides](https://httpwg.org/wg-materials/interim-22-02/draft-ietf-httpbis-rfc6265bis.pdf)) - _Steven Bingler_
+* 35 min - [Signatures](https://www.ietf.org/archive/id/draft-ietf-httpbis-message-signatures-08.html) ([Slides](signatures.pdf)) - _Justin Richer_
+* 35 min - Digest ([Slides](digests.pdf)) - _Lucas Pardue_
+* 35 min - Cookies ([Slides](draft-ietf-httpbis-rfc6265bis.pdf)) - _Steven Bingler_
  
 
 ## 3 February 2022, [21:00-23:00 UTC](https://www.timeanddate.com/worldclock/fixedtime.html?msg=HTTPbis+Interim+Meeting+Session+II%2C+February+2021&iso=20220203T21&p1=1440&ah=2)
@@ -39,7 +39,7 @@ _2 Hours_
 * 15 min - Alternative Services - _Martin Thomson_
 * 15 min - [Client Cert Header Field](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-client-cert-field) ([slides](client-cert.pdf)) - _Brian Campbell_
 * 15 min - [QUERY Method](https://httpwg.org/http-extensions/draft-ietf-httpbis-safe-method-w-body.html) ([slides](query.pdf)) - _Julian Reschke_
-* 15 min - [Binary Representation of HTTP Messages](https://httpwg.org/http-extensions/draft-ietf-httpbis-binary-message.html) ([Slides](https://httpwg.org/wg-materials/interim-22-02/binary-messages.pdf)) - _Martin Thomson_
+* 15 min - [Binary Representation of HTTP Messages](https://httpwg.org/http-extensions/draft-ietf-httpbis-binary-message.html) ([Slides](binary-messages.pdf)) - _Martin Thomson_
 
 ### Proposals
 

@@ -48,3 +48,4 @@
 - [Interim meeting: 21-06](interim-21-06/README.md)
 - [Interim meeting: 21-09](interim-21-09/README.md)
 - [Interim meeting: 22-02](interim-22-02/README.md)
+- [geohash.pdf](geohash.pdf)

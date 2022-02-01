@@ -7,6 +7,7 @@
 - [agenda.md](agenda.md)
 - [alt-svc.pdf](alt-svc.pdf)
 - [binary-messages.pdf](binary-messages.pdf)
+- [bluesheets.md](bluesheets.md)
 - [client-cert.pdf](client-cert.pdf)
 - [digests.pdf](digests.pdf)
 - [draft-ietf-httpbis-rfc6265bis.pdf](draft-ietf-httpbis-rfc6265bis.pdf)

@@ -36,7 +36,7 @@ _2 Hours_
 
 ### Active Extension Drafts
 
-* 15 min - Alternative Services - _Martin Thomson_
+* 15 min - [Alternative Services](https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc7838bis.html) - _Martin Thomson_ ([slides](alt-svc.pdf))
 * 15 min - [Client Cert Header Field](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-client-cert-field) ([slides](client-cert.pdf)) - _Brian Campbell_
 * 15 min - [QUERY Method](https://httpwg.org/http-extensions/draft-ietf-httpbis-safe-method-w-body.html) ([slides](query.pdf)) - _Julian Reschke_
 * 15 min - [Binary Representation of HTTP Messages](https://httpwg.org/http-extensions/draft-ietf-httpbis-binary-message.html) ([Slides](binary-messages.pdf)) - _Martin Thomson_

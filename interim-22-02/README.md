@@ -12,6 +12,8 @@
 - [digests.pdf](digests.pdf)
 - [draft-ietf-httpbis-rfc6265bis.pdf](draft-ietf-httpbis-rfc6265bis.pdf)
 - [geohash.pdf](geohash.pdf)
+- [ietf-httpbis-2022-02-safemethod.pdf](ietf-httpbis-2022-02-safemethod.pdf)
+- [ietf-httpbis-2022-02-safemethod.xhtml](ietf-httpbis-2022-02-safemethod.xhtml)
 - [minutes.md](minutes.md)
 - [query.pdf](query.pdf)
 - [signatures.pdf](signatures.pdf)

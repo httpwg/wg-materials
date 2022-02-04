@@ -1,5 +1,29 @@
+
+
 # HTTP Working Group Interim Meeting Minutes - February 2022
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [1 February 2022](#1-february-2022)
+  - [Active Extension Drafts](#active-extension-drafts)
+    - [Signatures (Slides) - _Justin Richer_](#signatures-slides---_justin-richer_)
+    - [Issue #1905](#issue-1905)
+    - [Digest (Slides) - _Lucas Pardue_](#digest-slides---_lucas-pardue_)
+    - [Cookies (Slides) - _Steven Bingler_](#cookies-slides---_steven-bingler_)
+  - [Wrap up](#wrap-up)
+- [3 February 2022](#3-february-2022)
+  - [Active Extension Drafts](#active-extension-drafts-1)
+    - [Alternative Services - _Martin Thomson_ (slides)](#alternative-services---_martin-thomson_-slides)
+    - [Client Cert Header Field (slides) - _Brian Campbell_](#client-cert-header-field-slides---_brian-campbell_)
+    - [QUERY Method (slides) - _Julian Reschke_](#query-method-slides---_julian-reschke_)
+    - [Binary Representation of HTTP Messages (Slides) - _Martin Thomson_](#binary-representation-of-http-messages-slides---_martin-thomson_)
+  - [Proposals](#proposals)
+    - [Geohash Client Hint (Slides) - _Tommy Pauly_](#geohash-client-hint-slides---_tommy-pauly_)
+    - [Retrofit Structured Fields - _Mark Nottingham_](#retrofit-structured-fields---_mark-nottingham_)
+  - [Other](#other)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 
 ## 1 February 2022

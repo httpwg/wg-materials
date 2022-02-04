@@ -26,3 +26,28 @@
 * Sam Weiler
 * Steven Bingler
 * Mark Nottingham
+
+
+## Session II
+
+* Justin Richer
+* Martin Thomson
+* Mark Nottingham
+* Alan Frindell
+* James Gruessing
+* Dragana Damjanovic
+* yuki Goto
+* Lucas Pardue
+* Ian Swett
+* David Schinazi
+* Chris Wood
+* Tommy Pauly
+* Brian Campbell
+* Roy Fielding - Adobe
+* Julian Reschke
+* Alan Frindell
+* Dragana Damjanovic
+* Erik Kline
+* Luca Niccolini
+* Tommy Jensen
+* Erik Nygren

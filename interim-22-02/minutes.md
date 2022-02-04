@@ -184,6 +184,8 @@ Mark: seems like we're making good progress on all these specs!
 
 
 
+
+
 ## 3 February 2022, [21:00-23:00 UTC](https://www.timeanddate.com/worldclock/fixedtime.html?msg=HTTPbis+Interim+Meeting+Session+II%2C+February+2021&iso=20220203T21&p1=1440&ah=2)
 
 
@@ -191,18 +193,45 @@ Mark: seems like we're making good progress on all these specs!
 
 #### 15 min - [Alternative Services](https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc7838bis.html) - _Martin Thomson_ ([slides](https://httpwg.org/wg-materials/interim-22-02/alt-svc.pdf))
 
+- A different design is likely needed to deal with the DNS TTL and Alt-Svc max-age interaction. Interest from some folks in exploring that avenue.
+- David will file an issue to explore QUIC VN, Alt-Svc, and SVCB interactions. 
+- Are we working on Alt-Svcbis or a new form of Alt-Svc? (With a new header name?)
 
 #### 15 min - [Client Cert Header Field](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-client-cert-field) ([slides](https://httpwg.org/wg-materials/interim-22-02/client-cert.pdf)) - _Brian Campbell_
 
+- Presenting the client certificate chain (separately from end-entity certificate) using structured fields may be difficult; Martin to open an issue to resolve. 
+- Using one header may be helpful in cases where one header is stripped but the other is not.
+- Punting on certificate chain ordering requirements to TLS is likely best; taking discussion to an issue.
 
 #### 15 min - [QUERY Method](https://httpwg.org/http-extensions/draft-ietf-httpbis-safe-method-w-body.html) ([slides](https://httpwg.org/wg-materials/interim-22-02/query.pdf)) - _Julian Reschke_
 
+- Issue #1917 - Conditional Query. Notetaker had to step away. Lucas took over and missed much of the discussion before this point and during the discussion of this issue. Sorry.
+    - What does selected representation mean for QUERY?
+    - MT: Mismatch with how we think about content-negotiation in other places? Here its more nuanced. That's ok.
+    - mnot: agree with MT. We have to consider and document all of these. USers are going to come along and say "It's liek GET except query params go in body". Document it all or it will be a mess.
+    - julian: agree. QUERY specifies things that do ot apply to POST. If the outcome is we can define things clearly and retrofit them to HTTP, that is a  good outcome. QUERY should not be special, it's just another method.
+    - mnot: lets decide if a QUERY relates to a selected-represenation. That'll help.
+
+TODO(caw): revisit this section based on recording
 
 #### 15 min - [Binary Representation of HTTP Messages](https://httpwg.org/http-extensions/draft-ietf-httpbis-binary-message.html) ([Slides](https://httpwg.org/http-extensions/draft-ietf-httpbis-binary-message.html)) - _Martin Thomson_
+
+- Couple of implementations exist; padding resolved server-side challenges.
+- Will proceed with WGLC but with an extended deadline to allow for more feedback.
 
 ### Proposals
 
 #### 10 min - [Geohash Client Hint](https://datatracker.ietf.org/doc/draft-pauly-httpbis-geohash-hint/) ([Slides](https://httpwg.org/wg-materials/interim-22-02/geohash.pdf)) - _Tommy Pauly_
 
+- Threat model needs explanation and elaboration in the draft; hints can be spoofed. (This point is noted in the draft.) Privacy Pass might be better suited for security or access-control decisions.
+- Use of ClientHints (continuously sampled value) may not be good for privacy. Using less bits for the geohash is a "crude" masking technique. Geolocation privacy has been considered in the past.
+- Presentation of ClientHint could be gated by permissions. That could contribute to the client fingerprint surface. Worth discussing the tradeoff.
 
 #### 10 min - [Retrofit Structured Fields](https://mnot.github.io/I-D/draft-nottingham-http-structure-retrofit.html) - _Mark Nottingham_
+
+- Some support for the draft. Setting foundation for future work.
+
+### Other
+
+- Almost 50k messages on the list! There may be a prize for the person who tips the scale. 
+- No WG meeting at 113. Possible informal meeting in person.

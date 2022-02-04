@@ -1,15 +1,14 @@
-# HTTP Working Group Interim Meeting Agenda - February 2022
-
-*Taking minutes? See [our guide](https://github.com/httpwg/wiki/wiki/TakingMinutes)*
+# HTTP Working Group Interim Meeting Minutes - February 2022
 
 
-## 1 February 2022, [21:00-23:00 UTC](https://www.timeanddate.com/worldclock/fixedtime.html?msg=HTTPbis+Interim+Meeting+Session+I%2C+February+2021&iso=20220201T21&p1=1440&ah=2)
+
+## 1 February 2022
 
 Congrats to H2 for IESG approval!
 
 ### Active Extension Drafts
 
-#### 35 min - [Signatures](https://www.ietf.org/archive/id/draft-ietf-httpbis-message-signatures-08.html) ([Slides](https://httpwg.org/wg-materials/interim-22-02/signatures.pdf)) - _Justin Richer_
+#### [Signatures](https://www.ietf.org/archive/id/draft-ietf-httpbis-message-signatures-08.html) ([Slides](https://httpwg.org/wg-materials/interim-22-02/signatures.pdf)) - _Justin Richer_
 
 Justin Richer [JR] running us through the slides.
 
@@ -17,7 +16,7 @@ On Crypto Updates slide. Martin Thomson [MT] says: raw encoding fine with r||s. 
 
 On Implementation Status slide: Lucas Pardue [LP] says: something to consider for EDM program implementations work.
 
-On Relationship to Signed HTTP Exchanges, on the matter of their signatures draft that is expired Mark Nottigham [mnot] says: we are coordinating with WPACK on finding a resolution.
+On Relationship to Signed HTTP Exchanges, on the matter of their signatures draft that is expired Mark Nottingham [mnot] says: we are coordinating with WPACK on finding a resolution.
 
 Live demo of https://httpsig.org/, very brave.
 
@@ -37,9 +36,9 @@ JR: Question to WG. Do we need related response at all. It's a bit difficult to 
 
 JR: On the ticket Yaron suggest a "@related" format. Annabelle and I investigated this before and it got messy quickly if you want it to be deterministic. Opted not to do it and stick to a limited middle ground.
 
-mnot: need to get up to speed but from what I heard I'mtaken to how to calculate a cache key. We've had key and variants, etc. An ability to state that this response is related to this request seems like it would be beneficial. I'll take a look into this.
+mnot: need to get up to speed but from what I heard I'm taken to how to calculate a cache key. We've had key and variants, etc. An ability to state that this response is related to this request seems like it would be beneficial. I'll take a look into this.
 
-MT: theres things in response that don't make sense without a request. I thought of HEAD. There's wierd things in the protocol that don't make sense without the context of the requests. There's things that benefit from the request. I don't think signature can be complete without something like this. Maybe "related response" isn't the best phrase for this.
+MT: theres things in response that don't make sense without a request. I thought of HEAD. There's weird things in the protocol that don't make sense without the context of the requests. There's things that benefit from the request. I don't think signature can be complete without something like this. Maybe "related response" isn't the best phrase for this.
 
 mnot: +1 weird name
 
@@ -47,7 +46,7 @@ Anabelle Backaman [AB] in chat: could use a SF param like "req"
 
 JR: not good at naming things but we can to figure things out
 
-#### 35 min - [Digest](https://www.ietf.org/archive/id/draft-ietf-httpbis-digest-headers-07.html) ([Slides](https://httpwg.org/wg-materials/interim-22-02/digests.pdf)) - _Lucas Pardue_
+#### [Digest](https://www.ietf.org/archive/id/draft-ietf-httpbis-digest-headers-07.html) ([Slides](https://httpwg.org/wg-materials/interim-22-02/digests.pdf)) - _Lucas Pardue_
 
 Was mostly done, in WGLC, had a diversion :)
 
@@ -119,13 +118,13 @@ Tommy: What I hear people suggesting, with 3+appendix, is that people are sympat
 
 Roberto: This is hard, I was trying to fix Digest for gov't agency. But if there's a strong opinion, I will try to motivate this in some way.
 
-Lucas: defining a new "q" paremter, copying what's in HTTP semantics? do we want to define that in a general HTTP way? Second, IANA: do we use the same table and update it or do we leave the old table and make a new one?
+Lucas: defining a new "q" parameter, copying what's in HTTP semantics? do we want to define that in a general HTTP way? Second, IANA: do we use the same table and update it or do we leave the old table and make a new one?
 
 Mark: I think this will come up if we do the retrofit work.
 
 Tommy: This is useful discussion. Have good indication of WG feelings.
 
-#### 35 min - [Cookies](https://www.ietf.org/archive/id/draft-ietf-httpbis-rfc6265bis-09.html) ([Slides](https://httpwg.org/wg-materials/interim-22-02/draft-ietf-httpbis-rfc6265bis.pdf)) - _Steven Bingler_
+#### [Cookies](https://www.ietf.org/archive/id/draft-ietf-httpbis-rfc6265bis-09.html) ([Slides](https://httpwg.org/wg-materials/interim-22-02/draft-ietf-httpbis-rfc6265bis.pdf)) - _Steven Bingler_
  
 Steven: Going over current status. 12^H^H11 open issues, one maybe to defer (along with 12 already deferred)
 
@@ -186,48 +185,48 @@ Mark: seems like we're making good progress on all these specs!
 
 
 
-## 3 February 2022, [21:00-23:00 UTC](https://www.timeanddate.com/worldclock/fixedtime.html?msg=HTTPbis+Interim+Meeting+Session+II%2C+February+2021&iso=20220203T21&p1=1440&ah=2)
+## 3 February 2022
 
 
 ### Active Extension Drafts
 
-#### 15 min - [Alternative Services](https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc7838bis.html) - _Martin Thomson_ ([slides](https://httpwg.org/wg-materials/interim-22-02/alt-svc.pdf))
+#### [Alternative Services](https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc7838bis.html) - _Martin Thomson_ ([slides](https://httpwg.org/wg-materials/interim-22-02/alt-svc.pdf))
 
 - A different design is likely needed to deal with the DNS TTL and Alt-Svc max-age interaction. Interest from some folks in exploring that avenue.
 - David will file an issue to explore QUIC VN, Alt-Svc, and SVCB interactions. 
 - Are we working on Alt-Svcbis or a new form of Alt-Svc? (With a new header name?)
 
-#### 15 min - [Client Cert Header Field](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-client-cert-field) ([slides](https://httpwg.org/wg-materials/interim-22-02/client-cert.pdf)) - _Brian Campbell_
+#### [Client Cert Header Field](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-client-cert-field) ([slides](https://httpwg.org/wg-materials/interim-22-02/client-cert.pdf)) - _Brian Campbell_
 
 - Presenting the client certificate chain (separately from end-entity certificate) using structured fields may be difficult; Martin to open an issue to resolve. 
 - Using one header may be helpful in cases where one header is stripped but the other is not.
 - Punting on certificate chain ordering requirements to TLS is likely best; taking discussion to an issue.
 
-#### 15 min - [QUERY Method](https://httpwg.org/http-extensions/draft-ietf-httpbis-safe-method-w-body.html) ([slides](https://httpwg.org/wg-materials/interim-22-02/query.pdf)) - _Julian Reschke_
+#### [QUERY Method](https://httpwg.org/http-extensions/draft-ietf-httpbis-safe-method-w-body.html) ([slides](https://httpwg.org/wg-materials/interim-22-02/query.pdf)) - _Julian Reschke_
 
 - Issue #1917 - Conditional Query. Notetaker had to step away. Lucas took over and missed much of the discussion before this point and during the discussion of this issue. Sorry.
     - What does selected representation mean for QUERY?
     - MT: Mismatch with how we think about content-negotiation in other places? Here its more nuanced. That's ok.
     - mnot: agree with MT. We have to consider and document all of these. USers are going to come along and say "It's liek GET except query params go in body". Document it all or it will be a mess.
     - julian: agree. QUERY specifies things that do ot apply to POST. If the outcome is we can define things clearly and retrofit them to HTTP, that is a  good outcome. QUERY should not be special, it's just another method.
-    - mnot: lets decide if a QUERY relates to a selected-represenation. That'll help.
+    - mnot: lets decide if a QUERY relates to a selected-representation. That'll help.
 
 TODO(caw): revisit this section based on recording
 
-#### 15 min - [Binary Representation of HTTP Messages](https://httpwg.org/http-extensions/draft-ietf-httpbis-binary-message.html) ([Slides](https://httpwg.org/http-extensions/draft-ietf-httpbis-binary-message.html)) - _Martin Thomson_
+#### [Binary Representation of HTTP Messages](https://httpwg.org/http-extensions/draft-ietf-httpbis-binary-message.html) ([Slides](https://httpwg.org/http-extensions/draft-ietf-httpbis-binary-message.html)) - _Martin Thomson_
 
 - Couple of implementations exist; padding resolved server-side challenges.
 - Will proceed with WGLC but with an extended deadline to allow for more feedback.
 
 ### Proposals
 
-#### 10 min - [Geohash Client Hint](https://datatracker.ietf.org/doc/draft-pauly-httpbis-geohash-hint/) ([Slides](https://httpwg.org/wg-materials/interim-22-02/geohash.pdf)) - _Tommy Pauly_
+#### [Geohash Client Hint](https://datatracker.ietf.org/doc/draft-pauly-httpbis-geohash-hint/) ([Slides](https://httpwg.org/wg-materials/interim-22-02/geohash.pdf)) - _Tommy Pauly_
 
 - Threat model needs explanation and elaboration in the draft; hints can be spoofed. (This point is noted in the draft.) Privacy Pass might be better suited for security or access-control decisions.
 - Use of ClientHints (continuously sampled value) may not be good for privacy. Using less bits for the geohash is a "crude" masking technique. Geolocation privacy has been considered in the past.
 - Presentation of ClientHint could be gated by permissions. That could contribute to the client fingerprint surface. Worth discussing the tradeoff.
 
-#### 10 min - [Retrofit Structured Fields](https://mnot.github.io/I-D/draft-nottingham-http-structure-retrofit.html) - _Mark Nottingham_
+#### [Retrofit Structured Fields](https://mnot.github.io/I-D/draft-nottingham-http-structure-retrofit.html) - _Mark Nottingham_
 
 - Some support for the draft. Setting foundation for future work.
 

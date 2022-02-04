@@ -7,20 +7,20 @@
 
 - [1 February 2022](#1-february-2022)
   - [Active Extension Drafts](#active-extension-drafts)
-    - [Signatures (Slides) - _Justin Richer_](#signatures-slides---_justin-richer_)
+    - [Signatures](#signatures)
     - [Issue #1905](#issue-1905)
-    - [Digest (Slides) - _Lucas Pardue_](#digest-slides---_lucas-pardue_)
-    - [Cookies (Slides) - _Steven Bingler_](#cookies-slides---_steven-bingler_)
+    - [Digest](#digest)
+    - [Cookies](#cookies)
   - [Wrap up](#wrap-up)
 - [3 February 2022](#3-february-2022)
   - [Active Extension Drafts](#active-extension-drafts-1)
-    - [Alternative Services - _Martin Thomson_ (slides)](#alternative-services---_martin-thomson_-slides)
-    - [Client Cert Header Field (slides) - _Brian Campbell_](#client-cert-header-field-slides---_brian-campbell_)
-    - [QUERY Method (slides) - _Julian Reschke_](#query-method-slides---_julian-reschke_)
-    - [Binary Representation of HTTP Messages (Slides) - _Martin Thomson_](#binary-representation-of-http-messages-slides---_martin-thomson_)
+    - [Alternative Services](#alternative-services)
+    - [Client Cert Header Field](#client-cert-header-field)
+    - [QUERY Method](#query-method)
+    - [Binary Representation of HTTP Messages](#binary-representation-of-http-messages)
   - [Proposals](#proposals)
-    - [Geohash Client Hint (Slides) - _Tommy Pauly_](#geohash-client-hint-slides---_tommy-pauly_)
-    - [Retrofit Structured Fields - _Mark Nottingham_](#retrofit-structured-fields---_mark-nottingham_)
+    - [Geohash Client Hint](#geohash-client-hint)
+    - [Retrofit Structured Fields](#retrofit-structured-fields)
   - [Other](#other)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -32,11 +32,13 @@ Congrats to H2 for IESG approval!
 
 ### Active Extension Drafts
 
-#### [Signatures](https://www.ietf.org/archive/id/draft-ietf-httpbis-message-signatures-08.html) ([Slides](https://httpwg.org/wg-materials/interim-22-02/signatures.pdf)) - _Justin Richer_
+#### [Signatures](https://www.ietf.org/archive/id/draft-ietf-httpbis-message-signatures-08.html) 
+
+([Slides](https://httpwg.org/wg-materials/interim-22-02/signatures.pdf)) - _Justin Richer_
 
 Justin Richer [JR] running us through the slides.
 
-On Crypto Updates slide. Martin Thomson [MT] says: raw encoding fine with r||s. On non-determinism, there is some work happening in CFRG (background: fault injection can be used to break implementations of deterministic algorithms; mixing randomness in can help).
+On Crypto Updates slide. Martin Thomson [MT] says: raw encoding fine with `r||s`. On non-determinism, there is some work happening in CFRG (background: fault injection can be used to break implementations of deterministic algorithms; mixing randomness in can help).
 
 On Implementation Status slide: Lucas Pardue [LP] says: something to consider for EDM program implementations work.
 
@@ -70,7 +72,9 @@ Anabelle Backaman [AB] in chat: could use a SF param like "req"
 
 JR: not good at naming things but we can to figure things out
 
-#### [Digest](https://www.ietf.org/archive/id/draft-ietf-httpbis-digest-headers-07.html) ([Slides](https://httpwg.org/wg-materials/interim-22-02/digests.pdf)) - _Lucas Pardue_
+#### [Digest](https://www.ietf.org/archive/id/draft-ietf-httpbis-digest-headers-07.html) 
+
+([Slides](https://httpwg.org/wg-materials/interim-22-02/digests.pdf)) - _Lucas Pardue_
 
 Was mostly done, in WGLC, had a diversion :)
 
@@ -148,7 +152,9 @@ Mark: I think this will come up if we do the retrofit work.
 
 Tommy: This is useful discussion. Have good indication of WG feelings.
 
-#### [Cookies](https://www.ietf.org/archive/id/draft-ietf-httpbis-rfc6265bis-09.html) ([Slides](https://httpwg.org/wg-materials/interim-22-02/draft-ietf-httpbis-rfc6265bis.pdf)) - _Steven Bingler_
+#### [Cookies](https://www.ietf.org/archive/id/draft-ietf-httpbis-rfc6265bis-09.html) 
+
+([Slides](https://httpwg.org/wg-materials/interim-22-02/draft-ietf-httpbis-rfc6265bis.pdf)) - _Steven Bingler_
  
 Steven: Going over current status. 12^H^H11 open issues, one maybe to defer (along with 12 already deferred)
 
@@ -214,19 +220,25 @@ Mark: seems like we're making good progress on all these specs!
 
 ### Active Extension Drafts
 
-#### [Alternative Services](https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc7838bis.html) - _Martin Thomson_ ([slides](https://httpwg.org/wg-materials/interim-22-02/alt-svc.pdf))
+#### [Alternative Services](https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc7838bis.html) 
+
+_Martin Thomson_ ([slides](https://httpwg.org/wg-materials/interim-22-02/alt-svc.pdf))
 
 - A different design is likely needed to deal with the DNS TTL and Alt-Svc max-age interaction. Interest from some folks in exploring that avenue.
 - David will file an issue to explore QUIC VN, Alt-Svc, and SVCB interactions. 
 - Are we working on Alt-Svcbis or a new form of Alt-Svc? (With a new header name?)
 
-#### [Client Cert Header Field](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-client-cert-field) ([slides](https://httpwg.org/wg-materials/interim-22-02/client-cert.pdf)) - _Brian Campbell_
+#### [Client Cert Header Field](https://datatracker.ietf.org/doc/html/draft-ietf-httpbis-client-cert-field) 
+
+([slides](https://httpwg.org/wg-materials/interim-22-02/client-cert.pdf)) - _Brian Campbell_
 
 - Presenting the client certificate chain (separately from end-entity certificate) using structured fields may be difficult; Martin to open an issue to resolve. 
 - Using one header may be helpful in cases where one header is stripped but the other is not.
 - Punting on certificate chain ordering requirements to TLS is likely best; taking discussion to an issue.
 
-#### [QUERY Method](https://httpwg.org/http-extensions/draft-ietf-httpbis-safe-method-w-body.html) ([slides](https://httpwg.org/wg-materials/interim-22-02/query.pdf)) - _Julian Reschke_
+#### [QUERY Method](https://httpwg.org/http-extensions/draft-ietf-httpbis-safe-method-w-body.html) 
+
+([slides](https://httpwg.org/wg-materials/interim-22-02/query.pdf)) - _Julian Reschke_
 
 - Issue #1917 - Conditional Query. Notetaker had to step away. Lucas took over and missed much of the discussion before this point and during the discussion of this issue. Sorry.
     - What does selected representation mean for QUERY?
@@ -237,20 +249,26 @@ Mark: seems like we're making good progress on all these specs!
 
 TODO(caw): revisit this section based on recording
 
-#### [Binary Representation of HTTP Messages](https://httpwg.org/http-extensions/draft-ietf-httpbis-binary-message.html) ([Slides](https://httpwg.org/http-extensions/draft-ietf-httpbis-binary-message.html)) - _Martin Thomson_
+#### [Binary Representation of HTTP Messages](https://httpwg.org/http-extensions/draft-ietf-httpbis-binary-message.html) 
+
+([Slides](https://httpwg.org/http-extensions/draft-ietf-httpbis-binary-message.html)) - _Martin Thomson_
 
 - Couple of implementations exist; padding resolved server-side challenges.
 - Will proceed with WGLC but with an extended deadline to allow for more feedback.
 
 ### Proposals
 
-#### [Geohash Client Hint](https://datatracker.ietf.org/doc/draft-pauly-httpbis-geohash-hint/) ([Slides](https://httpwg.org/wg-materials/interim-22-02/geohash.pdf)) - _Tommy Pauly_
+#### [Geohash Client Hint](https://datatracker.ietf.org/doc/draft-pauly-httpbis-geohash-hint/) 
+
+([Slides](https://httpwg.org/wg-materials/interim-22-02/geohash.pdf)) - _Tommy Pauly_
 
 - Threat model needs explanation and elaboration in the draft; hints can be spoofed. (This point is noted in the draft.) Privacy Pass might be better suited for security or access-control decisions.
 - Use of ClientHints (continuously sampled value) may not be good for privacy. Using less bits for the geohash is a "crude" masking technique. Geolocation privacy has been considered in the past.
 - Presentation of ClientHint could be gated by permissions. That could contribute to the client fingerprint surface. Worth discussing the tradeoff.
 
-#### [Retrofit Structured Fields](https://mnot.github.io/I-D/draft-nottingham-http-structure-retrofit.html) - _Mark Nottingham_
+#### [Retrofit Structured Fields](https://mnot.github.io/I-D/draft-nottingham-http-structure-retrofit.html)
+
+ _Mark Nottingham_
 
 - Some support for the draft. Setting foundation for future work.
 

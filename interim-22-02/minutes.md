@@ -8,7 +8,7 @@
 - [1 February 2022](#1-february-2022)
   - [Active Extension Drafts](#active-extension-drafts)
     - [Signatures](#signatures)
-    - [Issue #1905](#issue-1905)
+      - [Issue #1905](#issue-1905)
     - [Digest](#digest)
     - [Cookies](#cookies)
   - [Wrap up](#wrap-up)
@@ -52,7 +52,7 @@ JR: There are gaps in each draft that the other one covers, but they are not the
 
 LP: Sounds good.
 
-#### Issue #1905
+##### Issue #1905
 
 https://github.com/httpwg/http-extensions/issues/1905
 

@@ -1,8 +1,8 @@
 # HTTP Working Group Interim Meeting Agenda - May 2022
 
-* [WebEx]()
-  - Meeting number: 
-  - Password: 
+* [WebEx](https://ietf.webex.com/ietf/j.php?MTID=ma4713977945412d9d814e1e020351145)
+  - Meeting number: 2423 849 0777
+  - Password: http_in_may
 * [Meeting chat](xmpp:httpbis@jabber.ietf.org?join)
 * [Minutes](https://notes.ietf.org/notes-httpbis-22-05) _requires datatracker login_
 

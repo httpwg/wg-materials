@@ -22,7 +22,8 @@ _2 Hours_
 
 * 20 min - [Signatures](https://httpwg.org/http-extensions/draft-ietf-httpbis-message-signatures.html)
 * 20 min - [Cookies](https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html)
-* 20 min - [Client Cert Header Field](https://httpwg.org/http-extensions/draft-ietf-httpbis-client-cert-field.html)
-* 20 min - [QUERY Method](https://httpwg.org/http-extensions/draft-ietf-httpbis-safe-method-w-body.html)
-* 20 min - [Retrofit Structured Fields](https://httpwg.org/http-extensions/draft-ietf-httpbis-retrofit.html)
+* 20 min - [Alternative Services](https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc7838bis.html)
+* 15 min - [Client Cert Header Field](https://httpwg.org/http-extensions/draft-ietf-httpbis-client-cert-field.html)
+* 15 min - [QUERY Method](https://httpwg.org/http-extensions/draft-ietf-httpbis-safe-method-w-body.html)
+* 15 min - [Retrofit Structured Fields](https://httpwg.org/http-extensions/draft-ietf-httpbis-retrofit.html)
  

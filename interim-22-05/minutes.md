@@ -39,7 +39,7 @@ Mark: when I define a field, if there is a distinction between present and absen
 
 ## Cookies
 
-Reviewed issues, a few left.  No editors.
+Reviewed issues, a few left.  No editors present.
 
 ## Alternative Services
 

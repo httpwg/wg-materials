@@ -1,7 +1,23 @@
+
 # Minutes: HTTP WG / May 2022
 
 
 Meeting is about the active drafts; we'll get to proposals and new stuff in Philly.
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+- [Signatures](#signatures)
+- [Cookies](#cookies)
+- [Alternative Services](#alternative-services)
+- [Client Cert Header Field](#client-cert-header-field)
+  - [Issue 1927: certificate ordering.](#issue-1927-certificate-ordering)
+- [QUERY Method](#query-method)
+- [Retrofit Structured Fields](#retrofit-structured-fields)
+- [Next](#next)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+
 
 ## Signatures
 

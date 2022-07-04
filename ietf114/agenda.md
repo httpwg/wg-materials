@@ -9,7 +9,7 @@
 
 ## Session I
 
-_Location and Time TBD_
+_13:30-15:30 - Thursday Session II - Liberty D_
 
 ### Administrivia
 

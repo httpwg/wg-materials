@@ -7,6 +7,19 @@
 *Taking minutes? See [our guide](https://github.com/httpwg/wiki/wiki/TakingMinutes)*
 
 
+## Side Meeting
+
+_8:00-9:30 - Tuesday - Philadelphia South_
+
+### AltSvc, HTTPS RR and Friends
+
+This session is focused on the space currently occupied by AltSvc and the HTTPS RR. The expectation is that it will produce proposals to take to the WG on Thursday regarding the scope of AltSvcBis and any additional work necessary.
+
+* 10 min - [AltSvcBis](https://datatracker.ietf.org/doc/draft-ietf-httpbis-rfc7838bis)
+* 10 min - [An Alt-Svc Parameter and SvcParamKey for QUIC Versions ](https://datatracker.ietf.org/doc/draft-duke-httpbis-quic-version-alt-svc/)
+* balance - discussion
+
+
 ## Session I
 
 _13:30-15:30 - Thursday Session II - Liberty D_

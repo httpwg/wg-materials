@@ -43,4 +43,5 @@ _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 ### Other Topics
 
 * 20 min - [Resumable Uploads](https://datatracker.ietf.org/doc/draft-tus-httpbis-resumable-uploads-protocol/)
+* 10 min - [GeoIP](https://datatracker.ietf.org/doc/draft-pauly-httpbis-geoip-hint/)
 

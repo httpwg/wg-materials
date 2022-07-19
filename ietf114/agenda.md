@@ -9,7 +9,7 @@
 
 ## Side Meeting
 
-_8:00-9:30 - Tuesday - Philadelphia South_
+_8:00-9:30 - Wednesday - Salon 9_
 
 ### AltSvc, HTTPS RR and Friends
 

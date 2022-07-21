@@ -35,7 +35,7 @@ _13:30-15:30 - Thursday Session II - Liberty D_
 _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
 *  5 min - Summary of Alt-Svc side meeting
-* 10 min - [Cookies](https://datatracker.ietf.org/doc/draft-ietf-httpbis-rfc6265bis)
+* 10 min - [Cookies](https://datatracker.ietf.org/doc/draft-ietf-httpbis-rfc6265bis) - Steven Bingler
 * 10 min - [ORIGIN H3](https://datatracker.ietf.org/doc/draft-ietf-httpbis-origin-h3) - Mike Bishop
 * 15 min - [Retrofit Structured Fields](https://datatracker.ietf.org/doc/draft-ietf-httpbis-retrofit) - Mark Nottigham
 * 15 min - [Signatures](https://datatracker.ietf.org/doc/draft-ietf-httpbis-message-signatures)

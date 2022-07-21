@@ -43,8 +43,8 @@ _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
 ### Other Topics
 
-* 15 min - [Resumable Uploads](https://datatracker.ietf.org/doc/draft-tus-httpbis-resumable-uploads-protocol/) - Guoye Zhang
+* 15 min - [Resumable Uploads](https://datatracker.ietf.org/doc/draft-tus-httpbis-resumable-uploads-protocol/) ([slides](ResumableUploads.pdf)) - Guoye Zhang
 * 10 min - [GeoIP](https://datatracker.ietf.org/doc/draft-pauly-httpbis-geoip-hint/) - Tommy Pauly
-* 10 min - [Transport Auth](https://datatracker.ietf.org/doc/draft-schinazi-httpbis-transport-auth/) - David Schinazi
+* 10 min - [Transport Auth](https://datatracker.ietf.org/doc/draft-schinazi-httpbis-transport-auth/) ([slides](TransportAuthentication)) - David Schinazi
 * 10 min - [METADATA](https://datatracker.ietf.org/doc/draft-beky-httpbis-metadata/) ([slides](METADATA.pdf)) - Bence Béky
 

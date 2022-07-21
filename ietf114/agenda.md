@@ -36,10 +36,10 @@ _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
 *  5 min - Summary of Alt-Svc side meeting
 * 10 min - [Cookies](https://datatracker.ietf.org/doc/draft-ietf-httpbis-rfc6265bis)
-* 10 min - [ORIGIN H3](https://datatracker.ietf.org/doc/draft-ietf-httpbis-origin-h3)
-* 15 min - [Retrofit Structured Fields](https://datatracker.ietf.org/doc/draft-ietf-httpbis-retrofit)
+* 10 min - [ORIGIN H3](https://datatracker.ietf.org/doc/draft-ietf-httpbis-origin-h3) - Mike Bishop
+* 15 min - [Retrofit Structured Fields](https://datatracker.ietf.org/doc/draft-ietf-httpbis-retrofit) - Mark Nottigham
 * 15 min - [Signatures](https://datatracker.ietf.org/doc/draft-ietf-httpbis-message-signatures)
-* 15 min - [QUERY](https://datatracker.ietf.org/doc/draft-ietf-httpbis-safe-method-w-body)
+* 15 min - [QUERY](https://datatracker.ietf.org/doc/draft-ietf-httpbis-safe-method-w-body) - Julian Reschke
 
 ### Other Topics
 

@@ -6,6 +6,7 @@
 
 - [agenda.md](agenda.md)
 - [Alt-Svc.pdf](Alt-Svc.pdf)
+- [ChairSlides.pdf](ChairSlides.pdf)
 - [IPGeolocation.pdf](IPGeolocation.pdf)
 - [METADATA.pdf](METADATA.pdf)
 - [ResumableUploads.pdf](ResumableUploads.pdf)

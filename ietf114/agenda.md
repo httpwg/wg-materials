@@ -38,13 +38,13 @@ _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 * 10 min - [Cookies](https://datatracker.ietf.org/doc/draft-ietf-httpbis-rfc6265bis) - Steven Bingler
 * 10 min - [ORIGIN H3](https://datatracker.ietf.org/doc/draft-ietf-httpbis-origin-h3) - Mike Bishop
 * 15 min - [Retrofit Structured Fields](https://datatracker.ietf.org/doc/draft-ietf-httpbis-retrofit) - Mark Nottigham
-* 15 min - [Signatures](https://datatracker.ietf.org/doc/draft-ietf-httpbis-message-signatures) - Justin Richer
+* 15 min - [Signatures](https://datatracker.ietf.org/doc/draft-ietf-httpbis-message-signatures) ([slides](Signatures.pdf)) - Justin Richer
 * 15 min - [QUERY](https://datatracker.ietf.org/doc/draft-ietf-httpbis-safe-method-w-body) - Julian Reschke
 
 ### Other Topics
 
 * 15 min - [Resumable Uploads](https://datatracker.ietf.org/doc/draft-tus-httpbis-resumable-uploads-protocol/) ([slides](ResumableUploads.pdf)) - Guoye Zhang
-* 10 min - [GeoIP](https://datatracker.ietf.org/doc/draft-pauly-httpbis-geoip-hint/) - Tommy Pauly
-* 10 min - [Transport Auth](https://datatracker.ietf.org/doc/draft-schinazi-httpbis-transport-auth/) ([slides](TransportAuthentication)) - David Schinazi
+* 10 min - [GeoIP](https://datatracker.ietf.org/doc/draft-pauly-httpbis-geoip-hint/) ([slides](IPGeolocation.pdf)) - Tommy Pauly
+* 10 min - [Transport Auth](https://datatracker.ietf.org/doc/draft-schinazi-httpbis-transport-auth/) ([slides](TransportAuthentication.pdf)) - David Schinazi
 * 10 min - [METADATA](https://datatracker.ietf.org/doc/draft-beky-httpbis-metadata/) ([slides](METADATA.pdf)) - Bence Béky
 

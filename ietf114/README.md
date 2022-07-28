@@ -6,6 +6,7 @@
 
 - [agenda.md](agenda.md)
 - [Alt-Svc.pdf](Alt-Svc.pdf)
+- [Alt-SVCB.pdf](Alt-SVCB.pdf)
 - [ChairSlides.pdf](ChairSlides.pdf)
 - [Cookies.pdf](Cookies.pdf)
 - [IPGeolocation.pdf](IPGeolocation.pdf)

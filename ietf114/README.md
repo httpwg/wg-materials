@@ -11,6 +11,7 @@
 - [Cookies.pdf](Cookies.pdf)
 - [IPGeolocation.pdf](IPGeolocation.pdf)
 - [METADATA.pdf](METADATA.pdf)
+- [minutes.md](minutes.md)
 - [ResumableUploads.pdf](ResumableUploads.pdf)
 - [Signatures.pdf](Signatures.pdf)
 - [TransportAuthentication.pdf](TransportAuthentication.pdf)

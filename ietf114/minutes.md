@@ -239,8 +239,6 @@ Volunteers:
 ### Transport Auth (David Schinazi)
 [slides](https://github.com/httpwg/wg-materials/blob/gh-pages/ietf114/TransportAuthentication.pdf)
 
-- David Schinazi: So now I have to do it all versus join me as Kauth are together on this and please ignore the title transfer certification no longer going to change the transport so we just have to come up with a better one next one please so what is your motivation we want the client to authenticate itself to the server like OK great that's it yo exists top of that we want to use asymmetric cryptocurrency are exist so Valparaiso balls but we have yet another requirement that is what you want us
-
 - David Schinazi: Motivation, want a MASQUE server that doesn't tell everyone it's a MASQUE server. Today, you use a nonce for asymmetric cryptography, which leaks the fact that you require authentication.
 - Proposal, from Chris Wood back then, use a TLS Key Exporter. Not reinventing token binding. Insight is that TLS handshake has fresh random data from both endpoints and a key exporter creates pseudorandom numbers from both of those random bits. Use it to create a nonce, not a key, that the server had input to. You sign that nonce so you don't need to transmit it, server can decode it as well.
 

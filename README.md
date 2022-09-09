@@ -50,3 +50,4 @@
 - [Interim meeting: 21-09](interim-21-09/README.md)
 - [Interim meeting: 22-02](interim-22-02/README.md)
 - [Interim meeting: 22-05](interim-22-05/README.md)
+- [Interim meeting: 22-10](interim-22-10/README.md)

@@ -22,7 +22,7 @@ _2 Hours_
 
 * 30 min - [Resumable Uploads](https://httpwg.org/http-extensions/draft-ietf-httpbis-resumable-upload.html)
 * 10 min - [Signatures](https://httpwg.org/http-extensions/draft-ietf-httpbis-message-signatures.html)
-* 10 min - [Cookies](https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html)
+* 10 min - [Cookies](https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html) - [slides](cookies.pdf) _Steven Bingler_
 * 15 min - [QUERY Method](https://httpwg.org/http-extensions/draft-ietf-httpbis-safe-method-w-body.html)
 * 15 min - [Client Cert Header Field](https://httpwg.org/http-extensions/draft-ietf-httpbis-client-cert-field.html)
 * 15 min - [Alternative Services](https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc7838bis.html)

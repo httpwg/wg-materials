@@ -1,9 +1,6 @@
 # HTTP Working Group Interim Meeting Agenda - October 2022
 
-* [WebEx]()
-  - Meeting number: 
-  - Password: 
-* [Meeting chat](xmpp:httpbis@jabber.ietf.org?join)
+* [Meetecho](https://meetings.conf.meetecho.com/interim/?short=97688028-d7ce-47fe-a1cd-ded266963f0a)
 * [Minutes](https://notes.ietf.org/notes-httpbis-22-10) _requires datatracker login_
 
 *Taking minutes? See [our guide](https://github.com/httpwg/wiki/wiki/TakingMinutes)*

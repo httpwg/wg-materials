@@ -17,7 +17,7 @@ _2 Hours_
 
 ### Active Extension Drafts
 
-* 30 min - [Resumable Uploads](https://httpwg.org/http-extensions/draft-ietf-httpbis-resumable-upload.html)
+* 30 min - [Resumable Uploads](https://httpwg.org/http-extensions/draft-ietf-httpbis-resumable-upload.html) - [slides](resumable-uploads.pdf)
 * 10 min - [Signatures](https://httpwg.org/http-extensions/draft-ietf-httpbis-message-signatures.html)
 * 10 min - [Cookies](https://httpwg.org/http-extensions/draft-ietf-httpbis-rfc6265bis.html) - [slides](cookies.pdf) _Steven Bingler_
 * 15 min - [QUERY Method](https://httpwg.org/http-extensions/draft-ietf-httpbis-safe-method-w-body.html)

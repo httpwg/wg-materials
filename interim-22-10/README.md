@@ -6,3 +6,4 @@
 
 - [agenda.md](agenda.md)
 - [cookies.pdf](cookies.pdf)
+- [resumable-uploads.pdf](resumable-uploads.pdf)

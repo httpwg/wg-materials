@@ -142,6 +142,7 @@ Adding the Date type - in this draft, standalone, or a revision of SF?
 Martin: revise SF
 
 Mnot: doesn't like being the guinea pig
+
 Justin: likes the ABNF from a implementation perspective; the paint is barely dry on 8941, but apart from that strange feeling, I don't see a reason not to; we'd eventually do a bis to collect the additions
 
 Mnot: probably go with a SF revision; need to keep scope in check

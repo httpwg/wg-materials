@@ -95,6 +95,7 @@ Justin: discussion about covering message content, using digest, with a non-norm
 Quick status update
 
 dveditz: was the redirect problem in all cases or just for same-site lax by default cases?
+
 steven: Chrome applies a POST exception; so we have a two-minute window in which we (Chrome?) let cookies through; the result of some experiments was that we need more information; will take a number of months to work this out
 
 dveditz: mozilla is considering not implementing samesite lax by default due to being able to rely on partitioning
@@ -109,6 +110,7 @@ Some remaining open issues (6).  Julian is looking for help with these.
 A few small things to do before completion.  9110 terminology changes needed; easy. how to signal if a cert isn't acceptable
 
 mnot: generally agree that the proxy is responsible for managing signaling the error (?)
+
 martin: the problem is that the proxy can't synthesize TLS-layer errors from HTTP-layer signals, at least not generically; made a suggestion on the PR
 
 problem with cert-chain description; need to allow for either copying from TLS or constructing a certification path on its own

@@ -1,28 +1,28 @@
-Note well.
-
-Mark struggles with screen sharing.
-
-Martin voluteers to scribe.
+# HTTP WG Minutes: October 2022
 
 ## Resumable Uploads
 
 Marius discusses the status of the draft.
 
-[Issue 2239](https://github.com/httpwg/http-extensions/issues/2239) - server-generated token/URI or client token
+### [Issue 2239](https://github.com/httpwg/http-extensions/issues/2239) - server-generated token/URI or client token
 
 Martin: (in chat) 1xx means server-generated token is delivered in parallel
+
 Mnot: if we have multiple uses for different styles, can we do both?
+
 Marius: yes, maybe
+
 Martin: doing both is a failure outcome - when we fail to consider all of the use cases. a lot of the reason for doing client-generated tokens seem to depend on everything completing in one round trip, but that is at odds with the goals of resumable uploads, which take longer
+
 Marius: there are cases where things take less time, such as lots of small resources
 
-[Issue 2240](https://github.com/httpwg/http-extensions/issues/2240) and [Issue 2243](https://github.com/httpwg/http-extensions/issues/2243) - feature detection and transparent upgrade to resumable
+### [Issue 2240](https://github.com/httpwg/http-extensions/issues/2240) and [Issue 2243](https://github.com/httpwg/http-extensions/issues/2243) - feature detection and transparent upgrade to resumable
 
 There is interest in integrating this feature into HTTP stacks on platforms (like browsers and servers), make it available via upgrade; is there enough interest to do this?
 
 Guoye (chat): some interest in integrating this in the client library so that its use is transparent to applications
 
-[Issue 2247](https://github.com/httpwg/http-extensions/issues/2247) - Browser compatibility
+### [Issue 2247](https://github.com/httpwg/http-extensions/issues/2247) - Browser compatibility
 
 Can we make these work in such a way that they're compatible with existing browsers?
 
@@ -46,17 +46,29 @@ Mnot: yep, still working through that
 ## Signatures
 
 Justin: it's perfect, clearly; time to go to WGLC
+
 Mnot: need to think about what we need to do to get the appropriate level of review
+
 Justin: SECDIR?
+
 Mnot: we already got one, we might ask for another
+
 Justin: might be a good idea to get another ahead of IESG review
+
 Justin: don't think that this needs the same level of analysis as TLS 1.3
+
 Mnot: we need clarity about the right level of review
+
 Chris Wood: I was surprised to see this in WGLC without some security analysis, particularly considering the complexity of the spec; I don't think that being at this layer absolves it of responsibility for getting analysis; perhaps SECDIR or some security folks need to work out what the right bar is; I'm sure we will be able to find someone to do the analysis, but without that analysis I'm concerned
+
 Justin: might need to get ADs in the room
+
 Lucas in chat: maybe SECDir can advise on the level of analysis that is appropriate
+
 Mnot: ?
+
 Lucas: question about digest examples in the draft; happy to help
+
 Justin: discussion about covering message content, using digest, with a non-normative example of that
 
 
@@ -66,6 +78,7 @@ Quick status update
 
 dveditz: was the redirect problem in all cases or just for same-site lax by default cases?
 steven: Chrome applies a POST exception; so we have a two-minute window in which we (Chrome?) let cookies through; the result of some experiments was that we need more information; will take a number of months to work this out
+
 dveditz: mozilla is considering not implementing samesite lax by default due to being able to rely on partitioning
 
 
@@ -79,7 +92,6 @@ A few small things to do before completion.  9110 terminology changes needed; ea
 
 mnot: generally agree that the proxy is responsible for managing signaling the error (?)
 martin: the problem is that the proxy can't synthesize TLS-layer errors from HTTP-layer signals, at least not generically; made a suggestion on the PR
-
 
 problem with cert-chain description; need to allow for either copying from TLS or constructing a certification path on its own
 
@@ -110,6 +122,8 @@ Mike: I have some changes I'd like to make, but that would break compatibility
 Adding the Date type - in this draft, standalone, or a revision of SF?
 
 Martin: revise SF
+
 Mnot: doesn't like being the guinea pig
 Justin: likes the ABNF from a implementation perspective; the paint is barely dry on 8941, but apart from that strange feeling, I don't see a reason not to; we'd eventually do a bis to collect the additions
+
 Mnot: probably go with a SF revision; need to keep scope in check

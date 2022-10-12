@@ -1,5 +1,23 @@
 # HTTP WG Minutes: October 2022
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Resumable Uploads](#resumable-uploads)
+  - [Issue 2239 - server-generated token/URI or client token](#issue-2239---server-generated-tokenuri-or-client-token)
+  - [Issue 2240 and Issue 2243 - feature detection and transparent upgrade to resumable](#issue-2240-and-issue-2243---feature-detection-and-transparent-upgrade-to-resumable)
+  - [Issue 2247 - Browser compatibility](#issue-2247---browser-compatibility)
+- [Signatures](#signatures)
+- [Cookies](#cookies)
+- [QUERY Method](#query-method)
+- [Client Cert Header Field](#client-cert-header-field)
+- [Alternative Services](#alternative-services)
+- [ORIGIN in HTTP/3](#origin-in-http3)
+- [AOB](#aob)
+  - [Retrofit](#retrofit)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Resumable Uploads
 
 Marius discusses the status of the draft.

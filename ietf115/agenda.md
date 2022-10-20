@@ -22,10 +22,10 @@ _15:30-17:30 Monday Session III - Kensington 2_
 _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
 * 15 min - [Signatures](https://datatracker.ietf.org/doc/draft-ietf-httpbis-message-signatures) ([slides](Signatures.pdf))
-* 15 min - Alternative Services
-* 15 min - [ORIGIN H3](https://datatracker.ietf.org/doc/draft-ietf-httpbis-origin-h3)
+* 15 min - [Alternative Services](https://datatracker.ietf.org/doc/draft-ietf-httpbis-rfc7838bis)
+* 5 min - [ORIGIN H3](https://datatracker.ietf.org/doc/draft-ietf-httpbis-origin-h3)
 * 15 min - [Cookies](https://datatracker.ietf.org/doc/draft-ietf-httpbis-rfc6265bis) 
-* 15 min - Client Certs
+* 5 min - [Client Certs](https://datatracker.ietf.org/doc/draft-ietf-httpbis-client-cert-field)
 * 15 min - [Resumable Uploads](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload)
 * 15 min - [Retrofit Structured Fields](https://datatracker.ietf.org/doc/draft-ietf-httpbis-retrofit)
 * 15 min - [QUERY](https://datatracker.ietf.org/doc/draft-ietf-httpbis-safe-method-w-body)
@@ -45,4 +45,6 @@ _09:30-11:30 Friday Session I - Kensington 2_
 ### Other Topics
 
 * 20 min - ORIGIN deployment - Sudheesh Singanamalla
-* 15 min - [Transport Auth](https://datatracker.ietf.org/doc/draft-schinazi-httpbis-transport-auth/)  - David Schinazi
+* 20 min - [Transport Auth](https://datatracker.ietf.org/doc/draft-schinazi-httpbis-transport-auth/)  - David Schinazi
+* 20 min - MASQUE update - David Schinazi
+* 20 min - [Partitioned Cookies](https://datatracker.ietf.org/doc/draft-cutler-httpbis-partitioned-cookies/) - Dylan Cutler

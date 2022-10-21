@@ -27,9 +27,11 @@ _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 * 15 min - [Cookies](https://datatracker.ietf.org/doc/draft-ietf-httpbis-rfc6265bis) 
 * 5 min - [Client Certs](https://datatracker.ietf.org/doc/draft-ietf-httpbis-client-cert-field)
 * 15 min - [Resumable Uploads](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload)
-* 15 min - [Retrofit Structured Fields](https://datatracker.ietf.org/doc/draft-ietf-httpbis-retrofit)
-* 15 min - [QUERY](https://datatracker.ietf.org/doc/draft-ietf-httpbis-safe-method-w-body)
 
+
+### Other Topics
+
+* 20 min - [Partitioned Cookies](https://datatracker.ietf.org/doc/draft-cutler-httpbis-partitioned-cookies/) - Dylan Cutler
 
 
 ## Friday, 11 November 11 2022
@@ -42,9 +44,14 @@ _09:30-11:30 Friday Session I - Kensington 2_
 *  2 min - Agenda bashing
 
 
+### Active Drafts
+
+* 15 min - [Retrofit Structured Fields](https://datatracker.ietf.org/doc/draft-ietf-httpbis-retrofit)
+* 15 min - [QUERY](https://datatracker.ietf.org/doc/draft-ietf-httpbis-safe-method-w-body)
+
+
 ### Other Topics
 
 * 20 min - ORIGIN deployment - Sudheesh Singanamalla
 * 20 min - [Transport Auth](https://datatracker.ietf.org/doc/draft-schinazi-httpbis-transport-auth/)  - David Schinazi
 * 20 min - MASQUE update - David Schinazi
-* 20 min - [Partitioned Cookies](https://datatracker.ietf.org/doc/draft-cutler-httpbis-partitioned-cookies/) - Dylan Cutler

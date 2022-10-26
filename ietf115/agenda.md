@@ -53,5 +53,5 @@ _09:30-11:30 Friday Session I - Kensington 2_
 
 ### Other Topics
 
-* 20 min - [Transport Auth](https://datatracker.ietf.org/doc/draft-schinazi-httpbis-transport-auth/)  - David Schinazi
+* 20 min - [Unprompted Auth](https://datatracker.ietf.org/doc/draft-schinazi-httpbis-unprompted-auth/)  - David Schinazi
 * 20 min - ORIGIN deployment - Sudheesh Singanamalla

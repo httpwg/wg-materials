@@ -46,9 +46,9 @@ _09:30-11:30 Friday Session I - Kensington 2_
 
 ### Active Drafts
 
-* 15 min - [Resumable Uploads](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload)
-* 15 min - [Retrofit Structured Fields](https://datatracker.ietf.org/doc/draft-ietf-httpbis-retrofit)
-* 15 min - [QUERY](https://datatracker.ietf.org/doc/draft-ietf-httpbis-safe-method-w-body)
+* 25 min - [Resumable Uploads](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload)
+* 10 min - [Retrofit Structured Fields](https://datatracker.ietf.org/doc/draft-ietf-httpbis-retrofit)
+* 10 min - [QUERY](https://datatracker.ietf.org/doc/draft-ietf-httpbis-safe-method-w-body)
 
 
 ### Other Topics

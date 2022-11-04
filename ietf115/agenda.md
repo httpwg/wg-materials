@@ -55,3 +55,4 @@ _09:30-11:30 Friday Session I - Kensington 2_
 
 * 20 min - [Unprompted Auth](https://datatracker.ietf.org/doc/draft-schinazi-httpbis-unprompted-auth/)  - David Schinazi
 * 20 min - ORIGIN deployment - Sudheesh Singanamalla
+* 15 min - ["Modern" HTTP Proxies](https://datatracker.ietf.org/doc/draft-schwartz-modern-http-proxies/) - Ben Schwartz

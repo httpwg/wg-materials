@@ -21,8 +21,8 @@ _15:30-17:30 Monday Session III - Kensington 2_
 
 _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
-* 15 min - [Signatures](https://datatracker.ietf.org/doc/draft-ietf-httpbis-message-signatures)
-* 15 min - [Alternative Services](https://datatracker.ietf.org/doc/draft-ietf-httpbis-rfc7838bis)
+* 10 min - [Signatures](https://datatracker.ietf.org/doc/draft-ietf-httpbis-message-signatures)
+* 30 min - [Alternative Services](https://datatracker.ietf.org/doc/draft-ietf-httpbis-rfc7838bis)
 * 5 min - [ORIGIN H3](https://datatracker.ietf.org/doc/draft-ietf-httpbis-origin-h3)
 * 15 min - [Cookies](https://datatracker.ietf.org/doc/draft-ietf-httpbis-rfc6265bis) 
 * 5 min - [Client Certs](https://datatracker.ietf.org/doc/draft-ietf-httpbis-client-cert-field)

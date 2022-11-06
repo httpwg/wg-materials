@@ -22,16 +22,16 @@ _15:30-17:30 Monday Session III - Kensington 2_
 _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
 * 10 min - [Signatures](https://datatracker.ietf.org/doc/draft-ietf-httpbis-message-signatures)
-* 30 min - [Alternative Services](https://datatracker.ietf.org/doc/draft-ietf-httpbis-rfc7838bis)
-* 5 min - [ORIGIN H3](https://datatracker.ietf.org/doc/draft-ietf-httpbis-origin-h3)
+* 30 min - [Alternative Services](https://datatracker.ietf.org/doc/draft-ietf-httpbis-rfc7838bis) - [slides](alt-svc.pdf)
+* 5 min - [ORIGIN H3](https://datatracker.ietf.org/doc/draft-ietf-httpbis-origin-h3) - [slides](origin.pdf)
 * 15 min - [Cookies](https://datatracker.ietf.org/doc/draft-ietf-httpbis-rfc6265bis) - [slides](cookies.pdf)
 * 5 min - [Client Certs](https://datatracker.ietf.org/doc/draft-ietf-httpbis-client-cert-field) - [slides](client-cert.pdf)
 
 
 ### Other Topics
 
-* 20 min - [Partitioned Cookies](https://datatracker.ietf.org/doc/draft-cutler-httpbis-partitioned-cookies/) - _Dylan Cutler_
-* 20 min - MASQUE update - _David Schinazi_
+* 20 min - [Partitioned Cookies](https://datatracker.ietf.org/doc/draft-cutler-httpbis-partitioned-cookies/) - [slides](partitioned-cookies.pdf) _Dylan Cutler_
+* 20 min - MASQUE update - [slides](masque.pdf) _David Schinazi_
 
 
 ## Friday, 11 November 11 2022

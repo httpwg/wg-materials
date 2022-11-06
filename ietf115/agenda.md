@@ -54,6 +54,6 @@ _09:30-11:30 Friday Session I - Kensington 2_
 ### Other Topics
 
 * 20 min - [Unprompted Auth](https://datatracker.ietf.org/doc/draft-schinazi-httpbis-unprompted-auth/)  - [slides](unprompted-auth.pdf) _David Schinazi_
-* 20 min - ORIGIN deployment - _Sudheesh Singanamalla_
+* 20 min - ORIGIN deployment - [slides](origin-coalescing.pdf) _Sudheesh Singanamalla_
 * 15 min - ["Modern" HTTP Proxies](https://datatracker.ietf.org/doc/draft-schwartz-modern-http-proxies/) - [slides](modernizing-http-forward-proxies.pdf) _Ben Schwartz_
 * 15 min - [HTTP Authentication with SASL](https://datatracker.ietf.org/doc/draft-vanrein-httpauth-sasl/) - [slides](httpauth-sasl.pdf) _Rick van Rein_

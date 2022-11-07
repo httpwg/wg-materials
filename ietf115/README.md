@@ -15,4 +15,5 @@
 - [origin.pdf](origin.pdf)
 - [partitioned-cookies.pdf](partitioned-cookies.pdf)
 - [resumable-upload.pdf](resumable-upload.pdf)
+- [signatures.pdf](signatures.pdf)
 - [unprompted-auth.pdf](unprompted-auth.pdf)

@@ -2,7 +2,7 @@
 
 * [Meeting chat]()
 * [Meetecho](http://www.meetecho.com/ietf115/httpbis) remote participation
-* [Minutes](https://notes.ietf.org/notes-httpbis-115) _requires datatracker login_
+* [Minutes](https://notes.ietf.org/notes-ietf-115-httpbis) _requires datatracker login_
 
 *Taking minutes? See [our guide](https://github.com/httpwg/wiki/wiki/TakingMinutes)*
 

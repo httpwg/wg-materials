@@ -1,7 +1,7 @@
 # HTTP Working Group Agenda - IETF 115
 
-* [Meeting chat]()
-* [Meetecho](http://www.meetecho.com/ietf115/httpbis) remote participation
+* [Meeting chat](https://zulip.ietf.org/#narrow/stream/httpbis)
+* [Meetecho](https://meetings.conf.meetecho.com/ietf115/?group=httpbis&short=httpbis&item=2) remote participation
 * [Minutes](https://notes.ietf.org/notes-ietf-115-httpbis) _requires datatracker login_
 
 *Taking minutes? See [our guide](https://github.com/httpwg/wiki/wiki/TakingMinutes)*

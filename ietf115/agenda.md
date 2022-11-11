@@ -36,7 +36,7 @@ _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
 ## Friday, 11 November 11 2022
 
-_09:30-11:30 Friday Session I - Kensington 2_
+_09:30-11:30 Friday Session I - Richmond 3_
 
 ### Administrivia
 

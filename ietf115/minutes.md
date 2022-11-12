@@ -1,8 +1,34 @@
+
 # HTTP Working Group Minutes - IETF 115
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Monday, 7 November 2022](#monday-7-november-2022)
+  - [Signatures](#signatures)
+  - [Alternative Services](#alternative-services)
+  - [ORIGIN H3](#origin-h3)
+  - [Cookies](#cookies)
+  - [Partitioned Cookies](#partitioned-cookies)
+  - [Client Certs](#client-certs)
+  - [MASQUE update](#masque-update)
+  - [Unprompted Auth](#unprompted-auth)
+- [Friday, 11 November 11 2022](#friday-11-november-11-2022)
+  - [Resumable Uploads](#resumable-uploads)
+  - [Retrofit Structured Fields](#retrofit-structured-fields)
+  - [QUERY](#query)
+  - [Other Topics](#other-topics)
+  - [ORIGIN deployment](#origin-deployment)
+  - ["Modern" HTTP Proxies](#modern-http-proxies)
+  - [HTTP Authentication with SASL](#http-authentication-with-sasl)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Monday, 7 November 2022
 
-### [Signatures](https://datatracker.ietf.org/doc/draft-ietf-httpbis-message-signatures) - [slides](signatures.pdf)
+### [Signatures](https://datatracker.ietf.org/doc/draft-ietf-httpbis-message-signatures)
+
+[slides](signatures.pdf)
 
 Justin Richer (JR): feedback received after WGLC
 
@@ -32,7 +58,9 @@ mnot: Is there an appropriate level of review for really critical stuff like thi
 
 (Julian Reschke in chat: there are open issues related to percent-decoding and combined field value generation that still need to be discussed)
 
-### [Alternative Services](https://datatracker.ietf.org/doc/draft-ietf-httpbis-rfc7838bis) - [slides](alt-svc.pdf)
+### [Alternative Services](https://datatracker.ietf.org/doc/draft-ietf-httpbis-rfc7838bis)
+
+[slides](alt-svc.pdf)
 
 Mike Bishop (MB) presenting 
 
@@ -74,7 +102,10 @@ LP: As someone responsible for getting to H3 to work, I approve of the shape of 
 
 MT: There is an issue with the availability of HTTPS records, and we get on the order of 2% errors for A / AAAA, but 5% for HTTPS records, and 45% for DNSSEC. This really hinges on how much H3 are you willing to sacrifice on the altar of making progress. Eventually the 2-3% of networks who don't pass on HTTPS records might be small enough that it's acceptable (to kill AltSvc).
 
-### [ORIGIN H3](https://datatracker.ietf.org/doc/draft-ietf-httpbis-origin-h3) - [slides](origin.pdf)
+### [ORIGIN H3](https://datatracker.ietf.org/doc/draft-ietf-httpbis-origin-h3)
+
+[slides](origin.pdf)
+
 MB presenting
 
 MT: We have mandatory flags, mandatory flags are just called frame types. If you want a mandatory flag define a new frame type. These are problems best solved by future us.
@@ -97,7 +128,9 @@ No-one cares
 
 MB: WGLC?
 
-### [Cookies](https://datatracker.ietf.org/doc/draft-ietf-httpbis-rfc6265bis) - [slides](cookies.pdf)
+### [Cookies](https://datatracker.ietf.org/doc/draft-ietf-httpbis-rfc6265bis)
+
+[slides](cookies.pdf)
 
 Steven Bingler (SB) presenting
 
@@ -112,9 +145,9 @@ We're thinking about how to do expanded character set cookies.
 
 DS: Maybe add a footgun warning in the spec. 
 
-### [Partitioned Cookies](https://datatracker.ietf.org/doc/draft-cutler-httpbis-partitioned-cookies/) - [slides](partitioned-cookies.pdf) _Dylan Cutler_
+### [Partitioned Cookies](https://datatracker.ietf.org/doc/draft-cutler-httpbis-partitioned-cookies/)
 
-Dylan Cutler (DC) presenting
+[slides](partitioned-cookies.pdf) _Dylan Cutler_
 
 mnot: When we talked about getting major changes to 6265bis we had strong consensus requirements. Probably too late for 6265bis, but maybe the next one
 
@@ -138,7 +171,9 @@ MT: This has been debated at length in other forums. The consensus view was that
 
 mnot: We haven't adopted anything yet, so we can continue discussion.
 
-### [Client Certs](https://datatracker.ietf.org/doc/draft-ietf-httpbis-client-cert-field) - [slides](client-cert.pdf)
+### [Client Certs](https://datatracker.ietf.org/doc/draft-ietf-httpbis-client-cert-field)
+
+[slides](client-cert.pdf)
 
 Brian Campbell presenting
 
@@ -148,15 +183,15 @@ JGH: How does the Origin check that the terminator has actually seen the client 
 
 BC: It doesn't. That's why this is informational. It describes existing practice.
 
-### MASQUE update - [slides](masque.pdf) _David Schinazi_
+### MASQUE update
 
-David Schinazi presenting.
+[slides](masque.pdf) _David Schinazi_
 
 No questions.
 
-### [Unprompted Auth](https://datatracker.ietf.org/doc/draft-schinazi-httpbis-unprompted-auth/)  - [slides](unprompted-auth.pdf) _David Schinazi_
+### [Unprompted Auth](https://datatracker.ietf.org/doc/draft-schinazi-httpbis-unprompted-auth/)
 
-David Schinazi presenting.
+[slides](unprompted-auth.pdf) _David Schinazi_
 
 MT: It's possible that in certain contexts e.g. web browsers an adversary may be in a position to make requests. This only prevents the authenticator from being used on another connection, not prevent reusing the connection.
 
@@ -208,7 +243,9 @@ Meeting closes.
 
 Notetaker: Jonathan Flat
 
-### [Resumable Uploads](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload) - [slides](resumable-upload.pdf)
+### [Resumable Uploads](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload)
+
+[slides](resumable-upload.pdf)
 
 Marius Kleidl (MK): Before major issues, talk about example implementation (in chat). Overall, download resumption is standardized, uploads should be resumable, too. There's a few procedures, upload creation, offset retrieving, upload appending and upload deletion. For more info, see the current draft. We're looking for feedback on these major issues.
 
@@ -349,9 +386,9 @@ MN: Moving on.
 
 ### Other Topics
 
-### ORIGIN deployment - [slides](origin-coalescing.pdf) _Sudheesh Singanamalla_
+### ORIGIN deployment
 
-(see slides)
+[slides](origin-coalescing.pdf) _Sudheesh Singanamalla_
 
 Sudheesh Singanamalla (SS): This work is based on experiences deploying origin frames.
 
@@ -403,7 +440,9 @@ SS: Focused only on H2.
 PO: Performance stuff may come not from HOL blocking then, ok.
 
 
-### ["Modern" HTTP Proxies](https://datatracker.ietf.org/doc/draft-schwartz-modern-http-proxies/) - [slides](modernizing-http-forward-proxies.pdf) _Ben Schwartz_
+### ["Modern" HTTP Proxies](https://datatracker.ietf.org/doc/draft-schwartz-modern-http-proxies/)
+
+[slides](modernizing-http-forward-proxies.pdf) _Ben Schwartz_
 
 BS: There's a lot of old ways/methods to proxy over HTTP, but this has some unfortunate properties. You can only have one proxy per origin. To make it worse, virtual hosting of these things are impossible. Starting in H2, there's no equivalent of absolute URI form. Proxy has to know what the actual authority is. CONNECT-* dodged these problems by identifying proxy services by URI templates. We should take that strategy to create a modern version to setup these HTTP proxies - for HTTP request and CONNECT-TCP.
 
@@ -431,9 +470,9 @@ Tommy Pauly: I think we should take it to the list. More clear support for TCP s
 
 BS: Ok will do!
 
-### [HTTP Authentication with SASL](https://datatracker.ietf.org/doc/draft-vanrein-httpauth-sasl/) - [slides](httpauth-sasl.pdf) _Rick van Rein_
+### [HTTP Authentication with SASL](https://datatracker.ietf.org/doc/draft-vanrein-httpauth-sasl/)
 
-(see slides)
+[slides](httpauth-sasl.pdf) _Rick van Rein_
 
 Rick van Rein (RR): Would be nice to have stronger and more flexible authentication for RESTful APIs. Many protocols adopt SASL for this flexibility. HTTP authentication used to be an island defining it's own mechanism. Can use Kerberos or OPAQUE in SASL implementation. Want to add an HTTP `User: ` header, akin to `Host: `. `User:` is a further refinement. HTTP-SASL adds cryptographic agility, which is useful for quantum relief, etc. HTTP-SASL built for Apache, Nginx, Firefox. Would like this group to adopt this SASL proposal. Questions?
 

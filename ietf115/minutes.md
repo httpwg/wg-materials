@@ -36,8 +36,6 @@ mnot: Is there an appropriate level of review for really critical stuff like thi
 
 Mike Bishop (MB) presenting 
 
-Julian Reschke (JRe): Zulip is down
-
 MB: Alt-Svc and HTTPS records don't always align.
 
 Replace Alt-Svc with Alt-SvcB
@@ -50,17 +48,17 @@ BS: Reasonable to say AltSvcB is a sticky operator.
 
 MB: Draft has a flag that says "never use this endpoint unless explicitly told to"
 
-MT: The propsal from the design team is effectively to take this / AltSvcB as the complete replacement for AltSvc, i.e. that we obsolete 7838, we want to say AltSvc is no longer useful.
+MT: The proposal from the design team is effectively to take this / AltSvcB as the complete replacement for AltSvc, i.e. that we obsolete 7838, we want to say AltSvc is no longer useful.
 
 There are some unreloved issues
 
-HTTPS Records have priority order, which gives you control as to where users end up, but mayb that's not sufficient. So each record has a flag that says "only use this if you were told to"
+HTTPS Records have priority order, which gives you control as to where users end up, but maybe that's not sufficient. So each record has a flag that says "only use this if you were told to"
 
-Interesting suggestion from GH, whcih we will bring to the list.
+Interesting suggestion from GH, which we will bring to the list.
 
-We want feedback on "AltSvcB solves my usecase" vs "We want AltSvc"
+We want feedback on "AltSvcB solves my use case" vs "We want AltSvc"
 
-Eric Kinnear (EK): This is useful for us. We strongly prefer getting this infromation from DNS, and we know it before we actually build the connection, which makes a signification and measurable difference in the amount of H3 that we use.
+Eric Kinnear (EK): This is useful for us. We strongly prefer getting this information from DNS, and we know it before we actually build the connection, which makes a signification and measurable difference in the amount of H3 that we use.
 
 We want both signals
 
@@ -72,9 +70,9 @@ Tommy Pauly (TP): Question for DS: When are we going to update POSIX and `getadd
 
 DS: It's a matter of time, the energy is going on the DNS resolver that ships with Chrome, and the fallback to `getaddrinfo ` is unlikely to get any love. It'll take us a while to get support on all platforms.
 
-LP: As someone responsible for getting to H3 to work, I approve of teh shape of this solution, the GH suggestion is interesting. I don't feel strongly about getting rid of the AltSvc header quickly, adding AltSvcB solves our pain currently.
+LP: As someone responsible for getting to H3 to work, I approve of the shape of this solution, the GH suggestion is interesting. I don't feel strongly about getting rid of the AltSvc header quickly, adding AltSvcB solves our pain currently.
 
-MT: There is an issue with teh avavilibilyt of HTTPS records, and we get on the order of 2% errors for A / AAAA, but 5% for HTTPS records, and 45% for DNSSEC. This really hinges on how much H3 are you willing to sacrifice on the altar of making progress. Eventually the 2-3% of networks who don't pass on HTTPS records might be small enough that it's acceptable (to kill AltSvc).
+MT: There is an issue with the availability of HTTPS records, and we get on the order of 2% errors for A / AAAA, but 5% for HTTPS records, and 45% for DNSSEC. This really hinges on how much H3 are you willing to sacrifice on the altar of making progress. Eventually the 2-3% of networks who don't pass on HTTPS records might be small enough that it's acceptable (to kill AltSvc).
 
 ### [ORIGIN H3](https://datatracker.ietf.org/doc/draft-ietf-httpbis-origin-h3) - [slides](origin.pdf)
 MB presenting
@@ -118,7 +116,7 @@ DS: Maybe add a footgun warning in the spec.
 
 Dylan Cutler (DC) presenting
 
-mnot: When we talked about getting major changes to 6265bis we had strong concensus requirements. Probably too late for 6265bis, but maybe the next one
+mnot: When we talked about getting major changes to 6265bis we had strong consensus requirements. Probably too late for 6265bis, but maybe the next one
 
 MT: Mozilla and the W3C are very keen on this work. We're willing to be guided on timeline by the group. Would advocate for some sort of signal that the IETF process is working on this, but maybe park it so we don't need to block on that work.
 
@@ -136,7 +134,7 @@ mnot: There is an explainer, right?
 
 DC: Let's discuss this offline.
 
-MT: This has been debated at length in other forums. The concensus view was that blocking 3rd party cookies in this scenario was the best, but that was not unanimous. Our experience with partitioning is that it almost completely works, so we could do without this, but we were a minority voice. This is the compromise.
+MT: This has been debated at length in other forums. The consensus view was that blocking 3rd party cookies in this scenario was the best, but that was not unanimous. Our experience with partitioning is that it almost completely works, so we could do without this, but we were a minority voice. This is the compromise.
 
 mnot: We haven't adopted anything yet, so we can continue discussion.
 
@@ -160,7 +158,7 @@ No questions.
 
 David Schinazi presenting.
 
-MT: It's possible that in certain contexts e.g. web browsers an adversary may be in a position to make requests. This only provents the authenticator from being used on another connection, not prevent reusing the connection.
+MT: It's possible that in certain contexts e.g. web browsers an adversary may be in a position to make requests. This only prevents the authenticator from being used on another connection, not prevent reusing the connection.
 
 DS: The attack model there is that the attacker is already inside the browser, which we consider that it's out of scope.
 
@@ -192,7 +190,7 @@ We should solve this.
 
 Kyle Nekritz: What is being done here that couldn't be done with token binding.
 
-DS: More complex machinary, and I don't think it has the property that a client speaks first.
+DS: More complex machinery, and I don't think it has the property that a client speaks first.
 
 KN: Usually yes, but I think you can omit that. 
 
@@ -258,7 +256,7 @@ MK: Idempotency key issue. Problem is if the client doesn't receive the (1xx) re
 
 MT: Always a risk when you take a dependency on something. Difficult for a server to guarantee that they respect them. Don't need to solve everything in space of uploads with this draft. 
 
-JF: Idempotency key not necessarily needed. Need to know server supports it anyways. Might be better to standardize if you know a server does support it, take extra round trip. Could be an add on but not necesssarily integral part of protocol. 
+JF: Idempotency key not necessarily needed. Need to know server supports it anyways. Might be better to standardize if you know a server does support it, take extra round trip. Could be an add on but not necessarily integral part of protocol. 
 
 KO: Regarding previous issue, people prefer server-generated URLs. Is this very similar to client-generated token? Idempotency keys can collide. 
 
@@ -303,7 +301,7 @@ Julian Reschke (JR): I think that the current text has some issues around the pa
 
 MN: We can "monkey patch" it, or actually change the parsing algorithm in structured-fields bis.
 
-JR: Should be in structured fields spec. Want implentations to be consistent. 
+JR: Should be in structured fields spec. Want implementations to be consistent. 
 
 MT: Can you talk a little bit more about the rationale?
 
@@ -447,11 +445,11 @@ MN: Answer has varied in the past.
 
 RR: Send here by dispatch group.
 
-MT: Probably the right place to talk about this. Integration into HTTP probably the most interesting part. Can't answer implementor interest. Can broswer APIs do this in user-space instead of webpage?
+MT: Probably the right place to talk about this. Integration into HTTP probably the most interesting part. Can't answer implementor interest. Can browser APIs do this in user-space instead of webpage?
 
 RR: We do that in the extension.
 
-MT: Does that require priveleged access to contents of requests/responses? Or can you just use the fetch API? Is it possible to build right in the webpage?
+MT: Does that require privileged access to contents of requests/responses? Or can you just use the fetch API? Is it possible to build right in the webpage?
 
 RR: Would not work for automation/RESTful APIs.
 
@@ -459,11 +457,11 @@ MT: If it's possible to drive in self-service fashion, you can demonstrate utili
 
 RR: We can do that.
 
-Alexey Melnikov (AM): Is access to WWW-Authenticate a priveleged access?
+Alexey Melnikov (AM): Is access to WWW-Authenticate a privileged access?
 
 MN: I believe so.
 
-MT: Not certain, I think there's priv info that browswers will put in certain contexts. I'm not certain if js can set the values if you know them. Generally you do a request to the browser to access it's store of the credentials. This puts a contraint on the fetch API. It may be possible to set the values explicitly, but don't quote me on that.
+MT: Not certain, I think there's priv info that browsers will put in certain contexts. I'm not certain if js can set the values if you know them. Generally you do a request to the browser to access it's store of the credentials. This puts a contraint on the fetch API. It may be possible to set the values explicitly, but don't quote me on that.
 
 MN: Browsers are one interesting party, another are libraries like curl. I think this is a continuing discussion. Tommy and I will chat, we'll continue the discussion on list. We'll figure out next steps, and if we want to write a draft.
 

@@ -11,6 +11,7 @@
 - [cookies.pdf](cookies.pdf)
 - [httpauth-sasl.pdf](httpauth-sasl.pdf)
 - [masque.pdf](masque.pdf)
+- [minutes.md](minutes.md)
 - [modernizing-http-forward-proxies.pdf](modernizing-http-forward-proxies.pdf)
 - [origin.pdf](origin.pdf)
 - [partitioned-cookies.pdf](partitioned-cookies.pdf)

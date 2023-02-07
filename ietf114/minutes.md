@@ -1,4 +1,25 @@
+
+
 # HTTP Working Group - IETF 114
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Active Drafts](#active-drafts)
+  - [Summary of Alt-Svc side meeting (Mike Bishop)](#summary-of-alt-svc-side-meeting-mike-bishop)
+  - [ORIGIN H3 (Mike Bishop)](#origin-h3-mike-bishop)
+  - [Cookies (Steven Bingler)](#cookies-steven-bingler)
+  - [Retrofit Structured Fields (Mark Nottingham)](#retrofit-structured-fields-mark-nottingham)
+  - [Signatures (Justin Richer)](#signatures-justin-richer)
+  - [QUERY (Julian Reschke)](#query-julian-reschke)
+- [Other Topics](#other-topics)
+  - [Resumable Uploads (Guoye Zhang)](#resumable-uploads-guoye-zhang)
+  - [GeoIP (Tommy Pauly)](#geoip-tommy-pauly)
+  - [Transport Auth (David Schinazi)](#transport-auth-david-schinazi)
+  - [METADATA (Bence Béky)](#metadata-bence-b%C3%A9ky)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 
 13:30-15:30 - Thursday Session II - Liberty D
 

@@ -31,9 +31,9 @@ _TBD_
 
 
 
-## Thursday, 30 March 2023
+## Friday, 31 March 2023
 
-_9:30-11:30 Thursday Session I - G401-G402_
+_9:30-11:30 Friday Session I - G303_
 
 ### Administrivia
 

@@ -21,14 +21,10 @@ _15:30-16:30 Tuesday Session III - G401-G402_
 
 _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
-* 45 min - [Alternative Services](https://datatracker.ietf.org/doc/draft-ietf-httpbis-rfc7838bis)
-
-
-
-### Other Topics
-
-_TBD_
-
+*  5 min - [Cookies](https://datatracker.ietf.org/doc/draft-ietf-httpbis-rfc6265bis)
+* 10 min - [QUERY](https://datatracker.ietf.org/doc/draft-ietf-httpbis-safe-method-w-body)
+* 10 min - [DNS Aliases Proxy-Status](https://datatracker.ietf.org/doc/draft-ietf-httpbis-alias-proxy-status)
+* 20 min - [Unprompted Authentication](https://datatracker.ietf.org/doc/draft-ietf-httpbis-unprompted-auth)
 
 
 ## Friday, 31 March 2023
@@ -43,14 +39,10 @@ _9:30-11:30 Friday Session I - G303_
 
 ### Active Drafts
 
-*  5 min - [Cookies](https://datatracker.ietf.org/doc/draft-ietf-httpbis-rfc6265bis)
-* 10 min - [QUERY](https://datatracker.ietf.org/doc/draft-ietf-httpbis-safe-method-w-body)
-* 10 min - [DNS Aliases Proxy-Status](https://datatracker.ietf.org/doc/draft-ietf-httpbis-alias-proxy-status)
 * 20 min - [Resumable Uploads](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload)
-* 20 min - [Unprompted Authentication](https://datatracker.ietf.org/doc/draft-ietf-httpbis-unprompted-auth)
 * 10 min - [Structured Field Values Bis](https://datatracker.ietf.org/doc/draft-ietf-httpbis-sfbis)
 * 10 min - [Retrofit Structured Fields](https://datatracker.ietf.org/doc/draft-ietf-httpbis-retrofit)
-
+* 45 min - [Alternative Services](https://datatracker.ietf.org/doc/draft-ietf-httpbis-rfc7838bis)
 
 
 ### Other Topics

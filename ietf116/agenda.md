@@ -48,3 +48,4 @@ _9:30-11:30 Friday Session I - G303_
 ### Other Topics
 
 * 15 min - H2/H3 WebSockets discovery and detection - Lucas Pardue
+*  5 min - [Template-Driven HTTP CONNECT Proxying for TCP](https://www.ietf.org/archive/id/draft-schwartz-httpbis-connect-tcp-01.html) - Ben Schwartz

@@ -47,5 +47,5 @@ _9:30-11:30 Friday Session I - G303_
 ### Other Topics
 
 * 15 min - H2/H3 WebSockets discovery and detection - Lucas Pardue
-*  5 min - [Template-Driven HTTP CONNECT Proxying for TCP](https://www.ietf.org/archive/id/draft-schwartz-httpbis-connect-tcp-01.html) - Ben Schwartz
+*  5 min - [Template-Driven HTTP CONNECT Proxying for TCP](https://www.ietf.org/archive/id/draft-schwartz-httpbis-connect-tcp-01.html) - Ben Schwartz - [slides](template-driven-connect-proxy.pdf)
 *  5 min - [HTTP Availability Hints](https://www.ietf.org/archive/id/draft-nottingham-http-availability-hints-00.html) - Mark Nottingham

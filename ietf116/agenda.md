@@ -23,7 +23,7 @@ _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
 *  5 min - [Cookies](https://datatracker.ietf.org/doc/draft-ietf-httpbis-rfc6265bis) - Steven Bingler - [slides](cookies.pdf)
 * 10 min - [DNS Aliases Proxy-Status](https://datatracker.ietf.org/doc/draft-ietf-httpbis-alias-proxy-status) - Tommy Pauly - [slides](alias-proxy-status.pdf)
-* 20 min - [Unprompted Authentication](https://datatracker.ietf.org/doc/draft-ietf-httpbis-unprompted-auth)
+* 20 min - [Unprompted Authentication](https://datatracker.ietf.org/doc/draft-ietf-httpbis-unprompted-auth) - David Schinazi - [slides](unprompted-auth.pdf)
 
 
 ## Friday, 31 March 2023

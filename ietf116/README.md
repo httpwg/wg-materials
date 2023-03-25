@@ -9,3 +9,4 @@
 - [cookies.pdf](cookies.pdf)
 - [resumable-uploads.pdf](resumable-uploads.pdf)
 - [template-driven-connect-proxy.pdf](template-driven-connect-proxy.pdf)
+- [unprompted-auth.pdf](unprompted-auth.pdf)

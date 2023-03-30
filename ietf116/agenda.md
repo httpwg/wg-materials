@@ -41,11 +41,11 @@ _9:30-11:30 Friday Session I - G303_
 * 20 min - [Resumable Uploads](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload) - [slides](resumable-uploads.pdf)
 * 10 min - [Structured Field Values Bis](https://datatracker.ietf.org/doc/draft-ietf-httpbis-sfbis) - Mark Nottingham
 * 10 min - [Retrofit Structured Fields](https://datatracker.ietf.org/doc/draft-ietf-httpbis-retrofit) - Mark Nottingham
-* 40 min - [Alternative Services](https://datatracker.ietf.org/doc/draft-ietf-httpbis-rfc7838bis)
+* 40 min - [Alternative Services](https://datatracker.ietf.org/doc/draft-ietf-httpbis-rfc7838bis) - Mike Bishop - [slides](altsvcb.pdf)
 
 
 ### Other Topics
 
-* 15 min - H2/H3 WebSockets discovery and detection - Lucas Pardue
+* 15 min - H2/H3 WebSockets discovery and detection - Lucas Pardue - [slides](websocket-discovery.pdf)
 *  5 min - [Template-Driven HTTP CONNECT Proxying for TCP](https://www.ietf.org/archive/id/draft-schwartz-httpbis-connect-tcp-01.html) - Ben Schwartz - [slides](template-driven-connect-proxy.pdf)
 *  5 min - [HTTP Availability Hints](https://www.ietf.org/archive/id/draft-nottingham-http-availability-hints-00.html) - Mark Nottingham

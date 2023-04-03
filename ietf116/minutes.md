@@ -412,3 +412,4 @@ Benjamin Schwartz: extended connect capable CDN that's forwarding request to ori
 
 #### [HTTP Availability Hints](https://www.ietf.org/archive/id/draft-nottingham-http-availability-hints-00.html) - Mark Nottingham
 
+Take to list (out of time).

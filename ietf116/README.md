@@ -8,6 +8,7 @@
 - [alias-proxy-status.pdf](alias-proxy-status.pdf)
 - [altsvcb.pdf](altsvcb.pdf)
 - [cookies.pdf](cookies.pdf)
+- [minutes.md](minutes.md)
 - [resumable-uploads.pdf](resumable-uploads.pdf)
 - [template-driven-connect-proxy.pdf](template-driven-connect-proxy.pdf)
 - [unprompted-auth.pdf](unprompted-auth.pdf)

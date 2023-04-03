@@ -12,9 +12,11 @@ Justin: Report from researcher, updating examples with a PR, will drop a note to
 Mark: From my standpoint, what I want to see is the PRs and have people look at them, new draft that sits for a few days to see if people are happy, but we won't have a formal WGLC or IETF LC, unless we or the AD change the requirement.
 
 Julian Reschke: Mostly agree with that. Bit concerned with statement that it is not a normative change. (This was about https://github.com/httpwg/http-extensions/issues/2417)
+
 Justin: Not what I said, it is a normative change.
 
 Tommy: It's a normative change, but not an implementation breaking change 
+
 Justin: Somebody will probably have to change the implemenetation. I will.
 
 #### [Cookies](https://datatracker.ietf.org/doc/draft-ietf-httpbis-rfc6265bis) - Steven Bingler - [slides](cookies.pdf)
@@ -43,6 +45,7 @@ Open issues:
 Tommy: Wrote PRs for these issues right before, so please go look at those PRs. Will revise the document to include those changes. Would love to hear from Ben (if online) about proposed change.
 
 Ben Schwartz: That seems like a fine resolution to me. I think this draft is in good shape. I'm sending a new issue right now because I think the escaping rules are not totally right, but should be fine.
+
 Tommy: Thanks, that's the kind of review we want.
 
 Alessandro Ghedini: We've implemented it, and after the current issues are fixed, it's probably ready to go to next phase.
@@ -50,23 +53,37 @@ Alessandro Ghedini: We've implemented it, and after the current issues are fixed
 Tommy: Thank you. Want individual implemeters of this, so we've tested it.
 
 Lucas Pardue: Had a quick review before the session, you mentioned that you can skip putting in the full chain if you can't get it. Is that generally applicable? Are there other reasons you might not put in the full chain?
+
 Tommy: Good point, we could go as far as saying you SHOULD include the full chain if you can get it, the reason you wouldn't fulfill that SHOULD is if you cannot get it for some reason. Can't see why you would omit things from this, that's just hostile to the client and at that point you wouldn't include that option at all. 
+
 Lucas: If you were to start dropping things, could you still achieve the same goals as what you're trying to do?
+
 Tommy: Any hint you can give to the client is helpful. 
 
 Chris Wood: How do you deal with CNAME cloaking right now if you are not going through a proxy? 
+
 Tommy: Libraries are able to do DNS on the client and look at the full CNAME chain.
+
 Chris: Clients will do DNS and inspect it and do the evaluation based on that?
+
 Tommy: Right, so in the process of loading a page, when we do DNS we will get the whole chain and if any of those names match a list we can send it through a relay or apply cookie policy, etc.
+
 Chris: If DNS resolution is subverted and there are items in that chain that don't match the list or that make it otherwise inaccurate, that's still an issue?
+
 Tommy: Right, there are definitely cases where attempts can be made to get around it. Goal when going through the proxy is to see the full chain and the IP address so that you can see the full set of information. 
+
 Chris: Took a quick look at the security considerations. Might need to say what could 
+
 Tommy: Correct, it's also the DNS that the proxy is doing, would make sense to document that. Could you file an issue?
+
 Chris: Sure
 
 Mark Nottingham: Have you considered using an inner-list instead of a comma separated string?
+
 Tommy: I think so.
+
 Mark: That would mean doing less parsing
+
 Tommy: I think we looked and couldn't do it, but let's double check
 
 Mark: Sounds like we should be able to do WGLC before the next meeting.
@@ -74,6 +91,7 @@ Mark: Sounds like we should be able to do WGLC before the next meeting.
 #### [Unprompted Authentication](https://datatracker.ietf.org/doc/draft-ietf-httpbis-unprompted-auth) - David Schinazi - [slides](unprompted-auth.pdf)
 
 David: Happy to do this talk in room 401. 
+
 _General eye roll, mild amusement, and slow claps_
 
 David: Adopted in the WG last month. Core idea: use TLS key exporter as a nonce. Gives property that don't need to ask server for the nonce.
@@ -82,67 +100,101 @@ Since last IETF: Shape of the header. Ben Schwartz pointed out why we can't use 
 
 [Issue #2240](https://github.com/httpwg/http-extensions/issues/2240)
 Put new ID in first draft, but not well received, so reuse TLS registry for signature schemes and hash algorithms. 
+
 Maybe should define a new IANA registry, since it's cheap. Seeing one thumbs up.
 
 Jonathan Hoyland: I think we should bite the bullet and create a new registry
+
 Sean Turner: We've got like three hash function registries already. Can't you take one over, add a column, and call it quits. See RFC 8122, there are other ones as well, will send you a link.
+
 David: Under HTTP or TLS? 
+
 Sean: Standalone. I'll send you a link.
 
 Ben Schwartz: If this is being reopened, I want to support using string values instead of trying to create numeric values
+
 David: Okay, thanks.
 
 Martin Thomson: What did we do in Justin's signature draft? There are 2 things: the hash map version of this. 
 
 Maybe you want a generic MAC algorithm in the registry, which gets in the way of what Sean said, although I liked that idea. What if there's another algorithm that you want to use. If JSON's got a signature registry that is very good and well-specified, then why make a new one.
+
 David: On signatures, we were fine, but for hash, we weren't.
 
 Martin: Can you put "none" in there as well? What happens if you have an "s" and "h" in here? 
+
 David: If you put them together in the same registry, you can get rid of Signature and HMAC and just have one new thing, which is cleaner.
 
 Justin Richer: The registry that just got brought up for HTTP message signatures, is well specified, but is very specific. Does have both signatures and key-based MAC type stuff in it. One of the benefits of this, based on input from CFRG, is that the algorithms need to be fully specified with all parameters specified. All the math needs to line up for this to show up in the registry. We also didn't use the JWA registry. Lots of reasons why we didn't. Main one is that the algorithms were designed for a specific other context and that may not apply here.
+
 If you want to use the JWA algorithm, here's how to map them to what we need on the HTTP side. Functional mapping of these inputs and outputs and how you plug them together. Registry exists but deliberate choice. Haven't read this draft, so 
+
 David: Thank you, would be happy to chat.
+
 Justin: One last point, if you do go down the road of defining something, there is an IANA registry for hash algorithms, which is buried and which I discovered independently for a different draft. It says SHA-256 means this very specific thing in this section of this RFC.
 
 Alex Chernyakhovsky: I understand why assymetric key signatures. I'm confused why there's a HMAC. Wondering if there is a specific use-case or can we kill the feature and simplify our problem?
+
 David: Feedback from Ben S. asking why we don't add HMAC, someone might need it.
+
 Alex: I think that's a terrible idea. I think we should not be exposing HMAC for this. 
+
 David: Not unreasonable, if you have a shared key you could pass it in regular basic auth.
+
 Alex: Don't see benefit of shared secret.
+
 Ben Schwartz: I don't have any objection to that, the point I was trying to make was moot because we have a system where Unprompted-Auth can take arbitrary auth schemes. 
+
 Alex: Would it be okay as a compromise for now to say that we don't do it now and someone can specify it in the future? 
+
 David: Totally fine with that. Does anyone think that's a bad idea?
 At this point, should use the TLS 1 that's not orphaned.
+
 Martin: Signature algorithms that were deprecated, signature schemes that you want
+
 Alessandro: Solution is use signature that, so if someone uses HMAC, they define a new registry.
+
 David: Or they write a new draft to pull this all in
 
 David: Everyone okay with dropping the hash, and using the TLS signature scheme? I'm getting thumbs up.
 
 [Issue #2432](https://github.com/httpwg/http-extensions/issues/2432)
+
 David: Just focus on using an authentication scheme. Seeing some thumbs up.
+
 Mark Nottingham: Use of tools is a framework. Up to scheme designer, to define how you're using them. Are there user-agents out there when they see a 401 with a scheme that they don't recognize, do they do something bad. 
+
 David: In this case, we would never send a 401 here, since if you don't have it then we send a 404 because we "totally don't know what you're talking about"
+
 Mark: Then it's probably fine. Don't see concern from HTTP standpoint?
 
 Tommy: This is more of a question to the room. We have Authorization and we have Proxy-Authorization. Imagine sometimes you might want to do it to a proxy. 
+
 David: That's an argument to use the for reusing both of those others.
+
 Tommy: In that case, should we call out that you can use it in both of those. 
+
 David: I think it's mainly that the proxy one is hop-by-hop?
+
 Tommy: Can we avoid wading into that by saying here are the existing ones.
 
 Ben: If we go to use the authorization header, want clear text that by prior arrangement that clients are allowed to use any scheme in unprompted fashion. Don't want to say we're defining 2 new special schemes without using prior arrangements.
+
 David: I see what you're getting at, but no, there are some auth schemes that you wouldn't want to be able to use unprompted that have multiple back-and-forth legs. Happy to take an action item to take a 
+
 Ben: If we have a separate header, it's clearly okay for this document to say that it is permitted to use this header with any auth scheme that is technically feasible. 
+
 David: I'll double check that there's no text we're banning unprompted for basic and digest, and if they are banned, that puts 
 If it's already okay to send digest unprompted with Authorization, then I think that is fine, but I don't think this document should add it for those things. 
+
 Ben: If we're not doing a new header, then I think we've got a whole different document.
 
 Martin Thomson: I think the direction to move to Authorization and Proxy-Authorization is a good one and you should do that. You should very much name the draft the way that Ben suggests, that's what it is: it's channel-bound signature authentication, maybe keep unprompted in the title. To say anything about how 401 works would be an update to 9110, but that's unnecessary because that document says what it needs to say. The idea that you can take a 401 from some other context and put it somewhere else, that's fine but people can do that without help from us and you've already got a broad scope in this document.
+
 David: Makes sense. Thanks.
 
 Jonathan: Mentioned that this is channel-bound. Not sure how proxy authentication would be checked if you are doing channel-bound auth because proxy doesn't have the correct key. The server doesn't have the right key
+
 David: There is a section in the doc about that.
 
 Mike Bishop: +1 Martin, this does not need to update 9110, the text that you need is already there, quote that and observe that authentication can be sent without a 401 and that that is this case.
@@ -150,18 +202,27 @@ Mike Bishop: +1 Martin, this does not need to update 9110, the text that you nee
 [Issue #2428](https://github.com/httpwg/http-extensions/issues/2428), [Issue #2429](https://github.com/httpwg/http-extensions/issues/2429)
 
 David: Draft is empty for this right now. Don't love adding a full URL to the context. Wouldn't get header compressed anymore.
+
 Proposal is to add signature/hash algorithm, key identifier, and origin, but not URL.
 
 Alex Chernyakhovsky: One of the problems that we had with exporters is that it deals with the connection and not the stream. I'm not sure we want everyone to all get the same keying material. Why not include stream ID? 
+
 David: That's exactly what this is about. Stream ID at the HTTP layer is gross. I don't see value in that separation, doing it by origin gives you a nice security model. Doing path or stream ID is effectively the same.
+
 Alex: Nervous about that, feels weird that you could have system proxy i.e. Envoy that multiplexes a bunch of different clients that would have been different connections under H1, now they would all get the same identifier for the same origin. I really don't like that.
+
 David: Sure, so you don't like it, but what's the impact?
+
 Alex: Problem that would have different identifiers under different
+
 MT: Wanted to respond to Alex. Nice idea, but impossible because we construct requests without knowing what the stream ID is.
 
 Chris Wood: What are the ideal security properties for this thing, has analysis been done to demostrate that what is in the draft satisfies those properties.
+
 David: Main use case is for MASQUE. In terms of the security analysis, can you help me with the analysis?
+
 Chris: I was going to ask Jonathan to help
+
 Jonathan: This is the plan
 
 Kazuho Oku: Now that we are moving to using the Authorization header, would it make sense to use Realm (already defined for Basic) instead of the URL? If we don't, then the scope of the header becomes different than the Authorization header.
@@ -240,13 +301,11 @@ Martin Thomson: I'm only talking about action you take when you see new header f
 
 David Benjamin: what we decide for stickiness for this thing will impact our options.
 
-
 Eric Orth: having trouble imaging a case where client wants to downgrade from ECH. Draft should say the client should not be asked to downgrade.
 
 Eric Kinnear: always a chance that you can't get to where the server asks you to go. Not worth putting a ton of energy into defining policy because client may not be able to reach alternative for other reasons.
 
 Tommy Pauly: If we're in this edge case where all alternatives have nice properties from original. Original may end up dropping capability (e.g. ECH). May want to include suggestion to query for original name to see if the property has dissappeared everywhere.
-
 
 **Stickines on Return Visits**
 
@@ -352,3 +411,4 @@ Kazuho Oku: seems like the use case that there could be multiple connect endpoin
 Benjamin Schwartz: extended connect capable CDN that's forwarding request to origin. Masque able to routed through CDN this way, but we don't have an equivalent for tcp.
 
 #### [HTTP Availability Hints](https://www.ietf.org/archive/id/draft-nottingham-http-availability-hints-00.html) - Mark Nottingham
+

@@ -17,7 +17,7 @@ Justin: Not what I said, it is a normative change.
 
 Tommy: It's a normative change, but not an implementation breaking change 
 
-Justin: Somebody will probably have to change the implemenetation. I will.
+Justin: Somebody will probably have to change the implementation. I will.
 
 #### [Cookies](https://datatracker.ietf.org/doc/draft-ietf-httpbis-rfc6265bis) - Steven Bingler - [slides](cookies.pdf)
 
@@ -50,11 +50,11 @@ Tommy: Thanks, that's the kind of review we want.
 
 Alessandro Ghedini: We've implemented it, and after the current issues are fixed, it's probably ready to go to next phase.
 
-Tommy: Thank you. Want individual implemeters of this, so we've tested it.
+Tommy: Thank you. Want individual implementers of this, so we've tested it.
 
 Lucas Pardue: Had a quick review before the session, you mentioned that you can skip putting in the full chain if you can't get it. Is that generally applicable? Are there other reasons you might not put in the full chain?
 
-Tommy: Good point, we could go as far as saying you SHOULD include the full chain if you can get it, the reason you wouldn't fulfill that SHOULD is if you cannot get it for some reason. Can't see why you would omit things from this, that's just hostile to the client and at that point you wouldn't include that option at all. 
+Tommy: Good point, we could go as far as saying you SHOULD include the full chain if you can get it, the reason you wouldn't fulfil that SHOULD is if you cannot get it for some reason. Can't see why you would omit things from this, that's just hostile to the client and at that point you wouldn't include that option at all. 
 
 Lucas: If you were to start dropping things, could you still achieve the same goals as what you're trying to do?
 
@@ -133,7 +133,7 @@ David: Thank you, would be happy to chat.
 
 Justin: One last point, if you do go down the road of defining something, there is an IANA registry for hash algorithms, which is buried and which I discovered independently for a different draft. It says SHA-256 means this very specific thing in this section of this RFC.
 
-Alex Chernyakhovsky: I understand why assymetric key signatures. I'm confused why there's a HMAC. Wondering if there is a specific use-case or can we kill the feature and simplify our problem?
+Alex Chernyakhovsky: I understand why asymmetric key signatures. I'm confused why there's a HMAC. Wondering if there is a specific use-case or can we kill the feature and simplify our problem?
 
 David: Feedback from Ben S. asking why we don't add HMAC, someone might need it.
 
@@ -217,7 +217,7 @@ Alex: Problem that would have different identifiers under different
 
 MT: Wanted to respond to Alex. Nice idea, but impossible because we construct requests without knowing what the stream ID is.
 
-Chris Wood: What are the ideal security properties for this thing, has analysis been done to demostrate that what is in the draft satisfies those properties.
+Chris Wood: What are the ideal security properties for this thing, has analysis been done to demonstrate that what is in the draft satisfies those properties.
 
 David: Main use case is for MASQUE. In terms of the security analysis, can you help me with the analysis?
 
@@ -229,7 +229,7 @@ Kazuho Oku: Now that we are moving to using the Authorization header, would it m
 
 [Issue #2439](https://github.com/httpwg/http-extensions/issues/2439)
 
-David: Currently use the nonce. Repsonse that reusing the nonce is terrible idea, but inclined to keep it, so if you have an issue with that please respond on the thread.
+David: Currently use the nonce. Response that reusing the nonce is terrible idea, but inclined to keep it, so if you have an issue with that please respond on the thread.
 
 
 ## Friday, 31 March 2023
@@ -305,7 +305,7 @@ Eric Orth: having trouble imaging a case where client wants to downgrade from EC
 
 Eric Kinnear: always a chance that you can't get to where the server asks you to go. Not worth putting a ton of energy into defining policy because client may not be able to reach alternative for other reasons.
 
-Tommy Pauly: If we're in this edge case where all alternatives have nice properties from original. Original may end up dropping capability (e.g. ECH). May want to include suggestion to query for original name to see if the property has dissappeared everywhere.
+Tommy Pauly: If we're in this edge case where all alternatives have nice properties from original. Original may end up dropping capability (e.g. ECH). May want to include suggestion to query for original name to see if the property has disappeared everywhere.
 
 **Stickines on Return Visits**
 
@@ -339,7 +339,7 @@ Eric Orth: I like a lot of this draft, but hearing from implementors that this i
 
 Lucas Pardue: Of the possible options here, I think we just change 7838bis draft.
 
-Eric Kinnear: Second what lucas said. 
+Eric Kinnear: Second what Lucas said. 
 
 Eric Rosenberg: Eager to implement this.
 
@@ -358,7 +358,7 @@ Tommy Pauly: Support implementing this on client side.
 
 Martin Thomson: you've been given url that points at this name. Multiple HTTP version are available and only some have the desired capability.
 
-Lucas Pardue: h1 different from h2 and h3 because of multiplexing and takover of connection.
+Lucas Pardue: h1 different from h2 and h3 because of multiplexing and takeover of connection.
 
 Tommy Pauly: we would be losing a round trip because we need to see that CONNECT request fails. Is the round trip justified here?
 

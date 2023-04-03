@@ -1,11 +1,35 @@
 # HTTP Working Group Minutes - IETF 116
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Tuesday, 28 March 2023](#tuesday-28-march-2023)
+  - [Active Drafts](#active-drafts)
+    - [Message Signatures](#message-signatures)
+    - [Cookies](#cookies)
+    - [DNS Aliases Proxy-Status](#dns-aliases-proxy-status)
+    - [Unprompted Authentication](#unprompted-authentication)
+- [Friday, 31 March 2023](#friday-31-march-2023)
+  - [Active Drafts](#active-drafts-1)
+    - [Resumable Uploads](#resumable-uploads)
+    - [Structured Field Values Bis](#structured-field-values-bis)
+    - [Retrofit Structured Fields](#retrofit-structured-fields)
+    - [Alternative Services](#alternative-services)
+  - [Other Topics](#other-topics)
+    - [H2/H3 WebSockets discovery and detection](#h2h3-websockets-discovery-and-detection)
+    - [Template-Driven HTTP CONNECT Proxying for TCP](#template-driven-http-connect-proxying-for-tcp)
+    - [HTTP Availability Hints](#http-availability-hints)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+      
 
 ## Tuesday, 28 March 2023
 
 ### Active Drafts
 
-#### [Message Signatures](https://datatracker.ietf.org/doc/draft-ietf-httpbis-message-signatures/) - Justin Richer - _(no slides)_
+#### [Message Signatures](https://datatracker.ietf.org/doc/draft-ietf-httpbis-message-signatures/) 
+
+Justin Richer - _(no slides)_
 
 Justin: Report from researcher, updating examples with a PR, will drop a note to the list when the PR is ready. Couple of places where we need to be more specific about which octets to use. Needs normative changes, but more clarification of intent. Don't think a new WGLC is needed, but chairs will determine that.
 
@@ -19,7 +43,9 @@ Tommy: It's a normative change, but not an implementation breaking change
 
 Justin: Somebody will probably have to change the implementation. I will.
 
-#### [Cookies](https://datatracker.ietf.org/doc/draft-ietf-httpbis-rfc6265bis) - Steven Bingler - [slides](cookies.pdf)
+#### [Cookies](https://datatracker.ietf.org/doc/draft-ietf-httpbis-rfc6265bis) 
+
+Steven Bingler - [slides](cookies.pdf)
 
 Same-site cookies and redirects [#2104](https://github.com/httpwg/http-extensions/issues/2104)
 
@@ -34,7 +60,9 @@ Steven: Ready for last call once issues are closed
 What's next? CHIPS, Cookie Spec Layering - Want to untangle the mess from other specs.
 
 
-#### [DNS Aliases Proxy-Status](https://datatracker.ietf.org/doc/draft-ietf-httpbis-alias-proxy-status) - Tommy Pauly - [slides](alias-proxy-status.pdf)
+#### [DNS Aliases Proxy-Status](https://datatracker.ietf.org/doc/draft-ietf-httpbis-alias-proxy-status)
+
+Tommy Pauly - [slides](alias-proxy-status.pdf)
 
 Tommy: Small draft for adding a proxy status parameter. Proxy status = header we already have i.e. how things are going. Would like to know the full CNAME chain, especially where servers may be doing CNAME cloaking to obfuscate that they're redirecting you to a known tracker or a server for which you would like to apply a specific policy.
 
@@ -88,7 +116,9 @@ Tommy: I think we looked and couldn't do it, but let's double check
 
 Mark: Sounds like we should be able to do WGLC before the next meeting.
 
-#### [Unprompted Authentication](https://datatracker.ietf.org/doc/draft-ietf-httpbis-unprompted-auth) - David Schinazi - [slides](unprompted-auth.pdf)
+#### [Unprompted Authentication](https://datatracker.ietf.org/doc/draft-ietf-httpbis-unprompted-auth)
+
+David Schinazi - [slides](unprompted-auth.pdf)
 
 David: Happy to do this talk in room 401. 
 
@@ -236,7 +266,9 @@ David: Currently use the nonce. Response that reusing the nonce is terrible idea
 
 ### Active Drafts
 
-#### [Resumable Uploads](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload) - [slides](resumable-uploads.pdf)
+#### [Resumable Uploads](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload) 
+
+[slides](resumable-uploads.pdf)
 
 Marius Kleidl: if client receives 5xx and doesn't indicate upload complete, may be intermediate proxy - should be retried. 
 
@@ -245,7 +277,9 @@ Martin Thomson: having indicator from proxy would be unusual. In case where you 
 Kazuho Oku: generally good idea to provide response. Probably more sense to put in the body. Probably add section that response has to come from server..
 
 
-#### [Structured Field Values Bis](https://datatracker.ietf.org/doc/draft-ietf-httpbis-sfbis) - Mark Nottingham
+#### [Structured Field Values Bis](https://datatracker.ietf.org/doc/draft-ietf-httpbis-sfbis)
+
+Mark Nottingham
 
 Martin Dürst: There are few HTTP header fields where there is a need to have non-ascii characters. HTTP header from start were defined as latin 1. Dissappointed that when discussed on the list, editor said they have problems with their email and non-ascii characters - they should update their software. Other editor said we shouldn't use non-ascii when not necessary. 
 
@@ -267,7 +301,9 @@ Julian Reschke: Want to reiterate that we found that the extensibility model of 
 Tommy Pauly: What I'm hearing is: lets do the last call and in parallel kick off proper technical discussion.
 
 
-#### [Retrofit Structured Fields](https://datatracker.ietf.org/doc/draft-ietf-httpbis-retrofit) - Mark Nottingham
+#### [Retrofit Structured Fields](https://datatracker.ietf.org/doc/draft-ietf-httpbis-retrofit)
+
+Mark Nottingham
 
 Mike Bishop: My inclination would be that if it's going to be fairly complex to do it and know that we're right, we're too late in the process to do that. May be worth doing as a separate draft. Don't want to hold this one up.
 
@@ -352,7 +388,9 @@ Tommy Pauly: Support implementing this on client side.
 
 ### Other Topics
 
-#### H2/H3 WebSockets discovery and detection - Lucas Pardue [slides](https://datatracker.ietf.org/meeting/116/materials/slides-116-httpbis-discovering-websockets-over-h2-and-h3)
+#### H2/H3 WebSockets discovery and detection
+
+Lucas Pardue [slides](https://datatracker.ietf.org/meeting/116/materials/slides-116-httpbis-discovering-websockets-over-h2-and-h3)
 [draft-momoka-httpbis-settings-enable-websockets](https://datatracker.ietf.org/doc/draft-momoka-httpbis-settings-enable-websockets/)
 [draft-damjanovic-websockets-https-rr](https://datatracker.ietf.org/doc/html/draft-damjanovic-websockets-https-rr-01)
 
@@ -388,7 +426,9 @@ David Benjamin: Agree with Ben overall, we should get out of heterogenous situat
 
 Mark Nottingham: getting feeling that this is in scope for group. Let's take it to the list. Maybe we can form a design team.
 
-#### [Template-Driven HTTP CONNECT Proxying for TCP](https://www.ietf.org/archive/id/draft-schwartz-httpbis-connect-tcp-01.html) - Ben Schwartz - [slides](template-driven-connect-proxy.pdf)
+#### [Template-Driven HTTP CONNECT Proxying for TCP](https://www.ietf.org/archive/id/draft-schwartz-httpbis-connect-tcp-01.html)
+
+Ben Schwartz - [slides](template-driven-connect-proxy.pdf)
 
 Mark Nottingham: Do you intend to deprecate original CONNECT mechanism?
 
@@ -410,6 +450,8 @@ Kazuho Oku: seems like the use case that there could be multiple connect endpoin
 
 Benjamin Schwartz: extended connect capable CDN that's forwarding request to origin. Masque able to routed through CDN this way, but we don't have an equivalent for tcp.
 
-#### [HTTP Availability Hints](https://www.ietf.org/archive/id/draft-nottingham-http-availability-hints-00.html) - Mark Nottingham
+#### [HTTP Availability Hints](https://www.ietf.org/archive/id/draft-nottingham-http-availability-hints-00.html)
+
+Mark Nottingham
 
 Take to list (out of time).

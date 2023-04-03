@@ -406,7 +406,7 @@ Bhavana Shankar: How difficult would it be to fold some of these steps into alt-
 
 Lucas Pardue: It's in the upcoming slides
 
-Nidhi Jeju: What if different protocols supported on different paths?
+Nidhi Jaju: What if I have a server that supports different protocols for different paths? The SETTING applies to the whole connection, so you still have a chance it’s not supported when you send the CONNECT request.
 
 Lucas Pardue: good point
 

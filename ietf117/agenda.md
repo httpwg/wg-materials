@@ -43,3 +43,6 @@ _17:00-18:00 Session IV - Continental 5_
 ### Other Topics
 
 *  10 min - [HTTP Availability Hints](https://datatracker.ietf.org/doc/draft-nottingham-http-availability-hints/) - Mark Nottingham
+*  10 min - [HTTP Cache Groups](https://datatracker.ietf.org/doc/draft-nottingham-http-cache-groups/) - Mark Nottingham
+*  10 min - [An HTTP Cache Invalidation API](https://datatracker.ietf.org/doc/draft-nottingham-http-invalidation/) - Mark Nottingham
+

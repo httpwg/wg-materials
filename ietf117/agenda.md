@@ -29,6 +29,10 @@ _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 * 10 min - [Retrofit Structured Fields](https://datatracker.ietf.org/doc/draft-ietf-httpbis-retrofit)
 * 20 min - [QUERY Method](https://datatracker.ietf.org/doc/draft-ietf-httpbis-safe-method-w-body)
 
+### Other Topics
+
+* 15 min - WebSockets Design Team Report
+
 
 ## Thursday, 27 July 2023
 

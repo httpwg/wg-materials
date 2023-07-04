@@ -47,6 +47,7 @@ _17:00-18:00 Session IV - Continental 5_
 ### Other Topics
 
 *  15 min - [Secondary Certificate Authentication of HTTP Servers ](https://datatracker.ietf.org/doc/draft-egorbaty-httpbis-secondary-server-certs/)
+*  15 min - [Compression Dictionary Transport](https://datatracker.ietf.org/doc/draft-meenan-httpbis-compression-dictionary/)
 *  10 min - [HTTP Availability Hints](https://datatracker.ietf.org/doc/draft-nottingham-http-availability-hints/) - Mark Nottingham
 *  5 min - [HTTP Cache Groups](https://datatracker.ietf.org/doc/draft-nottingham-http-cache-groups/) - Mark Nottingham
 *  5 min - [An HTTP Cache Invalidation API](https://datatracker.ietf.org/doc/draft-nottingham-http-invalidation/) - Mark Nottingham

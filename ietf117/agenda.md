@@ -21,11 +21,11 @@ _9:30-11:30 Session I - Continental 6_
 
 _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
-* 20 min - [Resumable Uploads](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload) - [slides](resumable-uploads.pdf)
-* 10 min - [Templated Connect-TCP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-connect-tcp)
-* 20 min - [Unprompted Authentication](https://datatracker.ietf.org/doc/draft-ietf-httpbis-unprompted-auth)
-* 10 min - [Structured Field Values Bis](https://datatracker.ietf.org/doc/draft-ietf-httpbis-sfbis)
-* 10 min - [Retrofit Structured Fields](https://datatracker.ietf.org/doc/draft-ietf-httpbis-retrofit)
+* 20 min - [Resumable Uploads](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload) - Jonathan Flat (on behalf of Guoye) - [slides](resumable-uploads.pdf) 
+* 10 min - [Templated Connect-TCP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-connect-tcp) - Ben Schwartz - [slides](templated-proxies.pdf)
+* 20 min - [Unprompted Authentication](https://datatracker.ietf.org/doc/draft-ietf-httpbis-unprompted-auth) - David Schinazi - [slides](unprompted-authentication.pdf)
+* 10 min - [Structured Field Values Bis](https://datatracker.ietf.org/doc/draft-ietf-httpbis-sfbis) - Mark Nottingham
+* 10 min - [Retrofit Structured Fields](https://datatracker.ietf.org/doc/draft-ietf-httpbis-retrofit) - Mark Nottingham
 * 15 min - [QUERY Method](https://datatracker.ietf.org/doc/draft-ietf-httpbis-safe-method-w-body)
 
 ### Other Topics
@@ -46,7 +46,7 @@ _17:00-18:00 Session IV - Continental 5_
 
 ### Other Topics
 
-*  15 min - [Secondary Certificate Authentication of HTTP Servers ](https://datatracker.ietf.org/doc/draft-egorbaty-httpbis-secondary-server-certs/)
+*  15 min - [Secondary Certificate Authentication of HTTP Servers ](https://datatracker.ietf.org/doc/draft-egorbaty-httpbis-secondary-server-certs/) - Eric Gorbaty
 *  15 min - [Compression Dictionary Transport](https://datatracker.ietf.org/doc/draft-meenan-httpbis-compression-dictionary/)
 *  10 min - [HTTP Availability Hints](https://datatracker.ietf.org/doc/draft-nottingham-http-availability-hints/) - Mark Nottingham
 *  5 min - [HTTP Cache Groups](https://datatracker.ietf.org/doc/draft-nottingham-http-cache-groups/) - Mark Nottingham

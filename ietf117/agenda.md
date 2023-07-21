@@ -36,7 +36,7 @@ _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
 ## Thursday, 27 July 2023
 
-_17:00-18:00 Session IV - Continental 5_
+_17:00-18:00 Session IV - Continental 4_
 
 ### Administrivia
 

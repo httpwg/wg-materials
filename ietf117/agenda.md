@@ -21,7 +21,7 @@ _9:30-11:30 Session I - Continental 6_
 
 _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
-* 20 min - [Resumable Uploads](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload)
+* 20 min - [Resumable Uploads](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload) - [slides](resumable-uploads.pdf)
 * 10 min - [Templated Connect-TCP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-connect-tcp)
 * 20 min - [Unprompted Authentication](https://datatracker.ietf.org/doc/draft-ietf-httpbis-unprompted-auth)
 * 10 min - [Structured Field Values Bis](https://datatracker.ietf.org/doc/draft-ietf-httpbis-sfbis)

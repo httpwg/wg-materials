@@ -30,8 +30,8 @@ _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
 ### Other Topics
 
-* 5 min - Alt-Svc update
-* 15 min - WebSockets Design Team Report
+* 5 min - Alt-Svc update - Mike Bishop
+* 15 min - WebSockets Design Team Report - Lucas Pardue
 
 
 ## Thursday, 27 July 2023

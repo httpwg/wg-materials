@@ -32,6 +32,7 @@ _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
 * 5 min - Alt-Svc update - Mike Bishop
 * 15 min - WebSockets Design Team Report - Lucas Pardue
+* 10 min - Request OTR - Shivan Sahib - [slides](request-otr.pdf)
 
 
 ## Thursday, 27 July 2023

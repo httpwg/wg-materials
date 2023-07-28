@@ -16,7 +16,6 @@
   - [Unprompted Authentication - David Schinazi](#unprompted-authentication---david-schinazi)
   - [Structured Field Values Bis - Mark Nottingham](#structured-field-values-bis---mark-nottingham)
   - [QUERY Method](#query-method)
-- [Other Topics](#other-topics)
   - [Alt-Svc update - Mike Bishop](#alt-svc-update---mike-bishop)
   - [WebSockets Design Team Report - Lucas Pardue](#websockets-design-team-report---lucas-pardue)
 - [Thursday, 27 July 2023](#thursday-27-july-2023)
@@ -230,9 +229,6 @@ MT: To make it interoperable yeah.
 
 JR: no progress, but likely progress before IETF 118.
 
-
-## Other Topics
----
 
 ### Alt-Svc update - Mike Bishop
 

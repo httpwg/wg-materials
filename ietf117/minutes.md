@@ -1,5 +1,35 @@
 # HTTP Working Group Minutes - IETF 117
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Wednesday, 26 July 2023](#wednesday-26-july-2023)
+  - [Chair Slides & Agenda Bashing](#chair-slides--agenda-bashing)
+  - [Resumable Uploads - Jonathan Flat (JF) (on behalf of Guoye)](#resumable-uploads---jonathan-flat-jf-on-behalf-of-guoye)
+    - [Upload Complete](#upload-complete)
+    - [Header versioning](#header-versioning)
+    - [Byte Range Patch](#byte-range-patch)
+    - [Upload Progress](#upload-progress)
+    - [Fetch API proposal from WHATWG](#fetch-api-proposal-from-whatwg)
+    - [Other Open Issues](#other-open-issues)
+  - [Templated Connect-TCP - Ben Schwartz (BS)](#templated-connect-tcp---ben-schwartz-bs)
+  - [Unprompted Authentication - David Schinazi](#unprompted-authentication---david-schinazi)
+  - [Structured Field Values Bis - Mark Nottingham](#structured-field-values-bis---mark-nottingham)
+  - [QUERY Method](#query-method)
+- [Other Topics](#other-topics)
+  - [Alt-Svc update - Mike Bishop](#alt-svc-update---mike-bishop)
+  - [WebSockets Design Team Report - Lucas Pardue](#websockets-design-team-report---lucas-pardue)
+- [Thursday, 27 July 2023](#thursday-27-july-2023)
+  - [Chair Slides & Agenda Bashing](#chair-slides--agenda-bashing-1)
+  - [Secondary Certificate Authentication of HTTP Servers - Eric Gorbaty](#secondary-certificate-authentication-of-http-servers---eric-gorbaty)
+  - [Compression Dictionary Transport - Patrick Meenan](#compression-dictionary-transport---patrick-meenan)
+  - [HTTP Availability Hints - Mark Nottingham](#http-availability-hints---mark-nottingham)
+  - [HTTP Cache Groups / An HTTP Cache Invalidation API - Mark Nottingham](#http-cache-groups--an-http-cache-invalidation-api---mark-nottingham)
+  - [Request-OTR Header - Shivan Sahib](#request-otr-header---shivan-sahib)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+
 ## Wednesday, 26 July 2023
 
 

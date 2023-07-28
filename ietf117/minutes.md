@@ -194,8 +194,6 @@ DJ: "free"
 
 MT: The default is pick up a library to do something that's 2 lines of code. I don't want a dependency on the 3986 spec. Just pick uppercase or lowercase. Just go with it that way. 
 
-mnot: Did I hear you volunteer to revise the ROI spec in the middle of that?
-
 Chris Lemmons (CL): People are gonna use existing libraries. Asking for an extra call to lowercase or uppercase at the end. [???]
 
 KO: This isn't a critical concern. 
@@ -209,7 +207,6 @@ MT: I suggested language - cite RFC 4648 and in there it's upper case. Someone e
 JR - I still don't get why we have a problem with Authentication. The only thing we can say that will always work is this is a string. There's no extension point there. It's fixed.
 
 mnot: I know you believe that tokens are strings are interchangeable in HTTP. I'm not convinced that people and use paramaters understand that. 
-Some of the lock in and say this has to be one or the other.
 
 TP - We had this issue in PrivacyPass, and we had to go through all implementations and check they supported both.
 
@@ -221,7 +218,7 @@ MT: If fallbacks exist then we don't have a requirement to curtail. Otherwise it
 
 mnot: So we don't need a hard requirement.
 
-mnot: We have folks stuffing binary stuff in there so ...
+mnot: We have folks stuffing binary stuff in there, which isn't great.
 
 MT: I don't know how someone presented with a string can decide if it's bytes or strings.
 
@@ -270,7 +267,7 @@ LP: For me point 2 is answered. A second design team wouldn't be able to do bett
 
 ### Chair Slides & Agenda Bashing
 
-Chairs - Mark Nottingham (mnot) and Tommy Pauly (TP)
+Chairs - Mark Nottingham (mnot/MN) and Tommy Pauly (TP)
 
 Notetakers - Ankshit Jain, Travis Langston
 
@@ -328,7 +325,7 @@ LP: Following the work before, separation of what to include in the group and wh
 
 PM: Few items are browser specific, didn't feel appropriate to include in here.
 
-MN: Seems like found a way to unblock concerns. 
+MN: Seems like you found a way to unblock concerns. 
 
 PM: Privacy and security reviews haven't crapped on it yet, a first. Pattern matching - have seen cases where version of resources are in middle of path, main dots at end, so needed at least a wildcard in the middle.
 
@@ -344,7 +341,7 @@ Chris Lemmons (CL): Important and good to solve. Solutions seems marginally bett
 
 Mike Bishop (MB): Same opinion as CL. 
 
-MN: Feeling isn't different from those expressed. Wants to try, not confident it'll turn out great.
+MN: I agree with the uncertainty expressed. I'd like to try, but not yet confident it'll turn out great.
 
 Chairs: Take it to list. Show of hands - 20 in favor, 1 not in favor
 
@@ -358,17 +355,17 @@ MN: Cache, not a client.
 
 MT: Lot of caches here, didn't hear much from them, or from client side caching. 
 
-MN: Not 2 swings and misses, more like took 2 swings and learned. 
+MN: Not 2 swings and misses, more like took 2 swings and lessons learned. 
 
 MT: Want more enthusiasm, that's all.
 
 TP: Asking for implementation support, anyone interested in experimenting. 3 people in the group are interested.
 
-MN: Cloudflare cache team is interested in the implementation. Most optimistic thing is this is in same state that early hints was in when Kazuho first talked about it. 
+MN: I've talked to the Cloudflare cache team and they are interested, but not committed to implementation. Most optimistic way to see this is as in the same state that early hints was in when Kazuho first talked about it. 
 
 ### HTTP Cache Groups / An HTTP Cache Invalidation API - Mark Nottingham
 
-MN: Presenting. Looking for adoption. Have talked to number of CDN teams, they are interested. CMS are very interested, but not sure if CDN will support. 
+MN: Presenting. Looking for adoption. Have talked to number of CDN teams, they are interested. CMS are interested, but not sure if CDN will support. 
 
 LP: Clarify the proposals. Is this not 2 different things?
 
@@ -386,9 +383,9 @@ Rich Salz (RS): Interesting. 2 - is most interesting (invalidation API), can ada
 
 MB: Echo it sounds interesting, will probably need customers to ask for this before implementation happens. Sees last one as config file telling you where to find common elements you expect from each CDN, the more common CDN things that have already been defined, the more valuable it is. 
 
-MN: Agrees, other purpose of config file is that they can differ across CDNs. Asking for Fastly folks for feedback. 
+MN: Agrees, other purpose of config file is that they can differ across CDNs. 
 
-Piotr Sikora (PS): Cache tax thing is fine, interesting, should be adopted. Second and third is almost like out of bound API, not sure if should be in HTTP WG. 
+Piotr Sikora (PS): Cache tags thing is fine, interesting, should be adopted. Second and third is almost like out of bound API, not sure if should be in HTTP WG. 
 
 Erik Nygren (EN): Intriguing. Need customer demand. Mapping concepts on multiple large systems, similar on surface level but details will be very different fundamentally. Complexity will be passed to the edge, could become lot harder than it seems. 
 

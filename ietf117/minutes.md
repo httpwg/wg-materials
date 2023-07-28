@@ -47,7 +47,7 @@ JR - The semantics of HTTP PATCH require us to have a media type, even if it's a
 
 #### Upload Progress
 
-TJ - Active disinterest given the expericeces with incompatibility with 100 responses
+TJ - Active disinterest given the experiences with incompatibility with 100 responses
 
 Hans Jorg Happel - I would generally be in favour of something like that. 
 
@@ -71,7 +71,7 @@ No queue
 
 MT - We're not talking TCP Fast Open 
 
-BS - That's orthoganal
+BS - That's orthogonal
 
 MT - False Start is a bad term pick a new one
 
@@ -83,24 +83,24 @@ KO - What about connection recovery in H/1.1?
 
 BS - Next slide
 
-TP - IN Connct UDP Masque stuff it's talking about the client sending it optimistically, so you can talk about optimistically sending the body data.
+TP - IN Connect-UDP Masque stuff it's talking about the client sending it optimistically, so you can talk about optimistically sending the body data.
 
 BS - I'll update the i-d to match the MASQUE terminology.
 
-MT - This is really bad (false start vs connection recovery) the server doesn't know if the server is waiting or not. When we're talking H/1.1 so the client sends the request to the the server and the server reqects it, but the clietn got positive affirmation before it was rejected.
+MT - This is really bad (false start vs connection recovery) the server doesn't know if the server is waiting or not. When we're talking H/1.1 so the client sends the request to the the server and the server rejects it, but the client got positive affirmation before it was rejected.
 Not good to just [not do this] because then you don't get to do the optimistic sending.
-If this is the way people expect H11 to work then 9298 hos a bug. Probably shoudl'n thave allowed optimistic sending.
+If this is the way people expect H11 to work then 9298 hos a bug. Probably shouldn't have allowed optimistic sending.
 
-BS: If you look at the H22 folw here then there is no connect requests and wit han upgrate token that's uncerocgnised then the server is in H11 land whenre it's supposedly allowed to reject the upgrade and keep the socket open.
-We need to be aware of rejest smuggling.
+BS: If you look at the H22 flow here then there is no connect requests and wit han upgrade token that's unrecognized then the server is in H11 land where it's supposedly allowed to reject the upgrade and keep the socket open.
+We need to be aware of request smuggling.
 
-MT: We need to update some RFCs because they contradict each other in awys that cause security problems.
+MT: We need to update some RFCs because they contradict each other in ways that cause security problems.
 
-David Schinazi (DS): Editor of the documemnt. Possible to support datagram capsules. Not aware of anywane using connec UP over H/1 or planning for that, so does this atack matter? This attack where you have capsules that spell HTTP things, clever , but assumes evil clietn. 
+David Schinazi (DS): Editor of the document. Possible to support datagram capsules. Not aware of anyone using connect UDP over H/1 or planning for that, so does this attack matter? This attack where you have capsules that spell HTTP things, clever, but assumes evil client. 
 
 BS: Presumes you have an evil traffic source beding your client.
 
-BS: Capule type 20559 were common then this creates a security issue.
+BS: Capsule type 20559 were common then this creates a security issue.
 
 BS : Prevent capsule type with confusable meanings should be unregisterable. 
 
@@ -108,18 +108,18 @@ DS: Too farfetched for us to worry about.
 
 Lucas Pardue: Job security enthusiast. You haven't caused the problem but you've pulled the covers off something gross, and that's a shame but we need to fix this stuff especially the 1.1. It won't happen but it can.
 
-WL: We had a similar issue with NPT where existed uses squatting over a whole bunch of fielsd that were suppost te dbe gree. It was bad. 
+WL: We had a similar issue with NPT where existed uses squatting over a whole bunch of fields that were suppost to be [???]. It was bad. 
 
-KO: I'd prefer just banning this behavour [...]
+KO: I'd prefer just banning this behavior [...]
 
-Alex Chernyakhovsky (AC) - I think we are crossing the threshould were contiuning to invest in new performance features like this in H1 is a waste of time. Just say H2+ only
+Alex Chernyakhovsky (AC) - I think we are crossing the threshold were continuing to invest in new performance features like this in H1 is a waste of time. Just say H2+ only
 
 BS: Not an optimisation, just correctness. We need to cater to proxies that speak H/1 on the backend.
 
 
 ### Unprompted Authentication - David Schinazi
 
-TP - Authour of PrivacyPass auth scheme - would like to see alignment. We did bas64 in quotes. That's what it had to be because it could start with a number.
+TP - Author of PrivacyPass auth scheme - would like to see alignment. We did bas64 in quotes. That's what it had to be because it could start with a number.
 
 DS - Can the token start with a number
 
@@ -133,7 +133,7 @@ MT - I don't want to talk about it. You fix it. I want to talk about the previou
 
 DS - Those had a layer of complexity that's more than this.
 
-MB - +1 MT. Modulo question of TLS stack support for this. The complexity comes from the certificate request context, which doesn't exist here. The other thing is it has toe represtable as something in TLS.
+MB - +1 MT. Modulo question of TLS stack support for this. The complexity comes from the certificate request context, which doesn't exist here. The other thing is it has to be representable as something in TLS.
 
 NS - Ditto. Is EA. Defineable context isn't necessary. Including the stuff in the exporter makes it implicit. Generally speaking this is effectively the same. 
 
@@ -162,11 +162,11 @@ DJ: "free"
 
 ### Structured Field Values Bis - Mark Nottingham
 
-MT: The deault is pick up a library to do something that's 2 lines of code. I don't want a dependency on the 3986 spec. Just pick uupercase or loweraces. Just go with it that way. 
+MT: The default is pick up a library to do something that's 2 lines of code. I don't want a dependency on the 3986 spec. Just pick uppercase or lowercase. Just go with it that way. 
 
 mnot: Did I hear you volunteer to revise the ROI spec in the middle of that?
 
-Chris Lemmons (CL): People are gonna use existing libraries. Asking for an extra call to Lcase or Ucase at the end. ???
+Chris Lemmons (CL): People are gonna use existing libraries. Asking for an extra call to lowercase or uppercase at the end. [???]
 
 KO: This isn't a critical concern. 
 
@@ -176,18 +176,18 @@ TP - Cost is equivalent to fix in parsing.
 
 MT: I suggested language - cite RFC 4648 and in there it's upper case. Someone else flipped a coin previously, no sense reflipping it. 
 
-JR - I still don't get why we have a problem with Authentictaion. The only thing we can say that will always work is this is a string. There's no extension point there. It's fixed.
+JR - I still don't get why we have a problem with Authentication. The only thing we can say that will always work is this is a string. There's no extension point there. It's fixed.
 
-mnot: I know you believe that tokens are strings are interchangeable in HTTP. I'm not convicende that people and use paramaters understand that. 
+mnot: I know you believe that tokens are strings are interchangeable in HTTP. I'm not convinced that people and use paramaters understand that. 
 Some of the lock in and say this has to be one or the other.
 
 TP - We had this issue in PrivacyPass, and we had to go through all implementations and check they supported both.
 
-MT: JR is saying that the mapping is necessarily complete.  No extension to Authz  ... we'll be sure that it cannot fit within the mapping that exsts. Do we expect to have an espcaep valve whereby you have the non-map version. Availbale in a certain conetit. 
+MT: JR is saying that the mapping is necessarily complete.  No extension to Authz  ... we'll be sure that it cannot fit within the mapping that exists. Do we expect to have an escape valve whereby you have the non-map version. Available in a certain context. 
 
-mnot: The fpilosapy is that yeah, if you use this spec you have to be able to fall back for at thealst the compabible fields.
+mnot: The philosophy is that yeah, if you use this spec you have to be able to fall back for at least the compatible fields.
 
-MT: If fallbacks exist then we don't have a requirement to curtail. Otheriwse it's a bit weird to define a strafromation but then go and apply contraints that the transform is possible. I'd rather avoid. 
+MT: If fallbacks exist then we don't have a requirement to curtail. Otherwise it's a bit weird to define a transformation but then go and apply contraints that the transform is possible. I'd rather avoid. 
 
 mnot: So we don't need a hard requirement.
 
@@ -213,7 +213,7 @@ MB: We would like to see implementation and trying out of what we've written so 
 
 ### WebSockets Design Team Report - Lucas Pardue
 
-KO: In priority 1 do you mean that there is already an existing HTTP connection, or strating from nothing?
+KO: In priority 1 do you mean that there is already an existing HTTP connection, or starting from nothing?
 
 LP: A bit of both. Depending on what the client might already have open.
 

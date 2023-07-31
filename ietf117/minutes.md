@@ -191,6 +191,8 @@ DJ: "free"
 
 ### Structured Field Values Bis - Mark Nottingham
 
+Case Sensitivity of Percent Encoding in [#2575](https://github.com/httpwg/http-extensions/issues/2575)
+
 MT: The default is pick up a library to do something that's 2 lines of code. I don't want a dependency on the 3986 spec. Just pick uppercase or lowercase. Just go with it that way. 
 
 Chris Lemmons (CL): People are gonna use existing libraries. Asking for an extra call to lowercase or uppercase at the end. [???]
@@ -202,6 +204,10 @@ MT: There are perf implications for having to process both upper and normal case
 TP - Cost is equivalent to fix in parsing.
 
 MT: I suggested language - cite RFC 4648 and in there it's upper case. Someone else flipped a coin previously, no sense reflipping it. 
+
+### Retrofit Structured Fields - Mark Nottingham
+
+Extensions to Mapped Fields - [#2521](https://github.com/httpwg/http-extensions/issues/2521)
 
 JR - I still don't get why we have a problem with Authentication. The only thing we can say that will always work is this is a string. There's no extension point there. It's fixed.
 

@@ -205,7 +205,7 @@ MT: I suggested language - cite RFC 4648 and in there it's upper case. Someone e
 
 JR - I still don't get why we have a problem with Authentication. The only thing we can say that will always work is this is a string. There's no extension point there. It's fixed.
 
-mnot: I know you believe that tokens are strings are interchangeable in HTTP. I'm not convinced that people and use paramaters understand that. 
+mnot: I know you believe that tokens and strings are interchangeable in HTTP. I'm not convinced that people and use paramaters understand that. 
 
 TP - We had this issue in PrivacyPass, and we had to go through all implementations and check they supported both.
 

@@ -15,6 +15,7 @@
   - [Templated Connect-TCP - Ben Schwartz (BS)](#templated-connect-tcp---ben-schwartz-bs)
   - [Unprompted Authentication - David Schinazi](#unprompted-authentication---david-schinazi)
   - [Structured Field Values Bis - Mark Nottingham](#structured-field-values-bis---mark-nottingham)
+  - [Retrofit Structured Fields - Mark Nottingham](#retrofit-structured-fields---mark-nottingham)
   - [QUERY Method](#query-method)
   - [Alt-Svc update - Mike Bishop](#alt-svc-update---mike-bishop)
   - [WebSockets Design Team Report - Lucas Pardue](#websockets-design-team-report---lucas-pardue)

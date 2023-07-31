@@ -98,7 +98,7 @@ No queue
 
 ### Templated Connect-TCP - Ben Schwartz (BS)
 
-MT - We're not talking TCP Fast Open 
+Martin Thomson (MT) - We're not talking TCP Fast Open 
 
 BS - That's orthogonal
 

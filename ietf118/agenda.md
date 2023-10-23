@@ -54,4 +54,3 @@ _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 ### Other Topics
 
 *  20 min - [Secondary Certificate Authentication of HTTP Servers ](https://datatracker.ietf.org/doc/draft-egorbaty-httpbis-secondary-server-certs/)
-

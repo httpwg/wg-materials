@@ -37,12 +37,10 @@ _13:00-15:00 Session II - Congress Hall 2_
 
 Meetecho - [full client](https://meetings.conf.meetecho.com/ietf118/?session=31615) / [onsite](https://meetings.conf.meetecho.com/onsite118/?session=31615)
 
-
 ### Administrivia
 
 *  3 min - Blue sheets / scribe selection / [NOTE WELL](https://www.ietf.org/about/note-well/)
 *  2 min - Agenda bashing
-
 
 ### Active Drafts
 
@@ -52,7 +50,6 @@ _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 * 20 min - [Templated Connect-TCP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-connect-tcp)
 * 10 min - [QUERY Method](https://datatracker.ietf.org/doc/draft-ietf-httpbis-safe-method-w-body)
 * 5 min - [Retrofit Structured Fields](https://datatracker.ietf.org/doc/draft-ietf-httpbis-retrofit) - Mark Nottingham
-
 
 ### Other Topics
 

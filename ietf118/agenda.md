@@ -1,7 +1,6 @@
 # HTTP Working Group Agenda - IETF 118
 
 * [Meeting chat](https://zulip.ietf.org/#narrow/stream/httpbis)
-* [Meetecho]() remote participation
 * [Minutes](https://notes.ietf.org/notes-ietf-118-httpbis) _requires datatracker login_
 
 *Taking minutes? See [our guide](https://github.com/httpwg/wiki/wiki/TakingMinutes)*
@@ -10,6 +9,8 @@
 ## Thursday, 9 November 2023
 
 _15:00-16:30 Session III - Congress Hall 1_
+
+Meetecho - [full client](https://meetings.conf.meetecho.com/ietf118/?session=31614) / [onsite](https://meetings.conf.meetecho.com/onsite118/?session=31614)
 
 
 ### Administrivia
@@ -33,6 +34,9 @@ _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 ## Friday, 10 November 2023
 
 _13:00-15:00 Session II - Congress Hall 2_
+
+Meetecho - [full client](https://meetings.conf.meetecho.com/ietf118/?session=31615) / [onsite](https://meetings.conf.meetecho.com/onsite118/?session=31615)
+
 
 ### Administrivia
 

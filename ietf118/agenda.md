@@ -51,7 +51,7 @@ _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 * 30 min - [Resumable Uploads](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload)
 * 20 min - [Templated Connect-TCP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-connect-tcp)
 * 10 min - [QUERY Method](https://datatracker.ietf.org/doc/draft-ietf-httpbis-safe-method-w-body)
-* 5 min - [Retrofit Structured Fields](https://datatracker.ietf.org/doc/draft-ietf-httpbis-retrofit)
+* 5 min - [Retrofit Structured Fields](https://datatracker.ietf.org/doc/draft-ietf-httpbis-retrofit) - Mark Nottingham
 
 
 ### Other Topics

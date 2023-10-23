@@ -3,7 +3,7 @@
 * [Meeting chat](https://zulip.ietf.org/#narrow/stream/httpbis)
 * [Minutes](https://notes.ietf.org/notes-ietf-118-httpbis) _requires datatracker login_
 
-*Taking minutes? See [our guide](https://github.com/httpwg/wiki/wiki/TakingMinutes)*
+*Taking minutes? See [our guide for scribes](https://github.com/httpwg/wiki/wiki/TakingMinutes)*
 
 
 ## Thursday, 9 November 2023

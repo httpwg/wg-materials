@@ -1,7 +1,7 @@
 # HTTP Working Group Agenda - IETF 118
 
 * [Meeting chat](https://zulip.ietf.org/#narrow/stream/httpbis)
-* [Minutes](https://notes.ietf.org/notes-ietf-118-httpbis) _requires datatracker login_
+* [Minutes](https://notes.ietf.org/notes-ietf-118-httpbis) _requires [datatracker](https://datatracker.ietf.org) login_
 
 *Taking minutes? See [our guide for scribes](https://github.com/httpwg/wiki/wiki/TakingMinutes)*
 

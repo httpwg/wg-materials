@@ -53,4 +53,6 @@ _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
 ### Other Topics
 
-*  20 min - [Secondary Certificate Authentication of HTTP Servers ](https://datatracker.ietf.org/doc/draft-egorbaty-httpbis-secondary-server-certs/)
+*  15 min - [Secondary Certificate Authentication of HTTP Servers ](https://datatracker.ietf.org/doc/draft-egorbaty-httpbis-secondary-server-certs/)
+*  30 min - [Braid](https://datatracker.ietf.org/doc/draft-toomim-httpbis-braid-http/)
+          / [Per-Resource Events Protocol](https://cxres.github.io/per-resource-events/protocol/)

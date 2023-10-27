@@ -23,7 +23,7 @@ Meetecho - [full client](https://meetings.conf.meetecho.com/ietf118/?session=316
 _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
 * 25 min - [Compression Dictionary Transport](https://datatracker.ietf.org/doc/draft-ietf-httpbis-compression-dictionary) - Patrick Meenan (remote)
-* 10 min - [Cookies](https://datatracker.ietf.org/doc/draft-ietf-httpbis-rfc6265bis)
+* 5 min - [Cookies](https://datatracker.ietf.org/doc/draft-ietf-httpbis-rfc6265bis) - Steven Bingler (remote)
 * 30 min - [Unprompted Authentication](https://datatracker.ietf.org/doc/draft-ietf-httpbis-unprompted-auth) - David Schinazi
 
 ### Other Topics
@@ -46,7 +46,7 @@ Meetecho - [full client](https://meetings.conf.meetecho.com/ietf118/?session=316
 
 _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
-* 30 min - [Resumable Uploads](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload)
+* 30 min - [Resumable Uploads](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload) - Marius Kleidl
 * 15 min - [Templated Connect-TCP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-connect-tcp) - Ben Schwarz
 * 10 min - [QUERY Method](https://datatracker.ietf.org/doc/draft-ietf-httpbis-safe-method-w-body)
 * 5 min - [Retrofit Structured Fields](https://datatracker.ietf.org/doc/draft-ietf-httpbis-retrofit) - Mark Nottingham

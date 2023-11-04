@@ -49,12 +49,12 @@ Meetecho - [full client](https://meetings.conf.meetecho.com/ietf118/?session=316
 _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
 * 30 min - [Resumable Uploads](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload) - Marius Kleidl
-* 15 min - [Templated Connect-TCP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-connect-tcp) - Ben Schwarz
+* 15 min - [Templated Connect-TCP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-connect-tcp) - Ben Schwarz (remote)
 
 ### Other Topics
 
-*  10 min - [Reverse HTTP Transport](https://datatracker.ietf.org/doc/draft-bt-httpbis-reverse-http/) - Ben Schwartz
-*  10 min - [Security Considerations for Optimistic Use of HTTP Upgrade](https://datatracker.ietf.org/doc/draft-schwartz-httpbis-optimistic-upgrade/) - Ben Schwartz
+*  10 min - [Security Considerations for Optimistic Use of HTTP Upgrade](https://datatracker.ietf.org/doc/draft-schwartz-httpbis-optimistic-upgrade/) - Ben Schwartz (remote)
+*  10 min - [Reverse HTTP Transport](https://datatracker.ietf.org/doc/draft-bt-httpbis-reverse-http/) - Ben Schwartz (remote)
 *  15 min - [Secondary Certificate Authentication of HTTP Servers ](https://datatracker.ietf.org/doc/draft-egorbaty-httpbis-secondary-server-certs/)
 *  30 min - [Braid](https://datatracker.ietf.org/doc/draft-toomim-httpbis-braid-http/)
           / [Per-Resource Events Protocol](https://datatracker.ietf.org/doc/draft-gupta-httpbis-per-resource-events/)

@@ -22,8 +22,8 @@ Meetecho - [full client](https://meetings.conf.meetecho.com/ietf118/?session=316
 
 _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
-* 25 min - [Compression Dictionary Transport](https://datatracker.ietf.org/doc/draft-ietf-httpbis-compression-dictionary) - Patrick Meenan (remote)
-* 5 min - [Cookies](https://datatracker.ietf.org/doc/draft-ietf-httpbis-rfc6265bis) - Steven Bingler (remote)
+* 25 min - [Compression Dictionary Transport](https://datatracker.ietf.org/doc/draft-ietf-httpbis-compression-dictionary) - Patrick Meenan (remote) [slides](compression-dictionary.pdf)
+* 5 min - [Cookies](https://datatracker.ietf.org/doc/draft-ietf-httpbis-rfc6265bis) - Steven Bingler (remote) [slides](cookies.pdf)
 * 30 min - [Unprompted Authentication](https://datatracker.ietf.org/doc/draft-ietf-httpbis-unprompted-auth) - David Schinazi
 * 5 min - [QUERY Method](https://datatracker.ietf.org/doc/draft-ietf-httpbis-safe-method-w-body)
 * 5 min - [Retrofit Structured Fields](https://datatracker.ietf.org/doc/draft-ietf-httpbis-retrofit) - Mark Nottingham
@@ -49,12 +49,12 @@ Meetecho - [full client](https://meetings.conf.meetecho.com/ietf118/?session=316
 _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
 * 30 min - [Resumable Uploads](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload) - Marius Kleidl
-* 15 min - [Templated Connect-TCP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-connect-tcp) - Ben Schwarz (remote)
+* 15 min - [Templated Connect-TCP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-connect-tcp) - Ben Schwarz (remote) [slides](connect-tcp.pdf)
 
 ### Other Topics
 
-*  10 min - [Security Considerations for Optimistic Use of HTTP Upgrade](https://datatracker.ietf.org/doc/draft-schwartz-httpbis-optimistic-upgrade/) - Ben Schwartz (remote)
-*  10 min - [Reverse HTTP Transport](https://datatracker.ietf.org/doc/draft-bt-httpbis-reverse-http/) - Ben Schwartz (remote)
+*  10 min - [Security Considerations for Optimistic Use of HTTP Upgrade](https://datatracker.ietf.org/doc/draft-schwartz-httpbis-optimistic-upgrade/) - Ben Schwartz (remote) [slides](optimistic-upgrade.pdf)
+*  10 min - [Reverse HTTP Transport](https://datatracker.ietf.org/doc/draft-bt-httpbis-reverse-http/) - Ben Schwartz (remote) [slides](reverse-http.pdf)
 *  15 min - [Secondary Certificate Authentication of HTTP Servers ](https://datatracker.ietf.org/doc/draft-egorbaty-httpbis-secondary-server-certs/)
 *  30 min - [Braid](https://datatracker.ietf.org/doc/draft-toomim-httpbis-braid-http/)
           / [Per-Resource Events Protocol](https://datatracker.ietf.org/doc/draft-gupta-httpbis-per-resource-events/)

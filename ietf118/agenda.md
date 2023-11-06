@@ -30,7 +30,7 @@ _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
 ### Other Topics
 
-* 15 min - [The qpack_static_table_version TLS extension](https://datatracker.ietf.org/doc/draft-hewitt-ietf-qpack-static-table-version/) - Rory Hewitt (remote)
+* 15 min - [The qpack_static_table_version TLS extension](https://datatracker.ietf.org/doc/draft-hewitt-ietf-qpack-static-table-version/) - Rory Hewitt (remote) [slides](qpack_static_table_version.pdf)
 
 
 ## Friday, 10 November 2023

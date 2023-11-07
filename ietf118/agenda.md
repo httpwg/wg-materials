@@ -48,7 +48,7 @@ Meetecho - [full client](https://meetings.conf.meetecho.com/ietf118/?session=316
 
 _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
-* 25 min - [Resumable Uploads](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload) - Marius Kleidl
+* 25 min - [Resumable Uploads](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload) - Marius Kleidl [slides](resumable-uploads.pdf)
 * 15 min - [Templated Connect-TCP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-connect-tcp) - Ben Schwarz (remote) [slides](connect-tcp.pdf)
 * 10 min - [Cache Groups](https://datatracker.ietf.org/doc/draft-ietf-httpbis-cache-groups/) - Mark Nottingham
 

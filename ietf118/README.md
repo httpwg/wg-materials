@@ -13,3 +13,4 @@
 - [resumable-uploads.pdf](resumable-uploads.pdf)
 - [reverse-http.pdf](reverse-http.pdf)
 - [secondary-certificates.pdf](secondary-certificates.pdf)
+- [unprompted-auth.pdf](unprompted-auth.pdf)

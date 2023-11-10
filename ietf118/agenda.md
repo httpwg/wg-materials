@@ -57,4 +57,4 @@ _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 *  10 min - [Security Considerations for Optimistic Use of HTTP Upgrade](https://datatracker.ietf.org/doc/draft-schwartz-httpbis-optimistic-upgrade/) - Ben Schwartz (remote) [slides](optimistic-upgrade.pdf)
 *  10 min - [Reverse HTTP Transport](https://datatracker.ietf.org/doc/draft-bt-httpbis-reverse-http/) - Ben Schwartz (remote) [slides](reverse-http.pdf)
 *  15 min - [Secondary Certificate Authentication of HTTP Servers ](https://datatracker.ietf.org/doc/draft-egorbaty-httpbis-secondary-server-certs/) - Eric Gorbaty [slides](secondary-certificates.pdf)
-*  30 min - [Braid](https://datatracker.ietf.org/doc/draft-toomim-httpbis-braid-http/) / [Per-Resource Events Protocol](https://datatracker.ietf.org/doc/draft-gupta-httpbis-per-resource-events/)
+*  30 min - [Braid](https://datatracker.ietf.org/doc/draft-toomim-httpbis-braid-http/) / [Per-Resource Events Protocol](https://datatracker.ietf.org/doc/draft-gupta-httpbis-per-resource-events/) [slides](per-resource-events.pdf)

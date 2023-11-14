@@ -19,8 +19,6 @@ Changes since IETF 117 (PRs open, not yet in draft):
 - non-dictionary compression is required
 - client MUST sort A-E to reduce Vary variation
 
-Discussion:
-
 Mike Bishop: understands sorting of Accept-Encoding, but why is this done in this draft?
 
 Patrick Meenan: this draft includes two new encodings, so we update the rules to require sort. but it can also be removed
@@ -35,7 +33,7 @@ MN: don't understand zstd-d requirement
 
 MB: if you support zstd-d, you must also support zstd, open issue of cache lifetime, an appropriately implemented HTTP cache should handle its space constraints, shouldn't need to reduce TTL to try to help caches
 
-MN: reducing TTL is preemtive solution
+MN: reducing TTL is preemptive solution
 
 PM: server can choose one value for TTL through headers, 7 days was trying to encourage frequent users more than free users
 
@@ -61,13 +59,13 @@ VK: yes, but etag in addition would be good
 
 PM: dictionary-source and dictionary-etag?
 
-David Schinazi: from Timethy in chat: I don't see a lot of details in the draft about how the dictionary is used by the different algorithms. Maybe this is "obvious" but it might be helpful to at least have reference(s).
+David Schinazi: from Timothy in chat: I don't see a lot of details in the draft about how the dictionary is used by the different algorithms. Maybe this is "obvious" but it might be helpful to at least have reference(s).
 
 PM: I could probably link to at least the shared zstd and brotli APIs. Don't want to get into the exact details.
 
 DS: from Timothy: The motivation for that question is that one of the things I found very helpful for SDP compression with gzip (for WebRTC) was to truncate the original message at some cutoff shorter than the maximum window size. Making sure the start of the document is inside the window helps avoid re-sending some headers that only appear once, and leaving a little bit of extra room makes sending the same SDP with only minor changes work much better. Have you considered being able to specify a limit on the amount of the document used for the dictionary?
 
-PM: When you set a dict the entire response is used as a dict. For html, there are largely going to be external dictionarys that are custom built. There are things like WASM or CSS where you're versioning and can use the existing resource as a dict. As far as size goes, Chrome allows up to 100MB, but what you choose is up to you.
+PM: When you set a dict the entire response is used as a dict. For html, there are largely going to be external dictionaries that are custom built. There are things like WASM or CSS where you're versioning and can use the existing resource as a dict. As far as size goes, Chrome allows up to 100MB, but what you choose is up to you.
 
 MB: Commenting on SHA vs path/ETag. One of the benefits of SHA is you don't know you don't know what it is, protects user's browser history.
 
@@ -84,7 +82,9 @@ PM: From both sides.
 ### Cookies - Steven Bingler (remote)
 
 Quick status update
+
 Changes in -12 draft: just advise the reader which section to implement
+
 Slide of open-issues, stayed fairly constant.
 
 (#2104) Same-Site cookies and redirects is only real blocker
@@ -98,6 +98,7 @@ No questions from audience
 ### Unprompted Authentication - David Schinazi
 
 Unprompted Auth --> The Signature HTTP Auth Scheme
+
 Quick summary of draft (see slides)
 
 Exported Authenticators (#2604)
@@ -151,7 +152,7 @@ MN: I am willing to participate in design team. Mike Bishop also interested in p
 
 ### Retrofit Structured Fields - Mark Nottingham
 
-MN: Nearly done, soon last call (again)
+MN: Nearly done sfbis, soon last call (again)
 
 TP: issues from last call have been sorted out. soon we will do another last call for one week
 
@@ -176,6 +177,7 @@ Context/overview of draft (see slides)
 - Various limitation of the original QPACK static table.
 
 Proposal is to add QPACK static table registry to IANA, use TLS extension to negotiate entries in the static table.
+
 Spec is focused on future proofing.
 
 Should it be a TLS extension? Boundary crossing since its an HTTP draft? Maybe use ALPS/ALPN, but those aren't used much?
@@ -245,11 +247,11 @@ MN (Chair): Also, one server-side data is interesting, but if we could bring cli
 
 AF: Call on list? HTTP workshop or interim? 
 
-MN (Chair): Workshop would be a nice place to talk about this.
+MN: Workshop would be a nice place to talk about this.
 
 MB: If we want to do this through ALPS, does this go through ALPS formally.
 
-MN: We're concerns about ALPS in terms of feasiblility and ecosystem impact, we couldn't assume anything. We need to know what properties we need for the negotiation system.
+MN: We're concerns about ALPS in terms of feasibility and ecosystem impact, we couldn't assume anything. We need to know what properties we need for the negotiation system.
 
 TP: We have enough overlap between TLS and HTTP we can figure out the properties we need in the solution. We have a collaborative approach across these WG (HTTP and TLS).
 

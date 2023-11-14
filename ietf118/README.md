@@ -8,6 +8,7 @@
 - [compression-dictionary.pdf](compression-dictionary.pdf)
 - [connect-tcp.pdf](connect-tcp.pdf)
 - [cookies.pdf](cookies.pdf)
+- [minutes.md](minutes.md)
 - [optimistic-upgrade.pdf](optimistic-upgrade.pdf)
 - [per-resource-events.pdf](per-resource-events.pdf)
 - [qpack_static_table_version.pdf](qpack_static_table_version.pdf)

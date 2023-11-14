@@ -1,4 +1,4 @@
-# HTTP Working Group Agenda - IETF 118
+# HTTP Working Group Minutes - IETF 118
 
 ## Thursday, 9 November 2023
 

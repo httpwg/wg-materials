@@ -1,5 +1,28 @@
 # HTTP Working Group Minutes - IETF 118
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Thursday, 9 November 2023](#thursday-9-november-2023)
+  - [Compression Dictionary Transport - Patrick Meenan (remote)](#compression-dictionary-transport---patrick-meenan-remote)
+  - [Cookies - Steven Bingler (remote)](#cookies---steven-bingler-remote)
+  - [Unprompted Authentication - David Schinazi](#unprompted-authentication---david-schinazi)
+  - [QUERY Method](#query-method)
+  - [Retrofit Structured Fields - Mark Nottingham](#retrofit-structured-fields---mark-nottingham)
+  - [Cache Groups - Mark Nottingham](#cache-groups---mark-nottingham)
+  - [The qpack_static_table_version TLS extension - Rory Hewitt (remote)](#the-qpack_static_table_version-tls-extension---rory-hewitt-remote)
+- [Friday, 10 November 2023](#friday-10-november-2023)
+  - [Resumable Uploads - Marius Kleidl](#resumable-uploads---marius-kleidl)
+  - [Templated Connect-TCP - Ben Schwartz](#templated-connect-tcp---ben-schwartz)
+  - [Security Considerations for Optimistic Use of HTTP Upgrade - Ben Schwartz (remote)](#security-considerations-for-optimistic-use-of-http-upgrade---ben-schwartz-remote)
+  - [Reverse HTTP Transport - Ben Schwartz (remote)](#reverse-http-transport---ben-schwartz-remote)
+  - [Secondary Certificate Authentication of HTTP Servers - Eric Gorbaty](#secondary-certificate-authentication-of-http-servers---eric-gorbaty)
+  - [Per-Resource Events Protocol - Rahul Gupta](#per-resource-events-protocol---rahul-gupta)
+  - [Braid - Michael Toomim](#braid---michael-toomim)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+
 ## Thursday, 9 November 2023
 
 Notetakers: Jonathan Flat and Marius Kleidl

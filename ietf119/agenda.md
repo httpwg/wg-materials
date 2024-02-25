@@ -21,7 +21,9 @@ Meetecho - [full client](https://meetings.conf.meetecho.com/ietf119/?session=319
 
 ### Other Topics
 
-_TBD_
+* 20 min - [HTTP/3 On Streams](https://datatracker.ietf.org/doc/html/draft-kazuho-httpbis-http3-on-streams)
+* 15 min - [Best Practices for Link-Local Connectivity in URI-Based Protocols](https://datatracker.ietf.org/doc/draft-schinazi-httpbis-link-local-uri-bcp/) - David Schinazi
+* 20 min - [Reverse HTTP Tunnels](https://www.ietf.org/archive/id/draft-kazuho-httpbis-reverse-tunnel-00.html) - Kazuko Ohu
 
 
 ## Friday, 22 March 2024

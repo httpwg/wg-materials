@@ -19,11 +19,15 @@ Meetecho - [full client](https://meetings.conf.meetecho.com/ietf119/?session=319
 *  2 min - Agenda bashing
 
 
-### Other Topics
+### Active Drafts
 
-* 20 min - [HTTP/3 On Streams](https://datatracker.ietf.org/doc/html/draft-kazuho-httpbis-http3-on-streams)
-* 15 min - [Best Practices for Link-Local Connectivity in URI-Based Protocols](https://datatracker.ietf.org/doc/draft-schinazi-httpbis-link-local-uri-bcp/) - David Schinazi
-* 20 min - [Reverse HTTP Tunnels](https://www.ietf.org/archive/id/draft-kazuho-httpbis-reverse-tunnel-00.html) - Kazuko Ohu
+_See also the [extensions listing](https://httpwg.org/http-extensions/)_
+
+* 10 min - [Templated Connect-TCP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-connect-tcp)
+*  5 min - [Cookies](https://datatracker.ietf.org/doc/draft-ietf-httpbis-rfc6265bis)
+* 15 min - [Unprompted Authentication](https://datatracker.ietf.org/doc/draft-ietf-httpbis-unprompted-auth)
+* 5 min - [QUERY Method](https://datatracker.ietf.org/doc/draft-ietf-httpbis-safe-method-w-body)
+* 20 min - [Resumable Uploads](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload)
 
 
 ## Friday, 22 March 2024
@@ -42,15 +46,15 @@ Meetecho - [full client](https://meetings.conf.meetecho.com/ietf119/?session=319
 
 _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
-* 10 min - [Templated Connect-TCP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-connect-tcp) - Ben Schwarz (remote) [slides](connect-tcp.pdf)
-*  5 min - [Cookies](https://datatracker.ietf.org/doc/draft-ietf-httpbis-rfc6265bis)
-* 15 min - [Unprompted Authentication](https://datatracker.ietf.org/doc/draft-ietf-httpbis-unprompted-auth)
-* 10 min - [QUERY Method](https://datatracker.ietf.org/doc/draft-ietf-httpbis-safe-method-w-body)
-* 20 min - [Resumable Uploads](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload) - Marius Kleidl [slides](resumable-uploads.pdf)
-* 10 min - [Security Considerations for Optimistic Use of HTTP Upgrade](https://datatracker.ietf.org/doc/draft-schwartz-httpbis-optimistic-upgrade/) - Ben Schwartz (remote) [slides](optimistic-upgrade.pdf)
+ 
+* 10 min - [Security Considerations for Optimistic Use of HTTP Upgrade](https://datatracker.ietf.org/doc/draft-schwartz-httpbis-optimistic-upgrade/) 
 *  5 min - [Retrofit Structured Fields](https://datatracker.ietf.org/doc/draft-ietf-httpbis-retrofit)
-* 10 min - [Cache Groups](https://datatracker.ietf.org/doc/draft-ietf-httpbis-cache-groups/) - Mark Nottingham
+* 10 min - [Cache Groups](https://datatracker.ietf.org/doc/draft-ietf-httpbis-cache-groups/)
 * 20 min - [Compression Dictionary Transport](https://datatracker.ietf.org/doc/draft-ietf-httpbis-compression-dictionary)
 
 
+### Other Topics
 
+* 20 min - [HTTP/3 On Streams](https://datatracker.ietf.org/doc/html/draft-kazuho-httpbis-http3-on-streams)
+* 20 min - [Reverse HTTP Tunnels](https://www.ietf.org/archive/id/draft-kazuho-httpbis-reverse-tunnel-00.html) - Kazuko Ohu
+* 15 min - [Best Practices for Link-Local Connectivity in URI-Based Protocols](https://datatracker.ietf.org/doc/draft-schinazi-httpbis-link-local-uri-bcp/) - David Schinazi

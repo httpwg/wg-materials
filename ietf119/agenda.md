@@ -50,7 +50,7 @@ _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 * 10 min - [Security Considerations for Optimistic Use of HTTP Upgrade](https://datatracker.ietf.org/doc/draft-schwartz-httpbis-optimistic-upgrade/) 
 *  5 min - [Retrofit Structured Fields](https://datatracker.ietf.org/doc/draft-ietf-httpbis-retrofit)
 * 10 min - [Cache Groups](https://datatracker.ietf.org/doc/draft-ietf-httpbis-cache-groups/)
-* 20 min - [Compression Dictionary Transport](https://datatracker.ietf.org/doc/draft-ietf-httpbis-compression-dictionary)
+* 20 min - [Compression Dictionary Transport](https://datatracker.ietf.org/doc/draft-ietf-httpbis-compression-dictionary) - Patrick Meenan (remote)
 
 
 ### Other Topics

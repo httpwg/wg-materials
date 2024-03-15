@@ -23,7 +23,7 @@ Meetecho - [full client](https://meetings.conf.meetecho.com/ietf119/?session=319
 
 _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
-*  5 min - [Templated Connect-TCP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-connect-tcp)
+*  5 min - [Templated Connect-TCP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-connect-tcp) - Ben Schwartz / [slides](connect-tcp.pdf)
 * 10 min - [Cookies](https://datatracker.ietf.org/doc/draft-ietf-httpbis-rfc6265bis) - Steven Bingler
 * 15 min - [Unprompted Authentication](https://datatracker.ietf.org/doc/draft-ietf-httpbis-unprompted-auth)
 * 5 min - [QUERY Method](https://datatracker.ietf.org/doc/draft-ietf-httpbis-safe-method-w-body)
@@ -47,10 +47,10 @@ Meetecho - [full client](https://meetings.conf.meetecho.com/ietf119/?session=319
 _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
  
-* 10 min - [Security Considerations for Optimistic Use of HTTP Upgrade](https://datatracker.ietf.org/doc/draft-schwartz-httpbis-optimistic-upgrade/) 
+* 10 min - [Security Considerations for Optimistic Use of HTTP Upgrade](https://datatracker.ietf.org/doc/draft-schwartz-httpbis-optimistic-upgrade/) - Ben Schwartz / [slides](optimistic-http-upgrade.pdf)
 *  5 min - [Retrofit Structured Fields](https://datatracker.ietf.org/doc/draft-ietf-httpbis-retrofit) - Mark Nottingham
 * 10 min - [Cache Groups](https://datatracker.ietf.org/doc/draft-ietf-httpbis-cache-groups/) - Mark Nottingham
-* 20 min - [Compression Dictionary Transport](https://datatracker.ietf.org/doc/draft-ietf-httpbis-compression-dictionary) - Patrick Meenan (remote) [slides](compression-dictionary.pdf)
+* 20 min - [Compression Dictionary Transport](https://datatracker.ietf.org/doc/draft-ietf-httpbis-compression-dictionary) - Patrick Meenan (remote) / [slides](compression-dictionary.pdf)
 
 
 ### Other Topics
@@ -58,4 +58,4 @@ _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 * 20 min - [HTTP/3 On Streams](https://datatracker.ietf.org/doc/html/draft-kazuho-httpbis-http3-on-streams)
 * 20 min - [Reverse HTTP Tunnels](https://www.ietf.org/archive/id/draft-kazuho-httpbis-reverse-tunnel-00.html) - Kazuko Ohu
 * 15 min - [Best Practices for Link-Local Connectivity in URI-Based Protocols](https://datatracker.ietf.org/doc/draft-schinazi-httpbis-link-local-uri-bcp/) - David Schinazi
-* 5 min - [Window Sizing for Zstandard Content Encoding](https://datatracker.ietf.org/doc/draft-jaju-httpbis-zstd-window-size/) - Nidhi Jaju (remote)
+* 5 min - [Window Sizing for Zstandard Content Encoding](https://datatracker.ietf.org/doc/draft-jaju-httpbis-zstd-window-size/) - Nidhi Jaju (remote) / [slides](zstd-window-size.pdf)

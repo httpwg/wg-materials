@@ -24,7 +24,7 @@ Meetecho - [full client](https://meetings.conf.meetecho.com/ietf119/?session=319
 _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
 * 10 min - [Cookies](https://datatracker.ietf.org/doc/draft-ietf-httpbis-rfc6265bis) - Steven Bingler
-* 15 min - [Unprompted Authentication](https://datatracker.ietf.org/doc/draft-ietf-httpbis-unprompted-auth)
+* 15 min - [Unprompted Authentication](https://datatracker.ietf.org/doc/draft-ietf-httpbis-unprompted-auth) - David Schinazi / [slides](signature-auth.pdf)
 * 5 min - [QUERY Method](https://datatracker.ietf.org/doc/draft-ietf-httpbis-safe-method-w-body)
 * 20 min - [Resumable Uploads](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload) - Marius Kleidl (remote) / [slides](resumable-uploads.pdf)
 

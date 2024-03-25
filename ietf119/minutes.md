@@ -1,86 +1,102 @@
-# HTTP Working Group Agenda - IETF 119
-
-* [Meeting chat](https://zulip.ietf.org/#narrow/stream/httpbis)
-* [Minutes](https://notes.ietf.org/notes-ietf-119-httpbis) _requires [datatracker](https://datatracker.ietf.org) login_
-
-*Taking minutes? See [our guide for scribes](https://github.com/httpwg/wiki/wiki/TakingMinutes)*
-
+# HTTP Working Group Minutes - IETF 119
 
 ## Tuesday, 19 March 2024
 
 _17:30 - 18:30 Session IV - P2_
 
-Meetecho - [full client](https://meetings.conf.meetecho.com/ietf119/?session=31968) / [onsite](https://meetings.conf.meetecho.com/onsite119/?session=31968)
-
-
-### Administrivia
-
-*  3 min - Blue sheets / scribe selection / [NOTE WELL](https://www.ietf.org/about/note-well/)
-*  2 min - Agenda bashing
-
 
 ### Active Drafts
 
-_See also the [extensions listing](https://httpwg.org/http-extensions/)_
+#### Cookies
 
-* 10 min - [Cookies](https://datatracker.ietf.org/doc/draft-ietf-httpbis-rfc6265bis) - Steven Bingler
-* 15 min - [Unprompted Authentication](https://datatracker.ietf.org/doc/draft-ietf-httpbis-unprompted-auth) - David Schinazi / [slides](signature-auth.pdf)
-* 5 min - [QUERY Method](https://datatracker.ietf.org/doc/draft-ietf-httpbis-safe-method-w-body)
-* 20 min - [Resumable Uploads](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload) - Marius Kleidl (remote) / [slides](resumable-uploads.pdf)
-
-Cookies
 - Fixed same-site bug in spec, but turned out sites relied on it so have reverted the spec change. Will try to do it again in the bis bis (bisque?).
 - Remaining issues are small. Almost ready for WG last call.
 - mnot thinks substantial last call (4 weeks+)
 
-Unprompted authentication
+#### Unprompted authentication
+
 - Since Prague, have 4 independent, open-source implementations, and have done an interoperability test. It worked (barring Http level mismatches)!
 - Security analysis done. Proved the authentication properties; doesn't really have any other properties. Proving how it binds to TLS. The model assumes TLS is secure (let's hope, eh?). Link to report will go in the chat.
 - Defining a new field to use with intermediaries.
 - Mike Bishop disagrees it's similar to client certs.
 - As long as the backend trusts the intermediary, it should be fine.
-- Martin Thomson: who validates the cert? Not the intermediary - it's passing it through to the backend. But how do you know it's not modified on the way through? You don't, you have to trust it.
-- Jonathan Hoyland: security assumption is the exporter key is channel binding, so you can publish it without damaging security.
-- Bike shedding time: what should we name this auth scheme? There's already another draft with this name! We should probably rename. How about "UnpromptedSignature"? 
-- mnot: Can we name it for the benefit to the user? e.g. "Hidden"
-- Justin Richer: Naming things is hard. RFC9421 dropped the use of the current name, so could use it. But… it's already used by Mastodon and a big bank. So maybe don't. Getting away from signature is a good idea: that' just how it does it, not *what* it's doing.
-- Benjamin Schwartz: Couldn't find anything in the draft to say why we shouldn't just use BASIC auth for this. Maybe going through those reasons would help to name it.
-- Jonathan Hoyland: Likes "Unprompted".
-- Peter Thomassen: Suggests "Unsolicited".
-- Other than the name, mainly just editorial work to do, then WG last call.
-- Jonathan will get open-sourcing approval from the company and share the link to formal analysis artifacts on the list.
 
-QUERY Method
+Martin Thomson: who validates the cert? Not the intermediary - it's passing it through to the backend. But how do you know it's not modified on the way through? You don't, you have to trust it.
+
+Jonathan Hoyland: security assumption is the exporter key is channel binding, so you can publish it without damaging security.
+
+Bike shedding time: what should we name this auth scheme? There's already another draft with this name! We should probably rename. How about "UnpromptedSignature"? 
+
+mnot: Can we name it for the benefit to the user? e.g. "Hidden"
+
+Justin Richer: Naming things is hard. RFC9421 dropped the use of the current name, so could use it. But… it's already used by Mastodon and a big bank. So maybe don't. Getting away from signature is a good idea: that' just how it does it, not *what* it's doing.
+
+Benjamin Schwartz: Couldn't find anything in the draft to say why we shouldn't just use BASIC auth for this. Maybe going through those reasons would help to name it.
+
+Jonathan Hoyland: Likes "Unprompted".
+
+Peter Thomassen: Suggests "Unsolicited".
+
+Other than the name, mainly just editorial work to do, then WG last call.
+
+Jonathan will get open-sourcing approval from the company and share the link to formal analysis artifacts on the list.
+
+#### QUERY Method
+
 - Work a bit stalled.
 - Will be discussed at a side meeting instead.
 
-Resumable Uploads
+#### Resumable Uploads
+
 - A few implementations exist, both server and client.
 - Still need to define a media type for the PATCH requests. Perhaps `application/partial-upload`.
 - How do clients discover server limits? Could announce them in header fields in response to POST and HEAD requests. Either multiple headers, or one header with a dictionary value. But this would require a registry.
-- mnot: Would recommend using a single header as they are all related. Does not imply you need a registry - can just put it in the RFC and say you need to update the RFC to add anything.
-- Lucas Pardue: Similar to rate limit headers?
-- Yaroslav Rosomakho: expires as a timestamp. Why are we not using a more common date format?
-- mnot: There is a discussion about this somewhere.
-- Martin Thomson: Prefer this does not use absolute times, as there are 2 clocks in the protocol and they never agree. Also means you can have a static expression of policy, which is simpler and compresses better.
-- mnot: Any pushback on whether we should do this in general? No.
-- Martin Thomson: All the header fields need to be optional, because servers may not have a policy or may not wish to express it.
-- Lucas Pardue: Is this something that should just be resumable uploads, or for any uploads?
-- Marius Kleidl: Mostly specific to resumable uploads.
-- Interrupted PATCH requests: semantics we want are slightly different to the RFC definition for PATCH.
-- mnot: Strictly should update the PATCH spec, but can probably just do some careful wording here to avoid that.
-- Martin Thomson: Agreed. Can go further and just say that any change in flight you will not see the partial change when querying the resource from elsewhere, which won't violate the RFC.
-- mnot: From a strict semantic standpoint not sure that's true, but everyone is fine with the spirit of it.
-- mnot: Could even raise a technical errata against PATCH.
-- How do you handle content encoding if you get interrupted and have to resume?
-- Mike Bishop: I think even though we often produce it on the fly, it's saying this resource is GZIPed JSON. So if you upload half of it, you are uploading half the gzipped thing. The partial upload is just resuming the upload of the gzipped resource.
-- Martin Thomson: The way to think about this is the representation you are sharing in the resumption is just the bytes of the original, so there can't be new content encoding.
-- Martin Thomson: It's well defined if you add content-encoding to the PATCH, but don't do that, it's gross.
-- Lucas Pardue: if bogus clients *do* do this we can detect it, as we have digests.
-- mnot: Maybe we need some guidance on how to hold it.
-- Marius: Still some more open issues, but hope to finish up before too long.
-- David Schinazi: On the topic of deprecating the old Siganture HTTP auth scheme, should we mark it deprecated in the IANA registry? The only way to do it is in an RFC draft.
-- mnot: Let's have a chat about that.
+
+mnot: Would recommend using a single header as they are all related. Does not imply you need a registry - can just put it in the RFC and say you need to update the RFC to add anything.
+
+Lucas Pardue: Similar to rate limit headers?
+
+Yaroslav Rosomakho: expires as a timestamp. Why are we not using a more common date format?
+
+mnot: There is a discussion about this somewhere.
+
+Martin Thomson: Prefer this does not use absolute times, as there are 2 clocks in the protocol and they never agree. Also means you can have a static expression of policy, which is simpler and compresses better.
+
+mnot: Any pushback on whether we should do this in general? No.
+
+Martin Thomson: All the header fields need to be optional, because servers may not have a policy or may not wish to express it.
+
+Lucas Pardue: Is this something that should just be resumable uploads, or for any uploads?
+
+Marius Kleidl: Mostly specific to resumable uploads.
+
+Interrupted PATCH requests: semantics we want are slightly different to the RFC definition for PATCH.
+
+mnot: Strictly should update the PATCH spec, but can probably just do some careful wording here to avoid that.
+
+Martin Thomson: Agreed. Can go further and just say that any change in flight you will not see the partial change when querying the resource from elsewhere, which won't violate the RFC.
+
+mnot: From a strict semantic standpoint not sure that's true, but everyone is fine with the spirit of it.
+
+mnot: Could even raise a technical errata against PATCH.
+
+How do you handle content encoding if you get interrupted and have to resume?
+
+Mike Bishop: I think even though we often produce it on the fly, it's saying this resource is GZIPed JSON. So if you upload half of it, you are uploading half the gzipped thing. The partial upload is just resuming the upload of the gzipped resource.
+
+Martin Thomson: The way to think about this is the representation you are sharing in the resumption is just the bytes of the original, so there can't be new content encoding.
+
+Martin Thomson: It's well defined if you add content-encoding to the PATCH, but don't do that, it's gross.
+
+Lucas Pardue: if bogus clients *do* do this we can detect it, as we have digests.
+
+mnot: Maybe we need some guidance on how to hold it.
+
+Marius: Still some more open issues, but hope to finish up before too long.
+
+David Schinazi: On the topic of deprecating the old Siganture HTTP auth scheme, should we mark it deprecated in the IANA registry? The only way to do it is in an RFC draft.
+
+mnot: Let's have a chat about that.
 
 Finished on time, meet again later this week. Until then, adieu.
 
@@ -88,19 +104,12 @@ Finished on time, meet again later this week. Until then, adieu.
 
 _09:30 - 11:30 Session I - M4_
 
-Meetecho - [full client](https://meetings.conf.meetecho.com/ietf119/?session=31967) / [onsite](https://meetings.conf.meetecho.com/onsite119/?session=31967)
-
-### Administrivia
-
-*  3 min - Blue sheets / scribe selection / [NOTE WELL](https://www.ietf.org/about/note-well/)
-*  2 min - Agenda bashing
-
 
 ### Active Drafts
 
 _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
-* 10 min - [Templated Connect-TCP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-connect-tcp) - Ben Schwartz (remote) / [slides](https://httpwg.org/wg-materials/ietf119/connect-tcp.pdf) 
+#### [Templated Connect-TCP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-connect-tcp) - Ben Schwartz (remote) / [slides](https://httpwg.org/wg-materials/ietf119/connect-tcp.pdf) 
 
 3 issues to discuss: 
 
@@ -137,7 +146,7 @@ David Schinazi: I think it could be cool to use capsule for this, I don't think 
 
 Mike Bishop: Do we have a use case for capsules with this? If we don't and we can't envision one, let's not build it until we do. Martin, I admire your optimism but we say lots of obvious things in QUIC, we can do it here too.
 
-* 10 min - [Security Considerations for Optimistic Use of HTTP Upgrade](https://datatracker.ietf.org/doc/draft-schwartz-httpbis-optimistic-upgrade/) - Ben Schwartz (remote) / [slides](https://httpwg.org/wg-materials/ietf119/optimistic-http-upgrade.pdf)
+#### [Security Considerations for Optimistic Use of HTTP Upgrade](https://datatracker.ietf.org/doc/draft-schwartz-httpbis-optimistic-upgrade/) - Ben Schwartz (remote) / [slides](https://httpwg.org/wg-materials/ietf119/optimistic-http-upgrade.pdf)
 
 Lucas Pardue: I know this is focused on CONNECT, but I had a case with someone who was seeing an issue with plain-old "I'll make an HTTP/1 request to a server" and it failed and they didn't know what to do, their answer was to close the connection since the whole thing was completely blown. Wasn't an upgrade, was just a POST. Is that already covered? 
 
@@ -149,7 +158,7 @@ Ben: That should be unambigious from the gateway's perspective, it should be abl
 
 Mark Nottingham: Would like to talk about that after the session.
 
-*  5 min - [Retrofit Structured Fields](https://datatracker.ietf.org/doc/draft-ietf-httpbis-retrofit) - Mark Nottingham
+#### [Retrofit Structured Fields](https://datatracker.ietf.org/doc/draft-ietf-httpbis-retrofit) - Mark Nottingham
 
 Mark Nottingham: We've been lightly parking this for a while as we completed sf-bis, that's now mostly done. Returning to this. There are a few issues to work through. The thing that caused us to park this was that it's very abstract, talking about mapping existing fields into structured fields. We're not entirely sure what the sharp edges are until we actually use them. This is a status update that we're going to start trying to get this one moving again. Any discussion/comment?
 
@@ -166,7 +175,7 @@ Mark: I feel like a lot of people nod and say this is good, but we have to get i
 Mark: MT is nodding, for the record.
 
 
-* 10 min - [Cache Groups](https://datatracker.ietf.org/doc/draft-ietf-httpbis-cache-groups/) - Mark Nottingham
+#### [Cache Groups](https://datatracker.ietf.org/doc/draft-ietf-httpbis-cache-groups/) - Mark Nottingham
 
 Mark Nottingham: Straightforward, there is implementation experience with the concept. Details for requirements need to be worked out, did some survey.
 
@@ -180,7 +189,7 @@ Mark: See David's bikesheds from Tuesday. Different vendors call this different 
 
 Martin: Sole purpose is invalidation, maybe worth working that in to make it clear.
 
-* 20 min - [Compression Dictionary Transport](https://datatracker.ietf.org/doc/draft-ietf-httpbis-compression-dictionary) - Patrick Meenan (remote) / [slides](https://httpwg.org/wg-materials/ietf119/compression-dictionary.pdf)
+#### [Compression Dictionary Transport](https://datatracker.ietf.org/doc/draft-ietf-httpbis-compression-dictionary) - Patrick Meenan (remote) / [slides](https://httpwg.org/wg-materials/ietf119/compression-dictionary.pdf)
 
 Lucas Pardue: A thought on the last point, who's using filesystems these days with cloud object storage. I don't know about this stuff, but legit question.
 
@@ -212,7 +221,7 @@ Martin: I will.
 
 ### Other Topics
 
-* 20 min - [HTTP/3 On Streams](https://datatracker.ietf.org/doc/html/draft-kazuho-httpbis-http3-on-streams) - Kazuko Oku and Lucas Pardue
+#### [HTTP/3 On Streams](https://datatracker.ietf.org/doc/html/draft-kazuho-httpbis-http3-on-streams) - Kazuko Oku and Lucas Pardue
 
 Yaroslav Rosomakho: Interesting proposal, I think it's unlikely to achieve its goal of allowing applications to run solely on HTTP/3 stacks. Today, majority of enterprises block UDP because they have proxies/firewalls and things that want to man in the middle TLS. Those things are not capable of inspecting QUIC. If you're introducing a new way to send HTTP with new ALPN, then those things will still not allow that ALPN to come through.
 
@@ -254,7 +263,7 @@ Mark (as chair): We've never done a new HTTP version without more discussion, th
 
 Lucas: Thank you everyone for the various opinions and the really respectful conversation.
 
-* 20 min - [Reverse HTTP Tunnels](https://www.ietf.org/archive/id/draft-kazuho-httpbis-reverse-tunnel-00.html) - Kazuko Oku
+#### [Reverse HTTP Tunnels](https://www.ietf.org/archive/id/draft-kazuho-httpbis-reverse-tunnel-00.html) - Kazuko Oku
 
 Martin Thomson: I think you need to think about the security model a lot. As a browser, I couldn't do this without a lot more work and the security model is key.
 
@@ -264,7 +273,7 @@ Benjamin Schwartz: I think we should start with HTTP/3, will give us the right d
 
 Mark: Sounds like needs to be more discussion.
 
-* 5 min - [Window Sizing for Zstandard Content Encoding](https://datatracker.ietf.org/doc/draft-jaju-httpbis-zstd-window-size/) - Nidhi Jaju (remote) / [slides](https://httpwg.org/wg-materials/ietf119/zstd-window-size.pdf)
+#### [Window Sizing for Zstandard Content Encoding](https://datatracker.ietf.org/doc/draft-jaju-httpbis-zstd-window-size/) - Nidhi Jaju (remote) / [slides](https://httpwg.org/wg-materials/ietf119/zstd-window-size.pdf)
 
 Martin Thomson: I think we should go straight to WGLC for this. It's small, we should just do it. It was just a bug.
 
@@ -273,7 +282,7 @@ Eric Kinnear: I would actually second that; thank you for doing this.  As we loo
 Mark Nottingham:  Sounds like we know what we need to do next then.
 
 
-* 15 min - [Best Practices for Link-Local Connectivity in URI-Based Protocols](https://datatracker.ietf.org/doc/draft-schinazi-httpbis-link-local-uri-bcp/) - David Schinazi
+#### [Best Practices for Link-Local Connectivity in URI-Based Protocols](https://datatracker.ietf.org/doc/draft-schinazi-httpbis-link-local-uri-bcp/) - David Schinazi
 
 Toerless Eckert: Thank you for the work, I'm all for users shouldn't have to know about IPv6 addresses. That's why an IPv6 network administrator is paid. Needs to work when DNS isn't using. People use browsers because there isn't anything else. I don't think we should retire previous doc, we should add something new and better for users. Browsers don't always support .local mDNS, we should make that mandatory, but that might not be for the IETF to do. When it comes to where 6874 is relevant, yes network operators, and also in APIs or people who use REST content and other forms of URLs. It would be lovely to figure out if there is any particular/better way to fix the origin problem for zone identifiers, in whatwg there is already work there. These shouldn't be used by users.
 

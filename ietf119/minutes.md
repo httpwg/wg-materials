@@ -1,5 +1,31 @@
 # HTTP Working Group Minutes - IETF 119
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Tuesday, 19 March 2024](#tuesday-19-march-2024)
+  - [Active Drafts](#active-drafts)
+    - [Cookies](#cookies)
+    - [Unprompted authentication](#unprompted-authentication)
+    - [QUERY Method](#query-method)
+    - [Resumable Uploads](#resumable-uploads)
+- [Friday, 22 March 2024](#friday-22-march-2024)
+  - [Active Drafts](#active-drafts-1)
+    - [Templated Connect-TCP - Ben Schwartz (remote) / slides](#templated-connect-tcp---ben-schwartz-remote--slides)
+    - [Security Considerations for Optimistic Use of HTTP Upgrade - Ben Schwartz (remote) / slides](#security-considerations-for-optimistic-use-of-http-upgrade---ben-schwartz-remote--slides)
+    - [Retrofit Structured Fields - Mark Nottingham](#retrofit-structured-fields---mark-nottingham)
+    - [Cache Groups - Mark Nottingham](#cache-groups---mark-nottingham)
+    - [Compression Dictionary Transport - Patrick Meenan (remote) / slides](#compression-dictionary-transport---patrick-meenan-remote--slides)
+  - [Other Topics](#other-topics)
+    - [HTTP/3 On Streams - Kazuko Oku and Lucas Pardue](#http3-on-streams---kazuko-oku-and-lucas-pardue)
+    - [Reverse HTTP Tunnels - Kazuko Oku](#reverse-http-tunnels---kazuko-oku)
+    - [Window Sizing for Zstandard Content Encoding - Nidhi Jaju (remote) / slides](#window-sizing-for-zstandard-content-encoding---nidhi-jaju-remote--slides)
+    - [Best Practices for Link-Local Connectivity in URI-Based Protocols - David Schinazi](#best-practices-for-link-local-connectivity-in-uri-based-protocols---david-schinazi)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+
+
 ## Tuesday, 19 March 2024
 
 _17:30 - 18:30 Session IV - P2_

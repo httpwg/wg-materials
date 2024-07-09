@@ -49,7 +49,6 @@ _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
 * 20 min - [HTTP Server Secondary Cert Auth](https://datatracker.ietf.org/doc/draft-ietf-httpbis-secondary-server-certs)
 * 20 min - [Cache Groups](https://datatracker.ietf.org/doc/draft-ietf-httpbis-cache-groups/)
-* 20 min - [Templated Connect-TCP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-connect-tcp) 
 
 ### Other Topics
 

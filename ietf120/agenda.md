@@ -24,7 +24,6 @@ Meetecho - [full client](https://meetings.conf.meetecho.com/ietf120/?session=330
 _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
 * 20 min - [Resumable Uploads](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload)
-* 20 min - [Security Considerations for Optimistic Use of HTTP Upgrade](https://datatracker.ietf.org/doc/draft-schwartz-httpbis-optimistic-upgrade/)
 * 20 min - [QUERY Method](https://datatracker.ietf.org/doc/draft-ietf-httpbis-safe-method-w-body)
 
 ### Other Topics
@@ -48,6 +47,7 @@ Meetecho - [full client](https://meetings.conf.meetecho.com/ietf120/?session=330
 
 _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
+* 20 min - [Security Considerations for Optimistic Use of HTTP Upgrade](https://datatracker.ietf.org/doc/draft-schwartz-httpbis-optimistic-upgrade/)
 * 20 min - [HTTP Server Secondary Cert Auth](https://datatracker.ietf.org/doc/draft-ietf-httpbis-secondary-server-certs)
 * 20 min - [Cache Groups](https://datatracker.ietf.org/doc/draft-ietf-httpbis-cache-groups/)
 

@@ -57,3 +57,4 @@
 - [Interim meeting: 22-02](interim-22-02/README.md)
 - [Interim meeting: 22-05](interim-22-05/README.md)
 - [Interim meeting: 22-10](interim-22-10/README.md)
+- [IETF-120-HTTPBIS-PvD-Proxy-Discovery.pdf](IETF-120-HTTPBIS-PvD-Proxy-Discovery.pdf)

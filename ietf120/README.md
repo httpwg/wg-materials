@@ -6,3 +6,4 @@
 
 - [agenda.md](agenda.md)
 - [IETF-120-HTTPBIS-PvD-Proxy-Discovery.pdf](IETF-120-HTTPBIS-PvD-Proxy-Discovery.pdf)
+- [resumable.pdf](resumable.pdf)

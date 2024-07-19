@@ -23,7 +23,7 @@ Meetecho - [full client](https://meetings.conf.meetecho.com/ietf120/?session=330
 
 _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
-* 20 min - [Resumable Uploads](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload)
+* 20 min - [Resumable Uploads](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload) -- Marius Kleidl ([slides](resumable.pdf))
 * 20 min - [QUERY Method](https://datatracker.ietf.org/doc/draft-ietf-httpbis-safe-method-w-body)
 
 ### Other Topics
@@ -52,4 +52,6 @@ _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 * 20 min - [Cache Groups](https://datatracker.ietf.org/doc/draft-ietf-httpbis-cache-groups/) -- Mark Nottingham
 
 ### Other Topics
+
+* 20 min - [No-Vary-Search](https://datatracker.ietf.org/doc/draft-wicg-http-no-vary-search/) -- Jeremy Roman
 

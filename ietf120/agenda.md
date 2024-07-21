@@ -48,7 +48,7 @@ Meetecho - [full client](https://meetings.conf.meetecho.com/ietf120/?session=330
 
 _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
-* 20 min - [Security Considerations for Optimistic Use of HTTP Upgrade](https://datatracker.ietf.org/doc/draft-ietf-httpbis-optimistic-upgrade/) -- Ben Schwartz
+* 20 min - [Security Considerations for Optimistic Use of HTTP Upgrade](https://datatracker.ietf.org/doc/draft-ietf-httpbis-optimistic-upgrade/) -- Ben Schwartz ([slides](security-considerations-for-optimistic-upgrade.pdf))
 * 20 min - [HTTP Server Secondary Cert Auth](https://datatracker.ietf.org/doc/draft-ietf-httpbis-secondary-server-certs)
 
 

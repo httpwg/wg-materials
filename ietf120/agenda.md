@@ -29,7 +29,7 @@ _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
 ### Other Topics
 
-* 20 min - [The HTTP Wrap Up Capsule](https://datatracker.ietf.org/doc/draft-schinazi-httpbis-wrap-up/) - David Schinazi
+* 20 min - [The HTTP Wrap Up Capsule](https://datatracker.ietf.org/doc/draft-schinazi-httpbis-wrap-up/) - David Schinazi ([slides](wrap-up-capsule.pdf))
 * 20 min - [Communicating Proxy Configurations in Provisioning Domains](https://datatracker.ietf.org/doc/draft-ietf-intarea-proxy-config/) - Tommy Pauly ([slides](IETF-120-HTTPBIS-PvD-Proxy-Discovery.pdf))
 
 ## Wednesday, 24 July 2024

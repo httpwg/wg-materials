@@ -54,6 +54,6 @@ _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
 ### Other Topics
 
-* 20 min - [No-Vary-Search](https://datatracker.ietf.org/doc/draft-wicg-http-no-vary-search/) -- Jeremy Roman
+* 20 min - [No-Vary-Search](https://datatracker.ietf.org/doc/draft-wicg-http-no-vary-search/) -- Jeremy Roman ([slides](no-vary-search.pdf))
 * 20 min - Revising Cookies (again) -- Johann Hofmann ([slides](future-cookies.pdf))
 

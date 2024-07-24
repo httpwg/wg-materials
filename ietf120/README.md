@@ -12,4 +12,5 @@
 - [resumable.pdf](resumable.pdf)
 - [secondary-certificate-authentication.pdf](secondary-certificate-authentication.pdf)
 - [security-considerations-for-optimistic-upgrade.pdf](security-considerations-for-optimistic-upgrade.pdf)
+- [versioning.pdf](versioning.pdf)
 - [wrap-up-capsule.pdf](wrap-up-capsule.pdf)

@@ -10,5 +10,6 @@
 - [minutes.md](minutes.md)
 - [no-vary-search.pdf](no-vary-search.pdf)
 - [resumable.pdf](resumable.pdf)
+- [secondary-certificate-authentication.pdf](secondary-certificate-authentication.pdf)
 - [security-considerations-for-optimistic-upgrade.pdf](security-considerations-for-optimistic-upgrade.pdf)
 - [wrap-up-capsule.pdf](wrap-up-capsule.pdf)

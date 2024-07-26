@@ -1,5 +1,34 @@
 # HTTP Working Group Minutes - IETF 120
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Monday, 22 July 2024](#monday-22-july-2024)
+  - [Resumable Uploads](#resumable-uploads)
+    - [Discovering upload limits upfront (#2833)](#discovering-upload-limits-upfront-2833)
+    - [Upload size (#2832)](#upload-size-2832)
+    - [Requesting digests from server (#2834)](#requesting-digests-from-server-2834)
+  - [QUERY](#query)
+    - [Identifying QUERY results (#1918)](#identifying-query-results-1918)
+  - [Cache Groups](#cache-groups)
+  - [Communicating Proxy Configs in Provisioning Domains](#communicating-proxy-configs-in-provisioning-domains)
+- [Wednesday, 24 July 2024](#wednesday-24-july-2024)
+  - [Security Considerations for Optimistic Use of HTTP Upgrade -- Ben Schwartz](#security-considerations-for-optimistic-use-of-http-upgrade----ben-schwartz)
+    - [Slide 5 - deprecate HTTP upgrade token](#slide-5---deprecate-http-upgrade-token)
+    - [Slide 6](#slide-6)
+    - [Slide 7](#slide-7)
+    - [Slide 8](#slide-8)
+  - [HTTP Server Secondary Cert Auth - Eric Gorbaty](#http-server-secondary-cert-auth---eric-gorbaty)
+    - [Slide 3](#slide-3)
+    - [Slide 4](#slide-4)
+  - [The HTTP Wrap Up Capsule - David Schinazi](#the-http-wrap-up-capsule---david-schinazi)
+  - [No-Vary-Search -- Jeremy Roman](#no-vary-search----jeremy-roman)
+    - [Mic](#mic)
+  - [Revising Cookies (again) -- Johann Hofmann](#revising-cookies-again----johann-hofmann)
+    - [Mic](#mic-1)
+  - [HTTP Resource Versioning, Michael T](#http-resource-versioning-michael-t)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Monday, 22 July 2024
 

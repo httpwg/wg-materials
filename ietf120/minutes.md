@@ -1,8 +1,11 @@
-# Monday
+# HTTP Working Group Minutes - IETF 120
 
-## Resumable Uploads
 
-### Discovering upload limits upfront (#2833)
+## Monday, 22 July 2024
+
+### Resumable Uploads
+
+#### Discovering upload limits upfront (#2833)
 
 ?: Would the Upload-Limit be set by the proxy or by the origin server.
 
@@ -12,7 +15,7 @@ Mike Bishop: Do new requests have new fields work with options?
 
 Marius: doesn't understand question.
 
-### Upload size (#2832)
+#### Upload size (#2832)
 
 Michael Toomim: Useful. Versioning draft has a similar mechanism.
 
@@ -22,15 +25,15 @@ Marius: This only works if the server supports resumable uploads. For transparen
 
 Michael: Useful for displaying a status bar.
 
-### Requesting digests from server (#2834)
+#### Requesting digests from server (#2834)
 
 Mike Bishop: Using digest fields seems like a sensible way, modulo naming.
 
 Marius will talk to Lucas offline.
 
-## QUERY
+### QUERY
 
-### Identifying QUERY results (#1918)
+#### Identifying QUERY results (#1918)
 
 Mike Bishop: There are 2 things we can communicate: on the response to the query we can say where you can find the results in the future. Example: serach for "weather in Vancouver": either link to weather right now, or link to weather at date of the query.
 
@@ -62,7 +65,7 @@ Mike: Was specified as cross-origin in the design team meeting, but should doubl
 
 mt: Mike should be on the draft. (-> https://github.com/httpwg/http-extensions/issues/2837)
 
-## Cache Groups
+### Cache Groups
 
 No open issues. Ready for last call.
 
@@ -70,7 +73,7 @@ Mike: Any implementations:
 
 Mark: No, but compatible with existing code. Draft might need to sit before it gains momentum.
 
-## Communicating Proxy Configs in Provisioning Domains
+### Communicating Proxy Configs in Provisioning Domains
 
 Lucas Pardue: Where do these JSON tokens come from?
 
@@ -93,11 +96,11 @@ Mike Bishop: Use case for unprompted auth?
 Tommy: Unclear how client cert configuration would work.
 
 
-# Wednesday
+## Wednesday, 24 July 2024
 
-##  Security Considerations for Optimistic Use of HTTP Upgrade -- Ben Schwartz
+###  Security Considerations for Optimistic Use of HTTP Upgrade -- Ben Schwartz
 
-### Slide 5 - deprecate HTTP upgrade token
+#### Slide 5 - deprecate HTTP upgrade token
 
 * Mark Nottingham (mnot), as individual: we shouldn't act based on what random websites write about HTTP. Too many of them, impossible. Have had luck getting MDN to update, they're often seen as authoritative.
 * Ben Schwartz: that screenshot was the only website I ever found that said this
@@ -105,14 +108,14 @@ Tommy: Unclear how client cert configuration would work.
 * Ben: this is in quantum state: existing / not existing. If we mention one we have to pick one. Other option is to not mention it all
 * Mike Bishop: we don't lose registry by indicating that something is obsolete
 
-### Slide 6
+#### Slide 6
 
 * Mike: I thought there was a stack that did this, but turns out no
 * Ben: Not aware of stack that does this, just considered making this implementation myself
 * Mike: does anyone in room know an implementation that does this over h1?
 * Room: crickets
 
-### Slide 7
+#### Slide 7
 
 * Tommy Pauly, as individual: I like having this, 
 * Michael Toomin: use RECOMMENDED instead of SHOULD
@@ -122,22 +125,22 @@ Tommy: Unclear how client cert configuration would work.
 * Lucas Pardue: GET can haz body
 * MT: just don't
 
-### Slide 8
+#### Slide 8
 
 * MT: this isn't really important but we shouldn't make strong claims here. Implementations that look at streams of bytes often take liberties and can still misinterpret. We can't definitely say that TLS is safe here
 * Ben : what about h2 preamble
 * MT: that's a part of defense in depth. We've seen middleboxes that scan the payload looking for GET until the find something
 
 
-## HTTP Server Secondary Cert Auth - Eric Gorbaty
+### HTTP Server Secondary Cert Auth - Eric Gorbaty
 
-### Slide 3
+#### Slide 3
 
 * Tommy, as individual: We have a use case where use secondary certs from a proxy. There the server sends the secondary cert based on watching previous client activity (client CONNECTed to this hostname that server is authoritative for). We don't need explicit signaling here. And we could add it later
 * Erik Nygren (Erik N): It's useful to know when connection was coalesced onto, especially what caused that to happen.
 * Eric Gorbaty (Eric G): Not a great answer for how to do that, let's take offline
 
-### Slide 4
+#### Slide 4
 
 * MT: strong allergic reaction to anything continuation-shaped. Mistakes were made, this could be another mistake. We could use a compression technique to handle the certificate chain here. Then individual signatures fit in an h2 frame
 * Lucas Pardue: also worried about security issues related to continuation
@@ -151,7 +154,7 @@ Tommy: Unclear how client cert configuration would work.
 * Eric G: let's take to issue, we have multiple paths forward
 
 
-## The HTTP Wrap Up Capsule - David Schinazi
+### The HTTP Wrap Up Capsule - David Schinazi
 
 WRAP UP
 
@@ -193,7 +196,7 @@ Alan Frindell: I've seen this problem with webtransport.  We have a similar caps
 Erik Nygren: Are there other use cases that GOAWAY doesn't cover today?
 
 
-## No-Vary-Search -- Jeremy Roman
+### No-Vary-Search -- Jeremy Roman
 
 Jeremy: I'm here to talk about new variable responses.  Browsers support URL parameters and this affects cache software.  A vary header that lists the parameters upon which the response varies.  Today Chrome does support this. the concept seems generally useful to cache implementations (browser caches, CDNs).  
 
@@ -211,7 +214,7 @@ Solution proposed: new header "No-Vary-Search" with several options for differen
 
 We've got some implementation status.  If this is interesting to the WG, there's still some work to make it more conforming as an Internet-Draft.  It doesn't yet tell cache implementations how to change their caching behavior, and those instructions would be required.  there may be issues we didn't run into with the Chromium cache but which other people find are important.  
 
-### Mic
+#### Mic
 
 Michael Toman: How does this affect cache performance in practice?
 
@@ -224,7 +227,7 @@ MNot: it's common for CDNs to do this in a proprietary way, so it's nice to do t
 MNot with chair hat: I'll take this to the list and call for adoption. 
 
 
-## Revising Cookies (again) -- Johann Hofmann
+### Revising Cookies (again) -- Johann Hofmann
 
 Johann: I work on Chrome, at Google 1 yr looking at cookies with Anne van Kesteren. We're at the point we want to start talking to the group here about our draft and this work.  We just put 6265Bis into WG last call after 10 years of overall development, which is really great and we appreciate all the work of the editors. So why do we want to do another one?  Valid question.  
 
@@ -236,7 +239,7 @@ So how are we going to do that, we want to define the concept of a cookie store 
 
 We have a draft, please review; definitely there are rough edges.  we have some hand wavy stuff around observing cookie changes in JavaScript. We're working on top of 6225bis.  I'm not super familiar but I think we're replacing whatever number 6265bis gets when it gets published. That's it.
 
-### Mic
+#### Mic
 
 Steven Bingler: Speaking as 6265bis editor, I think this is great. 
 
@@ -248,7 +251,7 @@ MNot/Tommy: We'll talk to more people about this...
 
 Johann: THere are new features we'd be introducing, for example the partitioned attribute.
 
-## HTTP Resource Versioning, Michael T
+### HTTP Resource Versioning, Michael T
 
 Michael: This is a continuation of features to add state synchronization to HTTP.  The goal is to have the equivalent of a local-first google docs.  This requires 4 extensions to HTTP, each of which is individually valuable.  Today we're talking about one of those, versioning.  NOTE this is not API versioning.
 

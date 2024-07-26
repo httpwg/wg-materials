@@ -102,56 +102,82 @@ Tommy: Unclear how client cert configuration would work.
 
 #### Slide 5 - deprecate HTTP upgrade token
 
-* Mark Nottingham (mnot), as individual: we shouldn't act based on what random websites write about HTTP. Too many of them, impossible. Have had luck getting MDN to update, they're often seen as authoritative.
-* Ben Schwartz: that screenshot was the only website I ever found that said this
-* mnot, as individual: I agree with Roy saying that we don't need to deprecate, and if we do it should be its own intentional draft
-* Ben: this is in quantum state: existing / not existing. If we mention one we have to pick one. Other option is to not mention it all
-* Mike Bishop: we don't lose registry by indicating that something is obsolete
+Mark Nottingham (mnot), as individual: we shouldn't act based on what random websites write about HTTP. Too many of them, impossible. Have had luck getting MDN to update, they're often seen as authoritative.
+
+Ben Schwartz: that screenshot was the only website I ever found that said this
+
+mnot, as individual: I agree with Roy saying that we don't need to deprecate, and if we do it should be its own intentional draft
+
+Ben: this is in quantum state: existing / not existing. If we mention one we have to pick one. Other option is to not mention it all
+
+Mike Bishop: we don't lose registry by indicating that something is obsolete
 
 #### Slide 6
 
-* Mike: I thought there was a stack that did this, but turns out no
-* Ben: Not aware of stack that does this, just considered making this implementation myself
-* Mike: does anyone in room know an implementation that does this over h1?
-* Room: crickets
+Mike: I thought there was a stack that did this, but turns out no
+
+Ben: Not aware of stack that does this, just considered making this implementation myself
+
+Mike: does anyone in room know an implementation that does this over h1?
+
+Room: crickets
 
 #### Slide 7
 
-* Tommy Pauly, as individual: I like having this, 
-* Michael Toomin: use RECOMMENDED instead of SHOULD
-* mnot, as individual: some people don't like putting normative requirements on future specs
-* Martin Thomson (MT): this should not be normative, but we should still do it. Should also improve the text to explain why upgrade means for the body and why GET is best
-* mnot, as individual: +1 to writing down explanation
-* Lucas Pardue: GET can haz body
-* MT: just don't
+Tommy Pauly, as individual: I like having this, 
+
+Michael Toomin: use RECOMMENDED instead of SHOULD
+
+mnot, as individual: some people don't like putting normative requirements on future specs
+
+Martin Thomson (MT): this should not be normative, but we should still do it. Should also improve the text to explain why upgrade means for the body and why GET is best
+
+mnot, as individual: +1 to writing down explanation
+
+Lucas Pardue: GET can haz body
+
+MT: just don't
 
 #### Slide 8
 
-* MT: this isn't really important but we shouldn't make strong claims here. Implementations that look at streams of bytes often take liberties and can still misinterpret. We can't definitely say that TLS is safe here
-* Ben : what about h2 preamble
-* MT: that's a part of defense in depth. We've seen middleboxes that scan the payload looking for GET until the find something
+MT: this isn't really important but we shouldn't make strong claims here. Implementations that look at streams of bytes often take liberties and can still misinterpret. We can't definitely say that TLS is safe here
+
+Ben : what about h2 preamble
+
+MT: that's a part of defense in depth. We've seen middleboxes that scan the payload looking for GET until the find something
 
 
 ### HTTP Server Secondary Cert Auth - Eric Gorbaty
 
 #### Slide 3
 
-* Tommy, as individual: We have a use case where use secondary certs from a proxy. There the server sends the secondary cert based on watching previous client activity (client CONNECTed to this hostname that server is authoritative for). We don't need explicit signaling here. And we could add it later
-* Erik Nygren (Erik N): It's useful to know when connection was coalesced onto, especially what caused that to happen.
-* Eric Gorbaty (Eric G): Not a great answer for how to do that, let's take offline
+Tommy, as individual: We have a use case where use secondary certs from a proxy. There the server sends the secondary cert based on watching previous client activity (client CONNECTed to this hostname that server is authoritative for). We don't need explicit signaling here. And we could add it later
+
+Erik Nygren (Erik N): It's useful to know when connection was coalesced onto, especially what caused that to happen.
+
+Eric Gorbaty (Eric G): Not a great answer for how to do that, let's take offline
 
 #### Slide 4
 
-* MT: strong allergic reaction to anything continuation-shaped. Mistakes were made, this could be another mistake. We could use a compression technique to handle the certificate chain here. Then individual signatures fit in an h2 frame
-* Lucas Pardue: also worried about security issues related to continuation
-* Mike: since this is an extension, it can change anything about the protocol and can allow continuation on control stream. We shouldn't though. re: MT's suggestion, good if we redefined exported authenticators from scratch, but really hard given how they work today
-* David Schinazi: why were continuation frames a mistake?
-* Mike: We defined a negotiable max frame size for a reason: multiplexing requires splitting frames. Continuation allows that. But because HPACK is a continuous block, you need the whole frame at once. But that might not apply here.
-* MT: We have 16K as max frame size by default and in most implementation, but we have a 3byte length sowe could do that. You could wave the limit here as another solution since control frame. Not great for multiplexing but works
-* Eric G: head of line block not great but 16MB is enough
-* MT: you could also create a new stream type, but that's work
-* David: Based on reasoning, TO_BE_CONTINUED might be easiest unless there's a footgun I'm not seeing
-* Eric G: let's take to issue, we have multiple paths forward
+MT: strong allergic reaction to anything continuation-shaped. Mistakes were made, this could be another mistake. We could use a compression technique to handle the certificate chain here. Then individual signatures fit in an h2 frame
+
+Lucas Pardue: also worried about security issues related to continuation
+
+Mike: since this is an extension, it can change anything about the protocol and can allow continuation on control stream. We shouldn't though. re: MT's suggestion, good if we redefined exported authenticators from scratch, but really hard given how they work today
+
+David Schinazi: why were continuation frames a mistake?
+
+Mike: We defined a negotiable max frame size for a reason: multiplexing requires splitting frames. Continuation allows that. But because HPACK is a continuous block, you need the whole frame at once. But that might not apply here.
+
+MT: We have 16K as max frame size by default and in most implementation, but we have a 3byte length sowe could do that. You could wave the limit here as another solution since control frame. Not great for multiplexing but works
+
+Eric G: head of line block not great but 16MB is enough
+
+MT: you could also create a new stream type, but that's work
+
+David: Based on reasoning, TO_BE_CONTINUED might be easiest unless there's a footgun I'm not seeing
+
+Eric G: let's take to issue, we have multiple paths forward
 
 
 ### The HTTP Wrap Up Capsule - David Schinazi
@@ -165,7 +191,6 @@ Our protagonist sets the stage, describing the actors on the stage and establish
 The villian enters the scene, is foiled by some superlative defenses.
 
 The denouement is introduced, but in a twist, this is the true beginning of the narrative.
-
 
 Piotr Sikora: Seems good.  We should try to get capsules in CONNECT-TCP.  Something you didn't mention is that the capsule is only sent from the proxy to the client, but it might be useful to send it from the client to a proxy.  Especially in multi-hop scenarios.
 

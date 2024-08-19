@@ -2,16 +2,16 @@
 
 ---
 
-## IETF 114
+## 🗂️ IETF 114
 
-- [agenda.md](agenda.md)
-- [Alt-Svc.pdf](Alt-Svc.pdf)
-- [Alt-SVCB.pdf](Alt-SVCB.pdf)
-- [ChairSlides.pdf](ChairSlides.pdf)
-- [Cookies.pdf](Cookies.pdf)
-- [IPGeolocation.pdf](IPGeolocation.pdf)
-- [METADATA.pdf](METADATA.pdf)
-- [minutes.md](minutes.md)
-- [ResumableUploads.pdf](ResumableUploads.pdf)
-- [Signatures.pdf](Signatures.pdf)
-- [TransportAuthentication.pdf](TransportAuthentication.pdf)
+- [Agenda](agenda.md) 
+- [Alt Svc](Alt-Svc.pdf) _pdf_
+- [Alt Svcb](Alt-SVCB.pdf) _pdf_
+- [Chairslides](ChairSlides.pdf) _pdf_
+- [Cookies](Cookies.pdf) _pdf_
+- [Ipgeolocation](IPGeolocation.pdf) _pdf_
+- [Metadata](METADATA.pdf) _pdf_
+- [Minutes](minutes.md) 
+- [Resumableuploads](ResumableUploads.pdf) _pdf_
+- [Signatures](Signatures.pdf) _pdf_
+- [Transportauthentication](TransportAuthentication.pdf) _pdf_

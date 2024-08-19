@@ -2,16 +2,16 @@
 
 ---
 
-## IETF 117
+## 🗂️ IETF 117
 
-- [agenda.md](agenda.md)
-- [availability-hints.pdf](availability-hints.pdf)
-- [caching.pdf](caching.pdf)
-- [compression-dictionary.pdf](compression-dictionary.pdf)
-- [minutes.md](minutes.md)
-- [request-otr.pdf](request-otr.pdf)
-- [resumable-uploads.pdf](resumable-uploads.pdf)
-- [secondary-certificate.pdf](secondary-certificate.pdf)
-- [templated-proxies.pdf](templated-proxies.pdf)
-- [unprompted-authentication.pdf](unprompted-authentication.pdf)
-- [websockets-dt-report.pdf](websockets-dt-report.pdf)
+- [Agenda](agenda.md) 
+- [Availability Hints](availability-hints.pdf) _pdf_
+- [Caching](caching.pdf) _pdf_
+- [Compression Dictionary](compression-dictionary.pdf) _pdf_
+- [Minutes](minutes.md) 
+- [Request Otr](request-otr.pdf) _pdf_
+- [Resumable Uploads](resumable-uploads.pdf) _pdf_
+- [Secondary Certificate](secondary-certificate.pdf) _pdf_
+- [Templated Proxies](templated-proxies.pdf) _pdf_
+- [Unprompted Authentication](unprompted-authentication.pdf) _pdf_
+- [Websockets Dt Report](websockets-dt-report.pdf) _pdf_

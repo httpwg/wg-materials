@@ -2,16 +2,16 @@
 
 ---
 
-## IETF 104
+## 🗂️ IETF 104
 
-- [agenda.md](agenda.md)
-- [client-hints.pdf](client-hints.pdf)
-- [HTTPS-over-QUIC.pdf](HTTPS-over-QUIC.pdf)
-- [IETF104-HTTPBIS-Chair.pdf](IETF104-HTTPBIS-Chair.pdf)
-- [IETF104-HTTPBIS-HTTP2Transport.pdf](IETF104-HTTPBIS-HTTP2Transport.pdf)
-- [minutes.md](minutes.md)
-- [protocol-to-origin.pdf](protocol-to-origin.pdf)
-- [proxy-status.pdf](proxy-status.pdf)
-- [SecondaryCerts.pdf](SecondaryCerts.pdf)
-- [signed-exchanges.pdf](signed-exchanges.pdf)
-- [slides-httpbis-stateful-compression-01.pdf](slides-httpbis-stateful-compression-01.pdf)
+- [Agenda](agenda.md) 
+- [Client Hints](client-hints.pdf) _pdf_
+- [HTTPs Over Quic](HTTPS-over-QUIC.pdf) _pdf_
+- [Ietf104-HTTPbis-Chair](IETF104-HTTPBIS-Chair.pdf) _pdf_
+- [Ietf104-HTTPbis-HTTP2Transport](IETF104-HTTPBIS-HTTP2Transport.pdf) _pdf_
+- [Minutes](minutes.md) 
+- [Protocol To Origin](protocol-to-origin.pdf) _pdf_
+- [Proxy Status](proxy-status.pdf) _pdf_
+- [Secondarycerts](SecondaryCerts.pdf) _pdf_
+- [Signed Exchanges](signed-exchanges.pdf) _pdf_
+- [Slides HTTPbis Stateful Compression 01](slides-httpbis-stateful-compression-01.pdf) _pdf_

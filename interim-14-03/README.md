@@ -2,7 +2,7 @@
 
 ---
 
-## Interim meeting: 14-03
+## 🗂️ Interim-14-03
 
-- [arrangements.md](arrangements.md)
-- [minutes.md](minutes.md)
+- [arrangements](arrangements.md) 
+- [Minutes](minutes.md) 

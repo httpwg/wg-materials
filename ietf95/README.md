@@ -2,20 +2,20 @@
 
 ---
 
-## IETF 95
+## 🗂️ IETF 95
 
-- [image/](image/README.md)
-- [agenda.md](agenda.md)
-- [BC.pdf](BC.pdf)
-- [client_certs.pdf](client_certs.pdf)
-- [cookies.pdf](cookies.pdf)
-- [day1.html](day1.html)
-- [day2.html](day2.html)
-- [digest.pdf](digest.pdf)
-- [disentangle.pdf](disentangle.pdf)
-- [ietf-95-httpbis-header-field-parsing.pdf](ietf-95-httpbis-header-field-parsing.pdf)
-- [MICE.pdf](MICE.pdf)
-- [minutes.md](minutes.md)
-- [origin.pdf](origin.pdf)
-- [server_certs.pdf](server_certs.pdf)
-- [tcp.pdf](tcp.pdf)
+- [🗂️ Image](image/)
+- [Agenda](agenda.md) 
+- [Bc](BC.pdf) _pdf_
+- [Client_Certs](client_certs.pdf) _pdf_
+- [Cookies](cookies.pdf) _pdf_
+- [Day1](day1.html) 
+- [Day2](day2.html) 
+- [Digest](digest.pdf) _pdf_
+- [Disentangle](disentangle.pdf) _pdf_
+- [Ietf 95 HTTPbis Header Field Parsing](ietf-95-httpbis-header-field-parsing.pdf) _pdf_
+- [Mice](MICE.pdf) _pdf_
+- [Minutes](minutes.md) 
+- [Origin](origin.pdf) _pdf_
+- [Server_Certs](server_certs.pdf) _pdf_
+- [Tcp](tcp.pdf) _pdf_

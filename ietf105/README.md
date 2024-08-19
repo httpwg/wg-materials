@@ -2,12 +2,12 @@
 
 ---
 
-## IETF 105
+## 🗂️ IETF 105
 
-- [agenda.md](agenda.md)
-- [client-hints.pdf](client-hints.pdf)
-- [digests.pdf](digests.pdf)
-- [httpssvc.pdf](httpssvc.pdf)
-- [minutes.md](minutes.md)
-- [priorities.pdf](priorities.pdf)
-- [proxy-status.pdf](proxy-status.pdf)
+- [Agenda](agenda.md) 
+- [Client Hints](client-hints.pdf) _pdf_
+- [Digests](digests.pdf) _pdf_
+- [HTTPssvc](httpssvc.pdf) _pdf_
+- [Minutes](minutes.md) 
+- [Priorities](priorities.pdf) _pdf_
+- [Proxy Status](proxy-status.pdf) _pdf_

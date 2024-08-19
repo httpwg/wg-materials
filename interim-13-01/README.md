@@ -2,10 +2,10 @@
 
 ---
 
-## Interim meeting: 13-01
+## 🗂️ Interim-13-01
 
-- [agenda.txt](agenda.txt)
-- [HeaderDiff.pdf](HeaderDiff.pdf)
-- [minutes.md](minutes.md)
-- [SPDY-Deployment.pdf](SPDY-Deployment.pdf)
-- [svcinfo-httpbis.pdf](svcinfo-httpbis.pdf)
+- [Agenda](agenda.txt) _txt_
+- [Headerdiff](HeaderDiff.pdf) _pdf_
+- [Minutes](minutes.md) 
+- [Spdy-Deployment](SPDY-Deployment.pdf) _pdf_
+- [Svcinfo HTTPbis](svcinfo-httpbis.pdf) _pdf_

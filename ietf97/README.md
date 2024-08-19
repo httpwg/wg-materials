@@ -2,18 +2,18 @@
 
 ---
 
-## IETF 97
+## 🗂️ IETF 97
 
-- [agenda.md](agenda.md)
-- [Cache-Control_ immutable.pdf](Cache-Control_ immutable.pdf)
-- [Compression Dictionaries.pdf](Compression Dictionaries.pdf)
-- [early-hints-ietf97.pptx.pdf](early-hints-ietf97.pptx.pdf)
-- [Expect-CT IETF 97.pdf](Expect-CT IETF 97.pdf)
-- [HTTP Live Range.IETF 97.v2.pdf](HTTP Live Range.IETF 97.v2.pdf)
-- [IETF97-HTTP-OE-final.pdf](IETF97-HTTP-OE-final.pdf)
-- [IETF 97 HTTPBis.pdf](IETF 97 HTTPBis.pdf)
-- [ietf-97-jfv.pdf](ietf-97-jfv.pdf)
-- [ietf-97-rfc5987bis.pdf](ietf-97-rfc5987bis.pdf)
-- [minutes.md](minutes.md)
-- [SDCH(1).pdf](SDCH(1).pdf)
-- [WebSocket and HTTP%2F2.pdf](WebSocket and HTTP%2F2.pdf)
+- [Agenda](agenda.md) 
+- [Cache Control_ Immutable](Cache-Control_ immutable.pdf) _pdf_
+- [Compression Dictionaries](Compression Dictionaries.pdf) _pdf_
+- [Early Hints Ietf97.Pptx](early-hints-ietf97.pptx.pdf) _pdf_
+- [Expect Ct Ietf 97](Expect-CT IETF 97.pdf) _pdf_
+- [HTTP Live Range.Ietf 97.V2](HTTP Live Range.IETF 97.v2.pdf) _pdf_
+- [Ietf97-HTTP-Oe Final](IETF97-HTTP-OE-final.pdf) _pdf_
+- [Ietf 97 HTTPbis](IETF 97 HTTPBis.pdf) _pdf_
+- [Ietf 97 Jfv](ietf-97-jfv.pdf) _pdf_
+- [Ietf 97 Rfc5987Bis](ietf-97-rfc5987bis.pdf) _pdf_
+- [Minutes](minutes.md) 
+- [Sdch(1)](SDCH(1).pdf) _pdf_
+- [Websocket And HTTP%2F2](WebSocket and HTTP%2F2.pdf) _pdf_

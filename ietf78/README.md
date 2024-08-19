@@ -2,14 +2,14 @@
 
 ---
 
-## IETF 78
+## 🗂️ IETF 78
 
-- [agenda.txt](agenda.txt)
-- [ietf-78-content-disposition.pdf](ietf-78-content-disposition.pdf)
-- [ietf-78-content-disposition.xhtml](ietf-78-content-disposition.xhtml)
-- [ietf-78-httpbis-changes.pdf](ietf-78-httpbis-changes.pdf)
-- [ietf-78-httpbis-changes.xhtml](ietf-78-httpbis-changes.xhtml)
-- [ietf_memento_201007.pptx](ietf_memento_201007.pptx)
-- [ietf_memento_201007.pptx.pdf](ietf_memento_201007.pptx.pdf)
-- [minutes.txt](minutes.txt)
-- [overview_slides.key](overview_slides.key)
+- [Agenda](agenda.txt) _txt_
+- [Ietf 78 Content Disposition](ietf-78-content-disposition.pdf) _pdf_
+- [Ietf 78 Content Disposition](ietf-78-content-disposition.xhtml) _xhtml_
+- [Ietf 78 HTTPbis Changes](ietf-78-httpbis-changes.pdf) _pdf_
+- [Ietf 78 HTTPbis Changes](ietf-78-httpbis-changes.xhtml) _xhtml_
+- [Ietf_Memento_201007](ietf_memento_201007.pptx) _pptx_
+- [Ietf_Memento_201007.Pptx](ietf_memento_201007.pptx.pdf) _pdf_
+- [Minutes](minutes.txt) _txt_
+- [Overview_Slides](overview_slides.key) _key_

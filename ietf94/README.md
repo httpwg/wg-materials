@@ -2,10 +2,10 @@
 
 ---
 
-## IETF 94
+## 🗂️ IETF 94
 
-- [agenda.md](agenda.md)
-- [client authentication.pdf](client authentication.pdf)
-- [cookies!.pdf](cookies!.pdf)
-- [minutes.md](minutes.md)
-- [Ruellan-Accept-Push-Policy.pdf](Ruellan-Accept-Push-Policy.pdf)
+- [Agenda](agenda.md) 
+- [Client Authentication](client authentication.pdf) _pdf_
+- [Cookies!](cookies!.pdf) _pdf_
+- [Minutes](minutes.md) 
+- [Ruellan Accept Push Policy](Ruellan-Accept-Push-Policy.pdf) _pdf_

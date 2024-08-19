@@ -2,12 +2,12 @@
 
 ---
 
-## IETF 86
+## 🗂️ IETF 86
 
-- [agenda.txt](agenda.txt)
-- [editor_changes.pdf](editor_changes.pdf)
-- [HeaderDiff-86.pdf](HeaderDiff-86.pdf)
-- [ietf-86-httpbis-changes.pdf](ietf-86-httpbis-changes.pdf)
-- [ietf-86-httpbis-changes.xhtml](ietf-86-httpbis-changes.xhtml)
-- [Known startup state for a simpler and more robust HTTP 2.0.pptx](Known startup state for a simpler and more robust HTTP 2.0.pptx)
-- [minutes.txt](minutes.txt)
+- [Agenda](agenda.txt) _txt_
+- [Editor_Changes](editor_changes.pdf) _pdf_
+- [Headerdiff 86](HeaderDiff-86.pdf) _pdf_
+- [Ietf 86 HTTPbis Changes](ietf-86-httpbis-changes.pdf) _pdf_
+- [Ietf 86 HTTPbis Changes](ietf-86-httpbis-changes.xhtml) _xhtml_
+- [Known Startup State For A Simpler And More Robust HTTP 2.0](Known startup state for a simpler and more robust HTTP 2.0.pptx) _pptx_
+- [Minutes](minutes.txt) _txt_

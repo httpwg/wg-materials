@@ -2,13 +2,13 @@
 
 ---
 
-## IETF 87
+## 🗂️ IETF 87
 
-- [agenda.md](agenda.md)
-- [grothoff-httpbis.pdf](grothoff-httpbis.pdf)
-- [ietf87-http2-tsv-eye.pdf](ietf87-http2-tsv-eye.pdf)
-- [ietf-87-httpbis-changes.pdf](ietf-87-httpbis-changes.pdf)
-- [ietf-87-httpbis-changes.xhtml](ietf-87-httpbis-changes.xhtml)
-- [Known Startup State for HTTPS.pdf](Known Startup State for HTTPS.pdf)
-- [minutes.md](minutes.md)
-- [security.pdf](security.pdf)
+- [Agenda](agenda.md) 
+- [Grothoff HTTPbis](grothoff-httpbis.pdf) _pdf_
+- [Ietf87 HTTP2 Tsv Eye](ietf87-http2-tsv-eye.pdf) _pdf_
+- [Ietf 87 HTTPbis Changes](ietf-87-httpbis-changes.pdf) _pdf_
+- [Ietf 87 HTTPbis Changes](ietf-87-httpbis-changes.xhtml) _xhtml_
+- [Known Startup State For HTTPs](Known Startup State for HTTPS.pdf) _pdf_
+- [Minutes](minutes.md) 
+- [Security](security.pdf) _pdf_

@@ -2,8 +2,8 @@
 
 ---
 
-## Interim meeting: 13-08
+## 🗂️ Interim-13-08
 
-- [agenda.md](agenda.md)
-- [arrangements.md](arrangements.md)
-- [minutes.md](minutes.md)
+- [Agenda](agenda.md) 
+- [arrangements](arrangements.md) 
+- [Minutes](minutes.md) 

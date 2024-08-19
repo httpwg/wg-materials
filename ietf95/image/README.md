@@ -2,9 +2,9 @@
 
 ---
 
-## ./ietf95/image/
+## 🗂️ Image
 
-- [alexey.jpg](alexey.jpg)
-- [barry.jpg](barry.jpg)
-- [cover1.jpg](cover1.jpg)
-- [cover2.jpg](cover2.jpg)
+- [Alexey](alexey.jpg) _jpg_
+- [Barry](barry.jpg) _jpg_
+- [Cover1](cover1.jpg) _jpg_
+- [Cover2](cover2.jpg) _jpg_

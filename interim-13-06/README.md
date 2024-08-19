@@ -2,10 +2,10 @@
 
 ---
 
-## Interim meeting: 13-06
+## 🗂️ Interim-13-06
 
-- [agenda.md](agenda.md)
-- [arrangements.md](arrangements.md)
-- [editor-notes.pdf](editor-notes.pdf)
-- [hdr-compress-joint.pdf](hdr-compress-joint.pdf)
-- [minutes.md](minutes.md)
+- [Agenda](agenda.md) 
+- [arrangements](arrangements.md) 
+- [Editor Notes](editor-notes.pdf) _pdf_
+- [Hdr Compress Joint](hdr-compress-joint.pdf) _pdf_
+- [Minutes](minutes.md) 

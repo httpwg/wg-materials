@@ -2,18 +2,18 @@
 
 ---
 
-## Interim meeting: 22-02
+## 🗂️ Interim-22-02
 
-- [agenda.md](agenda.md)
-- [alt-svc.pdf](alt-svc.pdf)
-- [binary-messages.pdf](binary-messages.pdf)
-- [bluesheets.md](bluesheets.md)
-- [client-cert.pdf](client-cert.pdf)
-- [digests.pdf](digests.pdf)
-- [draft-ietf-httpbis-rfc6265bis.pdf](draft-ietf-httpbis-rfc6265bis.pdf)
-- [geohash.pdf](geohash.pdf)
-- [ietf-httpbis-2022-02-safemethod.pdf](ietf-httpbis-2022-02-safemethod.pdf)
-- [ietf-httpbis-2022-02-safemethod.xhtml](ietf-httpbis-2022-02-safemethod.xhtml)
-- [minutes.md](minutes.md)
-- [query.pdf](query.pdf)
-- [signatures.pdf](signatures.pdf)
+- [Agenda](agenda.md) 
+- [Alt Svc](alt-svc.pdf) _pdf_
+- [Binary Messages](binary-messages.pdf) _pdf_
+- [Blue Sheets](bluesheets.md) 
+- [Client Cert](client-cert.pdf) _pdf_
+- [Digests](digests.pdf) _pdf_
+- [Draft Ietf HTTPbis Rfc6265Bis](draft-ietf-httpbis-rfc6265bis.pdf) _pdf_
+- [Geohash](geohash.pdf) _pdf_
+- [Ietf HTTPbis 2022-02 Safemethod](ietf-httpbis-2022-02-safemethod.pdf) _pdf_
+- [Ietf HTTPbis 2022-02 Safemethod](ietf-httpbis-2022-02-safemethod.xhtml) _xhtml_
+- [Minutes](minutes.md) 
+- [Query](query.pdf) _pdf_
+- [Signatures](signatures.pdf) _pdf_

@@ -2,11 +2,11 @@
 
 ---
 
-## IETF 74
+## 🗂️ IETF 74
 
-- [draft-natarajan-http-over-sctp-slides.pdf](draft-natarajan-http-over-sctp-slides.pdf)
-- [httpbis-74.pdf](httpbis-74.pdf)
-- [httpbis-74.txt](httpbis-74.txt)
-- [httpbis-minutes-74.txt](httpbis-minutes-74.txt)
-- [IETF74-bidiHTTP-4HTTPbis.pdf](IETF74-bidiHTTP-4HTTPbis.pdf)
-- [IETF74-httpbis-presentation-oiwa.pdf](IETF74-httpbis-presentation-oiwa.pdf)
+- [Draft Natarajan HTTP Over Sctp Slides](draft-natarajan-http-over-sctp-slides.pdf) _pdf_
+- [HTTPbis 74](httpbis-74.pdf) _pdf_
+- [HTTPbis 74](httpbis-74.txt) _txt_
+- [HTTPbis Minutes 74](httpbis-minutes-74.txt) _txt_
+- [Ietf74 Bidihttp-4HTTPbis](IETF74-bidiHTTP-4HTTPbis.pdf) _pdf_
+- [Ietf74 HTTPbis Presentation Oiwa](IETF74-httpbis-presentation-oiwa.pdf) _pdf_

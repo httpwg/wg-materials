@@ -2,14 +2,14 @@
 
 ---
 
-## IETF 119
+## 🗂️ IETF 119
 
-- [agenda.md](agenda.md)
-- [compression-dictionary.pdf](compression-dictionary.pdf)
-- [connect-tcp.pdf](connect-tcp.pdf)
-- [minutes.md](minutes.md)
-- [optimistic-http-upgrade.pdf](optimistic-http-upgrade.pdf)
-- [resumable-uploads.pdf](resumable-uploads.pdf)
-- [reverse-tunnel.pdf](reverse-tunnel.pdf)
-- [signature-auth.pdf](signature-auth.pdf)
-- [zstd-window-size.pdf](zstd-window-size.pdf)
+- [Agenda](agenda.md) 
+- [Compression Dictionary](compression-dictionary.pdf) _pdf_
+- [Connect Tcp](connect-tcp.pdf) _pdf_
+- [Minutes](minutes.md) 
+- [Optimistic HTTP Upgrade](optimistic-http-upgrade.pdf) _pdf_
+- [Resumable Uploads](resumable-uploads.pdf) _pdf_
+- [Reverse Tunnel](reverse-tunnel.pdf) _pdf_
+- [Signature Auth](signature-auth.pdf) _pdf_
+- [Zstd Window Size](zstd-window-size.pdf) _pdf_

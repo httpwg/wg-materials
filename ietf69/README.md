@@ -2,10 +2,10 @@
 
 ---
 
-## IETF 69
+## 🗂️ IETF 69
 
-- [agenda.txt](agenda.txt)
-- [bof intro.pdf](bof intro.pdf)
-- [ETags- Chicago 2007.pdf](ETags- Chicago 2007.pdf)
-- [HTTP State management problems.pdf](HTTP State management problems.pdf)
-- [HTTPBis_BOF.pdf](HTTPBis_BOF.pdf)
+- [Agenda](agenda.txt) _txt_
+- [Bof Intro](bof intro.pdf) _pdf_
+- [Etags  Chicago 2007](ETags- Chicago 2007.pdf) _pdf_
+- [HTTP State Management Problems](HTTP State management problems.pdf) _pdf_
+- [HTTPbis_Bof](HTTPBis_BOF.pdf) _pdf_

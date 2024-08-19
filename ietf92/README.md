@@ -2,9 +2,9 @@
 
 ---
 
-## IETF 92
+## 🗂️ IETF 92
 
-- [agenda.md](agenda.md)
-- [dash-h2.pdf](dash-h2.pdf)
-- [minutes.md](minutes.md)
-- [overview.pdf](overview.pdf)
+- [Agenda](agenda.md) 
+- [Dash H2](dash-h2.pdf) _pdf_
+- [Minutes](minutes.md) 
+- [Overview](overview.pdf) _pdf_

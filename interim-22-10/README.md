@@ -2,9 +2,9 @@
 
 ---
 
-## Interim meeting: 22-10
+## 🗂️ Interim-22-10
 
-- [agenda.md](agenda.md)
-- [cookies.pdf](cookies.pdf)
-- [minutes.md](minutes.md)
-- [resumable-uploads.pdf](resumable-uploads.pdf)
+- [Agenda](agenda.md) 
+- [Cookies](cookies.pdf) _pdf_
+- [Minutes](minutes.md) 
+- [Resumable Uploads](resumable-uploads.pdf) _pdf_

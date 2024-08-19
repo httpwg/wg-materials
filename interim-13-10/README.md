@@ -2,9 +2,9 @@
 
 ---
 
-## Interim meeting: 13-10
+## 🗂️ Interim-13-10
 
-- [agenda.md](agenda.md)
-- [arrangements.md](arrangements.md)
-- [minutes.md](minutes.md)
-- [test_principles.pdf](test_principles.pdf)
+- [Agenda](agenda.md) 
+- [arrangements](arrangements.md) 
+- [Minutes](minutes.md) 
+- [Test_Principles](test_principles.pdf) _pdf_

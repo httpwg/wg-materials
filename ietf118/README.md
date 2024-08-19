@@ -2,17 +2,17 @@
 
 ---
 
-## IETF 118
+## 🗂️ IETF 118
 
-- [agenda.md](agenda.md)
-- [compression-dictionary.pdf](compression-dictionary.pdf)
-- [connect-tcp.pdf](connect-tcp.pdf)
-- [cookies.pdf](cookies.pdf)
-- [minutes.md](minutes.md)
-- [optimistic-upgrade.pdf](optimistic-upgrade.pdf)
-- [per-resource-events.pdf](per-resource-events.pdf)
-- [qpack_static_table_version.pdf](qpack_static_table_version.pdf)
-- [resumable-uploads.pdf](resumable-uploads.pdf)
-- [reverse-http.pdf](reverse-http.pdf)
-- [secondary-certificates.pdf](secondary-certificates.pdf)
-- [unprompted-auth.pdf](unprompted-auth.pdf)
+- [Agenda](agenda.md) 
+- [Compression Dictionary](compression-dictionary.pdf) _pdf_
+- [Connect Tcp](connect-tcp.pdf) _pdf_
+- [Cookies](cookies.pdf) _pdf_
+- [Minutes](minutes.md) 
+- [Optimistic Upgrade](optimistic-upgrade.pdf) _pdf_
+- [Per Resource Events](per-resource-events.pdf) _pdf_
+- [Qpack_Static_Table_Version](qpack_static_table_version.pdf) _pdf_
+- [Resumable Uploads](resumable-uploads.pdf) _pdf_
+- [Reverse HTTP](reverse-http.pdf) _pdf_
+- [Secondary Certificates](secondary-certificates.pdf) _pdf_
+- [Unprompted Auth](unprompted-auth.pdf) _pdf_

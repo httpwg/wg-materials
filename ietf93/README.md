@@ -2,10 +2,10 @@
 
 ---
 
-## IETF 93
+## 🗂️ IETF 93
 
-- [agenda.md](agenda.md)
-- [ietf-93-httpbis-search.pdf](ietf-93-httpbis-search.pdf)
-- [ietf-93-httpbis-search.xhtml](ietf-93-httpbis-search.xhtml)
-- [minutes.md](minutes.md)
-- [New Content-Codings.pdf](New Content-Codings.pdf)
+- [Agenda](agenda.md) 
+- [Ietf 93 HTTPbis Search](ietf-93-httpbis-search.pdf) _pdf_
+- [Ietf 93 HTTPbis Search](ietf-93-httpbis-search.xhtml) _xhtml_
+- [Minutes](minutes.md) 
+- [New Content Codings](New Content-Codings.pdf) _pdf_

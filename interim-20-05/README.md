@@ -2,14 +2,14 @@
 
 ---
 
-## Interim meeting: 20-05
+## 🗂️ Interim-20-05
 
-- [agenda.md](agenda.md)
-- [bikeshed-length.pdf](bikeshed-length.pdf)
-- [client-cert.pdf](client-cert.pdf)
-- [digests.pdf](digests.pdf)
-- [minutes.md](minutes.md)
-- [priorities.pdf](priorities.pdf)
-- [secondary-certs.pdf](secondary-certs.pdf)
-- [signed-messages.pdf](signed-messages.pdf)
-- [user_defined_resource.pdf](user_defined_resource.pdf)
+- [Agenda](agenda.md) 
+- [Bikeshed Length](bikeshed-length.pdf) _pdf_
+- [Client Cert](client-cert.pdf) _pdf_
+- [Digests](digests.pdf) _pdf_
+- [Minutes](minutes.md) 
+- [Priorities](priorities.pdf) _pdf_
+- [Secondary Certs](secondary-certs.pdf) _pdf_
+- [Signed Messages](signed-messages.pdf) _pdf_
+- [User_Defined_Resource](user_defined_resource.pdf) _pdf_

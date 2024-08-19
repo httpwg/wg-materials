@@ -2,13 +2,13 @@
 
 ---
 
-## IETF 77
+## 🗂️ IETF 77
 
-- [httpbis-agenda-77.txt](httpbis-agenda-77.txt)
-- [httpbis-minutes-77.txt](httpbis-minutes-77.txt)
-- [ietf-77-http2231.pdf](ietf-77-http2231.pdf)
-- [ietf-77-http2231.xhtml](ietf-77-http2231.xhtml)
-- [ietf-77-httpbis-issues.pdf](ietf-77-httpbis-issues.pdf)
-- [ietf-77-httpbis-issues.xhtml](ietf-77-httpbis-issues.xhtml)
-- [ietf-77-httpbis.pdf](ietf-77-httpbis.pdf)
-- [ietf-77-httpbis.xhtml](ietf-77-httpbis.xhtml)
+- [HTTPbis Agenda 77](httpbis-agenda-77.txt) _txt_
+- [HTTPbis Minutes 77](httpbis-minutes-77.txt) _txt_
+- [Ietf 77 HTTP2231](ietf-77-http2231.pdf) _pdf_
+- [Ietf 77 HTTP2231](ietf-77-http2231.xhtml) _xhtml_
+- [Ietf 77 HTTPbis Issues](ietf-77-httpbis-issues.pdf) _pdf_
+- [Ietf 77 HTTPbis Issues](ietf-77-httpbis-issues.xhtml) _xhtml_
+- [Ietf 77 HTTPbis](ietf-77-httpbis.pdf) _pdf_
+- [Ietf 77 HTTPbis](ietf-77-httpbis.xhtml) _xhtml_

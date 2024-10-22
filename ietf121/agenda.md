@@ -22,14 +22,14 @@ _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
 * 20 min - [No-Vary-Search](https://datatracker.ietf.org/doc/draft-ietf-httpbis-no-vary-search/)
 * 20 min - [Resumable Uploads](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload)
-* 10 min - [QUERY Method](https://datatracker.ietf.org/doc/draft-ietf-httpbis-safe-method-w-body)
-* 10 min - [Cache Groups](https://datatracker.ietf.org/doc/draft-ietf-httpbis-cache-groups/)
+* 10 min - [QUERY Method](https://datatracker.ietf.org/doc/draft-ietf-httpbis-safe-method-w-body) -- Mike Bishop
+* 10 min - [Cache Groups](https://datatracker.ietf.org/doc/draft-ietf-httpbis-cache-groups/) -- Mark Nottingham
 
 ### Other Topics
 
-* 15 min - [Incremental HTTP Messages](https://datatracker.ietf.org/doc/draft-kazuho-httpbis-incremental-http/)
-* 15 min - [The HTTP Wrap Up Capsule](https://datatracker.ietf.org/doc/draft-schinazi-httpbis-wrap-up/)
-* 10 min - [Guidance for HTTP Capsule Protocol Extensibility](https://datatracker.ietf.org/doc/draft-pardue-capsule-ext-guidance/)
+* 15 min - [Incremental HTTP Messages](https://datatracker.ietf.org/doc/draft-kazuho-httpbis-incremental-http/) -- Kazuho Oku
+* 15 min - [The HTTP Wrap Up Capsule](https://datatracker.ietf.org/doc/draft-schinazi-httpbis-wrap-up/) -- Lucas Pardue
+* 10 min - [Guidance for HTTP Capsule Protocol Extensibility](https://datatracker.ietf.org/doc/draft-pardue-capsule-ext-guidance/) -- Lucas Pardue
 
 ## Thursday, 7 November 2024
 

@@ -27,8 +27,9 @@ _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
 ### Other Topics
 
-* 15 min - [The HTTP Wrap Up Capsule](https://datatracker.ietf.org/doc/draft-schinazi-httpbis-wrap-up/)
 * 15 min - [Incremental HTTP Messages](https://datatracker.ietf.org/doc/draft-kazuho-httpbis-incremental-http/)
+* 15 min - [The HTTP Wrap Up Capsule](https://datatracker.ietf.org/doc/draft-schinazi-httpbis-wrap-up/)
+* 10 min - [Guidance for HTTP Capsule Protocol Extensibility](https://datatracker.ietf.org/doc/draft-pardue-capsule-ext-guidance/)
 
 ## Thursday, 7 November 2024
 

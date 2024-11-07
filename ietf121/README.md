@@ -9,6 +9,7 @@
 - [Chairs](chairs.pdf) _pdf_
 - [Delete Cookie](delete-cookie.pdf) _pdf_
 - [Incremental](incremental.pdf) _pdf_
+- [Ip Geolocation](ip-geolocation.pdf) _pdf_
 - [No Vary Search](no-vary-search.pdf) _pdf_
 - [Optimistic](optimistic.pdf) _pdf_
 - [Query](query.pdf) _pdf_

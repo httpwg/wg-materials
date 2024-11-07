@@ -57,4 +57,4 @@ _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
 ### Other Topics
 
-* 15 min - [The IP Geolocation HTTP Client Hint](https://datatracker.ietf.org/doc/draft-pauly-httpbis-geoip-hint/) -- Ciara McMullin
+* 15 min - [The IP Geolocation HTTP Client Hint](https://datatracker.ietf.org/doc/draft-pauly-httpbis-geoip-hint/) -- Ciara McMullin ([slides](ip-geolocation.pdf))

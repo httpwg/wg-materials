@@ -1,5 +1,29 @@
 # HTTP Working Group Minutes - IETF 121
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Monday, 4 November 2024](#monday-4-november-2024)
+  - [Active Drafts](#active-drafts)
+    - [Resumable Uploads -- Marius Kleidl](#resumable-uploads----marius-kleidl)
+    - [QUERY Method -- Mike Bishop](#query-method----mike-bishop)
+    - [Cache Groups -- Mark Nottingham](#cache-groups----mark-nottingham)
+  - [Other Topics](#other-topics)
+    - [Incremental HTTP Messages -- Kazuho Oku](#incremental-http-messages----kazuho-oku)
+    - [The HTTP Wrap Up Capsule -- Lucas Pardue](#the-http-wrap-up-capsule----lucas-pardue)
+    - [Guidance for HTTP Capsule Protocol Extensibility -- Lucas Pardue](#guidance-for-http-capsule-protocol-extensibility----lucas-pardue)
+    - [Cookie eviction -- Yoav Weiss _remote_](#cookie-eviction----yoav-weiss-_remote_)
+- [Thursday, 7 November 2024](#thursday-7-november-2024)
+  - [AD-Requested Feedback](#ad-requested-feedback)
+  - [Active Drafts](#active-drafts-1)
+    - [Template-Driven CONNECT for TCP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-connect-tcp/) -- Ben Schwartz _remote_ (slides)](#template-driven-connect-for-tcphttpsdatatrackerietforgdocdraft-ietf-httpbis-connect-tcp----ben-schwartz-_remote_-slides)
+    - [Security Considerations for Optimistic Use of HTTP Upgrade -- Ben Schwartz _remote_ (slides)](#security-considerations-for-optimistic-use-of-http-upgrade----ben-schwartz-_remote_-slides)
+    - [No-Vary-Search -- Jeremy Roman](#no-vary-search----jeremy-roman)
+  - [Other Topics](#other-topics-1)
+    - [The IP Geolocation HTTP Client Hint -- Ciara McMullin](#the-ip-geolocation-http-client-hint----ciara-mcmullin)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 
 ## Monday, 4 November 2024
 

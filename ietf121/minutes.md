@@ -91,7 +91,7 @@ _09:30 - 11:30	Monday Session I - Wicklow Hall 1_
 
 #### [Guidance for HTTP Capsule Protocol Extensibility](https://datatracker.ietf.org/doc/draft-pardue-capsule-ext-guidance/) -- Lucas Pardue
 
-- Tommy Pauly: As individual. Another case in MASQUE, which is using H3 datagrams, we have cases in QUIC aware mode with other capsules and there are error codes of "you mismanged the connection ID index". The error is vaguely related, but it's not at all an H3 datagram error. I would strongly support having a better one.
+- Tommy Pauly: As individual. Another case in MASQUE, which is using H3 datagrams, we have cases in QUIC aware mode with other capsules and there are error codes of "you mismanaged the connection ID index". The error is vaguely related, but it's not at all an H3 datagram error. I would strongly support having a better one.
 
 - Alessandro: About ignoring capsules, does the behavior change for the capsule itself? Wrap up, ignore it. For other ones, if you're using CONNECT-UDP and you're getting CONNECT-IP related stuff, that seems like a problem. Should each capsule define what to do when that happens.
 - Lucas: I can think about 10 different ways to frame this.
@@ -117,7 +117,7 @@ _09:30 - 11:30	Monday Session I - Wicklow Hall 1_
 
 - Neil Jenkins: Usually when you end up in this situation, you just want to get rid of them because something got messed up. I agree with the approach there. Underscore host hack for security sensitive cookies, everything else _shrug_, seems fine.
 
-- Yaroslav: Current method of setting a cookie with an expiry date in the past is an afterthought, but it works. For the forseeable future, implementers will need to do both, since there's no way to signal if you support this delete cookie feature. Not entirely sure if that's worth it, given that there is a mechanism that works today.
+- Yaroslav: Current method of setting a cookie with an expiry date in the past is an afterthought, but it works. For the foreseeable future, implementers will need to do both, since there's no way to signal if you support this delete cookie feature. Not entirely sure if that's worth it, given that there is a mechanism that works today.
 - Yoav: That works today if you have the domain and path. If we always had that, I agree it wouldn't be worth it. In many cases, we don't have it. I'm starting to see people encoding the domain and path into the cookie in various ways in order to have that information.
 - Neil: That's a really troubled moment we've gotten into in the past, there's no way to get that information in the past. It's just impossible to remove it, you have to find the magic sequence of how you set it to be able to remove it, and the client won't tell you.
 
@@ -166,9 +166,9 @@ Meetecho - [full client](https://meetings.conf.meetecho.com/ietf121/?session=334
 
 #### Template-Driven CONNECT for TCP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-connect-tcp/) -- Ben Schwartz _remote_ ([slides](template-driven-connect.pdf))
 
-David Schinazi: We already live in a world where we already need more than a URI. You need a separate part of your config, such as how to configure a proxy. We already have a solution for. Recommendation: wahtever mechanism you use to configure your client with a proxy should include the upgrade tokens.  We should have 2 upgrade tokens, and clients or servers can choose what they implement. No "MUST implement"
+David Schinazi: We already live in a world where we already need more than a URI. You need a separate part of your config, such as how to configure a proxy. We already have a solution for. Recommendation: whatever mechanism you use to configure your client with a proxy should include the upgrade tokens.  We should have 2 upgrade tokens, and clients or servers can choose what they implement. No "MUST implement"
 
-Kazuho Oku: Mostly agree with David. We have 3 options including "legacy CONNECT" Wondering if poeple are interested in implementing 'connect-tcp'
+Kazuho Oku: Mostly agree with David. We have 3 options including "legacy CONNECT" Wondering if people are interested in implementing 'connect-tcp'
 
 Tommy Pauly: Agree its vague what connect-tcp means. Recommend it's always the capsule.  Puts it on par with other token based protocols. If you want no capsule, just use legacy CONNECT. This removes one of the variables
 
@@ -176,11 +176,11 @@ Lucas Pardue: Dont like that the server says you have to do 2 things. Want to ch
 
 Mike Bishop: Shares previous opinions.  If we know we need capsules, then lets just have capsules.  Lets go all the way and use capsules.
 
-Mirja Kühlewind: In this esign you already have 2 things (protocol and capsule-protocol fields).  If you take
+Mirja Kühlewind: In this design you already have 2 things (protocol and capsule-protocol fields).  If you take
 
 Ben: That's from the capsule protocol, outside of this draft.
 
-David Schinazi: "that's fair" emoji.  Strongy agree with ben here, but that wasn't the consensus of masque wg group at the time.  Since it was optional, we can't depend on it.
+David Schinazi: "that's fair" emoji.  Strongly agree with ben here, but that wasn't the consensus of masque wg group at the time.  Since it was optional, we can't depend on it.
 
 Mark: Seems like we need more discussion.
 
@@ -222,7 +222,7 @@ Darrel Miller: feedback from non-browser user on naming: "search" is odd. what a
 
 Jeremy: We had other name "no-vary" at the beginning and got feedback that "search" is ok.
 
-Mark: In this area, terminology is inconsistent across across the ecossytem.  WHen talking about naming, defer to editors.  AI generated pictures of bikesheds is unhelpful. :)
+Mark: In this area, terminology is inconsistent across across the ecosystem.  When talking about naming, defer to editors.  AI generated pictures of bikesheds is unhelpful. :)
 
 Mark: making good progress here
 
@@ -232,7 +232,7 @@ Phillip Hallam-Baker: "search" is a relic from the past
 
 #### [The IP Geolocation HTTP Client Hint](https://datatracker.ietf.org/doc/draft-pauly-httpbis-geoip-hint/) -- Ciara McMullin
 
-Ted Hardie: appreciates the privacy focus. There has been previous work on GEOPRIV with no implementations. idea is that in addition to having the location, you have somebody who cares about the revelationof their location the idea of amaker is kind of central to that.
+Ted Hardie: appreciates the privacy focus. There has been previous work on GEOPRIV with no implementations. idea is that in addition to having the location, you have somebody who cares about the revelation of their location the idea of a maker is kind of central to that.
 Once you create a header like this, there is no guarantee that people will use it.  Since many VPNs are designed to hide location, this could compromise that.
 
 Other approach: geo feed from client. reduces number of IP addresses in IP pool, which is good.
@@ -253,11 +253,11 @@ Philip Hallam Baker: I am happy to control this as a user. Setting my preferred 
 
 Yaroslv Rosomakho: There is another significant challenge which is the question of trust between proxy and destination service.  Very few destinations trust headers that proxies use to expose origin IP. We should discuss how intermediaries can sign those headers so that origin servers can trust it.
 
-Eric Kinnear: are we in place to have seperate signals for IP address and location? Today we have both. Can we make them seperate
+Eric Kinnear: are we in place to have separate signals for IP address and location? Today we have both. Can we make them separate?
 
 Piotr Sikora: as a server I cannot trust this. with MASQUE can this leak the IP address?how does this work with MASQUE?
 
-Ben Schwartz: The elehpant in the room is ma  proxy server operators that will customize your location header for a free.  Proxy operators come to IETF to bypass the geolocation database providers. 
+Ben Schwartz: The elephant in the room is ma  proxy server operators that will customize your location header for a free.  Proxy operators come to IETF to bypass the geolocation database providers. 
 
 Lucas Pardue: difficult to solve, but this is good to solve
 

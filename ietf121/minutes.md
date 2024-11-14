@@ -47,23 +47,29 @@ Marius Kleidl
 - Yoav Weiss: In the spirit of the Go implementation issues, we recently had some issues with Early Hints where there are web exposed metrics that indicate the first interim response header. It's worthwhile as part of browsers shipping this, we should test that we're reporting the first interim header and not the last interim header, this would be a new concept. I don't know if this requires text in the RFC or is just something for implementers to be aware of. Otherwise excited about this, ship it.
 
 - Guoye Zhang: A late addition to the draft was the OPTIONS header to detect upload limits. Are there any concerns on the server side given that that is a MUST. Can everyone support OPTIONS and OPTIONS*?
+
 - Marius: In my experience, I was able to do it, but I don't have the viewpoint of every implementation. If it's not achievable in practice, we can also turn it into a SHOULD.
 
 - Julian Reschke: Regarding testing multiple 1xx responses, it would be helpful to have a public resource on the web that could exercise that test case for us to point an HTTP client to. That would make it easier to raise bug reports for libraries like... Java. (PS: will update https://github.com/greenbytes/java-http-1xx-tests)
+
 - Marius: Great idea, we have a public demo server for uploads, we could implement something like this.
+
 - Mark: We could probably put something into the cache tests to test all the intermediaries pretty easily, I'll try to 
 
-
 - Marius: Once we do the editorial pass, is it reasonable to do a WGLC soon? 
+
 - Mark: Sounds like we're getting there. Once people take a look at the revised draft, we'll look at that.
 
 - Darrel Miller: Just curious about client implementations. How many client libraries actually expose 1xx to application developers? Are we hoping that as we implement more of these, that will encourage people, or are there clients out there that already support this. 
+
 - Marius: In my experience, you're in new territory. Most libraries (Go, Node.js), you can fetch intermediate responses, but sometimes it's ugly. On the web, with fetch, this is not possible. I would like to have them exposed there, but I'm not sure if we'll get there. Resumable uploads are usable without them, so you can work around it.
 
 - Lucas Pardue: One question on the 104 status, it's not currently reserved. If we think this is ready for WGLC, but I hear other people talking about wanting a 1xx status code. Is there a way to provisionally reserve that? 
+
 - Mark: There's a process for that in some RFC, we'll work with the AD to do that. I think we're probably ready for that.
 
 - Julian: Regarding fetch API, I recall that we opened a ticket when we did HTTP/2 where we had almost killed the 1xx call. I think there's a ticket open, if it's not open I can open one and we can mention it to Anne. In Java, there's a weird API, but it's possible. Standard Java API clients accept this call in Java 17, but don't expose the contents of the messages. Has open ticket from me to do so.
+
 - Marius: Thanks for the insights, that sounds like what we'll be seeing a lot with intermediate responses.
 
 - David: For early allocation, it looks like you just need WG chair and AD approval.
@@ -72,9 +78,12 @@ Marius Kleidl
 
 Mike Bishop
 
-- [#2896](https://github.com/httpwg/http-extensions/issues/2896) Normalization
+[#2896](https://github.com/httpwg/http-extensions/issues/2896) Normalization
+
 - Darrel Miller: I would like to comment on the decision around the syntax of "Accept-Query". Please don't not use structured fields. In HTTPAPI we're telling everybody you have to use SF. Having an exception from this group sets a bad precedent.
+
 - Martin Thomson: I think you probably have an answer to these questions in your mind. Those are the right answers, just go ahead and do those things and we'll Last Call it once it's done. I'd like to see this wrap up, the things I've seen going on the issues list are very sensible. +1 to Darrel as well.
+
 - Mike: I will go and do as I see fit then, thank you.
 
 #### [Cache Groups](https://datatracker.ietf.org/doc/draft-ietf-httpbis-cache-groups/)
@@ -82,6 +91,7 @@ Mike Bishop
 Mark Nottingham
 
 - Mark Nottingham: There are some textual changes to make that will make the spec more clear. I don't see anything that's a showstopper. If anyone else has comments, now's the time, Last Call is about done. If folks want to express support or lack thereof, that would be good. Unfortunately, we have uneven participation from cache vendors, I think those teams are often busy with other things. If you know someone working on an HTTP cache, please solicit opinions from them as these specifications go by.
+
 - Kazuho Oku: What I've heard from my colleagues is that this looks good and can be implemented. Not sure if they will, but I've heard that it looks good.
 
 
@@ -100,8 +110,11 @@ Kazuho Oku
 - Alessandro Ghedini: We do this piecemeal, mostly when a customer complains. We do have cases where we want to disable buffering for normal browser traffic. I don't think browsers are going to set this parameter. Are there other ways to signal the incremental 
 
 - Tommy Pauly: As coauthor and as individual. This signal is sent on both request and response. Independent signal from sender through intermediary. Need to think about a server sending it, they won't get the status code rejection. Soft vs. hard failure: Would that only apply to one direction, are there considerations for the other direction. If we assume that the client is able to do it in one direction, does the intermediary get to reject it in the other direction from the server.
+
 - Kazuho: We do have freedom of choosing which design we like. We started with bidirectional, changed to attaching it to each message so request/response have different signals. As Tommy pointed out, the response cannot be seen by the server. I think Lucas and <...> had a proposal to send a signal to the server.
+
 - Mark: There are a lot of aspects that need digging into. A lot of the devices that cause problems are virus scanners and other endpoints on path, and they may not engage here. Maybe we should invert to complement client -> intermediary. We've talked about this a number of times over the years. Every time it comes up, we decide not to do it because we can't make it perfect and solve every case. Maybe it's worth trying and seeing how far we get. Would be worth trying to engage those parties that are otherwise reluctant. Hearing lots of enthuaism. 
+
 - Martin: I think reciprocal case is useful to explore. Browsers probably won't set this, we don't care about incremental delivery of uploads, those tend to be small. I think there's a use case for the reciprocal coming back, there are cases where that would improve page load performance. e.g. CSS is all in one job, but other types resources like HTML can benefit. Our performance people would be interested. Not sure what that does to intermediaries who expected this to just be for some niche use cases.
 
 
@@ -115,12 +128,14 @@ Lucas Pardue
 
 - Mike Bishop: Also supportive. I think it serves a good use case. It's a GOAWAY on the inner connection that the intermediary doesn't have access to send. It can relay it to one of the endpoints that does have access to send that GOAWAY.
 
-- Yaroslav: Very supportive of this work, I think it's a big missing piece. Would ask to consider two use cases: One when you're having maintenance and you'd like client to retry as transparently to the user as possible. Second when you're shutting things down and you don't want the client to try again. Don't want to overcomplicate things, but having a retry bit as a payload wouldn't hurt. Even without that, this is a super useful addition. 
+- Yaroslav: Very supportive of this work, I think it's a big missing piece. Would ask to consider two use cases: One when you're having maintenance and you'd like client to retry as transparently to the user as possible. Second when you're shutting things down and you don't want the client to try again. Don't want to overcomplicate things, but having a retry bit as a payload wouldn't hurt. Even without that, this is a super useful addition.
+
 - Lucas: I have things like what you're saying in mind as use cases, but I think we can iterate, and it's not anything that would need to be fleshed out before this WG picks up the work in my opinion. 
 
 - Kazuho: +1 to adopt, we can decide if we need client generated signals after adopting this.
 
-- David: Before we move on, are you going to start an adoption call? 
+- David: Before we move on, are you going to start an adoption call?
+ 
 - Tommy: Mark and I will talk. It sounds like we have good support, we need to schedule the set of things we might be interested in adopting.
 
 #### [Guidance for HTTP Capsule Protocol Extensibility](https://datatracker.ietf.org/doc/draft-pardue-capsule-ext-guidance/)
@@ -130,10 +145,15 @@ Lucas Pardue
 - Tommy Pauly: As individual. Another case in MASQUE, which is using H3 datagrams, we have cases in QUIC aware mode with other capsules and there are error codes of "you mismanaged the connection ID index". The error is vaguely related, but it's not at all an H3 datagram error. I would strongly support having a better one.
 
 - Alessandro: About ignoring capsules, does the behavior change for the capsule itself? Wrap up, ignore it. For other ones, if you're using CONNECT-UDP and you're getting CONNECT-IP related stuff, that seems like a problem. Should each capsule define what to do when that happens.
+
 - Lucas: I can think about 10 different ways to frame this.
+
 - Alessandro: You could have a registry with a column for ignore or error if you don't understand it.
+
 - Lucas: Sounds complicated, but I'm all for being rigid and forceful in these cases.
+
 - Alessandro: I don't know if this has been discussed, a bit orthogonal, but should we be greasing capsules?
+
 - David: We are. Spec for capsules recommends greasing. Chrome will do it for WebTransport for example.
 
 - David: I think this is really important. Some of these we didn't think of. Some of these we were just lazy. Now that we have some experience, I think this is the right time. I don't know that we need a -bis on 9297, but some guidance would be good and I'm fully supportive and happy to help.
@@ -143,10 +163,13 @@ Lucas Pardue
 - Mike: Echoing what Ted said, I actually don't think this is unclear. There's a difference between unknown capsule that you don't know about vs. a known one that doesn't belong. If unknown, keep going. If known and bad, blow up.
 
 - David: To what Ted said, we were pretty clear about endpoint being intermediary vs. destination, but then is it your HTTP stack vs. CONNECT/MASQUE stack?
+
 - Lucas: Some of this is "HTTP Body" for my code, and folks aren't even aware of what other capabilities they have.
+
 - David: We do it the other way around, we parse the capsules at the bottom since we have varints and I'm lazy.
 
 - Lucas: This is written as a document that updates 9297, no strong opinion between that and a -bis.
+
 - Mark: We'll talk about it.
 
 #### Cookie eviction
@@ -156,16 +179,23 @@ Yoav Weiss _remote_
 - Neil Jenkins: Usually when you end up in this situation, you just want to get rid of them because something got messed up. I agree with the approach there. Underscore host hack for security sensitive cookies, everything else _shrug_, seems fine.
 
 - Yaroslav: Current method of setting a cookie with an expiry date in the past is an afterthought, but it works. For the foreseeable future, implementers will need to do both, since there's no way to signal if you support this delete cookie feature. Not entirely sure if that's worth it, given that there is a mechanism that works today.
+
 - Yoav: That works today if you have the domain and path. If we always had that, I agree it wouldn't be worth it. In many cases, we don't have it. I'm starting to see people encoding the domain and path into the cookie in various ways in order to have that information.
+
 - Neil: That's a really troubled moment we've gotten into in the past, there's no way to get that information in the past. It's just impossible to remove it, you have to find the magic sequence of how you set it to be able to remove it, and the client won't tell you.
 
 - Martin: Question is what to do with the work, seems like we have a cookie revision coming up, that seems like the right place to fold this in. I think this is great, it's the right shape, we don't need to do anything fancy here.
+
 - Mark: In the last round, we're a little more formal around taking on new functionality. We need a draft and to do a call for adoption, and you need consensus to adopt before we'll put it in.
+
 - Martin: That's reasonable to do, but I would suggest that this is in scope. As Neil points out, this is just annoying.
 
 - Mark: Do you have a sense of urgency? Are you going to try to prototype?
+
 - Yoav: I think this is pretty simple in terms of definition. I suspect it's not super hard in terms of implementation. I guess the main sense of urgency is if we want to get it into -bis. I can move on getting an I-D put together for this rather quickly if that works for folks. I don't know what the timelines for that to get adopted are, what would that look like? 
+
 - Tommy: To clarify, we have a current -bis document that's leaving the WG and headed to the IESG. It would not be in that, but directly on its heels, we expect to adopt another -bisbis of that, and we'd want to include in that. Ideally, we don't leave that one open for quite as long. Hopefully, not a big delay. That said, we do want to get some implementation and experimentation experience.
+
 - Yoav: That sounds great.
 
 

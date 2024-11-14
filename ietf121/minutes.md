@@ -16,7 +16,7 @@
 - [Thursday, 7 November 2024](#thursday-7-november-2024)
   - [AD-Requested Feedback](#ad-requested-feedback)
   - [Active Drafts](#active-drafts-1)
-    - [Template-Driven CONNECT for TCP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-connect-tcp/)](#template-driven-connect-for-tcphttpsdatatrackerietforgdocdraft-ietf-httpbis-connect-tcp)
+    - [Template-Driven CONNECT for TCP](#template-driven-connect-for-tcp)
     - [Security Considerations for Optimistic Use of HTTP Upgrade](#security-considerations-for-optimistic-use-of-http-upgrade)
     - [No-Vary-Search](#no-vary-search)
   - [Other Topics](#other-topics-1)
@@ -202,7 +202,7 @@ Meetecho - [full client](https://meetings.conf.meetecho.com/ietf121/?session=334
 ### Active Drafts
 
 
-#### Template-Driven CONNECT for TCP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-connect-tcp/)
+#### [Template-Driven CONNECT for TCP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-connect-tcp/)
 
 Ben Schwartz _remote_ ([slides](template-driven-connect.pdf))
 

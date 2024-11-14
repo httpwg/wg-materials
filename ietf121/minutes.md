@@ -5,22 +5,22 @@
 
 - [Monday, 4 November 2024](#monday-4-november-2024)
   - [Active Drafts](#active-drafts)
-    - [Resumable Uploads -- Marius Kleidl](#resumable-uploads----marius-kleidl)
-    - [QUERY Method -- Mike Bishop](#query-method----mike-bishop)
-    - [Cache Groups -- Mark Nottingham](#cache-groups----mark-nottingham)
+    - [Resumable Uploads](#resumable-uploads)
+    - [QUERY Method](#query-method)
+    - [Cache Groups](#cache-groups)
   - [Other Topics](#other-topics)
-    - [Incremental HTTP Messages -- Kazuho Oku](#incremental-http-messages----kazuho-oku)
-    - [The HTTP Wrap Up Capsule -- Lucas Pardue](#the-http-wrap-up-capsule----lucas-pardue)
-    - [Guidance for HTTP Capsule Protocol Extensibility -- Lucas Pardue](#guidance-for-http-capsule-protocol-extensibility----lucas-pardue)
-    - [Cookie eviction -- Yoav Weiss _remote_](#cookie-eviction----yoav-weiss-_remote_)
+    - [Incremental HTTP Messages](#incremental-http-messages)
+    - [The HTTP Wrap Up Capsule](#the-http-wrap-up-capsule)
+    - [Guidance for HTTP Capsule Protocol Extensibility](#guidance-for-http-capsule-protocol-extensibility)
+    - [Cookie eviction](#cookie-eviction)
 - [Thursday, 7 November 2024](#thursday-7-november-2024)
   - [AD-Requested Feedback](#ad-requested-feedback)
   - [Active Drafts](#active-drafts-1)
-    - [Template-Driven CONNECT for TCP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-connect-tcp/) -- Ben Schwartz _remote_ (slides)](#template-driven-connect-for-tcphttpsdatatrackerietforgdocdraft-ietf-httpbis-connect-tcp----ben-schwartz-_remote_-slides)
-    - [Security Considerations for Optimistic Use of HTTP Upgrade -- Ben Schwartz _remote_ (slides)](#security-considerations-for-optimistic-use-of-http-upgrade----ben-schwartz-_remote_-slides)
-    - [No-Vary-Search -- Jeremy Roman](#no-vary-search----jeremy-roman)
+    - [Template-Driven CONNECT for TCP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-connect-tcp/)](#template-driven-connect-for-tcphttpsdatatrackerietforgdocdraft-ietf-httpbis-connect-tcp)
+    - [Security Considerations for Optimistic Use of HTTP Upgrade](#security-considerations-for-optimistic-use-of-http-upgrade)
+    - [No-Vary-Search](#no-vary-search)
   - [Other Topics](#other-topics-1)
-    - [The IP Geolocation HTTP Client Hint -- Ciara McMullin](#the-ip-geolocation-http-client-hint----ciara-mcmullin)
+    - [The IP Geolocation HTTP Client Hint](#the-ip-geolocation-http-client-hint)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -32,7 +32,9 @@ _09:30 - 11:30	Monday Session I - Wicklow Hall 1_
 ### Active Drafts
 
 
-#### [Resumable Uploads](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload) -- Marius Kleidl
+#### [Resumable Uploads](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload) 
+
+Marius Kleidl
 
 - Marius Kleidl: Updated all implementations to the latest draft during the hackathon, tested interop, lots of green checkmarks, nice. All clients and servers interoped well.
 
@@ -66,14 +68,18 @@ _09:30 - 11:30	Monday Session I - Wicklow Hall 1_
 
 - David: For early allocation, it looks like you just need WG chair and AD approval.
 
-#### [QUERY Method](https://datatracker.ietf.org/doc/draft-ietf-httpbis-safe-method-w-body) -- Mike Bishop
+#### [QUERY Method](https://datatracker.ietf.org/doc/draft-ietf-httpbis-safe-method-w-body) 
+
+Mike Bishop
 
 - [#2896](https://github.com/httpwg/http-extensions/issues/2896) Normalization
 - Darrel Miller: I would like to comment on the decision around the syntax of "Accept-Query". Please don't not use structured fields. In HTTPAPI we're telling everybody you have to use SF. Having an exception from this group sets a bad precedent.
 - Martin Thomson: I think you probably have an answer to these questions in your mind. Those are the right answers, just go ahead and do those things and we'll Last Call it once it's done. I'd like to see this wrap up, the things I've seen going on the issues list are very sensible. +1 to Darrel as well.
 - Mike: I will go and do as I see fit then, thank you.
 
-#### [Cache Groups](https://datatracker.ietf.org/doc/draft-ietf-httpbis-cache-groups/) -- Mark Nottingham
+#### [Cache Groups](https://datatracker.ietf.org/doc/draft-ietf-httpbis-cache-groups/)
+
+Mark Nottingham
 
 - Mark Nottingham: There are some textual changes to make that will make the spec more clear. I don't see anything that's a showstopper. If anyone else has comments, now's the time, Last Call is about done. If folks want to express support or lack thereof, that would be good. Unfortunately, we have uneven participation from cache vendors, I think those teams are often busy with other things. If you know someone working on an HTTP cache, please solicit opinions from them as these specifications go by.
 - Kazuho Oku: What I've heard from my colleagues is that this looks good and can be implemented. Not sure if they will, but I've heard that it looks good.
@@ -81,7 +87,9 @@ _09:30 - 11:30	Monday Session I - Wicklow Hall 1_
 
 ### Other Topics
 
-#### [Incremental HTTP Messages](https://datatracker.ietf.org/doc/draft-kazuho-httpbis-incremental-http/) -- Kazuho Oku
+#### [Incremental HTTP Messages](https://datatracker.ietf.org/doc/draft-kazuho-httpbis-incremental-http/)
+
+Kazuho Oku
 
 - Ted Hardie: I'm very much in favor of this approach, but I think you might want to consider if there's a third state. Two states: Fail and warn. In the signal, you can say "hey, if this doesn't work, I want you to fail" vs. "I want you to warn me if it didn't work". There are cases where incremental delivery is desirable, but not fully required. In general, I think this is a great idea.
 
@@ -97,7 +105,9 @@ _09:30 - 11:30	Monday Session I - Wicklow Hall 1_
 - Martin: I think reciprocal case is useful to explore. Browsers probably won't set this, we don't care about incremental delivery of uploads, those tend to be small. I think there's a use case for the reciprocal coming back, there are cases where that would improve page load performance. e.g. CSS is all in one job, but other types resources like HTML can benefit. Our performance people would be interested. Not sure what that does to intermediaries who expected this to just be for some niche use cases.
 
 
-#### [The HTTP Wrap Up Capsule](https://datatracker.ietf.org/doc/draft-schinazi-httpbis-wrap-up/) -- Lucas Pardue
+#### [The HTTP Wrap Up Capsule](https://datatracker.ietf.org/doc/draft-schinazi-httpbis-wrap-up/)
+
+Lucas Pardue
 
 (Not the last presentation)
 
@@ -113,7 +123,9 @@ _09:30 - 11:30	Monday Session I - Wicklow Hall 1_
 - David: Before we move on, are you going to start an adoption call? 
 - Tommy: Mark and I will talk. It sounds like we have good support, we need to schedule the set of things we might be interested in adopting.
 
-#### [Guidance for HTTP Capsule Protocol Extensibility](https://datatracker.ietf.org/doc/draft-pardue-capsule-ext-guidance/) -- Lucas Pardue
+#### [Guidance for HTTP Capsule Protocol Extensibility](https://datatracker.ietf.org/doc/draft-pardue-capsule-ext-guidance/)
+
+Lucas Pardue
 
 - Tommy Pauly: As individual. Another case in MASQUE, which is using H3 datagrams, we have cases in QUIC aware mode with other capsules and there are error codes of "you mismanaged the connection ID index". The error is vaguely related, but it's not at all an H3 datagram error. I would strongly support having a better one.
 
@@ -137,7 +149,9 @@ _09:30 - 11:30	Monday Session I - Wicklow Hall 1_
 - Lucas: This is written as a document that updates 9297, no strong opinion between that and a -bis.
 - Mark: We'll talk about it.
 
-#### Cookie eviction -- Yoav Weiss _remote_
+#### Cookie eviction
+
+Yoav Weiss _remote_
 
 - Neil Jenkins: Usually when you end up in this situation, you just want to get rid of them because something got messed up. I agree with the approach there. Underscore host hack for security sensitive cookies, everything else _shrug_, seems fine.
 
@@ -188,7 +202,9 @@ Meetecho - [full client](https://meetings.conf.meetecho.com/ietf121/?session=334
 ### Active Drafts
 
 
-#### Template-Driven CONNECT for TCP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-connect-tcp/) -- Ben Schwartz _remote_ ([slides](template-driven-connect.pdf))
+#### Template-Driven CONNECT for TCP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-connect-tcp/)
+
+Ben Schwartz _remote_ ([slides](template-driven-connect.pdf))
 
 David Schinazi: We already live in a world where we already need more than a URI. You need a separate part of your config, such as how to configure a proxy. We already have a solution for. Recommendation: whatever mechanism you use to configure your client with a proxy should include the upgrade tokens.  We should have 2 upgrade tokens, and clients or servers can choose what they implement. No "MUST implement"
 
@@ -212,7 +228,9 @@ Ben: mostly likely way forward is to consolidate on a single protocol.
 
 Mark: I see thumbs up in the room.
 
-#### [Security Considerations for Optimistic Use of HTTP Upgrade](https://datatracker.ietf.org/doc/draft-ietf-httpbis-optimistic-upgrade/) -- Ben Schwartz _remote_ ([slides](optimistic.pdf))
+#### [Security Considerations for Optimistic Use of HTTP Upgrade](https://datatracker.ietf.org/doc/draft-ietf-httpbis-optimistic-upgrade/)
+
+Ben Schwartz _remote_ ([slides](optimistic.pdf))
 
 Ben: Feedback? I'm not aware of other necessary changes.
 
@@ -236,7 +254,9 @@ Ben: interesting question! Not sure where we go from here.  Eric, if you have su
 
 Mark: feels like we're getting close to last-call, folks should review.
 
-#### [No-Vary-Search](https://datatracker.ietf.org/doc/draft-ietf-httpbis-no-vary-search/) -- Jeremy Roman
+#### [No-Vary-Search](https://datatracker.ietf.org/doc/draft-ietf-httpbis-no-vary-search/)
+
+Jeremy Roman
 
 Mark Nottingham: The efficiency mechanism reminds me of the key header.  Cache implementers (non-browsers) need to think about this and bring anything back to the group. This is in-band now. Need time for them to digest that.
 
@@ -254,7 +274,9 @@ Phillip Hallam-Baker: "search" is a relic from the past
 
 ### Other Topics
 
-#### [The IP Geolocation HTTP Client Hint](https://datatracker.ietf.org/doc/draft-pauly-httpbis-geoip-hint/) -- Ciara McMullin
+#### [The IP Geolocation HTTP Client Hint](https://datatracker.ietf.org/doc/draft-pauly-httpbis-geoip-hint/)
+
+Ciara McMullin
 
 Ted Hardie: appreciates the privacy focus. There has been previous work on GEOPRIV with no implementations. idea is that in addition to having the location, you have somebody who cares about the revelation of their location the idea of a maker is kind of central to that.
 Once you create a header like this, there is no guarantee that people will use it.  Since many VPNs are designed to hide location, this could compromise that.

@@ -10,6 +10,7 @@
 - [Delete Cookie](delete-cookie.pdf) _pdf_
 - [Incremental](incremental.pdf) _pdf_
 - [Ip Geolocation](ip-geolocation.pdf) _pdf_
+- [Minutes](minutes.md) 
 - [No Vary Search](no-vary-search.pdf) _pdf_
 - [Optimistic](optimistic.pdf) _pdf_
 - [Query](query.pdf) _pdf_

@@ -50,5 +50,6 @@ _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 ### Other Topics
 
 * 15 min - [HTTP Unencoded Digest](https://datatracker.ietf.org/doc/draft-pardue-httpbis-identity-digest/) - Lucas Pardue
+* 15 min - Delete-Cookie and _HttpOnly Prefix - Yoav Weiss
 * 15 min - [Cookies: HTTP State Management Mechanism](https://datatracker.ietf.org/doc/draft-annevk-johannhof-httpbis-cookies/) 
 

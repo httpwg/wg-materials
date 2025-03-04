@@ -30,7 +30,7 @@ _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
 ## Friday, 21 March 2025
 
-_13:00 - 14:30	Friday Session II - Sala Thai Ballroom_
+_13:00 - 14:30	Friday Session II - Chitlada 1_
 
 Meetecho - [full client](https://meetings.conf.meetecho.com/ietf122/?session=33902) / [onsite](https://meetings.conf.meetecho.com/onsite122/?session=33902)
 

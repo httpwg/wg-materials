@@ -1,0 +1,118 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>IETF HTTP WG 2025-03 Interim - QUERY Method</title>
+    <style type="text/css">
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:r,b,i,bi');
+
+body {
+  color: black;
+  font-family: 'Noto Sans', cambria, helvetica, arial, sans-serif;
+  font-size: 18pt;
+}
+h1 {
+  font-size: 36pt;
+}
+pre {
+  font-family: consolas;
+}
+tt {
+  font-family: consolas;
+}
+li {
+  margin-top: 0.5em;
+}
+q {
+  font-style: italic;  
+}
+del {
+  color: red;
+  text-decoration: line-through;
+}
+ins {
+  color: green;
+  text-decoration: underline;
+}
+.break {
+  page-break-before: always;
+}
+@page {
+  font-family: 'Noto Sans', cambria, helvetica, arial, sans-serif;
+  size: a4 landscape;
+}
+@page {
+  @bottom-left {
+       content: "Julian Reschke, greenbytes";
+  }
+  @bottom-right {
+       content: counter(page);
+  }
+  @top-center {
+       content: "IETF 122 HTTP WG - QUERY Method";
+  }
+}
+    </style>
+  </head>
+  <body>
+    <h1>IETF 122 HTTP WG - QUERY Method</h1>
+    <p>
+      <a href="mailto:julian.reschke@greenbytes.de">Julian Reschke</a>, greenbytes
+    </p>
+    
+    <h2 class="break">Current Status</h2>
+
+    <p>
+      Since <a href="https://www.ietf.org/archive/id/draft-ietf-httpbis-safe-method-w-body-08.html#appendix-B.7">IETF 121 - draft 07 (Dec 2024)</a>:
+      almost all non-editorial issues resolved.
+    </p>
+    <p>
+      Since <a href="https://www.ietf.org/archive/id/draft-ietf-httpbis-safe-method-w-body-08.html#appendix-B.8">IETF 121 - draft 08 (Feb 2025)</a>:
+      lots of examples, editorial fixes, Range Requests (nothing special for QUERY)
+    </p>
+    <p>
+      <em>Almost ready for Working Group Last Call?</em>
+    </p>
+    
+    <h2 class="break">Recently Fixed</h2>
+    <p>
+      On <a href="https://github.com/httpwg/http-extensions/issues?q=is%3Aissue%20label%3Aquery-method%20">Github</a>:
+    </p>
+    <ul>
+      <li><a href="https://github.com/httpwg/http-extensions/issues/3019">#3010</a>: misleading use of "QUERY parameters",
+      maybe fixed by <a href="https://github.com/httpwg/http-extensions/issues/3019">#3019</a> - would like to
+      confirm (ack Carsten B.)</li>
+      <li><a href="https://github.com/httpwg/http-extensions/issues/3029">#3029</a>: author list adjusted, acknowledgements added</li>
+    </ul>
+
+    <h2 class="break">Maybe To Do?</h2>
+    <p>
+      <a href="https://github.com/httpwg/http-extensions/issues/3004">#3004</a>: QUERY: use GET params for a (stored) query?
+    </p>
+    <p>If we do...:</p>
+<pre style="background: #E0E0E0">QUERY /lookup/?<b style="color: green">x=y</b> HTTP/1.1
+<em>...header fields ommitted...</em>
+
+<b style="color: green">Find something that contains $x.</b>
+</pre>
+    <p>That is: the actual query is defined both by the payload and URI query
+    parameters.</p>
+    <p>And if that is the case, what does it mean for the resource identified
+    by the Location response header field:</p>
+<pre style="background: #E0E0E0">HTTP/1.1 200 OK
+Location: <b style="color: green">/stored/42</b>
+<em>...other fields and payload ommitted...</em>
+</pre>
+    <p>Would that mean that the GETtable query operation incorporates the parameter
+    <tt style="color: green">x</tt>?</p>
+<pre style="background: #E0E0E0">GET /stored/42 HTTP/1.1
+<em>...header fields ommitted...</em>
+
+</pre>
+    <p>Or would that resource accept (and understand) the same URI query
+    parameters, making that a parametrizable stored query?</p>
+    <p>Yes? No? It depends on media type? It's an agreement between client and 
+    server?</p>
+    <p>In any case, we probably should talk about that in the spec.</p>
+  </body>
+</html>

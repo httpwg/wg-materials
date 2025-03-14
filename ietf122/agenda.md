@@ -42,13 +42,13 @@ Meetecho - [full client](https://meetings.conf.meetecho.com/ietf122/?session=339
 
 _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
-* 15 min - [No-Vary-Search](https://datatracker.ietf.org/doc/draft-ietf-httpbis-no-vary-search/)
+* 15 min - [No-Vary-Search](https://datatracker.ietf.org/doc/draft-ietf-httpbis-no-vary-search/) -- Domenic Denicola (remote)
 * 15 min - [Incremental HTTP Messages](https://datatracker.ietf.org/doc/draft-kazuho-httpbis-incremental-http/)
 
 
 ### Other Topics
 
-* 15 min - [HTTP Unencoded Digest](https://datatracker.ietf.org/doc/draft-pardue-httpbis-identity-digest/) - Lucas Pardue
+* 15 min - [HTTP Unencoded Digest](https://datatracker.ietf.org/doc/draft-pardue-httpbis-identity-digest/) -- Lucas Pardue
 * 15 min - Delete-Cookie and _HttpOnly Prefix - Yoav Weiss
-* 15 min - [Cookies: HTTP State Management Mechanism](https://datatracker.ietf.org/doc/draft-annevk-johannhof-httpbis-cookies/) 
+* 15 min - [Cookies: HTTP State Management Mechanism](https://datatracker.ietf.org/doc/draft-annevk-johannhof-httpbis-cookies/)  -- Johann Hofmann (remote)
 

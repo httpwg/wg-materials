@@ -43,7 +43,7 @@ Meetecho - [full client](https://meetings.conf.meetecho.com/ietf122/?session=339
 _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
 * 15 min - [No-Vary-Search](https://datatracker.ietf.org/doc/draft-ietf-httpbis-no-vary-search/) -- Domenic Denicola (remote)
-* 15 min - [Incremental HTTP Messages](https://datatracker.ietf.org/doc/draft-kazuho-httpbis-incremental-http/)
+* 15 min - [Incremental HTTP Messages](https://datatracker.ietf.org/doc/draft-kazuho-httpbis-incremental-http/) -- Kazuho Oku ([slides](incremental.pdf))
 
 
 ### Other Topics

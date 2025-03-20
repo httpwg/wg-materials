@@ -51,4 +51,5 @@ _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 * 15 min - [HTTP Unencoded Digest](https://datatracker.ietf.org/doc/draft-pardue-httpbis-identity-digest/) -- Lucas Pardue
 * 15 min - Delete-Cookie and _HttpOnly Prefix - Yoav Weiss
 * 15 min - [Cookies: HTTP State Management Mechanism](https://datatracker.ietf.org/doc/draft-annevk-johannhof-httpbis-cookies/)  -- Johann Hofmann (remote)
+* 10 min - [Critical CH](https://datatracker.ietf.org/doc/draft-victortan-httpbis-chr-critical-ch/) and [Accept-CH Frame](https://datatracker.ietf.org/doc/draft-victortan-httpbis-chr-accept-ch-frame/) - Victor Tan
 

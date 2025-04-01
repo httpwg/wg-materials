@@ -1,5 +1,26 @@
 # HTTP Working Group Minutes - IETF 122
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [18 March 2025](#18-march-2025)
+  - [QUERY method](#query-method)
+  - [CONNECT-TCP](#connect-tcp)
+  - [Security Considerations for Optimistic Protocol Transitions in HTTP/1.1](#security-considerations-for-optimistic-protocol-transitions-in-http11)
+  - [Resumable Uploads](#resumable-uploads)
+  - [Secondary Certificate Authentication](#secondary-certificate-authentication)
+- [21 March 2025](#21-march-2025)
+  - [No-Vary-Search](#no-vary-search)
+  - [Incremental HTTP Messages](#incremental-http-messages)
+    - [#3007, Definition of Incremental Delivery](#3007-definition-of-incremental-delivery)
+  - [HTTP Unencoded Digest](#http-unencoded-digest)
+  - [Delete-Cookie and _HttpOnly Prefix](#delete-cookie-and-_httponly-prefix)
+  - [Cookies: HTTP State Management Mechanism](#cookies-http-state-management-mechanism)
+  - [Critical CH and Accept-CH Frame](#critical-ch-and-accept-ch-frame)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## 18 March 2025
 
 * Chair present: Tommy Pauly

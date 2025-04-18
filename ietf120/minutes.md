@@ -127,7 +127,9 @@ Tommy: Unclear how client cert configuration would work.
 
 ## Wednesday, 24 July 2024
 
-###  Security Considerations for Optimistic Use of HTTP Upgrade -- Ben Schwartz
+###  Security Considerations for Optimistic Use of HTTP Upgrade
+
+Ben Schwartz
 
 #### Slide 5 - deprecate HTTP upgrade token
 
@@ -176,7 +178,9 @@ Ben : what about h2 preamble
 MT: that's a part of defense in depth. We've seen middleboxes that scan the payload looking for GET until the find something
 
 
-### HTTP Server Secondary Cert Auth - Eric Gorbaty
+### HTTP Server Secondary Cert Auth
+
+Eric Gorbaty
 
 #### Slide 3
 
@@ -209,9 +213,9 @@ David: Based on reasoning, TO_BE_CONTINUED might be easiest unless there's a foo
 Eric G: let's take to issue, we have multiple paths forward
 
 
-### The HTTP Wrap Up Capsule - David Schinazi
+### The HTTP Wrap Up Capsule
 
-WRAP UP
+David Schinazi
 
 In which David invents new terminology, makes forward and reverse proxies, and nests protocols in awkward ways.
 
@@ -250,7 +254,9 @@ Alan Frindell: I've seen this problem with webtransport.  We have a similar caps
 Erik Nygren: Are there other use cases that GOAWAY doesn't cover today?
 
 
-### No-Vary-Search -- Jeremy Roman
+### No-Vary-Search
+
+Jeremy Roman
 
 Jeremy: I'm here to talk about new variable responses.  Browsers support URL parameters and this affects cache software.  A vary header that lists the parameters upon which the response varies.  Today Chrome does support this. the concept seems generally useful to cache implementations (browser caches, CDNs).  
 
@@ -281,7 +287,9 @@ MNot: it's common for CDNs to do this in a proprietary way, so it's nice to do t
 MNot with chair hat: I'll take this to the list and call for adoption. 
 
 
-### Revising Cookies (again) -- Johann Hofmann
+### Revising Cookies Again
+
+Johann Hofmann
 
 Johann: I work on Chrome, at Google 1 yr looking at cookies with Anne van Kesteren. We're at the point we want to start talking to the group here about our draft and this work.  We just put 6265Bis into WG last call after 10 years of overall development, which is really great and we appreciate all the work of the editors. So why do we want to do another one?  Valid question.  
 
@@ -305,7 +313,9 @@ MNot/Tommy: We'll talk to more people about this...
 
 Johann: THere are new features we'd be introducing, for example the partitioned attribute.
 
-### HTTP Resource Versioning, Michael T
+### HTTP Resource Versioning
+
+Michael T
 
 Michael: This is a continuation of features to add state synchronization to HTTP.  The goal is to have the equivalent of a local-first google docs.  This requires 4 extensions to HTTP, each of which is individually valuable.  Today we're talking about one of those, versioning.  NOTE this is not API versioning.
 

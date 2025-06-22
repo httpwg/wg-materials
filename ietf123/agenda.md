@@ -21,9 +21,9 @@ Meetecho - [full client](https://meetings.conf.meetecho.com/ietf123/?session=343
 _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
 * 15 min - [Template-Driven CONNECT for TCP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-connect-tcp/)
-* 15 min - [Resumable Uploads](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload) (remote) ([slides](resumable-uploads.pdf))
+* 15 min - [Resumable Uploads](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload) 
 * 15 min - [Cookies](https://datatracker.ietf.org/doc/draft-ietf-httpbis-layered-cookies/)
-* 15 min - [Incremental HTTP Messages](https://datatracker.ietf.org/doc/draft-kazuho-httpbis-incremental-http/) ([slides](incremental.pdf))
+* 15 min - [Incremental HTTP Messages](https://datatracker.ietf.org/doc/draft-kazuho-httpbis-incremental-http/)
 
 ### Other Topics
 

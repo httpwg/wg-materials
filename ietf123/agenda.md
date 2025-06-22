@@ -5,11 +5,11 @@
 
 *Taking minutes? See [our guide for scribes](https://github.com/httpwg/wiki/wiki/TakingMinutes)*
 
-## NNNday, NN July 2025
+## Wednesday, 23 July 2025
 
-_TBD_
+_09:30 - 11:00	Wednesday Session I - El Prado_
 
-Meetecho - [full client]() / [onsite]()
+Meetecho - [full client](https://meetings.conf.meetecho.com/ietf123/?session=34342) / [onsite](https://meetings.conf.meetecho.com/onsite123/?session=34342)
 
 ### Administrivia
 
@@ -20,25 +20,32 @@ Meetecho - [full client]() / [onsite]()
 
 _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
-* nn min - [Template-Driven CONNECT for TCP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-connect-tcp/)
-* nn min - [Resumable Uploads](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload) (remote) ([slides](resumable-uploads.pdf))
-* nn min - [Cookies](https://datatracker.ietf.org/doc/draft-ietf-httpbis-layered-cookies/)
-* nn min - [Incremental HTTP Messages](https://datatracker.ietf.org/doc/draft-kazuho-httpbis-incremental-http/) ([slides](incremental.pdf))
-* nn min - [No-Vary-Search](https://datatracker.ietf.org/doc/draft-ietf-httpbis-no-vary-search/)
-* nn min - [HTTP Unencoded Digest](https://datatracker.ietf.org/doc/draft-pardue-httpbis-identity-digest/)
-* nn min - [Secondary Certificate Authentication of HTTP Servers](https://datatracker.ietf.org/doc/draft-ietf-httpbis-secondary-server-certs/)
+* 15 min - [Template-Driven CONNECT for TCP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-connect-tcp/)
+* 15 min - [Resumable Uploads](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload) (remote) ([slides](resumable-uploads.pdf))
+* 15 min - [Cookies](https://datatracker.ietf.org/doc/draft-ietf-httpbis-layered-cookies/)
+* 15 min - [Incremental HTTP Messages](https://datatracker.ietf.org/doc/draft-kazuho-httpbis-incremental-http/) ([slides](incremental.pdf))
 
-## NNNday, NN Just 2025
+### Other Topics
 
-_TBD_
 
-Meetecho - [full client]() / [onsite]()
+## Friday, 25 July 2025
+
+_14:30 - 16:30	Friday Session III - Tapices_
+
+Meetecho - [full client](https://meetings.conf.meetecho.com/ietf123/?session=34341) / [onsite](https://meetings.conf.meetecho.com/onsite123/?session=34341)
 
 ### Administrivia
 
 *  3 min - Scribe selection / [NOTE WELL](https://www.ietf.org/about/note-well/)
 *  2 min - Agenda bashing
 
+### Active Drafts
+
+_See also the [extensions listing](https://httpwg.org/http-extensions/)_
+
+* 15 min - [No-Vary-Search](https://datatracker.ietf.org/doc/draft-ietf-httpbis-no-vary-search/)
+* 15 min - [HTTP Unencoded Digest](https://datatracker.ietf.org/doc/draft-pardue-httpbis-identity-digest/)
+* 15 min - [Secondary Certificate Authentication of HTTP Servers](https://datatracker.ietf.org/doc/draft-ietf-httpbis-secondary-server-certs/)
 
 ### Other Topics
 

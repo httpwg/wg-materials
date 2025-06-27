@@ -22,7 +22,7 @@ _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
 * 15 min - [Resumable Uploads](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload) 
 * 15 min - [Cookies](https://datatracker.ietf.org/doc/draft-ietf-httpbis-layered-cookies/)
-* 15 min - [Incremental HTTP Messages](https://datatracker.ietf.org/doc/draft-kazuho-httpbis-incremental-http/)
+* 15 min - [Incremental HTTP Messages](https://datatracker.ietf.org/doc/draft-kazuho-httpbis-incremental-http/) - Kazuho Oku
 
 ### Other Topics
 

@@ -45,7 +45,7 @@ Meetecho - [full client](https://meetings.conf.meetecho.com/ietf123/?session=343
 _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
 * 15 min - [No-Vary-Search](https://datatracker.ietf.org/doc/draft-ietf-httpbis-no-vary-search/)
-* 15 min - [HTTP Unencoded Digest](https://datatracker.ietf.org/doc/draft-pardue-httpbis-identity-digest/)
+* 15 min - [HTTP Unencoded Digest](https://datatracker.ietf.org/doc/draft-pardue-httpbis-identity-digest/) - Lucas Pardue
 * 15 min - [Secondary Certificate Authentication of HTTP Servers](https://datatracker.ietf.org/doc/draft-ietf-httpbis-secondary-server-certs/)
 * 15 min - [Template-Driven CONNECT for TCP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-connect-tcp/)
 

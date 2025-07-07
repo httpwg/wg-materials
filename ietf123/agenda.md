@@ -15,6 +15,7 @@ Meetecho - [full client](https://meetings.conf.meetecho.com/ietf123/?session=343
 
 *  3 min - Scribe selection / [NOTE WELL](https://www.ietf.org/about/note-well/)
 *  2 min - Agenda bashing
+* 10 min - Rechartering - Chairs / AD
 
 ### Active Drafts
 

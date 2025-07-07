@@ -26,6 +26,8 @@ _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
 ### Other Topics
 
+* 10 min - [Detecting Outdated Proxy Configuration](https://datatracker.ietf.org/doc/draft-rosomakho-httpbis-outdated-proxy-config/) - Yaroslav Rosomakho
+
 
 ## Friday, 25 July 2025
 

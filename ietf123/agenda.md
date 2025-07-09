@@ -53,4 +53,5 @@ _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 ### Other Topics
 
 * 10 min - [HTTP Version Translation of the Capsule Protocol](https://datatracker.ietf.org/doc/draft-kb-capsule-conversion/)
+* 10 min - [Template-Driven HTTP Request Proxying](https://datatracker.ietf.org/doc/draft-schwartz-modern-http-proxies/) - Ben Schwartz (remote)
 

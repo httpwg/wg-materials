@@ -21,7 +21,7 @@ Meetecho - [full client](https://meetings.conf.meetecho.com/ietf123/?session=343
 
 _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
-* 15 min - [Resumable Uploads](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload) - Marius Kleidl
+* 15 min - [Resumable Uploads](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload) - Marius Kleidl ([slides](resumable.pdf))
 * 15 min - [Cookies](https://datatracker.ietf.org/doc/draft-ietf-httpbis-layered-cookies/) - Anne van Kesteren (remote) [slides](cookies.pdf)
 * 15 min - [Incremental HTTP Messages](https://datatracker.ietf.org/doc/draft-kazuho-httpbis-incremental-http/) - Kazuho Oku
 

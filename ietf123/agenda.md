@@ -49,10 +49,10 @@ _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 * 15 min - [No-Vary-Search](https://datatracker.ietf.org/doc/draft-ietf-httpbis-no-vary-search/)
 * 15 min - [HTTP Unencoded Digest](https://datatracker.ietf.org/doc/draft-pardue-httpbis-identity-digest/) - Lucas Pardue
 * 15 min - [Secondary Certificate Authentication of HTTP Servers](https://datatracker.ietf.org/doc/draft-ietf-httpbis-secondary-server-certs/)
-* 15 min - [Template-Driven CONNECT for TCP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-connect-tcp/)
+* 15 min - [Template-Driven CONNECT for TCP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-connect-tcp/) ([slides](template-connect.pdf))
 
 ### Other Topics
 
-* 10 min - [HTTP Version Translation of the Capsule Protocol](https://datatracker.ietf.org/doc/draft-kb-capsule-conversion/)
-* 10 min - [Template-Driven HTTP Request Proxying](https://datatracker.ietf.org/doc/draft-schwartz-modern-http-proxies/) - Ben Schwartz (remote)
+* 10 min - [HTTP Version Translation of the Capsule Protocol](https://datatracker.ietf.org/doc/draft-kb-capsule-conversion/) ([slides](capsule.pdf))
+* 10 min - [Template-Driven HTTP Request Proxying](https://datatracker.ietf.org/doc/draft-schwartz-modern-http-proxies/) - Ben Schwartz (remote) 
 

@@ -1,5 +1,25 @@
 # HTTP Working Group Minutes - IETF 122
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [Wednesday, 23 July 2025](#wednesday-23-july-2025)
+  - [Rechartering](#rechartering)
+  - [Cookies](#cookies)
+  - [QUERY](#query)
+  - [Resumable Uploads](#resumable-uploads)
+  - [Incremental HTTP Messages](#incremental-http-messages)
+  - [Detecting Outdated Proxy Configuration](#detecting-outdated-proxy-configuration)
+- [Friday, 25 July 2025](#friday-25-july-2025)
+  - [No-Vary-Search](#no-vary-search)
+  - [HTTP Unencoded Digest](#http-unencoded-digest)
+  - [Secondary Certificate Authentication of HTTP Servers](#secondary-certificate-authentication-of-http-servers)
+  - [Template-Driven CONNECT for TCP](#template-driven-connect-for-tcp)
+  - [HTTP Version Translation of the Capsule Protocol](#http-version-translation-of-the-capsule-protocol)
+  - [Template-Driven HTTP Request Proxying](#template-driven-http-request-proxying)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+    
 ## Wednesday, 23 July 2025
 
 Note takers: Eric Rosenberg

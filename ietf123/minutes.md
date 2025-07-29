@@ -1,16 +1,22 @@
-# Wednesday, 23 July 2025
+# HTTP Working Group Minutes - IETF 122
+
+## Wednesday, 23 July 2025
 
 Note takers: Eric Rosenberg
 
-## Rechartering
+### Rechartering
 
 No objections. Will continue discussion with AD to take further steps.
 
-## Cookies - Anne van Kesteren
+### Cookies
+
+Anne van Kesteren
 
 Brief recap. Soliciting suggestions. No questions or comments.
 
-## QUERY - Julian Reschke
+### QUERY
+
+Julian Reschke
 
 - Define what the selected representation is for QUERY
 
@@ -30,7 +36,9 @@ Brief recap. Soliciting suggestions. No questions or comments.
     - Julian R: May need 2nd WGLC after changes of this scope.
     - Tommy Pauly: let's cut a new revision with these updates. Consider WGLC/last call once that's complete.
 
-## Resumable Uploads - Marius Kleidl
+### Resumable Uploads
+
+Marius Kleidl
 
 - No open issues
 - Multiple implementations. Interop performed at IETF 121 in Dublin
@@ -38,7 +46,9 @@ Brief recap. Soliciting suggestions. No questions or comments.
 - How many people have read the draft? 10-15 hands
 - Chairs: will start last call
 
-## Incremental HTTP Messages - Kazuho Oku
+### Incremental HTTP Messages
+
+Kazuho Oku
 
 - WGLC?
 - How many people have read? 15-20 hands
@@ -49,7 +59,9 @@ Brief recap. Soliciting suggestions. No questions or comments.
 - Martin Thomson: not aware of many client APIs that don't have this capability.
 - Mark N: may make WGLC longer here because touches intermediaries which can be a little slow.
 
-## Detecting Outdated Proxy Configuration - Yaroslav Rosomakho
+### Detecting Outdated Proxy Configuration
+
+Yaroslav Rosomakho
 
 - Mark N: Proposal is to piggyback ....
 - Julian R: 
@@ -74,16 +86,19 @@ Brief recap. Soliciting suggestions. No questions or comments.
 - Mark N: looks like there's interest in this, let's keep the discussion going.
 
 
-# Friday, 25 July 2025
+## Friday, 25 July 2025
+
 14:30 - 16:30 Friday Session III - Tapices
 
 Note Taker: Andrew McGregor
 
-## 15 min - No-Vary-Search
+### No-Vary-Search
 
 - Presentation skipped
 
-## 15 min - HTTP Unencoded Digest - Lucas Pardue
+### HTTP Unencoded Digest
+
+Lucas Pardue
 
 - Mark N: The intent with structured fields is that unrecognised fields are ignored. A reasonable implementer would default to ignoring extra fields. Updating documents seems excessive.
 - Lucas: Should we take out the new text?
@@ -92,7 +107,7 @@ Note Taker: Andrew McGregor
 - Lucas: We could make the integrity digest part of that formal term
 - Martin: 6919 doesn't specify the discouraged form, which is what 9530 uses, but would like to see an Erratum filed on this.
 
-## 15 min - Secondary Certificate Authentication of HTTP Servers
+### Secondary Certificate Authentication of HTTP Servers
 
 - Allesandro Ghedini: It seems like we could be a problem we fix when we actually have the problem
 - Mike Bishop: The promise has a nice property that if you don't care you ignore the frame. Reserve a frame type and people can try the experiment
@@ -104,7 +119,7 @@ Note Taker: Andrew McGregor
 - Tommy Pauly: There's going to be other discussion around post-quantum. The chairs got a request for looking at other secondary certs, and there's interest in looking at this area. So we can do the simple thing, ship it, and come back to the area. Looking at the open issues, we have two cases of things we could do but may not want to, nobody seems to be shouting about that.
 - Mark N: I agree, with that said it's food for thought about the evolution of QMux. We need to think about how we use the community resource.
 
-## 15 min - Template-Driven CONNECT for TCP (slides)
+### Template-Driven CONNECT for TCP
 
 - Yaroslav: Right now there are different paths for how you generate RST, which seems like an implementation nightmare, so any particular reason we don't do a capsule for RST, that seems a more universal solution.
 - Benjamin: The spec says that you must close the stream abruptly. If the send stream is closed without sending FINAL_DATA, you will emit an RST. The state machine is transparent to RST without version specificity. But the abrupt close is version specific.
@@ -122,7 +137,7 @@ Note Taker: Andrew McGregor
 - David: I hope we can get some implementation before we send it to the IESG
 - Tommy: Would you be able to arrange some interop tests?
 
-## 10 min - HTTP Version Translation of the Capsule Protocol (slides)
+### HTTP Version Translation of the Capsule Protocol
 
 - Mike Bishop: WT discussed whether they wanted to define WT over H1, not much interest, so that doesn't exist. so that doesn't exist.
 - some discussion missed
@@ -141,7 +156,9 @@ Note Taker: Andrew McGregor
 Should we consider work in this area? Yes: 15, No Opinion: 17, No: 0
 
 
-## 10 min - Template-Driven HTTP Request Proxying - Ben Schwartz (remote)
+### Template-Driven HTTP Request Proxying
+
+Ben Schwartz (remote)
 
 - Yaroslav: HTTPS is supposed to be CONNECT rather than an absolute URI request.
 - B: Yes, this does not solve the meta-communication with the proxy problem.

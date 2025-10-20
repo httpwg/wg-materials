@@ -24,6 +24,7 @@ _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 * 10 min - [Secondary Certificate Authentication of HTTP Servers](https://datatracker.ietf.org/doc/draft-ietf-httpbis-secondary-server-certs/)
 * 10 min - [The HTTP Wrap Up Capsule](https://datatracker.ietf.org/doc/draft-ietf-httpbis-wrap-up/)
 * 10 min - [Template-Driven CONNECT for TCP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-connect-tcp/)
+* 10 min - [Cookies: HTTP State Management Mechanism](https://datatracker.ietf.org/doc/draft-ietf-httpbis-layered-cookies/)
 
 ### Other Topics
 

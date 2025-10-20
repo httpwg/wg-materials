@@ -20,10 +20,10 @@ Meetecho - [full client](https://meetings.conf.meetecho.com/ietf124/?session=345
 
 _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
-* 10 min - [HTTP Unencoded Digest](https://datatracker.ietf.org/doc/draft-pardue-httpbis-identity-digest/) - Lucas Pardue
+* 10 min - [HTTP Unencoded Digest](https://datatracker.ietf.org/doc/draft-pardue-httpbis-identity-digest/)
 * 10 min - [Secondary Certificate Authentication of HTTP Servers](https://datatracker.ietf.org/doc/draft-ietf-httpbis-secondary-server-certs/)
 * 10 min - [The HTTP Wrap Up Capsule](https://datatracker.ietf.org/doc/draft-ietf-httpbis-wrap-up/)
-* 10 min - [Template-Driven CONNECT for TCP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-connect-tcp/) ([slides](template-connect.pdf))
+* 10 min - [Template-Driven CONNECT for TCP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-connect-tcp/)
 
 ### Other Topics
 

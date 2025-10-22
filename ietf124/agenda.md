@@ -30,5 +30,6 @@ _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
 * 5 min - [Detecting Outdated Proxy Configuration](https://datatracker.ietf.org/doc/draft-rosomakho-httpbis-outdated-proxy-config/) - Yaroslav Rosomakho
 * 15 min - [Unbound DATA Frames in HTTP/3](https://datatracker.ietf.org/doc/draft-rosomakho-httpbis-h3-unbound-data/) - Yaroslav Rosomakho
+* 5 min - [HTTP/1.1 Request Smuggling Defense using Cryptographic Message Binding](https://datatracker.ietf.org/doc/draft-nygren-httpbis-http11-request-binding/) - Erik Nygren
 
 

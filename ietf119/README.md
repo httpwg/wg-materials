@@ -12,5 +12,5 @@
 - [Resumable Uploads](resumable-uploads.pdf) _pdf_
 - [Reverse Tunnel](reverse-tunnel.pdf) _pdf_
 - [Signature Auth](signature-auth.pdf) _pdf_
-- [Meeting Summary](summary.md) 
+- [Meeting Summary for httpbis](summary.md) 
 - [Zstd Window Size](zstd-window-size.pdf) _pdf_

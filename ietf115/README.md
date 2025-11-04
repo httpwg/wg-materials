@@ -17,5 +17,5 @@
 - [Partitioned Cookies](partitioned-cookies.pdf) _pdf_
 - [Resumable Upload](resumable-upload.pdf) _pdf_
 - [Signatures](signatures.pdf) _pdf_
-- [Meeting Summary](summary.md) 
+- [Meeting Summary for httpbis](summary.md) 
 - [Unprompted Auth](unprompted-auth.pdf) _pdf_

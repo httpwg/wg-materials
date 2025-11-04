@@ -12,7 +12,7 @@
 - [Request Otr](request-otr.pdf) _pdf_
 - [Resumable Uploads](resumable-uploads.pdf) _pdf_
 - [Secondary Certificate](secondary-certificate.pdf) _pdf_
-- [Meeting Summary](summary.md) 
+- [Meeting Summary for httpbis](summary.md) 
 - [Templated Proxies](templated-proxies.pdf) _pdf_
 - [Unprompted Authentication](unprompted-authentication.pdf) _pdf_
 - [Websockets Dt Report](websockets-dt-report.pdf) _pdf_

@@ -30,7 +30,7 @@ jobs:
     - name: Install doctoc
       run: npm install -g doctoc
     - name: doctoc summaries
-      run: find . -name summary.md -exec doctoc {} \;
+      run: find . -name summary.md -exec doctoc --notitle {} \;
     - name: Push update
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

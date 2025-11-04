@@ -12,6 +12,6 @@
 - [Resumable](resumable.pdf) _pdf_
 - [Secondary Certificate Authentication](secondary-certificate-authentication.pdf) _pdf_
 - [Security Considerations For Optimistic Upgrade](security-considerations-for-optimistic-upgrade.pdf) _pdf_
-- [httpbis](summary.md) 
+- [Meeting Summary](summary.md) 
 - [Versioning](versioning.pdf) _pdf_
 - [Wrap Up Capsule](wrap-up-capsule.pdf) _pdf_

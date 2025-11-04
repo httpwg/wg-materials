@@ -15,5 +15,5 @@
 - [Resumable Uploads](resumable-uploads.pdf) _pdf_
 - [Reverse HTTP](reverse-http.pdf) _pdf_
 - [Secondary Certificates](secondary-certificates.pdf) _pdf_
-- [httpbis](summary.md) 
+- [Meeting Summary](summary.md) 
 - [Unprompted Auth](unprompted-auth.pdf) _pdf_

@@ -14,4 +14,5 @@
 - [Minutes](minutes.md) 
 - [Resumableuploads](ResumableUploads.pdf) _pdf_
 - [Signatures](Signatures.pdf) _pdf_
+- [Meeting Summary](summary.md) 
 - [Transportauthentication](TransportAuthentication.pdf) _pdf_

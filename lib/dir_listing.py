@@ -51,7 +51,8 @@ def spider(directory, reverse=False):
 def fetch_summary(meeting):
     if path.exists(f"{auto_minutes_path}/{meeting}/.manifest.json"):
         summary = [summary_header]
-        manifest = json.load(f"{auto_minutes_path}/{meeting}/.manifest.json")
+        with open(f"{auto_minutes_path}/{meeting}/.manifest.json") as fh:
+            manifest = json.load(fh)
         sessions = [s.sessionId for s in manifest.sessionGroups 
                     if s["sessionName"] == wgname.upper()]
         for session_id in sessions:

@@ -7,8 +7,14 @@ import sys
 ignore_things = ['lib', 'assets', 'README.md', 'badge']
 ignore_prefixes = ['.', '_']
 sep = "\n\n---\n\n"
-auto_minutes_path = "auto-minutes/minutes/"
+auto_minutes_path = "auto-minutes/output/"
 wgname = "httpbis"
+
+summary_header = """
+# Meeting Summary
+
+**NOTE**: this is a non-normative, AI-generated summary supplied only for convenience; it does not necessarily represent an accurate record of the meeting. See the minutes for the authoriative record.
+"""
 
 def spider(directory, reverse=False):
     index = []
@@ -27,13 +33,6 @@ def spider(directory, reverse=False):
             extra.append(f"[agenda]({dir_.name}/agenda.md)")
         if path.exists(f"{dir_.path}/minutes.md"):
             extra.append(f"[minutes]({dir_.name}/minutes.md)")
-        if path.exists(f"{auto_minutes_path}/{dir_.name}/{wgname}.txt"):
-            if not path.exists(f"{dir_.name}/summary.md"):
-                shutil.copyfile(
-                    f"{auto_minutes_path}/{dir_.name}/{wgname}.txt",
-                    f"{dir_.name}/summary.md"
-                )
-            extra.append(f"[summary]({dir_.name}/summary.md)")
         extra_str = ""
         if extra:
             extra_str = f": {', '.join(extra)}"
@@ -44,6 +43,25 @@ def spider(directory, reverse=False):
     write_index(directory, index)
     for dir_ in dirs:
         spider(path.join(directory, dir_.name))
+
+def fetch_summary(meeting):
+    if path.exists(f"{auto_minutes_path}/{meeting}/.manifest.json"):
+        summary = [summary_header]
+        manifest = json.load(f"{auto_minutes_path}/{meeting}/.manifest.json")
+        sessions = [s.sessionId for s in manifest.sessionGroups 
+                    if s["sessionName"] = wgname.upper()]
+        for session_id in sessions:
+            session_time = "-".join(session_id.rsplit("-", 2)[-2:])
+            summary.append(f"# Session: {session_time}")
+            with fh as os.open(f"{auto_minutes_path}/{session_id}", "r"):
+                session_md = fh.read()
+                session_md = session_md.replace(f"# {wgname.upper()}", "")
+                summary.append(session_md)
+        summary_md = "\n\n".join(summary)
+        with open(f"{dir_.name}/summary.md", 'w') as fh:
+            fh.write(summary_md)
+        return f"[summary]({dir_.name}/summary.md)"
+    return None
 
 def filter_thing(thing):
     if thing.name in ignore_things: return False

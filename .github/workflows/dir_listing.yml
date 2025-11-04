@@ -16,7 +16,7 @@ jobs:
       with:
         repository: ietf-minutes/ietf-minutes-data
         path: auto-minutes
-        ref: gh-pages
+        ref: cache
     - name: Set up Python
       uses: actions/setup-python@v1
       with:

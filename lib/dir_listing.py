@@ -56,7 +56,7 @@ def fetch_summary(meeting):
         for session_id in sessions:
             session_time = "-".join(session_id.rsplit("-", 2)[-2:])
             summary.append(f"# Session: {session_time}")
-            with fh as os.open(f"{auto_minutes_path}/{session_id}", "r"):
+            with os.open(f"{auto_minutes_path}/{session_id}", "r") as fh:
                 session_md = fh.read()
                 session_md = session_md.replace(f"# {wgname.upper()}", "")
                 summary.append(session_md)

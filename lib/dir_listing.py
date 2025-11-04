@@ -53,7 +53,7 @@ def fetch_summary(meeting):
         summary = [summary_header]
         with open(f"{auto_minutes_path}/{meeting}/.manifest.json") as fh:
             manifest = json.load(fh)
-        sessions = [s.sessionId for s in manifest.sessionGroups 
+        sessions = [s.sessionId for s in manifest['sessionGroups'] 
                     if s["sessionName"] == wgname.upper()]
         for session_id in sessions:
             session_time = "-".join(session_id.rsplit("-", 2)[-2:])

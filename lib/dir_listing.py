@@ -55,9 +55,9 @@ def fetch_summary(meeting):
             manifest = json.load(fh)
         sessions_lists = [s["sessions"] for s in manifest["sessionGroups"] 
                           if s["sessionName"].lower() == wgname.lower()]
-        if not session_lists:
+        if not sessions_lists:
             return
-        sessions = session_lists[0]
+        sessions = sessions_lists[0]
         session_ids = [s["sessionId"] for s in sessions]
         for session_id in session_ids:
             session_time = "-".join(session_id.rsplit("-", 2)[-2:])

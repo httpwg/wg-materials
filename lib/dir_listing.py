@@ -11,8 +11,8 @@ sep = "\n\n---\n\n"
 auto_minutes_path = "auto-minutes/output/"
 wgname = "httpbis"
 
-summary_header = """
-# Meeting Summary
+summary_header = f"""
+# Meeting Summary for {wgname}
 
 **NOTE**: this is a non-normative, AI-generated summary supplied only for convenience; it does not necessarily represent an accurate record of the meeting. See the minutes for the authoriative record.
 """
@@ -53,13 +53,13 @@ def fetch_summary(meeting):
         summary = [summary_header]
         with open(f"{auto_minutes_path}/{meeting}/.manifest.json") as fh:
             manifest = json.load(fh)
-        sessions = [s.get("sessionId", None) for s in manifest['sessionGroups'] 
-                    if s["sessionName"].lower() == wgname.lower()]
-        if not sessions:
+        sessions_lists = [s["sessions"] for s in manifest["sessionGroups"] 
+                          if s["sessionName"].lower() == wgname.lower()]
+        if not session_lists:
             return
-        for session_id in sessions:
-            if not session_id:
-                continue
+        sessions = session_lists[0]
+        session_ids = [s["sessionId"] for s in sessions]
+        for session_id in session_ids:
             session_time = "-".join(session_id.rsplit("-", 2)[-2:])
             summary.append(f"# Session: {session_time}")
             with os.open(f"{auto_minutes_path}/{session_id}", "r") as fh:

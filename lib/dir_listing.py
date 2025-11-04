@@ -33,6 +33,9 @@ def spider(directory, reverse=False):
             extra.append(f"[agenda]({dir_.name}/agenda.md)")
         if path.exists(f"{dir_.path}/minutes.md"):
             extra.append(f"[minutes]({dir_.name}/minutes.md)")
+        summary = fetch_summary(f"{dir_.path}")
+        if summary:
+            extra.append(summary)
         extra_str = ""
         if extra:
             extra_str = f": {', '.join(extra)}"
@@ -49,7 +52,7 @@ def fetch_summary(meeting):
         summary = [summary_header]
         manifest = json.load(f"{auto_minutes_path}/{meeting}/.manifest.json")
         sessions = [s.sessionId for s in manifest.sessionGroups 
-                    if s["sessionName"] = wgname.upper()]
+                    if s["sessionName"] == wgname.upper()]
         for session_id in sessions:
             session_time = "-".join(session_id.rsplit("-", 2)[-2:])
             summary.append(f"# Session: {session_time}")

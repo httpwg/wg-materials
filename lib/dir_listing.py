@@ -54,13 +54,16 @@ def fetch_summary(meeting):
         with open(f"{auto_minutes_path}/{meeting}/.manifest.json") as fh:
             manifest = json.load(fh)
         sessions = [s.sessionId for s in manifest['sessionGroups'] 
-                    if s["sessionName"] == wgname.upper()]
+                    if s["sessionName"].lower() == wgname.lower()]
+        if not sessions:
+            return
         for session_id in sessions:
             session_time = "-".join(session_id.rsplit("-", 2)[-2:])
             summary.append(f"# Session: {session_time}")
             with os.open(f"{auto_minutes_path}/{session_id}", "r") as fh:
                 session_md = fh.read()
                 session_md = session_md.replace(f"# {wgname.upper()}", "")
+                session_md = session_md.replace(f"# {wgname.lower()}", "")
                 summary.append(session_md)
         summary_md = "\n\n".join(summary)
         with open(f"{meeting}/summary.md", 'w') as fh:

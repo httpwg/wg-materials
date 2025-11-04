@@ -3,6 +3,7 @@ import os
 from os import path
 import shutil
 import sys
+import json
 
 ignore_things = ['lib', 'assets', 'README.md', 'badge']
 ignore_prefixes = ['.', '_']

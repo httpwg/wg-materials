@@ -12,8 +12,6 @@ auto_minutes_path = "auto-minutes/output"
 wgname = "httpbis"
 
 summary_header = f"""
-# Meeting Summary for {wgname}
-
 **NOTE**: this is a non-normative, AI-generated summary supplied only for convenience; it does not necessarily represent an accurate record of the meeting. See the minutes for the authoriative record. See [the source](https://ietfminutes.org/) for more information.
 """
 
@@ -61,7 +59,7 @@ def fetch_summary(meeting):
         session_ids = [s["sessionId"] for s in sessions]
         for session_id in session_ids:
             session_time = "-".join(session_id.rsplit("-", 2)[-2:])
-            summary.append(f"# Session: {session_time}")
+            summary.append(f"# Session Summary: {session_time}")
             with open(f"{auto_minutes_path}/{meeting}/{session_id}", "r") as fh:
                 session_md = fh.read()
                 session_md = session_md.replace(f"# {wgname.upper()}", "")

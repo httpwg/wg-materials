@@ -1,3 +1,20 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+
+- [Session Summary: 20250723-0730](#session-summary-20250723-0730)
+  - [Summary](#summary)
+  - [Key Discussion Points](#key-discussion-points)
+  - [Decisions and Action Items](#decisions-and-action-items)
+  - [Next Steps](#next-steps)
+- [Session Summary: 20250725-1230](#session-summary-20250725-1230)
+  - [Summary](#summary-1)
+  - [Key Discussion Points](#key-discussion-points-1)
+  - [Decisions and Action Items](#decisions-and-action-items-1)
+  - [Next Steps](#next-steps-1)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 
 **NOTE**: this is a non-normative, AI-generated summary supplied only for convenience; it does not necessarily represent an accurate record of the meeting. See the minutes for the authoriative record. See [the source](https://ietfminutes.org/) for more information.
 

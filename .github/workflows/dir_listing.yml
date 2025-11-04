@@ -24,6 +24,13 @@ jobs:
     - name: Create directory listings
       run: |
         python3 lib/dir_listing.py .
+    - uses: actions/setup-node@v6
+      with:
+        node-version: 24
+    - name: Install doctoc
+      run: npm install -g doctoc
+    - name: doctoc summaries
+      run: find . -name summary.md -exec doctoc {} \;
     - name: Push update
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -58,6 +58,8 @@ def fetch_summary(meeting):
         if not sessions:
             return
         for session_id in sessions:
+            if not session_id:
+                continue
             session_time = "-".join(session_id.rsplit("-", 2)[-2:])
             summary.append(f"# Session: {session_time}")
             with os.open(f"{auto_minutes_path}/{session_id}", "r") as fh:

@@ -63,9 +63,9 @@ def fetch_summary(meeting):
                 session_md = session_md.replace(f"# {wgname.upper()}", "")
                 summary.append(session_md)
         summary_md = "\n\n".join(summary)
-        with open(f"{dir_.name}/summary.md", 'w') as fh:
+        with open(f"{meeting}/summary.md", 'w') as fh:
             fh.write(summary_md)
-        return f"[summary]({dir_.name}/summary.md)"
+        return f"[summary]({meeting}/summary.md)"
     return None
 
 def filter_thing(thing):

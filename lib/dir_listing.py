@@ -8,7 +8,7 @@ import json
 ignore_things = ['lib', 'assets', 'README.md', 'badge']
 ignore_prefixes = ['.', '_']
 sep = "\n\n---\n\n"
-auto_minutes_path = "auto-minutes/output/"
+auto_minutes_path = "auto-minutes/output"
 wgname = "httpbis"
 
 summary_header = f"""

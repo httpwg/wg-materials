@@ -1,10 +1,8 @@
 
-# Meeting Summary for httpbis
-
 **NOTE**: this is a non-normative, AI-generated summary supplied only for convenience; it does not necessarily represent an accurate record of the meeting. See the minutes for the authoriative record. See [the source](https://ietfminutes.org/) for more information.
 
 
-# Session: 20230328-0630
+# Session Summary: 20230328-0630
 
 
 
@@ -56,7 +54,7 @@ The httpbis working group met to discuss several ongoing drafts, including cooki
 *   The working group will continue to discuss the outstanding issues on the mailing list.
 
 
-# Session: 20230331-0030
+# Session Summary: 20230331-0030
 
 
 

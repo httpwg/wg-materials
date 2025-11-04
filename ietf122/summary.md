@@ -1,10 +1,8 @@
 
-# Meeting Summary for httpbis
-
 **NOTE**: this is a non-normative, AI-generated summary supplied only for convenience; it does not necessarily represent an accurate record of the meeting. See the minutes for the authoriative record. See [the source](https://ietfminutes.org/) for more information.
 
 
-# Session: 20250318-0600
+# Session Summary: 20250318-0600
 
 ```markdown
 
@@ -38,7 +36,7 @@ This httpbis session covered several active drafts, including the query method, 
 *   **Secondary Certificates:** Mailing list discussion to present various design choices for a dedicated stream-based solution, with assistance from Mike.
 
 
-# Session: 20250321-0600
+# Session Summary: 20250321-0600
 
 
 

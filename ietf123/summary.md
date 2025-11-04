@@ -1,10 +1,8 @@
 
-# Meeting Summary for httpbis
-
 **NOTE**: this is a non-normative, AI-generated summary supplied only for convenience; it does not necessarily represent an accurate record of the meeting. See the minutes for the authoriative record. See [the source](https://ietfminutes.org/) for more information.
 
 
-# Session: 20250723-0730
+# Session Summary: 20250723-0730
 
 
 
@@ -36,7 +34,7 @@ The httpbis working group met to discuss several active drafts and the possibili
 *   Hold the next httpbis meeting on Friday to discuss additional active drafts.
 
 
-# Session: 20250725-1230
+# Session Summary: 20250725-1230
 
 
 

@@ -1,10 +1,8 @@
 
-# Meeting Summary for httpbis
-
 **NOTE**: this is a non-normative, AI-generated summary supplied only for convenience; it does not necessarily represent an accurate record of the meeting. See the minutes for the authoriative record. See [the source](https://ietfminutes.org/) for more information.
 
 
-# Session: 20241104-0930
+# Session Summary: 20241104-0930
 
 
 
@@ -39,7 +37,7 @@ This IETF 121 meeting covered several active drafts and new topics, including re
 *   The next meeting will be held on Thursday to discuss additional topics.
 
 
-# Session: 20241107-1730
+# Session Summary: 20241107-1730
 
 
 

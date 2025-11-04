@@ -1,10 +1,8 @@
 
-# Meeting Summary for httpbis
-
 **NOTE**: this is a non-normative, AI-generated summary supplied only for convenience; it does not necessarily represent an accurate record of the meeting. See the minutes for the authoriative record. See [the source](https://ietfminutes.org/) for more information.
 
 
-# Session: 20231109-1400
+# Session Summary: 20231109-1400
 
 
 
@@ -59,7 +57,7 @@ This httpbis meeting covered several active drafts and proposals. Key topics inc
 *   **Qpex Static Table version TLS extension:** Collect performance data and further explore the design options.
 
 
-# Session: 20231110-1200
+# Session Summary: 20231110-1200
 
 ```markdown
 

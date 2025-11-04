@@ -1,10 +1,8 @@
 
-# Meeting Summary for httpbis
-
 **NOTE**: this is a non-normative, AI-generated summary supplied only for convenience; it does not necessarily represent an accurate record of the meeting. See the minutes for the authoriative record. See [the source](https://ietfminutes.org/) for more information.
 
 
-# Session: 20240319-0730
+# Session Summary: 20240319-0730
 
 
 
@@ -54,7 +52,7 @@ This meeting covered updates and discussions on several HTTP-related drafts, inc
 *   **Resumable Uploads:** Address open issues and prepare for a new draft release.
 
 
-# Session: 20240321-2330
+# Session Summary: 20240321-2330
 
 
 

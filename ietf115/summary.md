@@ -1,10 +1,8 @@
 
-# Meeting Summary for httpbis
-
 **NOTE**: this is a non-normative, AI-generated summary supplied only for convenience; it does not necessarily represent an accurate record of the meeting. See the minutes for the authoriative record. See [the source](https://ietfminutes.org/) for more information.
 
 
-# Session: 20221107-1530
+# Session Summary: 20221107-1530
 
 
 
@@ -41,7 +39,7 @@ This httpbis meeting covered several topics, including HTTP message signatures, 
 *   Potential re-chartering of the MASK working group for future extensions.
 
 
-# Session: 20221111-0930
+# Session Summary: 20221111-0930
 
 ```markdown
 

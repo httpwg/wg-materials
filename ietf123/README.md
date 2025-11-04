@@ -10,5 +10,5 @@
 - [Incremental](incremental.pdf) _pdf_
 - [Minutes](minutes.md) 
 - [Resumable](resumable.pdf) _pdf_
-- [Meeting Summary for httpbis](summary.md) 
+- [Session Summary: 20250723-0730](summary.md) 
 - [Template Connect](template-connect.pdf) _pdf_

@@ -1,10 +1,8 @@
 
-# Meeting Summary for httpbis
-
 **NOTE**: this is a non-normative, AI-generated summary supplied only for convenience; it does not necessarily represent an accurate record of the meeting. See the minutes for the authoriative record. See [the source](https://ietfminutes.org/) for more information.
 
 
-# Session: 20230726-1630
+# Session Summary: 20230726-1630
 
 
 
@@ -64,7 +62,7 @@ This httpbis meeting covered several active drafts and proposals, including resu
 *   Another httpbis meeting to discuss remaining topics.
 
 
-# Session: 20230728-0000
+# Session Summary: 20230728-0000
 
 
 

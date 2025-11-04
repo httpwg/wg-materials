@@ -1,10 +1,8 @@
 
-# Meeting Summary for httpbis
-
 **NOTE**: this is a non-normative, AI-generated summary supplied only for convenience; it does not necessarily represent an accurate record of the meeting. See the minutes for the authoriative record. See [the source](https://ietfminutes.org/) for more information.
 
 
-# Session: 20240722-2000
+# Session Summary: 20240722-2000
 
 
 
@@ -44,7 +42,7 @@ The httpbis working group meeting covered three active drafts: resumable uploads
 *   Follow up on action items and continue work on open issues.
 
 
-# Session: 20240724-2000
+# Session Summary: 20240724-2000
 
 ```markdown
 

@@ -1,11 +1,13 @@
 import re
 import os
 from os import path
+import shutil
 import sys
 
 ignore_things = ['lib', 'assets', 'README.md', 'badge']
 ignore_prefixes = ['.', '_']
 sep = "\n\n---\n\n"
+auto_minutes_path = "auto-minutes/minutes/"
 
 def spider(directory, reverse=False):
     index = []
@@ -24,6 +26,13 @@ def spider(directory, reverse=False):
             extra.append(f"[agenda]({dir_.name}/agenda.md)")
         if path.exists(f"{dir_.path}/minutes.md"):
             extra.append(f"[minutes]({dir_.name}/minutes.md)")
+        if path.exists(f"{auto_minutes_path}/{dir_.name}/{wgname}.txt"):
+            if not path.exists(f"{dir_.name}/summary.md"):
+                shutil.copyfile(
+                    f"{auto_minutes_path}/{dir_.name}/{wgname}.txt",
+                    f"{dir_.name}/summary.md"
+                )
+            extra.append(f"[summary]({dir_.name}/summary.md)")
         extra_str = ""
         if extra:
             extra_str = f": {', '.join(extra)}"

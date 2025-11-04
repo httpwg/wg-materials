@@ -7,8 +7,15 @@ jobs:
   dir_listings:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
+    - name: clone gh-pages
+      uses: actions/checkout@v2
       with:
+        ref: gh-pages
+    - name: clone auto-minutes
+      uses: actions/checkout@v2
+      with:
+        repository: ietf-minutes/ietf-minutes-data
+        path: auto-minutes
         ref: gh-pages
     - name: Set up Python
       uses: actions/setup-python@v1

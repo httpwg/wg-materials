@@ -8,11 +8,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: clone gh-pages
-      uses: actions/checkout@v2
+      uses: actions/checkout@v5
       with:
         ref: gh-pages
     - name: clone auto-minutes
-      uses: actions/checkout@v2
+      uses: actions/checkout@v5
       with:
         repository: ietf-minutes/ietf-minutes-data
         path: auto-minutes

@@ -12,7 +12,9 @@ auto_minutes_path = "auto-minutes/output"
 wgname = "httpbis"
 
 summary_header = f"""
-**NOTE**: this is a non-normative, AI-generated summary supplied only for convenience; it does not necessarily represent an accurate record of the meeting. See the minutes for the authoriative record. See [the source](https://ietfminutes.org/) for more information.
+
+    **NOTE**: _this is a non-normative, AI-generated summary supplied only for convenience; it does not necessarily represent an accurate record of the meeting. See the minutes for the authoriative record. See [the source](https://ietfminutes.org/) for more information._
+    
 """
 
 def spider(directory, reverse=False):

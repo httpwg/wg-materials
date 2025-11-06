@@ -9,7 +9,7 @@ Slides: To be provided!
 
 BenS:
 * This is the last open PR: https://github.com/httpwg/http-extensions/pull/3141
-* It's been batted around for a while! THere are some marked approvals. There are some additional concerns raised too.
+* It's been batted around for a while! There are some marked approvals. There are some additional concerns raised too.
 
 TommyP: Anybody else with input?
 
@@ -21,7 +21,7 @@ AlanF: At least the TLS stack I have worked with have limited support.
 
 BenS: In /2 & /3, it's not controversial. It's also not always implementable.
 
-TommyP (individual): In the /2 & /3, youre following what connect does. Can we just lean on what is or not say for /1? Does it need to be any better?
+TommyP (individual): In the /2 & /3, you're following what connect does. Can we just lean on what is or not say for /1? Does it need to be any better?
 
 Bens: Gateways often end up doing version translation. So ... we need it to make sure the /2 and /3 translations work.
 
@@ -70,11 +70,11 @@ Marius: We will just continue.
 
 MikeB (individual): I would reframe this where the case is sending a hash and then it gets filled in because it also has access. The client already uploaded those bytes so we think of them as out of band or distributed client then this becomes simple. I don't think we should forbid this but how you do a distributed client out of scope for this draft.
 
-LucasP: There's talk in the chat about concurrent uploads. But, we need to accept reality is that wierd stuff is going to happen - clients have to deal with something. We can make the right wording with re-evaluating our choice of keeping this simple.
+LucasP: There's talk in the chat about concurrent uploads. But, we need to accept reality is that weird stuff is going to happen - clients have to deal with something. We can make the right wording with re-evaluating our choice of keeping this simple.
 
 ### 3193 - Request size granularity
 
-LucasP: To be clear this is effectively a new feature request! Still working through issues of the starting point of the design. This is interesting but we could punt if we needed to.  My feling is we could wait on this.
+LucasP: To be clear this is effectively a new feature request! Still working through issues of the starting point of the design. This is interesting but we could punt if we needed to.  My feeling is we could wait on this.
 
 Austin: ? Maybe could support punting?
 
@@ -94,7 +94,7 @@ EricG: Can we just close this?
 
 Alessandro Ghedinhi: Just close it!
 
-CoryB (/2 appologist): Just close it!
+CoryB (/2 apologist): Just close it!
 
 Chairs: Close out issue, do editorial pass, new version, and then start WGLC.
 
@@ -113,9 +113,9 @@ ChrisL: I share the enthusiasm. I really wish had of done it this way the first 
 
 [Slides](https://datatracker.ietf.org/meeting/124/materials/slides-124-httpbis-detecting-outdated-proxy-configuration-00)
 
-MarkN (individual): My initial reaction is that Proxy-Status is about any kind of proxy. Should be intermeidary status. What you're talking about the state of the client - might not be right place to put it. Maybe do your own header.
+MarkN (individual): My initial reaction is that Proxy-Status is about any kind of proxy. Should be intermediary status. What you're talking about the state of the client - might not be right place to put it. Maybe do your own header.
 
-TommyP (individual): THere are lots of Proxy-Status uses ... and it could fit in there so it depends potentially on how the parameter is phrased.  If it's saying you're stale then it seems like a new header. Worhtwhile problem to solve.
+TommyP (individual): There are lots of Proxy-Status uses ... and it could fit in there so it depends potentially on how the parameter is phrased.  If it's saying you're stale then it seems like a new header. Worthwhile problem to solve.
 
 BenS: The interesting question to me is are there open deployments that need this? Do we need a standard? We are talking aobut some pretty specific control plane stuff that's not normally done in the protocol.
 
@@ -131,7 +131,7 @@ MarkN: This is a little bit niche, but they are still part of the architecture. 
 
 [Slides](https://datatracker.ietf.org/meeting/124/materials/slides-124-httpbis-unbound-data-frames-in-http3-00)
 
-CoryB: I'm sympathetic to this use case. It does feel like another step for HTTP becoming a general purpose transport. Not sure I am entirely convinced about this, but am willign to be.
+CoryB: I'm sympathetic to this use case. It does feel like another step for HTTP becoming a general purpose transport. Not sure I am entirely convinced about this, but am willing to be.
 
 BenS: Fun problem to think about. If we can come up with a solution great, but I'm not sure I like this solution. You need to future out if you need trailers early and most don't know. This proposal would only be used for this particular use case. Trailers for GPRC streaming applications so it couldn't use it.  If you really need this - use web-transport because it's there! See my alternative proposal on the list.
 

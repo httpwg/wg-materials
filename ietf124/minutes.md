@@ -1,6 +1,24 @@
 # HTTP Working Group Agenda - IETF 124
 
-BenS: Agenda bash add 1st topic
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+- [connect-tcp](#connect-tcp)
+- [Resumable Uploads for HTTP](#resumable-uploads-for-http)
+  - [3270 - retrieving lost responses after completed upload](#3270---retrieving-lost-responses-after-completed-upload)
+  - [3214 - GET requests to upload resource](#3214---get-requests-to-upload-resource)
+  - [3317 - Forward offset jumps](#3317---forward-offset-jumps)
+  - [3193 - Request size granularity](#3193---request-size-granularity)
+- [HTTP Unencoded Digest](#http-unencoded-digest)
+- [Secondary Certificate Authentication of HTTP Servers](#secondary-certificate-authentication-of-http-servers)
+  - [2841  - Support sending Exported Authenticators in multiple frames over HTTP/2](#2841----support-sending-exported-authenticators-in-multiple-frames-over-http2)
+- [Cookies: HTTP State Management Mechanism](#cookies-http-state-management-mechanism)
+- [Detecting Outdated Proxy Configuration - Yaroslav Rosomakho](#detecting-outdated-proxy-configuration---yaroslav-rosomakho)
+- [Unbound DATA Frames in HTTP/3 - Yaroslav Rosomakho](#unbound-data-frames-in-http3---yaroslav-rosomakho)
+- [HTTP/1.1 Request Smuggling Defense using Cryptographic Message Binding - Erik Nygren](#http11-request-smuggling-defense-using-cryptographic-message-binding---erik-nygren)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 
 
 ## connect-tcp

@@ -1,8 +1,7 @@
-# HTTPBIS@IETF 124
+# HTTP Working Group Agenda - IETF 124
 
 BenS: Agenda bash add 1st topic
 
-# Work Group Drafts
 
 ## connect-tcp
 
@@ -109,7 +108,6 @@ DavidB: This is great we should do this! This fixes one of the original sins of 
 
 ChrisL: I share the enthusiasm. I really wish had of done it this way the first time!
 
-# Other Topics
 
 ## Detecting Outdated Proxy Configuration - Yaroslav Rosomakho
 
@@ -170,8 +168,6 @@ BenS: On the backend use case specifically, there one (missed it) that are suprt
 ErikN: Might be worth splitting it up in to two parts ...
 
 AlanF: What I like about the idea is that there is /2 and /1 and /1 with no connection pooling.
-
-
 
 
 

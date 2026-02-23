@@ -24,7 +24,7 @@ _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 * 10 min - [Cookies: HTTP State Management Mechanism](https://datatracker.ietf.org/doc/draft-ietf-httpbis-layered-cookies/)
 * 10 min - [Resumable Uploads for HTTP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload/)
 * 10 min - [No-Vary-Search](https://datatracker.ietf.org/doc/draft-ietf-httpbis-no-vary-search/)
-* 10 min - [The HTTP Wrap Up Capsule](https://datatracker.ietf.org/doc/draft-ietf-httpbis-wrap-up/)
+* 5 min - [The HTTP Wrap Up Capsule](https://datatracker.ietf.org/doc/draft-ietf-httpbis-wrap-up/) - David Schinazi
 * 10 min - [Secondary Certificate Authentication of HTTP Servers](https://datatracker.ietf.org/doc/draft-ietf-httpbis-secondary-server-certs/)
 
 ### Other Topics

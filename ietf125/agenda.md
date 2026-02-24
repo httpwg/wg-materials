@@ -26,7 +26,6 @@ Meetecho - [full client](https://meetings.conf.meetecho.com/ietf125/?session=351
 _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
 * 10 min - [Template-Driven HTTP CONNECT Proxying for TCP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-connect-tcp/)
-* 10 min - [Cookies: HTTP State Management Mechanism](https://datatracker.ietf.org/doc/draft-ietf-httpbis-layered-cookies/)
 * 10 min - [Resumable Uploads for HTTP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload/)
 * 10 min - [No-Vary-Search](https://datatracker.ietf.org/doc/draft-ietf-httpbis-no-vary-search/)
 * 5 min - [The HTTP Wrap Up Capsule](https://datatracker.ietf.org/doc/draft-ietf-httpbis-wrap-up/) - David Schinazi

@@ -20,6 +20,7 @@ Meetecho - [full client](https://meetings.conf.meetecho.com/ietf125/?session=351
 
 * 15 min - [HTTP Redirect Headers](https://datatracker.ietf.org/doc/draft-hardt-httpbis-redirect-headers/) - Dick Hardt
 * 15 min - [HTTP Signature-Key Header](https://datatracker.ietf.org/doc/draft-hardt-httpbis-signature-key/) - Dict Hardt
+* 15 min - [The Preliminary Request Denied HTTP Status Code](https://datatracker.ietf.org/doc/draft-nottingham-httpbis-pre-denied/) - Mark Nottingham
 
 ### Active Drafts
 

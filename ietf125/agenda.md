@@ -21,6 +21,7 @@ Meetecho - [full client](https://meetings.conf.meetecho.com/ietf125/?session=351
 * 15 min - [HTTP Redirect Headers](https://datatracker.ietf.org/doc/draft-hardt-httpbis-redirect-headers/) - Dick Hardt
 * 15 min - [HTTP Signature-Key Header](https://datatracker.ietf.org/doc/draft-hardt-httpbis-signature-key/) - Dict Hardt
 * 15 min - [The Preliminary Request Denied HTTP Status Code](https://datatracker.ietf.org/doc/draft-nottingham-httpbis-pre-denied/) - Mark Nottingham
+* 15 min - [Unbound DATA for CONNECT in HTTP/3](https://datatracker.ietf.org/doc/draft-rosomakho-httpbis-h3-unbound-data/) - Yaroslav Rosomakho
 
 ### Active Drafts
 
@@ -28,7 +29,6 @@ _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
 * 10 min - [Template-Driven HTTP CONNECT Proxying for TCP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-connect-tcp/)
 * 10 min - [Resumable Uploads for HTTP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload/)
-* 10 min - [No-Vary-Search](https://datatracker.ietf.org/doc/draft-ietf-httpbis-no-vary-search/)
 * 5 min - [The HTTP Wrap Up Capsule](https://datatracker.ietf.org/doc/draft-ietf-httpbis-wrap-up/) - David Schinazi
 * 10 min - [Secondary Certificate Authentication of HTTP Servers](https://datatracker.ietf.org/doc/draft-ietf-httpbis-secondary-server-certs/)
 

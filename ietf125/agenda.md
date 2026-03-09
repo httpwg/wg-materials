@@ -32,5 +32,10 @@ _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 * 5 min - [The HTTP Wrap Up Capsule](https://datatracker.ietf.org/doc/draft-ietf-httpbis-wrap-up/) - David Schinazi
 * 10 min - [Secondary Certificate Authentication of HTTP Servers](https://datatracker.ietf.org/doc/draft-ietf-httpbis-secondary-server-certs/)
 
+### Related Work
+
+* 10 min - [QPACK Compression for MoQ Transport](https://datatracker.ietf.org/doc/draft-frindell-moq-moqpack/) - Alan Frindell
+
+
 
 

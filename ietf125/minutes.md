@@ -6,20 +6,20 @@
 
 * **Presenter:** Dick Hardt
 * **Discussion:** The proposal introduces headers (`Redirect-Query`, `Redirect-Origin`, `Redirect-Path`) to move sensitive parameters (like OAuth codes) out of the URL during redirects. 
-* **Feedback:** Martin Thompson and David Schinazi expressed skepticism, noting that moving bits to headers doesn't necessarily prevent access by malicious browser extensions. Mark Nottingham highlighted tracking vector concerns. There was a general sense that this work might be better suited for the OAuth WG or WHATWG.
+* **Feedback:** Martin Thomson and David Schinazi expressed skepticism, noting that moving bits to headers doesn't necessarily prevent access by malicious browser extensions. Mark Nottingham highlighted tracking vector concerns. There was a general sense that this work might be better suited for the OAuth WG or WHATWG.
 
 ### [HTTP Signature-key Header](https://datatracker.ietf.org/meeting/125/materials/slides-125-httpbis-http-signature-key-header-00)
 
 * **Presenter:** Dick Hardt
 * **Discussion:** This proposal defines a way to carry public keys within HTTP messages for use with HTTP Message Signatures. Dick Hardt highlighted use cases for mobile app attestation and ephemeral keys. 
-* **Feedback:** David Schinazi raised concerns regarding the "alg: none" type vulnerability where a receiver might trust a key provided in the header without verification. Martin Thompson found the design overly complex but acknowledged the validity of the session-binding use cases.
+* **Feedback:** David Schinazi raised concerns regarding the "alg: none" type vulnerability where a receiver might trust a key provided in the header without verification. Martin Thomson found the design overly complex but acknowledged the validity of the session-binding use cases.
 
 ### [Preliminary Request Denied](https://datatracker.ietf.org/meeting/125/materials/slides-125-httpbis-preliminary-request-denied-00)
 
 * **Presenter:** Mark Nottingham
-* **Draft:** [draft-donnelly-httpbis-preliminary-request-denied](https://datatracker.ietf.org/meeting/125/materials/slides-125-httpbis-preliminary-request-denied-00)
+* **Draft:** [draft-nottingham-httpbis-preliminary-request-denied](https://datatracker.ietf.org/meeting/125/materials/slides-125-httpbis-preliminary-request-denied-00)
 * **Discussion:** Servers currently use 503 status codes to deny speculative prefetches (e.g., those triggered by `Sec-Purpose: prefetch`), which can alarm operational monitoring teams. The draft proposes a new status code (e.g., 4xx "Preliminary Request Denied" or "Purpose Declined") to disambiguate these denials.
-* **Feedback:** There was strong support for adoption from Yoav Weiss, Nidhi Jaju, Lucas Pardue, and Guoyue Zhang.
+* **Feedback:** There was strong support for adoption from Yoav Weiss, Nidhi Jaju, Lucas Pardue, and Guoye Zhang.
 
 
 ### [Unbound DATA for CONNECT in HTTP/3](https://datatracker.ietf.org/meeting/125/materials/slides-125-httpbis-unbound-data-for-connect-in-http3-00)
@@ -42,10 +42,10 @@ _Note that Connect-TCP was presented before Unbound DATA_
 
 ### [Resumable Uploads](https://datatracker.ietf.org/meeting/125/materials/slides-125-httpbis-resumable-uploads-00)
 
-* **Presenter:** Guoyue Zhang
+* **Presenter:** Guoye Zhang
 * **Draft:** [draft-ietf-httpbis-resumable-upload](https://datatracker.ietf.org/meeting/125/materials/slides-125-httpbis-resumable-upload-00)
 * **Discussion:** Focus was on client retry behavior and the retrieval of lost responses after an upload is complete. 
-* **Feedback:** Martin Thompson recommended keeping the retrieval of lost responses out of scope to avoid delaying the draft. The authors agreed to move toward finishing the draft by summer with non-normative guidance on retries.
+* **Feedback:** Martin Thomson recommended keeping the retrieval of lost responses out of scope to avoid delaying the draft. The authors agreed to move toward finishing the draft by summer with non-normative guidance on retries.
 
 
 ### HTTP Wrap-up Capsule
@@ -64,4 +64,4 @@ _Note that Connect-TCP was presented before Unbound DATA_
 
 * **Presenter:** Alan Frindell
 * **Discussion:** MoQ requires header compression for parameters but operates over WebTransport (lacking transport stream IDs). MOQPACK reuses QPACK’s synchronization logic but removes Huffman encoding and redefines static table references to use integer keys.
-* **Feedback:** Martin Thompson suggested that while the synchronization concepts of QPACK (RFC 9204) are valuable, the implementation should use MoQ varints and avoid literal reuse of the QPACK spec text due to semantic differences.
+* **Feedback:** Martin Thomson suggested that while the synchronization concepts of QPACK (RFC 9204) are valuable, the implementation should use MoQ varints and avoid literal reuse of the QPACK spec text due to semantic differences.

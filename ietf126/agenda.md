@@ -23,7 +23,7 @@ _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 * 15 min - [Resumable Uploads for HTTP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload/)
 * 15 min - [Cookies: HTTP State Management Mechanism](https://datatracker.ietf.org/doc/draft-ietf-httpbis-layered-cookies/)
 * 10 min - [The Preliminary Request Denied HTTP Status Code](https://datatracker.ietf.org/doc/draft-ietf-httpbis-pre-denied/) - Mark Nottingham
-* 5 min - [HTTP Unencoded Digest](https://datatracker.ietf.org/doc/draft-ietf-httpbis-unencoded-digest/)
+* 10 min - [Secondary Certificate Authentication of HTTP Servers](https://datatracker.ietf.org/doc/draft-ietf-httpbis-secondary-server-certs/)
 * 5 min - [Template-Driven HTTP CONNECT Proxying for TCP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-connect-tcp/)
 
 ### Other Topics

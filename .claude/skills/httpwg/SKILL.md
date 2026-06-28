@@ -1,0 +1,339 @@
+---
+name: httpwg
+description: >-
+  Chair tooling for the IETF HTTP Working Group (httpbis). Use whenever a
+  chair wants to build, rough in, revise, or set times on an httpbis IETF
+  meeting agenda — e.g. "start the IETF 126 agenda", "/httpwg agenda", "add
+  Resumable Uploads to the agenda", "fix the times on the agenda", "who do
+  we need to email about the agenda". Currently implements the `agenda`
+  subcommand. Requires the ietf-llm MCP tool and access to the chair's
+  email (to compose the call-for-presenters draft).
+---
+
+# httpwg — HTTP WG chair tooling
+
+This skill captures how the httpbis chairs run recurring tasks. Today it
+covers one subcommand:
+
+- **`agenda`** — build or revise the agenda for an upcoming IETF meeting.
+
+It is structured so other chair tasks (minutes, summaries) can be added as
+sibling subcommands later.
+
+It presupposes you're acting with **chair authority** — a chair, co-chair,
+or someone they've delegated to. There's no enforcement, and none is needed:
+the consequential steps are gated by access anyway. You can't push to
+`gh-pages` without commit rights, and you can't draft the call-for-presenters
+mail without the chair's mailbox; a non-chair gets at most a local,
+unpublishable draft.
+
+## Prerequisites — state these plainly if missing
+
+This skill leans on two capabilities. If either is unavailable, say so
+before starting rather than silently working around it:
+
+- **The ietf-llm MCP tool** — the queryable record of the httpbis group
+  (charter, drafts, RFCs, minutes, mailing list, and meeting logistics).
+  It is the primary source of truth for "what's the group doing" and,
+  increasingly, for the mechanical facts below. Run `list_corpora` first;
+  if `httpbis` is stale by more than a few days, run
+  `start_gather(corpus="httpbis")` before relying on its activity data.
+- **Access to the chair's email** — to compose the call-for-presenters
+  draft (Step 7) and, *at the chair's direction*, to look up a specific
+  address or thread they point you to. Don't go trawling the chair's mail
+  on your own initiative — ask. Any tool that can search the mailboxes and
+  create a draft will do; this skill doesn't depend on a specific mail
+  integration.
+
+You also need a working `git` checkout of the `wg-materials` repo
+(`git@github.com:httpwg/wg-materials.git`), whose default/published branch
+is **`gh-pages`**.
+
+> **Live Datatracker facts.** Three ietf-llm tools return *current*
+> datatracker state (short TTL, each answer carries a freshness stamp), so
+> you never scrape it by hand:
+> - `meeting_sessions(corpus, meeting)` — session logistics (Step 1)
+> - `draft_status(name)` — draft/IESG state + agenda-eligibility (Step 3)
+> - `draft_authors(name)` — authors/editors with emails (Step 7)
+>
+> Prefer these over `overview`'s cached active-draft list, which can lag the
+> real state by days.
+
+---
+
+## Subcommand: `agenda`
+
+Building an agenda is mostly **verification**, not authoring. The format is
+boilerplate; the value is getting the facts right. Three things must be
+correct, and a wrong one wastes the whole group's time:
+
+1. **The time and place of the meeting.**
+2. **The Meetecho session links — all of them.**
+3. **The drafts in play, and their real status.**
+
+Verify each against an authoritative source. Do not trust a single
+second-hand feed (a calendar entry, a stale cache) for any of them.
+
+And build it **with the chair, not for them**. The agenda is a candidate
+they shape: what's on it, how long each item gets, and which session things
+land in are the chair's calls. Surface your proposed draft list and times
+and ask what to add, drop, or adjust — they hold context you don't (a side
+conversation, a draft someone wants to present, a political constraint).
+When you need something from their mail — a confirmation, an address, a
+thread someone mentioned — **ask the chair rather than searching their
+mailbox unbidden**; they'll often point you straight at the relevant
+message.
+
+### Step 1 — pin down the meeting logistics
+
+You need: the meeting number, the date, the **meeting-local** start/end
+time, the room, and the session id (which the Meetecho URLs are built from).
+
+Call `meeting_sessions(corpus="httpbis", meeting="<NNN>")`. It returns
+every session live from datatracker with the venue-**local** weekday/date
+and start–end time (DST-correct), the room, the session id, and both
+Meetecho URLs (remote + onsite) already built — so you don't assemble or
+convert anything by hand. From its output, settle:
+
+- **How many sessions** the group has. The last couple of meetings have
+  been single-session, but httpbis has often had **two**, so don't assume —
+  check. Each session is a separate dated block with its own date, time,
+  room, and session id; note each one's duration, since the time budget is
+  **per session**, not pooled (see Step 4 and the multi-session layout
+  below).
+- **Use the local times verbatim.** The tool has already converted from
+  UTC; never quote a UTC start (or a datatracker row-anchor token like
+  `0700`) as if it were the local time.
+
+### Step 2 — create a template agenda to fill in
+
+The agenda lives at `ietf<NNN>/agenda.md` in the repo. **Do not edit any
+`README.md` index files** — they're regenerated by CI (`lib/dir_listing.py`
+runs on push and lands an "update indices" commit). Just add the agenda.
+
+Stand up a template now and fill it in as the later steps settle the
+content. For the *formatting* conventions — heading, the tabbed time/room
+line, the Meetecho pair, bullet style — glance at the most recent one or two
+`ietf*/agenda.md` files (the format has evolved; older ones carry dropped
+conventions). Treat them as a guide to form, not a script to copy: the
+sections and items belong to *this* meeting, worked out with the chair in
+Steps 3–5. The current skeleton:
+
+```markdown
+# HTTP Working Group Agenda - IETF <NNN>
+
+* [Meeting chat](https://zulip.ietf.org/#narrow/stream/httpbis)
+* [Minutes](https://notes.ietf.org/notes-ietf-<NNN>-httpbis) _requires [datatracker](https://datatracker.ietf.org) login_
+
+*Taking minutes? See [our guide for scribes](https://github.com/httpwg/wiki/wiki/TakingMinutes)*
+
+## <Weekday>, <D Month YYYY>
+
+_<HH:MM> - <HH:MM>	<Day> Session <I/II/III> - <Room>_
+
+Meetecho - [full client](<full-url>) / [onsite](<onsite-url>)
+
+### Administrivia
+
+*  3 min - Scribe selection / [NOTE WELL](https://www.ietf.org/about/note-well/)
+*  2 min - Agenda bashing
+
+### Active Drafts
+
+_See also the [extensions listing](https://httpwg.org/http-extensions/)_
+
+<one bullet per active WG draft>
+
+### Other Topics
+
+<one bullet per individual/other item that has requested time>
+```
+
+Canonical bullet format:
+
+```
+* <N> min - [<Title>](<datatracker-url>) - <Presenter>
+```
+
+- The presenter name comes only once they've confirmed (Step 5); a bare
+  draft line with no name is correct until then.
+- Append `(remote)` after the name when they're dialling in.
+- Append `([slides](<file>.pdf))` once slides are uploaded — they live in
+  the same `ietf<NNN>/` directory as the agenda.
+
+The "Session I/II/III" label is the timeslot ordinal on that day (Friday
+09:00–11:00 is Session I; a late slot might be Session IV).
+
+The section set and their order aren't fixed — choose them to fit this
+meeting's items, not by copying the last agenda's. **Active Drafts** and
+**Other Topics** are the usual two; add **Related Work** (relevant
+non-httpbis drafts) or a one-off like **AD-Requested Feedback** (a draft an
+AD has asked the WG to look at) when this meeting actually has such items,
+and order the sections to suit. A given agenda's quirks (an unusual section,
+Other Topics leading, an extra "10 min - Rechartering" Administrivia line)
+were that meeting's needs — don't carry them forward by default; if in
+doubt, check with the chair.
+
+**Multiple sessions.** When the group has more than one session, the whole
+day block repeats — one `## <Weekday>, <date>` block per session, each
+with its *own* time/room line, Meetecho line, and a fresh **Administrivia**
+section (scribe + agenda bashing run at the top of every session). Then:
+
+- **Active Drafts** appears in (usually) **both** sessions — split the WG
+  drafts across them.
+- **Other Topics** appears in **one or both** — individual/other items
+  often cluster in a single session, but spill into both when there are
+  enough.
+
+There's no fixed rule for which draft goes in which session; balance the
+load so each session's total fits its own slot (Step 4), and respect any
+day/time a presenter said they're available (Step 5). The two sessions can
+be days apart (e.g. a Monday and a Thursday), so a presenter's stated
+availability can decide placement.
+
+### Step 3 — decide which drafts are in play, and verify status
+
+The agenda should carry **active WG drafts that still need working-group
+time**, plus individual/other drafts only where someone has asked to
+present.
+
+Get the candidate set from ietf-llm (`overview` / `read_digest`), then run
+`draft_status(name)` on each candidate and let its **agenda-eligibility**
+signal decide:
+
+- **in the WG** (`I-D Exists`) → eligible for the agenda.
+- **past the WG** (IESG processing) or **published** → the WG's work is
+  essentially done; leave it off unless an author specifically wants a
+  status slot.
+- **dead** (expired / replaced) → off.
+
+`draft_status` reads live datatracker state, so it catches what `overview`'s
+cached active-draft list misses — that list can omit an active draft or keep
+one that has since advanced, so treat it as a starting point and let
+`draft_status` be the authority.
+
+Individual drafts (e.g. `draft-<author>-httpbis-*`) belong under **Other
+Topics**, and only when the author has requested time — see Step 5.
+
+What you produce here is a **candidate list**, not the final cut. Put it to
+the chair and ask what to add or skip — they may know of a presentation in
+the works that no draft state reflects, or want something held over. If they
+mention a discussion that bears on the agenda (say, a thread about an extra
+talk), ask them to point you to it rather than going to look.
+
+### Step 4 — allocate time by activity
+
+Each **session** must **fit inside its own slot, and ideally come in under
+it** so more items can be scheduled and there's wiggle room. With two
+sessions the budget is per-session, not pooled — a 2h + 1h pair is two
+separate budgets, not 3h to spread freely. **Never expand a slot or pad
+allocations just to fill space** — under-full is good.
+
+Weight time by how much discussion a draft actually needs:
+
+- **Actively discussed and/or many open issues → more time.** A big open
+  issue backlog or a live list debate is the signal.
+- **Quiet, or just needs a status update → less, usually 5 minutes.**
+- **New work / other items → 10 or 15 minutes** by complexity; rarely more
+  unless negotiated with the authors.
+- **Negotiated allocations stand.** If a presenter agreed a length over
+  mail, keep it.
+
+To gauge activity, lean on two ietf-llm signals:
+
+- **Open issues per draft** — from the gathered GitHub issues
+  (`read_digest(corpus="httpbis", kind="issues", ...)` / `search_corpus`).
+- **Recent list traffic** — `read_digest(corpus="httpbis", kind="threads",
+  sort="activity", since=...)` / `search_corpus`.
+
+If `list_corpora` shows httpbis without an `issues` source, the issue signal
+is just missing — that's a gather-configuration gap (re-gather httpbis with
+issues enabled), not a reason to hit the GitHub API directly. Note the gap
+and size slots on list traffic and your own read of the drafts.
+
+For each session, add up Administrivia + its items and confirm the total ≤
+that session's slot length. State each session's total and headroom when
+you present the agenda.
+
+### Step 5 — presenters and confirmations
+
+Only put a **presenter's name** on an item once they've **confirmed**; an
+unconfirmed draft gets no name. Ask the chair who's confirmed and whether
+anyone's asked for time, length, or a particular slot — that context lives
+in their mail and head, so let them surface it (and point you at a specific
+thread if you need the detail) rather than searching their mailbox yourself.
+Honour what's been agreed, and drop items explicitly moved elsewhere (e.g. an
+author taking a draft to another WG).
+
+For drafts that need time but have **no confirmed presenter yet**, the next
+move is the call-for-presenters email (Step 7).
+
+### Step 6 — commit and push (only when the chair approves)
+
+The published branch is **`gh-pages`**. Commit the new
+`ietf<NNN>/agenda.md` and push. Because CI lands its own "update indices"
+commit on `gh-pages` after every push, a second push in the same session
+often isn't a fast-forward — `git fetch` and `git rebase origin/gh-pages`
+(your change only touches `agenda.md`; CI only touches `README.md`, so no
+conflict), then push again.
+
+Follow the repo's commit conventions (short imperative subject; previous
+agenda commits read like "Rough in 124 agenda"), respect whatever local
+git/gh environment rules the chair has, and end commit messages with a
+`Co-Authored-By: Claude ...` trailer.
+
+### Step 7 — draft the call-for-presenters email
+
+Send the authors/editors of every draft that needs time **but has no
+confirmed presenter** the standard reminder. It does not enumerate drafts —
+it points at the agenda and asks the standard questions. Use the template
+below:
+
+```
+Hello authors/editors,
+
+It's that time yet again. You are authoring or editing a draft that we have on the agenda for IETF<NNN>:
+https://github.com/httpwg/wg-materials/blob/gh-pages/ietf<NNN>/agenda.md
+
+Please tell <co-chair> and I:
+
+- Whether the time allocated is needed, an appropriate length, and at a time you're available
+- Who will be leading discussion of your draft in the meeting
+- Whether they'll be onsite or remote
+- Whether they'll have slides and when we can expect them (no later than a week before the meeting, please)
+
+As a reminder, these are working meetings -- we expect people to have read the drafts, so please focus on resolving the issues that are blocking your draft from shipping.
+
+Cheers,
+```
+
+Composing it:
+
+- **Recipients** = authors/editors of the unconfirmed drafts only. Get the
+  addresses from `draft_authors(name)`; if the chair offers a better working
+  address for someone, use that. Don't include a chair's own draft or an
+  already-confirmed presenter.
+- **Cc the co-chair.**
+- **Omit the signature** when composing — the chair's mail client adds it.
+  Start the body at "Hello"; don't leave a leading blank line.
+- The agenda link is to the `gh-pages` blob, so it 404s until Step 6 has
+  pushed. Push first.
+- **Compose it as a draft; never send.** Leave it in the chair's mail client
+  for them to review and send. (With macOS Mail, AppleScript via `osascript`
+  — `make new outgoing message ... visible:true`, then `save` — does this;
+  use whatever drafting capability is available.) Report the To/Cc/Subject
+  you used and any address you couldn't verify.
+
+---
+
+## What "done" looks like
+
+- `ietf<NNN>/agenda.md` exists in house format with one dated block per
+  session, each with correct date, local time, room, and both Meetecho
+  links.
+- Every item is an active draft that wants time; times are weighted by
+  activity and each session's total ≤ its slot, with headroom called out.
+- Names appear only for confirmed presenters.
+- The agenda is pushed to `gh-pages` (if approved), and the
+  call-for-presenters email is sitting as an unsent draft in the chair's
+  mail client, cc'ing the co-chair.

@@ -20,6 +20,13 @@ covers one subcommand:
 It is structured so other chair tasks (minutes, summaries) can be added as
 sibling subcommands later.
 
+It presupposes you're acting with **chair authority** — a chair, co-chair,
+or someone they've delegated to. There's no enforcement, and none is needed:
+the consequential steps are gated by access anyway. You can't push to
+`gh-pages` without commit rights, and you can't read presenter confirmations
+or draft the mail without the chair's mailbox; a non-chair gets at most a
+local, unpublishable draft.
+
 ## Prerequisites — state these plainly if missing
 
 This skill leans on two capabilities. If either is unavailable, say so
@@ -76,11 +83,12 @@ and start–end time (DST-correct), the room, the session id, and both
 Meetecho URLs (remote + onsite) already built — so you don't assemble or
 convert anything by hand. From its output, settle:
 
-- **How many sessions** the group has. httpbis often gets **two** (and
-  historically that's been the norm); each is a separate dated block with
-  its own date, time, room, and session id. Note each session's duration —
-  the time budget is **per session**, not pooled (see Step 4 and the
-  multi-session layout below).
+- **How many sessions** the group has. The last couple of meetings have
+  been single-session, but httpbis has often had **two**, so don't assume —
+  check. Each session is a separate dated block with its own date, time,
+  room, and session id; note each one's duration, since the time budget is
+  **per session**, not pooled (see Step 4 and the multi-session layout
+  below).
 - **Use the local times verbatim.** The tool has already converted from
   UTC; never quote a UTC start (or a datatracker row-anchor token like
   `0700`) as if it were the local time.
@@ -138,10 +146,15 @@ Canonical bullet format:
   the same `ietf<NNN>/` directory as the agenda.
 
 The "Session I/II/III" label is the timeslot ordinal on that day (Friday
-09:00–11:00 is Session I; a late slot might be Session IV). Add an extra
-line or section only when it genuinely applies (e.g. "10 min -
-Rechartering" under Administrivia, or an "AD-Requested Feedback" section
-for a draft an AD has asked the WG to look at).
+09:00–11:00 is Session I; a late slot might be Session IV).
+
+The section set and their order aren't fixed. Beyond **Active Drafts** and
+**Other Topics**, recent agendas also use **Related Work** (relevant
+non-httpbis drafts) and the occasional one-off like **AD-Requested
+Feedback** (a draft an AD has asked the WG to look at) — and they sometimes
+lead with Other Topics rather than Active Drafts. Take the actual sections,
+their order, and any extra Administrivia line (e.g. "10 min - Rechartering")
+from the most recent agenda, not the skeleton above.
 
 **Multiple sessions.** When the group has more than one session, the whole
 day block repeats — one `## <Weekday>, <date>` block per session, each

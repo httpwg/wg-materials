@@ -29,3 +29,4 @@ _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 ### Other Topics
 
 * 10 min - [HTTP Signature-Key Header](https://datatracker.ietf.org/doc/draft-hardt-httpbis-signature-key/) - Dick Hardt
+* 10 min - [Using QUIC Stream Resets with Partial Delivery in HTTP/3](https://datatracker.ietf.org/doc/draft-seemann-httpbis-reset-stream-at/) - Marten Seemann

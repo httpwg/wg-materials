@@ -30,3 +30,4 @@ _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
 * 10 min - [HTTP Signature-Key Header](https://datatracker.ietf.org/doc/draft-hardt-httpbis-signature-key/) - Dick Hardt
 * 10 min - [Using QUIC Stream Resets with Partial Delivery in HTTP/3](https://datatracker.ietf.org/doc/draft-seemann-httpbis-reset-stream-at/) - Marten Seemann
+* 10 min - [HTTP/1.1 Request Smuggling Defense using Cryptographic Message Binding](https://datatracker.ietf.org/doc/draft-nygren-httpbis-http11-request-binding) - Erik Nygren

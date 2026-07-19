@@ -20,8 +20,8 @@ Meetecho - [full client](https://meetings.conf.meetecho.com/ietf126/?session=355
 
 _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
-* 5 min - [Resumable Uploads for HTTP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload/)
-* 5 min - [Cookies: HTTP State Management Mechanism](https://datatracker.ietf.org/doc/draft-ietf-httpbis-layered-cookies/)
+* 5 min - [Resumable Uploads for HTTP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload/) - update
+* 5 min - [Cookies: HTTP State Management Mechanism](https://datatracker.ietf.org/doc/draft-ietf-httpbis-layered-cookies/) - update
 * 10 min - [The Preliminary Request Denied HTTP Status Code](https://datatracker.ietf.org/doc/draft-ietf-httpbis-pre-denied/) - Mark Nottingham
 * 5 min - [Secondary Certificate Authentication of HTTP Servers](https://datatracker.ietf.org/doc/draft-ietf-httpbis-secondary-server-certs/)
 * 15 min - [Template-Driven HTTP CONNECT Proxying for TCP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-connect-tcp/) - Ben Schwartz (remote)

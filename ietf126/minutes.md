@@ -1,13 +1,5 @@
-HTTPBis
+# IETF126 HTTP Working Group Minutes
 
-HTTP Working Group Meeting - IETF 126
-Friday, 24 July 2026
-09:00 - 11:00 Friday Session I - Park Suite 8
-
-
-## Administrivia
-
-Mark: [trivially administered the administrivia]
 
 ## Resumable Uploads for HTTP - update
 
@@ -19,11 +11,13 @@ Tommy: Given the changes so far, has anything that would affect interop been ref
 
 Marius: Apple's stack has been caught up, I have to update mine a bit but the changes have not affected interop and need not delay the processing of the draft. 
 
-## Cookies: HTTP State Management Mechanism - update
+## Cookies: HTTP State Management Mechanism
 
 Mark: RFC 6265 revision - that is in the final review phase (recently AUTH48, name changed).  Refactoring the cookie spec, more reasonably talks about what goes on the wire. 
 
-## The Preliminary Request Denied HTTP Status Code - Mark Nottingham
+## The Preliminary Request Denied HTTP Status Code
+
+*Mark Nottingham*
 
 Mark: My spec, I'm virtually on the floor. Not a lot of discussion. Core text is stable. We DO need to choose a status code for it!  In the 4xx block, we talked about 419.  We found one squatter, talking to them hasn't concluded.  Do folks think we should use 419 or try to find another.  Do I hear a bid for 419? Great, we'll send a message on the list to see if we get any objections, but we have support in the room for 419. 
 
@@ -33,7 +27,9 @@ Mark: We're going to kick off a WG last call for this on the list, with vague su
 
 Mike: We have been working on this for a while. Please send to WG last call (speaking as author).  I'll read it myself as it has been a while since I've read this version.
 
-## Template-Driven HTTP CONNECT Proxying for TCP - Ben Schwartz 
+## Template-Driven HTTP CONNECT Proxying for TCP
+
+*Ben Schwartz*
 
 [See slides](https://datatracker.ietf.org/meeting/126/materials/slides-126-httpbis-connect-tcp-00)
 
@@ -52,7 +48,9 @@ Tommy: I'll work on shepherd write-up.
 
 David: IANA is expert review, so anybody in the planet can request provisional, and it becomes permanent if approved.
 
-## HTTP Signature-Key Header - Dick Hardt
+## HTTP Signature-Key Header
+
+*Dick Hardt*
 
 [See slides](https://datatracker.ietf.org/meeting/126/materials/slides-126-httpbis-http-signature-keys-00)
 
@@ -73,7 +71,9 @@ Mark: We're not doing a call for adoption right now, just vague interest
 Poll: 16 vaguely interested in adopting, 20 no opinion. 
 
 
-## Using QUIC Stream Resets with Partial Delivery in HTTP/3 - Marten Seemann
+## Using QUIC Stream Resets with Partial Delivery in HTTP/3
+
+*Marten Seemann*
 
 [See slides](https://datatracker.ietf.org/meeting/126/materials/slides-126-httpbis-reset-stream-at-in-http3-00)
 
@@ -100,7 +100,9 @@ Mark: [as me, not chair] I've always been uncomfortable about connection layer e
 Mark [as chair]: It seems like there's interest, Martin is willing to work on the draft, let's continue discussion on list. 
 
 
-## HTTP/1.1 Request Smuggling Defense using Cryptographic Message Binding - Erik Nygren
+## HTTP/1.1 Request Smuggling Defense using Cryptographic Message Binding
+
+*Erik Nygren*
 
 [See slides](https://datatracker.ietf.org/meeting/126/materials/slides-126-httpbis-http11-request-smuggling-defense-using-cryptographic-message-binding-01-version-of-draft-00)
 
@@ -140,8 +142,9 @@ Tommy: I agree, we have energy here.  I'm curious to hear if anyone in the room 
 Erik: if implementors are interested in being co-authors, I'd be very interested in that. 
 
 
-##  A Perfect Forward Secure Extension to Oblivious HTTP - David Schinazi
+##  A Perfect Forward Secure Extension to Oblivious HTTP
 
+*David Schinazi*
 
 [See slides](https://datatracker.ietf.org/meeting/126/materials/slides-126-httpbis-ohttp-pfs-key-config-00)
 
@@ -210,9 +213,7 @@ Mike: we should justify the content-type change based on work we want to do, not
 
 David: No, its that as long as we're updating clients, there's a feature we could add.
 
-## Wrapup
 
-Mark: We have a HTTP directorate. If you want to be part of that, come to me. We are thinking of using AI a bit for that. 
 
 
 

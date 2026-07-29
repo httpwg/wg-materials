@@ -40,7 +40,7 @@ Benjamin: Asking chairs if this is the revised I-D that was needed, or if we nee
 
 Mark: We'll do a notification to the list but not a full redo of last call.  We can do our chairs review, IETF last call, and IESG, which gives opportunity if somebody's issue was missed.
 
-Benjamin: The open issue is about shutdown of connection in an unclean way, and some consequences of that. There are interesting implications related to resource utilization.  The TCP state machine can end up in a state where one side or the other is holding onto resources open for several minutes. 
+Benjamin: The open issue is about shutdown of connection in an unclean way, and some consequences of that. There are interesting implications related to resource utilisation.  The TCP state machine can end up in a state where one side or the other is holding onto resources open for several minutes. 
 
 David Schinazi: it's fine to me.
 
@@ -77,7 +77,7 @@ Poll: 16 vaguely interested in adopting, 20 no opinion.
 
 [See slides](https://datatracker.ietf.org/meeting/126/materials/slides-126-httpbis-reset-stream-at-in-http3-00)
 
-Mike: It could be your HTTP stack that generates status code. So if you're getting an application layer response, then you send a close, becasue that is your complete response. If you don't generate a response and did not process the request, you reset with H3 connect.
+Mike: It could be your HTTP stack that generates status code. So if you're getting an application layer response, then you send a close, because that is your complete response. If you don't generate a response and did not process the request, you reset with H3 connect.
 
 Benjamin: If we are using TCP, the H3 Connect error will be converted into a TCP reset. It has the same semantics as classic quick reset.  The result is the data you're trying to protect will be dropped anyway.  I think this is valid.  you're welcome to do this. 
 
@@ -91,7 +91,7 @@ Tommy: I think I agree with what I heard so far.  If we are talking about CONNEC
 
 Mike: with h3 editor hat on: Everybody's favourite feature is HTTP PUSH< which I know all of you have fully implemented. [laughter].  So the server sends a push promise, with the push ID and header. But if that unidirectional stream gets reset, then the client will SEE that push promise has never been fulfilled. If this were available in QUIC we would have used it.
 
-Martin: Do you want me to add tht to the draft?
+Martin: Do you want me to add that to the draft?
 
 Mike: Please.
 
@@ -127,7 +127,7 @@ Dennis: It looks like the attacks these defend against are distinct.  The paper 
 
 Erik: Agreed, it's not worth it unless enough CVs are addressed.
 
-David "Shoving weird crypto into http" enthusiast: With my other hat on I sometimes work on OS, smuggling is a sizable number of the attacks we're seeing. I support work in this area. TLS exported authenticators make peoples' heads hurt.  So I do support this work, and I recommend having a response to the first message in your init message. It will help you then.
+David "Shoving weird crypto into http" enthusiast: With my other hat on I sometimes work on OS, smuggling is a sizeable number of the attacks we're seeing. I support work in this area. TLS exported authenticators make peoples' heads hurt.  So I do support this work, and I recommend having a response to the first message in your init message. It will help you then.
 
 Erik: we do need indication ahead of INIT that you do support this, otherwise there's a risk an attacker can send the INIT directly, smuggle it through in a way that causes problems.
 
@@ -154,7 +154,7 @@ David: It depends. The first request and response often set up the channel and w
 
 Dennis: But also authentication material and other fun things.
 
-David: Because it's not just a single gateway, the client might hit a different region, those keys have much more opportunity to leak. I think there's a measurable security increse. 
+David: Because it's not just a single gateway, the client might hit a different region, those keys have much more opportunity to leak. I think there's a measurable security increase. 
 
 Dennis: I think there's an awkward mismatch in demanding both 0RTT and PFS.
 
@@ -164,7 +164,7 @@ Dennis: This would need careful review.
 
 David: Agree. I want to pick your brain about doing this in TLS. I highly doubt th t's easy.
 
-Kazuho Oku; working at a company that already supplies chunked gateways, it's hard to explain this to customers. I hope PFS will be applied.  It's an application choice.
+Kazuho Oku: working at a company that already supplies chunked gateways, it's hard to explain this to customers. I hope PFS will be applied.  It's an application choice.
 
 Martin Thomson: I find cognitive dissonance .  Applications can decide the right things about RTT but not the right things about other subjects? I'm interested in exploring the idea Dennis raised.  I'd like to uplevel and say, what are the use cases for this?  Chunked -> bidirectional was an unfortunate consequence.  If people are starting to use this and don't want to use TLS, I think I might prefer to fix TLS than take this path.  If we can educate users about the non-PFS-first-flight, perhaps we can educate them about "Hey, there's CONNECT"
 
@@ -174,7 +174,7 @@ Jonathan Hoyland: If you're doing interactive chunked messages, then aren't you 
 
 David: I think the only thing you're leaking is the latency between client and server, and that's nowhere near as bad as leaking the client IP address.
 
-Jonathan: I was looking at the chunked HTTP security considerations, and the attack is somebody who can see both sides of the cxn can identify which packets are related to which customers.  
+Jonathan: I was looking at the chunked HTTP security considerations, and the attack is somebody who can see both sides of the connection can identify which packets are related to which customers.  
 
 david: Take Google safe browsing; we want to offer this to customers with a guarantee that we have no access to the IP address. We're not trying to defend against state actors with access to both sides.
 
@@ -198,7 +198,7 @@ Dennis: For the TLS 0RTT thing, I think there would be wider use cases for brows
 
 David: I have shipped chunked HTTP, and I won't shift those people to TLS.  let's chat more. 
 
-Tommy [wearing no hats]: Overall we have uses cases that we really want to be 0RTT and fully unlinkable. We shoud understand more, for the bidirectional active stream, how much do they really really need the 0RTT beginning? I understand CONNECT is trickier because of CDN setups, but what are the actual technical problems? 
+Tommy [wearing no hats]: Overall we have uses cases that we really want to be 0RTT and fully unlinkable. We should understand more, for the bidirectional active stream, how much do they really really need the 0RTT beginning? I understand CONNECT is trickier because of CDN setups, but what are the actual technical problems? 
 
 David: Note this works just as well for regular HTTP without the chunked. I think there's cases where that matters, like requests with an OAuth token that is scoped in time.  If the key in the request leaks a day later, that's less sensitive than the response with sensitive data actually is.
 

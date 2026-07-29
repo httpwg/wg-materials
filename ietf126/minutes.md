@@ -1,7 +1,22 @@
 # IETF126 HTTP Working Group Minutes
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
-## Resumable Uploads for HTTP - update
+- [Resumable Uploads for HTTP](#resumable-uploads-for-http)
+- [Cookies: HTTP State Management Mechanism](#cookies-http-state-management-mechanism)
+- [The Preliminary Request Denied HTTP Status Code](#the-preliminary-request-denied-http-status-code)
+- [Secondary Certificate Authentication of HTTP Servers](#secondary-certificate-authentication-of-http-servers)
+- [Template-Driven HTTP CONNECT Proxying for TCP](#template-driven-http-connect-proxying-for-tcp)
+- [HTTP Signature-Key Header](#http-signature-key-header)
+- [Using QUIC Stream Resets with Partial Delivery in HTTP/3](#using-quic-stream-resets-with-partial-delivery-in-http3)
+- [HTTP/1.1 Request Smuggling Defense using Cryptographic Message Binding](#http11-request-smuggling-defense-using-cryptographic-message-binding)
+- [A Perfect Forward Secure Extension to Oblivious HTTP](#a-perfect-forward-secure-extension-to-oblivious-http)
+- [An Extensible Key Configuration Format for Oblivious HTTP](#an-extensible-key-configuration-format-for-oblivious-http)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+## Resumable Uploads for HTTP
 
 Marius Kleidl: there have been many small changes since last WG last call.  Consult the draft for list of changes. 
 

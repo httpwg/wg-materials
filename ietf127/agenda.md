@@ -22,10 +22,10 @@ _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
 * 10 min - [Resumable Uploads for HTTP](https://datatracker.ietf.org/doc/draft-ietf-httpbis-resumable-upload/)
 * 5 min - [Cookies: HTTP State Management Mechanism](https://datatracker.ietf.org/doc/draft-ietf-httpbis-layered-cookies/)
-* 10 min - [The Preliminary Request Denied HTTP Status Code](https://datatracker.ietf.org/doc/draft-ietf-httpbis-pre-denied/)
+* 10 min - [The Preliminary Request Denied HTTP Status Code](https://datatracker.ietf.org/doc/draft-ietf-httpbis-pre-denied/) - Mark Nottingham
 * 5 min - [Secondary Certificate Authentication of HTTP Servers](https://datatracker.ietf.org/doc/draft-ietf-httpbis-secondary-server-certs/)
 
 ### Other Topics
 
 * 10 min - [The Redirect-By HTTP Response Header Field](https://datatracker.ietf.org/doc/draft-devalk-redirect-by/)
-* 10 min - [Guidance on the 402 (Payment Required) Status Code](https://projects.mnot.net/I-D/draft-nottingham-httpbis-402.html)
+* 10 min - [Guidance on the 402 (Payment Required) Status Code](https://datatracker.ietf.org/doc/draft-nottingham-httpbis-402/) - Mark Nottingham

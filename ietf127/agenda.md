@@ -27,7 +27,7 @@ _See also the [extensions listing](https://httpwg.org/http-extensions/)_
 
 ### Other Topics
 
-* 10 min - [HTTP Signature-Key Header](https://datatracker.ietf.org/doc/draft-hardt-httpbis-signature-key/) - call for adoption discussion
-* 10 min - [The Redirect-By HTTP Response Header Field](https://datatracker.ietf.org/doc/draft-devalk-redirect-by/)
+* 10 min - [HTTP Signature-Key Header](https://datatracker.ietf.org/doc/draft-hardt-httpbis-signature-key/) - call for adoption discussion - Dick Hardt
+* 10 min - [The Redirect-By HTTP Response Header Field](https://datatracker.ietf.org/doc/draft-devalk-redirect-by/) - Joost de Valk (remote)
 * 10 min - [Guidance on the 402 (Payment Required) Status Code](https://datatracker.ietf.org/doc/draft-nottingham-httpbis-402/) - Mark Nottingham
 * 10 min - [Parallel Appends for Resumable Uploads](https://datatracker.ietf.org/doc/draft-spk-httpbis-parallel-upload/) - Santosh Pallagatti
